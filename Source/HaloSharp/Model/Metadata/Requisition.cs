@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class Requisition
     {
         public string CategoryName { get; set; }

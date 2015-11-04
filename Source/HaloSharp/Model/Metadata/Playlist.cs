@@ -4,6 +4,7 @@ using Newtonsoft.Json.Converters;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class Playlist
     {
         public string Description { get; set; }

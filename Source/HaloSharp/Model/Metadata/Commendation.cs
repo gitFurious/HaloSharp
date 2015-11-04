@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class Commendation
     {
         public Category Category { get; set; }
@@ -25,6 +26,7 @@ namespace HaloSharp.Model.Metadata
         //public Guid ContentId { get; set; }
     }
 
+    [Serializable]
     public class Level
     {
         public Guid Id { get; set; }
@@ -35,6 +37,7 @@ namespace HaloSharp.Model.Metadata
         //public Guid ContentId { get; set; }
     }
 
+    [Serializable]
     public class RequiredLevel
     {
         public Guid Id { get; set; }
@@ -44,6 +47,7 @@ namespace HaloSharp.Model.Metadata
         //public Guid ContentId { get; set; }
     }
 
+    [Serializable]
     public class Category
     {
         public string IconImageUrl { get; set; }

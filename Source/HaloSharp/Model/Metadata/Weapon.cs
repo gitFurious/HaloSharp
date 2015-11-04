@@ -1,8 +1,10 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class Weapon
     {
         public string Description { get; set; }

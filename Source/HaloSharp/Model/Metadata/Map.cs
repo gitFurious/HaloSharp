@@ -5,6 +5,7 @@ using Newtonsoft.Json.Converters;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class Map
     {
         public string Description { get; set; }

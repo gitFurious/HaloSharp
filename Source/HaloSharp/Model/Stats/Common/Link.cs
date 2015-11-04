@@ -1,5 +1,8 @@
-﻿namespace HaloSharp.Model.Stats.Common
+﻿using System;
+
+namespace HaloSharp.Model.Stats.Common
 {
+    [Serializable]
     public class Link
     {
         public int AcknowledgementTypeId { get; set; }

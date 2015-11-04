@@ -4,6 +4,7 @@ using System;
 
 namespace HaloSharp.Model.Metadata.Common
 {
+    [Serializable]
     public class RequisitionPack
     {
         public int CreditPrice { get; set; }
