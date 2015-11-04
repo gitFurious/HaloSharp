@@ -20,12 +20,12 @@ using (var session = client.StartSession())
     var query = new GetMatches()
       .InGameMode(Enumeration.GameMode.Arena)
       .ForPlayer("Furiousn00b");
-        
-    var matchSet = await Session.Query(query);
-    
+
+    var matchSet = session.Query(query).Result;
+
     foreach (var result in matchSet.Results)
     {
-        Console.WriteLine($"MatchId: {match.Id.MatchId}");
+        Console.WriteLine($"MatchId: {result.Id.MatchId}");
     }
 }
 ```
