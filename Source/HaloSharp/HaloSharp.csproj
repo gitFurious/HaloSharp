@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A205D36-6AF7-4416-9763-81250EF02924}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HaloSharp</RootNamespace>
+    <AssemblyName>HaloSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache.cs" />
+    <Compile Include="Converter\TimeSpanConverter.cs" />
+    <Compile Include="Exception\HaloApiException.cs" />
+    <Compile Include="Extension\HaloSharpSessionExtensions.cs" />
+    <Compile Include="Extension\StringExtensions.cs" />
+    <Compile Include="IHaloSession.cs" />
+    <Compile Include="HaloSession.cs" />
+    <Compile Include="HaloClient.cs" />
+    <Compile Include="IQuery.cs" />
+    <Compile Include="Model\Enumeration.cs" />
+    <Compile Include="Model\Error\HaloApiError.cs" />
+    <Compile Include="Model\Metadata\FlexibleStat.cs" />
+    <Compile Include="Model\Metadata\GameBaseVariant.cs" />
+    <Compile Include="Model\Metadata\GameVariant.cs" />
+    <Compile Include="Model\Metadata\Impulse.cs" />
+    <Compile Include="Model\Metadata\MapVariant.cs" />
+    <Compile Include="Model\Metadata\Map.cs" />
+    <Compile Include="Model\Metadata\Medal.cs" />
+    <Compile Include="Model\Metadata\Playlist.cs" />
+    <Compile Include="Model\Metadata\Common\RequisitionPack.cs" />
+    <Compile Include="Model\Metadata\Requisition.cs" />
+    <Compile Include="Model\Metadata\Common\Reward.cs" />
+    <Compile Include="Model\Metadata\SpartanRank.cs" />
+    <Compile Include="Model\Metadata\TeamColor.cs" />
+    <Compile Include="Model\Metadata\Vehicle.cs" />
+    <Compile Include="Model\Metadata\Weapon.cs" />
+    <Compile Include="Model\Metadata\Enemy.cs" />
+    <Compile Include="Model\Metadata\Commendation.cs" />
+    <Compile Include="Model\Metadata\CampaignMission.cs" />
+    <Compile Include="Model\Metadata\CompetitiveSkillRankDesignation.cs" />
+    <Compile Include="Model\Metadata\Skull.cs" />
+    <Compile Include="Model\Stats\CarnageReport\CampaignMatch.cs" />
+    <Compile Include="Model\Stats\Common\FlexibleStats.cs" />
+    <Compile Include="Model\Stats\Common\CompetitiveSkillRanking.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\CreditsEarned.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\BaseMatch.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\OpponentDetails.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\BasePlayerStat.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\TeamStat.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\ProgressiveCommendationDelta.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\RewardSet.cs" />
+    <Compile Include="Model\Stats\CarnageReport\WarzoneMatch.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\XpInfo.cs" />
+    <Compile Include="Model\Stats\Common\Identity.cs" />
+    <Compile Include="Model\Stats\CarnageReport\CustomMatch.cs" />
+    <Compile Include="Model\Stats\CarnageReport\ArenaMatch.cs" />
+    <Compile Include="Model\Stats\Common\BaseStat.cs" />
+    <Compile Include="Model\Stats\Lifetime\Common\BaseResult.cs" />
+    <Compile Include="Model\Stats\Lifetime\Common\BaseServiceRecordResult.cs" />
+    <Compile Include="Model\Stats\Lifetime\Common\BaseServiceRecord.cs" />
+    <Compile Include="Model\Stats\Lifetime\Common\TopGameBaseVariant.cs" />
+    <Compile Include="Model\Stats\Lifetime\WarzoneServiceRecord.cs" />
+    <Compile Include="Model\Stats\Lifetime\CampaignServiceRecord.cs" />
+    <Compile Include="Model\Stats\Lifetime\CustomServiceRecord.cs" />
+    <Compile Include="Model\Stats\Lifetime\ArenaServiceRecord.cs" />
+    <Compile Include="Model\Stats\Common\Link.cs" />
+    <Compile Include="Model\Stats\MatchSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\Metadata\GetCommendations.cs" />
+    <Compile Include="Query\Metadata\GetCampaignMissions.cs" />
+    <Compile Include="Query\Metadata\GetCompetitiveSkillRankDesignations.cs" />
+    <Compile Include="Query\Metadata\GetEnemies.cs" />
+    <Compile Include="Query\Metadata\GetFlexibleStats.cs" />
+    <Compile Include="Query\Metadata\GetGameBaseVariants.cs" />
+    <Compile Include="Query\Metadata\GetGameVariant.cs" />
+    <Compile Include="Query\Metadata\GetImpulses.cs" />
+    <Compile Include="Query\Metadata\GetMapVariant.cs" />
+    <Compile Include="Query\Metadata\GetMaps.cs" />
+    <Compile Include="Query\Metadata\GetMedals.cs" />
+    <Compile Include="Query\Metadata\GetPlaylists.cs" />
+    <Compile Include="Query\Metadata\GetRequisitionPacks.cs" />
+    <Compile Include="Query\Metadata\GetRequisition.cs" />
+    <Compile Include="Query\Metadata\GetSpartanRanks.cs" />
+    <Compile Include="Query\Metadata\GetTeamColors.cs" />
+    <Compile Include="Query\Metadata\GetVehicles.cs" />
+    <Compile Include="Query\Metadata\GetWeapons.cs" />
+    <Compile Include="Query\Metadata\GetSkulls.cs" />
+    <Compile Include="Query\Profile\GetSpartanImage.cs" />
+    <Compile Include="Query\Profile\GetEmblemImage.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetCustomMatchDetails.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetWarzoneMatchDetails.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetArenaMatchDetails.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetCampaignMatchDetails.cs" />
+    <Compile Include="Query\Stats\GetMatches.cs" />
+    <Compile Include="Query\Stats\Lifetime\GetCampaignServiceRecord.cs" />
+    <Compile Include="Query\Stats\Lifetime\GetCustomServiceRecord.cs" />
+    <Compile Include="Query\Stats\Lifetime\GetWarzoneServiceRecord.cs" />
+    <Compile Include="Query\Stats\Lifetime\GetArenaServiceRecord.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

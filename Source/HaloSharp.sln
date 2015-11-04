@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaloSharp", "HaloSharp\HaloSharp.csproj", "{5A205D36-6AF7-4416-9763-81250EF02924}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{15236271-B966-404F-9B3B-CC04E0F9D206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaloSharp.Test", "HaloSharp.Test\HaloSharp.Test.csproj", "{3A8E13EA-FD0C-43D7-B4CE-AEF9EA0928D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FDC9DA2E-7EAC-4E1C-AB87-4E39BE753D23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A205D36-6AF7-4416-9763-81250EF02924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A205D36-6AF7-4416-9763-81250EF02924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A205D36-6AF7-4416-9763-81250EF02924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A205D36-6AF7-4416-9763-81250EF02924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8E13EA-FD0C-43D7-B4CE-AEF9EA0928D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8E13EA-FD0C-43D7-B4CE-AEF9EA0928D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8E13EA-FD0C-43D7-B4CE-AEF9EA0928D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8E13EA-FD0C-43D7-B4CE-AEF9EA0928D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A205D36-6AF7-4416-9763-81250EF02924} = {FDC9DA2E-7EAC-4E1C-AB87-4E39BE753D23}
+		{3A8E13EA-FD0C-43D7-B4CE-AEF9EA0928D9} = {15236271-B966-404F-9B3B-CC04E0F9D206}
+	EndGlobalSection
+EndGlobal

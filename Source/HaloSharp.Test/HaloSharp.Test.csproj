@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A8E13EA-FD0C-43D7-B4CE-AEF9EA0928D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HaloSharp.Test</RootNamespace>
+    <AssemblyName>HaloSharp.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Moq, Version=4.2.1507.118, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\Metadata\GetCommendationsTests.cs" />
+    <Compile Include="Query\Metadata\GetCampaignMissionsTests.cs" />
+    <Compile Include="Query\Metadata\GetCompetitiveSkillRankDesignationsTests.cs" />
+    <Compile Include="Query\Metadata\GetWeaponsTests.cs" />
+    <Compile Include="Query\Metadata\GetVehiclesTests.cs" />
+    <Compile Include="Query\Metadata\GetEnemiesTests.cs" />
+    <Compile Include="Query\Metadata\GetFlexibleStatsTests.cs" />
+    <Compile Include="Query\Metadata\GetGameBaseVariantsTests.cs" />
+    <Compile Include="Query\Metadata\GetGameVariantTests.cs" />
+    <Compile Include="Query\Metadata\GetImpulsesTests.cs" />
+    <Compile Include="Query\Metadata\GetMapsTests.cs" />
+    <Compile Include="Query\Metadata\GetMapVariantTests.cs" />
+    <Compile Include="Query\Metadata\GetMedalsTests.cs" />
+    <Compile Include="Query\Metadata\GetPlaylistsTests.cs" />
+    <Compile Include="Query\Metadata\GetRequisitionPacksTests.cs" />
+    <Compile Include="Query\Metadata\GetRequisitionTests.cs" />
+    <Compile Include="Query\Metadata\GetSpartanRanksTests.cs" />
+    <Compile Include="Query\Metadata\GetTeamColorsTests.cs" />
+    <Compile Include="Query\Metadata\GetSkullsTests.cs" />
+    <Compile Include="Query\Profile\GetSpartanImageTests.cs" />
+    <Compile Include="Query\Profile\GetEmblemImageTests.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetCampaignMatchDetailsTests.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetWarzoneMatchDetailsTests.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetCustomMatchDetailsTests.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetArenaMatchDetailsTests.cs" />
+    <Compile Include="Query\Stats\GetMatchesTests.cs" />
+    <Compile Include="Query\Stats\Lifetime\GetCampaignServiceRecordTests.cs" />
+    <Compile Include="Query\Stats\Lifetime\GetCustomServiceRecordTests.cs" />
+    <Compile Include="Query\Stats\Lifetime\GetWarzoneServiceRecordTests.cs" />
+    <Compile Include="Query\Stats\Lifetime\GetArenaServiceRecordTests.cs" />
+    <Compile Include="Setup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HaloSharp\HaloSharp.csproj">
+      <Project>{5a205d36-6af7-4416-9763-81250ef02924}</Project>
+      <Name>HaloSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
