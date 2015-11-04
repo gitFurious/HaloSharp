@@ -21,7 +21,7 @@ using (var session = client.StartSession())
       .InGameMode(Enumeration.GameMode.Arena)
       .ForPlayer("Furiousn00b");
 
-    var matchSet = session.Query(query).Result;
+    var matchSet = await session.Query(query);
 
     foreach (var result in matchSet.Results)
     {
