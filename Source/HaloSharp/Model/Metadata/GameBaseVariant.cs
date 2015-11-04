@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class GameBaseVariant
     {
         public string IconUrl { get; set; }

@@ -4,6 +4,7 @@ using System;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class CampaignMission
     {
         public string Description { get; set; }

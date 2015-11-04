@@ -2,6 +2,7 @@
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class GameVariant
     {
         public string Description { get; set; }

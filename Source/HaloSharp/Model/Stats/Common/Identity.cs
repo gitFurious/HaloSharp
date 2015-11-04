@@ -1,5 +1,8 @@
-﻿namespace HaloSharp.Model.Stats.Common
+﻿using System;
+
+namespace HaloSharp.Model.Stats.Common
 {
+    [Serializable]
     public class Identity
     {
         public string Gamertag { get; set; }

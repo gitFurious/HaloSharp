@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class CompetitiveSkillRankDesignation
     {
         public string BannerImageUrl { get; set; }
@@ -13,6 +15,7 @@ namespace HaloSharp.Model.Metadata
         //public Guid ContentId { get; set; }
     }
 
+    [Serializable]
     public class Tier
     {
         public string IconImageUrl { get; set; }

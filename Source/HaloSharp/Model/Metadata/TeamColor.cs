@@ -1,5 +1,8 @@
-﻿namespace HaloSharp.Model.Metadata
+﻿using System;
+
+namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class TeamColor
     {
         public string Color { get; set; }

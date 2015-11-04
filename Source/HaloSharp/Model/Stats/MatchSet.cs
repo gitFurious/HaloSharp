@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 namespace HaloSharp.Model.Stats
 {
+    [Serializable]
     public class MatchSet
     {
         public int Count { get; set; }
@@ -17,6 +18,7 @@ namespace HaloSharp.Model.Stats
         public Dictionary<string, Link> Links { get; set; }
     }
 
+    [Serializable]
     public class Result
     {
         public Guid GameBaseVariantId { get; set; }
@@ -39,12 +41,14 @@ namespace HaloSharp.Model.Stats
         public Guid? SeasonId { get; set; }
     }
 
+    [Serializable]
     public class Id
     {
         public Enumeration.GameMode GameMode { get; set; }
         public Guid MatchId { get; set; }
     }
 
+    [Serializable]
     public class Variant
     {
         public string Owner { get; set; }
@@ -53,12 +57,14 @@ namespace HaloSharp.Model.Stats
         public Enumeration.ResourceType ResourceType { get; set; }
     }
 
+    [Serializable]
     public class MatchCompletedDate
     {
         // ReSharper disable once InconsistentNaming
         public DateTime ISO8601Date { get; set; }
     }
 
+    [Serializable]
     public class Player
     {
         [JsonProperty(PropertyName = "Player")]
@@ -76,6 +82,7 @@ namespace HaloSharp.Model.Stats
         //public object PreMatchRatings { get; set; } //This will always be null.
     }
 
+    [Serializable]
     public class Team
     {
         public int Id { get; set; }

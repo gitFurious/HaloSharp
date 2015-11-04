@@ -1,7 +1,9 @@
 ﻿using HaloSharp.Model.Metadata.Common;
+using System;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class SpartanRank
     {
         public int Id { get; set; }

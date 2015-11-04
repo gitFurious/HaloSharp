@@ -1,8 +1,10 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class Medal
     {
         [JsonConverter(typeof (StringEnumConverter))]
@@ -18,6 +20,7 @@ namespace HaloSharp.Model.Metadata
         //public Guid ContentId { get; set; }
     }
 
+    [Serializable]
     public class SpriteLocation
     {
         public int Height { get; set; }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace HaloSharp.Model.Metadata.Common
 {
+    [Serializable]
     public class Reward
     {
         public Guid Id { get; set; }

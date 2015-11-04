@@ -4,6 +4,7 @@ using System;
 
 namespace HaloSharp.Model.Metadata
 {
+    [Serializable]
     public class FlexibleStat
     {
         public Guid Id { get; set; }
