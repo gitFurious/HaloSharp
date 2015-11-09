@@ -7,7 +7,7 @@ namespace HaloSharp.Query.Metadata
 {
     public class GetRequisition : IQuery<Requisition>
     {
-        private const string CacheKey = "Requisitions";
+        private const string CacheKey = "Requisition";
 
         private bool _useCache = true;
         private string _id;

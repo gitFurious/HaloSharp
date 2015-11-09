@@ -33,9 +33,9 @@ namespace HaloSharp.Query.Profile
 
         public async Task<Image> ApplyTo(IHaloSession session)
         {
-            var emblem = await session.GetImage(MakeUrl());
+            var spartan = await session.GetImage(MakeUrl());
 
-            return emblem;
+            return spartan;
         }
 
         private string MakeUrl()

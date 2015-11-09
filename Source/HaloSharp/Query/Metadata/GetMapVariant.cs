@@ -7,7 +7,7 @@ namespace HaloSharp.Query.Metadata
 {
     public class GetMapVariant : IQuery<MapVariant>
     {
-        private const string CacheKey = "MapVariants";
+        private const string CacheKey = "MapVariant";
 
         private bool _useCache = true;
         private string _id;
