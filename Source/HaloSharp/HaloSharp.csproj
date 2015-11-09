@@ -117,7 +117,7 @@
     <Compile Include="Query\Metadata\GetMaps.cs" />
     <Compile Include="Query\Metadata\GetMedals.cs" />
     <Compile Include="Query\Metadata\GetPlaylists.cs" />
-    <Compile Include="Query\Metadata\GetRequisitionPacks.cs" />
+    <Compile Include="Query\Metadata\GetRequisitionPack.cs" />
     <Compile Include="Query\Metadata\GetRequisition.cs" />
     <Compile Include="Query\Metadata\GetSpartanRanks.cs" />
     <Compile Include="Query\Metadata\GetTeamColors.cs" />

@@ -1,0 +1,75 @@
+﻿using System;
+using HaloSharp.Extension;
+using HaloSharp.Model.Metadata.Common;
+using HaloSharp.Query.Metadata;
+using NUnit.Framework;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using HaloSharp.Exception;
+using HaloSharp.Model;
+
+namespace HaloSharp.Test.Query.Metadata
+{
+    [TestFixture]
+    public class GetRequisitionPackTests : TestSessionSetup
+    {
+        [Test]
+        [TestCase("3a1614d9-20a4-4817-a189-88cb781e9152")]
+        [TestCase("3ce05b60-a118-4ad1-9617-bc04f64ac4d8")]
+        [TestCase("5f96269a-58f8-473e-9897-42a4deb1bf09")]
+        public async Task GetRequisitionPack(string guid)
+        {
+            var query = new GetRequisitionPack()
+                .ForRequisitionPackId(new Guid(guid))
+                .SkipCache();
+
+            var result = await Session.Query(query);
+
+            Assert.IsInstanceOf(typeof (RequisitionPack), result);
+        }
+
+        [Test]
+        [TestCase("00000000-0000-0000-0000-000000000000")]
+        public async Task GetRequisitionPack_InvalidGuid(string guid)
+        {
+            var query = new GetRequisitionPack()
+                .ForRequisitionPackId(new Guid(guid))
+                .SkipCache();
+
+            try
+            {
+                await Session.Query(query);
+                Assert.Fail("An exception should have been thrown");
+            }
+            catch (HaloApiException e)
+            {
+                Assert.AreEqual((int)Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
+            }
+            catch (System.Exception e)
+            {
+                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
+            }
+        }
+
+        [Test]
+        public async Task GetRequisitionPack_MissingGuid()
+        {
+            var query = new GetRequisitionPack()
+                .SkipCache();
+
+            try
+            {
+                await Session.Query(query);
+                Assert.Fail("An exception should have been thrown");
+            }
+            catch (HaloApiException e)
+            {
+                Assert.AreEqual((int)Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
+            }
+            catch (System.Exception e)
+            {
+                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
+            }
+        }
+    }
+}

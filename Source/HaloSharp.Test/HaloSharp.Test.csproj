@@ -68,7 +68,7 @@
     <Compile Include="Query\Metadata\GetMapVariantTests.cs" />
     <Compile Include="Query\Metadata\GetMedalsTests.cs" />
     <Compile Include="Query\Metadata\GetPlaylistsTests.cs" />
-    <Compile Include="Query\Metadata\GetRequisitionPacksTests.cs" />
+    <Compile Include="Query\Metadata\GetRequisitionPackTests.cs" />
     <Compile Include="Query\Metadata\GetRequisitionTests.cs" />
     <Compile Include="Query\Metadata\GetSpartanRanksTests.cs" />
     <Compile Include="Query\Metadata\GetTeamColorsTests.cs" />
