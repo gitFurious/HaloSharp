@@ -5,6 +5,8 @@ using HaloSharp.Query.Profile;
 using NUnit.Framework;
 using System.Drawing;
 using System.Threading.Tasks;
+using HaloSharp.Model.Profile;
+using HaloSharp.Test.Utility;
 
 namespace HaloSharp.Test.Query.Profile
 {
@@ -21,7 +23,21 @@ namespace HaloSharp.Test.Query.Profile
 
             var result = await Session.Query(query);
 
-            Assert.IsInstanceOf(typeof (Image), result);
+            Assert.IsInstanceOf(typeof (GetImage), result);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public async Task GetEmblemImage_IsSerializable(string gamertag)
+        {
+            var query = new GetEmblemImage()
+                .ForPlayer(gamertag);
+
+            var result = await Session.Query(query);
+
+            var serializationUtility = new SerializationUtility<GetImage>();
+            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]
@@ -38,7 +54,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var result = await Session.Query(query);
 
-            Assert.IsInstanceOf(typeof(Image), result);
+            Assert.IsInstanceOf(typeof(GetImage), result);
         }
 
         [Test]

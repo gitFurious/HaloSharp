@@ -48,7 +48,7 @@ namespace HaloSharp
             return await content.ParsedAsJson<TResult>();
         }
 
-        public async Task<Image> GetImage(string path)
+        public async Task<Tuple<string, Image>> GetImage(string path)
         {
             var htpResponseMessage = await _httpClient.GetAsync(GetUrl(path));
 
@@ -57,10 +57,15 @@ namespace HaloSharp
                 throw new HaloApiException((int)htpResponseMessage.StatusCode, htpResponseMessage.ReasonPhrase);
             }
 
+            var uri = htpResponseMessage.RequestMessage.RequestUri.ToString();
+
+            Image image;
             using (var stream = await htpResponseMessage.Content.ReadAsStreamAsync())
             {
-                return Image.FromStream(stream);
+                image = Image.FromStream(stream);
             }
+
+            return new Tuple<string, Image>(uri, image);
         }
 
         private static string GetUrl(string path)

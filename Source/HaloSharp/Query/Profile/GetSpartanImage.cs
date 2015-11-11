@@ -1,13 +1,13 @@
 ﻿using HaloSharp.Model;
+using HaloSharp.Model.Profile;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace HaloSharp.Query.Profile
 {
-    public class GetSpartanImage : IQuery<Image>
+    public class GetSpartanImage : IQuery<GetImage>
     {
         private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
 
@@ -31,11 +31,15 @@ namespace HaloSharp.Query.Profile
             return this;
         }
 
-        public async Task<Image> ApplyTo(IHaloSession session)
+        public async Task<GetImage> ApplyTo(IHaloSession session)
         {
-            var spartan = await session.GetImage(MakeUrl());
+            var tuple = await session.GetImage(MakeUrl());
 
-            return spartan;
+            return new GetImage
+            {
+                Uri = tuple.Item1,
+                Image = tuple.Item2
+            };
         }
 
         private string MakeUrl()
