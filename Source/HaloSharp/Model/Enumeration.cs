@@ -1,7 +1,9 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
 namespace HaloSharp.Model
 {
+    [Serializable]
     public class Enumeration
     {
         public enum CampaignMissionType

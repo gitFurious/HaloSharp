@@ -3,6 +3,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Metadata;
 using HaloSharp.Query.Metadata;
+using HaloSharp.Test.Utility;
 using NUnit.Framework;
 using System;
 using System.Threading.Tasks;
@@ -24,6 +25,21 @@ namespace HaloSharp.Test.Query.Metadata
             var result = await Session.Query(query);
 
             Assert.IsInstanceOf(typeof (GameVariant), result);
+        }
+
+        [Test]
+        [TestCase("00000003-0000-0010-8000-00aa00389b71")]
+        [TestCase("1e473914-46e4-408d-af26-178fb115de76")]
+        public async Task GetGameVariant_IsSerializable(string guid)
+        {
+            var query = new GetGameVariant()
+                .ForGameVariantId(new Guid(guid))
+                .SkipCache();
+
+            var result = await Session.Query(query);
+
+            var serializationUtility = new SerializationUtility<GameVariant>();
+            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

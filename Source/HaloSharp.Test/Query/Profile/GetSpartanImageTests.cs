@@ -4,6 +4,7 @@ using HaloSharp.Query.Profile;
 using NUnit.Framework;
 using System.Drawing;
 using System.Threading.Tasks;
+using HaloSharp.Exception;
 
 namespace HaloSharp.Test.Query.Profile
 {
@@ -50,6 +51,56 @@ namespace HaloSharp.Test.Query.Profile
             var result = await Session.Query(query);
 
             Assert.IsInstanceOf(typeof(Image), result);
+        }
+
+        [Test]
+        [TestCase(94)]
+        [TestCase(127)]
+        [TestCase(189)]
+        [TestCase(255)]
+        [TestCase(511)]
+        public async Task GetSpartanImage_InvalidSize(int size)
+        {
+            var query = new GetSpartanImage()
+                .ForPlayer("Furiousn00b")
+                .Size(size);
+
+            try
+            {
+                await Session.Query(query);
+                Assert.Fail("An exception should have been thrown");
+            }
+            catch (HaloApiException e)
+            {
+                Assert.AreEqual((int)Enumeration.StatusCode.BadRequest, e.HaloApiError.StatusCode);
+            }
+            catch (System.Exception e)
+            {
+                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
+            }
+        }
+
+        [Test]
+        [TestCase("00000000000000017")]
+        [TestCase("!$%")]
+        public async Task GetSpartanImage_InvalidGamertag(string gamertag)
+        {
+            var query = new GetSpartanImage()
+                .ForPlayer(gamertag);
+
+            try
+            {
+                await Session.Query(query);
+                Assert.Fail("An exception should have been thrown");
+            }
+            catch (HaloApiException e)
+            {
+                Assert.AreEqual((int)Enumeration.StatusCode.BadRequest, e.HaloApiError.StatusCode);
+            }
+            catch (System.Exception e)
+            {
+                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
+            }
         }
     }
 }

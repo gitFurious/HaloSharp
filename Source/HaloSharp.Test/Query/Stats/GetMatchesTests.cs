@@ -5,8 +5,12 @@ using HaloSharp.Model.Stats;
 using HaloSharp.Query.Stats;
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
+using HaloSharp.Test.Utility;
 
 namespace HaloSharp.Test.Query.Stats
 {
@@ -24,6 +28,20 @@ namespace HaloSharp.Test.Query.Stats
             var result = await Session.Query(query);
 
             Assert.IsInstanceOf(typeof (MatchSet), result);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public async Task GetMatches_IsSerializable(string gamertag)
+        {
+            var query = new GetMatches()
+                .ForPlayer(gamertag);
+
+            var result = await Session.Query(query);
+
+            var serializationUtility = new SerializationUtility<MatchSet>();
+            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

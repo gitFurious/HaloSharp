@@ -4,6 +4,7 @@ using HaloSharp.Model;
 using HaloSharp.Model.Stats.CarnageReport;
 using HaloSharp.Query.Stats;
 using HaloSharp.Query.Stats.CarnageReport;
+using HaloSharp.Test.Utility;
 using NUnit.Framework;
 using System;
 using System.Linq;
@@ -27,15 +28,34 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             Assert.IsTrue(matches.Results.Any());
 
-            foreach (var match in matches.Results)
-            {
-                var getCustomMatchDetailsQuery = new GetCustomMatchDetails()
-                .ForMatchId(match.Id.MatchId);
+            var getCustomMatchDetailsQuery = new GetCustomMatchDetails()
+                .ForMatchId(matches.Results.First().Id.MatchId);
 
-                var result = await Session.Query(getCustomMatchDetailsQuery);
+            var result = await Session.Query(getCustomMatchDetailsQuery);
 
-                Assert.IsInstanceOf(typeof(CustomMatch), result);
-            }
+            Assert.IsInstanceOf(typeof(CustomMatch), result);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public async Task GetCustomMatchDetails_IsSerializable(string gamertag)
+        {
+            var getMatchesQuery = new GetMatches()
+                .InGameMode(Enumeration.GameMode.Custom)
+                .ForPlayer(gamertag);
+
+            var matches = await Session.Query(getMatchesQuery);
+
+            Assert.IsTrue(matches.Results.Any());
+
+            var getCustomMatchDetailsQuery = new GetCustomMatchDetails()
+                .ForMatchId(matches.Results.First().Id.MatchId);
+
+            var result = await Session.Query(getCustomMatchDetailsQuery);
+
+            var serializationUtility = new SerializationUtility<CustomMatch>();
+            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

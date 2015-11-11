@@ -4,6 +4,7 @@ using HaloSharp.Model;
 using HaloSharp.Model.Stats.CarnageReport;
 using HaloSharp.Query.Stats;
 using HaloSharp.Query.Stats.CarnageReport;
+using HaloSharp.Test.Utility;
 using NUnit.Framework;
 using System;
 using System.Linq;
@@ -27,15 +28,34 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             Assert.IsTrue(matches.Results.Any());
 
-            foreach (var match in matches.Results)
-            {
-                var getCampaignMatchDetailsQuery = new GetCampaignMatchDetails()
-                    .ForMatchId(match.Id.MatchId);
+            var getCampaignMatchDetailsQuery = new GetCampaignMatchDetails()
+                .ForMatchId(matches.Results.First().Id.MatchId);
 
-                var result = await Session.Query(getCampaignMatchDetailsQuery);
+            var result = await Session.Query(getCampaignMatchDetailsQuery);
 
-                Assert.IsInstanceOf(typeof(CampaignMatch), result);
-            }
+            Assert.IsInstanceOf(typeof(CampaignMatch), result);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public async Task GetCampaignMatchDetails_IsSerializable(string gamertag)
+        {
+            var getMatchesQuery = new GetMatches()
+                .InGameMode(Enumeration.GameMode.Campaign)
+                .ForPlayer(gamertag);
+
+            var matches = await Session.Query(getMatchesQuery);
+
+            Assert.IsTrue(matches.Results.Any());
+
+            var getCampaignMatchDetailsQuery = new GetCampaignMatchDetails()
+                     .ForMatchId(matches.Results.First().Id.MatchId);
+
+            var result = await Session.Query(getCampaignMatchDetailsQuery);
+
+            var serializationUtility = new SerializationUtility<CampaignMatch>();
+            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

@@ -3,6 +3,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Metadata;
 using HaloSharp.Query.Metadata;
+using HaloSharp.Test.Utility;
 using NUnit.Framework;
 using System;
 using System.Threading.Tasks;
@@ -24,6 +25,21 @@ namespace HaloSharp.Test.Query.Metadata
             var result = await Session.Query(query);
 
             Assert.IsInstanceOf(typeof (MapVariant), result);
+        }
+
+        [Test]
+        [TestCase("cb914b9e-f206-11e4-b447-24be05e24f7e")]
+        [TestCase("cae999f0-f206-11e4-9835-24be05e24f7e")]
+        public async Task GetMapVariant_IsSerializable(string guid)
+        {
+            var query = new GetMapVariant()
+                .ForMapVariantId(new Guid(guid))
+                .SkipCache();
+
+            var result = await Session.Query(query);
+
+            var serializationUtility = new SerializationUtility<MapVariant>();
+            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

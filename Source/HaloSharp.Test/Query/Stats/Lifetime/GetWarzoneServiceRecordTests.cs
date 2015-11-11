@@ -3,6 +3,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Stats.Lifetime;
 using HaloSharp.Query.Stats.Lifetime;
+using HaloSharp.Test.Utility;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -23,6 +24,20 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
             var result = await Session.Query(query);
 
             Assert.IsInstanceOf(typeof (WarzoneServiceRecord), result);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public async Task GetWarzoneServiceRecord_IsSerializable(string gamertag)
+        {
+            var query = new GetWarzoneServiceRecord()
+                .ForPlayer(gamertag);
+
+            var result = await Session.Query(query);
+
+            var serializationUtility = new SerializationUtility<WarzoneServiceRecord>();
+            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

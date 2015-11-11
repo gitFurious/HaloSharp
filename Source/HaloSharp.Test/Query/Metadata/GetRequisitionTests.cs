@@ -3,6 +3,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Metadata;
 using HaloSharp.Query.Metadata;
+using HaloSharp.Test.Utility;
 using NUnit.Framework;
 using System;
 using System.Threading.Tasks;
@@ -23,6 +24,20 @@ namespace HaloSharp.Test.Query.Metadata
             var result = await Session.Query(query);
 
             Assert.IsInstanceOf(typeof (Requisition), result);
+        }
+
+        [Test]
+        [TestCase("e4f549b2-90af-4dab-b2bc-11a46ea44103")]
+        public async Task GetRequisition_IsSerializable(string guid)
+        {
+            var query = new GetRequisition()
+                .ForRequisitionId(new Guid(guid))
+                .SkipCache();
+
+            var result = await Session.Query(query);
+
+            var serializationUtility = new SerializationUtility<Requisition>();
+            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]
