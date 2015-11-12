@@ -1,17 +1,19 @@
-﻿namespace HaloSharp
+﻿using HaloSharp.Model;
+
+namespace HaloSharp
 {
     public class HaloClient
     {
-        private readonly string _subscriptionKey;
+        private readonly Product _product;
 
-        public HaloClient(string subscriptionKey)
+        public HaloClient(Product product)
         {
-            _subscriptionKey = subscriptionKey;
+            _product = product;
         }
 
         public IHaloSession StartSession()
         {
-            var session = new HaloSession(_subscriptionKey);
+            var session = new HaloSession(_product);
 
             return session;
         }

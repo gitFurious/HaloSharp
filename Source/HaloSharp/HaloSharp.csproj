@@ -79,6 +79,7 @@
     <Compile Include="Model\Metadata\CompetitiveSkillRankDesignation.cs" />
     <Compile Include="Model\Metadata\Skull.cs" />
     <Compile Include="Model\Profile\GetImage.cs" />
+    <Compile Include="Model\Product.cs" />
     <Compile Include="Model\Stats\CarnageReport\CampaignMatch.cs" />
     <Compile Include="Model\Stats\Common\FlexibleStats.cs" />
     <Compile Include="Model\Stats\Common\CompetitiveSkillRanking.cs" />
@@ -136,6 +137,7 @@
     <Compile Include="Query\Stats\Lifetime\GetCustomServiceRecord.cs" />
     <Compile Include="Query\Stats\Lifetime\GetWarzoneServiceRecord.cs" />
     <Compile Include="Query\Stats\Lifetime\GetArenaServiceRecord.cs" />
+    <Compile Include="RateGate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
