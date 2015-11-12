@@ -12,19 +12,14 @@ namespace HaloSharp.Test
         [SetUp]
         public void RunBeforeAnyTests()
         {
-            var subscriptionKey = Environment.GetEnvironmentVariable("SUBSCRIPTION_KEY");
-            var requestCount = int.Parse(Environment.GetEnvironmentVariable("REQUEST_COUNT"));
-            var timeSpanSeconds = int.Parse(Environment.GetEnvironmentVariable("TIME_SPAN_SECONDS"));
-            var timeoutSeconds = int.Parse(Environment.GetEnvironmentVariable("TIME_OUT_SECONDS"));
-
             var developerAccessProduct = new Product
             {
-                SubscriptionKey = subscriptionKey,
+                SubscriptionKey = "00000000000000000000000000000000",
                 RateLimit = new RateLimit
                 {
-                    RequestCount = requestCount,
-                    TimspSpan = new TimeSpan(0, 0, 0, timeSpanSeconds),
-                    Timeout = new TimeSpan(0, 0, 0, timeoutSeconds)
+                    RequestCount = 10,
+                    TimspSpan = new TimeSpan(0, 0, 0, 10),
+                    Timeout = new TimeSpan(0, 0, 0, 10)
                 }
             };
 
