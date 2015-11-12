@@ -9,15 +9,27 @@ using System.Threading.Tasks;
 namespace HaloSharp.Test.Query.Metadata
 {
     [TestFixture]
-    public class GetCompetitiveSkillRankDesignationsTests : TestSessionSetup
+    public class GetCompetitiveSkillRankDesignationsTests
     {
+        private const string BaseUri = "metadata/h5/metadata/csr-designations";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetCompetitiveSkillRankDesignations();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(BaseUri, uri);
+        }
+
         [Test]
         public async Task GetCompetitiveSkillRankDesignations()
         {
             var query = new GetCompetitiveSkillRankDesignations()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (List<CompetitiveSkillRankDesignation>), result);
         }
@@ -28,7 +40,7 @@ namespace HaloSharp.Test.Query.Metadata
             var query = new GetCompetitiveSkillRankDesignations()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<List<CompetitiveSkillRankDesignation>>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);

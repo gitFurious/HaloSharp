@@ -1,19 +1,23 @@
-﻿namespace HaloSharp.Test
+﻿using NUnit.Framework;
+
+namespace HaloSharp.Test
 {
-    public class TestSessionSetup
+    [SetUpFixture]
+    public class Global
     {
-        private IHaloSession _session;
-        public IHaloSession Session
+        public static IHaloSession Session;
+
+        [SetUp]
+        public void RunBeforeAnyTests()
         {
-            get
-            {
-                if (_session == null)
-                {
-                    var client = new HaloClient("00000000000000000000000000000000");
-                    _session = client.StartSession();
-                }
-                return _session;
-            }
+            var client = new HaloClient("00000000000000000000000000000000");
+            Session = client.StartSession();
+        }
+
+        [TearDown]
+        public void RunAfterAnyTests()
+        {
+            Session.Dispose();
         }
     }
 }

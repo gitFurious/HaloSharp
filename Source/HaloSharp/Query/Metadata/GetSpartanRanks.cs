@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return spartanRanks;
             }
 
-            spartanRanks = await session.Get<List<SpartanRank>>(MakeUrl());
+            spartanRanks = await session.Get<List<SpartanRank>>(GetConstructedUri());
 
             Cache.Add(CacheKey, spartanRanks);
 
             return spartanRanks;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/spartan-ranks");
 

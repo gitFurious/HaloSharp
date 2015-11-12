@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return campaignMissions;
             }
 
-            campaignMissions = await session.Get<List<CampaignMission>>(MakeUrl());
+            campaignMissions = await session.Get<List<CampaignMission>>(GetConstructedUri());
 
             Cache.Add(CacheKey, campaignMissions);
 
             return campaignMissions;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/campaign-missions");
 

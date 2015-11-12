@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return enemies;
             }
 
-            enemies = await session.Get<List<Enemy>>(MakeUrl());
+            enemies = await session.Get<List<Enemy>>(GetConstructedUri());
 
             Cache.Add(CacheKey, enemies);
 
             return enemies;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/enemies");
 

@@ -15,8 +15,101 @@ using HaloSharp.Test.Utility;
 namespace HaloSharp.Test.Query.Stats
 {
     [TestFixture]
-    public class GetMatchesTests : TestSessionSetup
+    public class GetMatchesTests
     {
+        private const string BaseUri = "stats/h5/players/{0}/matches{1}";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetMatches();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, null), uri);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
+        {
+            var query = new GetMatches()
+                .ForPlayer(gamertag);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, gamertag, null), uri);
+        }
+
+        [Test]
+        [TestCase(Enumeration.GameMode.Arena)]
+        [TestCase(Enumeration.GameMode.Warzone)]
+        public void GetConstructedUri_InGameMode_MatchesExpected(Enumeration.GameMode gameMode)
+        {
+            var query = new GetMatches()
+                .InGameMode(gameMode);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, $"?modes={gameMode}" ), uri);
+        }
+
+        [Test]
+        [TestCase(Enumeration.GameMode.Arena, Enumeration.GameMode.Warzone)]
+        [TestCase(Enumeration.GameMode.Campaign, Enumeration.GameMode.Custom)]
+        public void GetConstructedUri_InGameModes_MatchesExpected(Enumeration.GameMode gameMode1, Enumeration.GameMode gameMode2)
+        {
+            var query = new GetMatches()
+                .InGameModes(new List<Enumeration.GameMode> {gameMode1, gameMode2});
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, $"?modes={gameMode1},{gameMode2}"), uri);
+        }
+
+        [Test]
+        [TestCase(5)]
+        [TestCase(10)]
+        public void GetConstructedUri_Skip_MatchesExpected(int skip)
+        {
+            var query = new GetMatches()
+                .Skip(skip);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, $"?start={skip}"), uri);
+        }
+
+        [Test]
+        [TestCase(5)]
+        [TestCase(10)]
+        public void GetConstructedUri_Take_MatchesExpected(int take)
+        {
+            var query = new GetMatches()
+                .Take(take);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, $"?count={take}"), uri);
+        }
+
+        [Test]
+        [TestCase("Greenskull", Enumeration.GameMode.Warzone, 5, 10)]
+        [TestCase("Furiousn00b", Enumeration.GameMode.Arena, 15, 20)]
+        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, Enumeration.GameMode gameMode, int skip, int take)
+        {
+            var query = new GetMatches()
+                .ForPlayer(gamertag)
+                .InGameMode(gameMode)
+                .Skip(skip)
+                .Take(take);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, gamertag, $"?modes={gameMode}&start={skip}&count={take}"), uri);
+        }
+
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
@@ -25,7 +118,7 @@ namespace HaloSharp.Test.Query.Stats
             var query = new GetMatches()
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (MatchSet), result);
         }
@@ -38,7 +131,7 @@ namespace HaloSharp.Test.Query.Stats
             var query = new GetMatches()
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<MatchSet>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);
@@ -59,7 +152,7 @@ namespace HaloSharp.Test.Query.Stats
                 .InGameMode((Enumeration.GameMode)gameMode)
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(MatchSet), result);
             Assert.IsTrue(result.Results.All(r => r.Id.GameMode == (Enumeration.GameMode)gameMode));
@@ -80,7 +173,7 @@ namespace HaloSharp.Test.Query.Stats
                 .InGameModes(gameModes)
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(MatchSet), result);
             Assert.IsTrue(result.Results.All(r => r.Id.GameMode == Enumeration.GameMode.Arena || r.Id.GameMode == Enumeration.GameMode.Warzone));
@@ -93,7 +186,7 @@ namespace HaloSharp.Test.Query.Stats
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)
@@ -116,7 +209,7 @@ namespace HaloSharp.Test.Query.Stats
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)

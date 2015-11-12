@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace HaloSharp.Test.Query.Stats.Lifetime
 {
     [TestFixture]
-    public class GetArenaServiceRecordTests : TestSessionSetup
+    public class GetArenaServiceRecordTests
     {
         [Test]
         [TestCase("Greenskull")]
@@ -21,7 +21,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
             var query = new GetArenaServiceRecord()
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (ArenaServiceRecord), result);
         }
@@ -34,7 +34,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
             var query = new GetArenaServiceRecord()
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<ArenaServiceRecord>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);
@@ -52,7 +52,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
             var query = new GetArenaServiceRecord()
                 .ForPlayers(gamertags);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(ArenaServiceRecord), result);
             Assert.AreEqual(2, result.Results.Count);
@@ -65,7 +65,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)
@@ -88,7 +88,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)

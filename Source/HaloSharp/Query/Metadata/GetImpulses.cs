@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return impulses;
             }
 
-            impulses = await session.Get<List<Impulse>>(MakeUrl());
+            impulses = await session.Get<List<Impulse>>(GetConstructedUri());
 
             Cache.Add(CacheKey, impulses);
 
             return impulses;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/impulses");
 

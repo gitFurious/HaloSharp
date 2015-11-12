@@ -33,7 +33,7 @@ namespace HaloSharp.Query.Profile
 
         public async Task<GetImage> ApplyTo(IHaloSession session)
         {
-            var tuple = await session.GetImage(MakeUrl());
+            var tuple = await session.GetImage(GetConstructedUri());
 
             return new GetImage
             {
@@ -42,7 +42,7 @@ namespace HaloSharp.Query.Profile
             };
         }
 
-        private string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder($"profile/h5/profiles/{_player}/spartan");
 

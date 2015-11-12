@@ -9,15 +9,27 @@ using System.Threading.Tasks;
 namespace HaloSharp.Test.Query.Metadata
 {
     [TestFixture]
-    public class GetImpulsesTests : TestSessionSetup
+    public class GetImpulsesTests
     {
+        private const string BaseUri = "metadata/h5/metadata/impulses";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetImpulses();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(BaseUri, uri);
+        }
+
         [Test]
         public async Task GetImpulses()
         {
             var query = new GetImpulses()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (List<Impulse>), result);
         }
@@ -28,7 +40,7 @@ namespace HaloSharp.Test.Query.Metadata
             var query = new GetImpulses()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<List<Impulse>>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);

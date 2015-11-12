@@ -1,4 +1,5 @@
-﻿using HaloSharp.Extension;
+﻿using System;
+using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Query.Profile;
 using NUnit.Framework;
@@ -11,8 +12,74 @@ using HaloSharp.Test.Utility;
 namespace HaloSharp.Test.Query.Profile
 {
     [TestFixture]
-    public class GetSpartanImageTests : TestSessionSetup
+    public class GetSpartanImageTests
     {
+        private const string BaseUri = "profile/h5/profiles/{0}/spartan{1}";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetSpartanImage();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, null), uri);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
+        {
+            var query = new GetSpartanImage()
+                .ForPlayer(gamertag);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, gamertag, null), uri);
+        }
+
+        [Test]
+        [TestCase(5)]
+        [TestCase(10)]
+        public void GetConstructedUri_Size_MatchesExpected(int size)
+        {
+            var query = new GetSpartanImage()
+                .Size(size);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, $"?size={size}"), uri);
+        }
+
+        [Test]
+        [TestCase(Enumeration.CropType.Full)]
+        [TestCase(Enumeration.CropType.Portrait)]
+        public void GetConstructedUri_Crop_MatchesExpected(Enumeration.CropType cropType)
+        {
+            var query = new GetSpartanImage()
+                .Crop(cropType);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, $"?crop={cropType}"), uri);
+        }
+
+        [Test]
+        [TestCase("Greenskull", 5, Enumeration.CropType.Full)]
+        [TestCase("Furiousn00b", 10, Enumeration.CropType.Portrait)]
+        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, int size, Enumeration.CropType cropType)
+        {
+            var query = new GetSpartanImage()
+                .ForPlayer(gamertag)
+                .Size(size)
+                .Crop(cropType);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, gamertag, $"?size={size}&crop={cropType}"), uri);
+        }
+
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
@@ -21,7 +88,7 @@ namespace HaloSharp.Test.Query.Profile
             var query = new GetSpartanImage()
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (GetImage), result);
         }
@@ -34,7 +101,7 @@ namespace HaloSharp.Test.Query.Profile
             var query = new GetSpartanImage()
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<GetImage>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);
@@ -52,7 +119,7 @@ namespace HaloSharp.Test.Query.Profile
                 .ForPlayer("Furiousn00b")
                 .Size(size);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(GetImage), result);
         }
@@ -64,7 +131,7 @@ namespace HaloSharp.Test.Query.Profile
                 .ForPlayer("Furiousn00b")
                 .Crop(Enumeration.CropType.Portrait);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(GetImage), result);
         }
@@ -83,7 +150,7 @@ namespace HaloSharp.Test.Query.Profile
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)
@@ -106,7 +173,7 @@ namespace HaloSharp.Test.Query.Profile
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)

@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return weapons;
             }
 
-            weapons = await session.Get<List<Weapon>>(MakeUrl());
+            weapons = await session.Get<List<Weapon>>(GetConstructedUri());
 
             Cache.Add(CacheKey, weapons);
 
             return weapons;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/weapons");
 

@@ -17,12 +17,12 @@ namespace HaloSharp.Query.Stats.CarnageReport
 
         public async Task<CampaignMatch> ApplyTo(IHaloSession session)
         {
-            var match = await session.Get<CampaignMatch>(MakeUrl());
+            var match = await session.Get<CampaignMatch>(GetConstructedUri());
 
             return match;
         }
 
-        private string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder($"stats/h5/campaign/matches/{_matchId}");
 

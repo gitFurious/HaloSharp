@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return medals;
             }
 
-            medals = await session.Get<List<Medal>>(MakeUrl());
+            medals = await session.Get<List<Medal>>(GetConstructedUri());
 
             Cache.Add(CacheKey, medals);
 
             return medals;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/medals");
 

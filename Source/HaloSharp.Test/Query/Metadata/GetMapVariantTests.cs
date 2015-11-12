@@ -11,8 +11,33 @@ using System.Threading.Tasks;
 namespace HaloSharp.Test.Query.Metadata
 {
     [TestFixture]
-    public class GetMapVariantTests : TestSessionSetup
+    public class GetMapVariantTests
     {
+        private const string BaseUri = "metadata/h5/metadata/map-variants/";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetMapVariant();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(BaseUri, uri);
+        }
+
+        [Test]
+        [TestCase("00000000-0000-0000-0000-000000000000")]
+        [TestCase("cb914b9e-f206-11e4-b447-24be05e24f7e")]
+        public void GetConstructedUri_ForMapVariantId_MatchesExpected(string guid)
+        {
+            var query = new GetMapVariant()
+                .ForMapVariantId(new Guid(guid));
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual($"{BaseUri}{guid}", uri);
+        }
+
         [Test]
         [TestCase("cb914b9e-f206-11e4-b447-24be05e24f7e")]
         [TestCase("cae999f0-f206-11e4-9835-24be05e24f7e")]
@@ -22,7 +47,7 @@ namespace HaloSharp.Test.Query.Metadata
                 .ForMapVariantId(new Guid(guid))
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (MapVariant), result);
         }
@@ -36,7 +61,7 @@ namespace HaloSharp.Test.Query.Metadata
                 .ForMapVariantId(new Guid(guid))
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<MapVariant>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);
@@ -52,7 +77,7 @@ namespace HaloSharp.Test.Query.Metadata
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)
@@ -73,7 +98,7 @@ namespace HaloSharp.Test.Query.Metadata
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)

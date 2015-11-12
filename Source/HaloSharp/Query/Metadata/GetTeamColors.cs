@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return teamColors;
             }
 
-            teamColors = await session.Get<List<TeamColor>>(MakeUrl());
+            teamColors = await session.Get<List<TeamColor>>(GetConstructedUri());
 
             Cache.Add(CacheKey, teamColors);
 
             return teamColors;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/team-colors");
 

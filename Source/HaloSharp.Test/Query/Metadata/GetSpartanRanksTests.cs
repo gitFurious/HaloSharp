@@ -9,15 +9,27 @@ using System.Threading.Tasks;
 namespace HaloSharp.Test.Query.Metadata
 {
     [TestFixture]
-    public class GetSpartanRanksTests : TestSessionSetup
+    public class GetSpartanRanksTests
     {
+        private const string BaseUri = "metadata/h5/metadata/spartan-ranks";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetSpartanRanks();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(BaseUri, uri);
+        }
+
         [Test]
         public async Task GetSpartanRanks()
         {
             var query = new GetSpartanRanks()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (List<SpartanRank>), result);
         }
@@ -28,7 +40,7 @@ namespace HaloSharp.Test.Query.Metadata
             var query = new GetSpartanRanks()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<List<SpartanRank>>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);

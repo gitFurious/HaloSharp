@@ -45,12 +45,12 @@ namespace HaloSharp.Query.Stats
 
         public async Task<MatchSet> ApplyTo(IHaloSession session)
         {
-            var matchSet = await session.Get<MatchSet>(MakeUrl());
+            var matchSet = await session.Get<MatchSet>(GetConstructedUri());
 
             return matchSet;
         }
 
-        private string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder($"stats/h5/players/{_player}/matches");
 

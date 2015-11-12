@@ -9,15 +9,27 @@ using System.Threading.Tasks;
 namespace HaloSharp.Test.Query.Metadata
 {
     [TestFixture]
-    public class GetWeaponsTests : TestSessionSetup
+    public class GetWeaponsTests
     {
+        private const string BaseUri = "metadata/h5/metadata/weapons";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetWeapons();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(BaseUri, uri);
+        }
+
         [Test]
         public async Task GetWeapons()
         {
             var query = new GetWeapons()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (List<Weapon>), result);
         }
@@ -28,7 +40,7 @@ namespace HaloSharp.Test.Query.Metadata
             var query = new GetWeapons()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<List<Weapon>>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);

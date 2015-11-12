@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return skulls;
             }
 
-            skulls = await session.Get<List<Skull>>(MakeUrl());
+            skulls = await session.Get<List<Skull>>(GetConstructedUri());
 
             Cache.Add(CacheKey, skulls);
 
             return skulls;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/skulls");
 

@@ -9,15 +9,27 @@ using System.Threading.Tasks;
 namespace HaloSharp.Test.Query.Metadata
 {
     [TestFixture]
-    public class GetGameBaseVariantsTests : TestSessionSetup
+    public class GetGameBaseVariantsTests
     {
+        private const string BaseUri = "metadata/h5/metadata/game-base-variants";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetGameBaseVariants();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(BaseUri, uri);
+        }
+
         [Test]
         public async Task GetGameBaseVariants()
         {
             var query = new GetGameBaseVariants()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (List<GameBaseVariant>), result);
         }
@@ -28,7 +40,7 @@ namespace HaloSharp.Test.Query.Metadata
             var query = new GetGameBaseVariants()
                 .SkipCache();
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<List<GameBaseVariant>>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);

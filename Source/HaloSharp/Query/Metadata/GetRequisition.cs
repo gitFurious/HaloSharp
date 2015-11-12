@@ -35,14 +35,14 @@ namespace HaloSharp.Query.Metadata
                 return requisition;
             }
 
-            requisition = await session.Get<Requisition>(MakeUrl());
+            requisition = await session.Get<Requisition>(GetConstructedUri());
 
             Cache.Add($"{CacheKey}-{_id}", requisition);
 
             return requisition;
         }
 
-        private string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder($"metadata/h5/metadata/requisitions/{_id}");
 

@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return vehicles;
             }
 
-            vehicles = await session.Get<List<Vehicle>>(MakeUrl());
+            vehicles = await session.Get<List<Vehicle>>(GetConstructedUri());
 
             Cache.Add(CacheKey, vehicles);
 
             return vehicles;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/vehicles");
 

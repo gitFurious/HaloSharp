@@ -24,12 +24,12 @@ namespace HaloSharp.Query.Stats.Lifetime
 
         public async Task<WarzoneServiceRecord> ApplyTo(IHaloSession session)
         {
-            var match = await session.Get<WarzoneServiceRecord>(MakeUrl());
+            var match = await session.Get<WarzoneServiceRecord>(GetConstructedUri());
 
             return match;
         }
 
-        private string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("stats/h5/servicerecords/warzone");
 

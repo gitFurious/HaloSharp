@@ -24,12 +24,12 @@ namespace HaloSharp.Query.Stats.Lifetime
 
         public async Task<ArenaServiceRecord> ApplyTo(IHaloSession session)
         {
-            var match = await session.Get<ArenaServiceRecord>(MakeUrl());
+            var match = await session.Get<ArenaServiceRecord>(GetConstructedUri());
 
             return match;
         }
 
-        private string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("stats/h5/servicerecords/arena");
 

@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return competitiveSkillRankDesignations;
             }
 
-            competitiveSkillRankDesignations = await session.Get<List<CompetitiveSkillRankDesignation>>(MakeUrl());
+            competitiveSkillRankDesignations = await session.Get<List<CompetitiveSkillRankDesignation>>(GetConstructedUri());
 
             Cache.Add(CacheKey, competitiveSkillRankDesignations);
 
             return competitiveSkillRankDesignations;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/csr-designations");
 

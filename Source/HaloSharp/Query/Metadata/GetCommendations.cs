@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return commendations;
             }
 
-            commendations = await session.Get<List<Commendation>>(MakeUrl());
+            commendations = await session.Get<List<Commendation>>(GetConstructedUri());
 
             Cache.Add(CacheKey, commendations);
 
             return commendations;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/commendations");
 

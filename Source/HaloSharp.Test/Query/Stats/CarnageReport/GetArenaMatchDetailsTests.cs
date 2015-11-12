@@ -13,46 +13,54 @@ using System.Threading.Tasks;
 namespace HaloSharp.Test.Query.Stats.CarnageReport
 {
     [TestFixture]
-    public class GetArenaMatchDetailsTests : TestSessionSetup
+    public class GetArenaMatchDetailsTests
     {
+        private const string BaseUri = "stats/h5/arena/matches/";
+
         [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        public async Task GetArenaMatchDetails(string gamertag)
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
         {
-            var getMatchesQuery = new GetMatches()
-                .InGameMode(Enumeration.GameMode.Arena)
-                .ForPlayer(gamertag);
+            var query = new GetArenaMatchDetails();
 
-            var matches = await Session.Query(getMatchesQuery);
+            var uri = query.GetConstructedUri();
 
-            Assert.IsTrue(matches.Results.Any());
+            Assert.AreEqual(BaseUri, uri);
+        }
 
-            var getArenaMatchDetailsQuery = new GetArenaMatchDetails()
-                .ForMatchId(matches.Results.First().Id.MatchId);
+        [Test]
+        [TestCase("00000000-0000-0000-0000-000000000000")]
+        public void GetConstructedUri_ForMatchId_MatchesExpected(string guid)
+        {
+            var query = new GetArenaMatchDetails()
+                .ForMatchId(new Guid(guid));
 
-            var result = await Session.Query(getArenaMatchDetailsQuery);
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual($"{BaseUri}{guid}", uri);
+        }
+
+        [Test]
+        [TestCase("a3938034-d2d4-45db-a136-393b9e2e27d3")]
+        [TestCase("06d7f2d0-d2b8-4804-b989-e60be099df09")]
+        public async Task GetArenaMatchDetails(string guid)
+        {
+            var query = new GetArenaMatchDetails()
+                .ForMatchId(new Guid(guid));
+
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(ArenaMatch), result);
         }
 
         [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        public async Task GetArenaMatchDetails_IsSerializable(string gamertag)
+        [TestCase("a3938034-d2d4-45db-a136-393b9e2e27d3")]
+        [TestCase("06d7f2d0-d2b8-4804-b989-e60be099df09")]
+        public async Task GetArenaMatchDetails_IsSerializable(string guid)
         {
-            var getMatchesQuery = new GetMatches()
-                .InGameMode(Enumeration.GameMode.Arena)
-                .ForPlayer(gamertag);
+            var query = new GetArenaMatchDetails()
+                .ForMatchId(new Guid(guid));
 
-            var matches = await Session.Query(getMatchesQuery);
-
-            Assert.IsTrue(matches.Results.Any());
-
-            var getArenaMatchDetailsQuery = new GetArenaMatchDetails()
-                .ForMatchId(matches.Results.First().Id.MatchId);
-
-            var result = await Session.Query(getArenaMatchDetailsQuery);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<ArenaMatch>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);
@@ -67,7 +75,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)
@@ -87,7 +95,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)

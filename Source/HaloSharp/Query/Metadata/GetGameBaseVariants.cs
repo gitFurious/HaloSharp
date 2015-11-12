@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return gameBaseVariants;
             }
 
-            gameBaseVariants = await session.Get<List<GameBaseVariant>>(MakeUrl());
+            gameBaseVariants = await session.Get<List<GameBaseVariant>>(GetConstructedUri());
 
             Cache.Add(CacheKey, gameBaseVariants);
 
             return gameBaseVariants;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/game-base-variants");
 

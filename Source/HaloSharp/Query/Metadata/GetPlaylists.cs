@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return playlists;
             }
 
-            playlists = await session.Get<List<Playlist>>(MakeUrl());
+            playlists = await session.Get<List<Playlist>>(GetConstructedUri());
 
             Cache.Add(CacheKey, playlists);
 
             return playlists;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/playlists");
 

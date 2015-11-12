@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return maps;
             }
 
-            maps = await session.Get<List<Map>>(MakeUrl());
+            maps = await session.Get<List<Map>>(GetConstructedUri());
 
             Cache.Add(CacheKey, maps);
 
             return maps;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/maps");
 

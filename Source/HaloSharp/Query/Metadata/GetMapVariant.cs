@@ -35,14 +35,14 @@ namespace HaloSharp.Query.Metadata
                 return mapVariant;
             }
 
-            mapVariant = await session.Get<MapVariant>(MakeUrl());
+            mapVariant = await session.Get<MapVariant>(GetConstructedUri());
 
             Cache.Add($"{CacheKey}-{_id}", mapVariant);
 
             return mapVariant;
         }
 
-        private string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder($"metadata/h5/metadata/map-variants/{_id}");
 

@@ -28,14 +28,14 @@ namespace HaloSharp.Query.Metadata
                 return flexibleStats;
             }
 
-            flexibleStats = await session.Get<List<FlexibleStat>>(MakeUrl());
+            flexibleStats = await session.Get<List<FlexibleStat>>(GetConstructedUri());
 
             Cache.Add(CacheKey, flexibleStats);
 
             return flexibleStats;
         }
 
-        private static string MakeUrl()
+        public string GetConstructedUri()
         {
             var builder = new StringBuilder("metadata/h5/metadata/flexible-stats");
 

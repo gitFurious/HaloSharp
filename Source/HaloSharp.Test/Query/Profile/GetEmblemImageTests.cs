@@ -1,18 +1,69 @@
 ﻿using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model;
-using HaloSharp.Query.Profile;
-using NUnit.Framework;
-using System.Drawing;
-using System.Threading.Tasks;
 using HaloSharp.Model.Profile;
+using HaloSharp.Query.Profile;
 using HaloSharp.Test.Utility;
+using NUnit.Framework;
+using System.Threading.Tasks;
 
 namespace HaloSharp.Test.Query.Profile
 {
     [TestFixture]
-    public class GetEmblemImageTests : TestSessionSetup
+    public class GetEmblemImageTests
     {
+        private const string BaseUri = "profile/h5/profiles/{0}/emblem{1}";
+
+        [Test]
+        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        {
+            var query = new GetEmblemImage();
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, null), uri);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
+        {
+            var query = new GetEmblemImage()
+                .ForPlayer(gamertag);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, gamertag, null), uri);
+        }
+
+        [Test]
+        [TestCase(5)]
+        [TestCase(10)]
+        public void GetConstructedUri_Size_MatchesExpected(int size)
+        {
+            var query = new GetEmblemImage()
+                .Size(size);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, null, $"?size={size}"), uri);
+        }
+
+        [Test]
+        [TestCase("Greenskull", 5)]
+        [TestCase("Furiousn00b", 10)]
+        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, int size)
+        {
+            var query = new GetEmblemImage()
+                .ForPlayer(gamertag)
+                .Size(size);
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual(string.Format(BaseUri, gamertag, $"?size={size}"), uri);
+        }
+
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
@@ -21,7 +72,7 @@ namespace HaloSharp.Test.Query.Profile
             var query = new GetEmblemImage()
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (GetImage), result);
         }
@@ -34,7 +85,7 @@ namespace HaloSharp.Test.Query.Profile
             var query = new GetEmblemImage()
                 .ForPlayer(gamertag);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             var serializationUtility = new SerializationUtility<GetImage>();
             serializationUtility.AssertRoundTripSerializationIsPossible(result);
@@ -52,7 +103,7 @@ namespace HaloSharp.Test.Query.Profile
                 .ForPlayer("Furiousn00b")
                 .Size(size);
 
-            var result = await Session.Query(query);
+            var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(GetImage), result);
         }
@@ -71,7 +122,7 @@ namespace HaloSharp.Test.Query.Profile
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)
@@ -94,7 +145,7 @@ namespace HaloSharp.Test.Query.Profile
 
             try
             {
-                await Session.Query(query);
+                await Global.Session.Query(query);
                 Assert.Fail("An exception should have been thrown");
             }
             catch (HaloApiException e)
