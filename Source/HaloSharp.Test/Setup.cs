@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
 namespace HaloSharp.Test
 {
@@ -10,7 +11,7 @@ namespace HaloSharp.Test
         [SetUp]
         public void RunBeforeAnyTests()
         {
-            var client = new HaloClient("00000000000000000000000000000000");
+            var client = new HaloClient(Environment.GetEnvironmentVariable("SUBSCRIPTION_KEY"));
             Session = client.StartSession();
         }
 

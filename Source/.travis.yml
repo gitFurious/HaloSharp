@@ -1,0 +1,10 @@
+language: csharp
+solution: HaloSharp.sln
+install:
+  - nuget restore HaloSharp.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release HaloSharp.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./HaloSharp.Tests/bin/Release/HaloSharp.Test.dll
+mono:
+  - latest
