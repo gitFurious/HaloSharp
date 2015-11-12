@@ -25,7 +25,7 @@ namespace HaloSharp
         {
             if (product.RateLimit != null)
             {
-                _rateGate = new RateGate(product.RateLimit.RequestCount, product.RateLimit.TimspSpan, product.RateLimit.Timeout);
+                _rateGate = new RateGate(product.RateLimit);
             }
 
             var handler = new HttpClientHandler
@@ -38,7 +38,14 @@ namespace HaloSharp
 
         public async Task<TResult> Get<TResult>(string path)
         {
-            _rateGate?.WaitToProceed();
+            var entered = _rateGate?.WaitToProceed() ?? true;
+            if (!entered)
+            {
+                throw new HaloApiException(new HaloApiError
+                {
+                    Message = "Rate limit timeout reached."
+                });
+            }
 
             var htpResponseMessage = await _httpClient.GetAsync(GetUrl(path));
             var content = await htpResponseMessage.Content.ReadAsStringAsync();
@@ -62,7 +69,14 @@ namespace HaloSharp
 
         public async Task<Tuple<string, Image>> GetImage(string path)
         {
-            _rateGate?.WaitToProceed();
+            var entered = _rateGate?.WaitToProceed() ?? true;
+            if (!entered)
+            {
+                throw new HaloApiException(new HaloApiError
+                {
+                    Message = "Rate limit timeout reached."
+                });
+            }
 
             var htpResponseMessage = await _httpClient.GetAsync(GetUrl(path));
 
