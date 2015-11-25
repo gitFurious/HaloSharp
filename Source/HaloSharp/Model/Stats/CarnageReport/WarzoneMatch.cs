@@ -81,9 +81,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
         public int TotalPiesEarned { get; set; }
         public int WarzoneLevel { get; set; }
         public XpInfo XpInfo { get; set; }
-
-        // TODO: Question sanity.
-        //public List<MetaCommendationDelta> MetaCommendationDeltas { get; set; }
+        public List<MetaCommendationDelta> MetaCommendationDeltas { get; set; }
 
         public bool Equals(WarzonePlayerStat other)
         {
