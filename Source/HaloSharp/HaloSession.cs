@@ -47,12 +47,12 @@ namespace HaloSharp
                 });
             }
 
-            var htpResponseMessage = await _httpClient.GetAsync(GetUrl(path));
-            var content = await htpResponseMessage.Content.ReadAsStringAsync();
+            var httpResponseMessage = await _httpClient.GetAsync(GetUrl(path));
+            var content = await httpResponseMessage.Content.ReadAsStringAsync();
 
             _rateGate?.SignalExit();
 
-            if (!htpResponseMessage.IsSuccessStatusCode)
+            if (!httpResponseMessage.IsSuccessStatusCode)
             {
                 var haloApiError = await content.ParsedAsJson<HaloApiError>();
 
@@ -61,7 +61,7 @@ namespace HaloSharp
                     throw new HaloApiException(haloApiError);
                 }
 
-                throw new HaloApiException((int) htpResponseMessage.StatusCode, htpResponseMessage.ReasonPhrase);
+                throw new HaloApiException((int) httpResponseMessage.StatusCode, httpResponseMessage.ReasonPhrase);
             }
 
             return await content.ParsedAsJson<TResult>();
