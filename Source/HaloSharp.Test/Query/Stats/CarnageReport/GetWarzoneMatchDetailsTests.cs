@@ -43,6 +43,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         [TestCase("22ee16eb-cdb9-4acf-9324-4a5516f93852")]
         [TestCase("982eaef6-4ed4-43b3-9361-b40563122b92")]
+        [TestCase("ea392dc3-5989-4fa8-b920-08e265220ffc")] // Contains MetaCommendationDeltas
         public async Task GetWarzoneMatchDetails(string guid)
         {
             var query = new GetWarzoneMatchDetails()
@@ -56,6 +57,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         [TestCase("22ee16eb-cdb9-4acf-9324-4a5516f93852")]
         [TestCase("982eaef6-4ed4-43b3-9361-b40563122b92")]
+        [TestCase("ea392dc3-5989-4fa8-b920-08e265220ffc")] // Contains MetaCommendationDeltas
         public async Task GetWarzoneMatchDetails_IsSerializable(string guid)
         {
             var query = new GetWarzoneMatchDetails()

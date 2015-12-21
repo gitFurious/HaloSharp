@@ -42,6 +42,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         [TestCase("a3938034-d2d4-45db-a136-393b9e2e27d3")]
         [TestCase("06d7f2d0-d2b8-4804-b989-e60be099df09")]
+        [TestCase("eaba11d8-ac94-432d-85f9-aed32d294e91")] // Contains MetaCommendationDeltas
         public async Task GetArenaMatchDetails(string guid)
         {
             var query = new GetArenaMatchDetails()
@@ -55,6 +56,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         [TestCase("a3938034-d2d4-45db-a136-393b9e2e27d3")]
         [TestCase("06d7f2d0-d2b8-4804-b989-e60be099df09")]
+        [TestCase("eaba11d8-ac94-432d-85f9-aed32d294e91")] // Contains MetaCommendationDeltas
         public async Task GetArenaMatchDetails_IsSerializable(string guid)
         {
             var query = new GetArenaMatchDetails()

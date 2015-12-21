@@ -83,10 +83,8 @@ namespace HaloSharp.Model.Stats.CarnageReport
         public List<ProgressiveCommendationDelta> ProgressiveCommendationDeltas { get; set; }
         public List<RewardSet> RewardSets { get; set; }
         public XpInfo XpInfo { get; set; }
+        public List<MetaCommendationDelta> MetaCommendationDeltas { get; set; }
         
-        // TODO: Question sanity.
-        //public List<MetaCommendationDelta> MetaCommendationDeltas { get; set; }
-
         public bool Equals(ArenaMatchPlayerStat other)
         {
             if (ReferenceEquals(null, other))
