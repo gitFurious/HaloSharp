@@ -1,14 +1,16 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Common
 {
     [Serializable]
     public class Identity : IEquatable<Identity>
     {
+        [JsonProperty(PropertyName = "Gamertag")]
         public string Gamertag { get; set; }
 
-        // Internal use only.
-        //public object Xuid { get; set; } //This will always be null.
+        [JsonProperty(PropertyName = "Xuid")]
+        public object Xuid { get; set; }
 
         public bool Equals(Identity other)
         {
@@ -22,7 +24,8 @@ namespace HaloSharp.Model.Stats.Common
                 return true;
             }
 
-            return string.Equals(Gamertag, other.Gamertag);
+            return string.Equals(Gamertag, other.Gamertag)
+                && Equals(Xuid, other.Xuid);
         }
 
         public override bool Equals(object obj)
@@ -47,7 +50,10 @@ namespace HaloSharp.Model.Stats.Common
 
         public override int GetHashCode()
         {
-            return Gamertag?.GetHashCode() ?? 0;
+            unchecked
+            {
+                return ((Gamertag?.GetHashCode() ?? 0)*397) ^ (Xuid?.GetHashCode() ?? 0);
+            }
         }
 
         public static bool operator ==(Identity left, Identity right)

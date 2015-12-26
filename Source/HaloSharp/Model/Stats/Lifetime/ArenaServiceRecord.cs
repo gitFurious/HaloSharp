@@ -1,14 +1,16 @@
-﻿using HaloSharp.Model.Stats.Common;
-using HaloSharp.Model.Stats.Lifetime.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Stats.Common;
+using HaloSharp.Model.Stats.Lifetime.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Lifetime
 {
     [Serializable]
     public class ArenaServiceRecord : BaseServiceRecord, IEquatable<ArenaServiceRecord>
     {
+        [JsonProperty(PropertyName = "Results")]
         public List<ArenaServiceRecordResult> Results { get; set; }
 
         public bool Equals(ArenaServiceRecord other)
@@ -69,6 +71,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class ArenaServiceRecordResult : BaseServiceRecordResult, IEquatable<ArenaServiceRecordResult>
     {
+        [JsonProperty(PropertyName = "Result")]
         public ArenaResult Result { get; set; }
 
         public bool Equals(ArenaServiceRecordResult other)
@@ -129,6 +132,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class ArenaResult : BaseResult, IEquatable<ArenaResult>
     {
+        [JsonProperty(PropertyName = "ArenaStats")]
         public ArenaStat ArenaStats { get; set; }
 
         public bool Equals(ArenaResult other)
@@ -143,7 +147,8 @@ namespace HaloSharp.Model.Stats.Lifetime
                 return true;
             }
 
-            return base.Equals(other) && Equals(ArenaStats, other.ArenaStats);
+            return base.Equals(other)
+                && Equals(ArenaStats, other.ArenaStats);
         }
 
         public override bool Equals(object obj)
@@ -188,10 +193,19 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class ArenaStat : BaseStat, IEquatable<ArenaStat>
     {
-        public List<ArenaGameBaseVariantStat> ArenaGameBaseVariantStats { get; set; }
+        [JsonProperty(PropertyName = "ArenaGameBaseVariantStats")]
+        public List<GameBaseVariantStat> ArenaGameBaseVariantStats { get; set; }
+
+        [JsonProperty(PropertyName = "ArenaPlaylistStats")]
         public List<ArenaPlaylistStat> ArenaPlaylistStats { get; set; }
+
+        [JsonProperty(PropertyName = "HighestCsrAttained")]
         public CompetitiveSkillRanking HighestCsrAttained { get; set; }
+
+        [JsonProperty(PropertyName = "HighestCsrPlaylistId")]
         public Guid? HighestCsrPlaylistId { get; set; }
+
+        [JsonProperty(PropertyName = "TopGameBaseVariants")]
         public List<TopGameBaseVariant> TopGameBaseVariants { get; set; }
 
         public bool Equals(ArenaStat other)
@@ -260,76 +274,18 @@ namespace HaloSharp.Model.Stats.Lifetime
     }
 
     [Serializable]
-    public class ArenaGameBaseVariantStat : BaseStat, IEquatable<ArenaGameBaseVariantStat>
-    {
-        public FlexibleStats FlexibleStats { get; set; }
-        public Guid GameBaseVariantId { get; set; }
-
-        public bool Equals(ArenaGameBaseVariantStat other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            return base.Equals(other)
-                && Equals(FlexibleStats, other.FlexibleStats)
-                && GameBaseVariantId.Equals(other.GameBaseVariantId);
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != typeof (ArenaGameBaseVariantStat))
-            {
-                return false;
-            }
-
-            return Equals((ArenaGameBaseVariantStat) obj);
-        }
-
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                int hashCode = base.GetHashCode();
-                hashCode = (hashCode*397) ^ (FlexibleStats?.GetHashCode() ?? 0);
-                hashCode = (hashCode*397) ^ GameBaseVariantId.GetHashCode();
-                return hashCode;
-            }
-        }
-
-        public static bool operator ==(ArenaGameBaseVariantStat left, ArenaGameBaseVariantStat right)
-        {
-            return Equals(left, right);
-        }
-
-        public static bool operator !=(ArenaGameBaseVariantStat left, ArenaGameBaseVariantStat right)
-        {
-            return !Equals(left, right);
-        }
-    }
-
-    [Serializable]
     public class ArenaPlaylistStat : BaseStat, IEquatable<ArenaPlaylistStat>
     {
+        [JsonProperty(PropertyName = "Csr")]
         public CompetitiveSkillRanking Csr { get; set; }
+
+        [JsonProperty(PropertyName = "HighestCsr")]
         public CompetitiveSkillRanking HighestCsr { get; set; }
+
+        [JsonProperty(PropertyName = "MeasurementMatchesLeft")]
         public int MeasurementMatchesLeft { get; set; }
+
+        [JsonProperty(PropertyName = "PlaylistId")]
         public Guid PlaylistId { get; set; }
 
         public bool Equals(ArenaPlaylistStat other)

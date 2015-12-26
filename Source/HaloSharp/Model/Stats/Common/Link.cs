@@ -1,16 +1,30 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Common
 {
     [Serializable]
     public class Link : IEquatable<Link>
     {
+        [JsonProperty(PropertyName = "AcknowledgementTypeId")]
         public int AcknowledgementTypeId { get; set; }
+
+        [JsonProperty(PropertyName = "AuthenticationLifetimeExtensionSupported")]
         public bool AuthenticationLifetimeExtensionSupported { get; set; }
+
+        [JsonProperty(PropertyName = "AuthorityId")]
         public string AuthorityId { get; set; }
+
+        [JsonProperty(PropertyName = "Path")]
         public string Path { get; set; }
+
+        [JsonProperty(PropertyName = "QueryString")]
         public object QueryString { get; set; }
+
+        [JsonProperty(PropertyName = "RetryPolicyId")]
         public string RetryPolicyId { get; set; }
+
+        [JsonProperty(PropertyName = "TopicName")]
         public string TopicName { get; set; }
 
         public bool Equals(Link other)

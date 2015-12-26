@@ -32,7 +32,9 @@ namespace HaloSharp.Converter
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            throw new NotImplementedException();
+            var ts = (TimeSpan)value;
+            var tsString = XmlConvert.ToString(ts);
+            serializer.Serialize(writer, tsString);
         }
     }
 }

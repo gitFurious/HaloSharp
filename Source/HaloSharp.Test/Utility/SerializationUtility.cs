@@ -10,7 +10,7 @@ namespace HaloSharp.Test.Utility
         // ReSharper disable once StaticMemberInGenericType
         private static readonly IFormatter Formatter = new BinaryFormatter();
 
-        public void AssertRoundTripSerializationIsPossible(T source)
+        public static void AssertRoundTripSerializationIsPossible(T source)
         {
             var clone = CloneBySerialization(source);
 

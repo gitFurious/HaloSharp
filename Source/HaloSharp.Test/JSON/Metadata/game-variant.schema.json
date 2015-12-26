@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "gameBaseVariantId": {
+      "type": "string"
+    },
+    "iconUrl": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "contentId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "gameBaseVariantId",
+    "iconUrl",
+    "id",
+    "contentId"
+  ]
+}

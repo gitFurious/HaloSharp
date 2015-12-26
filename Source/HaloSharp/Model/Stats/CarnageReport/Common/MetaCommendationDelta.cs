@@ -1,16 +1,21 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class MetaCommendationDelta : IEquatable<MetaCommendationDelta>
     {
+        [JsonProperty(PropertyName = "Id")]
         public Guid Id { get; set; }
-        public List<RawGuid> PreviousMetRequirements { get; set; } 
-        public List<RawGuid> MetRequirements { get; set; } 
+
+        [JsonProperty(PropertyName = "PreviousMetRequirements")]
+        public List<Requirement> PreviousMetRequirements { get; set; }
+
+        [JsonProperty(PropertyName = "MetRequirements")]
+        public List<Requirement> MetRequirements { get; set; }
 
         public bool Equals(MetaCommendationDelta other)
         {
@@ -24,9 +29,9 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 return true;
             }
 
-            return Id == other.Id
-                && PreviousMetRequirements.OrderBy(rg => rg).SequenceEqual(other.PreviousMetRequirements.OrderBy(rg => rg))
-                && MetRequirements.OrderBy(rg => rg).SequenceEqual(other.MetRequirements.OrderBy(rg => rg));
+            return Id.Equals(other.Id)
+                && PreviousMetRequirements.OrderBy(mcd => mcd.Guid).SequenceEqual(other.PreviousMetRequirements.OrderBy(mcd => mcd.Guid))
+                && MetRequirements.OrderBy(mcd => mcd.Guid).SequenceEqual(other.MetRequirements.OrderBy(mcd => mcd.Guid));
         }
 
         public override bool Equals(object obj)
@@ -41,12 +46,12 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 return true;
             }
 
-            if (obj.GetType() != typeof (MetaCommendationDelta))
+            if (obj.GetType() != typeof(MetaCommendationDelta))
             {
                 return false;
             }
 
-            return Equals((MetaCommendationDelta) obj);
+            return Equals((MetaCommendationDelta)obj);
         }
 
         public override int GetHashCode()
@@ -54,8 +59,8 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
             unchecked
             {
                 var hashCode = Id.GetHashCode();
-                hashCode = (hashCode*397) ^ (PreviousMetRequirements?.GetHashCode() ?? 0);
-                hashCode = (hashCode*397) ^ (MetRequirements?.GetHashCode() ?? 0);
+                hashCode = (hashCode * 397) ^ (PreviousMetRequirements?.GetHashCode() ?? 0);
+                hashCode = (hashCode * 397) ^ (MetRequirements?.GetHashCode() ?? 0);
                 return hashCode;
             }
         }
@@ -67,86 +72,98 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
 
         public static bool operator !=(MetaCommendationDelta left, MetaCommendationDelta right)
         {
-            return Equals(left, right);
+            return !Equals(left, right);
         }
     }
 
     [Serializable]
-    public struct RawGuid : IFormattable, IComparable, IComparable<Guid>, IEquatable<RawGuid>
+    public class Requirement : IEquatable<Requirement>
     {
-        private readonly uint data1;
-        private readonly ushort data2;
-        private readonly ushort data3;
-        private readonly ulong data4;
-        private readonly Guid guid;
-    
-        public RawGuid(Guid guid)
-        {
-            var bytes = guid.ToByteArray();
-
-            this.data1 = (uint)BitConverter.ToInt32(bytes, 0);
-            this.data2 = (ushort)BitConverter.ToInt16(bytes, 4);
-            this.data3 = (ushort)BitConverter.ToInt16(bytes, 6);
-            this.data4 = (ulong)BitConverter.ToInt64(bytes, 8);
-            this.guid = guid;
-        }
-
         [JsonConstructor]
-        public RawGuid(uint data1, ushort data2, ushort data3, ulong data4)
+        public Requirement(uint data1, ushort data2, ushort data3, ulong data4)
         {
-            this.data1 = data1;
-            this.data2 = data2;
-            this.data3 = data3;
-            this.data4 = data4;
-            this.guid = new Guid((int)data1, (short)data2, (short)data3, BitConverter.GetBytes((long)data4));
+            Data1 = data1;
+            Data2 = data2;
+            Data3 = data3;
+            Data4 = data4;
+            Guid = new Guid((int)data1, (short)data2, (short)data3, BitConverter.GetBytes((long)data4));
         }
 
-        public uint Data1 { get { return this.data1; } }
-        public ushort Data2 { get { return this.data2; } }
-        public ushort Data3 { get { return this.data3; } }
-        public ulong Data4 { get { return this.data4; } }
-    
-        [JsonIgnore]
-        public Guid Guid { get { return this.guid; } }
+        [JsonProperty(PropertyName = "Data1")]
+        public uint Data1 { get; }
 
-        public bool Equals(RawGuid other)
+        [JsonProperty(PropertyName = "Data2")]
+        public ushort Data2 { get; }
+
+        [JsonProperty(PropertyName = "Data3")]
+        public ushort Data3 { get; }
+
+        [JsonProperty(PropertyName = "Data4")]
+        public ulong Data4 { get; }
+
+        [JsonIgnore]
+        public Guid Guid { get; }
+
+        public bool Equals(Requirement other)
         {
-            return this.guid.Equals(other.guid);
+            if (ReferenceEquals(null, other))
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            return Data1 == other.Data1
+                && Data2 == other.Data2
+                && Data3 == other.Data3
+                && Data4 == other.Data4
+                && Guid.Equals(other.Guid);
         }
 
         public override bool Equals(object obj)
         {
-            return this.guid.Equals(obj);
-        }
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
 
-        public int CompareTo(Guid other)
-        {
-            return this.guid.CompareTo(other);
-        }
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
 
-        public int CompareTo(object obj)
-        {
-            return this.guid.CompareTo(obj);
+            if (obj.GetType() != typeof(Requirement))
+            {
+                return false;
+            }
+
+            return Equals((Requirement)obj);
         }
 
         public override int GetHashCode()
         {
-            return this.guid.GetHashCode();
+            unchecked
+            {
+                var hashCode = (int)Data1;
+                hashCode = (hashCode * 397) ^ Data2.GetHashCode();
+                hashCode = (hashCode * 397) ^ Data3.GetHashCode();
+                hashCode = (hashCode * 397) ^ Data4.GetHashCode();
+                hashCode = (hashCode * 397) ^ Guid.GetHashCode();
+                return hashCode;
+            }
         }
 
-        public string ToString(string format, IFormatProvider provider)
+        public static bool operator ==(Requirement left, Requirement right)
         {
-            return this.guid.ToString(format, provider);
+            return Equals(left, right);
         }
 
-        public static bool operator ==(RawGuid left, RawGuid right)
+        public static bool operator !=(Requirement left, Requirement right)
         {
-            return left.Equals(right);
-        }
-
-        public static bool operator !=(RawGuid left, RawGuid right)
-        {
-            return !left.Equals(right);
+            return !Equals(left, right);
         }
     }
 }

@@ -1,13 +1,21 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Lifetime.Common
 {
     [Serializable]
     public class TopGameBaseVariant : IEquatable<TopGameBaseVariant>
     {
+        [JsonProperty(PropertyName = "GameBaseVariantId")]
         public Guid GameBaseVariantId { get; set; }
+
+        [JsonProperty(PropertyName = "GameBaseVariantRank")]
         public int GameBaseVariantRank { get; set; }
+
+        [JsonProperty(PropertyName = "NumberOfMatchesCompleted")]
         public int NumberOfMatchesCompleted { get; set; }
+
+        [JsonProperty(PropertyName = "NumberOfMatchesWon")]
         public int NumberOfMatchesWon { get; set; }
 
         public bool Equals(TopGameBaseVariant other)

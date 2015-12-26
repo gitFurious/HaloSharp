@@ -1,0 +1,230 @@
+[
+    {
+        "name":"Kills",
+        "type":"Count",
+        "id":"ba327946-418c-495d-90c0-89f084bf7447",
+        "contentId":"ba327946-418c-495d-90c0-89f084bf7447"
+    },
+    {
+        "name":"Assists",
+        "type":"Count",
+        "id":"7dcd7306-f905-401a-97f2-345d4b25170a",
+        "contentId":"7dcd7306-f905-401a-97f2-345d4b25170a"
+    },
+    {
+        "name":"Deaths",
+        "type":"Count",
+        "id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
+        "contentId":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87"
+    },
+    {
+        "name":"Bases Captured",
+        "type":"Count",
+        "id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+        "contentId":"63783dc0-7c2d-436a-bd5b-22da2f4705d4"
+    },
+    {
+        "name":"Base Defense Kills",
+        "type":"Count",
+        "id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
+        "contentId":"dfe11eb0-6064-4cbe-98fe-502be1e03a80"
+    },
+    {
+        "name":"Core Defense Kills",
+        "type":"Count",
+        "id":"d69d04f8-ef9b-4f2a-bacc-beef99c27e40",
+        "contentId":"d69d04f8-ef9b-4f2a-bacc-beef99c27e40"
+    },
+    {
+        "name":"Base Assault Kills",
+        "type":"Count",
+        "id":"1dcd89da-1051-4ebc-ba89-fc971d0d5414",
+        "contentId":"1dcd89da-1051-4ebc-ba89-fc971d0d5414"
+    },
+    {
+        "name":"Core Assault Kills",
+        "type":"Count",
+        "id":"55c97979-8e18-46ed-8f4c-9ae3fb527432",
+        "contentId":"55c97979-8e18-46ed-8f4c-9ae3fb527432"
+    },
+    {
+        "name":"Vehicles Destroyed",
+        "type":"Count",
+        "id":"759e130c-4ace-460b-bfe4-2cd05a1b974b",
+        "contentId":"759e130c-4ace-460b-bfe4-2cd05a1b974b"
+    },
+    {
+        "name":"Marine Kill",
+        "type":"Count",
+        "id":"f838413e-2bd4-4f21-990a-e9ddcb167d64",
+        "contentId":"f838413e-2bd4-4f21-990a-e9ddcb167d64"
+    },
+    {
+        "name":"Core Destruction Victories",
+        "type":"Count",
+        "id":"eb1c4f47-18b7-45df-a145-a1126048c3d8",
+        "contentId":"eb1c4f47-18b7-45df-a145-a1126048c3d8"
+    },
+    {
+        "name":"Defender Wins",
+        "type":"Count",
+        "id":"6d2104b1-d064-4ed0-9f45-a831875c4014",
+        "contentId":"6d2104b1-d064-4ed0-9f45-a831875c4014"
+    },
+    {
+        "name":"Defender Shutouts",
+        "type":"Count",
+        "id":"c8285c5b-6339-4fae-b2de-559c48eb834d",
+        "contentId":"c8285c5b-6339-4fae-b2de-559c48eb834d"
+    },
+    {
+        "name":"Boss Takedowns",
+        "type":"Count",
+        "id":"65df9735-86e1-48b3-a286-08b1d8af9c81",
+        "contentId":"65df9735-86e1-48b3-a286-08b1d8af9c81"
+    },
+    {
+        "name":"Legendary Takedowns",
+        "type":"Count",
+        "id":"06ba69fe-3208-4a3e-821e-c92cbad89042",
+        "contentId":"06ba69fe-3208-4a3e-821e-c92cbad89042"
+    },
+    {
+        "name":"Point Victories",
+        "type":"Count",
+        "id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
+        "contentId":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e"
+    },
+    {
+        "name":"Revived",
+        "type":"Count",
+        "id":"6751fae0-c17e-423f-9d3a-6446b6e58d15",
+        "contentId":"6751fae0-c17e-423f-9d3a-6446b6e58d15"
+    },
+    {
+        "name":"Headshots",
+        "type":"Count",
+        "id":"3465eba1-608c-47d7-9cb6-ef4c7a55a2dd",
+        "contentId":"3465eba1-608c-47d7-9cb6-ef4c7a55a2dd"
+    },
+    {
+        "name":"Flags Captured",
+        "type":"Count",
+        "id":"7cda10c8-04c4-4916-8d6e-71a426a61de8",
+        "contentId":"7cda10c8-04c4-4916-8d6e-71a426a61de8"
+    },
+    {
+        "name":"Flag Carrier Kill",
+        "type":"Count",
+        "id":"6e1e4e2c-1a57-4f64-a893-f594974b3f1f",
+        "contentId":"6e1e4e2c-1a57-4f64-a893-f594974b3f1f"
+    },
+    {
+        "name":"Round Winning Kills",
+        "type":"Count",
+        "id":"5262f1d7-4273-48c3-8d2f-edfcb36a1617",
+        "contentId":"5262f1d7-4273-48c3-8d2f-edfcb36a1617"
+    },
+    {
+        "name":"Kills as Last Man",
+        "type":"Count",
+        "id":"53ea3e8c-ac2a-4644-b6e2-4ac45e721cca",
+        "contentId":"53ea3e8c-ac2a-4644-b6e2-4ac45e721cca"
+    },
+    {
+        "name":"Head-to-Head Round Wins",
+        "type":"Count",
+        "id":"10d1690e-9820-4d98-a7a6-361173370f40",
+        "contentId":"10d1690e-9820-4d98-a7a6-361173370f40"
+    },
+    {
+        "name":"Rounds Won",
+        "type":"Count",
+        "id":"ded6e97f-575a-4511-833b-62bf5489a2c1",
+        "contentId":"ded6e97f-575a-4511-833b-62bf5489a2c1"
+    },
+    {
+        "name":"Flag Carry Time",
+        "type":"Duration",
+        "id":"a3fd8c22-a921-4662-a92b-1f7e965df8fd",
+        "contentId":"a3fd8c22-a921-4662-a92b-1f7e965df8fd"
+    },
+    {
+        "name":"Flag Kills",
+        "type":"Count",
+        "id":"f12a007b-3f27-45a1-87f5-816b6aca060d",
+        "contentId":"f12a007b-3f27-45a1-87f5-816b6aca060d"
+    },
+    {
+        "name":"Flag Capture Assists",
+        "type":"Count",
+        "id":"f2d6cbeb-fbf6-44d5-b321-9edb8cb2e3bc",
+        "contentId":"f2d6cbeb-fbf6-44d5-b321-9edb8cb2e3bc"
+    },
+    {
+        "name":"Player Lifespan",
+        "type":"Duration",
+        "id":"f1c317ee-1ac4-4089-85e8-a9c536c6cf18",
+        "contentId":"f1c317ee-1ac4-4089-85e8-a9c536c6cf18"
+    },
+    {
+        "name":"Stronghold Captured",
+        "type":"Count",
+        "id":"2b151d0f-cde6-4471-9f1d-d0f8e8644471",
+        "contentId":"2b151d0f-cde6-4471-9f1d-d0f8e8644471"
+    },
+    {
+        "name":"Stronghold Secured",
+        "type":"Count",
+        "id":"f0d50d01-6197-4d0d-a3a5-a86110997e40",
+        "contentId":"f0d50d01-6197-4d0d-a3a5-a86110997e40"
+    },
+    {
+        "name":"Stronghold Defense",
+        "type":"Count",
+        "id":"dcd5ff64-4b49-4020-96d0-88ba3fb28a56",
+        "contentId":"dcd5ff64-4b49-4020-96d0-88ba3fb28a56"
+    },
+    {
+        "name":"Total Control",
+        "type":"Count",
+        "id":"74365be9-d515-4229-9561-bfaac5bab089",
+        "contentId":"74365be9-d515-4229-9561-bfaac5bab089"
+    },
+    {
+        "name":"Perfect Kills",
+        "type":"Count",
+        "id":"780104cb-5b86-4ed9-8fb1-40b919de0766",
+        "contentId":"780104cb-5b86-4ed9-8fb1-40b919de0766"
+    },
+    {
+        "name":"Flag Returns",
+        "type":"Count",
+        "id":"fc7095af-dec5-419f-836d-fdd27836aa65",
+        "contentId":"fc7095af-dec5-419f-836d-fdd27836aa65"
+    },
+    {
+        "name":"Flag Grabs",
+        "type":"Count",
+        "id":"0a719185-4780-4706-b9e6-f679fcbc65d6",
+        "contentId":"0a719185-4780-4706-b9e6-f679fcbc65d6"
+    },
+    {
+        "name":"Suicides",
+        "type":"Count",
+        "id":"a1d97ad4-c1d9-4807-b619-ca3710cc5a8d",
+        "contentId":"a1d97ad4-c1d9-4807-b619-ca3710cc5a8d"
+    },
+    {
+        "name":"Players Protected",
+        "type":"Count",
+        "id":"a5a0d0d5-5c9f-4888-b42a-2c87f8e58336",
+        "contentId":"a5a0d0d5-5c9f-4888-b42a-2c87f8e58336"
+    },
+    {
+        "name":"Power Weapon Grabs",
+        "type":"Count",
+        "id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
+        "contentId":"71ce2293-23bb-492f-a8c0-46e095b55eb7"
+    }
+]

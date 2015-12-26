@@ -1,24 +1,36 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class Weapon : IEquatable<Weapon>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
         public uint Id { get; set; }
+
+        [JsonProperty(PropertyName = "isUsableByPlayer")]
         public bool IsUsableByPlayer { get; set; }
+
+        [JsonProperty(PropertyName = "largeIconImageUrl")]
         public string LargeIconImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "smallIconImageUrl")]
         public string SmallIconImageUrl { get; set; }
 
+        [JsonProperty(PropertyName = "type")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.WeaponType Type { get; set; }
-
-        // Internal use.
-        //public Guid ContentId { get; set; }
 
         public bool Equals(Weapon other)
         {
@@ -32,7 +44,8 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return string.Equals(Description, other.Description)
+            return ContentId.Equals(other.ContentId)
+                && string.Equals(Description, other.Description)
                 && Id == other.Id
                 && IsUsableByPlayer == other.IsUsableByPlayer
                 && string.Equals(LargeIconImageUrl, other.LargeIconImageUrl)
@@ -65,7 +78,8 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                var hashCode = Description?.GetHashCode() ?? 0;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (int) Id;
                 hashCode = (hashCode*397) ^ IsUsableByPlayer.GetHashCode();
                 hashCode = (hashCode*397) ^ (LargeIconImageUrl?.GetHashCode() ?? 0);

@@ -1,22 +1,29 @@
-﻿using HaloSharp.Converter;
-using HaloSharp.Model.Stats.Common;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Converter;
+using HaloSharp.Model.Stats.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats
 {
     [Serializable]
     public class MatchSet : IEquatable<MatchSet>
     {
+        [JsonProperty(PropertyName = "Count")]
         public int Count { get; set; }
-        public int ResultCount { get; set; }
-        public List<Result> Results { get; set; }
-        public int Start { get; set; }
 
-        // Internal use only.
+        [JsonProperty(PropertyName = "Links")]
         public Dictionary<string, Link> Links { get; set; }
+
+        [JsonProperty(PropertyName = "ResultCount")]
+        public int ResultCount { get; set; }
+
+        [JsonProperty(PropertyName = "Results")]
+        public List<Result> Results { get; set; }
+
+        [JsonProperty(PropertyName = "Start")]
+        public int Start { get; set; }
 
         public bool Equals(MatchSet other)
         {
@@ -84,24 +91,45 @@ namespace HaloSharp.Model.Stats
     [Serializable]
     public class Result : IEquatable<Result>
     {
+        [JsonProperty(PropertyName = "GameBaseVariantId")]
         public Guid GameBaseVariantId { get; set; }
+
+        [JsonProperty(PropertyName = "GameVariant")]
         public Variant GameVariant { get; set; }
+
+        [JsonProperty(PropertyName = "HopperId")]
         public Guid? HopperId { get; set; }
+
+        [JsonProperty(PropertyName = "Id")]
         public Id Id { get; set; }
+
+        [JsonProperty(PropertyName = "IsTeamGame")]
         public bool IsTeamGame { get; set; }
+
+        [JsonProperty(PropertyName = "Links")]
+        public Dictionary<string, Link> Links { get; set; }
+
+        [JsonProperty(PropertyName = "MapId")]
         public Guid MapId { get; set; }
+
+        [JsonProperty(PropertyName = "MapVariant")]
         public Variant MapVariant { get; set; }
+
+        [JsonProperty(PropertyName = "MatchCompletedDate")]
         public MatchCompletedDate MatchCompletedDate { get; set; }
 
-        [JsonConverter(typeof(TimeSpanConverter))]
+        [JsonProperty(PropertyName = "MatchDuration")]
+        [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan MatchDuration { get; set; }
 
+        [JsonProperty(PropertyName = "Players")]
         public List<Player> Players { get; set; }
-        public List<Team> Teams { get; set; }
 
-        // Internal use only.
-        public Dictionary<string, Link> Links { get; set; }
+        [JsonProperty(PropertyName = "SeasonId")]
         public Guid? SeasonId { get; set; }
+
+        [JsonProperty(PropertyName = "Teams")]
+        public List<Team> Teams { get; set; }
 
         public bool Equals(Result other)
         {
@@ -116,18 +144,18 @@ namespace HaloSharp.Model.Stats
             }
 
             return GameBaseVariantId.Equals(other.GameBaseVariantId)
-              && Equals(GameVariant, other.GameVariant)
-              && HopperId.Equals(other.HopperId)
-              && Equals(Id, other.Id)
-              && IsTeamGame == other.IsTeamGame
-              && Links.OrderBy(l => l.Key).SequenceEqual(other.Links.OrderBy(l => l.Key))
-              && MapId.Equals(other.MapId)
-              && Equals(MapVariant, other.MapVariant)
-              && Equals(MatchCompletedDate, other.MatchCompletedDate)
-              && MatchDuration.Equals(other.MatchDuration)
-              && Players.OrderBy(p => p.Identity.Gamertag).SequenceEqual(other.Players.OrderBy(p => p.Identity.Gamertag))
-              && SeasonId.Equals(other.SeasonId)
-              && Teams.OrderBy(t => t.Id).SequenceEqual(other.Teams.OrderBy(t => t.Id));
+                && Equals(GameVariant, other.GameVariant)
+                && HopperId.Equals(other.HopperId)
+                && Equals(Id, other.Id)
+                && IsTeamGame == other.IsTeamGame
+                && Links.OrderBy(l => l.Key).SequenceEqual(other.Links.OrderBy(l => l.Key))
+                && MapId.Equals(other.MapId)
+                && Equals(MapVariant, other.MapVariant)
+                && Equals(MatchCompletedDate, other.MatchCompletedDate)
+                && MatchDuration.Equals(other.MatchDuration)
+                && Players.OrderBy(p => p.Identity.Gamertag).SequenceEqual(other.Players.OrderBy(p => p.Identity.Gamertag))
+                && SeasonId.Equals(other.SeasonId)
+                && Teams.OrderBy(t => t.Id).SequenceEqual(other.Teams.OrderBy(t => t.Id));
         }
 
         public override bool Equals(object obj)
@@ -185,7 +213,10 @@ namespace HaloSharp.Model.Stats
     [Serializable]
     public class Id : IEquatable<Id>
     {
+        [JsonProperty(PropertyName = "GameMode")]
         public Enumeration.GameMode GameMode { get; set; }
+
+        [JsonProperty(PropertyName = "MatchId")]
         public Guid MatchId { get; set; }
 
         public bool Equals(Id other)
@@ -246,9 +277,16 @@ namespace HaloSharp.Model.Stats
     [Serializable]
     public class Variant : IEquatable<Variant>
     {
+        [JsonProperty(PropertyName = "Owner")]
         public string Owner { get; set; }
+
+        [JsonProperty(PropertyName = "OwnerType")]
         public Enumeration.OwnerType OwnerType { get; set; }
+
+        [JsonProperty(PropertyName = "ResourceId")]
         public Guid ResourceId { get; set; }
+
+        [JsonProperty(PropertyName = "ResourceType")]
         public Enumeration.ResourceType ResourceType { get; set; }
 
         public bool Equals(Variant other)
@@ -374,17 +412,30 @@ namespace HaloSharp.Model.Stats
     {
         [JsonProperty(PropertyName = "Player")]
         public Identity Identity { get; set; }
-        
-        public int Rank { get; set; }
-        public Enumeration.ResultType Result { get; set; }
-        public int TeamId { get; set; }
-        public int TotalAssists { get; set; }
-        public int TotalDeaths { get; set; }
-        public int TotalKills { get; set; }
 
-        // Internal use only.
-        //public object PostMatchRatings { get; set; } //This will always be null.
-        //public object PreMatchRatings { get; set; } //This will always be null.
+        [JsonProperty(PropertyName = "PostMatchRatings")]
+        public object PostMatchRatings { get; set; }
+
+        [JsonProperty(PropertyName = "PreMatchRatings")]
+        public object PreMatchRatings { get; set; }
+
+        [JsonProperty(PropertyName = "Rank")]
+        public int Rank { get; set; }
+
+        [JsonProperty(PropertyName = "Result")]
+        public Enumeration.ResultType Result { get; set; }
+
+        [JsonProperty(PropertyName = "TeamId")]
+        public int TeamId { get; set; }
+
+        [JsonProperty(PropertyName = "TotalAssists")]
+        public int TotalAssists { get; set; }
+
+        [JsonProperty(PropertyName = "TotalDeaths")]
+        public int TotalDeaths { get; set; }
+
+        [JsonProperty(PropertyName = "TotalKills")]
+        public int TotalKills { get; set; }
 
         public bool Equals(Player other)
         {
@@ -399,6 +450,8 @@ namespace HaloSharp.Model.Stats
             }
 
             return Equals(Identity, other.Identity)
+                && Equals(PostMatchRatings, other.PostMatchRatings)
+                && Equals(PreMatchRatings, other.PreMatchRatings)
                 && Rank == other.Rank
                 && Result == other.Result
                 && TeamId == other.TeamId
@@ -432,6 +485,8 @@ namespace HaloSharp.Model.Stats
             unchecked
             {
                 var hashCode = Identity?.GetHashCode() ?? 0;
+                hashCode = (hashCode*397) ^ (PostMatchRatings?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (PreMatchRatings?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Rank;
                 hashCode = (hashCode*397) ^ (int) Result;
                 hashCode = (hashCode*397) ^ TeamId;
@@ -456,8 +511,13 @@ namespace HaloSharp.Model.Stats
     [Serializable]
     public class Team : IEquatable<Team>
     {
+        [JsonProperty(PropertyName = "Id")]
         public int Id { get; set; }
+
+        [JsonProperty(PropertyName = "Rank")]
         public int Rank { get; set; }
+
+        [JsonProperty(PropertyName = "Score")]
         public uint Score { get; set; }
 
         public bool Equals(Team other)

@@ -1,0 +1,502 @@
+[
+    {
+        "name":"Free-for-All",
+        "description":"It's you against everyone else.  Slay your way to victory.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"7b7e892c-d9b7-4b03-bef8-c6a071df28ef",
+        "contentId":"7b7e892c-d9b7-4b03-bef8-c6a071df28ef"
+    },
+    {
+        "name":"SWAT",
+        "description":"No shields, no motion tracker.  Aim for the Head!",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"f27a65eb-2d11-4965-aa9c-daa088fa5c9c",
+        "contentId":"f27a65eb-2d11-4965-aa9c-daa088fa5c9c"
+    },
+    {
+        "name":"Breakout",
+        "description":"Halo 5's premiere high lethality single life elimination mode.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":true,
+        "id":"f72e0ef0-7c4a-4307-af78-8e38dac3fdba",
+        "contentId":"f72e0ef0-7c4a-4307-af78-8e38dac3fdba"
+    },
+    {
+        "name":"Slayer ",
+        "description":"Work with a team, vanquish your opponents.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":true,
+        "id":"892189e9-d712-4bdb-afa7-1ccab43fbed4",
+        "contentId":"892189e9-d712-4bdb-afa7-1ccab43fbed4"
+    },
+    {
+        "name":"Team Arena",
+        "description":"Play on the very best modes and maps Halo 5: Guardians has to offer.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":true,
+        "id":"c98949ae-60a8-43dc-85d7-0feb0b92e719",
+        "contentId":"c98949ae-60a8-43dc-85d7-0feb0b92e719"
+    },
+    {
+        "name":"Warzone Kraken 24p",
+        "description":"24 to match 18 to start",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"bdd69f49-d962-4d9a-8a7a-ca1013609347",
+        "contentId":"bdd69f49-d962-4d9a-8a7a-ca1013609347"
+    },
+    {
+        "name":"Warzone Fast Test",
+        "description":"Warzone Fast Test",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"b6dc4d50-4c24-4b4e-8fc5-6a378eeb299d",
+        "contentId":"b6dc4d50-4c24-4b4e-8fc5-6a378eeb299d"
+    },
+    {
+        "name":"Warzone Accelerated",
+        "description":"Accelerated Warzone Variant for Testing",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"505f3f9e-363f-4148-918b-46c43c33fe50",
+        "contentId":"505f3f9e-363f-4148-918b-46c43c33fe50"
+    },
+    {
+        "name":"Networking Warzone",
+        "description":"Networking Warzone 2 Min 8 Max Players ",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"a3f93d83-d89c-4373-b311-ec482f8d236a",
+        "contentId":"a3f93d83-d89c-4373-b311-ec482f8d236a"
+    },
+    {
+        "name":"2p Warzone Assault",
+        "description":"Warzone Min 2 Max 8 players",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"e10d9bd5-9efd-4b91-bf83-2f55b183a6f5",
+        "contentId":"e10d9bd5-9efd-4b91-bf83-2f55b183a6f5"
+    },
+    {
+        "name":"Warzone",
+        "description":"24 players on massive maps with REQs and AI adversaries.  Halo multiplayer has never been bigger!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"b50c4dc2-6c86-4d79-aa8a-23a65da292c6",
+        "contentId":"b50c4dc2-6c86-4d79-aa8a-23a65da292c6"
+    },
+    {
+        "name":"24p Warzone Test",
+        "description":"24p Warzone Test with Booting Disabled",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"27140f92-3b4e-4bca-b43c-ab33d7bf3986",
+        "contentId":"27140f92-3b4e-4bca-b43c-ab33d7bf3986"
+    },
+    {
+        "name":"Warzone Ring Only",
+        "description":"Ring Only Warzone Hopper",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"78ba29d5-6fdf-4d2a-8e58-14baf004fd09",
+        "contentId":"78ba29d5-6fdf-4d2a-8e58-14baf004fd09"
+    },
+    {
+        "name":"Warzone Assault",
+        "description":"24 players battle it out to destroy the Power Core or defend it in this asymmetrical Warzone mode variant.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"0e39ead4-383b-4452-bbd4-babb7becd82e",
+        "contentId":"0e39ead4-383b-4452-bbd4-babb7becd82e"
+    },
+    {
+        "name":"24p Warzone Assault Test",
+        "description":"24p Warzone Assault Test with Booting Disabled",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"98c52586-04bb-4645-99ba-55c772ac6f01",
+        "contentId":"98c52586-04bb-4645-99ba-55c772ac6f01"
+    },
+    {
+        "name":"Big Team Battle",
+        "description":"Slayer, Capture the Flag, and Strongholds for teams of 8 on 8.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"0bcf2be1-3168-4e42-9fb5-3551d7dbce77",
+        "contentId":"0bcf2be1-3168-4e42-9fb5-3551d7dbce77"
+    },
+    {
+        "name":"2p Strongholds",
+        "description":"Halo 5's new territory control game type!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"c00181ea-f931-41c0-aa6d-45904cb765eb",
+        "contentId":"c00181ea-f931-41c0-aa6d-45904cb765eb"
+    },
+    {
+        "name":"2p Slayer ",
+        "description":"Halo 5's new take on the classic game type!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"a355df34-acd9-45c3-bc1c-e024891df5c0",
+        "contentId":"a355df34-acd9-45c3-bc1c-e024891df5c0"
+    },
+    {
+        "name":"2p Progression",
+        "description":"2p Progression Test Hopper...for Test",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"eef52f20-860c-4ec2-84df-dda8947668cb",
+        "contentId":"eef52f20-860c-4ec2-84df-dda8947668cb"
+    },
+    {
+        "name":"2p Kraken",
+        "description":"Halo 5's new take on the classic Kraken test hopper!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"476afe03-3a33-4cf1-9134-7d8b8422bea3",
+        "contentId":"476afe03-3a33-4cf1-9134-7d8b8422bea3"
+    },
+    {
+        "name":"2p Capture The Flag",
+        "description":"Halo 5's new take on Capture the Flag!",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"69b4de92-7bd4-49ea-aa93-4aeefb730a9a",
+        "contentId":"69b4de92-7bd4-49ea-aa93-4aeefb730a9a"
+    },
+    {
+        "name":"2p Breakout",
+        "description":"Halo 5's premiere single life elimination mode.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"2b04d702-0996-4b8e-8402-a7fc8b888bef",
+        "contentId":"2b04d702-0996-4b8e-8402-a7fc8b888bef"
+    },
+    {
+        "name":"2p Arena",
+        "description":"Halo 5's core Arena game mode hopper!",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"8e393993-ea0d-4513-860e-a5acb0fe9234",
+        "contentId":"8e393993-ea0d-4513-860e-a5acb0fe9234"
+    },
+    {
+        "name":"ArenaMatchmakingFriendJIPDisabledBackfillJIPEnabled1RotationHopper",
+        "description":"Arena 4v4 Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":"https://content.halocdn.com/media/Default/Header-Images/2824500-mobile_inline-fbbd4ce9fe904b2aa91b14f6cd6e6e67.png",
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"b8d651a5-087e-4990-b209-d335b6c7a05a",
+        "contentId":"b8d651a5-087e-4990-b209-d335b6c7a05a"
+    },
+    {
+        "name":"ArenaMatchmakingFriendJIPEnabledBackfillJIPEnabled1RotationHopper",
+        "description":"Arena 4v4 Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"9c4f9280-0054-44f6-a3bc-7a70ed4fda67",
+        "contentId":"9c4f9280-0054-44f6-a3bc-7a70ed4fda67"
+    },
+    {
+        "name":"ArenaMatchmakingFriendJIPEnabledBackfillJIPEnabled1RotationHopper",
+        "description":"Arena 4v4 Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"e31d2f7e-7aa0-47f4-b1f8-6cea9cc70bbe",
+        "contentId":"e31d2f7e-7aa0-47f4-b1f8-6cea9cc70bbe"
+    },
+    {
+        "name":"Broadsword_NightlyTest_Min4P",
+        "description":"A hopper with a min of 4 players to matchmake",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"0625fb37-6c3e-4526-b413-d252128b42ac",
+        "contentId":"0625fb37-6c3e-4526-b413-d252128b42ac"
+    },
+    {
+        "name":"Warzone Hopper",
+        "description":"Description",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"ea669123-09c0-4c93-bf95-bdbe74d55e3d",
+        "contentId":"ea669123-09c0-4c93-bf95-bdbe74d55e3d"
+    },
+    {
+        "name":"RuleEngineBanRuleEVT Banning Rule Test Hopper",
+        "description":"Hopper with only a Ban Rule",
+        "isRanked":false,
+        "imageUrl":"https://content.halocdn.com/media/Default/silly/monocle-93559a789d6444f8af96903a3e545d5f.jpg",
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"2d4afa59-b046-4e4e-b918-c02687f9ca87",
+        "contentId":"2d4afa59-b046-4e4e-b918-c02687f9ca87"
+    },
+    {
+        "name":"Warzone Hopper",
+        "description":"Description",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"35ddd45e-065e-42fc-8c25-fe765739bf12",
+        "contentId":"35ddd45e-065e-42fc-8c25-fe765739bf12"
+    },
+    {
+        "name":"Big Team Battle Hopper",
+        "description":"Description",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"8d3beae9-e4e8-4c14-bbf0-475286ff9404",
+        "contentId":"8d3beae9-e4e8-4c14-bbf0-475286ff9404"
+    },
+    {
+        "name":"Arena2pMinNoPresenceChecksHopper",
+        "description":"Arena 2p min No Presence Checks Hopper",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"62b0b398-c790-4003-87ef-b4024e96f619",
+        "contentId":"62b0b398-c790-4003-87ef-b4024e96f619"
+    },
+    {
+        "name":"ArenaMatchmaking3TeamsFriendJIPEnabledBackfillJIPEnabled1RotationHopper",
+        "description":"Arena 3 Teams Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"79b6f0a6-5622-4c5a-a770-634d7dcc4391",
+        "contentId":"79b6f0a6-5622-4c5a-a770-634d7dcc4391"
+    },
+    {
+        "name":"LobbyRuleEngineEVT Test Hopper QOS Enabled",
+        "description":"LobbyRuleEngineEVT Test Hopper QOS Enabled",
+        "isRanked":false,
+        "imageUrl":"https://content.halocdn.com/media/Default/Header-Images/halospartanassault_play_now-ed19d64a523b4622b5ca5c0089dfa13d.jpg",
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"e1aaa797-c544-426e-9a0b-66a0c86a85c7",
+        "contentId":"e1aaa797-c544-426e-9a0b-66a0c86a85c7"
+    },
+    {
+        "name":"ArenaMatchmakingFriendJIPDisabledBackfillJIPDisabled1RotationHopper",
+        "description":"Arena 4v4 Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":"https://content.halocdn.com/media/Default/Header-Images/2824500-mobile_inline-fbbd4ce9fe904b2aa91b14f6cd6e6e67.png",
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"91233698-8234-4330-be10-05d54d1d565c",
+        "contentId":"91233698-8234-4330-be10-05d54d1d565c"
+    },
+    {
+        "name":"ArenaMatchmakingFriendJIPEnabledBackfillJIPDisabled1RotationHopper",
+        "description":"Arena 4v4 Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":"https://content.halocdn.com/media/Default/Header-Images/spartanassaultservicerecordpromo-4ccf8742ce234018a14f153bb6dd0dae.png",
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"c7ad591d-1c1e-4c11-8bc8-cf90d8638faf",
+        "contentId":"c7ad591d-1c1e-4c11-8bc8-cf90d8638faf"
+    },
+    {
+        "name":"ArenaMatchmakingFriendJIPDisabledBackfillJIPEnabled1RotationHopper",
+        "description":"Arena 4v4 Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":"https://content.halocdn.com/media/Default/Header-Images/2824500-mobile_inline-fbbd4ce9fe904b2aa91b14f6cd6e6e67.png",
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"00bb0332-6edc-4dbb-95dd-cbe6d25847be",
+        "contentId":"00bb0332-6edc-4dbb-95dd-cbe6d25847be"
+    },
+    {
+        "name":"ArenaMatchmakingFriendJIPEnabledBackfillJIPEnabled2RotationHopper",
+        "description":"Arena 4v4 Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":"https://content.halocdn.com/media/Default/Header-Images/2824522-mobile_inline-752587d21b6c4322809797b99209ec70.png",
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"c59a19c1-fa74-4952-ba40-b74e348813ae",
+        "contentId":"c59a19c1-fa74-4952-ba40-b74e348813ae"
+    },
+    {
+        "name":"ArenaMatchmakingFriendJIPEnabledBackfillJIPEnabled1RotationHopper",
+        "description":"Arena 4v4 Matchmaking with Friend JIP and Backfill JIP Enabled and a single Rotation",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"a822dde2-106c-4740-88fa-e83c8219a77e",
+        "contentId":"a822dde2-106c-4740-88fa-e83c8219a77e"
+    },
+    {
+        "name":"Pre-Release Arena",
+        "description":"To optimize the early access experience, we are limiting the number of multiplayer playlists.  We will have far more playlists available at launch.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"c506d28e-fd7c-4a45-b7d1-05e20f1d425b",
+        "contentId":"c506d28e-fd7c-4a45-b7d1-05e20f1d425b"
+    },
+    {
+        "name":"Pre-Release Warzone",
+        "description":"To optimize the early access experience, we are limiting the number of multiplayer playlists.  We will have far more playlists available at launch.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"a57e68b7-6623-410f-9663-c8f9e9942210",
+        "contentId":"a57e68b7-6623-410f-9663-c8f9e9942210"
+    },
+    {
+        "name":"Weekend Shotty Snipers",
+        "description":"Vote for your favorite game type each week on Halo Waypoint then log in on the weekend to play the winner and earn increased XP.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"819eb188-1a1c-48b4-9af3-283d2447ff6f",
+        "contentId":"819eb188-1a1c-48b4-9af3-283d2447ff6f"
+    },
+    {
+        "name":"Holiday Doubles",
+        "description":"Grab a partner and jump in for some 2v2 action! Available until 1/4/16",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":true,
+        "id":"5728f612-3f20-4459-98bd-3478c79c4861",
+        "contentId":"5728f612-3f20-4459-98bd-3478c79c4861"
+    },
+    {
+        "name":"Rumble Rockets",
+        "description":"Vote for your favorite game type each week on Halo Waypoint then log in on the weekend to play the winner and earn increased XP.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"88b7de19-113c-4beb-af7f-8553aeda3f4c",
+        "contentId":"88b7de19-113c-4beb-af7f-8553aeda3f4c"
+    },
+    {
+        "name":"Snipers",
+        "description":"Vote for your favorite game type each week on Halo Waypoint then log in on the weekend to play the winner and earn increased XP.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"7385b4a1-86bf-4aec-b9c2-411a6aa48633",
+        "contentId":"7385b4a1-86bf-4aec-b9c2-411a6aa48633"
+    },
+    {
+        "name":"Weekend Arena Breakout",
+        "description":"Breakout with full shields on Arena maps and featuring increased XP.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"4b12472e-2a06-4235-ba58-f376be6c1b39",
+        "contentId":"4b12472e-2a06-4235-ba58-f376be6c1b39"
+    },
+    {
+        "name":"Free-for-All",
+        "description":"It's you against everyone else.  Slay your way to victory.",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":true,
+        "id":"d0766624-dbd7-4536-ba39-2d890a6143a9",
+        "contentId":"d0766624-dbd7-4536-ba39-2d890a6143a9"
+    },
+    {
+        "name":"SWAT",
+        "description":"No shields, no motion tracker.  Aim for the Head!",
+        "isRanked":true,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":true,
+        "id":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+        "contentId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4"
+    },
+    {
+        "name":"Holiday Social",
+        "description":"Kick back, relax, and play a mix of non-ranked modes, including Slayer and Snipers. Happy Holidays! Available until 1/4/16.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"bc0f8ad6-31e6-4a18-87d9-ad5a2dbc8212",
+        "contentId":"bc0f8ad6-31e6-4a18-87d9-ad5a2dbc8212"
+    },
+    {
+        "name":"Big Team Battle",
+        "description":"Slayer, Capture the Flag, and Strongholds for teams of 8 on 8.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
+        "contentId":"780cc101-005c-4fca-8ce7-6f36d7156ffe"
+    }
+]

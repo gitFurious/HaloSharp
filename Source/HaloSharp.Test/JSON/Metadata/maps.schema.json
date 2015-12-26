@@ -1,0 +1,46 @@
+{
+  "definitions": {
+    "Map": {
+      "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": [ "string", "null" ]
+          },
+          "supportedGameModes": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+              "type": "string"
+            }
+          },
+          "imageUrl": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "contentId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "supportedGameModes",
+          "imageUrl",
+          "id",
+          "contentId"
+        ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Map"
+  }
+}

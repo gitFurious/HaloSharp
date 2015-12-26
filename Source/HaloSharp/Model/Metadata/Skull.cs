@@ -1,17 +1,28 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class Skull : IEquatable<Skull>
     {
-        public string Description { get; set; }
-        public int Id { get; set; }
-        public Guid? MissionId { get; set; }
-        public string Name { get; set; }
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "description")]
+        public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
+        public int Id { get; set; }
+
+        [JsonProperty(PropertyName = "imageUrl")]
+        public string ImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "missionId")]
+        public Guid? MissionId { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
 
         public bool Equals(Skull other)
         {
@@ -25,8 +36,10 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return string.Equals(Description, other.Description)
+            return ContentId.Equals(other.ContentId)
+                && string.Equals(Description, other.Description)
                 && Id == other.Id
+                && string.Equals(ImageUrl, other.ImageUrl)
                 && MissionId.Equals(other.MissionId)
                 && string.Equals(Name, other.Name);
         }
@@ -55,8 +68,10 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                var hashCode = Description?.GetHashCode() ?? 0;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Id;
+                hashCode = (hashCode*397) ^ (ImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ MissionId.GetHashCode();
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);
                 return hashCode;

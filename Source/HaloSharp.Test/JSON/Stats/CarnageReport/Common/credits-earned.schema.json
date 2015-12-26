@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Result": {
+      "type": "integer"
+    },
+    "TotalCreditsEarned": {
+      "type": "integer"
+    },
+    "SpartanRankModifier": {
+      "type": "number"
+    },
+    "PlayerRankAmount": {
+      "type": "integer"
+    },
+    "TimePlayedAmount": {
+      "type": "number"
+    },
+    "BoostAmount": {
+      "type": "integer"
+    }
+  },
+  "required": [
+	  "Result",
+	  "TotalCreditsEarned",
+	  "SpartanRankModifier",
+	  "PlayerRankAmount",
+	  "TimePlayedAmount",
+	  "BoostAmount"
+  ]
+}

@@ -1,15 +1,27 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class CreditsEarned : IEquatable<CreditsEarned>
     {
+        [JsonProperty(PropertyName = "BoostAmount")]
         public int BoostAmount { get; set; }
+
+        [JsonProperty(PropertyName = "PlayerRankAmount")]
         public int PlayerRankAmount { get; set; }
+
+        [JsonProperty(PropertyName = "Result")]
         public Enumeration.CreditsEarnedResultType Result { get; set; }
+
+        [JsonProperty(PropertyName = "SpartanRankModifier")]
         public double SpartanRankModifier { get; set; }
+
+        [JsonProperty(PropertyName = "TimePlayedAmount")]
         public double TimePlayedAmount { get; set; }
+
+        [JsonProperty(PropertyName = "TotalCreditsEarned")]
         public int TotalCreditsEarned { get; set; }
 
         public bool Equals(CreditsEarned other)

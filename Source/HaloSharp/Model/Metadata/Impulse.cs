@@ -1,15 +1,19 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class Impulse : IEquatable<Impulse>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
         public uint Id { get; set; }
 
-        // Internal use.
+        [JsonProperty(PropertyName = "internalName")]
         public string InternalName { get; set; }
-        //public string ContentId { get; set; }
 
         public bool Equals(Impulse other)
         {
@@ -23,7 +27,8 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return Id == other.Id
+            return ContentId.Equals(other.ContentId)
+                && Id == other.Id
                 && string.Equals(InternalName, other.InternalName);
         }
 
@@ -51,7 +56,10 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                return ((int) Id*397) ^ (InternalName?.GetHashCode() ?? 0);
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ (int) Id;
+                hashCode = (hashCode*397) ^ (InternalName?.GetHashCode() ?? 0);
+                return hashCode;
             }
         }
 

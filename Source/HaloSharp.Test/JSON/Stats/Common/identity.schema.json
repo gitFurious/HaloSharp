@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Gamertag": {
+      "type": "string"
+    },
+    "Xuid": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "Gamertag",
+    "Xuid"
+  ]
+}

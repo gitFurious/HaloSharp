@@ -1,24 +1,31 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class GameBaseVariant : IEquatable<GameBaseVariant>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "iconUrl")]
         public string IconUrl { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
+
+        [JsonProperty(PropertyName = "internalName")]
+        public string InternalName { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
-        [JsonProperty(ItemConverterType = typeof (StringEnumConverter))]
+        [JsonProperty(PropertyName = "supportedGameModes", ItemConverterType = typeof(StringEnumConverter))]
         public List<Enumeration.GameMode> SupportedGameModes { get; set; }
-
-        // Internal use.
-        public string InternalName { get; set; }
-        //public Guid ContentId { get; set; }
 
         public bool Equals(GameBaseVariant other)
         {
@@ -32,11 +39,12 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return string.Equals(IconUrl, other.IconUrl)
-                   && Id.Equals(other.Id)
-                   && string.Equals(InternalName, other.InternalName)
-                   && string.Equals(Name, other.Name)
-                   && SupportedGameModes.OrderBy(sgm => sgm.ToString()) .SequenceEqual(other.SupportedGameModes.OrderBy(sgm => sgm.ToString()));
+            return ContentId.Equals(other.ContentId) 
+                && string.Equals(IconUrl, other.IconUrl)
+                && Id.Equals(other.Id)
+                && string.Equals(InternalName, other.InternalName)
+                && string.Equals(Name, other.Name)
+                && SupportedGameModes.OrderBy(sgm => sgm).SequenceEqual(other.SupportedGameModes.OrderBy(sgm => sgm));
         }
 
         public override bool Equals(object obj)
@@ -63,7 +71,8 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                var hashCode = IconUrl?.GetHashCode() ?? 0;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ (IconUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ (InternalName?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);

@@ -1,23 +1,33 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class Medal : IEquatable<Medal>
     {
+        [JsonProperty(PropertyName = "classification")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.MedalType Classification { get; set; } //TODO: enums don't match documentation.
+        public Enumeration.MedalType Classification { get; set; }
 
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
-        public int Difficulty { get; set; }
-        public uint Id { get; set; }
-        public string Name { get; set; }
-        public SpriteLocation SpriteLocation { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "difficulty")]
+        public int Difficulty { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
+        public uint Id { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "spriteLocation")]
+        public SpriteLocation SpriteLocation { get; set; }
 
         public bool Equals(Medal other)
         {
@@ -25,13 +35,12 @@ namespace HaloSharp.Model.Metadata
             {
                 return false;
             }
-
             if (ReferenceEquals(this, other))
             {
                 return true;
             }
-
             return Classification == other.Classification
+                && ContentId.Equals(other.ContentId)
                 && string.Equals(Description, other.Description)
                 && Difficulty == other.Difficulty
                 && Id == other.Id
@@ -64,6 +73,7 @@ namespace HaloSharp.Model.Metadata
             unchecked
             {
                 var hashCode = (int) Classification;
+                hashCode = (hashCode*397) ^ ContentId.GetHashCode();
                 hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Difficulty;
                 hashCode = (hashCode*397) ^ (int) Id;
@@ -87,12 +97,25 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class SpriteLocation : IEquatable<SpriteLocation>
     {
+        [JsonProperty(PropertyName = "height")]
         public int Height { get; set; }
+
+        [JsonProperty(PropertyName = "left")]
         public int Left { get; set; }
+
+        [JsonProperty(PropertyName = "spriteHeight")]
         public int SpriteHeight { get; set; }
+
+        [JsonProperty(PropertyName = "spriteSheetUri")]
         public string SpriteSheetUri { get; set; }
+
+        [JsonProperty(PropertyName = "spriteWidth")]
         public int SpriteWidth { get; set; }
+
+        [JsonProperty(PropertyName = "top")]
         public int Top { get; set; }
+
+        [JsonProperty(PropertyName = "width")]
         public int Width { get; set; }
 
         public bool Equals(SpriteLocation other)

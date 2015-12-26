@@ -1,21 +1,17 @@
-﻿using System;
+﻿using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model;
-using HaloSharp.Query.Profile;
-using NUnit.Framework;
-using System.Drawing;
-using System.Threading.Tasks;
-using HaloSharp.Exception;
 using HaloSharp.Model.Profile;
+using HaloSharp.Query.Profile;
 using HaloSharp.Test.Utility;
+using NUnit.Framework;
+using System.Threading.Tasks;
 
 namespace HaloSharp.Test.Query.Profile
 {
     [TestFixture]
     public class GetSpartanImageTests
     {
-        private const string BaseUri = "profile/h5/profiles/{0}/spartan{1}";
-
         [Test]
         public void GetConstructedUri_NoParamaters_MatchesExpected()
         {
@@ -23,7 +19,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, null, null), uri);
+            Assert.AreEqual($"profile/h5/profiles/{null}/spartan{null}", uri);
         }
 
         [Test]
@@ -36,7 +32,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, gamertag, null), uri);
+            Assert.AreEqual($"profile/h5/profiles/{gamertag}/spartan{null}", uri);
         }
 
         [Test]
@@ -49,7 +45,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, null, $"?size={size}"), uri);
+            Assert.AreEqual($"profile/h5/profiles/{null}/spartan?size={size}", uri);
         }
 
         [Test]
@@ -62,7 +58,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, null, $"?crop={cropType}"), uri);
+            Assert.AreEqual($"profile/h5/profiles/{null}/spartan?crop={cropType}", uri);
         }
 
         [Test]
@@ -77,7 +73,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, gamertag, $"?size={size}&crop={cropType}"), uri);
+            Assert.AreEqual($"profile/h5/profiles/{gamertag}/spartan?size={size}&crop={cropType}", uri);
         }
 
         [Test]
@@ -91,20 +87,6 @@ namespace HaloSharp.Test.Query.Profile
             var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (GetImage), result);
-        }
-
-        [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        public async Task GetSpartanImage_IsSerializable(string gamertag)
-        {
-            var query = new GetSpartanImage()
-                .ForPlayer(gamertag);
-
-            var result = await Global.Session.Query(query);
-
-            var serializationUtility = new SerializationUtility<GetImage>();
-            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]
@@ -134,6 +116,19 @@ namespace HaloSharp.Test.Query.Profile
             var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(GetImage), result);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public async Task GetSpartanImage_IsSerializable(string gamertag)
+        {
+            var query = new GetSpartanImage()
+                .ForPlayer("Furiousn00b");
+
+            var result = await Global.Session.Query(query);
+
+            SerializationUtility<GetImage>.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "GameBaseVariantRank": {
+      "type": "integer"
+    },
+    "NumberOfMatchesCompleted": {
+      "type": "integer"
+    },
+    "GameBaseVariantId": {
+      "type": "string"
+    },
+    "NumberOfMatchesWon": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "GameBaseVariantRank",
+    "NumberOfMatchesCompleted",
+    "GameBaseVariantId",
+    "NumberOfMatchesWon"
+  ]
+}

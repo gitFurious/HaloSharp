@@ -1,4 +1,5 @@
 using HaloSharp.Model.Stats.Common;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,8 @@ namespace HaloSharp.Model.Stats.Lifetime.Common
     [Serializable]
     public class BaseServiceRecord : IEquatable<BaseServiceRecord>
     {
-        public Dictionary<string, Link> Links { get; set; } // Internal use only.
+        [JsonProperty(PropertyName = "Links")]
+        public Dictionary<string, Link> Links { get; set; }
 
         public bool Equals(BaseServiceRecord other)
         {

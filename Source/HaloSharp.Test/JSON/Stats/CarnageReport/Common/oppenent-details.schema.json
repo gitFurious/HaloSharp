@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "GamerTag": {
+      "type": "string"
+    },
+    "TotalKills": {
+      "type": "integer"
+    }
+  },
+  "required": [
+	  "GamerTag",
+	  "TotalKills"
+  ]
+}

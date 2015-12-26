@@ -1,17 +1,24 @@
-using HaloSharp.Converter;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Converter;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Common
 {
     [Serializable]
     public class FlexibleStats : IEquatable<FlexibleStats>
     {
+        [JsonProperty(PropertyName = "ImpulseStatCounts")]
         public List<StatCount> ImpulseStatCounts { get; set; }
+
+        [JsonProperty(PropertyName = "ImpulseTimelapses")]
         public List<StatTimelapse> ImpulseTimelapses { get; set; }
+
+        [JsonProperty(PropertyName = "MedalStatCounts")]
         public List<StatCount> MedalStatCounts { get; set; }
+
+        [JsonProperty(PropertyName = "MedalTimelapses")]
         public List<StatTimelapse> MedalTimelapses { get; set; }
 
         public bool Equals(FlexibleStats other)
@@ -78,9 +85,11 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class StatTimelapse : IEquatable<StatTimelapse>
     {
+        [JsonProperty(PropertyName = "Id")]
         public Guid Id { get; set; }
 
-        [JsonConverter(typeof(TimeSpanConverter))]
+        [JsonProperty(PropertyName = "Timelapse")]
+        [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan Timelapse { get; set; }
 
         public bool Equals(StatTimelapse other)
@@ -141,7 +150,10 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class StatCount : IEquatable<StatCount>
     {
+        [JsonProperty(PropertyName = "Count")]
         public int Count { get; set; }
+
+        [JsonProperty(PropertyName = "Id")]
         public Guid Id { get; set; }
 
         public bool Equals(StatCount other)

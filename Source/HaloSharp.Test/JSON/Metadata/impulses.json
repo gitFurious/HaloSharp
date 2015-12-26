@@ -1,0 +1,172 @@
+[
+    {
+        "internalName":"Death",
+        "id":"2521909834",
+        "contentId":"3d89f893-9059-429f-9c0f-00222b935be3"
+    },
+    {
+        "internalName":"Vehicle Destroyed",
+        "id":"1541693844",
+        "contentId":"ac1cec3e-dfe3-495c-b191-f879311fe2e6"
+    },
+    {
+        "internalName":"Defender Wins",
+        "id":"2596382552",
+        "contentId":"3141e9d2-ba52-4a12-83f1-5709b27afc5e"
+    },
+    {
+        "internalName":"Core Assault Kills",
+        "id":"2512950199",
+        "contentId":"d176d623-6e72-4965-90f4-ef207039ed77"
+    },
+    {
+        "internalName":"Base Assault Kills",
+        "id":"1718328203",
+        "contentId":"5e9b071f-524b-44a9-979e-7c6732445d45"
+    },
+    {
+        "internalName":"Player Spawn",
+        "id":"3442771902",
+        "contentId":"a0eb026d-7117-4f46-a74d-c05ccc012000"
+    },
+    {
+        "internalName":"Point Victories",
+        "id":"952111048",
+        "contentId":"d8fda72c-5bea-45c2-bd22-170722cc9c25"
+    },
+    {
+        "internalName":"impulse_flag_returned",
+        "id":"1063951891",
+        "contentId":"894b391a-c456-49cc-a153-66da8375301b"
+    },
+    {
+        "internalName":"FlagCapturedImpulse",
+        "id":"2944278681",
+        "contentId":"65b1776f-26c3-4d61-a062-cad611d6f644"
+    },
+    {
+        "internalName":"PowerWeaponGrabbed",
+        "id":"2982539900",
+        "contentId":"ae434770-2e2d-4f62-9a25-21e36c3dae5e"
+    },
+    {
+        "internalName":"Revived",
+        "id":"978685900",
+        "contentId":"9ffdeed3-609e-4fdd-8b76-f7422b8a6116"
+    },
+    {
+        "internalName":"Warzone Base Defense Kill",
+        "id":"2435743433",
+        "contentId":"a6e1be5c-6951-4978-b062-be099857c142"
+    },
+    {
+        "internalName":"Warzone Legendary Takedown",
+        "id":"2791655816",
+        "contentId":"3ddd2958-a3e9-4914-94be-6c0e8f3fc865"
+    },
+    {
+        "internalName":"Flag Pulls",
+        "id":"1039658009",
+        "contentId":"b12bbb12-40e7-4052-b5aa-ebe90db51d25"
+    },
+    {
+        "internalName":"Warzone Boss Takedown",
+        "id":"3711392074",
+        "contentId":"91536306-2fea-4f98-a0a5-e5fd34e81571"
+    },
+    {
+        "internalName":"Suicides",
+        "id":"1408036107",
+        "contentId":"47e5867e-7562-4f74-994c-641207ffb131"
+    },
+    {
+        "internalName":"Warzone Core Destruction Victories",
+        "id":"2344191790",
+        "contentId":"88af7cb6-f171-4058-91f9-f30369d03ddf"
+    },
+    {
+        "internalName":"Spawn Impulse",
+        "id":"3442771902",
+        "contentId":"c946cdeb-52c8-4b8a-ba3d-b88041a50c00"
+    },
+    {
+        "internalName":"Warzone Base Captured",
+        "id":"991142198",
+        "contentId":"7aa9b118-89d2-46d9-bb24-51da9cc53728"
+    },
+    {
+        "internalName":"Defense Shutouts",
+        "id":"1399201641",
+        "contentId":"2a515232-d95a-4e17-8663-2ebf173e5df8"
+    },
+    {
+        "internalName":"Round Won",
+        "id":"3060032974",
+        "contentId":"2fa930d8-3548-4ce7-a2d8-05730aabf5a2"
+    },
+    {
+        "internalName":"Flag Dropped",
+        "id":"3435524855",
+        "contentId":"710e63a9-9de5-4b65-a6f3-3316e3663458"
+    },
+    {
+        "internalName":"Flag Pickup",
+        "id":"4191318012",
+        "contentId":"9b2af6c3-7ab9-4578-8f5d-fdbfd9cc0a47"
+    },
+    {
+        "internalName":"Flag Kill",
+        "id":"3514632335",
+        "contentId":"8b9a2a56-da9f-4478-9ac1-2f9e0f5968f0"
+    },
+    {
+        "internalName":"Perfect Kill",
+        "id":"3174430457",
+        "contentId":"d5901226-8bd1-4dbb-8c49-360922d16fdb"
+    },
+    {
+        "internalName":"Player Protected",
+        "id":"2556889090",
+        "contentId":"01514f19-ca46-4192-a1cc-881298e708b5"
+    },
+    {
+        "internalName":"Headshot",
+        "id":"1758813028",
+        "contentId":"05f490e0-8c7e-4805-bf39-0813dcb0cc2e"
+    },
+    {
+        "internalName":"Assist",
+        "id":"2154529634",
+        "contentId":"e6abfa04-4e68-44fb-8002-7cdd3eb62b1d"
+    },
+    {
+        "internalName":"Enemy Player Kill",
+        "id":"1095759319",
+        "contentId":"a7d1fa36-3b4b-4820-99f6-47b7bdc4baff"
+    },
+    {
+        "internalName":"Kill as Last Man Standing Impulse",
+        "id":"2512065773",
+        "contentId":"ab5caf92-6798-4c28-a610-b2bd0e6506f7"
+    },
+    {
+        "internalName":"Round Won Facing Elimination Impulse",
+        "id":"938151029",
+        "contentId":"115c0722-a8fd-42fe-9ce2-66351d91ade9"
+    },
+    {
+        "internalName":"Round Winning Carrier Kills Impulse",
+        "id":"4040349679",
+        "contentId":"2930c6d4-0730-4b27-8b2e-323f0a70f230"
+    },
+    {
+        "internalName":"Round Winning Kill Impulse",
+        "id":"3930101026",
+        "contentId":"17955d44-aedd-468b-9e17-fd2f372230c4"
+    },
+    {
+        "internalName":"Flag Carrier Kill Impulse",
+        "id":"2299858338",
+        "contentId":"8329bcf5-3234-4395-b13f-8ce016eb7281"
+    }
+]

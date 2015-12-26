@@ -7,17 +7,27 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class CampaignMission : IEquatable<CampaignMission>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
+
+        [JsonProperty(PropertyName = "imageUrl")]
         public string ImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "missionNumber")]
         public int MissionNumber { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
+        [JsonProperty(PropertyName = "type")]
         [JsonConverter(typeof(StringEnumConverter))]
         public Enumeration.CampaignMissionType Type { get; set; }
-
-        // Internal use.
-        //public Guid ContentId { get; set; }
 
         public bool Equals(CampaignMission other)
         {
@@ -25,16 +35,19 @@ namespace HaloSharp.Model.Metadata
             {
                 return false;
             }
+
             if (ReferenceEquals(this, other))
             {
                 return true;
             }
-            return string.Equals(Description, other.Description)
-                && Id.Equals(other.Id)
-                && string.Equals(ImageUrl, other.ImageUrl)
-                && MissionNumber == other.MissionNumber
-                && string.Equals(Name, other.Name)
-                && Type == other.Type;
+
+            return ContentId.Equals(other.ContentId)
+                   && string.Equals(Description, other.Description)
+                   && Id.Equals(other.Id)
+                   && string.Equals(ImageUrl, other.ImageUrl)
+                   && MissionNumber == other.MissionNumber
+                   && string.Equals(Name, other.Name)
+                   && Type == other.Type;
         }
 
         public override bool Equals(object obj)
@@ -61,7 +74,8 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                var hashCode = Description?.GetHashCode() ?? 0;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ (ImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ MissionNumber;

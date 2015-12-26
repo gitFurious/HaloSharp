@@ -1,27 +1,38 @@
-﻿using HaloSharp.Converter;
+﻿using System;
+using HaloSharp.Converter;
 using HaloSharp.Model.Stats.Common;
 using Newtonsoft.Json;
-using System;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class BasePlayerStat : BaseStat, IEquatable<BasePlayerStat>
     {
-        [JsonConverter(typeof(TimeSpanConverter))]
+        [JsonProperty(PropertyName = "AvgLifeTimeOfPlayer")]
+        [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan AvgLifeTimeOfPlayer { get; set; }
 
         // ReSharper disable once InconsistentNaming
+        [JsonProperty(PropertyName = "DNF")]
         public bool DNF { get; set; }
 
+        [JsonProperty(PropertyName = "FlexibleStats")]
         public FlexibleStats FlexibleStats { get; set; }
-        public Identity Player { get; set; }
-        public int Rank { get; set; }
-        public int TeamId { get; set; }
 
-        // Internal use only.
-        //public object PreMatchRatings { get; set; } //This will always be null.
-        //public object PostMatchRatings { get; set; } //This will always be null.
+        [JsonProperty(PropertyName = "Player")]
+        public Identity Player { get; set; }
+
+        [JsonProperty(PropertyName = "PostMatchRatings")]
+        public object PostMatchRatings { get; set; }
+
+        [JsonProperty(PropertyName = "PreMatchRatings")]
+        public object PreMatchRatings { get; set; }
+
+        [JsonProperty(PropertyName = "Rank")]
+        public int Rank { get; set; }
+
+        [JsonProperty(PropertyName = "TeamId")]
+        public int TeamId { get; set; }
 
         public bool Equals(BasePlayerStat other)
         {
@@ -40,6 +51,8 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 && DNF == other.DNF
                 && Equals(FlexibleStats, other.FlexibleStats)
                 && Equals(Player, other.Player)
+                && Equals(PostMatchRatings, other.PostMatchRatings)
+                && Equals(PreMatchRatings, other.PreMatchRatings)
                 && Rank == other.Rank
                 && TeamId == other.TeamId;
         }
@@ -56,7 +69,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 return true;
             }
 
-            if (obj.GetType() != this.GetType())
+            if (obj.GetType() != typeof (BasePlayerStat))
             {
                 return false;
             }
@@ -73,6 +86,8 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 hashCode = (hashCode*397) ^ DNF.GetHashCode();
                 hashCode = (hashCode*397) ^ (FlexibleStats?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Player?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (PostMatchRatings?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (PreMatchRatings?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Rank;
                 hashCode = (hashCode*397) ^ TeamId;
                 return hashCode;

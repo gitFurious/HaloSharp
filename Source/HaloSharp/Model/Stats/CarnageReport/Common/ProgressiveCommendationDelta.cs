@@ -1,12 +1,18 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class ProgressiveCommendationDelta : IEquatable<ProgressiveCommendationDelta>
     {
+        [JsonProperty(PropertyName = "Id")]
         public Guid Id { get; set; }
+
+        [JsonProperty(PropertyName = "PreviousProgress")]
         public int PreviousProgress { get; set; }
+
+        [JsonProperty(PropertyName = "Progress")]
         public int Progress { get; set; }
 
         public bool Equals(ProgressiveCommendationDelta other)

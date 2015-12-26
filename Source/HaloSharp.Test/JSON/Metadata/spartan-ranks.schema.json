@@ -1,0 +1,38 @@
+{
+  "definitions": {
+    "SpartanRank": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "startXp": {
+          "type": "integer"
+        },
+        "reward": {
+          "$ref": "common/reward.schema.json"
+        },
+        "id": {
+          /*
+           * HACK: API returns a string but it's really an int. 
+           * HaloSharp's model uses an int, the JSON reponse uses a string.
+           */
+          "type": [ "string", "integer" ]
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "startXp",
+        "reward",
+        "id",
+        "contentId"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/SpartanRank"
+  }
+}

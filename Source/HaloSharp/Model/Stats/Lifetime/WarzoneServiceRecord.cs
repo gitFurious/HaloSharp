@@ -1,14 +1,16 @@
-﻿using HaloSharp.Model.Stats.Common;
-using HaloSharp.Model.Stats.Lifetime.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Stats.Common;
+using HaloSharp.Model.Stats.Lifetime.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Lifetime
 {
     [Serializable]
     public class WarzoneServiceRecord : BaseServiceRecord, IEquatable<WarzoneServiceRecord>
     {
+        [JsonProperty(PropertyName = "Results")]
         public List<WarzoneServiceRecordResult> Results { get; set; }
 
         public bool Equals(WarzoneServiceRecord other)
@@ -51,7 +53,7 @@ namespace HaloSharp.Model.Stats.Lifetime
         {
             unchecked
             {
-                return (base.GetHashCode()*397) ^ (Results != null ? Results.GetHashCode() : 0);
+                return (base.GetHashCode()*397) ^ (Results?.GetHashCode() ?? 0);
             }
         }
 
@@ -69,6 +71,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class WarzoneServiceRecordResult : BaseServiceRecordResult, IEquatable<WarzoneServiceRecordResult>
     {
+        [JsonProperty(PropertyName = "Result")]
         public WarzoneResult Result { get; set; }
 
         public bool Equals(WarzoneServiceRecordResult other)
@@ -129,6 +132,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class WarzoneResult : BaseResult, IEquatable<WarzoneResult>
     {
+        [JsonProperty(PropertyName = "WarzoneStat")]
         public WarzoneStat WarzoneStat { get; set; }
 
         public bool Equals(WarzoneResult other)
@@ -189,7 +193,10 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class WarzoneStat : BaseStat, IEquatable<WarzoneStat>
     {
+        [JsonProperty(PropertyName = "ScenarioStats")]
         public List<ScenarioStat> ScenarioStats { get; set; }
+
+        [JsonProperty(PropertyName = "TotalPiesEarned")]
         public int TotalPiesEarned { get; set; }
 
         public bool Equals(WarzoneStat other)
@@ -234,7 +241,7 @@ namespace HaloSharp.Model.Stats.Lifetime
             unchecked
             {
                 int hashCode = base.GetHashCode();
-                hashCode = (hashCode*397) ^ (ScenarioStats != null ? ScenarioStats.GetHashCode() : 0);
+                hashCode = (hashCode*397) ^ (ScenarioStats?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ TotalPiesEarned;
                 return hashCode;
             }
@@ -254,9 +261,16 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class ScenarioStat : BaseStat, IEquatable<ScenarioStat>
     {
+        [JsonProperty(PropertyName = "FlexibleStats")]
         public FlexibleStats FlexibleStats { get; set; }
+
+        [JsonProperty(PropertyName = "GameBaseVariantId")]
         public Guid GameBaseVariantId { get; set; }
+
+        [JsonProperty(PropertyName = "MapId")]
         public Guid MapId { get; set; }
+
+        [JsonProperty(PropertyName = "TotalPiesEarned")]
         public int TotalPiesEarned { get; set; }
 
         public bool Equals(ScenarioStat other)

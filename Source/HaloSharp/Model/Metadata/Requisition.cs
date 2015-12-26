@@ -1,45 +1,72 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class Requisition : IEquatable<Requisition>
     {
+        [JsonProperty(PropertyName = "categoryName")]
         public string CategoryName { get; set; }
+
+        [JsonProperty(PropertyName = "certificationRequisitionId")]
         public Guid? CertificationRequisitionId { get; set; }
-        public int CreditsAwarded { get; set; }
+
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
+
+        [JsonProperty(PropertyName = "internalCategoryName")]
+        public string InternalCategoryName { get; set; }
+
+        [JsonProperty(PropertyName = "internalSubcategoryName")]
+        public string InternalSubcategoryName { get; set; }
+
+        [JsonProperty(PropertyName = "isCertification")]
         public bool IsCertification { get; set; }
+
+        [JsonProperty(PropertyName = "isMythic")]
         public bool IsMythic { get; set; }
+
+        [JsonProperty(PropertyName = "isWearable")]
         public bool IsWearable { get; set; }
+
+        [JsonProperty(PropertyName = "largeImageUrl")]
         public string LargeImageUrl { get; set; }
-        public int LevelRequirement { get; set; }
-        public string MediumImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "rarity")]
         public string Rarity { get; set; }
 
+        [JsonProperty(PropertyName = "rarityType")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.RequisitionRarityType RarityType { get; set; }
 
+        [JsonProperty(PropertyName = "sellPrice")]
         public int SellPrice { get; set; }
-        public string SmallImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "subcategoryName")]
         public string SubcategoryName { get; set; }
+
+        [JsonProperty(PropertyName = "subcategoryOrder")]
         public int SubcategoryOrder { get; set; }
 
-        [JsonProperty(ItemConverterType = typeof (StringEnumConverter))]
+        [JsonProperty(PropertyName = "supportedGameModes", ItemConverterType = typeof (StringEnumConverter))]
         public List<Enumeration.GameMode> SupportedGameModes { get; set; }
 
+        [JsonProperty(PropertyName = "useType")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.RequisitionUseType UseType { get; set; }
-
-        // Internal use.
-        public string InternalCategoryName { get; set; }
-        //public Guid ContentId { get; set; }
 
         public bool Equals(Requisition other)
         {
@@ -55,7 +82,7 @@ namespace HaloSharp.Model.Metadata
 
             return string.Equals(CategoryName, other.CategoryName)
                 && CertificationRequisitionId.Equals(other.CertificationRequisitionId)
-                && CreditsAwarded == other.CreditsAwarded
+                && ContentId.Equals(other.ContentId)
                 && string.Equals(Description, other.Description)
                 && Id.Equals(other.Id)
                 && string.Equals(InternalCategoryName, other.InternalCategoryName)
@@ -63,16 +90,13 @@ namespace HaloSharp.Model.Metadata
                 && IsMythic == other.IsMythic
                 && IsWearable == other.IsWearable
                 && string.Equals(LargeImageUrl, other.LargeImageUrl)
-                && LevelRequirement == other.LevelRequirement
-                && string.Equals(MediumImageUrl, other.MediumImageUrl)
                 && string.Equals(Name, other.Name)
                 && string.Equals(Rarity, other.Rarity)
                 && RarityType == other.RarityType
                 && SellPrice == other.SellPrice
-                && string.Equals(SmallImageUrl, other.SmallImageUrl)
                 && string.Equals(SubcategoryName, other.SubcategoryName)
                 && SubcategoryOrder == other.SubcategoryOrder
-                && SupportedGameModes.OrderBy(sgm => sgm.ToString()).SequenceEqual(other.SupportedGameModes.OrderBy(sgm => sgm.ToString()))
+                && SupportedGameModes.OrderBy(sgm => sgm).SequenceEqual(other.SupportedGameModes.OrderBy(sgm => sgm))
                 && UseType == other.UseType;
         }
 
@@ -102,7 +126,7 @@ namespace HaloSharp.Model.Metadata
             {
                 var hashCode = CategoryName?.GetHashCode() ?? 0;
                 hashCode = (hashCode*397) ^ CertificationRequisitionId.GetHashCode();
-                hashCode = (hashCode*397) ^ CreditsAwarded;
+                hashCode = (hashCode*397) ^ ContentId.GetHashCode();
                 hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ (InternalCategoryName?.GetHashCode() ?? 0);
@@ -110,13 +134,10 @@ namespace HaloSharp.Model.Metadata
                 hashCode = (hashCode*397) ^ IsMythic.GetHashCode();
                 hashCode = (hashCode*397) ^ IsWearable.GetHashCode();
                 hashCode = (hashCode*397) ^ (LargeImageUrl?.GetHashCode() ?? 0);
-                hashCode = (hashCode*397) ^ LevelRequirement;
-                hashCode = (hashCode*397) ^ (MediumImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Rarity?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (int) RarityType;
                 hashCode = (hashCode*397) ^ SellPrice;
-                hashCode = (hashCode*397) ^ (SmallImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (SubcategoryName?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ SubcategoryOrder;
                 hashCode = (hashCode*397) ^ (SupportedGameModes?.GetHashCode() ?? 0);

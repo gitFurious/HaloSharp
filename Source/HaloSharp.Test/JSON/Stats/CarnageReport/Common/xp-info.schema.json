@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "PrevSpartanRank": {
+      "type": "integer"
+    },
+    "SpartanRank": {
+      "type": "integer"
+    },
+    "PrevTotalXP": {
+      "type": "integer"
+    },
+    "TotalXP": {
+      "type": "integer"
+    },
+    "SpartanRankMatchXPScalar": {
+      "type": "number"
+    },
+    "PlayerTimePerformanceXPAward": {
+      "type": "integer"
+    },
+    "PerformanceXP": {
+      "type": "integer"
+    },
+    "PlayerRankXPAward": {
+      "type": "integer"
+    },
+    "BoostAmount": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "PrevSpartanRank",
+    "SpartanRank",
+    "PrevTotalXP",
+    "TotalXP",
+    "SpartanRankMatchXPScalar",
+    "PlayerTimePerformanceXPAward",
+    "PerformanceXP",
+    "PlayerRankXPAward",
+    "BoostAmount"
+  ]
+}

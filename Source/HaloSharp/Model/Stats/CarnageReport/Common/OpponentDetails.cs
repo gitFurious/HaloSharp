@@ -1,11 +1,15 @@
 using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class OpponentDetails : IEquatable<OpponentDetails>
     {
+        [JsonProperty(PropertyName = "GamerTag")]
         public string GamerTag { get; set; }
+
+        [JsonProperty(PropertyName = "TotalKills")]
         public int TotalKills { get; set; }
 
         public bool Equals(OpponentDetails other)
@@ -48,7 +52,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         {
             unchecked
             {
-                return ((GamerTag == null ? GamerTag.GetHashCode() : 0)*397) ^ TotalKills;
+                return ((GamerTag?.GetHashCode() ?? 0)*397) ^ TotalKills;
             }
         }
 

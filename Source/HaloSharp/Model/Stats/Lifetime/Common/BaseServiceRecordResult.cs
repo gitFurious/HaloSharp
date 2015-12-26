@@ -1,11 +1,15 @@
 using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Lifetime.Common
 {
     [Serializable]
     public class BaseServiceRecordResult : IEquatable<BaseServiceRecordResult>
     {
+        [JsonProperty(PropertyName = "Id")]
         public string Id { get; set; }
+
+        [JsonProperty(PropertyName = "ResultCode")]
         public Enumeration.QueryResult ResultCode { get; set; }
 
         public bool Equals(BaseServiceRecordResult other)
@@ -20,7 +24,7 @@ namespace HaloSharp.Model.Stats.Lifetime.Common
                 return true;
             }
 
-            return string.Equals(Id, other.Id) 
+            return string.Equals(Id, other.Id)
                 && ResultCode == other.ResultCode;
         }
 

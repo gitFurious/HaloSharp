@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "mapImageUrl": {
+      "type": "string"
+    },
+    "mapId": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "contentId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "mapImageUrl",
+    "mapId",
+    "id",
+    "contentId"
+  ]
+}

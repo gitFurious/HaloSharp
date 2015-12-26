@@ -2,12 +2,15 @@
 using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Stats.CarnageReport;
-using HaloSharp.Query.Stats;
 using HaloSharp.Query.Stats.CarnageReport;
 using HaloSharp.Test.Utility;
+using Moq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Schema;
 using NUnit.Framework;
 using System;
-using System.Linq;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace HaloSharp.Test.Query.Stats.CarnageReport
@@ -15,7 +18,20 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
     [TestFixture]
     public class GetWarzoneMatchDetailsTests
     {
-        private const string BaseUri = "stats/h5/warzone/matches/";
+        private IHaloSession _mockSession;
+        private WarzoneMatch _warzoneMatch;
+
+        [SetUp]
+        public void Setup()
+        {
+            _warzoneMatch = JsonConvert.DeserializeObject<WarzoneMatch>(File.ReadAllText(Config.WarzoneMatchJsonPath));
+
+            var mock = new Mock<IHaloSession>();
+            mock.Setup(m => m.Get<WarzoneMatch>(It.IsAny<string>()))
+                .ReturnsAsync(_warzoneMatch);
+
+            _mockSession = mock.Object;
+        }
 
         [Test]
         public void GetConstructedUri_NoParamaters_MatchesExpected()
@@ -24,12 +40,11 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(BaseUri, uri);
+            Assert.AreEqual("stats/h5/warzone/matches/", uri);
         }
 
         [Test]
         [TestCase("00000000-0000-0000-0000-000000000000")]
-        [TestCase("22ee16eb-cdb9-4acf-9324-4a5516f93852")]
         public void GetConstructedUri_ForMatchId_MatchesExpected(string guid)
         {
             var query = new GetWarzoneMatchDetails()
@@ -37,14 +52,23 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual($"{BaseUri}{guid}", uri);
+            Assert.AreEqual($"stats/h5/warzone/matches/{guid}", uri);
         }
 
         [Test]
-        [TestCase("22ee16eb-cdb9-4acf-9324-4a5516f93852")]
-        [TestCase("982eaef6-4ed4-43b3-9361-b40563122b92")]
-        [TestCase("ea392dc3-5989-4fa8-b920-08e265220ffc")] // Contains MetaCommendationDeltas
-        public async Task GetWarzoneMatchDetails(string guid)
+        public async Task Query_DoesNotThrow()
+        {
+            var query = new GetWarzoneMatchDetails();
+
+            var result = await _mockSession.Query(query);
+
+            Assert.IsInstanceOf(typeof(WarzoneMatch), result);
+            Assert.AreEqual(_warzoneMatch, result);
+        }
+
+        [Test]
+        [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
+        public async Task GetWarzoneMatchDetails_DoesNotThrow(string guid)
         {
             var query = new GetWarzoneMatchDetails()
                 .ForMatchId(new Guid(guid));
@@ -55,9 +79,46 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         }
 
         [Test]
-        [TestCase("22ee16eb-cdb9-4acf-9324-4a5516f93852")]
-        [TestCase("982eaef6-4ed4-43b3-9361-b40563122b92")]
-        [TestCase("ea392dc3-5989-4fa8-b920-08e265220ffc")] // Contains MetaCommendationDeltas
+        [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
+        public async Task GetWarzoneMatchDetails_SchemaIsValid(string guid)
+        {
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.WarzoneMatchJsonSchemaPath), new JSchemaReaderSettings
+            {
+                Resolver = new JSchemaUrlResolver(),
+                BaseUri = new Uri(Path.GetFullPath(Config.WarzoneMatchJsonSchemaPath))
+            });
+
+            var query = new GetWarzoneMatchDetails()
+                .ForMatchId(new Guid(guid));
+
+            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+
+            SchemaUtility.AssertSchemaIsValid(weaponsSchema, jArray);
+        }
+
+        [Test]
+        [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
+        public async Task GetWarzoneMatchDetails_ModelMatchesSchema(string guid)
+        {
+            var schema = JSchema.Parse(File.ReadAllText(Config.WarzoneMatchJsonSchemaPath), new JSchemaReaderSettings
+            {
+                Resolver = new JSchemaUrlResolver(),
+                BaseUri = new Uri(Path.GetFullPath(Config.WarzoneMatchJsonSchemaPath))
+            });
+
+            var query = new GetWarzoneMatchDetails()
+                .ForMatchId(new Guid(guid));
+
+            var result = await Global.Session.Query(query);
+
+            var json = JsonConvert.SerializeObject(result);
+            var jContainer = JsonConvert.DeserializeObject<JContainer>(json);
+
+            SchemaUtility.AssertSchemaIsValid(schema, jContainer);
+        }
+
+        [Test]
+        [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         public async Task GetWarzoneMatchDetails_IsSerializable(string guid)
         {
             var query = new GetWarzoneMatchDetails()
@@ -65,8 +126,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             var result = await Global.Session.Query(query);
 
-            var serializationUtility = new SerializationUtility<WarzoneMatch>();
-            serializationUtility.AssertRoundTripSerializationIsPossible(result);
+            SerializationUtility<WarzoneMatch>.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

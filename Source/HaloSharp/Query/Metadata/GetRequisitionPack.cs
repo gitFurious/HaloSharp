@@ -1,6 +1,5 @@
-﻿using System;
-using HaloSharp.Model.Metadata.Common;
-using System.Collections.Generic;
+﻿using HaloSharp.Model.Metadata.Common;
+using System;
 using System.Text;
 using System.Threading.Tasks;
 

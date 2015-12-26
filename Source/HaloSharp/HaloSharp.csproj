@@ -100,6 +100,7 @@
     <Compile Include="Model\Stats\Lifetime\Common\BaseResult.cs" />
     <Compile Include="Model\Stats\Lifetime\Common\BaseServiceRecordResult.cs" />
     <Compile Include="Model\Stats\Lifetime\Common\BaseServiceRecord.cs" />
+    <Compile Include="Model\Stats\Lifetime\Common\GameBaseVariantStat.cs" />
     <Compile Include="Model\Stats\Lifetime\Common\TopGameBaseVariant.cs" />
     <Compile Include="Model\Stats\Lifetime\WarzoneServiceRecord.cs" />
     <Compile Include="Model\Stats\Lifetime\CampaignServiceRecord.cs" />

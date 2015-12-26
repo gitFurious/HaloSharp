@@ -1,16 +1,17 @@
-﻿using HaloSharp.Converter;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using HaloSharp.Converter;
 using HaloSharp.Model.Stats.Common;
 using HaloSharp.Model.Stats.Lifetime.Common;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace HaloSharp.Model.Stats.Lifetime
 {
     [Serializable]
     public class CampaignServiceRecord : BaseServiceRecord, IEquatable<CampaignServiceRecord>
     {
+        [JsonProperty(PropertyName = "Results")]
         public List<CampaignServiceRecordResult> Results { get; set; }
 
         public bool Equals(CampaignServiceRecord other)
@@ -71,6 +72,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CampaignServiceRecordResult : BaseServiceRecordResult, IEquatable<CampaignServiceRecordResult>
     {
+        [JsonProperty(PropertyName = "Result")]
         public CampaignResult Result { get; set; }
 
         public bool Equals(CampaignServiceRecordResult other)
@@ -131,6 +133,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CampaignResult : BaseResult, IEquatable<CampaignResult>
     {
+        [JsonProperty(PropertyName = "CampaignStat")]
         public CampaignStat CampaignStat { get; set; }
 
         public bool Equals(CampaignResult other)
@@ -191,6 +194,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CampaignStat : BaseStat, IEquatable<CampaignStat>
     {
+        [JsonProperty(PropertyName = "CampaignMissionStats")]
         public List<CampaignMissionStat> CampaignMissionStats { get; set; }
 
         public bool Equals(CampaignStat other)
@@ -251,10 +255,17 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CampaignMissionStat : BaseStat, IEquatable<CampaignMissionStat>
     {
-        public Dictionary<Enumeration.Difficulty, Stats> CoopStats { get; set; }
+        [JsonProperty(PropertyName = "CoopStats")]
+        public Dictionary<int, DifficultyStat> CoopStats { get; set; }
+
+        [JsonProperty(PropertyName = "FlexibleStats")]
         public FlexibleStats FlexibleStats { get; set; }
+
+        [JsonProperty(PropertyName = "MissionId")]
         public Guid MissionId { get; set; }
-        public Dictionary<Enumeration.Difficulty, Stats> SoloStats { get; set; }
+
+        [JsonProperty(PropertyName = "SoloStats")]
+        public Dictionary<int, DifficultyStat> SoloStats { get; set; }
 
         public bool Equals(CampaignMissionStat other)
         {
@@ -320,18 +331,25 @@ namespace HaloSharp.Model.Stats.Lifetime
     }
 
     [Serializable]
-    public class Stats : IEquatable<Stats>
+    public class DifficultyStat : IEquatable<DifficultyStat>
     {
+        [JsonProperty(PropertyName = "AllSkullsOn")]
         public bool AllSkullsOn { get; set; }
 
-        [JsonConverter(typeof(TimeSpanConverter))]
+        [JsonProperty(PropertyName = "FastestCompletionTime")]
+        [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan FastestCompletionTime { get; set; }
 
+        [JsonProperty(PropertyName = "HighestScore")]
         public int HighestScore { get; set; }
+
+        [JsonProperty(PropertyName = "Skulls")]
         public List<int> Skulls { get; set; }
+
+        [JsonProperty(PropertyName = "TotalTimesCompleted")]
         public int TotalTimesCompleted { get; set; }
 
-        public bool Equals(Stats other)
+        public bool Equals(DifficultyStat other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -362,12 +380,12 @@ namespace HaloSharp.Model.Stats.Lifetime
                 return true;
             }
 
-            if (obj.GetType() != typeof (Stats))
+            if (obj.GetType() != typeof (DifficultyStat))
             {
                 return false;
             }
 
-            return Equals((Stats) obj);
+            return Equals((DifficultyStat) obj);
         }
 
         public override int GetHashCode()
@@ -383,12 +401,12 @@ namespace HaloSharp.Model.Stats.Lifetime
             }
         }
 
-        public static bool operator ==(Stats left, Stats right)
+        public static bool operator ==(DifficultyStat left, DifficultyStat right)
         {
             return Equals(left, right);
         }
 
-        public static bool operator !=(Stats left, Stats right)
+        public static bool operator !=(DifficultyStat left, DifficultyStat right)
         {
             return !Equals(left, right);
         }

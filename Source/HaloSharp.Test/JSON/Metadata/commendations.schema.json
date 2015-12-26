@@ -1,0 +1,136 @@
+{
+  "definitions": {
+    "Category": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "iconImageUrl": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "iconImageUrl",
+        "order",
+        "id",
+        "contentId"
+      ]
+    },
+    "Commendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "iconImageUrl": {
+          "type": "string"
+        },
+        "levels": {
+          "type": [ "array", "null" ],
+          "items": {
+            "$ref": "#/definitions/Level"
+          }
+        },
+        "requiredLevels": {
+          "type": [ "array", "null" ],
+          "items": {
+            "$ref": "#/definitions/RequiredLevel"
+          }
+        },
+        "reward": {
+          "$ref": "common/reward.schema.json"
+        },
+        "category": {
+          "$ref": "#/definitions/Category"
+        },
+        "id": {
+          "type": "string"
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "name",
+        "description",
+        "iconImageUrl",
+        "levels",
+        "requiredLevels",
+        "reward",
+        "category",
+        "id",
+        "contentId"
+      ]
+    },
+    "Level": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reward": {
+          "$ref": "common/reward.schema.json"
+        },
+        "threshold": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "reward",
+        "threshold",
+        "id",
+        "contentId"
+      ]
+    },
+    "RequiredLevel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "threshold": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "threshold",
+        "id",
+        "contentId"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Commendation"
+  }
+}

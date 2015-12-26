@@ -1,18 +1,28 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class TeamColor : IEquatable<TeamColor>
     {
+        [JsonProperty(PropertyName = "color")]
         public string Color { get; set; }
-        public string Description { get; set; }
-        public string IconUrl { get; set; }
-        public int Id { get; set; }
-        public string Name { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
+        public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "iconUrl")]
+        public string IconUrl { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
+        public int Id { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
 
         public bool Equals(TeamColor other)
         {
@@ -27,10 +37,10 @@ namespace HaloSharp.Model.Metadata
             }
 
             return string.Equals(Color, other.Color)
+                && ContentId.Equals(other.ContentId)
                 && string.Equals(Description, other.Description)
                 && string.Equals(IconUrl, other.IconUrl)
-                && Id == other.Id
-                && string.Equals(Name, other.Name);
+                && Id == other.Id && string.Equals(Name, other.Name);
         }
 
         public override bool Equals(object obj)
@@ -58,6 +68,7 @@ namespace HaloSharp.Model.Metadata
             unchecked
             {
                 var hashCode = Color?.GetHashCode() ?? 0;
+                hashCode = (hashCode*397) ^ ContentId.GetHashCode();
                 hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (IconUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Id;

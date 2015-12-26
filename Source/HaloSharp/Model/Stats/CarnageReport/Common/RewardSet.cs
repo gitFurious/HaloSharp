@@ -1,18 +1,24 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class RewardSet : IEquatable<RewardSet>
     {
+        [JsonProperty(PropertyName = "CommendationLevelId")]
         public Guid? CommendationLevelId { get; set; }
+
+        [JsonProperty(PropertyName = "CommendationSource")]
         public Guid? CommendationSource { get; set; }
 
         [JsonProperty(PropertyName = "RewardSet")]
         public Guid Id { get; set; }
 
+        [JsonProperty(PropertyName = "RewardSourceType")]
         public Enumeration.RewardSourceType RewardSourceType { get; set; }
+
+        [JsonProperty(PropertyName = "SpartanRankSource")]
         public int? SpartanRankSource { get; set; }
 
         public bool Equals(RewardSet other)

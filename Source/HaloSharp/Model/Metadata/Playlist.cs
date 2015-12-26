@@ -7,19 +7,30 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class Playlist : IEquatable<Playlist>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        [JsonProperty(PropertyName = "gameMode")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.GameMode GameMode { get; set; }
 
+        [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
-        public string ImageUrl { get; set; }
-        public bool IsActive { get; set; }
-        public bool IsRanked { get; set; }
-        public string Name { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "imageUrl")]
+        public string ImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "isActive")]
+        public bool IsActive { get; set; }
+
+        [JsonProperty(PropertyName = "isRanked")]
+        public bool IsRanked { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
 
         public bool Equals(Playlist other)
         {
@@ -34,12 +45,13 @@ namespace HaloSharp.Model.Metadata
             }
 
             return string.Equals(Description, other.Description)
-                && GameMode == other.GameMode
-                && Id.Equals(other.Id)
-                && string.Equals(ImageUrl, other.ImageUrl)
-                && IsActive == other.IsActive
-                && IsRanked == other.IsRanked
-                && string.Equals(Name, other.Name);
+                   && GameMode == other.GameMode
+                   && Id.Equals(other.Id)
+                   && string.Equals(ImageUrl, other.ImageUrl)
+                   && IsActive == other.IsActive
+                   && IsRanked == other.IsRanked
+                   && string.Equals(Name, other.Name)
+                   && ContentId.Equals(other.ContentId);
         }
 
         public override bool Equals(object obj)
@@ -73,6 +85,7 @@ namespace HaloSharp.Model.Metadata
                 hashCode = (hashCode*397) ^ IsActive.GetHashCode();
                 hashCode = (hashCode*397) ^ IsRanked.GetHashCode();
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ ContentId.GetHashCode();
                 return hashCode;
             }
         }

@@ -1,0 +1,24 @@
+{
+    "supportedGameModes":[
+        "Arena",
+        "Warzone"
+    ],
+    "name":"AIR ASSAULT",
+    "description":"The AIR ASSAULT helmet's long-range comm system makes it popular with Spartan fireteam leaders, but Naphtali also markets this helmet to Army special forces.",
+    "rarityType":"Common",
+    "rarity":"Common",
+    "isMythic":false,
+    "isCertification":false,
+    "isWearable":true,
+    "useType":"Durable",
+    "largeImageUrl":"https://image.halocdn.com:443/h5/requisitions/0a55d3d9-16c8-400b-a830-e65a0543a5df?locale=en&width=200&hash=EAoqR%2bLHiAJInycTKC6ycHdSacxulR8IggjGTm83diQ%3d",
+    "categoryName":"Customization",
+    "internalCategoryName":"Customization",
+    "subcategoryName":"Helmet",
+    "internalSubcategoryName":"Helmet",
+    "subcategoryOrder":1,
+    "sellPrice":0,
+    "certificationRequisitionId":null,
+    "id":"0a55d3d9-16c8-400b-a830-e65a0543a5df",
+    "contentId":"0a55d3d9-16c8-400b-a830-e65a0543a5df"
+}

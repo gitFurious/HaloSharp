@@ -1,20 +1,24 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class FlexibleStat : IEquatable<FlexibleStat>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
+        [JsonProperty(PropertyName = "type")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.FlexibleStatType Type { get; set; }
-
-        // Internal use.
-        //public Guid ContentId { get; set; }
 
         public bool Equals(FlexibleStat other)
         {
@@ -28,8 +32,9 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return Id.Equals(other.Id)
-                && string.Equals(Name, other.Name)
+            return ContentId.Equals(other.ContentId) 
+                && Id.Equals(other.Id) 
+                && string.Equals(Name, other.Name) 
                 && Type == other.Type;
         }
 
@@ -57,7 +62,8 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                var hashCode = Id.GetHashCode();
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (int) Type;
                 return hashCode;

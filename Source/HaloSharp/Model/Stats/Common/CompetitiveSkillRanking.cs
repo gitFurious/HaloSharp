@@ -1,14 +1,24 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Common
 {
     [Serializable]
     public class CompetitiveSkillRanking : IEquatable<CompetitiveSkillRanking>
     {
+        [JsonProperty(PropertyName = "Csr")]
         public int Csr { get; set; }
+
+        [JsonProperty(PropertyName = "DesignationId")]
         public Enumeration.CompetitiveSkillRankingDesignation DesignationId { get; set; }
+
+        [JsonProperty(PropertyName = "PercentToNextTier")]
         public int PercentToNextTier { get; set; }
+
+        [JsonProperty(PropertyName = "Rank")]
         public int? Rank { get; set; }
+
+        [JsonProperty(PropertyName = "Tier")]
         public int Tier { get; set; }
 
         public bool Equals(CompetitiveSkillRanking other)

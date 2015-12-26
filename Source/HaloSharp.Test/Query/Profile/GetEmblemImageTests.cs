@@ -12,8 +12,6 @@ namespace HaloSharp.Test.Query.Profile
     [TestFixture]
     public class GetEmblemImageTests
     {
-        private const string BaseUri = "profile/h5/profiles/{0}/emblem{1}";
-
         [Test]
         public void GetConstructedUri_NoParamaters_MatchesExpected()
         {
@@ -21,7 +19,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, null, null), uri);
+            Assert.AreEqual($"profile/h5/profiles/{null}/emblem{null}", uri);
         }
 
         [Test]
@@ -34,7 +32,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, gamertag, null), uri);
+            Assert.AreEqual($"profile/h5/profiles/{gamertag}/emblem{null}", uri);
         }
 
         [Test]
@@ -47,7 +45,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, null, $"?size={size}"), uri);
+            Assert.AreEqual($"profile/h5/profiles/{null}/emblem?size={size}", uri);
         }
 
         [Test]
@@ -61,7 +59,7 @@ namespace HaloSharp.Test.Query.Profile
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(string.Format(BaseUri, gamertag, $"?size={size}"), uri);
+            Assert.AreEqual($"profile/h5/profiles/{gamertag}/emblem?size={size}", uri);
         }
 
         [Test]
@@ -75,20 +73,6 @@ namespace HaloSharp.Test.Query.Profile
             var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof (GetImage), result);
-        }
-
-        [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        public async Task GetEmblemImage_IsSerializable(string gamertag)
-        {
-            var query = new GetEmblemImage()
-                .ForPlayer(gamertag);
-
-            var result = await Global.Session.Query(query);
-
-            var serializationUtility = new SerializationUtility<GetImage>();
-            serializationUtility.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]
@@ -106,6 +90,19 @@ namespace HaloSharp.Test.Query.Profile
             var result = await Global.Session.Query(query);
 
             Assert.IsInstanceOf(typeof(GetImage), result);
+        }
+
+        [Test]
+        [TestCase("Greenskull")]
+        [TestCase("Furiousn00b")]
+        public async Task GetEmblemImage_IsSerializable(string gamertag)
+        {
+            var query = new GetEmblemImage()
+                .ForPlayer(gamertag);
+
+            var result = await Global.Session.Query(query);
+
+            SerializationUtility<GetImage>.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]
@@ -151,6 +148,26 @@ namespace HaloSharp.Test.Query.Profile
             catch (HaloApiException e)
             {
                 Assert.AreEqual((int)Enumeration.StatusCode.BadRequest, e.HaloApiError.StatusCode);
+            }
+            catch (System.Exception e)
+            {
+                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
+            }
+        }
+
+        [Test]
+        public async Task GetEmblemImage_MissingGamertag()
+        {
+            var query = new GetEmblemImage();
+
+            try
+            {
+                await Global.Session.Query(query);
+                Assert.Fail("An exception should have been thrown");
+            }
+            catch (HaloApiException e)
+            {
+                Assert.AreEqual((int)Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
             }
             catch (System.Exception e)
             {

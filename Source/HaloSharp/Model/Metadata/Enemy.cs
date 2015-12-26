@@ -1,24 +1,33 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class Enemy : IEquatable<Enemy>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty(PropertyName = "faction")]
+        [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.Faction Faction { get; set; }
 
+        [JsonProperty(PropertyName = "id")]
         public uint Id { get; set; }
-        public string LageIconImageUrl { get; set; }
-        public string Name { get; set; }
-        public string SmallIconImageUrl { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "largeIconImageUrl")]
+        public string LargeIconImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "smallIconImageUrl")]
+        public string SmallIconImageUrl { get; set; }
 
         public bool Equals(Enemy other)
         {
@@ -32,12 +41,12 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return string.Equals(Description, other.Description)
-                && Faction == other.Faction
-                && Id == other.Id
-                && string.Equals(LageIconImageUrl, other.LageIconImageUrl)
+            return string.Equals(Description, other.Description) 
+                && Faction == other.Faction && Id == other.Id
+                && string.Equals(LargeIconImageUrl, other.LargeIconImageUrl) 
                 && string.Equals(Name, other.Name)
-                && string.Equals(SmallIconImageUrl, other.SmallIconImageUrl);
+                && string.Equals(SmallIconImageUrl, other.SmallIconImageUrl)
+                && ContentId.Equals(other.ContentId);
         }
 
         public override bool Equals(object obj)
@@ -67,9 +76,10 @@ namespace HaloSharp.Model.Metadata
                 var hashCode = Description?.GetHashCode() ?? 0;
                 hashCode = (hashCode*397) ^ (int) Faction;
                 hashCode = (hashCode*397) ^ (int) Id;
-                hashCode = (hashCode*397) ^ (LageIconImageUrl?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (LargeIconImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (SmallIconImageUrl?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ ContentId.GetHashCode();
                 return hashCode;
             }
         }

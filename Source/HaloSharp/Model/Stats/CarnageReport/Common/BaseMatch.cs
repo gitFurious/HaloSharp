@@ -1,25 +1,39 @@
-﻿using HaloSharp.Converter;
+﻿using System;
+using HaloSharp.Converter;
 using Newtonsoft.Json;
-using System;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class BaseMatch : IEquatable<BaseMatch>
     {
+        [JsonProperty(PropertyName = "GameBaseVariantId")]
         public Guid GameBaseVariantId { get; set; }
-        public Guid GameVariantId { get; set; }
-        public bool IsMatchOver { get; set; }
-        public bool IsTeamGame { get; set; }
-        public Guid MapId { get; set; }
-        public Guid MapVariantId { get; set; }
-        public Guid PlaylistId { get; set; }
-        
-        [JsonConverter(typeof(TimeSpanConverter))]
-        public TimeSpan TotalDuration { get; set; }
 
-        // Internal use only.
+        [JsonProperty(PropertyName = "GameVariantId")]
+        public Guid GameVariantId { get; set; }
+
+        [JsonProperty(PropertyName = "IsMatchOver")]
+        public bool IsMatchOver { get; set; }
+
+        [JsonProperty(PropertyName = "IsTeamGame")]
+        public bool IsTeamGame { get; set; }
+
+        [JsonProperty(PropertyName = "MapId")]
+        public Guid MapId { get; set; }
+
+        [JsonProperty(PropertyName = "MapVariantId")]
+        public Guid MapVariantId { get; set; }
+
+        [JsonProperty(PropertyName = "PlaylistId")]
+        public Guid PlaylistId { get; set; }
+
+        [JsonProperty(PropertyName = "SeasonId")]
         public Guid? SeasonId { get; set; }
+
+        [JsonProperty(PropertyName = "TotalDuration")]
+        [JsonConverter(typeof (TimeSpanConverter))]
+        public TimeSpan TotalDuration { get; set; }
 
         public bool Equals(BaseMatch other)
         {

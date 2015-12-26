@@ -1,0 +1,28 @@
+{
+  "type": [ "object", "null" ],
+  "additionalProperties": false,
+  "properties": {
+    "Tier": {
+      "type": "integer"
+    },
+    "DesignationId": {
+      "type": "integer"
+    },
+    "Csr": {
+      "type": "integer"
+    },
+    "PercentToNextTier": {
+      "type": "integer"
+    },
+    "Rank": {
+      "type": [ "integer", "null" ]
+    }
+  },
+  "required": [
+	  "Tier",
+	  "DesignationId",
+	  "Csr",
+	  "PercentToNextTier",
+	  "Rank"
+  ]
+}

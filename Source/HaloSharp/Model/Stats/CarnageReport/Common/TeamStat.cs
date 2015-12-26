@@ -1,15 +1,23 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class TeamStat : IEquatable<TeamStat>
     {
+        [JsonProperty(PropertyName = "Rank")]
         public int Rank { get; set; }
+
+        [JsonProperty(PropertyName = "RoundStats")]
         public List<RoundStat> RoundStats { get; set; }
+
+        [JsonProperty(PropertyName = "Score")]
         public uint Score { get; set; }
+
+        [JsonProperty(PropertyName = "TeamId")]
         public int TeamId { get; set; }
 
         public bool Equals(TeamStat other)
@@ -76,8 +84,13 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
     [Serializable]
     public class RoundStat : IEquatable<RoundStat>
     {
+        [JsonProperty(PropertyName = "Rank")]
         public int Rank { get; set; }
+
+        [JsonProperty(PropertyName = "RoundNumber")]
         public int RoundNumber { get; set; }
+
+        [JsonProperty(PropertyName = "Score")]
         public uint Score { get; set; }
 
         public bool Equals(RoundStat other)

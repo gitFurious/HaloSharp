@@ -1,21 +1,29 @@
-﻿using HaloSharp.Converter;
-using HaloSharp.Model.Stats.CarnageReport.Common;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Converter;
+using HaloSharp.Model.Stats.CarnageReport.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport
 {
     [Serializable]
     public class CampaignMatch : BaseMatch, IEquatable<CampaignMatch>
     {
+        [JsonProperty(PropertyName = "Difficulty")]
         public Enumeration.Difficulty Difficulty { get; set; }
+
+        [JsonProperty(PropertyName = "MissionCompleted")]
         public bool MissionCompleted { get; set; }
+
+        [JsonProperty(PropertyName = "PlayerStats")]
         public List<CampaignMatchPlayerStat> PlayerStats { get; set; }
+
+        [JsonProperty(PropertyName = "Skulls")]
         public List<int> Skulls { get; set; }
 
-        [JsonConverter(typeof(TimeSpanConverter))]
+        [JsonProperty(PropertyName = "TotalMissionPlaythroughTime")]
+        [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan TotalMissionPlaythroughTime { get; set; }
 
         public bool Equals(CampaignMatch other)
@@ -86,7 +94,10 @@ namespace HaloSharp.Model.Stats.CarnageReport
     [Serializable]
     public class CampaignMatchPlayerStat : BasePlayerStat, IEquatable<CampaignMatchPlayerStat>
     {
+        [JsonProperty(PropertyName = "BiggestKillScore")]
         public int BiggestKillScore { get; set; }
+
+        [JsonProperty(PropertyName = "Score")]
         public int Score { get; set; }
 
         public bool Equals(CampaignMatchPlayerStat other)
@@ -95,10 +106,12 @@ namespace HaloSharp.Model.Stats.CarnageReport
             {
                 return false;
             }
+
             if (ReferenceEquals(this, other))
             {
                 return true;
             }
+
             return base.Equals(other)
                 && BiggestKillScore == other.BiggestKillScore
                 && Score == other.Score;

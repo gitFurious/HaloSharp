@@ -1,0 +1,71 @@
+{
+  "definitions": {
+    "StatCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "string"
+        },
+        "Count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Count"
+      ]
+    },
+    "Timelapse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "string"
+        },
+        "Timelapse": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Id",
+        "Timelapse"
+      ]
+    }
+  },
+
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "MedalStatCounts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/StatCount"
+      }
+    },
+    "ImpulseStatCounts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/StatCount"
+      }
+    },
+    "MedalTimelapses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Timelapse"
+      }
+    },
+    "ImpulseTimelapses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Timelapse"
+      }
+    }
+  },
+  "required": [
+    "MedalStatCounts",
+    "ImpulseStatCounts",
+    "MedalTimelapses",
+    "ImpulseTimelapses"
+  ]
+}

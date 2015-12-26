@@ -1,14 +1,18 @@
-﻿using HaloSharp.Model.Stats.CarnageReport.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Stats.CarnageReport.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport
 {
     [Serializable]
     public class WarzoneMatch : BaseMatch, IEquatable<WarzoneMatch>
     {
+        [JsonProperty(PropertyName = "PlayerStats")]
         public List<WarzonePlayerStat> PlayerStats { get; set; }
+
+        [JsonProperty(PropertyName = "TeamStats")]
         public List<TeamStat> TeamStats { get; set; }
 
         public bool Equals(WarzoneMatch other)
@@ -73,15 +77,32 @@ namespace HaloSharp.Model.Stats.CarnageReport
     [Serializable]
     public class WarzonePlayerStat : BasePlayerStat, IEquatable<WarzonePlayerStat>
     {
+        [JsonProperty(PropertyName = "CreditsEarned")]
         public CreditsEarned CreditsEarned { get; set; }
+
+        [JsonProperty(PropertyName = "KilledByOpponentDetails")]
         public List<OpponentDetails> KilledByOpponentDetails { get; set; }
+
+        [JsonProperty(PropertyName = "KilledOpponentDetails")]
         public List<OpponentDetails> KilledOpponentDetails { get; set; }
-        public List<ProgressiveCommendationDelta> ProgressiveCommendationDeltas { get; set; }
-        public List<RewardSet> RewardSets { get; set; }
-        public int TotalPiesEarned { get; set; }
-        public int WarzoneLevel { get; set; }
-        public XpInfo XpInfo { get; set; }
+
+        [JsonProperty(PropertyName = "MetaCommendationDeltas")]
         public List<MetaCommendationDelta> MetaCommendationDeltas { get; set; }
+
+        [JsonProperty(PropertyName = "ProgressiveCommendationDeltas")]
+        public List<ProgressiveCommendationDelta> ProgressiveCommendationDeltas { get; set; }
+
+        [JsonProperty(PropertyName = "RewardSets")]
+        public List<RewardSet> RewardSets { get; set; }
+
+        [JsonProperty(PropertyName = "TotalPiesEarned")]
+        public int TotalPiesEarned { get; set; }
+
+        [JsonProperty(PropertyName = "WarzoneLevel")]
+        public int WarzoneLevel { get; set; }
+
+        [JsonProperty(PropertyName = "XpInfo")]
+        public XpInfo XpInfo { get; set; }
 
         public bool Equals(WarzonePlayerStat other)
         {
@@ -99,6 +120,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 && Equals(CreditsEarned, other.CreditsEarned)
                 && KilledByOpponentDetails.OrderBy(od => od.GamerTag).SequenceEqual(other.KilledByOpponentDetails.OrderBy(od => od.GamerTag))
                 && KilledOpponentDetails.OrderBy(od => od.GamerTag).SequenceEqual(other.KilledOpponentDetails.OrderBy(od => od.GamerTag))
+                && MetaCommendationDeltas.OrderBy(mcd => mcd.Id).SequenceEqual(other.MetaCommendationDeltas.OrderBy(mcd => mcd.Id))
                 && ProgressiveCommendationDeltas.OrderBy(pcd => pcd.Id).SequenceEqual(other.ProgressiveCommendationDeltas.OrderBy(pcd => pcd.Id))
                 && RewardSets.OrderBy(rs => rs.Id).SequenceEqual(other.RewardSets.OrderBy(rs => rs.Id))
                 && TotalPiesEarned == other.TotalPiesEarned
@@ -134,6 +156,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 hashCode = (hashCode*397) ^ (CreditsEarned?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (KilledByOpponentDetails?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (KilledOpponentDetails?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (MetaCommendationDeltas?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (ProgressiveCommendationDeltas?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (RewardSets?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ TotalPiesEarned;

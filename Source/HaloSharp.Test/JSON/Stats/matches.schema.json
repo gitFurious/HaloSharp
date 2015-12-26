@@ -1,0 +1,262 @@
+{
+  "definitions": {
+    "GameVariant": {
+      "type": [ "object", "null" ],
+      "additionalProperties": false,
+      "properties": {
+        "ResourceType": {
+          "type": "integer"
+        },
+        "ResourceId": {
+          "type": "string"
+        },
+        "OwnerType": {
+          "type": "integer"
+        },
+        "Owner": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ResourceType",
+        "ResourceId",
+        "OwnerType",
+        "Owner"
+      ]
+    },
+    "Id": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MatchId": {
+          "type": "string"
+        },
+        "GameMode": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "MatchId",
+        "GameMode"
+      ]
+    },
+    "MapVariant": {
+      "type": [ "object", "null" ],
+      "additionalProperties": false,
+      "properties": {
+        "ResourceType": {
+          "type": "integer"
+        },
+        "ResourceId": {
+          "type": "string"
+        },
+        "OwnerType": {
+          "type": "integer"
+        },
+        "Owner": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ResourceType",
+        "ResourceId",
+        "OwnerType",
+        "Owner"
+      ]
+    },
+    "MatchCompletedDate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ISO8601Date": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ISO8601Date"
+      ]
+    },
+    "Player": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Player": {
+          "$ref": "common/identity.schema.json"
+        },
+        "TeamId": {
+          "type": "integer"
+        },
+        "Rank": {
+          "type": "integer"
+        },
+        "Result": {
+          "type": "integer"
+        },
+        "TotalKills": {
+          "type": "integer"
+        },
+        "TotalDeaths": {
+          "type": "integer"
+        },
+        "TotalAssists": {
+          "type": "integer"
+        },
+        "PreMatchRatings": {
+          "type": "null"
+        },
+        "PostMatchRatings": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "Player",
+        "TeamId",
+        "Rank",
+        "Result",
+        "TotalKills",
+        "TotalDeaths",
+        "TotalAssists",
+        "PreMatchRatings",
+        "PostMatchRatings"
+      ]
+    },
+    "Result": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Links": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "StatsMatchDetails": {
+              "$ref": "common/link.schema.json"
+            },
+            "UgcFilmManifest": {
+              "$ref": "common/link.schema.json"
+            }
+          },
+          "required": [
+            "StatsMatchDetails"
+          ]
+        },
+        "Id": {
+          "$ref": "#/definitions/Id"
+        },
+        "HopperId": {
+          "type": [ "string", "null" ]
+        },
+        "MapId": {
+          "type": "string"
+        },
+        "MapVariant": {
+          "$ref": "#/definitions/MapVariant"
+        },
+        "GameBaseVariantId": {
+          "type": "string"
+        },
+        "GameVariant": {
+          "$ref": "#/definitions/GameVariant"
+        },
+        "MatchDuration": {
+          "type": "string"
+        },
+        "MatchCompletedDate": {
+          "$ref": "#/definitions/MatchCompletedDate"
+        },
+        "Teams": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Team"
+          }
+        },
+        "Players": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Player"
+          }
+        },
+        "IsTeamGame": {
+          "type": "boolean"
+        },
+        "SeasonId": {
+          "type": [ "string", "null" ]
+        }
+      },
+      "required": [
+        "Links",
+        "Id",
+        "HopperId",
+        "MapId",
+        "MapVariant",
+        "GameBaseVariantId",
+        "GameVariant",
+        "MatchDuration",
+        "MatchCompletedDate",
+        "Teams",
+        "Players",
+        "IsTeamGame",
+        "SeasonId"
+      ]
+    },
+    "Team": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Score": {
+          "type": "integer"
+        },
+        "Rank": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Score",
+        "Rank"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Start": {
+      "type": "integer"
+    },
+    "Count": {
+      "type": "integer"
+    },
+    "ResultCount": {
+      "type": "integer"
+    },
+    "Results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Result"
+      }
+    },
+    "Links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Self": {
+          "$ref": "common/link.schema.json"
+        }
+      },
+      "required": [
+        "Self"
+      ]
+    }
+  },
+  "required": [
+    "Start",
+    "Count",
+    "ResultCount",
+    "Results",
+    "Links"
+  ]
+}

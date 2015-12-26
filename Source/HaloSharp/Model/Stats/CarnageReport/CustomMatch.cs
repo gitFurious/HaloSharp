@@ -1,14 +1,18 @@
-﻿using HaloSharp.Model.Stats.CarnageReport.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Stats.CarnageReport.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport
 {
     [Serializable]
     public class CustomMatch : BaseMatch, IEquatable<CustomMatch>
     {
+        [JsonProperty(PropertyName = "PlayerStats")]
         public List<CustomMatchPlayerStat> PlayerStats { get; set; }
+
+        [JsonProperty(PropertyName = "TeamStats")]
         public List<TeamStat> TeamStats { get; set; }
 
         public bool Equals(CustomMatch other)
@@ -73,7 +77,10 @@ namespace HaloSharp.Model.Stats.CarnageReport
     [Serializable]
     public class CustomMatchPlayerStat : BasePlayerStat, IEquatable<CustomMatchPlayerStat>
     {
+        [JsonProperty(PropertyName = "KilledByOpponentDetails")]
         public List<OpponentDetails> KilledByOpponentDetails { get; set; }
+
+        [JsonProperty(PropertyName = "KilledOpponentDetails")]
         public List<OpponentDetails> KilledOpponentDetails { get; set; }
 
         public bool Equals(CustomMatchPlayerStat other)

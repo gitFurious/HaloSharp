@@ -1,13 +1,19 @@
-﻿using HaloSharp.Model.Stats.Common;
-using System;
+﻿using System;
+using HaloSharp.Model.Stats.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Lifetime.Common
 {
     [Serializable]
     public class BaseResult : IEquatable<BaseResult>
     {
+        [JsonProperty(PropertyName = "PlayerId")]
         public Identity PlayerId { get; set; }
+
+        [JsonProperty(PropertyName = "SpartanRank")]
         public int SpartanRank { get; set; }
+
+        [JsonProperty(PropertyName = "Xp")]
         public int Xp { get; set; }
 
         public bool Equals(BaseResult other)

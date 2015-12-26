@@ -1,54 +1,111 @@
-using HaloSharp.Converter;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Converter;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Common
 {
     [Serializable]
     public class BaseStat : IEquatable<BaseStat>
     {
+        [JsonProperty(PropertyName = "DestroyedEnemyVehicles")]
         public List<EnemySet> DestroyedEnemyVehicles { get; set; }
+
+        [JsonProperty(PropertyName = "EnemyKills")]
         public List<EnemySet> EnemyKills { get; set; }
+
+        [JsonProperty(PropertyName = "Impulses")]
         public List<Impulse> Impulses { get; set; }
+
+        [JsonProperty(PropertyName = "MedalAwards")]
         public List<MedalAward> MedalAwards { get; set; }
+
+        [JsonProperty(PropertyName = "TotalAssassinations")]
         public int TotalAssassinations { get; set; }
+
+        [JsonProperty(PropertyName = "TotalAssists")]
         public int TotalAssists { get; set; }
+
+        [JsonProperty(PropertyName = "TotalDeaths")]
         public int TotalDeaths { get; set; }
+
+        [JsonProperty(PropertyName = "TotalGamesCompleted")]
+        public int TotalGamesCompleted { get; set; }
+
+        [JsonProperty(PropertyName = "TotalGamesLost")]
+        public int TotalGamesLost { get; set; }
+
+        [JsonProperty(PropertyName = "TotalGamesTied")]
+        public int TotalGamesTied { get; set; }
+
+        [JsonProperty(PropertyName = "TotalGamesWon")]
+        public int TotalGamesWon { get; set; }
+
+        [JsonProperty(PropertyName = "TotalGrenadeDamage")]
         public double TotalGrenadeDamage { get; set; }
+
+        [JsonProperty(PropertyName = "TotalGrenadeKills")]
         public int TotalGrenadeKills { get; set; }
+
+        [JsonProperty(PropertyName = "TotalGroundPoundDamage")]
         public double TotalGroundPoundDamage { get; set; }
+
+        [JsonProperty(PropertyName = "TotalGroundPoundKills")]
         public int TotalGroundPoundKills { get; set; }
+
+        [JsonProperty(PropertyName = "TotalHeadshots")]
         public int TotalHeadshots { get; set; }
+
+        [JsonProperty(PropertyName = "TotalKills")]
         public int TotalKills { get; set; }
+
+        [JsonProperty(PropertyName = "TotalMeleeDamage")]
         public double TotalMeleeDamage { get; set; }
+
+        [JsonProperty(PropertyName = "TotalMeleeKills")]
         public int TotalMeleeKills { get; set; }
+
+        [JsonProperty(PropertyName = "TotalPowerWeaponDamage")]
         public double TotalPowerWeaponDamage { get; set; }
+
+        [JsonProperty(PropertyName = "TotalPowerWeaponGrabs")]
         public int TotalPowerWeaponGrabs { get; set; }
+
+        [JsonProperty(PropertyName = "TotalPowerWeaponKills")]
         public int TotalPowerWeaponKills { get; set; }
 
-        [JsonConverter(typeof(TimeSpanConverter))]
+        [JsonProperty(PropertyName = "TotalPowerWeaponPossessionTime")]
+        [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan TotalPowerWeaponPossessionTime { get; set; }
 
+        [JsonProperty(PropertyName = "TotalShotsFired")]
         public int TotalShotsFired { get; set; }
+
+        [JsonProperty(PropertyName = "TotalShotsLanded")]
         public int TotalShotsLanded { get; set; }
+
+        [JsonProperty(PropertyName = "TotalShoulderBashDamage")]
         public double TotalShoulderBashDamage { get; set; }
+
+        [JsonProperty(PropertyName = "TotalShoulderBashKills")]
         public int TotalShoulderBashKills { get; set; }
+
+        [JsonProperty(PropertyName = "TotalSpartanKills")]
         public int TotalSpartanKills { get; set; }
 
-        [JsonConverter(typeof(TimeSpanConverter))]
+        [JsonProperty(PropertyName = "TotalTimePlayed")]
+        [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan TotalTimePlayed { get; set; }
 
+        [JsonProperty(PropertyName = "TotalWeaponDamage")]
         public double TotalWeaponDamage { get; set; }
-        public List<WeaponStat> WeaponStats { get; set; }
-        public WeaponStat WeaponWithMostKills { get; set; }
 
-        // Not used.
-        public int TotalGamesCompleted { get; set; }
-        public int TotalGamesLost { get; set; }
-        public int TotalGamesTied { get; set; }
-        public int TotalGamesWon { get; set; }
+        [JsonProperty(PropertyName = "WeaponStats")]
+        public List<WeaponStat> WeaponStats { get; set; }
+
+        [JsonProperty(PropertyName = "WeaponWithMostKills")]
+        public WeaponStat WeaponWithMostKills { get; set; }
 
         public bool Equals(BaseStat other)
         {
@@ -170,15 +227,26 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class WeaponStat : IEquatable<WeaponStat>
     {
+        [JsonProperty(PropertyName = "TotalDamageDealt")]
         public double TotalDamageDealt { get; set; }
+
+        [JsonProperty(PropertyName = "TotalHeadshots")]
         public int TotalHeadshots { get; set; }
+
+        [JsonProperty(PropertyName = "TotalKills")]
         public int TotalKills { get; set; }
 
-        [JsonConverter(typeof(TimeSpanConverter))]
+        [JsonProperty(PropertyName = "TotalPossessionTime")]
+        [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan TotalPossessionTime { get; set; }
 
+        [JsonProperty(PropertyName = "TotalShotsFired")]
         public int TotalShotsFired { get; set; }
+
+        [JsonProperty(PropertyName = "TotalShotsLanded")]
         public int TotalShotsLanded { get; set; }
+
+        [JsonProperty(PropertyName = "WeaponId")]
         public WeaponId WeaponId { get; set; }
 
         public bool Equals(WeaponStat other)
@@ -251,7 +319,10 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class WeaponId : IEquatable<WeaponId>
     {
+        [JsonProperty(PropertyName = "Attachments")]
         public List<int> Attachments { get; set; }
+
+        [JsonProperty(PropertyName = "StockId")]
         public uint StockId { get; set; }
 
         public bool Equals(WeaponId other)
@@ -312,7 +383,10 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class MedalAward : IEquatable<MedalAward>
     {
+        [JsonProperty(PropertyName = "Count")]
         public int Count { get; set; }
+
+        [JsonProperty(PropertyName = "MedalId")]
         public uint MedalId { get; set; }
 
         public bool Equals(MedalAward other)
@@ -373,7 +447,10 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class Impulse : IEquatable<Impulse>
     {
+        [JsonProperty(PropertyName = "Count")]
         public int Count { get; set; }
+
+        [JsonProperty(PropertyName = "Id")]
         public uint Id { get; set; }
 
         public bool Equals(Impulse other)
@@ -388,7 +465,7 @@ namespace HaloSharp.Model.Stats.Common
                 return true;
             }
 
-            return Count == other.Count 
+            return Count == other.Count
                 && Id == other.Id;
         }
 
@@ -434,7 +511,10 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class EnemySet : IEquatable<EnemySet>
     {
+        [JsonProperty(PropertyName = "Enemy")]
         public Enemy Enemy { get; set; }
+
+        [JsonProperty(PropertyName = "TotalKills")]
         public int TotalKills { get; set; }
 
         public bool Equals(EnemySet other)
@@ -449,7 +529,7 @@ namespace HaloSharp.Model.Stats.Common
                 return true;
             }
 
-            return Equals(Enemy, other.Enemy) 
+            return Equals(Enemy, other.Enemy)
                 && TotalKills == other.TotalKills;
         }
 
@@ -462,9 +542,9 @@ namespace HaloSharp.Model.Stats.Common
 
             if (ReferenceEquals(this, obj))
             {
+
                 return true;
             }
-
             if (obj.GetType() != typeof (EnemySet))
             {
                 return false;
@@ -495,7 +575,10 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class Enemy : IEquatable<Enemy>
     {
+        [JsonProperty(PropertyName = "Attachments")]
         public List<uint> Attachments { get; set; }
+
+        [JsonProperty(PropertyName = "BaseId")]
         public uint BaseId { get; set; }
 
         public bool Equals(Enemy other)

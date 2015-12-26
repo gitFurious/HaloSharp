@@ -15,7 +15,8 @@ namespace HaloSharp.Model
         public enum CommendationType
         {
             Progressive,
-            Meta
+            Meta,
+            Daily
         }
 
         public enum CompetitiveSkillRankingDesignation

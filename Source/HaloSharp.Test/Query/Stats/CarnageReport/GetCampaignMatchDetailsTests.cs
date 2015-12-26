@@ -2,12 +2,15 @@
 using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Stats.CarnageReport;
-using HaloSharp.Query.Stats;
 using HaloSharp.Query.Stats.CarnageReport;
 using HaloSharp.Test.Utility;
+using Moq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Schema;
 using NUnit.Framework;
 using System;
-using System.Linq;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace HaloSharp.Test.Query.Stats.CarnageReport
@@ -15,7 +18,20 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
     [TestFixture]
     public class GetCampaignMatchDetailsTests
     {
-        private const string BaseUri = "stats/h5/campaign/matches/";
+        private IHaloSession _mockSession;
+        private CampaignMatch _campaignMatch;
+
+        [SetUp]
+        public void Setup()
+        {
+            _campaignMatch = JsonConvert.DeserializeObject<CampaignMatch>(File.ReadAllText(Config.CampaignMatchJsonPath));
+
+            var mock = new Mock<IHaloSession>();
+            mock.Setup(m => m.Get<CampaignMatch>(It.IsAny<string>()))
+                .ReturnsAsync(_campaignMatch);
+
+            _mockSession = mock.Object;
+        }
 
         [Test]
         public void GetConstructedUri_NoParamaters_MatchesExpected()
@@ -24,7 +40,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual(BaseUri, uri);
+            Assert.AreEqual("stats/h5/campaign/matches/", uri);
         }
 
         [Test]
@@ -36,13 +52,23 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual($"{BaseUri}{guid}", uri);
+            Assert.AreEqual($"stats/h5/campaign/matches/{guid}", uri);
         }
 
         [Test]
-        [TestCase("9918c24b-1f5c-43dc-a4b4-a233514ec346")]
-        [TestCase("40fa0309-3008-48cb-880b-e28cd67c85ac")]
-        public async Task GetCampaignMatchDetails(string guid)
+        public async Task Query_DoesNotThrow()
+        {
+            var query = new GetCampaignMatchDetails();
+
+            var result = await _mockSession.Query(query);
+
+            Assert.IsInstanceOf(typeof(CampaignMatch), result);
+            Assert.AreEqual(_campaignMatch, result);
+        }
+
+        [Test]
+        [TestCase("71fe5636-9db1-41fe-871d-515cd5e0ed87")]
+        public async Task GetCampaignMatchDetails_DoesNotThrow(string guid)
         {
             var query = new GetCampaignMatchDetails()
                 .ForMatchId(new Guid(guid));
@@ -53,8 +79,46 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         }
 
         [Test]
-        [TestCase("9918c24b-1f5c-43dc-a4b4-a233514ec346")]
-        [TestCase("40fa0309-3008-48cb-880b-e28cd67c85ac")]
+        [TestCase("71fe5636-9db1-41fe-871d-515cd5e0ed87")]
+        public async Task GetCampaignMatchDetails_SchemaIsValid(string guid)
+        {
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.CampaignMatchJsonSchemaPath), new JSchemaReaderSettings
+            {
+                Resolver = new JSchemaUrlResolver(),
+                BaseUri = new Uri(Path.GetFullPath(Config.CampaignMatchJsonSchemaPath))
+            });
+
+            var query = new GetCampaignMatchDetails()
+                .ForMatchId(new Guid(guid));
+
+            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+
+            SchemaUtility.AssertSchemaIsValid(weaponsSchema, jArray);
+        }
+
+        [Test]
+        [TestCase("71fe5636-9db1-41fe-871d-515cd5e0ed87")]
+        public async Task GetCampaignMatchDetails_ModelMatchesSchema(string guid)
+        {
+            var schema = JSchema.Parse(File.ReadAllText(Config.CampaignMatchJsonSchemaPath), new JSchemaReaderSettings
+            {
+                Resolver = new JSchemaUrlResolver(),
+                BaseUri = new Uri(Path.GetFullPath(Config.CampaignMatchJsonSchemaPath))
+            });
+
+            var query = new GetCampaignMatchDetails()
+                .ForMatchId(new Guid(guid));
+
+            var result = await Global.Session.Query(query);
+
+            var json = JsonConvert.SerializeObject(result);
+            var jContainer = JsonConvert.DeserializeObject<JContainer>(json);
+
+            SchemaUtility.AssertSchemaIsValid(schema, jContainer);
+        }
+
+        [Test]
+        [TestCase("71fe5636-9db1-41fe-871d-515cd5e0ed87")]
         public async Task GetCampaignMatchDetails_IsSerializable(string guid)
         {
             var query = new GetCampaignMatchDetails()
@@ -62,8 +126,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
             var result = await Global.Session.Query(query);
 
-            var serializationUtility = new SerializationUtility<CampaignMatch>();
-            serializationUtility.AssertRoundTripSerializationIsPossible(result);
+            SerializationUtility<CampaignMatch>.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

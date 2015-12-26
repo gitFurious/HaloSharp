@@ -1,19 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class CompetitiveSkillRankDesignation : IEquatable<CompetitiveSkillRankDesignation>
     {
+        [JsonProperty(PropertyName = "bannerImageUrl")]
         public string BannerImageUrl { get; set; }
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public List<Tier> Tiers { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
+        public int Id { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "tiers")]
+        public List<Tier> Tiers { get; set; }
 
         public bool Equals(CompetitiveSkillRankDesignation other)
         {
@@ -27,8 +35,9 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return string.Equals(BannerImageUrl, other.BannerImageUrl)
-                && Id == other.Id
+            return string.Equals(BannerImageUrl, other.BannerImageUrl) 
+                && ContentId.Equals(other.ContentId)
+                && Id == other.Id 
                 && string.Equals(Name, other.Name)
                 && Tiers.OrderBy(t => t.Id).SequenceEqual(other.Tiers.OrderBy(t => t.Id));
         }
@@ -58,6 +67,7 @@ namespace HaloSharp.Model.Metadata
             unchecked
             {
                 var hashCode = BannerImageUrl?.GetHashCode() ?? 0;
+                hashCode = (hashCode*397) ^ ContentId.GetHashCode();
                 hashCode = (hashCode*397) ^ Id;
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Tiers?.GetHashCode() ?? 0);
@@ -79,11 +89,14 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class Tier : IEquatable<Tier>
     {
-        public string IconImageUrl { get; set; }
-        public int Id { get; set; }
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "iconImageUrl")]
+        public string IconImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
+        public int Id { get; set; }
 
         public bool Equals(Tier other)
         {
@@ -97,7 +110,8 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return string.Equals(IconImageUrl, other.IconImageUrl) 
+            return ContentId.Equals(other.ContentId) 
+                && string.Equals(IconImageUrl, other.IconImageUrl)
                 && Id == other.Id;
         }
 
@@ -125,7 +139,10 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                return ((IconImageUrl?.GetHashCode() ?? 0)*397) ^ Id;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ (IconImageUrl?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ Id;
+                return hashCode;
             }
         }
 
@@ -139,5 +156,4 @@ namespace HaloSharp.Model.Metadata
             return !Equals(left, right);
         }
     }
-
 }

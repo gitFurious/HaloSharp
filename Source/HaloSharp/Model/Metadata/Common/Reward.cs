@@ -1,18 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Metadata.Common
 {
     [Serializable]
     public class Reward : IEquatable<Reward>
     {
-        public Guid Id { get; set; }
-        public List<RequisitionPack> RequisitionPacks { get; set; }
-        public int Xp { get; set; }
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "id")]
+        public Guid Id { get; set; }
+
+        [JsonProperty(PropertyName = "requisitionPacks")]
+        public List<RequisitionPack> RequisitionPacks { get; set; }
+
+        [JsonProperty(PropertyName = "xp")]
+        public int Xp { get; set; }
 
         public bool Equals(Reward other)
         {
@@ -26,9 +32,10 @@ namespace HaloSharp.Model.Metadata.Common
                 return true;
             }
 
-            return Id.Equals(other.Id)
-                && RequisitionPacks.OrderBy(rp => rp.Id).SequenceEqual(other.RequisitionPacks.OrderBy(rp => rp.Id))
-                && Xp == other.Xp;
+            return ContentId.Equals(other.ContentId)
+                   && Id.Equals(other.Id)
+                   && RequisitionPacks.OrderBy(rp => rp.Id).SequenceEqual(other.RequisitionPacks.OrderBy(rp => rp.Id))
+                   && Xp == other.Xp;
         }
 
         public override bool Equals(object obj)
@@ -55,7 +62,8 @@ namespace HaloSharp.Model.Metadata.Common
         {
             unchecked
             {
-                var hashCode = Id.GetHashCode();
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ (RequisitionPacks?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Xp;
                 return hashCode;

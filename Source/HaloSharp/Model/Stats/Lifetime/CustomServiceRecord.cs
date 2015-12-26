@@ -1,14 +1,16 @@
-﻿using HaloSharp.Model.Stats.Common;
-using HaloSharp.Model.Stats.Lifetime.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Stats.Common;
+using HaloSharp.Model.Stats.Lifetime.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Lifetime
 {
     [Serializable]
     public class CustomServiceRecord : BaseServiceRecord, IEquatable<CustomServiceRecord>
     {
+        [JsonProperty(PropertyName = "Results")]
         public List<CustomServiceRecordResult> Results { get; set; }
 
         public bool Equals(CustomServiceRecord other)
@@ -69,6 +71,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CustomServiceRecordResult : BaseServiceRecordResult, IEquatable<CustomServiceRecordResult>
     {
+        [JsonProperty(PropertyName = "Result")]
         public CustomResult Result { get; set; }
 
         public bool Equals(CustomServiceRecordResult other)
@@ -129,6 +132,7 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CustomResult : BaseResult, IEquatable<CustomResult>
     {
+        [JsonProperty(PropertyName = "CustomStats")]
         public CustomStats CustomStats { get; set; }
 
         public bool Equals(CustomResult other)
@@ -189,7 +193,10 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CustomStats : BaseStat, IEquatable<CustomStats>
     {
-        public List<CustomGameBaseVariantStat> CustomGameBaseVariantStats { get; set; }
+        [JsonProperty(PropertyName = "CustomGameBaseVariantStats")]
+        public List<GameBaseVariantStat> CustomGameBaseVariantStats { get; set; }
+
+        [JsonProperty(PropertyName = "TopGameBaseVariants")]
         public List<TopGameBaseVariant> TopGameBaseVariants { get; set; }
 
         public bool Equals(CustomStats other)
@@ -246,71 +253,6 @@ namespace HaloSharp.Model.Stats.Lifetime
         }
 
         public static bool operator !=(CustomStats left, CustomStats right)
-        {
-            return !Equals(left, right);
-        }
-    }
-
-    [Serializable]
-    public class CustomGameBaseVariantStat : BaseStat, IEquatable<CustomGameBaseVariantStat>
-    {
-        public FlexibleStats FlexibleStats { get; set; }
-        public Guid GameBaseVariantId { get; set; }
-
-        public bool Equals(CustomGameBaseVariantStat other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            return base.Equals(other)
-                && Equals(FlexibleStats, other.FlexibleStats)
-                && GameBaseVariantId.Equals(other.GameBaseVariantId);
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != typeof (CustomGameBaseVariantStat))
-            {
-                return false;
-            }
-
-            return Equals((CustomGameBaseVariantStat) obj);
-        }
-
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                int hashCode = base.GetHashCode();
-                hashCode = (hashCode*397) ^ (FlexibleStats?.GetHashCode() ?? 0);
-                hashCode = (hashCode*397) ^ GameBaseVariantId.GetHashCode();
-                return hashCode;
-            }
-        }
-
-        public static bool operator ==(CustomGameBaseVariantStat left, CustomGameBaseVariantStat right)
-        {
-            return Equals(left, right);
-        }
-
-        public static bool operator !=(CustomGameBaseVariantStat left, CustomGameBaseVariantStat right)
         {
             return !Equals(left, right);
         }

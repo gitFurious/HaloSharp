@@ -9,16 +9,23 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class Map : IEquatable<Map>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
+
+        [JsonProperty(PropertyName = "imageUrl")]
         public string ImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
-        [JsonProperty(ItemConverterType = typeof (StringEnumConverter))]
+        [JsonProperty(PropertyName = "supportedGameModes", ItemConverterType = typeof (StringEnumConverter))]
         public List<Enumeration.GameMode> SupportedGameModes { get; set; }
-
-        // Internal use.
-        //public Guid ContentId { get; set; }
 
         public bool Equals(Map other)
         {
@@ -32,11 +39,12 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return string.Equals(Description, other.Description)
-                && Id.Equals(other.Id)
-                && string.Equals(ImageUrl, other.ImageUrl)
+            return ContentId.Equals(other.ContentId) 
+                && string.Equals(Description, other.Description) 
+                && Id.Equals(other.Id) 
+                && string.Equals(ImageUrl, other.ImageUrl) 
                 && string.Equals(Name, other.Name)
-                && SupportedGameModes.OrderBy(sgm => sgm.ToString()).SequenceEqual(other.SupportedGameModes.OrderBy(sgm => sgm.ToString()));
+                && SupportedGameModes.OrderBy(sgm => sgm).SequenceEqual(other.SupportedGameModes.OrderBy(sgm => sgm));
         }
 
         public override bool Equals(object obj)
@@ -63,7 +71,8 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                var hashCode = Description?.GetHashCode() ?? 0;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ (ImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);

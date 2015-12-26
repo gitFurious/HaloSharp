@@ -1,33 +1,68 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System;
 
 namespace HaloSharp.Model.Metadata.Common
 {
     [Serializable]
     public class RequisitionPack : IEquatable<RequisitionPack>
     {
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "creditPrice")]
         public int CreditPrice { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty(PropertyName = "flair")]
+        [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.RequisitionPackType? Flair { get; set; }
 
+        [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
-        public bool IsPurchasableFromMarketplace { get; set; }
-        public bool IsPurchasableWithCredits { get; set; }
-        public string LargeImageUrl { get; set; }
-        public string MediumImageUrl { get; set; }
-        public string Name { get; set; }
-        public string SmallImageUrl { get; set; }
-        public Guid? XboxMarketplaceProductId { get; set; }
-        public string XboxMarketplaceProductUrl { get; set; }
 
-        // Internal use.
+        [JsonProperty(PropertyName = "isFeatured")]
         public bool IsFeatured { get; set; }
+
+        [JsonProperty(PropertyName = "isNew")]
         public bool IsNew { get; set; }
+
+        [JsonProperty(PropertyName = "isPurchasableFromMarketplace")]
+        public bool IsPurchasableFromMarketplace { get; set; }
+
+        [JsonProperty(PropertyName = "isPurchasableWithCredits")]
+        public bool IsPurchasableWithCredits { get; set; }
+
+        [JsonProperty(PropertyName = "isStack")]
+        public bool IsStack { get; set; }
+
+        [JsonProperty(PropertyName = "stackedRequisitionPacks")]
+        public List<RequisitionPack> StackedRequisitionPacks { get; set; }
+
+        [JsonProperty(PropertyName = "largeImageUrl")]
+        public string LargeImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "mediumImageUrl", NullValueHandling = NullValueHandling.Ignore)]
+        public string MediumImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "merchandisingOrder")]
         public int MerchandisingOrder { get; set; }
-        //public Guid ContentId { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "smallImageUrl", NullValueHandling = NullValueHandling.Ignore)]
+        public string SmallImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "xboxMarketplaceProductId")]
+        public Guid? XboxMarketplaceProductId { get; set; }
+
+        [JsonProperty(PropertyName = "xboxMarketplaceProductUrl")]
+        public string XboxMarketplaceProductUrl { get; set; }
 
         public bool Equals(RequisitionPack other)
         {
@@ -35,13 +70,12 @@ namespace HaloSharp.Model.Metadata.Common
             {
                 return false;
             }
-
             if (ReferenceEquals(this, other))
             {
                 return true;
             }
-
-            return CreditPrice == other.CreditPrice
+            return ContentId.Equals(other.ContentId)
+                && CreditPrice == other.CreditPrice
                 && string.Equals(Description, other.Description)
                 && Flair == other.Flair
                 && Id.Equals(other.Id)
@@ -49,6 +83,8 @@ namespace HaloSharp.Model.Metadata.Common
                 && IsNew == other.IsNew
                 && IsPurchasableFromMarketplace == other.IsPurchasableFromMarketplace
                 && IsPurchasableWithCredits == other.IsPurchasableWithCredits
+                && IsStack == other.IsStack
+                && StackedRequisitionPacks.OrderBy(srp => srp.Id).SequenceEqual(other.StackedRequisitionPacks.OrderBy(srp => srp.Id))
                 && string.Equals(LargeImageUrl, other.LargeImageUrl)
                 && string.Equals(MediumImageUrl, other.MediumImageUrl)
                 && MerchandisingOrder == other.MerchandisingOrder
@@ -64,17 +100,14 @@ namespace HaloSharp.Model.Metadata.Common
             {
                 return false;
             }
-
             if (ReferenceEquals(this, obj))
             {
                 return true;
             }
-
             if (obj.GetType() != typeof (RequisitionPack))
             {
                 return false;
             }
-
             return Equals((RequisitionPack) obj);
         }
 
@@ -82,7 +115,8 @@ namespace HaloSharp.Model.Metadata.Common
         {
             unchecked
             {
-                var hashCode = CreditPrice;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ CreditPrice;
                 hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Flair.GetHashCode();
                 hashCode = (hashCode*397) ^ Id.GetHashCode();
@@ -90,6 +124,8 @@ namespace HaloSharp.Model.Metadata.Common
                 hashCode = (hashCode*397) ^ IsNew.GetHashCode();
                 hashCode = (hashCode*397) ^ IsPurchasableFromMarketplace.GetHashCode();
                 hashCode = (hashCode*397) ^ IsPurchasableWithCredits.GetHashCode();
+                hashCode = (hashCode*397) ^ IsStack.GetHashCode();
+                hashCode = (hashCode*397) ^ (StackedRequisitionPacks?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (LargeImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (MediumImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ MerchandisingOrder;

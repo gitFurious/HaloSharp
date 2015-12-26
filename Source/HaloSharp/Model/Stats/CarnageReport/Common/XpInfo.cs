@@ -1,18 +1,36 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
 {
     [Serializable]
     public class XpInfo : IEquatable<XpInfo>
     {
+        [JsonProperty(PropertyName = "BoostAmount")]
         public int BoostAmount { get; set; }
+
+        [JsonProperty(PropertyName = "PerformanceXP")]
         public int PerformanceXp { get; set; }
+
+        [JsonProperty(PropertyName = "PlayerRankXPAward")]
         public int PlayerRankXpAward { get; set; }
+
+        [JsonProperty(PropertyName = "PlayerTimePerformanceXPAward")]
         public int PlayerTimePerformanceXpAward { get; set; }
+
+        [JsonProperty(PropertyName = "PrevSpartanRank")]
         public int PrevSpartanRank { get; set; }
+
+        [JsonProperty(PropertyName = "PrevTotalXP")]
         public int PrevTotalXp { get; set; }
+
+        [JsonProperty(PropertyName = "SpartanRank")]
         public int SpartanRank { get; set; }
+
+        [JsonProperty(PropertyName = "SpartanRankMatchXPScalar")]
         public double SpartanRankMatchXpScalar { get; set; }
+
+        [JsonProperty(PropertyName = "TotalXP")]
         public int TotalXp { get; set; }
 
         public bool Equals(XpInfo other)

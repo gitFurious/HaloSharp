@@ -1,18 +1,28 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class MapVariant : IEquatable<MapVariant>
     {
-        public string Description { get; set; }
-        public Guid Id { get; set; }
-        public Guid? MapId { get; set; }
-        public string MapImageUrl { get; set; }
-        public string Name { get; set; }
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "description")]
+        public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "id")]
+        public Guid Id { get; set; }
+
+        [JsonProperty(PropertyName = "mapId")]
+        public Guid? MapId { get; set; }
+
+        [JsonProperty(PropertyName = "mapImageUrl")]
+        public string MapImageUrl { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
 
         public bool Equals(MapVariant other)
         {
@@ -26,7 +36,8 @@ namespace HaloSharp.Model.Metadata
                 return true;
             }
 
-            return string.Equals(Description, other.Description)
+            return ContentId.Equals(other.ContentId)
+                && string.Equals(Description, other.Description)
                 && Id.Equals(other.Id)
                 && MapId.Equals(other.MapId)
                 && string.Equals(MapImageUrl, other.MapImageUrl)
@@ -57,7 +68,8 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                var hashCode = Description?.GetHashCode() ?? 0;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ MapId.GetHashCode();
                 hashCode = (hashCode*397) ^ (MapImageUrl?.GetHashCode() ?? 0);

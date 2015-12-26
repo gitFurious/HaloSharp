@@ -1,17 +1,23 @@
-﻿using HaloSharp.Model.Metadata.Common;
-using System;
+﻿using System;
+using HaloSharp.Model.Metadata.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Metadata
 {
     [Serializable]
     public class SpartanRank : IEquatable<SpartanRank>
     {
-        public int Id { get; set; }
-        public Reward Reward { get; set; }
-        public int StartXp { get; set; }
+        [JsonProperty(PropertyName = "contentId")]
+        public Guid ContentId { get; set; }
 
-        // Internal use.
-        //public Guid ContentId { get; set; }
+        [JsonProperty(PropertyName = "id")]
+        public int Id { get; set; }
+
+        [JsonProperty(PropertyName = "reward")]
+        public Reward Reward { get; set; }
+
+        [JsonProperty(PropertyName = "startXp")]
+        public int StartXp { get; set; }
 
         public bool Equals(SpartanRank other)
         {
@@ -19,13 +25,12 @@ namespace HaloSharp.Model.Metadata
             {
                 return false;
             }
-
             if (ReferenceEquals(this, other))
             {
                 return true;
             }
-
-            return Id == other.Id
+            return ContentId.Equals(other.ContentId)
+                && Id == other.Id
                 && Equals(Reward, other.Reward)
                 && StartXp == other.StartXp;
         }
@@ -54,7 +59,8 @@ namespace HaloSharp.Model.Metadata
         {
             unchecked
             {
-                var hashCode = Id;
+                var hashCode = ContentId.GetHashCode();
+                hashCode = (hashCode*397) ^ Id;
                 hashCode = (hashCode*397) ^ (Reward?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ StartXp;
                 return hashCode;
