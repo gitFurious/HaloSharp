@@ -1,16 +1,16 @@
-﻿using HaloSharp.Model.Metadata;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using HaloSharp.Model.Metadata;
 using HaloSharp.Model.Metadata.Common;
 using HaloSharp.Model.Stats;
 using HaloSharp.Model.Stats.CarnageReport;
+using HaloSharp.Model.Stats.Lifetime;
 using HaloSharp.Test.Utility;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using HaloSharp.Model.Stats.Lifetime;
 
 namespace HaloSharp.Test.Schema
 {

@@ -1,4 +1,8 @@
-﻿using HaloSharp.Extension;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
+using HaloSharp.Extension;
 using HaloSharp.Model.Metadata;
 using HaloSharp.Query.Metadata;
 using HaloSharp.Test.Utility;
@@ -7,10 +11,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace HaloSharp.Test.Query.Metadata
 {

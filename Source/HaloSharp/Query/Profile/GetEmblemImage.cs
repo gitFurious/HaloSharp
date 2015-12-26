@@ -1,8 +1,8 @@
-﻿using HaloSharp.Model.Profile;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HaloSharp.Model.Profile;
 
 namespace HaloSharp.Query.Profile
 {

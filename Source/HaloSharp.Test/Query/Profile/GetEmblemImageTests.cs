@@ -1,11 +1,11 @@
-﻿using HaloSharp.Exception;
+﻿using System.Threading.Tasks;
+using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Profile;
 using HaloSharp.Query.Profile;
 using HaloSharp.Test.Utility;
 using NUnit.Framework;
-using System.Threading.Tasks;
 
 namespace HaloSharp.Test.Query.Profile
 {

@@ -1,8 +1,8 @@
-using HaloSharp.Model.Stats.Common;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Stats.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.Lifetime.Common
 {

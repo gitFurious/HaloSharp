@@ -1,7 +1,7 @@
-﻿using HaloSharp.Model.Stats.CarnageReport;
-using System;
+﻿using System;
 using System.Text;
 using System.Threading.Tasks;
+using HaloSharp.Model.Stats.CarnageReport;
 
 namespace HaloSharp.Query.Stats.CarnageReport
 {

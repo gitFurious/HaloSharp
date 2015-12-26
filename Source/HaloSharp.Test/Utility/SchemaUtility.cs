@@ -1,8 +1,8 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using System;
+using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
 
 namespace HaloSharp.Test.Utility
 {

@@ -1,13 +1,13 @@
-﻿using HaloSharp.Exception;
-using HaloSharp.Extension;
-using HaloSharp.Model.Error;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using HaloSharp.Exception;
+using HaloSharp.Extension;
 using HaloSharp.Model;
+using HaloSharp.Model.Error;
 
 namespace HaloSharp
 {

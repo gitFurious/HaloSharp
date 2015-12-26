@@ -1,7 +1,7 @@
-﻿using HaloSharp.Model.Metadata;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
