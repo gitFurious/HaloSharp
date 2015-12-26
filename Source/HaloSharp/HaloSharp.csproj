@@ -58,6 +58,7 @@
     <Compile Include="IQuery.cs" />
     <Compile Include="Model\Enumeration.cs" />
     <Compile Include="Model\Error\HaloApiError.cs" />
+    <Compile Include="Model\Metadata\Season.cs" />
     <Compile Include="Model\Metadata\FlexibleStat.cs" />
     <Compile Include="Model\Metadata\GameBaseVariant.cs" />
     <Compile Include="Model\Metadata\GameVariant.cs" />
@@ -109,6 +110,7 @@
     <Compile Include="Model\Stats\Common\Link.cs" />
     <Compile Include="Model\Stats\MatchSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\Metadata\GetSeasons.cs" />
     <Compile Include="Query\Metadata\GetCommendations.cs" />
     <Compile Include="Query\Metadata\GetCampaignMissions.cs" />
     <Compile Include="Query\Metadata\GetCompetitiveSkillRankDesignations.cs" />

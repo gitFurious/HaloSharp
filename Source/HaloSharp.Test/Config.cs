@@ -30,6 +30,8 @@
         public const string RequisitionJsonSchemaPath = "JSON/Metadata/requisition.schema.json";
         public const string RequisitionPackJsonPath = "JSON/Metadata/requisition-pack.json";
         public const string RequisitionPackJsonSchemaPath = "JSON/Metadata/requisition-pack.schema.json";
+        public const string SeasonsJsonPath = "JSON/Metadata/seasons.json";
+        public const string SeasonsJsonSchemaPath = "JSON/Metadata/seasons.schema.json";
         public const string SkullsJsonPath = "JSON/Metadata/skulls.json";
         public const string SkullsJsonSchemaPath = "JSON/Metadata/skulls.schema.json";
         public const string SpartanRanksJsonPath = "JSON/Metadata/spartan-ranks.json";

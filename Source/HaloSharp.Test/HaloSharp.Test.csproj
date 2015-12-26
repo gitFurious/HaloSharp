@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Query\Metadata\GetSeasonsTests.cs" />
     <Compile Include="Query\Metadata\GetCampaignMissionsTests.cs" />
     <Compile Include="Query\Metadata\GetCommendationsTests.cs" />
     <Compile Include="Query\Metadata\GetCompetitiveSkillRankDesignationsTests.cs" />
@@ -97,6 +98,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="JSON\Metadata\seasons.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\Metadata\seasons.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="JSON\Metadata\enemies.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

@@ -29,6 +29,7 @@ namespace HaloSharp.Test.Serialization
         [TestCase(Config.PlaylistJsonPath, typeof(List<Playlist>))]
         [TestCase(Config.RequisitionJsonPath, typeof(Requisition))]
         [TestCase(Config.RequisitionPackJsonPath, typeof(RequisitionPack))]
+        [TestCase(Config.SeasonsJsonPath, typeof(List<Season>))]
         [TestCase(Config.SkullsJsonPath, typeof(List<Skull>))]
         [TestCase(Config.SpartanRanksJsonPath, typeof(List<SpartanRank>))]
         [TestCase(Config.TeamColorsJsonPath, typeof(List<TeamColor>))]
