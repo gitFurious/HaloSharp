@@ -22,12 +22,12 @@ namespace HaloSharp.Model
         public enum CompetitiveSkillRankingDesignation
         {
             Bronze = 1,
-            Silver = 1,
-            Gold = 1,
-            Platinum = 1,
-            Diamond = 1,
-            Onyx = 1,
-            Champion = 1
+            Silver = 2,
+            Gold = 3,
+            Platinum = 4,
+            Diamond = 5,
+            Onyx = 6,
+            Champion = 7
         }
 
         public enum CreditsEarnedResultType
