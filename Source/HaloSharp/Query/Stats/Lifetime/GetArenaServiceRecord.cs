@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,16 @@ namespace HaloSharp.Query.Stats.Lifetime
         public GetArenaServiceRecord ForPlayers(List<string> gamertags)
         {
             _parameters["players"] = string.Join(",", gamertags);
+            return this;
+        }
+
+        /// <summary>
+        /// When specified, this indicates the Guid of the season to request the Arena Playlist Stats for.
+        /// </summary>
+        /// <param name="seasonId">The ID that uniquely identifies a season.</param>
+        public GetArenaServiceRecord ForSeasonId(Guid seasonId)
+        {
+            _parameters["seasonId"] = seasonId.ToString();
             return this;
         }
 

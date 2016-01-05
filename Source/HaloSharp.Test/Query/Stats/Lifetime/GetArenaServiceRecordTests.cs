@@ -70,6 +70,33 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         }
 
         [Test]
+        [TestCase("2041d318-dd22-47c2-a487-2818ecf14e41")]
+        [TestCase("2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
+        public void GetConstructedUri_ForSeasonId_MatchesExpected(string guid)
+        {
+            var query = new GetArenaServiceRecord()
+                .ForSeasonId(new Guid(guid));
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual($"stats/h5/servicerecords/arena?seasonId={guid}", uri);
+        }
+
+        [Test]
+        [TestCase("Furiousn00b", "2041d318-dd22-47c2-a487-2818ecf14e41")]
+        [TestCase("Greenskull", "2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
+        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, string guid)
+        {
+            var query = new GetArenaServiceRecord()
+                .ForPlayer(gamertag)
+                .ForSeasonId(new Guid(guid));
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual($"stats/h5/servicerecords/arena?players={gamertag}&seasonId={guid}", uri);
+        }
+
+        [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
         public async Task GetArenaServiceRecord(string gamertag)
