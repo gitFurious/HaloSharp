@@ -8,12 +8,21 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
     [Serializable]
     public class MetaCommendationDelta : IEquatable<MetaCommendationDelta>
     {
+        /// <summary>
+        /// The commendation ID. Commendations are available via the Metadata API.
+        /// </summary>
         [JsonProperty(PropertyName = "Id")]
         public Guid Id { get; set; }
 
+        /// <summary>
+        /// The progress the player had made towards the commendation level before the match.
+        /// </summary>
         [JsonProperty(PropertyName = "PreviousMetRequirements")]
         public List<Requirement> PreviousMetRequirements { get; set; }
 
+        /// <summary>
+        /// The progress the player had made towards the commendation level after the match.
+        /// </summary>
         [JsonProperty(PropertyName = "MetRequirements")]
         public List<Requirement> MetRequirements { get; set; }
 
@@ -89,18 +98,33 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
             Guid = new Guid((int)data1, (short)data2, (short)data3, BitConverter.GetBytes((long)data4));
         }
 
+        /// <summary>
+        /// Unknown.
+        /// </summary>
         [JsonProperty(PropertyName = "Data1")]
         public uint Data1 { get; }
 
+        /// <summary>
+        /// Unknown.
+        /// </summary>
         [JsonProperty(PropertyName = "Data2")]
         public ushort Data2 { get; }
 
+        /// <summary>
+        /// Unknown.
+        /// </summary>
         [JsonProperty(PropertyName = "Data3")]
         public ushort Data3 { get; }
 
+        /// <summary>
+        /// Unknown.
+        /// </summary>
         [JsonProperty(PropertyName = "Data4")]
         public ulong Data4 { get; }
 
+        /// <summary>
+        /// Unknown.
+        /// </summary>
         [JsonIgnore]
         public Guid Guid { get; }
 

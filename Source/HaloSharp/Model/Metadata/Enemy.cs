@@ -7,25 +7,57 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class Enemy : IEquatable<Enemy>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// A localized description, suitable for display to users. Note: This may be null.
+        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        /// <summary>
+        /// The faction that this enemy is affiliated with. One of the following options:
+        /// <list type="bullet">
+        /// <item>
+        /// <description>UNSC</description>
+        /// </item>
+        /// <item>
+        /// <description>Covenant</description>
+        /// </item>
+        /// <item>
+        /// <description>Promethean</description>
+        /// </item>
+        /// </list>
+        /// </summary>
         [JsonProperty(PropertyName = "faction")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.Faction Faction { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this enemy.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public uint Id { get; set; }
 
+        /// <summary>
+        /// A reference to a large image for icon use. This may be null if there is no image defined.
+        /// </summary>
         [JsonProperty(PropertyName = "largeIconImageUrl")]
         public string LargeIconImageUrl { get; set; }
 
+        /// <summary>
+        /// A localized name for the object, suitable for display to users. The text is title cased. 
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
+        /// <summary>
+        /// A reference to a small image for icon use. This may be null if there is no image defined.
+        /// </summary>
         [JsonProperty(PropertyName = "smallIconImageUrl")]
         public string SmallIconImageUrl { get; set; }
 

@@ -6,21 +6,40 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class GameVariant : IEquatable<GameVariant>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// A localized description, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        /// <summary>
+        /// The ID of the game base variant this is a variant for. Game Base Variants are available via the Metadata 
+        /// API.
+        /// </summary>
         [JsonProperty(PropertyName = "gameBaseVariantId")]
         public Guid? GameBaseVariantId { get; set; }
 
+        /// <summary>
+        /// An icon image for the game variant.
+        /// </summary>
         [JsonProperty(PropertyName = "iconUrl")]
         public string IconUrl { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this game variant.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
+        /// <summary>
+        /// A localized name, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 

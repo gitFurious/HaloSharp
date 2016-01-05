@@ -6,21 +6,40 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class Skull : IEquatable<Skull>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// A localized description, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this skull.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public int Id { get; set; }
 
+        /// <summary>
+        /// //TODO
+        /// </summary>
         [JsonProperty(PropertyName = "imageUrl")]
         public string ImageUrl { get; set; }
 
+        /// <summary>
+        /// Indicates what mission this skull can be located within. Null when the skull is not found in a mission. 
+        /// Missions are available via the Metadata API.
+        /// </summary>
         [JsonProperty(PropertyName = "missionId")]
         public Guid? MissionId { get; set; }
 
+        /// <summary>
+        /// A localized name, suitable for display to users. The text is title cased.
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 

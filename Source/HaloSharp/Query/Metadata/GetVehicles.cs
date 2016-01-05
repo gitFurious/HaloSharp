@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed Vehicle Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetVehicles : IQuery<List<Vehicle>>
     {
         private const string CacheKey = "Vehicles";

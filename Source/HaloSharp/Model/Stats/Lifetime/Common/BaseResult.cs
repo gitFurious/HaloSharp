@@ -7,12 +7,21 @@ namespace HaloSharp.Model.Stats.Lifetime.Common
     [Serializable]
     public class BaseResult : IEquatable<BaseResult>
     {
+        /// <summary>
+        /// Information about the player for whom this data was returned.
+        /// </summary>
         [JsonProperty(PropertyName = "PlayerId")]
         public Identity PlayerId { get; set; }
 
+        /// <summary>
+        /// The player's Spartan Rank.
+        /// </summary>
         [JsonProperty(PropertyName = "SpartanRank")]
         public int SpartanRank { get; set; }
 
+        /// <summary>
+        /// The player's XP.
+        /// </summary>
         [JsonProperty(PropertyName = "Xp")]
         public int Xp { get; set; }
 

@@ -5,10 +5,20 @@ using HaloSharp.Model.Stats.CarnageReport;
 
 namespace HaloSharp.Query.Stats.CarnageReport
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed statistics for a match. Some match details are available while the match 
+    /// is in-progress, but  the behavior for incomplete matches in undefined. Every time a player plays a portion of a 
+    /// Campaign mission, a match will be generated whether the player finishes the mission or not. If the "match" ends 
+    /// because the mission was completed, this will be indicated in the response.
+    /// </summary>
     public class GetCampaignMatchDetails : IQuery<CampaignMatch>
     {
         private string _matchId;
 
+        /// <summary>
+        /// An ID that uniquely identifies a match. Match IDs can be retrieved from the "GET Matches for Player" API.
+        /// </summary>
+        /// <param name="matchId">The ID that uniquely identifies a match.</param>
         public GetCampaignMatchDetails ForMatchId(Guid matchId)
         {
             _matchId = matchId.ToString();

@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed Map Variant Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetMapVariant : IQuery<MapVariant>
     {
         private const string CacheKey = "MapVariant";
@@ -12,6 +15,10 @@ namespace HaloSharp.Query.Metadata
         private bool _useCache = true;
         private string _id;
 
+        /// <summary>
+        /// An ID that uniquely identifies a Map Variant..
+        /// </summary>
+        /// <param name="mapVariantId">An ID that uniquely identifies a Map Variant.</param>
         public GetMapVariant ForMapVariantId(Guid mapVariantId)
         {
             _id = mapVariantId.ToString();

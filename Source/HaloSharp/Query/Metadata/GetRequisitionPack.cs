@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata.Common;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed Requisition Pack Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetRequisitionPack : IQuery<RequisitionPack>
     {
         private const string CacheKey = "RequisitionPack";
@@ -12,6 +15,10 @@ namespace HaloSharp.Query.Metadata
         private bool _useCache = true;
         private string _id;
 
+        /// <summary>
+        /// An ID that uniquely identifies a requisition pack.
+        /// </summary>
+        /// <param name="requisitionPackId">An ID that uniquely identifies a requisition pack.</param>
         public GetRequisitionPack ForRequisitionPackId(Guid requisitionPackId)
         {
             _id = requisitionPackId.ToString();

@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed Campaign Mission Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetCampaignMissions : IQuery<List<CampaignMission>>
     {
         private const string CacheKey = "CampaignMissions";

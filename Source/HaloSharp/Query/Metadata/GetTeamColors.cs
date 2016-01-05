@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed Team Color Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetTeamColors : IQuery<List<TeamColor>>
     {
         private const string CacheKey = "TeamColors";

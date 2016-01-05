@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed Game Variant Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetGameVariant : IQuery<GameVariant>
     {
         private const string CacheKey = "GameVariant";
@@ -12,6 +15,10 @@ namespace HaloSharp.Query.Metadata
         private bool _useCache = true;
         private string _id;
 
+        /// <summary>
+        /// An ID that uniquely identifies a Game Variant.
+        /// </summary>
+        /// <param name="gameVariantId">An ID that uniquely identifies a Game Variant.</param>
         public GetGameVariant ForGameVariantId(Guid gameVariantId)
         {
             _id = gameVariantId.ToString();

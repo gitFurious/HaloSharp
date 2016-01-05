@@ -6,9 +6,15 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
     [Serializable]
     public class OpponentDetails : IEquatable<OpponentDetails>
     {
+        /// <summary>
+        /// The gamertag of the opponent that was killed/killed the player.
+        /// </summary>
         [JsonProperty(PropertyName = "GamerTag")]
         public string GamerTag { get; set; }
 
+        /// <summary>
+        /// The number of times that opponent was killed/killed the player.
+        /// </summary>
         [JsonProperty(PropertyName = "TotalKills")]
         public int TotalKills { get; set; }
 

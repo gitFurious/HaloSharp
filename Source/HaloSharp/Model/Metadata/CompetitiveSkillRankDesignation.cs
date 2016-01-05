@@ -8,18 +8,36 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class CompetitiveSkillRankDesignation : IEquatable<CompetitiveSkillRankDesignation>
     {
+        /// <summary>
+        /// An image to use as the background for the designation.
+        /// </summary>
         [JsonProperty(PropertyName = "bannerImageUrl")]
         public string BannerImageUrl { get; set; }
 
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// An ID that identifies the designation. It happens to be the same as the designation ordering. This value is 
+        /// the same across all languages. Note that Id = 0 indicates the player has an "Unranked" designation. The 
+        /// player must complete additional matches before being assigned an official CSR designation.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public int Id { get; set; }
 
+        /// <summary>
+        /// A localized name for the designation, suitable for display to users. The text is title cased. 
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
+        /// <summary>
+        /// An array of "CSR Tier" entries, one for each tier this designation supports. Semi-Pro and Pro will not have 
+        /// tiers defined, and this list will be empty.
+        /// </summary>
         [JsonProperty(PropertyName = "tiers")]
         public List<Tier> Tiers { get; set; }
 
@@ -89,12 +107,21 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class Tier : IEquatable<Tier>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// An image to use as the icon for th tier.
+        /// </summary>
         [JsonProperty(PropertyName = "iconImageUrl")]
         public string IconImageUrl { get; set; }
 
+        /// <summary>
+        /// An ID that identifies the tier.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public int Id { get; set; }
 

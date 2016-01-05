@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed Impulse Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetImpulses : IQuery<List<Impulse>>
     {
         private const string CacheKey = "Impulses";

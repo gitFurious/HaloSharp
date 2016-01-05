@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    /// Construct a query to retrieve detailed Commendation Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetCommendations : IQuery<List<Commendation>>
     {
         private const string CacheKey = "Commendations";

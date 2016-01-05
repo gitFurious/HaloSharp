@@ -7,9 +7,15 @@ namespace HaloSharp.Model.Stats.Lifetime.Common
     [Serializable]
     public class GameBaseVariantStat : BaseStat, IEquatable<GameBaseVariantStat>
     {
+        /// <summary>
+        /// The game base variant specific stats. Flexible stats are available via the Metadata API.
+        /// </summary>
         [JsonProperty(PropertyName = "FlexibleStats")]
         public FlexibleStats FlexibleStats { get; set; }
 
+        /// <summary>
+        /// The ID of the game base variant. Game base variants are available via the Metadata API.
+        /// </summary>
         [JsonProperty(PropertyName = "GameBaseVariantId")]
         public Guid GameBaseVariantId { get; set; }
 

@@ -6,18 +6,30 @@ using HaloSharp.Model.Profile;
 
 namespace HaloSharp.Query.Profile
 {
+    /// <summary>
+    /// Construct a query to retrieve a player's Emblem Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetEmblemImage : IQuery<GetImage>
     {
         private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
 
         private string _player;
 
+        /// <summary>
+        /// The Player's gamertag.
+        /// </summary>
+        /// <param name="gamertag">The Player's gamertag.</param>
         public GetEmblemImage ForPlayer(string gamertag)
         {
             _player = gamertag;
             return this;
         }
 
+        /// <summary>
+        /// An optional size (specified in pixels) of the image requested. When specified, this value must be one of the
+        ///  following values: 95, 128, 190, 256, 512.
+        /// </summary>
+        /// <param name="size">An optional size (specified in pixels) of the image requested.</param>
         public GetEmblemImage Size(int size)
         {
             _parameters["size"] = size.ToString();

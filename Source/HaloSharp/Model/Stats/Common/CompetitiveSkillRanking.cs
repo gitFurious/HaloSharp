@@ -6,18 +6,56 @@ namespace HaloSharp.Model.Stats.Common
     [Serializable]
     public class CompetitiveSkillRanking : IEquatable<CompetitiveSkillRanking>
     {
+        /// <summary>
+        /// The CSR value. Zero for normal designations.
+        /// </summary>
         [JsonProperty(PropertyName = "Csr")]
         public int Csr { get; set; }
 
+        /// <summary>
+        /// The Designation of the CSR. Options are:
+        /// <list type="bullet">
+        /// <item>
+        /// <description>Bronze = 1</description>
+        /// </item>
+        /// <item>
+        /// <description>Silver = 2</description>
+        /// </item>
+        /// <item>
+        /// <description>Gold = 3</description>
+        /// </item>
+        /// <item>
+        /// <description>Platinum = 4</description>
+        /// </item>
+        /// <item>
+        /// <description>Diamond = 5</description>
+        /// </item>
+        /// <item>
+        /// <description>Onyx = 6</description>
+        /// </item>
+        /// <item>
+        /// <description>Champion = 7</description>
+        /// </item>
+        /// </list>
+        /// </summary>
         [JsonProperty(PropertyName = "DesignationId")]
         public Enumeration.CompetitiveSkillRankingDesignation DesignationId { get; set; }
 
+        /// <summary>
+        /// The percentage of progress towards the next CSR tier.
+        /// </summary>
         [JsonProperty(PropertyName = "PercentToNextTier")]
         public int PercentToNextTier { get; set; }
 
+        /// <summary>
+        /// If the CSR is Semi-pro or Pro, the player's leaderboard ranking.
+        /// </summary>
         [JsonProperty(PropertyName = "Rank")]
         public int? Rank { get; set; }
 
+        /// <summary>
+        /// The CSR tier.
+        /// </summary>
         [JsonProperty(PropertyName = "Tier")]
         public int Tier { get; set; }
 

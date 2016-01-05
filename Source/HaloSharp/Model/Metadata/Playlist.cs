@@ -7,28 +7,66 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class Playlist : IEquatable<Playlist>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// A localized description for the playlist, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        /// <summary>
+        /// A list that indicates what game modes this base variant is available within. Options are:
+        /// <list type="bullet">
+        /// <item>
+        /// <description>Arena</description>
+        /// </item>
+        /// <item>
+        /// <description>Campaign</description>
+        /// </item>
+        /// <item>
+        /// <description>Custom</description>
+        /// </item>
+        /// <item>
+        /// <description>Warzone</description>
+        /// </item>
+        /// </list>
+        /// </summary>
         [JsonProperty(PropertyName = "gameMode")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.GameMode GameMode { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this playlist.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
+        /// <summary>
+        /// An image used to illustrate this playlist.
+        /// </summary>
         [JsonProperty(PropertyName = "imageUrl")]
         public string ImageUrl { get; set; }
 
+        /// <summary>
+        /// Indicates if this playlist is currently available for play.
+        /// </summary>
         [JsonProperty(PropertyName = "isActive")]
         public bool IsActive { get; set; }
 
+        /// <summary>
+        /// Indicates if a CSR (competitive skill rank) is shown for players who participate in this playlist.
+        /// </summary>
         [JsonProperty(PropertyName = "isRanked")]
         public bool IsRanked { get; set; }
 
+        /// <summary>
+        /// A localized name for the playlist, suitable for display to users. The text is title cased.
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 

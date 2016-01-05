@@ -8,29 +8,53 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
     [Serializable]
     public class BasePlayerStat : BaseStat, IEquatable<BasePlayerStat>
     {
+        /// <summary>
+        /// The player's average lifetime.
+        /// </summary>
         [JsonProperty(PropertyName = "AvgLifeTimeOfPlayer")]
         [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan AvgLifeTimeOfPlayer { get; set; }
 
-        // ReSharper disable once InconsistentNaming
+        /// <summary>
+        /// Indicates whether the player was present in the match when it ended.
+        /// </summary>
         [JsonProperty(PropertyName = "DNF")]
+        // ReSharper disable once InconsistentNaming
         public bool DNF { get; set; }
 
+        /// <summary>
+        /// The game base variant specific stats for this match. Flexible stats are available via the Metadata API.
+        /// </summary>
         [JsonProperty(PropertyName = "FlexibleStats")]
         public FlexibleStats FlexibleStats { get; set; }
 
+        /// <summary>
+        /// //TODO
+        /// </summary>
         [JsonProperty(PropertyName = "Player")]
         public Identity Player { get; set; }
 
+        /// <summary>
+        /// Internal use only. This will always be null.
+        /// </summary>
         [JsonProperty(PropertyName = "PostMatchRatings")]
         public object PostMatchRatings { get; set; }
 
+        /// <summary>
+        /// Internal use only. This will always be null.
+        /// </summary>
         [JsonProperty(PropertyName = "PreMatchRatings")]
         public object PreMatchRatings { get; set; }
 
+        /// <summary>
+        /// The player's team-agnostic ranking.
+        /// </summary>
         [JsonProperty(PropertyName = "Rank")]
         public int Rank { get; set; }
 
+        /// <summary>
+        /// The ID of the team that the player was on when the match ended. 
+        /// </summary>
         [JsonProperty(PropertyName = "TeamId")]
         public int TeamId { get; set; }
 
