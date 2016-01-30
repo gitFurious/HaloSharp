@@ -78,6 +78,12 @@ namespace HaloSharp.Model.Metadata
         public string LargeImageUrl { get; set; }
 
         /// <summary>
+        /// The Spartan Rank required in order to use the requisition.
+        /// </summary>
+        [JsonProperty(PropertyName = "levelRequirement")]
+        public int LevelRequirement { get; set; }
+
+        /// <summary>
         /// A localized name, suitable for display to users. The text is title cased. 
         /// </summary>
         [JsonProperty(PropertyName = "name")]

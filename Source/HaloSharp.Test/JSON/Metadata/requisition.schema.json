@@ -55,6 +55,9 @@
     "sellPrice": {
       "type": "integer"
     },
+    "levelRequirement": {
+      "type": "integer"
+    },
     "certificationRequisitionId": {
       "type": [ "string", "null" ]
     },
@@ -82,6 +85,7 @@
     "internalSubcategoryName",
     "subcategoryOrder",
     "sellPrice",
+    "levelRequirement",
     "certificationRequisitionId",
     "id",
     "contentId"

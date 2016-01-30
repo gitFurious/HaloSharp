@@ -217,6 +217,12 @@ namespace HaloSharp.Model.Stats.Lifetime
         public List<ArenaPlaylistStat> ArenaPlaylistStats { get; set; }
 
         /// <summary>
+        /// //TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "ArenaPlaylistStatsSeasonId")]
+        public Guid ArenaPlaylistStatsSeasonId { get; set; }
+
+        /// <summary>
         /// The highest obtained CSR by the player in arena across all seasons. If the player hasn't finished 
         /// measurement matches yet for any playlist, this value is null.
         /// </summary>
@@ -229,6 +235,13 @@ namespace HaloSharp.Model.Stats.Lifetime
         /// </summary>
         [JsonProperty(PropertyName = "HighestCsrPlaylistId")]
         public Guid? HighestCsrPlaylistId { get; set; }
+
+        /// <summary>
+        /// The ID for the season that pertains to the highest obtained CSR field across all seasons. If the CSR is 
+        /// null, so is this field.
+        /// </summary>
+        [JsonProperty(PropertyName = "HighestCsrSeasonId")]
+        public Guid? HighestCsrSeasonId { get; set; }
 
         /// <summary>
         /// A list of up to 3 game base variants with the highest win rate across all seasons by the user. If there is 
