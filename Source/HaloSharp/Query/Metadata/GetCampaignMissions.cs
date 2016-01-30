@@ -6,7 +6,7 @@ using HaloSharp.Model.Metadata;
 namespace HaloSharp.Query.Metadata
 {
     /// <summary>
-    /// Construct a query to retrieve detailed Campaign Mission Metadata. Use them to translate IDs from other APIs.
+    ///     Construct a query to retrieve detailed Campaign Mission Metadata. Use them to translate IDs from other APIs.
     /// </summary>
     public class GetCampaignMissions : IQuery<List<CampaignMission>>
     {
@@ -17,13 +17,14 @@ namespace HaloSharp.Query.Metadata
         public GetCampaignMissions SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 
         public async Task<List<CampaignMission>> ApplyTo(IHaloSession session)
         {
-            var campaignMissions = _useCache 
-                ? Cache.Get<List<CampaignMission>>(CacheKey) 
+            var campaignMissions = _useCache
+                ? Cache.Get<List<CampaignMission>>(CacheKey)
                 : null;
 
             if (campaignMissions != null)

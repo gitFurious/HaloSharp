@@ -6,7 +6,7 @@ using HaloSharp.Model.Metadata;
 namespace HaloSharp.Query.Metadata
 {
     /// <summary>
-    /// Construct a query to retrieve detailed Skull Metadata. Use them to translate IDs from other APIs.
+    ///     Construct a query to retrieve detailed Skull Metadata. Use them to translate IDs from other APIs.
     /// </summary>
     public class GetSkulls : IQuery<List<Skull>>
     {
@@ -17,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetSkulls SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

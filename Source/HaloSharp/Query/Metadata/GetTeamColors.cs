@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
@@ -14,9 +16,17 @@ namespace HaloSharp.Query.Metadata
 
         private bool _useCache = true;
 
+        public string GetConstructedUri()
+        {
+            var builder = new StringBuilder("metadata/h5/metadata/team-colors");
+
+            return builder.ToString();
+        }
+
         public GetTeamColors SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 
@@ -36,13 +46,6 @@ namespace HaloSharp.Query.Metadata
             Cache.Add(CacheKey, teamColors);
 
             return teamColors;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder("metadata/h5/metadata/team-colors");
-
-            return builder.ToString();
         }
     }
 }

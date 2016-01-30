@@ -6,7 +6,7 @@ using HaloSharp.Model.Metadata;
 namespace HaloSharp.Query.Metadata
 {
     /// <summary>
-    /// Construct a query to retrieve detailed Season Metadata. Use them to translate IDs from other APIs.
+    ///     Construct a query to retrieve detailed Season Metadata. Use them to translate IDs from other APIs.
     /// </summary>
     public class GetSeasons : IQuery<List<Season>>
     {
@@ -17,13 +17,14 @@ namespace HaloSharp.Query.Metadata
         public GetSeasons SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 
         public async Task<List<Season>> ApplyTo(IHaloSession session)
         {
-            var seasons = _useCache 
-                ? Cache.Get<List<Season>>(CacheKey) 
+            var seasons = _useCache
+                ? Cache.Get<List<Season>>(CacheKey)
                 : null;
 
             if (seasons != null)
