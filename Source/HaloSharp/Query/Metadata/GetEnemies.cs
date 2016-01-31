@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed Enemy Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetEnemies : IQuery<List<Enemy>>
     {
         private const string CacheKey = "Enemies";
@@ -14,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetEnemies SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

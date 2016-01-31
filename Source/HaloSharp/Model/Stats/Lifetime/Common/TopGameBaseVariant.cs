@@ -6,15 +6,27 @@ namespace HaloSharp.Model.Stats.Lifetime.Common
     [Serializable]
     public class TopGameBaseVariant : IEquatable<TopGameBaseVariant>
     {
+        /// <summary>
+        /// Id of the game base variant.
+        /// </summary>
         [JsonProperty(PropertyName = "GameBaseVariantId")]
         public Guid GameBaseVariantId { get; set; }
 
+        /// <summary>
+        /// Rank between 1-3.
+        /// </summary>
         [JsonProperty(PropertyName = "GameBaseVariantRank")]
         public int GameBaseVariantRank { get; set; }
 
+        /// <summary>
+        /// Number of games played in game base variant.
+        /// </summary>
         [JsonProperty(PropertyName = "NumberOfMatchesCompleted")]
         public int NumberOfMatchesCompleted { get; set; }
 
+        /// <summary>
+        /// Number of matches won on game base variant.
+        /// </summary>
         [JsonProperty(PropertyName = "NumberOfMatchesWon")]
         public int NumberOfMatchesWon { get; set; }
 

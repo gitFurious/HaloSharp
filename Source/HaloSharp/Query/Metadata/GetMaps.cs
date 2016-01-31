@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed Map Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetMaps : IQuery<List<Map>>
     {
         private const string CacheKey = "Maps";
@@ -14,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetMaps SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

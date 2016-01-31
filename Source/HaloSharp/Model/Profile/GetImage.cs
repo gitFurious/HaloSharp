@@ -7,7 +7,14 @@ namespace HaloSharp.Model.Profile
     [Serializable]
     public class GetImage : IEquatable<GetImage>
     {
+        /// <summary>
+        /// The URI the Image was retrieved from.
+        /// </summary>
         public string Uri { get; set; }
+
+        /// <summary>
+        /// The Image.
+        /// </summary>
         public Image Image { get; set; }
 
         public bool Equals(GetImage other)

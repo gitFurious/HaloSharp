@@ -58,7 +58,8 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         public async Task Query_DoesNotThrow()
         {
-            var query = new GetArenaMatchDetails();
+            var query = new GetArenaMatchDetails()
+                .ForMatchId(Guid.Empty);
 
             var result = await _mockSession.Query(query);
 
@@ -152,23 +153,13 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         }
 
         [Test]
+        [ExpectedException(typeof(ValidationException))]
         public async Task GetArenaMatchDetails_MissingGuid()
         {
             var query = new GetArenaMatchDetails();
 
-            try
-            {
-                await Global.Session.Query(query);
-                Assert.Fail("An exception should have been thrown");
-            }
-            catch (HaloApiException e)
-            {
-                Assert.AreEqual((int)Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
-            }
-            catch (System.Exception e)
-            {
-                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
-            }
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
         }
     }
 }

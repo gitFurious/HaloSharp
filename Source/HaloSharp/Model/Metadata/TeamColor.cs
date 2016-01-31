@@ -6,21 +6,41 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class TeamColor : IEquatable<TeamColor>
     {
+        /// <summary>
+        /// A seven-character string representing the team color in "RGB Hex" notation. This notation uses a "#" 
+        /// followed by a hex triplet.
+        /// </summary>
         [JsonProperty(PropertyName = "color")]
         public string Color { get; set; }
 
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// A localized description, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        /// <summary>
+        /// A reference to an image for icon use. This may be null if there is no image defined.
+        /// </summary>
         [JsonProperty(PropertyName = "iconUrl")]
         public string IconUrl { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this color. This will be the same as the team's ID in responses from the 
+        /// Stats API.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public int Id { get; set; }
 
+        /// <summary>
+        /// A localized name, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 

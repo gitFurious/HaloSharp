@@ -10,6 +10,9 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CustomServiceRecord : BaseServiceRecord, IEquatable<CustomServiceRecord>
     {
+        /// <summary>
+        /// Set of responses. One per user queried.
+        /// </summary>
         [JsonProperty(PropertyName = "Results")]
         public List<CustomServiceRecordResult> Results { get; set; }
 
@@ -71,6 +74,9 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CustomServiceRecordResult : BaseServiceRecordResult, IEquatable<CustomServiceRecordResult>
     {
+        /// <summary>
+        /// The Service Record result for the player. Only set if ResultCode is Success.
+        /// </summary>
         [JsonProperty(PropertyName = "Result")]
         public CustomResult Result { get; set; }
 
@@ -132,6 +138,9 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CustomResult : BaseResult, IEquatable<CustomResult>
     {
+        /// <summary>
+        /// Custom stats data.
+        /// </summary>
         [JsonProperty(PropertyName = "CustomStats")]
         public CustomStats CustomStats { get; set; }
 
@@ -193,9 +202,16 @@ namespace HaloSharp.Model.Stats.Lifetime
     [Serializable]
     public class CustomStats : BaseStat, IEquatable<CustomStats>
     {
+        /// <summary>
+        /// List of custom stats by CustomGameBaseVariant.
+        /// </summary>
         [JsonProperty(PropertyName = "CustomGameBaseVariantStats")]
         public List<GameBaseVariantStat> CustomGameBaseVariantStats { get; set; }
 
+        /// <summary>
+        /// A list of up to 3 top game base variants played by the user Top means Wins/Completed matches. If there is a 
+        /// tie, the one with more completions is higher. If there's still a tie, the GUIDs are sorted and selected.
+        /// </summary>
         [JsonProperty(PropertyName = "TopGameBaseVariants")]
         public List<TopGameBaseVariant> TopGameBaseVariants { get; set; }
 

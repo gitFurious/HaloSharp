@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed Flexible Stat Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetFlexibleStats : IQuery<List<FlexibleStat>>
     {
         private const string CacheKey = "FlexibleStats";
@@ -14,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetFlexibleStats SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

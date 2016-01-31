@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed CSR Designation Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetCompetitiveSkillRankDesignations : IQuery<List<CompetitiveSkillRankDesignation>>
     {
         private const string CacheKey = "CompetitiveSkillRankDesignations";
@@ -14,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetCompetitiveSkillRankDesignations SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 
@@ -28,7 +32,8 @@ namespace HaloSharp.Query.Metadata
                 return competitiveSkillRankDesignations;
             }
 
-            competitiveSkillRankDesignations = await session.Get<List<CompetitiveSkillRankDesignation>>(GetConstructedUri());
+            competitiveSkillRankDesignations =
+                await session.Get<List<CompetitiveSkillRankDesignation>>(GetConstructedUri());
 
             Cache.Add(CacheKey, competitiveSkillRankDesignations);
 

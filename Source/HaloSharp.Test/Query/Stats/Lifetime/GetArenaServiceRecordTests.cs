@@ -70,6 +70,33 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         }
 
         [Test]
+        [TestCase("2041d318-dd22-47c2-a487-2818ecf14e41")]
+        [TestCase("2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
+        public void GetConstructedUri_ForSeasonId_MatchesExpected(string guid)
+        {
+            var query = new GetArenaServiceRecord()
+                .ForSeasonId(new Guid(guid));
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual($"stats/h5/servicerecords/arena?seasonId={guid}", uri);
+        }
+
+        [Test]
+        [TestCase("Furiousn00b", "2041d318-dd22-47c2-a487-2818ecf14e41")]
+        [TestCase("Greenskull", "2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
+        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, string guid)
+        {
+            var query = new GetArenaServiceRecord()
+                .ForPlayer(gamertag)
+                .ForSeasonId(new Guid(guid));
+
+            var uri = query.GetConstructedUri();
+
+            Assert.AreEqual($"stats/h5/servicerecords/arena?players={gamertag}&seasonId={guid}", uri);
+        }
+
+        [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
         public async Task GetArenaServiceRecord(string gamertag)
@@ -85,7 +112,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         public async Task Query_DoesNotThrow()
         {
-            var query = new GetArenaServiceRecord();
+            var query = new GetArenaServiceRecord()
+                .ForPlayer("Player");
 
             var result = await _mockSession.Query(query);
 
@@ -161,46 +189,27 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         }
 
         [Test]
+        [ExpectedException(typeof(ValidationException))]
         public async Task GetArenaServiceRecord_MissingPlayer()
         {
             var query = new GetArenaServiceRecord();
 
-            try
-            {
-                await Global.Session.Query(query);
-                Assert.Fail("An exception should have been thrown");
-            }
-            catch (HaloApiException e)
-            {
-                Assert.AreEqual((int)Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
-            }
-            catch (System.Exception e)
-            {
-                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
-            }
+
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
         }
 
         [Test]
         [TestCase("00000000000000017")]
         [TestCase("!$%")]
+        [ExpectedException(typeof(ValidationException))]
         public async Task GetArenaServiceRecord_InvalidGamertag(string gamertag)
         {
             var query = new GetArenaServiceRecord()
                 .ForPlayer(gamertag);
 
-            try
-            {
-                await Global.Session.Query(query);
-                Assert.Fail("An exception should have been thrown");
-            }
-            catch (HaloApiException e)
-            {
-                Assert.AreEqual((int)Enumeration.StatusCode.BadRequest, e.HaloApiError.StatusCode);
-            }
-            catch (System.Exception e)
-            {
-                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
-            }
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
         }
     }
 }

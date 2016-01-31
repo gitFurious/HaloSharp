@@ -9,22 +9,54 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class Map : IEquatable<Map>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// A localized description, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this map.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
+        /// <summary>
+        /// A reference to an image. This may be null if there is no image defined.
+        /// </summary>
         [JsonProperty(PropertyName = "imageUrl")]
         public string ImageUrl { get; set; }
 
+        /// <summary>
+        /// A localized name, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
-        [JsonProperty(PropertyName = "supportedGameModes", ItemConverterType = typeof (StringEnumConverter))]
+        /// <summary>
+        /// A list that indicates what game modes this base variant is available within. Options are:
+        /// <list type="bullet">
+        /// <item>
+        /// <description>Arena</description>
+        /// </item>
+        /// <item>
+        /// <description>Campaign</description>
+        /// </item>
+        /// <item>
+        /// <description>Custom</description>
+        /// </item>
+        /// <item>
+        /// <description>Warzone</description>
+        /// </item>
+        /// </list>
+        /// </summary>
+        [JsonProperty(PropertyName = "supportedGameModes", ItemConverterType = typeof(StringEnumConverter))]
         public List<Enumeration.GameMode> SupportedGameModes { get; set; }
 
         public bool Equals(Map other)

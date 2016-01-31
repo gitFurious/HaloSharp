@@ -7,15 +7,35 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class FlexibleStat : IEquatable<FlexibleStat>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this stat.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
+        /// <summary>
+        /// A localized name for the data point, suitable for display to users. The text is title cased.
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
+        /// <summary>
+        /// The type of stat this represents, it is one of the following options:
+        /// <list type="bullet">
+        /// <item>
+        /// <description>Count</description>
+        /// </item>
+        /// <item>
+        /// <description>Duration</description>
+        /// </item>
+        /// </list>
+        /// </summary>
         [JsonProperty(PropertyName = "type")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.FlexibleStatType Type { get; set; }

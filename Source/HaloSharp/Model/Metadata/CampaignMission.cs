@@ -7,24 +7,53 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class CampaignMission : IEquatable<CampaignMission>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// A localized description, suitable for display to users.
+        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this campaign mission.
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
+        /// <summary>
+        /// An image that is used as the background art for this mission.
+        /// </summary>
         [JsonProperty(PropertyName = "imageUrl")]
         public string ImageUrl { get; set; }
 
+        /// <summary>
+        /// The order of the mission in the story. The first mission is #1.
+        /// </summary>
         [JsonProperty(PropertyName = "missionNumber")]
         public int MissionNumber { get; set; }
 
+        /// <summary>
+        /// A localized name suitable for display.
+        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
+        /// <summary>
+        /// The team for the mission. One of the following values:
+        /// <list type="bullet">
+        /// <item>
+        /// <description>BlueTeam</description>
+        /// </item>
+        /// <item>
+        /// <description>OsirisTeam</description>
+        /// </item>
+        /// </list>
+        /// </summary>
         [JsonProperty(PropertyName = "type")]
         [JsonConverter(typeof(StringEnumConverter))]
         public Enumeration.CampaignMissionType Type { get; set; }

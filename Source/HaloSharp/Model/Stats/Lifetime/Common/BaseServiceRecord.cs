@@ -9,6 +9,9 @@ namespace HaloSharp.Model.Stats.Lifetime.Common
     [Serializable]
     public class BaseServiceRecord : IEquatable<BaseServiceRecord>
     {
+        /// <summary>
+        /// Internal use only. A set of related resource links.
+        /// </summary>
         [JsonProperty(PropertyName = "Links")]
         public Dictionary<string, Link> Links { get; set; }
 

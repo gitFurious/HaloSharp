@@ -4,7 +4,7 @@ namespace HaloSharp.Exception
 {
     public class HaloApiException : System.Exception
     {
-        public HaloApiError HaloApiError { get; set; }
+        public HaloApiError HaloApiError { get; private set; }
 
         public HaloApiException(HaloApiError haloApiError)
         {

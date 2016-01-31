@@ -170,6 +170,9 @@
             "$ref": "#/definitions/ArenaPlaylistStat"
           }
         },
+        "ArenaPlaylistStatsSeasonId": {
+          "type": ["null", "string"]
+        },
         "HighestCsrAttained": {
             "$ref": "../common/competitive-skill-ranking.schema.json"
           },
@@ -187,6 +190,9 @@
         },
         "HighestCsrPlaylistId": {
           "type": "string"
+        },
+        "HighestCsrSeasonId": {
+          "type": ["null", "string"]
         }
       },
       "required": [
@@ -224,10 +230,12 @@
           "TotalSpartanKills",
 
           "ArenaPlaylistStats",
+          "ArenaPlaylistStatsSeasonId",
           "HighestCsrAttained",
           "ArenaGameBaseVariantStats",
           "TopGameBaseVariants",
-          "HighestCsrPlaylistId"
+          "HighestCsrPlaylistId",
+          "HighestCsrSeasonId"
         ]
     },
     "ArenaPlaylistStat": {

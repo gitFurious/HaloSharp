@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed Spartan Rank Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetSpartanRanks : IQuery<List<SpartanRank>>
     {
         private const string CacheKey = "SpartanRanks";
@@ -14,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetSpartanRanks SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

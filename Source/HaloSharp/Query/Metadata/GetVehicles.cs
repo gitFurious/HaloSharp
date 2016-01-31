@@ -1,10 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed Vehicle Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetVehicles : IQuery<List<Vehicle>>
     {
         private const string CacheKey = "Vehicles";
@@ -14,6 +19,7 @@ namespace HaloSharp.Query.Metadata
         public GetVehicles SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

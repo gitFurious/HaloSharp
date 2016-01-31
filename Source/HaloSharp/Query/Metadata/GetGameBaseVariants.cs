@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed Game Base Variant Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetGameBaseVariants : IQuery<List<GameBaseVariant>>
     {
         private const string CacheKey = "GameBaseVariants";
@@ -14,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetGameBaseVariants SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

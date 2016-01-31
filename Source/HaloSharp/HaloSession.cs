@@ -115,7 +115,7 @@ namespace HaloSharp
             GC.SuppressFinalize(this);
         }
 
-        protected virtual void Dispose(bool isDisposing)
+        private void Dispose(bool isDisposing)
         {
             if (!_isDisposed)
             {

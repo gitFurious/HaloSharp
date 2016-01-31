@@ -56,12 +56,10 @@ namespace HaloSharp.Test.Query.Metadata
         }
 
         [Test]
-        [TestCase("a23a896d-57e6-45c3-970b-27550f0e7184")]
-        public async Task Query_DoesNotThrow(string guid)
+        public async Task Query_DoesNotThrow()
         {
             var query = new GetRequisition()
-                .ForRequisitionId(new Guid(guid))
-                .SkipCache();
+                .ForRequisitionId(Guid.Empty);
 
             var result = await _mockSession.Query(query);
 
@@ -160,24 +158,14 @@ namespace HaloSharp.Test.Query.Metadata
         }
 
         [Test]
+        [ExpectedException(typeof(ValidationException))]
         public async Task GetRequisition_MissingGuid()
         {
             var query = new GetRequisition()
                 .SkipCache();
 
-            try
-            {
-                await Global.Session.Query(query);
-                Assert.Fail("An exception should have been thrown");
-            }
-            catch (HaloApiException e)
-            {
-                Assert.AreEqual((int) Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
-            }
-            catch (System.Exception e)
-            {
-                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
-            }
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
         }
     }
 }

@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed Medal Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetMedals : IQuery<List<Medal>>
     {
         private const string CacheKey = "Medals";
@@ -14,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetMedals SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

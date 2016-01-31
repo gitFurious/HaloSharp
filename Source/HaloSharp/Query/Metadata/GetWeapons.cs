@@ -5,6 +5,9 @@ using HaloSharp.Model.Metadata;
 
 namespace HaloSharp.Query.Metadata
 {
+    /// <summary>
+    ///     Construct a query to retrieve detailed Weapon Metadata. Use them to translate IDs from other APIs.
+    /// </summary>
     public class GetWeapons : IQuery<List<Weapon>>
     {
         private const string CacheKey = "Weapons";
@@ -14,6 +17,7 @@ namespace HaloSharp.Query.Metadata
         public GetWeapons SkipCache()
         {
             _useCache = false;
+
             return this;
         }
 

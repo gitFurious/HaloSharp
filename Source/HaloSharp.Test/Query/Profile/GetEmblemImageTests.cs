@@ -111,68 +111,38 @@ namespace HaloSharp.Test.Query.Profile
         [TestCase(189)]
         [TestCase(255)]
         [TestCase(511)]
+        [ExpectedException(typeof(ValidationException))]
         public async Task GetEmblemImage_InvalidSize(int size)
         {
             var query = new GetEmblemImage()
                 .ForPlayer("Furiousn00b")
                 .Size(size);
 
-            try
-            {
-                await Global.Session.Query(query);
-                Assert.Fail("An exception should have been thrown");
-            }
-            catch (HaloApiException e)
-            {
-                Assert.AreEqual((int)Enumeration.StatusCode.BadRequest, e.HaloApiError.StatusCode);
-            }
-            catch (System.Exception e)
-            {
-                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
-            }
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
         }
 
         [Test]
         [TestCase("00000000000000017")]
         [TestCase("!$%")]
+        [ExpectedException(typeof(ValidationException))]
         public async Task GetEmblemImage_InvalidGamertag(string gamertag)
         {
             var query = new GetEmblemImage()
                 .ForPlayer(gamertag);
 
-            try
-            {
-                await Global.Session.Query(query);
-                Assert.Fail("An exception should have been thrown");
-            }
-            catch (HaloApiException e)
-            {
-                Assert.AreEqual((int)Enumeration.StatusCode.BadRequest, e.HaloApiError.StatusCode);
-            }
-            catch (System.Exception e)
-            {
-                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
-            }
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
         }
 
         [Test]
+        [ExpectedException(typeof(ValidationException))]
         public async Task GetEmblemImage_MissingGamertag()
         {
             var query = new GetEmblemImage();
 
-            try
-            {
-                await Global.Session.Query(query);
-                Assert.Fail("An exception should have been thrown");
-            }
-            catch (HaloApiException e)
-            {
-                Assert.AreEqual((int)Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
-            }
-            catch (System.Exception e)
-            {
-                Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
-            }
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
         }
     }
 }

@@ -7,15 +7,27 @@ namespace HaloSharp.Model.Metadata
     [Serializable]
     public class SpartanRank : IEquatable<SpartanRank>
     {
+        /// <summary>
+        /// Internal use only. Do not use.
+        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
+        /// <summary>
+        /// The ID that uniquely identifies this Spartan Rank. 
+        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public int Id { get; set; }
 
+        /// <summary>
+        /// The reward the player will receive for earning this Spartan Rank.
+        /// </summary>
         [JsonProperty(PropertyName = "reward")]
         public Reward Reward { get; set; }
 
+        /// <summary>
+        /// The amount of XP required to enter this rank.
+        /// </summary>
         [JsonProperty(PropertyName = "startXp")]
         public int StartXp { get; set; }
 
