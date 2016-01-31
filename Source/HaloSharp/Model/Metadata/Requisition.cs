@@ -198,22 +198,23 @@ namespace HaloSharp.Model.Metadata
             {
                 return false;
             }
-
             if (ReferenceEquals(this, other))
             {
                 return true;
             }
 
-            return string.Equals(CategoryName, other.CategoryName)
+            return string.Equals(CategoryName, other.CategoryName) 
                 && CertificationRequisitionId.Equals(other.CertificationRequisitionId)
                 && ContentId.Equals(other.ContentId)
                 && string.Equals(Description, other.Description)
                 && Id.Equals(other.Id)
                 && string.Equals(InternalCategoryName, other.InternalCategoryName)
+                && string.Equals(InternalSubcategoryName, other.InternalSubcategoryName)
                 && IsCertification == other.IsCertification
                 && IsMythic == other.IsMythic
                 && IsWearable == other.IsWearable
                 && string.Equals(LargeImageUrl, other.LargeImageUrl)
+                && LevelRequirement == other.LevelRequirement
                 && string.Equals(Name, other.Name)
                 && string.Equals(Rarity, other.Rarity)
                 && RarityType == other.RarityType
@@ -254,10 +255,12 @@ namespace HaloSharp.Model.Metadata
                 hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ (InternalCategoryName?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (InternalSubcategoryName?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ IsCertification.GetHashCode();
                 hashCode = (hashCode*397) ^ IsMythic.GetHashCode();
                 hashCode = (hashCode*397) ^ IsWearable.GetHashCode();
                 hashCode = (hashCode*397) ^ (LargeImageUrl?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ LevelRequirement;
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Rarity?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (int) RarityType;

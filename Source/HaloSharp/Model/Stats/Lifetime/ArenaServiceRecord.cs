@@ -266,8 +266,10 @@ namespace HaloSharp.Model.Stats.Lifetime
             return base.Equals(other)
                 && ArenaGameBaseVariantStats.OrderBy(agbvs => agbvs.GameBaseVariantId).SequenceEqual(other.ArenaGameBaseVariantStats.OrderBy(agbvs => agbvs.GameBaseVariantId))
                 && ArenaPlaylistStats.OrderBy(aps => aps.PlaylistId).SequenceEqual(other.ArenaPlaylistStats.OrderBy(aps => aps.PlaylistId))
+                && ArenaPlaylistStatsSeasonId.Equals(other.ArenaPlaylistStatsSeasonId)
                 && Equals(HighestCsrAttained, other.HighestCsrAttained)
                 && HighestCsrPlaylistId.Equals(other.HighestCsrPlaylistId)
+                && HighestCsrSeasonId.Equals(other.HighestCsrSeasonId)
                 && TopGameBaseVariants.OrderBy(aps => aps.GameBaseVariantId).SequenceEqual(other.TopGameBaseVariants.OrderBy(aps => aps.GameBaseVariantId));
         }
 
@@ -298,8 +300,10 @@ namespace HaloSharp.Model.Stats.Lifetime
                 int hashCode = base.GetHashCode();
                 hashCode = (hashCode*397) ^ (ArenaGameBaseVariantStats?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (ArenaPlaylistStats?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ ArenaPlaylistStatsSeasonId.GetHashCode();
                 hashCode = (hashCode*397) ^ (HighestCsrAttained?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ HighestCsrPlaylistId.GetHashCode();
+                hashCode = (hashCode*397) ^ HighestCsrSeasonId.GetHashCode();
                 hashCode = (hashCode*397) ^ (TopGameBaseVariants?.GetHashCode() ?? 0);
                 return hashCode;
             }
