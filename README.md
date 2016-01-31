@@ -49,15 +49,33 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
-###### v.1.1.00 (2015-12-26)
+###### v.1.2.0.0 (2016-01-31)
 
-1. Rate Limiter: Optional rate limiter with timeout settings.
+1. Query validation.
+  * Validation exceptions will be thrown for bad queries (missing mandatory fields, invalid gamertags etc.).
 
-2. JSON Structural Validation (JSON Schema): A significant update to the test harness. Using JSON schemas to detect changes to API responses.
+2. Updated GetArenaServiceRecord query.
+  * New SeasonId parameter.
 
-3. Serialization: Strongly typed models are now serializable.
+3. Updated ArenaServiceRecord model.
+  * New property: ArenaPlaylistStatsSeasonId
+  * New property: HighestCsrSeasonId
 
-4. Metadata Endpoints
+4. Updated Requisition model.
+  * New property: LevelRequirement
+
+###### v.1.1.0.0 (2015-12-26)
+
+1. Rate Limiter
+  * Optional rate limiter with timeout settings.
+
+2. JSON Structural Validation (JSON Schema).
+  * A significant update to the test harness. Using JSON schemas to detect changes to API responses.
+
+3. Serialization.
+  * Strongly typed models are now serializable.
+
+4. Metadata Endpoints.
   * Seasons
 
 5. Profile Endpoints
