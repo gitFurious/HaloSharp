@@ -130,6 +130,12 @@ namespace HaloSharp.Model.Stats.CarnageReport
         public int BiggestKillScore { get; set; }
 
         /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "CharacterIndex")]
+        public int? CharacterIndex { get; set; }
+
+        /// <summary>
         /// The player's score.
         /// </summary>
         [JsonProperty(PropertyName = "Score")]
@@ -149,6 +155,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
 
             return base.Equals(other)
                 && BiggestKillScore == other.BiggestKillScore
+                && CharacterIndex == other.CharacterIndex 
                 && Score == other.Score;
         }
 
@@ -178,6 +185,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
             {
                 int hashCode = base.GetHashCode();
                 hashCode = (hashCode*397) ^ BiggestKillScore;
+                hashCode = (hashCode*397) ^ CharacterIndex.GetHashCode();
                 hashCode = (hashCode*397) ^ Score;
                 return hashCode;
             }

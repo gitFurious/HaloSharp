@@ -180,6 +180,9 @@
         },
         "SeasonId": {
           "type": [ "string", "null" ]
+        },
+        "MatchCompletedDateFidelity": {
+          "type": "integer"
         }
       },
       "required": [
@@ -195,7 +198,8 @@
         "Teams",
         "Players",
         "IsTeamGame",
-        "SeasonId"
+        "SeasonId",
+        "MatchCompletedDateFidelity"
       ]
     },
     "Team": {
