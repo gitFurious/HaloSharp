@@ -49,6 +49,14 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.2.1.0 (2016-02-14)
+
+1. Updated CampaignMatch model.
+  * New property: CharacterIndex
+
+4. Updated MatchSet model.
+  * New property: MatchCompletedDateFidelity
+
 ###### v.1.2.0.0 (2016-01-31)
 
 1. Query validation.
