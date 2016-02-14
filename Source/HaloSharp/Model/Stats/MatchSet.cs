@@ -199,6 +199,12 @@ namespace HaloSharp.Model.Stats
         public Guid? SeasonId { get; set; }
 
         /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "MatchCompletedDateFidelity")]
+        public int MatchCompletedDateFidelity { get; set; }
+
+        /// <summary>
         ///  Provides team data. This list contains all team that Won or Tied. Losing teams are not included. This list 
         /// is empty for campaign games. 
         /// </summary>
@@ -229,6 +235,7 @@ namespace HaloSharp.Model.Stats
                 && MatchDuration.Equals(other.MatchDuration)
                 && Players.OrderBy(p => p.Identity.Gamertag).SequenceEqual(other.Players.OrderBy(p => p.Identity.Gamertag))
                 && SeasonId.Equals(other.SeasonId)
+                && MatchCompletedDateFidelity == other.MatchCompletedDateFidelity
                 && Teams.OrderBy(t => t.Id).SequenceEqual(other.Teams.OrderBy(t => t.Id));
         }
 
@@ -248,7 +255,6 @@ namespace HaloSharp.Model.Stats
             {
                 return false;
             }
-
             return Equals((Result) obj);
         }
 
@@ -268,6 +274,7 @@ namespace HaloSharp.Model.Stats
                 hashCode = (hashCode*397) ^ MatchDuration.GetHashCode();
                 hashCode = (hashCode*397) ^ (Players?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ SeasonId.GetHashCode();
+                hashCode = (hashCode*397) ^ MatchCompletedDateFidelity;
                 hashCode = (hashCode*397) ^ (Teams?.GetHashCode() ?? 0);
                 return hashCode;
             }

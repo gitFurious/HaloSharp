@@ -20,6 +20,7 @@
                 ]
             },
             "Score":0,
+            "CharacterIndex":null,
             "Player":{
                 "Gamertag":"Furiousn00b",
                 "Xuid":null
@@ -523,6 +524,7 @@
                 ]
             },
             "Score":0,
+            "CharacterIndex":null,
             "Player":{
                 "Gamertag":"OAKSImp",
                 "Xuid":null

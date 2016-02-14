@@ -144,6 +144,9 @@
         "Score": {
           "type": "integer"
         },
+        "CharacterIndex": {
+          "type": ["null", "integer"]
+        },
         "BiggestKillScore": {
           "type": "integer"
         }
@@ -192,6 +195,7 @@
         "PostMatchRatings",
 
         "Score",
+        "CharacterIndex",
         "BiggestKillScore"
       ]
     }
