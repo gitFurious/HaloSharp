@@ -31,6 +31,9 @@
     "isWearable": {
       "type": "boolean"
     },
+    "hideIfNotAcquired": {
+      "type": "boolean"
+    },
     "useType": {
       "type": "string"
     },
@@ -77,6 +80,7 @@
     "isMythic",
     "isCertification",
     "isWearable",
+    "hideIfNotAcquired",
     "useType",
     "largeImageUrl",
     "categoryName",

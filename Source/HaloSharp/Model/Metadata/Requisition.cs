@@ -72,6 +72,12 @@ namespace HaloSharp.Model.Metadata
         public bool IsWearable { get; set; }
 
         /// <summary>
+        /// Indicates whether the requisition is wearable.
+        /// </summary>
+        [JsonProperty(PropertyName = "hideIfNotAcquired")]
+        public bool HideIfNotAcquired { get; set; }
+
+        /// <summary>
         /// A reference to a large image for icon use. This may be null if there is no image defined.
         /// </summary>
         [JsonProperty(PropertyName = "largeImageUrl")]
@@ -198,12 +204,13 @@ namespace HaloSharp.Model.Metadata
             {
                 return false;
             }
+
             if (ReferenceEquals(this, other))
             {
                 return true;
             }
 
-            return string.Equals(CategoryName, other.CategoryName) 
+            return string.Equals(CategoryName, other.CategoryName)
                 && CertificationRequisitionId.Equals(other.CertificationRequisitionId)
                 && ContentId.Equals(other.ContentId)
                 && string.Equals(Description, other.Description)
@@ -213,6 +220,7 @@ namespace HaloSharp.Model.Metadata
                 && IsCertification == other.IsCertification
                 && IsMythic == other.IsMythic
                 && IsWearable == other.IsWearable
+                && HideIfNotAcquired == other.HideIfNotAcquired
                 && string.Equals(LargeImageUrl, other.LargeImageUrl)
                 && LevelRequirement == other.LevelRequirement
                 && string.Equals(Name, other.Name)
@@ -259,6 +267,7 @@ namespace HaloSharp.Model.Metadata
                 hashCode = (hashCode*397) ^ IsCertification.GetHashCode();
                 hashCode = (hashCode*397) ^ IsMythic.GetHashCode();
                 hashCode = (hashCode*397) ^ IsWearable.GetHashCode();
+                hashCode = (hashCode*397) ^ HideIfNotAcquired.GetHashCode();
                 hashCode = (hashCode*397) ^ (LargeImageUrl?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ LevelRequirement;
                 hashCode = (hashCode*397) ^ (Name?.GetHashCode() ?? 0);
