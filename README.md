@@ -49,6 +49,14 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.2.2.0 (2016-02-20)
+
+1. Updated Medal enum.
+  * New Medal Type: Ball
+
+4. Updated Requisition model.
+  * New property: HideIfNotAcquired
+
 ###### v.1.2.1.0 (2016-02-14)
 
 1. Updated CampaignMatch model.
