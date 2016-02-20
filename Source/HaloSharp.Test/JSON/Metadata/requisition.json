@@ -9,6 +9,7 @@
     "isMythic":true,
     "isCertification":false,
     "isWearable":false,
+    "hideIfNotAcquired":false,
     "useType":"Consumable",
     "largeImageUrl":"https://image.halocdn.com:443/h5/requisitions/a23a896d-57e6-45c3-970b-27550f0e7184?locale=en&width=200&hash=H%2b0SkJV2oQsDv%2fDiUafVqoTeCmx2gebaSeTsg%2bX0oRk%3d",
     "categoryName":"Power and Vehicle",

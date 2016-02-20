@@ -84,7 +84,8 @@ namespace HaloSharp.Model
             Style,
             Vehicles,
             Warzone,
-            WeaponProficiency
+            WeaponProficiency,
+            Goal
         }
 
         public enum OwnerType
