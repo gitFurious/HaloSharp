@@ -48,6 +48,7 @@ namespace HaloSharp.Test.Converter
 
         [Test]
         [TestCase("2041d318-dd22-47c2-a487-2818ecf14e41")]
+        public void SerializeObject_WriteJson_AreEqual(string value)
         {
             var source = new TestClass { HighestCsrSeasonId = new Guid(value) };
             var target = JsonConvert.SerializeObject(source);
