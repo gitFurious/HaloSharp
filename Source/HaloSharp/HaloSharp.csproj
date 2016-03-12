@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache.cs" />
+    <Compile Include="Converter\GuidConverter.cs" />
     <Compile Include="Converter\TimeSpanConverter.cs" />
     <Compile Include="Exception\ValidationException.cs" />
     <Compile Include="Exception\HaloApiException.cs" />

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Converter;
 using HaloSharp.Model.Stats.Common;
 using HaloSharp.Model.Stats.Lifetime.Common;
 using Newtonsoft.Json;
@@ -241,6 +242,7 @@ namespace HaloSharp.Model.Stats.Lifetime
         /// null, so is this field.
         /// </summary>
         [JsonProperty(PropertyName = "HighestCsrSeasonId")]
+        [JsonConverter(typeof(GuidConverter))]
         public Guid? HighestCsrSeasonId { get; set; }
 
         /// <summary>
