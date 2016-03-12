@@ -18,7 +18,7 @@ namespace HaloSharp
 
         public RateGate(RateLimit rateLimit)
         {
-            _timeUnitMilliseconds = (int)rateLimit.TimspSpan.TotalMilliseconds;
+            _timeUnitMilliseconds = (int)rateLimit.TimeSpan.TotalMilliseconds;
             _timeoutMilliseconds = (int)rateLimit.Timeout.TotalMilliseconds;
 
             _semaphore = new SemaphoreSlim(rateLimit.RequestCount, rateLimit.RequestCount);

@@ -19,7 +19,7 @@ namespace HaloSharp.Test
                 RateLimit = new RateLimit
                 {
                     RequestCount = 10,
-                    TimspSpan = new TimeSpan(0, 0, 0, 10),
+                    TimeSpan = new TimeSpan(0, 0, 0, 10),
                     Timeout = new TimeSpan(0, 0, 0, 10)
                 }
             };

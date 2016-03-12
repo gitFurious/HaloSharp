@@ -11,7 +11,7 @@ namespace HaloSharp.Model
     public class RateLimit
     {
         public int RequestCount { get; set; }
-        public TimeSpan TimspSpan { get; set; }
+        public TimeSpan TimeSpan { get; set; }
         public TimeSpan Timeout { get; set; }
     }
 }
