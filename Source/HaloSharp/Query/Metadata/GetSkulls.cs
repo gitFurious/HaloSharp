@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetSkulls : IQuery<List<Skull>>
     {
-        private const string CacheKey = "Skulls";
-
         private bool _useCache = true;
 
         public GetSkulls SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<Skull>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var skulls = _useCache
-                ? Cache.Get<List<Skull>>(CacheKey)
+                ? Cache.Get<List<Skull>>(uri)
                 : null;
 
-            if (skulls != null)
+            if (skulls == null)
             {
-                return skulls;
+                skulls = await session.Get<List<Skull>>(uri);
+
+                Cache.AddMetadata(uri, skulls);
             }
-
-            skulls = await session.Get<List<Skull>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, skulls);
 
             return skulls;
         }

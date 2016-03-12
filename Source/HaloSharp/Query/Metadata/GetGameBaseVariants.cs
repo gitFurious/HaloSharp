@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetGameBaseVariants : IQuery<List<GameBaseVariant>>
     {
-        private const string CacheKey = "GameBaseVariants";
-
         private bool _useCache = true;
 
         public GetGameBaseVariants SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<GameBaseVariant>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var gameBaseVariants = _useCache
-                ? Cache.Get<List<GameBaseVariant>>(CacheKey)
+                ? Cache.Get<List<GameBaseVariant>>(uri)
                 : null;
 
-            if (gameBaseVariants != null)
+            if (gameBaseVariants == null)
             {
-                return gameBaseVariants;
+                gameBaseVariants = await session.Get<List<GameBaseVariant>>(uri);
+
+                Cache.AddMetadata(uri, gameBaseVariants);
             }
-
-            gameBaseVariants = await session.Get<List<GameBaseVariant>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, gameBaseVariants);
 
             return gameBaseVariants;
         }

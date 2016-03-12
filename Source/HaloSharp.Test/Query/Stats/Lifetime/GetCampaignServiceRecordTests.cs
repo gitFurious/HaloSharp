@@ -35,7 +35,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         }
 
         [Test]
-        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        public void GetConstructedUri_NoParameters_MatchesExpected()
         {
             var query = new GetCampaignServiceRecord();
 
@@ -75,7 +75,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task GetCampaignServiceRecord(string gamertag)
         {
             var query = new GetCampaignServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -86,7 +87,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task Query_DoesNotThrow()
         {
             var query = new GetCampaignServiceRecord()
-                .ForPlayer("Player");
+                .ForPlayer("Player")
+                .SkipCache();
 
             var result = await _mockSession.Query(query);
 
@@ -100,7 +102,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task GetCampaignServiceRecord_DoesNotThrow(string gamertag)
         {
             var query = new GetCampaignServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -119,7 +122,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
             });
 
             var query = new GetCampaignServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
 
@@ -138,7 +142,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
             });
 
             var query = new GetCampaignServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -154,7 +159,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task GetCampaignServiceRecord_IsSerializable(string gamertag)
         {
             var query = new GetCampaignServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 

@@ -6,7 +6,7 @@ HaloSharp attempts to fully support all available official endpoints.
 
 ### Usage ###
 
-1. Create an instance of `HaloClient` (provide your SubscriptionKey and optionally a RateLimit).
+1. Create an instance of `HaloClient`. Provide your SubscriptionKey at a minimum, optionally include a RateLimit and CacheDuration(s).
 2. Call the `StartSession` method.
 3. Call the `.Query<TResult>()` method and pass in a prepackaged Query object.
 
@@ -24,7 +24,14 @@ var developerAccessProduct = new Product
     }
 };
 
-var client = new HaloClient(developerAccessProduct);
+var cacheSettings = new CacheSettings
+{
+	MetadataCacheDuration = new TimeSpan(0, 0, 10, 0),
+	ProfileCacheDuration = new TimeSpan(0, 0, 10, 0),
+	StatsCacheDuration = null //Don't cache 'Stats' endpoints.
+};
+
+var client = new HaloClient(developerAccessProduct, cacheSettings);
 
 using (var session = client.StartSession())
 {
@@ -49,7 +56,13 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
-###### v.1.2.2.0 (2016-02-25)
+###### v.1.3.0.0 (2016-03-13)
+
+1. Fixed an issue with unhandled HighestCsrSeasonId values (Reported by 'b01000100' and 'RHIT Propensity').
+2. Added the ability to specify cache durations (expiration). Metadata, Profile, and Stats can be independently set (or not at all).
+3. Fixed a couple of spelling mistakes. Breaking change :)
+
+###### v.1.2.3.0 (2016-02-25)
 
 1. Updated Medal enum.
   * New Medal Type: Ball
@@ -59,7 +72,7 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 1. Updated Medal enum.
   * New Medal Type: Goal
 
-4. Updated Requisition model.
+2. Updated Requisition model.
   * New property: HideIfNotAcquired
 
 ###### v.1.2.1.0 (2016-02-14)
@@ -67,7 +80,7 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 1. Updated CampaignMatch model.
   * New property: CharacterIndex
 
-4. Updated MatchSet model.
+2. Updated MatchSet model.
   * New property: MatchCompletedDateFidelity
 
 ###### v.1.2.0.0 (2016-01-31)

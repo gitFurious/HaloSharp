@@ -8,16 +8,11 @@ namespace HaloSharp.Converter
     {
         public override bool CanConvert(Type objectType)
         {
-            return objectType == typeof (TimeSpan) || objectType == typeof (TimeSpan?);
+            return objectType == typeof (TimeSpan);
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
-            if (reader.TokenType == JsonToken.Null)
-            {
-                return null;
-            }
-
             var value = serializer.Deserialize<string>(reader);
 
             try
@@ -32,9 +27,8 @@ namespace HaloSharp.Converter
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            var ts = (TimeSpan)value;
-            var tsString = XmlConvert.ToString(ts);
-            serializer.Serialize(writer, tsString);
+            var timeSpan = (TimeSpan)value;
+            serializer.Serialize(writer, XmlConvert.ToString(timeSpan));
         }
     }
 }

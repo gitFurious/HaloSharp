@@ -15,6 +15,15 @@ namespace HaloSharp.Query.Profile
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
         internal string Player;
 
+        private bool _useCache = true;
+
+        public GetEmblemImage SkipCache()
+        {
+            _useCache = false;
+
+            return this;
+        }
+
         /// <summary>
         ///     The Player's gamertag.
         /// </summary>
@@ -42,13 +51,26 @@ namespace HaloSharp.Query.Profile
         {
             this.Validate();
 
-            var tuple = await session.GetImage(GetConstructedUri());
+            var uri = GetConstructedUri();
 
-            return new GetImage
+            var emblemImage = _useCache
+                ? Cache.Get<GetImage>(uri)
+                : null;
+
+            if (emblemImage == null)
             {
-                Uri = tuple.Item1,
-                Image = tuple.Item2
-            };
+                var tuple = await session.GetImage(uri);
+
+                emblemImage = new GetImage
+                {
+                    Uri = tuple.Item1,
+                    Image = tuple.Item2
+                };
+
+                Cache.AddProfile(uri, emblemImage);
+            }
+
+            return emblemImage;
         }
 
         public string GetConstructedUri()

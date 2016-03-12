@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetImpulses : IQuery<List<Impulse>>
     {
-        private const string CacheKey = "Impulses";
-
         private bool _useCache = true;
 
         public GetImpulses SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<Impulse>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var impulses = _useCache
-                ? Cache.Get<List<Impulse>>(CacheKey)
+                ? Cache.Get<List<Impulse>>(uri)
                 : null;
 
-            if (impulses != null)
+            if (impulses == null)
             {
-                return impulses;
+                impulses = await session.Get<List<Impulse>>(uri);
+
+                Cache.AddMetadata(uri, impulses);
             }
-
-            impulses = await session.Get<List<Impulse>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, impulses);
 
             return impulses;
         }

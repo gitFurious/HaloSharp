@@ -27,7 +27,7 @@ namespace HaloSharp.Validation.Profile
 
                 if (!parsed || !validSizes.Contains(size))
                 {
-                    validationResult.Messages.Add($"GetSpartanImage optional paramater 'Size' is invalid: {size}.");
+                    validationResult.Messages.Add($"GetSpartanImage optional parameter 'Size' is invalid: {size}.");
                 }
             }
 
@@ -39,7 +39,7 @@ namespace HaloSharp.Validation.Profile
 
                 if (!defined)
                 {
-                    validationResult.Messages.Add($"GetSpartanImage optional paramater 'Crop' is invalid: {crop}.");
+                    validationResult.Messages.Add($"GetSpartanImage optional parameter 'Crop' is invalid: {crop}.");
                 }
             }
 

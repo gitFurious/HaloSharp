@@ -13,7 +13,7 @@ namespace HaloSharp.Test.Query.Profile
     public class GetSpartanImageTests
     {
         [Test]
-        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        public void GetConstructedUri_NoParameters_MatchesExpected()
         {
             var query = new GetSpartanImage();
 
@@ -82,7 +82,8 @@ namespace HaloSharp.Test.Query.Profile
         public async Task GetSpartanImage(string gamertag)
         {
             var query = new GetSpartanImage()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -99,7 +100,8 @@ namespace HaloSharp.Test.Query.Profile
         {
             var query = new GetSpartanImage()
                 .ForPlayer("Furiousn00b")
-                .Size(size);
+                .Size(size)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -111,7 +113,8 @@ namespace HaloSharp.Test.Query.Profile
         {
             var query = new GetSpartanImage()
                 .ForPlayer("Furiousn00b")
-                .Crop(Enumeration.CropType.Portrait);
+                .Crop(Enumeration.CropType.Portrait)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -124,7 +127,8 @@ namespace HaloSharp.Test.Query.Profile
         public async Task GetSpartanImage_IsSerializable(string gamertag)
         {
             var query = new GetSpartanImage()
-                .ForPlayer("Furiousn00b");
+                .ForPlayer("Furiousn00b")
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 

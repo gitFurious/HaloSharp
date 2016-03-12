@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetMaps : IQuery<List<Map>>
     {
-        private const string CacheKey = "Maps";
-
         private bool _useCache = true;
 
         public GetMaps SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<Map>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var maps = _useCache
-                ? Cache.Get<List<Map>>(CacheKey)
+                ? Cache.Get<List<Map>>(uri)
                 : null;
 
-            if (maps != null)
+            if (maps == null)
             {
-                return maps;
+                maps = await session.Get<List<Map>>(uri);
+
+                Cache.AddMetadata(uri, maps);
             }
-
-            maps = await session.Get<List<Map>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, maps);
 
             return maps;
         }

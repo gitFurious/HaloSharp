@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetCampaignMissions : IQuery<List<CampaignMission>>
     {
-        private const string CacheKey = "CampaignMissions";
-
         private bool _useCache = true;
 
         public GetCampaignMissions SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<CampaignMission>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var campaignMissions = _useCache
-                ? Cache.Get<List<CampaignMission>>(CacheKey)
+                ? Cache.Get<List<CampaignMission>>(uri)
                 : null;
 
-            if (campaignMissions != null)
+            if (campaignMissions == null)
             {
-                return campaignMissions;
+                campaignMissions = await session.Get<List<CampaignMission>>(uri);
+
+                Cache.AddMetadata(uri, campaignMissions);
             }
-
-            campaignMissions = await session.Get<List<CampaignMission>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, campaignMissions);
 
             return campaignMissions;
         }

@@ -11,8 +11,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetGameVariant : IQuery<GameVariant>
     {
-        private const string CacheKey = "GameVariant";
-
         private bool _useCache = true;
         internal string Id;
 
@@ -38,18 +36,18 @@ namespace HaloSharp.Query.Metadata
         {
             this.Validate();
 
+            var uri = GetConstructedUri();
+
             var gameVariant = _useCache
-                ? Cache.Get<GameVariant>($"{CacheKey}-{Id}")
+                ? Cache.Get<GameVariant>(uri)
                 : null;
 
-            if (gameVariant != null)
+            if (gameVariant == null)
             {
-                return gameVariant;
+                gameVariant = await session.Get<GameVariant>(uri);
+
+                Cache.AddMetadata(uri, gameVariant);
             }
-
-            gameVariant = await session.Get<GameVariant>(GetConstructedUri());
-
-            Cache.Add($"{CacheKey}-{Id}", gameVariant);
 
             return gameVariant;
         }

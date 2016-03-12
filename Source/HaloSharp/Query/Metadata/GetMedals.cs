@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetMedals : IQuery<List<Medal>>
     {
-        private const string CacheKey = "Medals";
-
         private bool _useCache = true;
 
         public GetMedals SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<Medal>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var medals = _useCache
-                ? Cache.Get<List<Medal>>(CacheKey)
+                ? Cache.Get<List<Medal>>(uri)
                 : null;
 
-            if (medals != null)
+            if (medals == null)
             {
-                return medals;
+                medals = await session.Get<List<Medal>>(uri);
+
+                Cache.AddMetadata(uri, medals);
             }
-
-            medals = await session.Get<List<Medal>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, medals);
 
             return medals;
         }

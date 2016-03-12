@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetCompetitiveSkillRankDesignations : IQuery<List<CompetitiveSkillRankDesignation>>
     {
-        private const string CacheKey = "CompetitiveSkillRankDesignations";
-
         private bool _useCache = true;
 
         public GetCompetitiveSkillRankDesignations SkipCache()
@@ -23,19 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<CompetitiveSkillRankDesignation>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var competitiveSkillRankDesignations = _useCache
-                ? Cache.Get<List<CompetitiveSkillRankDesignation>>(CacheKey)
+                ? Cache.Get<List<CompetitiveSkillRankDesignation>>(uri)
                 : null;
 
-            if (competitiveSkillRankDesignations != null)
+            if (competitiveSkillRankDesignations == null)
             {
-                return competitiveSkillRankDesignations;
+                competitiveSkillRankDesignations = await session.Get<List<CompetitiveSkillRankDesignation>>(uri);
+
+                Cache.AddMetadata(uri, competitiveSkillRankDesignations);
             }
-
-            competitiveSkillRankDesignations =
-                await session.Get<List<CompetitiveSkillRankDesignation>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, competitiveSkillRankDesignations);
 
             return competitiveSkillRankDesignations;
         }

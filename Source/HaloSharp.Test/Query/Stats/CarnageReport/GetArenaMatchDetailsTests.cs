@@ -34,7 +34,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         }
 
         [Test]
-        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        public void GetConstructedUri_NoParameters_MatchesExpected()
         {
             var query = new GetArenaMatchDetails();
 
@@ -59,7 +59,8 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         public async Task Query_DoesNotThrow()
         {
             var query = new GetArenaMatchDetails()
-                .ForMatchId(Guid.Empty);
+                .ForMatchId(Guid.Empty)
+                .SkipCache();
 
             var result = await _mockSession.Query(query);
 
@@ -72,7 +73,8 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         public async Task GetArenaMatchDetails_DoesNotThrow(string guid)
         {
             var query = new GetArenaMatchDetails()
-                .ForMatchId(new Guid(guid));
+                .ForMatchId(new Guid(guid))
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -90,7 +92,8 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
             });
 
             var query = new GetArenaMatchDetails()
-                .ForMatchId(new Guid(guid));
+                .ForMatchId(new Guid(guid))
+                .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
 
@@ -108,7 +111,8 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
             });
 
             var query = new GetArenaMatchDetails()
-                .ForMatchId(new Guid(guid));
+                .ForMatchId(new Guid(guid))
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -123,7 +127,8 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         public async Task GetArenaMatchDetails_IsSerializable(string guid)
         {
             var query = new GetArenaMatchDetails()
-                .ForMatchId(new Guid(guid));
+                .ForMatchId(new Guid(guid))
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -135,7 +140,8 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         public async Task GetArenaMatchDetails_InvalidGuid(string guid)
         {
             var query = new GetArenaMatchDetails()
-                .ForMatchId(new Guid(guid));
+                .ForMatchId(new Guid(guid))
+                .SkipCache();
 
             try
             {

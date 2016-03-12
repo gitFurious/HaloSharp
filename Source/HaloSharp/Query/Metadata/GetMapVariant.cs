@@ -11,8 +11,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetMapVariant : IQuery<MapVariant>
     {
-        private const string CacheKey = "MapVariant";
-
         private bool _useCache = true;
         internal string Id;
 
@@ -38,18 +36,18 @@ namespace HaloSharp.Query.Metadata
         {
             this.Validate();
 
+            var uri = GetConstructedUri();
+
             var mapVariant = _useCache
-                ? Cache.Get<MapVariant>($"{CacheKey}-{Id}")
+                ? Cache.Get<MapVariant>(uri)
                 : null;
 
-            if (mapVariant != null)
+            if (mapVariant == null)
             {
-                return mapVariant;
+                mapVariant = await session.Get<MapVariant>(uri);
+
+                Cache.AddMetadata(uri, mapVariant);
             }
-
-            mapVariant = await session.Get<MapVariant>(GetConstructedUri());
-
-            Cache.Add($"{CacheKey}-{Id}", mapVariant);
 
             return mapVariant;
         }

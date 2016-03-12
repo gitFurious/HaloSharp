@@ -57,7 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\CacheTests.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="Converter\TimeSpanConverterTests.cs" />
+    <Compile Include="Converter\GuidConverterTests.cs" />
     <Compile Include="Query\Metadata\GetSeasonsTests.cs" />
     <Compile Include="Query\Metadata\GetCampaignMissionsTests.cs" />
     <Compile Include="Query\Metadata\GetCommendationsTests.cs" />
