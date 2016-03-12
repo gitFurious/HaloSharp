@@ -33,7 +33,7 @@ namespace HaloSharp.Test.Query.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        public void GetConstructedUri_NoParameters_MatchesExpected()
         {
             var query = new GetVehicles();
 

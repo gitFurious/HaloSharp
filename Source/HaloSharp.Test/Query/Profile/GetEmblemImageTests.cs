@@ -13,7 +13,7 @@ namespace HaloSharp.Test.Query.Profile
     public class GetEmblemImageTests
     {
         [Test]
-        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        public void GetConstructedUri_NoParameters_MatchesExpected()
         {
             var query = new GetEmblemImage();
 

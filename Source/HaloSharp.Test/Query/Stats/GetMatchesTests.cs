@@ -35,7 +35,7 @@ namespace HaloSharp.Test.Query.Stats
         }
 
         [Test]
-        public void GetConstructedUri_NoParamaters_MatchesExpected()
+        public void GetConstructedUri_NoParameters_MatchesExpected()
         {
             var query = new GetMatches();
 

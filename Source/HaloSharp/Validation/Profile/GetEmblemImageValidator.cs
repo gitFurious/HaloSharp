@@ -26,7 +26,7 @@ namespace HaloSharp.Validation.Profile
 
                 if (!parsed || !validSizes.Contains(size))
                 {
-                    validationResult.Messages.Add($"GetEmblemImage optional paramater 'size' is invalid: {size}.");
+                    validationResult.Messages.Add($"GetEmblemImage optional parameter 'size' is invalid: {size}.");
                 }
             }
 

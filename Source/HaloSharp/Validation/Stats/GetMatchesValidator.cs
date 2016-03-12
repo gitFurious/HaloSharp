@@ -27,7 +27,7 @@ namespace HaloSharp.Validation.Stats
 
                     if (!defined)
                     {
-                        validationResult.Messages.Add($"GetMatches optional paramater 'Game Mode' is invalid: {mode}.");
+                        validationResult.Messages.Add($"GetMatches optional parameter 'Game Mode' is invalid: {mode}.");
                     }
                 }
             }
@@ -39,7 +39,7 @@ namespace HaloSharp.Validation.Stats
 
                 if (!parsed || start < 0)
                 {
-                    validationResult.Messages.Add($"GetMatches optional paramater 'Take' is invalid: {start}.");
+                    validationResult.Messages.Add($"GetMatches optional parameter 'Take' is invalid: {start}.");
                 }
             }
 
@@ -50,7 +50,7 @@ namespace HaloSharp.Validation.Stats
 
                 if (!parsed || count < 1 || count > 25)
                 {
-                    validationResult.Messages.Add($"GetMatches optional paramater 'Take' is invalid: {count}.");
+                    validationResult.Messages.Add($"GetMatches optional parameter 'Take' is invalid: {count}.");
                 }
             }
 
