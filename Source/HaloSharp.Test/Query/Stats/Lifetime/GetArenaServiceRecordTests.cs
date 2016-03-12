@@ -102,7 +102,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task GetArenaServiceRecord(string gamertag)
         {
             var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -113,7 +114,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task Query_DoesNotThrow()
         {
             var query = new GetArenaServiceRecord()
-                .ForPlayer("Player");
+                .ForPlayer("Player")
+                .SkipCache();
 
             var result = await _mockSession.Query(query);
 
@@ -127,7 +129,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task GetArenaServiceRecord_DoesNotThrow(string gamertag)
         {
             var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -146,7 +149,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
             });
 
             var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
 
@@ -165,7 +169,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
             });
 
             var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -181,7 +186,8 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task GetArenaServiceRecord_IsSerializable(string gamertag)
         {
             var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -193,7 +199,6 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         public async Task GetArenaServiceRecord_MissingPlayer()
         {
             var query = new GetArenaServiceRecord();
-
 
             await Global.Session.Query(query);
             Assert.Fail("An exception should have been thrown");

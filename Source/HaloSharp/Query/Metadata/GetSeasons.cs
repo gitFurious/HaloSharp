@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetSeasons : IQuery<List<Season>>
     {
-        private const string CacheKey = "Seasons";
-
         private bool _useCache = true;
 
         public GetSeasons SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<Season>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var seasons = _useCache
-                ? Cache.Get<List<Season>>(CacheKey)
+                ? Cache.Get<List<Season>>(uri)
                 : null;
 
-            if (seasons != null)
+            if (seasons == null)
             {
-                return seasons;
+                seasons = await session.Get<List<Season>>(uri);
+
+                Cache.AddMetadata(uri, seasons);
             }
-
-            seasons = await session.Get<List<Season>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, seasons);
 
             return seasons;
         }

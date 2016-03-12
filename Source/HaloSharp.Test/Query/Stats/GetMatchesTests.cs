@@ -118,7 +118,8 @@ namespace HaloSharp.Test.Query.Stats
                 .ForPlayer(gamertag)
                 .InGameMode(gameMode)
                 .Skip(skip)
-                .Take(take);
+                .Take(take)
+                .SkipCache();
 
             var uri = query.GetConstructedUri();
 
@@ -129,7 +130,8 @@ namespace HaloSharp.Test.Query.Stats
         public async Task Query_DoesNotThrow()
         {
             var query = new GetMatches()
-                .ForPlayer("Player");
+                .ForPlayer("Player")
+                .SkipCache();
 
             var result = await _mockSession.Query(query);
 
@@ -143,7 +145,8 @@ namespace HaloSharp.Test.Query.Stats
         public async Task GetMatches_DoesNotThrow(string gamertag)
         {
             var query = new GetMatches()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -162,7 +165,8 @@ namespace HaloSharp.Test.Query.Stats
             });
 
             var query = new GetMatches()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
 
@@ -181,7 +185,8 @@ namespace HaloSharp.Test.Query.Stats
             });
 
             var query = new GetMatches()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -197,7 +202,8 @@ namespace HaloSharp.Test.Query.Stats
         public async Task GetMatches_IsSerializable(string gamertag)
         {
             var query = new GetMatches()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 

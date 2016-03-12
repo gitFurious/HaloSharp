@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetCommendations : IQuery<List<Commendation>>
     {
-        private const string CacheKey = "Commendations";
-
         private bool _useCache = true;
 
         public GetCommendations SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<Commendation>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var commendations = _useCache
-                ? Cache.Get<List<Commendation>>(CacheKey)
+                ? Cache.Get<List<Commendation>>(uri)
                 : null;
 
-            if (commendations != null)
+            if (commendations == null)
             {
-                return commendations;
+                commendations = await session.Get<List<Commendation>>(uri);
+
+                Cache.AddMetadata(uri, commendations);
             }
-
-            commendations = await session.Get<List<Commendation>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, commendations);
 
             return commendations;
         }

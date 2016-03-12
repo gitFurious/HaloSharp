@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetFlexibleStats : IQuery<List<FlexibleStat>>
     {
-        private const string CacheKey = "FlexibleStats";
-
         private bool _useCache = true;
 
         public GetFlexibleStats SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<FlexibleStat>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var flexibleStats = _useCache
-                ? Cache.Get<List<FlexibleStat>>(CacheKey)
+                ? Cache.Get<List<FlexibleStat>>(uri)
                 : null;
 
-            if (flexibleStats != null)
+            if (flexibleStats == null)
             {
-                return flexibleStats;
+                flexibleStats = await session.Get<List<FlexibleStat>>(uri);
+
+                Cache.AddMetadata(uri, flexibleStats);
             }
-
-            flexibleStats = await session.Get<List<FlexibleStat>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, flexibleStats);
 
             return flexibleStats;
         }

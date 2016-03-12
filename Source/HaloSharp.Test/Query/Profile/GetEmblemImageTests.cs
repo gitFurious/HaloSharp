@@ -68,7 +68,8 @@ namespace HaloSharp.Test.Query.Profile
         public async Task GetEmblemImage(string gamertag)
         {
             var query = new GetEmblemImage()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -85,7 +86,8 @@ namespace HaloSharp.Test.Query.Profile
         {
             var query = new GetEmblemImage()
                 .ForPlayer("Furiousn00b")
-                .Size(size);
+                .Size(size)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 
@@ -98,7 +100,8 @@ namespace HaloSharp.Test.Query.Profile
         public async Task GetEmblemImage_IsSerializable(string gamertag)
         {
             var query = new GetEmblemImage()
-                .ForPlayer(gamertag);
+                .ForPlayer(gamertag)
+                .SkipCache();
 
             var result = await Global.Session.Query(query);
 

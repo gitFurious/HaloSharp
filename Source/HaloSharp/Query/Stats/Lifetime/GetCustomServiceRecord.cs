@@ -15,6 +15,15 @@ namespace HaloSharp.Query.Stats.Lifetime
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
 
+        private bool _useCache = true;
+
+        public GetCustomServiceRecord SkipCache()
+        {
+            _useCache = false;
+
+            return this;
+        }
+
         /// <summary>
         ///     A player's gamertag.
         /// </summary>
@@ -39,9 +48,20 @@ namespace HaloSharp.Query.Stats.Lifetime
         {
             this.Validate();
 
-            var match = await session.Get<CustomServiceRecord>(GetConstructedUri());
+            var uri = GetConstructedUri();
 
-            return match;
+            var serviceRecord = _useCache
+                ? Cache.Get<CustomServiceRecord>(uri)
+                : null;
+
+            if (serviceRecord == null)
+            {
+                serviceRecord = await session.Get<CustomServiceRecord>(uri);
+
+                Cache.AddStats(uri, serviceRecord);
+            }
+
+            return serviceRecord;
         }
 
         public string GetConstructedUri()

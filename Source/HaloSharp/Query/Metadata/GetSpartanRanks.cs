@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetSpartanRanks : IQuery<List<SpartanRank>>
     {
-        private const string CacheKey = "SpartanRanks";
-
         private bool _useCache = true;
 
         public GetSpartanRanks SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<SpartanRank>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var spartanRanks = _useCache
-                ? Cache.Get<List<SpartanRank>>(CacheKey)
+                ? Cache.Get<List<SpartanRank>>(uri)
                 : null;
 
-            if (spartanRanks != null)
+            if (spartanRanks == null)
             {
-                return spartanRanks;
+                spartanRanks = await session.Get<List<SpartanRank>>(uri);
+
+                Cache.AddMetadata(uri, spartanRanks);
             }
-
-            spartanRanks = await session.Get<List<SpartanRank>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, spartanRanks);
 
             return spartanRanks;
         }

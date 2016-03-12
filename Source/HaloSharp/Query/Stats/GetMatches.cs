@@ -19,6 +19,15 @@ namespace HaloSharp.Query.Stats
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
         internal string Player;
 
+        private bool _useCache = true;
+
+        public GetMatches SkipCache()
+        {
+            _useCache = false;
+
+            return this;
+        }
+
         /// <summary>
         ///     The Player's gamertag.
         /// </summary>
@@ -82,7 +91,18 @@ namespace HaloSharp.Query.Stats
         {
             this.Validate();
 
-            var matchSet = await session.Get<MatchSet>(GetConstructedUri());
+            var uri = GetConstructedUri();
+
+            var matchSet = _useCache
+                ? Cache.Get<MatchSet>(uri)
+                : null;
+
+            if (matchSet == null)
+            {
+                matchSet = await session.Get<MatchSet>(uri);
+
+                Cache.AddStats(uri, matchSet);
+            }
 
             return matchSet;
         }

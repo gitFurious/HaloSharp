@@ -16,6 +16,15 @@ namespace HaloSharp.Query.Stats.CarnageReport
     {
         internal string MatchId;
 
+        private bool _useCache = true;
+
+        public GetCampaignMatchDetails SkipCache()
+        {
+            _useCache = false;
+
+            return this;
+        }
+
         /// <summary>
         ///     An ID that uniquely identifies a match. Match IDs can be retrieved from the "GET Matches for Player" API.
         /// </summary>
@@ -31,7 +40,18 @@ namespace HaloSharp.Query.Stats.CarnageReport
         {
             this.Validate();
 
-            var match = await session.Get<CampaignMatch>(GetConstructedUri());
+            var uri = GetConstructedUri();
+
+            var match = _useCache
+                ? Cache.Get<CampaignMatch>(uri)
+                : null;
+
+            if (match == null)
+            {
+                match = await session.Get<CampaignMatch>(uri);
+
+                Cache.AddStats(uri, match);
+            }
 
             return match;
         }

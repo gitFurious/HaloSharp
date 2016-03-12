@@ -11,8 +11,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetRequisitionPack : IQuery<RequisitionPack>
     {
-        private const string CacheKey = "RequisitionPack";
-
         private bool _useCache = true;
         internal string Id;
 
@@ -38,18 +36,18 @@ namespace HaloSharp.Query.Metadata
         {
             this.Validate();
 
+            var uri = GetConstructedUri();
+
             var requisitionPack = _useCache
-                ? Cache.Get<RequisitionPack>($"{CacheKey}-{Id}")
+                ? Cache.Get<RequisitionPack>(uri)
                 : null;
 
-            if (requisitionPack != null)
+            if (requisitionPack == null)
             {
-                return requisitionPack;
+                requisitionPack = await session.Get<RequisitionPack>(uri);
+
+                Cache.AddMetadata(uri, requisitionPack);
             }
-
-            requisitionPack = await session.Get<RequisitionPack>(GetConstructedUri());
-
-            Cache.Add(CacheKey, requisitionPack);
 
             return requisitionPack;
         }

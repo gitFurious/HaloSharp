@@ -10,8 +10,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetPlaylists : IQuery<List<Playlist>>
     {
-        private const string CacheKey = "Playlists";
-
         private bool _useCache = true;
 
         public GetPlaylists SkipCache()
@@ -23,18 +21,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<Playlist>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var playlists = _useCache
-                ? Cache.Get<List<Playlist>>(CacheKey)
+                ? Cache.Get<List<Playlist>>(uri)
                 : null;
 
-            if (playlists != null)
+            if (playlists == null)
             {
-                return playlists;
+                playlists = await session.Get<List<Playlist>>(uri);
+
+                Cache.AddMetadata(uri, playlists);
             }
-
-            playlists = await session.Get<List<Playlist>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, playlists);
 
             return playlists;
         }

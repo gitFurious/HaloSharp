@@ -12,8 +12,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetVehicles : IQuery<List<Vehicle>>
     {
-        private const string CacheKey = "Vehicles";
-
         private bool _useCache = true;
 
         public GetVehicles SkipCache()
@@ -25,18 +23,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<Vehicle>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var vehicles = _useCache
-                ? Cache.Get<List<Vehicle>>(CacheKey)
+                ? Cache.Get<List<Vehicle>>(uri)
                 : null;
 
-            if (vehicles != null)
+            if (vehicles == null)
             {
-                return vehicles;
+                vehicles = await session.Get<List<Vehicle>>(uri);
+
+                Cache.AddMetadata(uri, vehicles);
             }
-
-            vehicles = await session.Get<List<Vehicle>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, vehicles);
 
             return vehicles;
         }

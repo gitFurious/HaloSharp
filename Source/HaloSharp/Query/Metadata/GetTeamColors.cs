@@ -12,8 +12,6 @@ namespace HaloSharp.Query.Metadata
     /// </summary>
     public class GetTeamColors : IQuery<List<TeamColor>>
     {
-        private const string CacheKey = "TeamColors";
-
         private bool _useCache = true;
 
         public string GetConstructedUri()
@@ -32,18 +30,18 @@ namespace HaloSharp.Query.Metadata
 
         public async Task<List<TeamColor>> ApplyTo(IHaloSession session)
         {
+            var uri = GetConstructedUri();
+
             var teamColors = _useCache
-                ? Cache.Get<List<TeamColor>>(CacheKey)
+                ? Cache.Get<List<TeamColor>>(uri)
                 : null;
 
-            if (teamColors != null)
+            if (teamColors == null)
             {
-                return teamColors;
+                teamColors = await session.Get<List<TeamColor>>(uri);
+
+                Cache.AddMetadata(uri, teamColors);
             }
-
-            teamColors = await session.Get<List<TeamColor>>(GetConstructedUri());
-
-            Cache.Add(CacheKey, teamColors);
 
             return teamColors;
         }
