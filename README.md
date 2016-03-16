@@ -56,6 +56,10 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.3.1.0 (2016-03-16)
+
+1. Fixed a bug where every result is cached when the CacheDuration was not set.
+
 ###### v.1.3.0.0 (2016-03-13)
 
 1. Fixed an issue with unhandled HighestCsrSeasonId values (Reported by 'b01000100' and 'RHIT Propensity').
