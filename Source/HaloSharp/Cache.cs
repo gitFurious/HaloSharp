@@ -16,17 +16,10 @@ namespace HaloSharp
         {
             lock (LockObject)
             {
-                if (toAdd != null)
+                if (toAdd != null && MetadataCacheDuration.HasValue)
                 {
-                    if (MetadataCacheDuration == null)
-                    {
-                        ObjectCache[key] = toAdd;
-                    }
-                    else
-                    {
-                        var absoluteExpiration = DateTime.UtcNow.Add(MetadataCacheDuration.Value);
-                        ObjectCache.Add(key, toAdd, absoluteExpiration);
-                    }
+                    var absoluteExpiration = DateTime.UtcNow.Add(MetadataCacheDuration.Value);
+                    ObjectCache.Add(key, toAdd, absoluteExpiration);
                 }
             }
         }
@@ -35,17 +28,10 @@ namespace HaloSharp
         {
             lock (LockObject)
             {
-                if (toAdd != null)
+                if (toAdd != null && ProfileCacheDuration.HasValue)
                 {
-                    if (ProfileCacheDuration == null)
-                    {
-                        ObjectCache[key] = toAdd;
-                    }
-                    else
-                    {
-                        var absoluteExpiration = DateTime.UtcNow.Add(ProfileCacheDuration.Value);
-                        ObjectCache.Add(key, toAdd, absoluteExpiration);
-                    }
+                    var absoluteExpiration = DateTime.UtcNow.Add(ProfileCacheDuration.Value);
+                    ObjectCache.Add(key, toAdd, absoluteExpiration);
                 }
             }
         }
@@ -54,17 +40,10 @@ namespace HaloSharp
         {
             lock (LockObject)
             {
-                if (toAdd != null)
+                if (toAdd != null && StatsCacheDuration.HasValue)
                 {
-                    if (StatsCacheDuration == null)
-                    {
-                        ObjectCache[key] = toAdd;
-                    }
-                    else
-                    {
-                        var absoluteExpiration = DateTime.UtcNow.Add(StatsCacheDuration.Value);
-                        ObjectCache.Add(key, toAdd, absoluteExpiration);
-                    }
+                    var absoluteExpiration = DateTime.UtcNow.Add(StatsCacheDuration.Value);
+                    ObjectCache.Add(key, toAdd, absoluteExpiration);
                 }
             }
         }
