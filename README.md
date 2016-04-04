@@ -56,6 +56,15 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.3.2.0 (2016-04-04)
+
+1. Updated BaseMatch model.
+  * New property: GameVariantResourceId
+  * New property: MapVariantResourceId
+  
+1. Updated BasePlayerStat model.
+  * New property: PlayerScore (Firefight Hype!?)
+
 ###### v.1.3.1.0 (2016-03-16)
 
 1. Fixed a bug where every result is cached when the CacheDuration was not set.
