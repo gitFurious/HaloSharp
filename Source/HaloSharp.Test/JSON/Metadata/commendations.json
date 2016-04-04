@@ -844,9 +844,9 @@
                     "xp":1000,
                     "requisitionPacks":[
                         {
-                            "name":"Commendation Reward Pack",
+                            "name":"Smash Pack",
                             "description":"Your achievement on the field of battle will not go unrewarded.",
-                            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/2233c406-5b4b-4951-a152-fa7a7f4e91ec?locale=en&width=200&hash=QBpOGKdHjYfEXrERm8ZOwP%2bWw2X8tkNbaPpFSNOo3H4%3d",
+                            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/ce6ac25a-34ef-42ce-a275-b2c1751ddf67?locale=en&width=200&hash=EpGGHYAvTHu9iVtLxkQoP1bD1%2bY15JwwBDRTZbkGugc%3d",
                             "isStack":false,
                             "isFeatured":false,
                             "isNew":false,
@@ -860,12 +860,12 @@
                             "stackedRequisitionPacks":[
 
                             ],
-                            "id":"2233c406-5b4b-4951-a152-fa7a7f4e91ec",
-                            "contentId":"2233c406-5b4b-4951-a152-fa7a7f4e91ec"
+                            "id":"ce6ac25a-34ef-42ce-a275-b2c1751ddf67",
+                            "contentId":"ce6ac25a-34ef-42ce-a275-b2c1751ddf67"
                         }
                     ],
-                    "id":"cfbe678e-9b50-42cf-86cb-73d7afd29157",
-                    "contentId":"cfbe678e-9b50-42cf-86cb-73d7afd29157"
+                    "id":"7b180f58-7edc-4e31-bc02-3b1b32592c23",
+                    "contentId":"7b180f58-7edc-4e31-bc02-3b1b32592c23"
                 },
                 "threshold":105,
                 "id":"ff463073-73c3-4aa5-a544-0bc5bd85240a",
@@ -11135,7 +11135,26 @@
                 "reward":{
                     "xp":1000,
                     "requisitionPacks":[
+                        {
+                            "name":"SPNKr Pack",
+                            "description":"Your achievement on the field of battle will not go unrewarded.",
+                            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/e850af3c-d45e-4405-998c-b915f204a510?locale=en&width=200&hash=hJckOlD9W6vmarGYRq9Z%2fot7UDi9rO3HCO44cRKEBe8%3d",
+                            "isStack":false,
+                            "isFeatured":false,
+                            "isNew":false,
+                            "creditPrice":0,
+                            "isPurchasableWithCredits":false,
+                            "isPurchasableFromMarketplace":false,
+                            "xboxMarketplaceProductId":null,
+                            "xboxMarketplaceProductUrl":null,
+                            "merchandisingOrder":400,
+                            "flair":null,
+                            "stackedRequisitionPacks":[
 
+                            ],
+                            "id":"e850af3c-d45e-4405-998c-b915f204a510",
+                            "contentId":"e850af3c-d45e-4405-998c-b915f204a510"
+                        }
                     ],
                     "id":"fcf52c19-043c-4218-8ee2-5556edfbd8f3",
                     "contentId":"fcf52c19-043c-4218-8ee2-5556edfbd8f3"
@@ -11170,8 +11189,8 @@
                     "xp":0,
                     "requisitionPacks":[
                         {
-                            "name":"DAILY WIN: SILVER PACK",
-                            "description":"Silver REQ Packs contain Common to Rare REQs. 2 REQs will be permanent unlocks, if available.",
+                            "name":"ARENA DAILY WIN PACK",
+                            "description":"Win an Arena match every day to earn a free REQ Pack!",
                             "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/ad7ee595-4268-4f99-a786-4ee5f7f38f72?locale=en&width=200&hash=6QXzJF%2bkD0SjtW9WyaakNDauVokzhsU6xkRl1JB8%2b%2bU%3d",
                             "isStack":false,
                             "isFeatured":false,

@@ -226,5 +226,41 @@
         "type":"Count",
         "id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
         "contentId":"71ce2293-23bb-492f-a8c0-46e095b55eb7"
+    },
+    {
+        "name":"Goals",
+        "type":"Count",
+        "id":"c555730c-5ea6-4cbe-a891-f0d1d2c9d2b1",
+        "contentId":"c555730c-5ea6-4cbe-a891-f0d1d2c9d2b1"
+    },
+    {
+        "name":"Goal Offense",
+        "type":"Count",
+        "id":"186b7b54-6432-4f2d-96d0-ddaad952cc06",
+        "contentId":"186b7b54-6432-4f2d-96d0-ddaad952cc06"
+    },
+    {
+        "name":"Goal Defense",
+        "type":"Count",
+        "id":"bb86322d-b758-494f-95ad-2ce32c7874d1",
+        "contentId":"bb86322d-b758-494f-95ad-2ce32c7874d1"
+    },
+    {
+        "name":"Ball Clears",
+        "type":"Count",
+        "id":"c0235203-f107-4594-aee9-163944a7ab48",
+        "contentId":"c0235203-f107-4594-aee9-163944a7ab48"
+    },
+    {
+        "name":"Ball Held Duration",
+        "type":"Count",
+        "id":"f560e3c8-f17e-457b-a477-cc79bbc60b73",
+        "contentId":"f560e3c8-f17e-457b-a477-cc79bbc60b73"
+    },
+    {
+        "name":"Grif Kills",
+        "type":"Count",
+        "id":"62e6b45f-1987-4ca1-92ac-85e5a02bb154",
+        "contentId":"62e6b45f-1987-4ca1-92ac-85e5a02bb154"
     }
 ]

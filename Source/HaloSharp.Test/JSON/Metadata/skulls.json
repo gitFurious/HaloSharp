@@ -2,7 +2,7 @@
     {
         "name":"Blind",
         "description":"The HUD and the first person arms and weapon are hidden.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/blind-15881dc03a0e41aca5e67b4307990f8b.png",
         "missionId":"825065cf-df57-42e3-b845-830e7340ea43",
         "id":"9",
         "contentId":"54ce9d05-6b34-424c-9ef6-68c7b77901ea"
@@ -10,7 +10,7 @@
     {
         "name":"Grunt Birthday Party",
         "description":"Headshotting an Unggoy results in an explosion.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/grunt-birthday-party-ad3fdd6dae884b09a8ab2500cc73e23f.png",
         "missionId":"37c717b8-7ae8-4be4-aaa2-945e083bcf3e",
         "id":"11",
         "contentId":"33cb9688-7daf-4ceb-9a93-7198ff25efb3"
@@ -18,7 +18,7 @@
     {
         "name":"IWHBYD",
         "description":"Rare combat dialogue becomes more common.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/iwhbyd-83bacf3e3042480c993993328e8ce2e4.png",
         "missionId":"73ed1fd0-45e5-4bb9-ab6a-d2852c04ea7d",
         "id":"12",
         "contentId":"dcbcd158-ad26-43d6-a29e-777136fad694"
@@ -26,7 +26,7 @@
     {
         "name":"Catch",
         "description":"Enemies throw grenades more often",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/catch-6133e72f5a1b4c7f97f25f0f1259b4f5.png",
         "missionId":"f352eafd-d307-4341-a192-16f7f3f5b43c",
         "id":"3",
         "contentId":"5fb2c944-4c2c-4501-8e23-d5cf2f66e28d"
@@ -34,7 +34,7 @@
     {
         "name":"Cloud",
         "description":"Motion tracker is disabled.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/cloud-84e424101b2d4fca9517bd850559d515.png",
         "missionId":"37c717b8-7ae8-4be4-aaa2-945e083bcf3e",
         "id":"4",
         "contentId":"f72230ac-1287-451c-892b-311740facdb3"
@@ -42,7 +42,7 @@
     {
         "name":"Mythic",
         "description":"Enemies have increased health.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/mythic-9016399a5dc94467b3d8f6d7671078a9.png",
         "missionId":"72c98d4a-4ee4-40db-baf3-1b1cc3672654",
         "id":"8",
         "contentId":"b3aad71c-2cd6-418e-80a5-02dc6dccec26"
@@ -50,7 +50,7 @@
     {
         "name":"Cowbell",
         "description":"Acceleration from explosions is increased.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/cowbell-61e8e4b548c9442198622c91efe216dc.png",
         "missionId":"8d72dd82-3afb-409e-bee0-512dc97893d2",
         "id":"10",
         "contentId":"b0292f89-d322-4554-a592-8ea028479a41"
@@ -58,7 +58,7 @@
     {
         "name":"Thunderstorm",
         "description":"Major upgrade to the capabilities of enemies.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/thunderstorm-dc3b4ea0a77443888e27da8d65a672d9.png",
         "missionId":"b486c8f6-0b00-4a46-b91a-0514969d7c94",
         "id":"6",
         "contentId":"ff485e37-bb96-4d07-897f-6c30e1061087"
@@ -66,7 +66,7 @@
     {
         "name":"Tilt",
         "description":"Enemy resistances and weaknesses are increased.  This also affects the player.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/tilt-068c225022e142a0b5bd79e308fa3b0f.png",
         "missionId":"82f8471c-a2ef-4089-ac04-7e829fdec912",
         "id":"7",
         "contentId":"3ed4fde1-650d-49bf-b29d-86d7cc5ee055"
@@ -74,7 +74,7 @@
     {
         "name":"Tough Luck",
         "description":"Enemies always go berserk, always dive out of the way, and never flee.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/tough-luck-e2470c1ed01e47c9902955b00d611693.png",
         "missionId":"7dc80b62-dd39-41d5-9b7a-d71fd8832c07",
         "id":"2",
         "contentId":"5a1592f3-b702-41a0-a22f-390b4da55c41"
@@ -82,7 +82,7 @@
     {
         "name":"Black Eye",
         "description":"Energy shields don't recharge unless the player melees enemies.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/black-eye-d99c4417b1ca4791914cfb06dba3fecc.png",
         "missionId":"96c3e3dd-7703-4086-9e64-e3a23932bdc4",
         "id":"1",
         "contentId":"fe1a06e5-e123-4955-b1bd-77065c04cc16"
@@ -90,7 +90,7 @@
     {
         "name":"Famine",
         "description":"Weapons drop much less ammo.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/famine-869222aff27845209bde89a1c74629a5.png",
         "missionId":"fcd7caa4-37c9-4365-bdda-9041dc6699ed",
         "id":"5",
         "contentId":"243bdb16-e136-44bb-ad15-c6c14f074563"
@@ -98,7 +98,7 @@
     {
         "name":"Iron",
         "description":"On campaign solo, player death results in the mission restarting. On cooperative play, player death results in reversion to previous checkpoint.",
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skull-placeholder-256x256-2337c6be0c2743a9bad69c097e3e5bea.png",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/api/skulls/iron-585b66b5464145d5bc7cc09ad97f21b1.png",
         "missionId":"1c4f8e19-b046-4f78-9e2d-959cba84663d",
         "id":"0",
         "contentId":"8839c81e-a8b4-4f8e-9c8d-51ff9927daac"

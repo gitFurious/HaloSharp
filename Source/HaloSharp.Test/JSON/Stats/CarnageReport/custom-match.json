@@ -87,6 +87,7 @@
             "AvgLifeTimeOfPlayer":"PT56.640874S",
             "PreMatchRatings":null,
             "PostMatchRatings":null,
+            "PlayerScore":null,
             "TotalKills":6,
             "TotalHeadshots":0,
             "TotalWeaponDamage":160.0,
@@ -317,7 +318,7 @@
                 ]
             },
             "Player":{
-                "Gamertag":"WaGwanDen24",
+                "Gamertag":"Its WaGwan",
                 "Xuid":null
             },
             "TeamId":1,
@@ -326,6 +327,7 @@
             "AvgLifeTimeOfPlayer":"PT4M55.0319989S",
             "PreMatchRatings":null,
             "PostMatchRatings":null,
+            "PlayerScore":null,
             "TotalKills":4,
             "TotalHeadshots":0,
             "TotalWeaponDamage":230.0,
@@ -421,7 +423,7 @@
             ],
             "KilledByOpponentDetails":[
                 {
-                    "GamerTag":"WaGwanDen24",
+                    "GamerTag":"Its WaGwan",
                     "TotalKills":3
                 },
                 {
@@ -495,6 +497,7 @@
             "AvgLifeTimeOfPlayer":"PT2M50.1733987S",
             "PreMatchRatings":null,
             "PostMatchRatings":null,
+            "PlayerScore":null,
             "TotalKills":7,
             "TotalHeadshots":0,
             "TotalWeaponDamage":415.08332824707031,
@@ -649,7 +652,7 @@
                     "TotalKills":5
                 },
                 {
-                    "GamerTag":"WaGwanDen24",
+                    "GamerTag":"Its WaGwan",
                     "TotalKills":1
                 }
             ],
@@ -719,6 +722,7 @@
             "AvgLifeTimeOfPlayer":"PT2M1.1464288S",
             "PreMatchRatings":null,
             "PostMatchRatings":null,
+            "PlayerScore":null,
             "TotalKills":8,
             "TotalHeadshots":0,
             "TotalWeaponDamage":115.0,
@@ -927,5 +931,17 @@
     "MapId":"cebd854f-f206-11e4-b46e-24be05e24f7e",
     "GameBaseVariantId":"a2949322-dc84-45ab-8454-cf94fb28c189",
     "IsTeamGame":true,
-    "SeasonId":null
+    "SeasonId":null,
+    "GameVariantResourceId":{
+        "ResourceType":2,
+        "ResourceId":"d71274e9-6352-4577-a439-a245d5492ad2",
+        "OwnerType":3,
+        "Owner":""
+    },
+    "MapVariantResourceId":{
+        "ResourceType":3,
+        "ResourceId":"500090ee-9add-4fe6-b864-14e3abffc86e",
+        "OwnerType":3,
+        "Owner":""
+    }
 }

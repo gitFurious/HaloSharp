@@ -115,5 +115,37 @@
         ],
         "id":"a2b0a49f-a1ca-cdc2-c0bf-8fa1cacdc2c0",
         "contentId":"a2b0a49f-a1ca-cdc2-c0bf-8fa1cacdc2c0"
+    },
+    {
+        "name":"Assault",
+        "internalName":"Assault",
+        "iconUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/game-type-icons/assault-ball-409c1609094a4a28a7b7694fe720a112.png",
+        "supportedGameModes":[
+            "Arena",
+            "Custom"
+        ],
+        "id":"b0df8938-0fb6-42ee-846f-a0c3593344d5",
+        "contentId":"b0df8938-0fb6-42ee-846f-a0c3593344d5"
+    },
+    {
+        "name":"Grifball",
+        "internalName":"Grifball",
+        "iconUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/game-type-icons/grifball-77008ff230804c3da846d3e5a11c26e6.png",
+        "supportedGameModes":[
+            "Arena",
+            "Custom"
+        ],
+        "id":"dda182c5-4b50-4a0f-86f3-fcb5e0db4df3",
+        "contentId":"dda182c5-4b50-4a0f-86f3-fcb5e0db4df3"
+    },
+    {
+        "name":"Warzone Firefight",
+        "internalName":"WarzonePvE",
+        "iconUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/game-type-icons/firefight-0fd0ab5ab6324d1cacecb588c9074bff.png",
+        "supportedGameModes":[
+            "Warzone"
+        ],
+        "id":"dfd51ee3-9060-46c3-b131-08d946c4c7b9",
+        "contentId":"dfd51ee3-9060-46c3-b131-08d946c4c7b9"
     }
 ]

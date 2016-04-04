@@ -168,5 +168,10 @@
         "internalName":"Flag Carrier Kill Impulse",
         "id":"2299858338",
         "contentId":"8329bcf5-3234-4395-b13f-8ce016eb7281"
+    },
+    {
+        "internalName":"Ball Held Duration",
+        "id":"2483589021",
+        "contentId":"98ae3e69-a9df-469f-9f5b-f01a2a9ddf33"
     }
 ]

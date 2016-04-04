@@ -31,6 +31,7 @@
             "AvgLifeTimeOfPlayer":"PT3M32.3264483S",
             "PreMatchRatings":null,
             "PostMatchRatings":null,
+            "PlayerScore":null,
             "TotalKills":116,
             "TotalHeadshots":50,
             "TotalWeaponDamage":33005.989382267,
@@ -535,6 +536,7 @@
             "AvgLifeTimeOfPlayer":"PT2M33.6434058S",
             "PreMatchRatings":null,
             "PostMatchRatings":null,
+            "PlayerScore":null,
             "TotalKills":70,
             "TotalHeadshots":25,
             "TotalWeaponDamage":17643.390766620636,
@@ -1001,5 +1003,17 @@
     "MapId":"7dc80b62-dd39-41d5-9b7a-d71fd8832c07",
     "GameBaseVariantId":"00000003-0000-0010-8000-00aa00389b71",
     "IsTeamGame":false,
-    "SeasonId":null
+    "SeasonId":null,
+    "GameVariantResourceId":{
+        "ResourceType":0,
+        "ResourceId":"00000000-0000-0000-0000-000000000000",
+        "OwnerType":0,
+        "Owner":""
+    },
+    "MapVariantResourceId":{
+        "ResourceType":0,
+        "ResourceId":"00000000-0000-0000-0000-000000000000",
+        "OwnerType":0,
+        "Owner":""
+    }
 }

@@ -20,6 +20,12 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         public Guid GameVariantId { get; set; }
 
         /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "GameVariantResourceId")]
+        public Stats.Common.Variant GameVariantResourceId { get; set; }
+
+        /// <summary>
         /// Indicates if the match is completed or not. Some match details are available while the match is 
         /// in-progress, but the behavior for incomplete matches in undefined.
         /// </summary>
@@ -43,6 +49,12 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         /// </summary>
         [JsonProperty(PropertyName = "MapVariantId")]
         public Guid MapVariantId { get; set; }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "MapVariantResourceId")]
+        public Stats.Common.Variant MapVariantResourceId { get; set; }
 
         /// <summary>
         /// The playlist ID of the match. Playlists are available via the Metadata API.
@@ -77,10 +89,12 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
 
             return GameBaseVariantId.Equals(other.GameBaseVariantId)
                 && GameVariantId.Equals(other.GameVariantId)
+                && Equals(GameVariantResourceId, other.GameVariantResourceId)
                 && IsMatchOver == other.IsMatchOver
                 && IsTeamGame == other.IsTeamGame
                 && MapId.Equals(other.MapId)
                 && MapVariantId.Equals(other.MapVariantId)
+                && Equals(MapVariantResourceId, other.MapVariantResourceId)
                 && PlaylistId.Equals(other.PlaylistId)
                 && SeasonId.Equals(other.SeasonId)
                 && TotalDuration.Equals(other.TotalDuration);
@@ -112,10 +126,12 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
             {
                 var hashCode = GameBaseVariantId.GetHashCode();
                 hashCode = (hashCode*397) ^ GameVariantId.GetHashCode();
+                hashCode = (hashCode*397) ^ (GameVariantResourceId?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ IsMatchOver.GetHashCode();
                 hashCode = (hashCode*397) ^ IsTeamGame.GetHashCode();
                 hashCode = (hashCode*397) ^ MapId.GetHashCode();
                 hashCode = (hashCode*397) ^ MapVariantId.GetHashCode();
+                hashCode = (hashCode*397) ^ (MapVariantResourceId?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ PlaylistId.GetHashCode();
                 hashCode = (hashCode*397) ^ SeasonId.GetHashCode();
                 hashCode = (hashCode*397) ^ TotalDuration.GetHashCode();

@@ -1,20 +1,959 @@
 {
-    "name":"GOLD PACK",
-    "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
-    "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
-    "isStack":false,
+    "name":"34x GOLD PACK +13 Free!",
+    "description":"A Bundle of 34 Gold Packs, and an additional 13 Free Bonus Gold Packs!  Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+    "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/b4d192cb-af29-4976-af83-7746a6f14fce?locale=en&width=200&hash=gcaVBw74BZV7p2d1ixw2yPdmXf9Q81We6dIxTikXSrk%3d",
+    "isStack":true,
     "isFeatured":false,
     "isNew":false,
-    "creditPrice":10000,
-    "isPurchasableWithCredits":true,
+    "creditPrice":0,
+    "isPurchasableWithCredits":false,
     "isPurchasableFromMarketplace":true,
-    "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
-    "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
-    "merchandisingOrder":2,
+    "xboxMarketplaceProductId":"e7d303c9-5bb4-4570-8229-e3192ff20de9",
+    "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/e7d303c9-5bb4-4570-8229-e3192ff20de9",
+    "merchandisingOrder":903,
     "flair":null,
     "stackedRequisitionPacks":[
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
 
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        },
+        {
+            "name":"GOLD PACK",
+            "description":"Gold REQ Packs contain a large amount of Uncommon to Legendary REQs. 2 REQs will be permanent unlocks, if available.",
+            "largeImageUrl":"https://image.halocdn.com:443/h5/requisition-packs/3a1614d9-20a4-4817-a189-88cb781e9152?locale=en&width=200&hash=uR%2bsIg%2bPbNMFnVDObfY5Ax5QTuG6%2bl8cXIUHqwmjfng%3d",
+            "isStack":false,
+            "isFeatured":false,
+            "isNew":false,
+            "creditPrice":10000,
+            "isPurchasableWithCredits":true,
+            "isPurchasableFromMarketplace":true,
+            "xboxMarketplaceProductId":"a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "xboxMarketplaceProductUrl":"https://store.xbox.com/Xbox-One/DLC/Halo/a31d8247-3c55-4bc3-a186-39ac908087cf",
+            "merchandisingOrder":2,
+            "flair":null,
+            "stackedRequisitionPacks":[
+
+            ],
+            "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
+            "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+        }
     ],
-    "id":"3a1614d9-20a4-4817-a189-88cb781e9152",
-    "contentId":"3a1614d9-20a4-4817-a189-88cb781e9152"
+    "id":"b4d192cb-af29-4976-af83-7746a6f14fce",
+    "contentId":"b4d192cb-af29-4976-af83-7746a6f14fce"
 }

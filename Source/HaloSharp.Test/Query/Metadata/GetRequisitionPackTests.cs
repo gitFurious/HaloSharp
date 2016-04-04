@@ -45,6 +45,11 @@ namespace HaloSharp.Test.Query.Metadata
 
         [Test]
         [TestCase("b4d192cb-af29-4976-af83-7746a6f14fce")] //34X Gold +13 Bonus
+        [TestCase("0c030c10-dd75-45ad-b538-a081809e8a65")] //15X Gold +5 Bonus
+        [TestCase("1ed973ba-dd21-4cc6-9f3e-5acae5f486da")] //10X Gold +3 Bonus
+        [TestCase("77c79c30-4317-4d43-872f-b1e6a2146302")] //7X Gold +2 Bonus
+        [TestCase("5d6bf05a-d427-4b8d-a668-a03bd37acb0a")] //5X Gold
+        [TestCase("bfd69f46-83cd-46fc-b6d4-6a6aa2c2b259")] //3X Gold
         [TestCase("3a1614d9-20a4-4817-a189-88cb781e9152")] //Gold
         [TestCase("3ce05b60-a118-4ad1-9617-bc04f64ac4d8")] //Silver
         [TestCase("5f96269a-58f8-473e-9897-42a4deb1bf09")] //Bronze
@@ -72,6 +77,11 @@ namespace HaloSharp.Test.Query.Metadata
 
         [Test]
         [TestCase("b4d192cb-af29-4976-af83-7746a6f14fce")] //34X Gold +13 Bonus
+        [TestCase("0c030c10-dd75-45ad-b538-a081809e8a65")] //15X Gold +5 Bonus
+        [TestCase("1ed973ba-dd21-4cc6-9f3e-5acae5f486da")] //10X Gold +3 Bonus
+        [TestCase("77c79c30-4317-4d43-872f-b1e6a2146302")] //7X Gold +2 Bonus
+        [TestCase("5d6bf05a-d427-4b8d-a668-a03bd37acb0a")] //5X Gold
+        [TestCase("bfd69f46-83cd-46fc-b6d4-6a6aa2c2b259")] //3X Gold
         [TestCase("3a1614d9-20a4-4817-a189-88cb781e9152")] //Gold
         [TestCase("3ce05b60-a118-4ad1-9617-bc04f64ac4d8")] //Silver
         [TestCase("5f96269a-58f8-473e-9897-42a4deb1bf09")] //Bronze
@@ -88,6 +98,11 @@ namespace HaloSharp.Test.Query.Metadata
 
         [Test]
         [TestCase("b4d192cb-af29-4976-af83-7746a6f14fce")] //34X Gold +13 Bonus
+        [TestCase("0c030c10-dd75-45ad-b538-a081809e8a65")] //15X Gold +5 Bonus
+        [TestCase("1ed973ba-dd21-4cc6-9f3e-5acae5f486da")] //10X Gold +3 Bonus
+        [TestCase("77c79c30-4317-4d43-872f-b1e6a2146302")] //7X Gold +2 Bonus
+        [TestCase("5d6bf05a-d427-4b8d-a668-a03bd37acb0a")] //5X Gold
+        [TestCase("bfd69f46-83cd-46fc-b6d4-6a6aa2c2b259")] //3X Gold
         [TestCase("3a1614d9-20a4-4817-a189-88cb781e9152")] //Gold
         [TestCase("3ce05b60-a118-4ad1-9617-bc04f64ac4d8")] //Silver
         [TestCase("5f96269a-58f8-473e-9897-42a4deb1bf09")] //Bronze
@@ -110,6 +125,11 @@ namespace HaloSharp.Test.Query.Metadata
 
         [Test]
         [TestCase("b4d192cb-af29-4976-af83-7746a6f14fce")] //34X Gold +13 Bonus
+        [TestCase("0c030c10-dd75-45ad-b538-a081809e8a65")] //15X Gold +5 Bonus
+        [TestCase("1ed973ba-dd21-4cc6-9f3e-5acae5f486da")] //10X Gold +3 Bonus
+        [TestCase("77c79c30-4317-4d43-872f-b1e6a2146302")] //7X Gold +2 Bonus
+        [TestCase("5d6bf05a-d427-4b8d-a668-a03bd37acb0a")] //5X Gold
+        [TestCase("bfd69f46-83cd-46fc-b6d4-6a6aa2c2b259")] //3X Gold
         [TestCase("3a1614d9-20a4-4817-a189-88cb781e9152")] //Gold
         [TestCase("3ce05b60-a118-4ad1-9617-bc04f64ac4d8")] //Silver
         [TestCase("5f96269a-58f8-473e-9897-42a4deb1bf09")] //Bronze
@@ -135,6 +155,11 @@ namespace HaloSharp.Test.Query.Metadata
 
         [Test]
         [TestCase("b4d192cb-af29-4976-af83-7746a6f14fce")] //34X Gold +13 Bonus
+        [TestCase("0c030c10-dd75-45ad-b538-a081809e8a65")] //15X Gold +5 Bonus
+        [TestCase("1ed973ba-dd21-4cc6-9f3e-5acae5f486da")] //10X Gold +3 Bonus
+        [TestCase("77c79c30-4317-4d43-872f-b1e6a2146302")] //7X Gold +2 Bonus
+        [TestCase("5d6bf05a-d427-4b8d-a668-a03bd37acb0a")] //5X Gold
+        [TestCase("bfd69f46-83cd-46fc-b6d4-6a6aa2c2b259")] //3X Gold
         [TestCase("3a1614d9-20a4-4817-a189-88cb781e9152")] //Gold
         [TestCase("3ce05b60-a118-4ad1-9617-bc04f64ac4d8")] //Silver
         [TestCase("5f96269a-58f8-473e-9897-42a4deb1bf09")] //Bronze

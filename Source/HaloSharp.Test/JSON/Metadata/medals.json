@@ -170,6 +170,15 @@
         "contentId":"b04df053-4b05-4a82-a2e0-78e4f81613e8"
     },
     {
+        "name":"Mythic Takedown",
+        "description":"Participate in a Mythic Boss Takedown",
+        "classification":"Warzone",
+        "difficulty":5,
+        "spriteLocation":null,
+        "id":"3703205413",
+        "contentId":"e6c8db08-816f-40fb-8532-4dbf0d4d64e8"
+    },
+    {
         "name":"Legendary Takedown",
         "description":"Participate in a Legendary Boss Takedown.",
         "classification":"Warzone",
@@ -308,7 +317,7 @@
     {
         "name":"Ball Champion",
         "description":"Score 3 goals in a match.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":10,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -444,7 +453,7 @@
     {
         "name":"Ball Runner",
         "description":"Score 2 goals in a match.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":15,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -580,7 +589,7 @@
     {
         "name":"Goal",
         "description":"Score the Ball.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":20,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -593,6 +602,15 @@
         },
         "id":"764679877",
         "contentId":"bbd5c605-22c7-4013-ae16-e0ff866a12c6"
+    },
+    {
+        "name":"Perfect Kill",
+        "description":"Kill a player in three shots with the Halo One Pistol without missing",
+        "classification":"WeaponProficiency",
+        "difficulty":22,
+        "spriteLocation":null,
+        "id":"3992195104",
+        "contentId":"7440ba4f-dd4c-4d51-a827-b8ac46bb6086"
     },
     {
         "name":"Flag Runner",
@@ -716,7 +734,7 @@
     {
         "name":"Ball Kill",
         "description":"Kill an opponent while carrying the ball.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":25,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -869,7 +887,7 @@
     {
         "name":"Ball Carrier Kill",
         "description":"Kill the enemy Ball carrier.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":30,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -1039,7 +1057,7 @@
     {
         "name":"Goal Defense",
         "description":"Kill an opponent near your goal.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":35,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -1209,7 +1227,7 @@
     {
         "name":"Goal Offense",
         "description":"Kill an opponent near their team's goal.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":40,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -1379,7 +1397,7 @@
     {
         "name":"Ball Clear",
         "description":"Erase an enemy team's deliver progress.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":45,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -1515,7 +1533,7 @@
     {
         "name":"Ball Carrier Protected",
         "description":"Save your ball carrier by killing their attacker.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":50,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
@@ -1634,7 +1652,7 @@
     {
         "name":"First Touch",
         "description":"Be the first player to pick up the ball after it spawns.",
-        "classification":"Goal",
+        "classification":"Ball",
         "difficulty":55,
         "spriteLocation":{
             "spriteSheetUri":"https://content.halocdn.com/media/Default/games/halo-5-guardians/sprites/medalspritesheet-386e9216ae434f76ae317bccabe91fb4.png",
