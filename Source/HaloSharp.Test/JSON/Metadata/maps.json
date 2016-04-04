@@ -1,5 +1,15 @@
 [
     {
+        "name":"Urban",
+        "description":"Andesia was the crucible for countless heroes and villains caught in the throes of seething rebellion and righteous excess.",
+        "supportedGameModes":[
+            "Warzone"
+        ],
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/map-images/warzone/warzone_maps_array08-b2c5175d0e8446c29e4fc6888492e5ff.jpg",
+        "id":"c93d708f-f206-11e4-a815-24be05e24f7e",
+        "contentId":"c93d708f-f206-11e4-a815-24be05e24f7e"
+    },
+    {
         "name":"Raid on Apex 7",
         "description":"This unbroken ring is a symbol of the discovery that shook the galaxy and changed the course of both human and Covenant destiny.",
         "supportedGameModes":[
@@ -195,7 +205,7 @@
         "supportedGameModes":[
             "Warzone"
         ],
-        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/map-images/warzone/array-8818dd4d37074a0181588bf565a210b0.jpg",
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/map-images/warzone/warzone_maps_array09-668eb7f9d87c40be88f07400cc4bea65.jpg",
         "id":"cae999f0-f206-11e4-9835-24be05e24f7e",
         "contentId":"cae999f0-f206-11e4-9835-24be05e24f7e"
     },
@@ -361,5 +371,48 @@
         "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/map-images/arena/courtyard-remix-7276d07c328f49fe84032ee8fc22fd30.jpg",
         "id":"ca737f8f-f206-11e4-a7e2-24be05e24f7e",
         "contentId":"ca737f8f-f206-11e4-a7e2-24be05e24f7e"
+    },
+    {
+        "name":"Riptide",
+        "description":"The waters of this planet have receded, revealing secrets worth dying for.",
+        "supportedGameModes":[
+            "Arena",
+            "Custom"
+        ],
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/map-images/arena/arena_maps_array13-519b61e8a2d94946a2b9ce422857c007.jpg",
+        "id":"cbcea2c0-f206-11e4-8c4a-24be05e24f7e",
+        "contentId":"cbcea2c0-f206-11e4-8c4a-24be05e24f7e"
+    },
+    {
+        "name":"Torque",
+        "description":"These rings will assemble a new generation of killing machines from remains of the old.",
+        "supportedGameModes":[
+            "Arena",
+            "Custom"
+        ],
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/map-images/arena/arena-pistons-torque-bc1f890581574709aba1681af8dc5710.jpg",
+        "id":"cc74f4e1-f206-11e4-ad66-24be05e24f7e",
+        "contentId":"cc74f4e1-f206-11e4-ad66-24be05e24f7e"
+    },
+    {
+        "name":"Skirmish at Darkstar",
+        "description":"Skirmish at Darkstar",
+        "supportedGameModes":[
+            "Warzone"
+        ],
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/map-images/warzone/warzone_maps_array10-362d94062cff45f1a51cb13abbd8a363.jpg",
+        "id":"5e130537-2275-40b5-9758-94b1986934ed",
+        "contentId":"5e130537-2275-40b5-9758-94b1986934ed"
+    },
+    {
+        "name":"Tyrant",
+        "description":"Only ghosts remain to rule this broken kingdom.",
+        "supportedGameModes":[
+            "Arena",
+            "Custom"
+        ],
+        "imageUrl":"https://content.halocdn.com/media/Default/games/halo-5-guardians/map-images/arena/arena_maps_array15-3e87527eb14d4413accb3bfe227135f5.jpg",
+        "id":"ce89a40f-f206-11e4-b83f-24be05e24f7e",
+        "contentId":"ce89a40f-f206-11e4-b83f-24be05e24f7e"
     }
 ]

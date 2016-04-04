@@ -12593,26 +12593,26 @@
                     "Count":1
                 }
             ],
-          "DestroyedEnemyVehicles": [
-            {
-              "Enemy": {
-                "BaseId": 3010146366,
-                "Attachments": [
+            "DestroyedEnemyVehicles":[
+                {
+                    "Enemy":{
+                        "BaseId":3010146366,
+                        "Attachments":[
 
-                ]
-              },
-              "TotalKills": 1
-            },
-            {
-              "Enemy": {
-                "BaseId": 1730553442,
-                "Attachments": [
-                  3670914256
-                ]
-              },
-              "TotalKills": 1
-            }
-          ],
+                        ]
+                    },
+                    "TotalKills":1
+                },
+                {
+                    "Enemy":{
+                        "BaseId":1730553442,
+                        "Attachments":[
+                            3670914256
+                        ]
+                    },
+                    "TotalKills":1
+                }
+            ],
             "EnemyKills":[
                 {
                     "Enemy":{

@@ -21,7 +21,7 @@
     },
     {
         "name":"Breakout",
-        "description":"Halo 5's premiere high lethality single life elimination mode.",
+        "description":"Halo 5’s premiere high-lethality single life elimination mode. Now includes 9 new community-selected maps!",
         "isRanked":true,
         "imageUrl":null,
         "gameMode":"Arena",
@@ -41,13 +41,23 @@
     },
     {
         "name":"Team Arena",
-        "description":"Play on the very best modes and maps Halo 5: Guardians has to offer.",
+        "description":"Play on the very best modes and maps Halo 5: Guardians has to offer. Congratulations to CLG for winning the first Halo World Championship!",
         "isRanked":true,
         "imageUrl":null,
         "gameMode":"Arena",
         "isActive":true,
         "id":"c98949ae-60a8-43dc-85d7-0feb0b92e719",
         "contentId":"c98949ae-60a8-43dc-85d7-0feb0b92e719"
+    },
+    {
+        "name":"Weekend Warzone Turbo",
+        "description":"It's turbo time. All players immediately skip to Level 9 after clearing out their Home Base, and REQ Energy recharges faster to ensure maximum mayhem.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Warzone",
+        "isActive":false,
+        "id":"b617e24f-71aa-432b-a8a0-a9b417a3d47e",
+        "contentId":"b617e24f-71aa-432b-a8a0-a9b417a3d47e"
     },
     {
         "name":"Warzone Kraken 24p",
@@ -152,7 +162,7 @@
     {
         "name":"Big Team Battle",
         "description":"Slayer, Capture the Flag, and Strongholds for teams of 8 on 8.",
-        "isRanked":false,
+        "isRanked":true,
         "imageUrl":null,
         "gameMode":"Arena",
         "isActive":false,
@@ -410,9 +420,9 @@
         "contentId":"a57e68b7-6623-410f-9663-c8f9e9942210"
     },
     {
-        "name":"Weekend Shotty Snipers",
-        "description":"Vote for your favorite game type each week on Halo Waypoint then log in on the weekend to play the winner and earn increased XP.",
-        "isRanked":true,
+        "name":"Social Shotty Snipers",
+        "description":"Get up close and personal with a shotgun or strike from a distance with a sniper rifle.",
+        "isRanked":false,
         "imageUrl":null,
         "gameMode":"Arena",
         "isActive":false,
@@ -420,19 +430,19 @@
         "contentId":"819eb188-1a1c-48b4-9af3-283d2447ff6f"
     },
     {
-        "name":"Holiday Doubles",
-        "description":"Grab a partner and jump in for some 2v2 action! Available until 1/4/16",
-        "isRanked":true,
+        "name":"Social Doubles",
+        "description":"2v2 Slayer. 25 points to win. Teamwork is necessary for victory.",
+        "isRanked":false,
         "imageUrl":null,
         "gameMode":"Arena",
-        "isActive":true,
+        "isActive":false,
         "id":"5728f612-3f20-4459-98bd-3478c79c4861",
         "contentId":"5728f612-3f20-4459-98bd-3478c79c4861"
     },
     {
-        "name":"Rumble Rockets",
-        "description":"Vote for your favorite game type each week on Halo Waypoint then log in on the weekend to play the winner and earn increased XP.",
-        "isRanked":true,
+        "name":"Social Rumble Rockets",
+        "description":"Free-for-All Slayer but with Rocket Launchers!",
+        "isRanked":false,
         "imageUrl":null,
         "gameMode":"Arena",
         "isActive":false,
@@ -440,9 +450,9 @@
         "contentId":"88b7de19-113c-4beb-af7f-8553aeda3f4c"
     },
     {
-        "name":"Snipers",
-        "description":"Vote for your favorite game type each week on Halo Waypoint then log in on the weekend to play the winner and earn increased XP.",
-        "isRanked":true,
+        "name":"Social Snipers",
+        "description":"Battle against a team of Spartans in a true test of marksmanship. Sniper Rifles only! To add to the chaos, we’ve added some vehicular action for this go ‘round. Pick off those pesky Warthog gunners!",
+        "isRanked":false,
         "imageUrl":null,
         "gameMode":"Arena",
         "isActive":false,
@@ -450,9 +460,9 @@
         "contentId":"7385b4a1-86bf-4aec-b9c2-411a6aa48633"
     },
     {
-        "name":"Weekend Arena Breakout",
-        "description":"Breakout with full shields on Arena maps and featuring increased XP.",
-        "isRanked":true,
+        "name":"Social Arena Breakout",
+        "description":"Breakout with full shields and damage on Arena maps with custom weapon layouts.",
+        "isRanked":false,
         "imageUrl":null,
         "gameMode":"Arena",
         "isActive":false,
@@ -480,8 +490,8 @@
         "contentId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4"
     },
     {
-        "name":"Holiday Social",
-        "description":"Kick back, relax, and play a mix of non-ranked modes, including Slayer and Snipers. Happy Holidays! Available until 1/4/16.",
+        "name":"Social Slayer",
+        "description":"Kick back, relax, and play a mix of non-ranked 5v5 Slayer.",
         "isRanked":false,
         "imageUrl":null,
         "gameMode":"Arena",
@@ -491,12 +501,102 @@
     },
     {
         "name":"Big Team Battle",
-        "description":"Slayer, Capture the Flag, and Strongholds for teams of 8 on 8.",
+        "description":"Six new maps have been added!",
         "isRanked":false,
         "imageUrl":null,
         "gameMode":"Arena",
         "isActive":false,
         "id":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
         "contentId":"780cc101-005c-4fca-8ce7-6f36d7156ffe"
+    },
+    {
+        "name":"Social Rocket Party",
+        "description":"Everyone’s invited! Direct hits are instant kills, with unlimited ammo, no reloading, increased jump height, damage resistance, and faster Thruster recharge!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"ddfb6af3-2a64-4ecd-8eda-c1ce4413b676",
+        "contentId":"ddfb6af3-2a64-4ecd-8eda-c1ce4413b676"
+    },
+    {
+        "name":"Game Day Slayer",
+        "description":"Kick back, relax, and play some games of social slayer before (and after) the big game.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"fe2ad4e1-3def-46a9-a18e-9ab685aa66d4",
+        "contentId":"fe2ad4e1-3def-46a9-a18e-9ab685aa66d4"
+    },
+    {
+        "name":"Social CTF",
+        "description":"All week long, enjoy the first social objective playlist: Capture the Flag!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"d21c8381-26f1-4d65-832a-ef9fa0854eb5",
+        "contentId":"d21c8381-26f1-4d65-832a-ef9fa0854eb5"
+    },
+    {
+        "name":"Grifball",
+        "description":"Eight new maps have been added!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"355dc154-9809-4edb-8ed4-fff910c6ae9c",
+        "contentId":"355dc154-9809-4edb-8ed4-fff910c6ae9c"
+    },
+    {
+        "name":"Social Assault",
+        "description":"Bring the ball to the enemy’s base and arm to score!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"0504ca3c-de41-48f3-b9c8-3aab534d69e5",
+        "contentId":"0504ca3c-de41-48f3-b9c8-3aab534d69e5"
+    },
+    {
+        "name":"Social Fiesta",
+        "description":"The original Slayer party mode. All players respawn with random primary and secondary weapons!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"f0c9ef9a-48bd-4b24-9db3-2c76b4e23450",
+        "contentId":"f0c9ef9a-48bd-4b24-9db3-2c76b4e23450"
+    },
+    {
+        "name":"Social Strongholds",
+        "description":"Check out Halo 5’s newest Objective mode in a casual, judgement-free zone.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"da2cbc67-fb2f-43b1-9a2f-88cc5e1c4dd0",
+        "contentId":"da2cbc67-fb2f-43b1-9a2f-88cc5e1c4dd0"
+    },
+    {
+        "name":"Social SWAT",
+        "description":"Aim for the head!",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"f44a5508-e208-4c65-835d-a155e363abc8",
+        "contentId":"f44a5508-e208-4c65-835d-a155e363abc8"
+    },
+    {
+        "name":"Social Slayer",
+        "description":"Kick back, relax, and eliminate the other team.",
+        "isRanked":false,
+        "imageUrl":null,
+        "gameMode":"Arena",
+        "isActive":false,
+        "id":"2e812e09-912f-458b-a659-4ccb84232c65",
+        "contentId":"2e812e09-912f-458b-a659-4ccb84232c65"
     }
 ]

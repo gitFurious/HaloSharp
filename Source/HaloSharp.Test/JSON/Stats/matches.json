@@ -7,7 +7,7 @@
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/arena/matches/1d930823-f40e-4d94-9979-9d7c12139276",
+                    "Path":"h5/arena/matches/7d87e5a7-fc72-4a91-b666-18e3462e12b2",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -16,7 +16,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/1d930823-f40e-4d94-9979-9d7c12139276",
+                    "Path":"/h5/films/7d87e5a7-fc72-4a91-b666-18e3462e12b2",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -25,38 +25,190 @@
                 }
             },
             "Id":{
-                "MatchId":"1d930823-f40e-4d94-9979-9d7c12139276",
+                "MatchId":"7d87e5a7-fc72-4a91-b666-18e3462e12b2",
                 "GameMode":1
             },
-            "HopperId":"5728f612-3f20-4459-98bd-3478c79c4861",
-            "MapId":"c7edbf0f-f206-11e4-aa52-24be05e24f7e",
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"cc74f4e1-f206-11e4-ad66-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"909e66bb-cfaa-49fc-a37b-de65761a6f41",
+                "ResourceId":"54e0eda8-c71a-47dc-bfab-912d0e75161b",
                 "OwnerType":3,
                 "Owner":""
             },
             "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"0b38c1b1-e493-40c9-884b-2296c286bbc2",
+                "ResourceId":"cc4d0cf1-d520-4fe2-adde-c95be247d51d",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT9M25.0706845S",
+            "MatchDuration":"PT4M20.1517688S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-14T00:00:00Z"
+                "ISO8601Date":"2016-03-31T00:00:00Z"
             },
             "Teams":[
                 {
                     "Id":1,
-                    "Score":19,
+                    "Score":32,
                     "Rank":2
                 },
                 {
                     "Id":0,
-                    "Score":30,
+                    "Score":50,
                     "Rank":1
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":1,
+                    "Rank":8,
+                    "Result":1,
+                    "TotalKills":6,
+                    "TotalDeaths":12,
+                    "TotalAssists":1,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/1e71bec1-a440-48ef-9b5f-897b1458e14e",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/1e71bec1-a440-48ef-9b5f-897b1458e14e",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"1e71bec1-a440-48ef-9b5f-897b1458e14e",
+                "GameMode":1
+            },
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"ca737f8f-f206-11e4-a7e2-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"a3dc1ffe-5af9-49b1-b5f8-20380d4ad7d2",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"6005abeb-7cde-4456-b797-64b6f9c68d54",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT3M37.9436138S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-31T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":0,
+                    "Score":50,
+                    "Rank":1
+                },
+                {
+                    "Id":1,
+                    "Score":23,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":1,
+                    "Rank":6,
+                    "Result":1,
+                    "TotalKills":6,
+                    "TotalDeaths":10,
+                    "TotalAssists":0,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/0a2dadb8-e87d-4d9d-9feb-836c22e8abcd",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/0a2dadb8-e87d-4d9d-9feb-836c22e8abcd",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"0a2dadb8-e87d-4d9d-9feb-836c22e8abcd",
+                "GameMode":1
+            },
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"caacb800-f206-11e4-81ab-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"434d4cc7-cf9f-41d5-a9c1-bc0dd8780bd3",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"bcd52c50-2957-4759-9c60-5a33fdf581e4",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT4M26.020412S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-31T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":0,
+                    "Score":50,
+                    "Rank":1
+                },
+                {
+                    "Id":1,
+                    "Score":42,
+                    "Rank":2
                 }
             ],
             "Players":[
@@ -68,22 +220,22 @@
                     "TeamId":0,
                     "Rank":1,
                     "Result":3,
-                    "TotalKills":17,
-                    "TotalDeaths":11,
-                    "TotalAssists":5,
+                    "TotalKills":15,
+                    "TotalDeaths":9,
+                    "TotalAssists":3,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
                 }
             ],
             "IsTeamGame":true,
-            "SeasonId":"",
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
             "MatchCompletedDateFidelity":1
         },
         {
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/339de615-7600-4125-bf1e-68e353ad0220",
+                    "Path":"h5/arena/matches/8c02b6c5-7162-42a1-9472-f677bcb015ab",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -92,7 +244,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/339de615-7600-4125-bf1e-68e353ad0220",
+                    "Path":"/h5/films/8c02b6c5-7162-42a1-9472-f677bcb015ab",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -101,113 +253,37 @@
                 }
             },
             "Id":{
-                "MatchId":"339de615-7600-4125-bf1e-68e353ad0220",
-                "GameMode":4
+                "MatchId":"8c02b6c5-7162-42a1-9472-f677bcb015ab",
+                "GameMode":1
             },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c93d708f-f206-11e4-a815-24be05e24f7e",
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"cd844200-f206-11e4-9393-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"2afcbf72-60f8-453e-9822-40f209171753",
+                "ResourceId":"bf3f4ef3-3417-4c67-bfab-2fa33491156f",
                 "OwnerType":3,
                 "Owner":""
             },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"5b56c001-8b7c-461b-a918-c0465b3074fd",
+                "ResourceId":"86e553d3-fefd-4f82-aa96-9332e365261d",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT13M18.1597623S",
+            "MatchDuration":"PT5M8.7838341S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
+                "ISO8601Date":"2016-03-31T00:00:00Z"
             },
             "Teams":[
                 {
                     "Id":0,
-                    "Score":1,
+                    "Score":50,
                     "Rank":1
                 },
                 {
                     "Id":1,
-                    "Score":0,
-                    "Rank":2
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":0,
-                    "Rank":3,
-                    "Result":3,
-                    "TotalKills":24,
-                    "TotalDeaths":13,
-                    "TotalAssists":9,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/7788ee2b-9ac2-446d-92a5-9fc8ce368775",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/7788ee2b-9ac2-446d-92a5-9fc8ce368775",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"7788ee2b-9ac2-446d-92a5-9fc8ce368775",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"cae999f0-f206-11e4-9835-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"73728f6c-76a1-47a6-a79f-4e7bacc773f6",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"9fd255c8-f4c0-4776-95dc-77a4ab35104a",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT6M26.2534163S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                },
-                {
-                    "Id":1,
-                    "Score":0,
+                    "Score":38,
                     "Rank":2
                 }
             ],
@@ -221,21 +297,21 @@
                     "Rank":2,
                     "Result":3,
                     "TotalKills":16,
-                    "TotalDeaths":3,
-                    "TotalAssists":14,
+                    "TotalDeaths":8,
+                    "TotalAssists":2,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
                 }
             ],
             "IsTeamGame":true,
-            "SeasonId":null,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
             "MatchCompletedDateFidelity":1
         },
         {
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/5264d2aa-0c8d-4734-922d-d78429b4bd5c",
+                    "Path":"h5/arena/matches/f3741da3-1c06-4516-93cc-1f7f9fe4d3d5",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -244,7 +320,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/5264d2aa-0c8d-4734-922d-d78429b4bd5c",
+                    "Path":"/h5/films/f3741da3-1c06-4516-93cc-1f7f9fe4d3d5",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -253,113 +329,37 @@
                 }
             },
             "Id":{
-                "MatchId":"5264d2aa-0c8d-4734-922d-d78429b4bd5c",
-                "GameMode":4
+                "MatchId":"f3741da3-1c06-4516-93cc-1f7f9fe4d3d5",
+                "GameMode":1
             },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c822b1c0-f206-11e4-9755-24be05e24f7e",
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"cd844200-f206-11e4-9393-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"d39a6830-da3d-411e-bb0d-8ba48e551a5a",
+                "ResourceId":"5684b142-54e7-4691-9d99-593fe800d149",
                 "OwnerType":3,
                 "Owner":""
             },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"6483d080-f155-402d-80de-5a9ee0e7393c",
+                "ResourceId":"01ec67fd-ed61-4f9b-84a4-29f90c27a5b2",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT4M36.6418533S",
+            "MatchDuration":"PT5M12.2519958S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":0,
-                    "Score":0,
-                    "Rank":2
-                },
-                {
-                    "Id":1,
-                    "Score":1,
-                    "Rank":1
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":2,
-                    "Result":3,
-                    "TotalKills":10,
-                    "TotalDeaths":5,
-                    "TotalAssists":7,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/d51d4fb2-9149-4933-85b5-02ae77e6017d",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/d51d4fb2-9149-4933-85b5-02ae77e6017d",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"d51d4fb2-9149-4933-85b5-02ae77e6017d",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c89dae21-f206-11e4-a1c2-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"4466ae00-09a8-4287-816a-ae9187eb4761",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"1eeaef59-be21-4ec0-9e48-84f82c8c0f9b",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT9M35.2267271S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
+                "ISO8601Date":"2016-03-30T00:00:00Z"
             },
             "Teams":[
                 {
                     "Id":1,
-                    "Score":1,
+                    "Score":50,
                     "Rank":1
                 },
                 {
                     "Id":0,
-                    "Score":0,
+                    "Score":48,
                     "Rank":2
                 }
             ],
@@ -372,554 +372,22 @@
                     "TeamId":1,
                     "Rank":3,
                     "Result":3,
-                    "TotalKills":18,
-                    "TotalDeaths":9,
-                    "TotalAssists":15,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/1656a06a-31da-42ca-b587-4298356d2598",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/1656a06a-31da-42ca-b587-4298356d2598",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"1656a06a-31da-42ca-b587-4298356d2598",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"cae999f0-f206-11e4-9835-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"73728f6c-76a1-47a6-a79f-4e7bacc773f6",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"9fd255c8-f4c0-4776-95dc-77a4ab35104a",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT8M49.9119595S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                },
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":14,
-                    "Result":1,
-                    "TotalKills":14,
-                    "TotalDeaths":8,
-                    "TotalAssists":3,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/e585a62f-1573-4a5d-b06c-3c29f870c2e9",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/e585a62f-1573-4a5d-b06c-3c29f870c2e9",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"e585a62f-1573-4a5d-b06c-3c29f870c2e9",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c89dae21-f206-11e4-a1c2-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"4466ae00-09a8-4287-816a-ae9187eb4761",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"1eeaef59-be21-4ec0-9e48-84f82c8c0f9b",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT6M25.6557565S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                },
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":14,
-                    "Result":1,
-                    "TotalKills":18,
-                    "TotalDeaths":3,
-                    "TotalAssists":1,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/7d4b2802-e1f6-437d-9e28-c63409cd30cc",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/7d4b2802-e1f6-437d-9e28-c63409cd30cc",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"7d4b2802-e1f6-437d-9e28-c63409cd30cc",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c93d708f-f206-11e4-a815-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"2afcbf72-60f8-453e-9822-40f209171753",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"5b56c001-8b7c-461b-a918-c0465b3074fd",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT6M32.0294302S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                },
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":17,
-                    "Result":1,
-                    "TotalKills":8,
-                    "TotalDeaths":7,
-                    "TotalAssists":7,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/1b10784d-a1d5-4ecc-a4d3-e9955e747ad9",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/1b10784d-a1d5-4ecc-a4d3-e9955e747ad9",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"1b10784d-a1d5-4ecc-a4d3-e9955e747ad9",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c89dae21-f206-11e4-a1c2-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"4466ae00-09a8-4287-816a-ae9187eb4761",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"1eeaef59-be21-4ec0-9e48-84f82c8c0f9b",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT6M25.5772746S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                },
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":14,
-                    "Result":1,
                     "TotalKills":11,
-                    "TotalDeaths":10,
-                    "TotalAssists":5,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/afe4dadb-0311-4e40-a7fc-ef0f02c13c32",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/afe4dadb-0311-4e40-a7fc-ef0f02c13c32",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"afe4dadb-0311-4e40-a7fc-ef0f02c13c32",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c822b1c0-f206-11e4-9755-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"d39a6830-da3d-411e-bb0d-8ba48e551a5a",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"6483d080-f155-402d-80de-5a9ee0e7393c",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT6M26.4829959S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                },
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":16,
-                    "Result":1,
-                    "TotalKills":10,
-                    "TotalDeaths":8,
-                    "TotalAssists":6,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/d9909713-467a-4d36-b88a-89bc35dad1f3",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/d9909713-467a-4d36-b88a-89bc35dad1f3",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"d9909713-467a-4d36-b88a-89bc35dad1f3",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"cae999f0-f206-11e4-9835-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"73728f6c-76a1-47a6-a79f-4e7bacc773f6",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"9fd255c8-f4c0-4776-95dc-77a4ab35104a",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT7M33.2089011S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":1,
-                    "Rank":1
-                },
-                {
-                    "Id":0,
-                    "Score":0,
-                    "Rank":2
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":4,
-                    "Result":3,
-                    "TotalKills":10,
-                    "TotalDeaths":9,
-                    "TotalAssists":7,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/a23898d3-736c-437f-85bf-e75cfdb25fa3",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/a23898d3-736c-437f-85bf-e75cfdb25fa3",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"a23898d3-736c-437f-85bf-e75cfdb25fa3",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c93d708f-f206-11e4-a815-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"2afcbf72-60f8-453e-9822-40f209171753",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"5b56c001-8b7c-461b-a918-c0465b3074fd",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT6M28.7788269S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                },
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":24,
-                    "Result":1,
-                    "TotalKills":4,
-                    "TotalDeaths":10,
+                    "TotalDeaths":13,
                     "TotalAssists":3,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
                 }
             ],
             "IsTeamGame":true,
-            "SeasonId":null,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
             "MatchCompletedDateFidelity":1
         },
         {
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/eb8f81e0-6c2d-4b29-bfee-66dc6a0933ad",
+                    "Path":"h5/arena/matches/75952d5f-ebc7-4af7-9ef3-33d2ba281fbe",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -928,7 +396,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/eb8f81e0-6c2d-4b29-bfee-66dc6a0933ad",
+                    "Path":"/h5/films/75952d5f-ebc7-4af7-9ef3-33d2ba281fbe",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -937,433 +405,190 @@
                 }
             },
             "Id":{
-                "MatchId":"eb8f81e0-6c2d-4b29-bfee-66dc6a0933ad",
-                "GameMode":4
+                "MatchId":"75952d5f-ebc7-4af7-9ef3-33d2ba281fbe",
+                "GameMode":1
             },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c822b1c0-f206-11e4-9755-24be05e24f7e",
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"ce1dc2de-f206-11e4-a646-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"d39a6830-da3d-411e-bb0d-8ba48e551a5a",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"6483d080-f155-402d-80de-5a9ee0e7393c",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT6M41.9780211S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                },
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":16,
-                    "Result":1,
-                    "TotalKills":12,
-                    "TotalDeaths":9,
-                    "TotalAssists":8,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/31f5ccc5-9efc-4197-9a39-e1341742f1b7",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/31f5ccc5-9efc-4197-9a39-e1341742f1b7",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"31f5ccc5-9efc-4197-9a39-e1341742f1b7",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c822b1c0-f206-11e4-9755-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"d39a6830-da3d-411e-bb0d-8ba48e551a5a",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"6483d080-f155-402d-80de-5a9ee0e7393c",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT6M25.8230035S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                },
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":0,
-                    "Rank":5,
-                    "Result":3,
-                    "TotalKills":8,
-                    "TotalDeaths":7,
-                    "TotalAssists":8,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/71dd9d9e-349a-471f-968b-bde315db2809",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/71dd9d9e-349a-471f-968b-bde315db2809",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"71dd9d9e-349a-471f-968b-bde315db2809",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c93d708f-f206-11e4-a815-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"5d003593-1ac6-40c6-9899-33f3274fb0b3",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"b60b0f06-a117-4526-bc96-46dd5ba465ce",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT12M23.3751579S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":0,
-                    "Rank":2
-                },
-                {
-                    "Id":0,
-                    "Score":1,
-                    "Rank":1
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":17,
-                    "Result":1,
-                    "TotalKills":23,
-                    "TotalDeaths":10,
-                    "TotalAssists":10,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/0b92103c-4d85-41b4-a804-f31f0d51b520",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/0b92103c-4d85-41b4-a804-f31f0d51b520",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"0b92103c-4d85-41b4-a804-f31f0d51b520",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c822b1c0-f206-11e4-9755-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"d39a6830-da3d-411e-bb0d-8ba48e551a5a",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"6483d080-f155-402d-80de-5a9ee0e7393c",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT4M26.3745244S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":1,
-                    "Rank":1
-                },
-                {
-                    "Id":0,
-                    "Score":0,
-                    "Rank":2
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":2,
-                    "Result":3,
-                    "TotalKills":8,
-                    "TotalDeaths":2,
-                    "TotalAssists":5,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/c2533e03-8f61-4c77-b1d9-06abd443dc0b",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/c2533e03-8f61-4c77-b1d9-06abd443dc0b",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"c2533e03-8f61-4c77-b1d9-06abd443dc0b",
-                "GameMode":4
-            },
-            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
-            "MapId":"c93d708f-f206-11e4-a815-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"2afcbf72-60f8-453e-9822-40f209171753",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"5b56c001-8b7c-461b-a918-c0465b3074fd",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT13M31.7306869S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":1,
-                    "Rank":1
-                },
-                {
-                    "Id":0,
-                    "Score":0,
-                    "Rank":2
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":1,
-                    "Rank":5,
-                    "Result":3,
-                    "TotalKills":19,
-                    "TotalDeaths":15,
-                    "TotalAssists":22,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/custom/matches/efc43c43-d8a3-47c1-ae4f-6c5e703cee24",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/efc43c43-d8a3-47c1-ae4f-6c5e703cee24",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"efc43c43-d8a3-47c1-ae4f-6c5e703cee24",
-                "GameMode":3
-            },
-            "HopperId":null,
-            "MapId":"cbcea2c0-f206-11e4-8c4a-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"7108c409-6d1e-41d1-aca2-53b5218fbc3d",
+                "ResourceId":"9c4697d7-2c6e-4875-bddd-abda72445364",
                 "OwnerType":3,
                 "Owner":""
             },
             "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"67f7671d-7b81-489a-b9d5-3c652695f2ad",
+                "ResourceId":"ecf65025-6e76-4268-84da-056857d8aaea",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT12M41.9048151S",
+            "MatchDuration":"PT3M59.7230002S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-02-13T00:00:00Z"
+                "ISO8601Date":"2016-03-30T00:00:00Z"
             },
             "Teams":[
                 {
                     "Id":0,
-                    "Score":18,
-                    "Rank":2
-                },
-                {
-                    "Id":1,
-                    "Score":19,
+                    "Score":50,
                     "Rank":1
                 },
                 {
-                    "Id":2,
-                    "Score":15,
-                    "Rank":3
+                    "Id":1,
+                    "Score":40,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
+                    "Rank":3,
+                    "Result":3,
+                    "TotalKills":11,
+                    "TotalDeaths":7,
+                    "TotalAssists":1,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/9fb1b0b8-34d8-49e6-a89a-884555c1d08a",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/9fb1b0b8-34d8-49e6-a89a-884555c1d08a",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"9fb1b0b8-34d8-49e6-a89a-884555c1d08a",
+                "GameMode":1
+            },
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"cdb934b0-f206-11e4-8810-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"3e95324a-28e1-43a8-a616-c3ab5800a886",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"eaf55e13-bfb1-4b7e-aa83-f7bff5464211",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT4M26.9626846S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":27,
+                    "Rank":2
                 },
                 {
-                    "Id":3,
-                    "Score":12,
-                    "Rank":4
+                    "Id":0,
+                    "Score":50,
+                    "Rank":1
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
+                    "Rank":2,
+                    "Result":3,
+                    "TotalKills":15,
+                    "TotalDeaths":10,
+                    "TotalAssists":3,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/c084a4e2-1f09-46a2-874c-b78fb0f38e96",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/c084a4e2-1f09-46a2-874c-b78fb0f38e96",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"c084a4e2-1f09-46a2-874c-b78fb0f38e96",
+                "GameMode":1
+            },
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"cebd854f-f206-11e4-b46e-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"ab6679e7-56c1-48eb-95da-cee396718d87",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"aebba84f-f2f7-4fc4-9f36-6dab40a7aba8",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT3M54.8720002S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":50,
+                    "Rank":1
                 },
                 {
-                    "Id":4,
-                    "Score":1,
-                    "Rank":5
+                    "Id":0,
+                    "Score":26,
+                    "Rank":2
                 }
             ],
             "Players":[
@@ -1376,21 +601,21 @@
                     "Rank":1,
                     "Result":3,
                     "TotalKills":19,
-                    "TotalDeaths":21,
-                    "TotalAssists":4,
+                    "TotalDeaths":8,
+                    "TotalAssists":1,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
                 }
             ],
-            "IsTeamGame":false,
-            "SeasonId":null,
+            "IsTeamGame":true,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
             "MatchCompletedDateFidelity":1
         },
         {
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/65b99f8d-e705-4178-8fcd-62320ab59ed2",
+                    "Path":"h5/arena/matches/88ac094a-09ef-416a-b81e-266e8b793114",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1399,7 +624,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/65b99f8d-e705-4178-8fcd-62320ab59ed2",
+                    "Path":"/h5/films/88ac094a-09ef-416a-b81e-266e8b793114",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1408,37 +633,37 @@
                 }
             },
             "Id":{
-                "MatchId":"65b99f8d-e705-4178-8fcd-62320ab59ed2",
-                "GameMode":4
+                "MatchId":"88ac094a-09ef-416a-b81e-266e8b793114",
+                "GameMode":1
             },
-            "HopperId":"b50c4dc2-6c86-4d79-aa8a-23a65da292c6",
-            "MapId":"cb251c51-f206-11e4-8541-24be05e24f7e",
+            "HopperId":"355dc154-9809-4edb-8ed4-fff910c6ae9c",
+            "MapId":"c7b7baf0-f206-11e4-ae9a-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"f2a64ebd-29be-43d9-83c1-6c8852b6bcca",
+                "ResourceId":"3893ba69-aac2-4b15-a102-67965f5630bd",
                 "OwnerType":3,
                 "Owner":""
             },
-            "GameBaseVariantId":"f6de5351-3797-41e9-8053-7fb111a3a1a0",
+            "GameBaseVariantId":"dda182c5-4b50-4a0f-86f3-fcb5e0db4df3",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"79b52439-c9cf-454a-ab48-cadd368244a6",
+                "ResourceId":"ed03959d-ab63-4097-a9b0-ab70027b7cbf",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT22M30.6339325S",
+            "MatchDuration":"PT3M1.0535937S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-01-31T00:00:00Z"
+                "ISO8601Date":"2016-03-27T00:00:00Z"
             },
             "Teams":[
                 {
                     "Id":1,
-                    "Score":1000,
+                    "Score":5,
                     "Rank":1
                 },
                 {
                     "Id":0,
-                    "Score":786,
+                    "Score":0,
                     "Rank":2
                 }
             ],
@@ -1449,162 +674,10 @@
                         "Xuid":null
                     },
                     "TeamId":1,
-                    "Rank":1,
-                    "Result":3,
-                    "TotalKills":36,
-                    "TotalDeaths":16,
-                    "TotalAssists":10,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/0f35b8c1-6d04-4716-8f37-d1bc919badda",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/0f35b8c1-6d04-4716-8f37-d1bc919badda",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"0f35b8c1-6d04-4716-8f37-d1bc919badda",
-                "GameMode":4
-            },
-            "HopperId":"b50c4dc2-6c86-4d79-aa8a-23a65da292c6",
-            "MapId":"c96ff240-f206-11e4-b581-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"b87a1d0b-a7b1-404c-a1a3-3eebc5a5f686",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"f6de5351-3797-41e9-8053-7fb111a3a1a0",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"dc5d2f68-f54b-4a30-a4de-58abb10b5689",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT22M11.0299679S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-01-31T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":1,
-                    "Score":949,
-                    "Rank":2
-                },
-                {
-                    "Id":0,
-                    "Score":1000,
-                    "Rank":1
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":0,
                     "Rank":4,
                     "Result":3,
-                    "TotalKills":36,
-                    "TotalDeaths":16,
-                    "TotalAssists":16,
-                    "PreMatchRatings":null,
-                    "PostMatchRatings":null
-                }
-            ],
-            "IsTeamGame":true,
-            "SeasonId":null,
-            "MatchCompletedDateFidelity":1
-        },
-        {
-            "Links":{
-                "StatsMatchDetails":{
-                    "AuthorityId":"spartanstats",
-                    "Path":"h5/arena/matches/680cbe04-b906-4b57-91ad-12b806c7a808",
-                    "QueryString":null,
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                },
-                "UgcFilmManifest":{
-                    "AuthorityId":"ugc",
-                    "Path":"/h5/films/680cbe04-b906-4b57-91ad-12b806c7a808",
-                    "QueryString":"?view=film-manifest",
-                    "RetryPolicyId":"exponentialretry",
-                    "TopicName":"",
-                    "AcknowledgementTypeId":0,
-                    "AuthenticationLifetimeExtensionSupported":false
-                }
-            },
-            "Id":{
-                "MatchId":"680cbe04-b906-4b57-91ad-12b806c7a808",
-                "GameMode":1
-            },
-            "HopperId":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
-            "MapId":"c7b7baf0-f206-11e4-ae9a-24be05e24f7e",
-            "MapVariant":{
-                "ResourceType":3,
-                "ResourceId":"ca8c7932-367e-40d2-aeda-c017b70c9751",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "GameBaseVariantId":"b45854a7-e6e1-4a9c-9104-139934511779",
-            "GameVariant":{
-                "ResourceType":2,
-                "ResourceId":"2afaffbe-1ae1-4538-ad6b-76ff106fc5c9",
-                "OwnerType":3,
-                "Owner":""
-            },
-            "MatchDuration":"PT10M39.3653185S",
-            "MatchCompletedDate":{
-                "ISO8601Date":"2016-01-31T00:00:00Z"
-            },
-            "Teams":[
-                {
-                    "Id":0,
-                    "Score":43,
-                    "Rank":2
-                },
-                {
-                    "Id":1,
-                    "Score":150,
-                    "Rank":1
-                }
-            ],
-            "Players":[
-                {
-                    "Player":{
-                        "Gamertag":"Furiousn00b",
-                        "Xuid":null
-                    },
-                    "TeamId":0,
-                    "Rank":12,
-                    "Result":1,
-                    "TotalKills":23,
-                    "TotalDeaths":14,
+                    "TotalKills":4,
+                    "TotalDeaths":7,
                     "TotalAssists":1,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
@@ -1618,7 +691,7 @@
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/4824ffdd-2907-4bcf-8762-b71192839edd",
+                    "Path":"h5/arena/matches/3d60d5e3-8080-47e5-8d6a-0884e8c20eb7",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1627,7 +700,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/4824ffdd-2907-4bcf-8762-b71192839edd",
+                    "Path":"/h5/films/3d60d5e3-8080-47e5-8d6a-0884e8c20eb7",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1636,37 +709,37 @@
                 }
             },
             "Id":{
-                "MatchId":"4824ffdd-2907-4bcf-8762-b71192839edd",
-                "GameMode":4
+                "MatchId":"3d60d5e3-8080-47e5-8d6a-0884e8c20eb7",
+                "GameMode":1
             },
-            "HopperId":"b50c4dc2-6c86-4d79-aa8a-23a65da292c6",
-            "MapId":"cb251c51-f206-11e4-8541-24be05e24f7e",
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"ce1dc2de-f206-11e4-a646-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"f2a64ebd-29be-43d9-83c1-6c8852b6bcca",
+                "ResourceId":"6e7b32fe-07f7-48d2-969c-fa3eb658ce19",
                 "OwnerType":3,
                 "Owner":""
             },
-            "GameBaseVariantId":"f6de5351-3797-41e9-8053-7fb111a3a1a0",
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"79b52439-c9cf-454a-ab48-cadd368244a6",
+                "ResourceId":"19a7ef10-3241-4520-a918-6d680f68fae6",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT23M55.1022995S",
+            "MatchDuration":"PT4M30.4748082S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-01-31T00:00:00Z"
+                "ISO8601Date":"2016-03-27T00:00:00Z"
             },
             "Teams":[
                 {
-                    "Id":0,
-                    "Score":1000,
+                    "Id":1,
+                    "Score":50,
                     "Rank":1
                 },
                 {
-                    "Id":1,
-                    "Score":919,
+                    "Id":0,
+                    "Score":31,
                     "Rank":2
                 }
             ],
@@ -1676,25 +749,25 @@
                         "Gamertag":"Furiousn00b",
                         "Xuid":null
                     },
-                    "TeamId":1,
-                    "Rank":12,
+                    "TeamId":0,
+                    "Rank":7,
                     "Result":1,
-                    "TotalKills":44,
-                    "TotalDeaths":16,
-                    "TotalAssists":16,
+                    "TotalKills":7,
+                    "TotalDeaths":11,
+                    "TotalAssists":0,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
                 }
             ],
             "IsTeamGame":true,
-            "SeasonId":null,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
             "MatchCompletedDateFidelity":1
         },
         {
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/c7d06c50-cb81-421b-b281-db0e63d4b44d",
+                    "Path":"h5/arena/matches/1d239d65-e8c8-4480-bd6b-cb3d887caff4",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1703,7 +776,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/c7d06c50-cb81-421b-b281-db0e63d4b44d",
+                    "Path":"/h5/films/1d239d65-e8c8-4480-bd6b-cb3d887caff4",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1712,37 +785,37 @@
                 }
             },
             "Id":{
-                "MatchId":"c7d06c50-cb81-421b-b281-db0e63d4b44d",
-                "GameMode":4
+                "MatchId":"1d239d65-e8c8-4480-bd6b-cb3d887caff4",
+                "GameMode":1
             },
-            "HopperId":"b50c4dc2-6c86-4d79-aa8a-23a65da292c6",
-            "MapId":"c8d69870-f206-11e4-b477-24be05e24f7e",
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"cd844200-f206-11e4-9393-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"fbc24f4a-a5bd-47cf-8fe8-f44d09f6d278",
+                "ResourceId":"bf3f4ef3-3417-4c67-bfab-2fa33491156f",
                 "OwnerType":3,
                 "Owner":""
             },
-            "GameBaseVariantId":"f6de5351-3797-41e9-8053-7fb111a3a1a0",
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"a6f0ce3f-722d-487b-863e-0cbfdd49adaf",
+                "ResourceId":"86e553d3-fefd-4f82-aa96-9332e365261d",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT16M49.0864418S",
+            "MatchDuration":"PT4M23.0202647S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-01-31T00:00:00Z"
+                "ISO8601Date":"2016-03-27T00:00:00Z"
             },
             "Teams":[
                 {
-                    "Id":0,
-                    "Score":1000,
+                    "Id":1,
+                    "Score":50,
                     "Rank":1
                 },
                 {
-                    "Id":1,
-                    "Score":420,
+                    "Id":0,
+                    "Score":28,
                     "Rank":2
                 }
             ],
@@ -1752,12 +825,164 @@
                         "Gamertag":"Furiousn00b",
                         "Xuid":null
                     },
-                    "TeamId":1,
+                    "TeamId":0,
+                    "Rank":8,
+                    "Result":1,
+                    "TotalKills":4,
+                    "TotalDeaths":14,
+                    "TotalAssists":2,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/9bf5e063-550e-407a-ab77-47710f5d9957",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/9bf5e063-550e-407a-ab77-47710f5d9957",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"9bf5e063-550e-407a-ab77-47710f5d9957",
+                "GameMode":1
+            },
+            "HopperId":"2323b76a-db98-4e03-aa37-e171cfbdd1a4",
+            "MapId":"c74c9d0f-f206-11e4-8330-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"1d37df45-62ee-4612-8009-162ac2629e47",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"f45929f9-9d32-484e-be13-9bfb4d73083d",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT4M6.2252728S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":50,
+                    "Rank":1
+                },
+                {
+                    "Id":0,
+                    "Score":35,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
+                    "Rank":6,
+                    "Result":1,
+                    "TotalKills":10,
+                    "TotalDeaths":10,
+                    "TotalAssists":2,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"b28521af-7c40-4fe2-8d6e-158a5c2d9c03",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/warzone/matches/3b6dbeb5-68c8-4428-83c6-bb215c5198bf",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/3b6dbeb5-68c8-4428-83c6-bb215c5198bf",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"3b6dbeb5-68c8-4428-83c6-bb215c5198bf",
+                "GameMode":4
+            },
+            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
+            "MapId":"c89dae21-f206-11e4-a1c2-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"8fb43381-10d0-4aed-b9eb-79468bd4a2ae",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"c40df80f-5b20-459f-ab85-92fa52530e9b",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT10M5.466876S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":1,
+                    "Rank":1
+                },
+                {
+                    "Id":0,
+                    "Score":0,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
                     "Rank":20,
                     "Result":1,
-                    "TotalKills":29,
-                    "TotalDeaths":13,
-                    "TotalAssists":14,
+                    "TotalKills":6,
+                    "TotalDeaths":15,
+                    "TotalAssists":4,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
                 }
@@ -1770,7 +995,7 @@
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/5c09401a-43ff-4624-9e67-6f71043220a5",
+                    "Path":"h5/arena/matches/eccefc5a-e372-4fa3-a4ce-fb8f828be4a5",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1779,7 +1004,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/5c09401a-43ff-4624-9e67-6f71043220a5",
+                    "Path":"/h5/films/eccefc5a-e372-4fa3-a4ce-fb8f828be4a5",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1788,38 +1013,646 @@
                 }
             },
             "Id":{
-                "MatchId":"5c09401a-43ff-4624-9e67-6f71043220a5",
-                "GameMode":4
+                "MatchId":"eccefc5a-e372-4fa3-a4ce-fb8f828be4a5",
+                "GameMode":1
             },
-            "HopperId":"b50c4dc2-6c86-4d79-aa8a-23a65da292c6",
-            "MapId":"c8d69870-f206-11e4-b477-24be05e24f7e",
+            "HopperId":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
+            "MapId":"c7805740-f206-11e4-982c-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"fbc24f4a-a5bd-47cf-8fe8-f44d09f6d278",
+                "ResourceId":"82db8e76-024c-42a3-8c0a-5c4769580c8b",
                 "OwnerType":3,
                 "Owner":""
             },
-            "GameBaseVariantId":"f6de5351-3797-41e9-8053-7fb111a3a1a0",
+            "GameBaseVariantId":"65f033d2-1303-4748-bc26-ef62c38eced4",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"a6f0ce3f-722d-487b-863e-0cbfdd49adaf",
+                "ResourceId":"b610d2cb-81e7-4b6e-a8f6-3bb501cda89e",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT19M34.3684847S",
+            "MatchDuration":"PT11M1.5850015S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-01-31T00:00:00Z"
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":100,
+                    "Rank":1
+                },
+                {
+                    "Id":0,
+                    "Score":83,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":1,
+                    "Rank":8,
+                    "Result":3,
+                    "TotalKills":10,
+                    "TotalDeaths":5,
+                    "TotalAssists":11,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/04d01d8a-ae30-466a-9a52-8a2153ce98dc",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/04d01d8a-ae30-466a-9a52-8a2153ce98dc",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"04d01d8a-ae30-466a-9a52-8a2153ce98dc",
+                "GameMode":1
+            },
+            "HopperId":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
+            "MapId":"c74c9d0f-f206-11e4-8330-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"6773324f-598f-4fb5-8bd8-ddb69ce3c5f0",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"65f033d2-1303-4748-bc26-ef62c38eced4",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"b610d2cb-81e7-4b6e-a8f6-3bb501cda89e",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT11M12.567125S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":100,
+                    "Rank":1
+                },
+                {
+                    "Id":0,
+                    "Score":70,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
+                    "Rank":8,
+                    "Result":1,
+                    "TotalKills":16,
+                    "TotalDeaths":11,
+                    "TotalAssists":3,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/3dc73493-45f0-439e-aab5-11e9e51dd353",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/3dc73493-45f0-439e-aab5-11e9e51dd353",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"3dc73493-45f0-439e-aab5-11e9e51dd353",
+                "GameMode":1
+            },
+            "HopperId":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
+            "MapId":"c7805740-f206-11e4-982c-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"82db8e76-024c-42a3-8c0a-5c4769580c8b",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"65f033d2-1303-4748-bc26-ef62c38eced4",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"b610d2cb-81e7-4b6e-a8f6-3bb501cda89e",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT10M6.5114301S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":100,
+                    "Rank":1
+                },
+                {
+                    "Id":0,
+                    "Score":75,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
+                    "Rank":10,
+                    "Result":1,
+                    "TotalKills":14,
+                    "TotalDeaths":12,
+                    "TotalAssists":4,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/e836627d-cd3d-439f-8880-7af59ba28b57",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/e836627d-cd3d-439f-8880-7af59ba28b57",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"e836627d-cd3d-439f-8880-7af59ba28b57",
+                "GameMode":1
+            },
+            "HopperId":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
+            "MapId":"c74c9d0f-f206-11e4-8330-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"91f3655c-b6a4-4e56-a997-540173510845",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"b45854a7-e6e1-4a9c-9104-139934511779",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"1d264f9d-4394-4ac4-98fd-745a31f3ed1d",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT13M4.6763154S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
             },
             "Teams":[
                 {
                     "Id":0,
-                    "Score":696,
-                    "Rank":2
+                    "Score":150,
+                    "Rank":1
                 },
                 {
                     "Id":1,
-                    "Score":1000,
+                    "Score":74,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":1,
+                    "Rank":15,
+                    "Result":1,
+                    "TotalKills":24,
+                    "TotalDeaths":19,
+                    "TotalAssists":9,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/49c1e9ea-7d16-47e1-9c9a-7df78c49dde6",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/49c1e9ea-7d16-47e1-9c9a-7df78c49dde6",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"49c1e9ea-7d16-47e1-9c9a-7df78c49dde6",
+                "GameMode":1
+            },
+            "HopperId":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
+            "MapId":"c7805740-f206-11e4-982c-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"c0b7c4fc-ef99-4017-ab9b-9be4e70b8810",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"65f033d2-1303-4748-bc26-ef62c38eced4",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"b610d2cb-81e7-4b6e-a8f6-3bb501cda89e",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT8M28.1775136S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":0,
+                    "Score":100,
                     "Rank":1
+                },
+                {
+                    "Id":1,
+                    "Score":56,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
+                    "Rank":4,
+                    "Result":3,
+                    "TotalKills":16,
+                    "TotalDeaths":10,
+                    "TotalAssists":4,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/1da28d43-f62e-4d38-8ed2-af8d6d734057",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/1da28d43-f62e-4d38-8ed2-af8d6d734057",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"1da28d43-f62e-4d38-8ed2-af8d6d734057",
+                "GameMode":1
+            },
+            "HopperId":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
+            "MapId":"c7b7baf0-f206-11e4-ae9a-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"647560da-d4c2-4f43-b956-51624e2408e9",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"8d4a3dbc-ef7a-405e-862b-34093ff582fd",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"9053c094-357c-4fbe-9bcc-de2403a88643",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT10M27.8088167S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":3,
+                    "Rank":1
+                },
+                {
+                    "Id":0,
+                    "Score":2,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":1,
+                    "Rank":1,
+                    "Result":3,
+                    "TotalKills":14,
+                    "TotalDeaths":13,
+                    "TotalAssists":1,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/0b25c13d-4eb7-4aab-bfcb-a08157c86d6f",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/0b25c13d-4eb7-4aab-bfcb-a08157c86d6f",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"0b25c13d-4eb7-4aab-bfcb-a08157c86d6f",
+                "GameMode":1
+            },
+            "HopperId":"780cc101-005c-4fca-8ce7-6f36d7156ffe",
+            "MapId":"c7805740-f206-11e4-982c-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"3c6b516e-7ab7-475d-b00e-1178629b6ff9",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"b45854a7-e6e1-4a9c-9104-139934511779",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"1d264f9d-4394-4ac4-98fd-745a31f3ed1d",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT11M13.663022S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-27T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":150,
+                    "Rank":1
+                },
+                {
+                    "Id":0,
+                    "Score":62,
+                    "Rank":2
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":1,
+                    "Rank":6,
+                    "Result":3,
+                    "TotalKills":11,
+                    "TotalDeaths":10,
+                    "TotalAssists":6,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/0e1baeee-27af-4883-a7b9-b6463bd37aca",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/0e1baeee-27af-4883-a7b9-b6463bd37aca",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"0e1baeee-27af-4883-a7b9-b6463bd37aca",
+                "GameMode":1
+            },
+            "HopperId":"f0c9ef9a-48bd-4b24-9db3-2c76b4e23450",
+            "MapId":"cc040aa1-f206-11e4-a3e0-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"1f6291cc-8795-4a8c-8c7c-9fb20ea69673",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"1c49dc85-891b-47cf-9d81-368aa1451397",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT7M14.9573529S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-21T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":49,
+                    "Rank":2
+                },
+                {
+                    "Id":0,
+                    "Score":50,
+                    "Rank":1
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
+                    "Rank":1,
+                    "Result":3,
+                    "TotalKills":19,
+                    "TotalDeaths":10,
+                    "TotalAssists":3,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/arena/matches/c8c8b8a3-fe26-47f4-aa94-b97232aef87e",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/c8c8b8a3-fe26-47f4-aa94-b97232aef87e",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"c8c8b8a3-fe26-47f4-aa94-b97232aef87e",
+                "GameMode":1
+            },
+            "HopperId":"f0c9ef9a-48bd-4b24-9db3-2c76b4e23450",
+            "MapId":"cc74f4e1-f206-11e4-ad66-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"54e0eda8-c71a-47dc-bfab-912d0e75161b",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"257a305e-4dd3-41f1-9824-dfe7e8bd59e1",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"16f548bd-8566-4772-bfb8-45a6537ae974",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT6M49.5457547S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-03-21T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":50,
+                    "Rank":1
+                },
+                {
+                    "Id":0,
+                    "Score":41,
+                    "Rank":2
                 }
             ],
             "Players":[
@@ -1831,9 +1664,85 @@
                     "TeamId":1,
                     "Rank":2,
                     "Result":3,
-                    "TotalKills":38,
-                    "TotalDeaths":20,
-                    "TotalAssists":9,
+                    "TotalKills":14,
+                    "TotalDeaths":6,
+                    "TotalAssists":3,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":"",
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/warzone/matches/bb6d0409-7ad0-42f9-83a2-3bfd0912deed",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/bb6d0409-7ad0-42f9-83a2-3bfd0912deed",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"bb6d0409-7ad0-42f9-83a2-3bfd0912deed",
+                "GameMode":4
+            },
+            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
+            "MapId":"c89dae21-f206-11e4-a1c2-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"8fb43381-10d0-4aed-b9eb-79468bd4a2ae",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"c40df80f-5b20-459f-ab85-92fa52530e9b",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT16M7.1337798S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-02-28T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":0,
+                    "Rank":2
+                },
+                {
+                    "Id":0,
+                    "Score":1,
+                    "Rank":1
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":0,
+                    "Rank":3,
+                    "Result":3,
+                    "TotalKills":26,
+                    "TotalDeaths":19,
+                    "TotalAssists":11,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
                 }
@@ -1846,7 +1755,7 @@
             "Links":{
                 "StatsMatchDetails":{
                     "AuthorityId":"spartanstats",
-                    "Path":"h5/warzone/matches/418cc383-f735-4eab-a2c8-2aedecd9f889",
+                    "Path":"h5/warzone/matches/9c0e81ff-83f5-412d-b17f-dbf232f08c3d",
                     "QueryString":null,
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1855,7 +1764,7 @@
                 },
                 "UgcFilmManifest":{
                     "AuthorityId":"ugc",
-                    "Path":"/h5/films/418cc383-f735-4eab-a2c8-2aedecd9f889",
+                    "Path":"/h5/films/9c0e81ff-83f5-412d-b17f-dbf232f08c3d",
                     "QueryString":"?view=film-manifest",
                     "RetryPolicyId":"exponentialretry",
                     "TopicName":"",
@@ -1864,37 +1773,37 @@
                 }
             },
             "Id":{
-                "MatchId":"418cc383-f735-4eab-a2c8-2aedecd9f889",
+                "MatchId":"9c0e81ff-83f5-412d-b17f-dbf232f08c3d",
                 "GameMode":4
             },
-            "HopperId":"b50c4dc2-6c86-4d79-aa8a-23a65da292c6",
-            "MapId":"cb251c51-f206-11e4-8541-24be05e24f7e",
+            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
+            "MapId":"c93d708f-f206-11e4-a815-24be05e24f7e",
             "MapVariant":{
                 "ResourceType":3,
-                "ResourceId":"f2a64ebd-29be-43d9-83c1-6c8852b6bcca",
+                "ResourceId":"f15d173b-6094-4882-b939-267bd0a49ae2",
                 "OwnerType":3,
                 "Owner":""
             },
-            "GameBaseVariantId":"f6de5351-3797-41e9-8053-7fb111a3a1a0",
+            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
             "GameVariant":{
                 "ResourceType":2,
-                "ResourceId":"79b52439-c9cf-454a-ab48-cadd368244a6",
+                "ResourceId":"acff59fd-6d79-4ac2-b8e3-9d61f50cd7db",
                 "OwnerType":3,
                 "Owner":""
             },
-            "MatchDuration":"PT20M20.9576309S",
+            "MatchDuration":"PT6M40.498557S",
             "MatchCompletedDate":{
-                "ISO8601Date":"2016-01-31T00:00:00Z"
+                "ISO8601Date":"2016-02-28T00:00:00Z"
             },
             "Teams":[
                 {
-                    "Id":1,
-                    "Score":1000,
+                    "Id":0,
+                    "Score":1,
                     "Rank":1
                 },
                 {
-                    "Id":0,
-                    "Score":587,
+                    "Id":1,
+                    "Score":0,
                     "Rank":2
                 }
             ],
@@ -1904,12 +1813,88 @@
                         "Gamertag":"Furiousn00b",
                         "Xuid":null
                     },
-                    "TeamId":1,
-                    "Rank":4,
+                    "TeamId":0,
+                    "Rank":8,
                     "Result":3,
-                    "TotalKills":15,
-                    "TotalDeaths":11,
+                    "TotalKills":7,
+                    "TotalDeaths":5,
                     "TotalAssists":11,
+                    "PreMatchRatings":null,
+                    "PostMatchRatings":null
+                }
+            ],
+            "IsTeamGame":true,
+            "SeasonId":null,
+            "MatchCompletedDateFidelity":1
+        },
+        {
+            "Links":{
+                "StatsMatchDetails":{
+                    "AuthorityId":"spartanstats",
+                    "Path":"h5/warzone/matches/8d503a33-8763-435f-a06d-b02f7e187fae",
+                    "QueryString":null,
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                },
+                "UgcFilmManifest":{
+                    "AuthorityId":"ugc",
+                    "Path":"/h5/films/8d503a33-8763-435f-a06d-b02f7e187fae",
+                    "QueryString":"?view=film-manifest",
+                    "RetryPolicyId":"exponentialretry",
+                    "TopicName":"",
+                    "AcknowledgementTypeId":0,
+                    "AuthenticationLifetimeExtensionSupported":false
+                }
+            },
+            "Id":{
+                "MatchId":"8d503a33-8763-435f-a06d-b02f7e187fae",
+                "GameMode":4
+            },
+            "HopperId":"0e39ead4-383b-4452-bbd4-babb7becd82e",
+            "MapId":"c822b1c0-f206-11e4-9755-24be05e24f7e",
+            "MapVariant":{
+                "ResourceType":3,
+                "ResourceId":"c62eaeb5-1334-4cf6-af8e-a272a3232865",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "GameBaseVariantId":"42f97cca-2cb4-497a-a0fd-ceef1ba46bcc",
+            "GameVariant":{
+                "ResourceType":2,
+                "ResourceId":"b32309ab-354b-4ef7-ba0f-99940f86de3a",
+                "OwnerType":3,
+                "Owner":""
+            },
+            "MatchDuration":"PT6M28.3749718S",
+            "MatchCompletedDate":{
+                "ISO8601Date":"2016-02-28T00:00:00Z"
+            },
+            "Teams":[
+                {
+                    "Id":1,
+                    "Score":0,
+                    "Rank":2
+                },
+                {
+                    "Id":0,
+                    "Score":1,
+                    "Rank":1
+                }
+            ],
+            "Players":[
+                {
+                    "Player":{
+                        "Gamertag":"Furiousn00b",
+                        "Xuid":null
+                    },
+                    "TeamId":1,
+                    "Rank":19,
+                    "Result":1,
+                    "TotalKills":5,
+                    "TotalDeaths":6,
+                    "TotalAssists":2,
                     "PreMatchRatings":null,
                     "PostMatchRatings":null
                 }
