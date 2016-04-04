@@ -41,7 +41,7 @@
       ]
     },
     "SpriteLocation": {
-      "type": "object",
+      "type": [ "null", "object" ],
       "additionalProperties": false,
       "properties": {
         "spriteSheetUri": {

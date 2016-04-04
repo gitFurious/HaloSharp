@@ -272,6 +272,9 @@
     <None Include="JSON\Stats\CarnageReport\arena-match.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="JSON\Stats\Common\variant.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="JSON\Stats\Common\base-stat.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

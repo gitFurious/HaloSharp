@@ -41,28 +41,7 @@
       ]
     },
     "MapVariant": {
-      "type": [ "object", "null" ],
-      "additionalProperties": false,
-      "properties": {
-        "ResourceType": {
-          "type": "integer"
-        },
-        "ResourceId": {
-          "type": "string"
-        },
-        "OwnerType": {
-          "type": "integer"
-        },
-        "Owner": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "ResourceType",
-        "ResourceId",
-        "OwnerType",
-        "Owner"
-      ]
+      "$ref": "./common/variant.schema.json"
     },
     "MatchCompletedDate": {
       "type": "object",

@@ -140,6 +140,9 @@
         "PostMatchRatings": {
           "type": "null"
         },
+        "PlayerScore": {
+          "type": "null"
+        },
 
         "KilledOpponentDetails": {
           "type": "array",
@@ -196,9 +199,10 @@
         "AvgLifeTimeOfPlayer",
         "PreMatchRatings",
         "PostMatchRatings",
+        "PlayerScore",
 
         "KilledOpponentDetails",
-        "KilledByOpponentDetails",
+        "KilledByOpponentDetails"
       ]
     }
   },
@@ -234,6 +238,12 @@
     "SeasonId": {
       "type": [ "string", "null" ]
     },
+    "GameVariantResourceId": {
+      "$ref": "../common/variant.schema.json"
+    },
+    "MapVariantResourceId": {
+      "$ref": "../common/variant.schema.json"
+    },
 
     "PlayerStats": {
       "type": "array",
@@ -258,6 +268,8 @@
     "GameBaseVariantId",
     "IsTeamGame",
     "SeasonId",
+    "GameVariantResourceId",
+    "MapVariantResourceId",
 
     "PlayerStats",
     "TeamStats"

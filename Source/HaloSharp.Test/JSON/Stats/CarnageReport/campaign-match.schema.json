@@ -140,12 +140,15 @@
         "PostMatchRatings": {
           "type": "null"
         },
+        "PlayerScore": {
+          "type": "null"
+        },
 
         "Score": {
           "type": "integer"
         },
         "CharacterIndex": {
-          "type": ["null", "integer"]
+          "type": [ "null", "integer" ]
         },
         "BiggestKillScore": {
           "type": "integer"
@@ -193,6 +196,7 @@
         "AvgLifeTimeOfPlayer",
         "PreMatchRatings",
         "PostMatchRatings",
+        "PlayerScore",
 
         "Score",
         "CharacterIndex",
@@ -232,6 +236,12 @@
     "SeasonId": {
       "type": [ "string", "null" ]
     },
+    "GameVariantResourceId": {
+      "$ref": "../common/variant.schema.json"
+    },
+    "MapVariantResourceId": {
+      "$ref": "../common/variant.schema.json"
+    },
 
     "PlayerStats": {
       "type": "array",
@@ -266,6 +276,8 @@
     "GameBaseVariantId",
     "IsTeamGame",
     "SeasonId",
+    "GameVariantResourceId",
+    "MapVariantResourceId",
 
     "PlayerStats",
     "TotalMissionPlaythroughTime",
