@@ -51,6 +51,8 @@
         public const string CustomMatchJsonSchemaPath = "JSON/Stats/CarnageReport/custom-match.schema.json";
         public const string WarzoneMatchJsonPath = "JSON/Stats/CarnageReport/warzone-match.json";
         public const string WarzoneMatchJsonSchemaPath = "JSON/Stats/CarnageReport/warzone-match.schema.json";
+        public const string MatchEventsJsonPath = "JSON/Stats/CarnageReport/match-events.json";
+        public const string MatchEventsJsonSchemaPath = "JSON/Stats/CarnageReport/match-events.schema.json";
 
         public const string ArenaServiceRecordJsonPath = "JSON/Stats/Lifetime/arena-service-record.json";
         public const string ArenaServiceRecordJsonSchemaPath = "JSON/Stats/Lifetime/arena-service-record.schema.json";

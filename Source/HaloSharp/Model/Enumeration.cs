@@ -6,6 +6,13 @@ namespace HaloSharp.Model
     [Serializable]
     public class Enumeration
     {
+        public enum Agent
+        {
+            None = 0,
+            Player = 1,
+            AI = 2
+        }
+
         public enum CampaignMissionType
         {
             BlueTeam,
@@ -49,6 +56,11 @@ namespace HaloSharp.Model
             Normal = 1,
             Heroic = 2,
             Legendary = 3
+        }
+
+        public enum EventType
+        {
+            Death
         }
 
         public enum Faction
