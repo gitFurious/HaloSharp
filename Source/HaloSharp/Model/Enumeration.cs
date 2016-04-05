@@ -58,6 +58,13 @@ namespace HaloSharp.Model
             Legendary = 3
         }
 
+        public enum Disposition
+        {
+            Friendly = 0,
+            Hostile = 1,
+            Neutral = 2
+        }
+
         public enum EventType
         {
             Death

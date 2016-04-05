@@ -114,7 +114,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
         ///     </list>
         /// </summary>
         [JsonProperty(PropertyName = "DeathDisposition")]
-        public int DeathDisposition { get; set; }
+        public Enumeration.Disposition DeathDisposition { get; set; }
 
         /// <summary>
         ///     Describes if the death was committed by the killer from behind (Assassination or melee to back).
@@ -312,7 +312,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
             unchecked
             {
                 var hashCode = Assistants?.GetHashCode() ?? 0;
-                hashCode = (hashCode*397) ^ DeathDisposition;
+                hashCode = (hashCode*397) ^ (int) DeathDisposition;
                 hashCode = (hashCode*397) ^ IsAssassination.GetHashCode();
                 hashCode = (hashCode*397) ^ IsGroundPound.GetHashCode();
                 hashCode = (hashCode*397) ^ IsHeadshot.GetHashCode();
