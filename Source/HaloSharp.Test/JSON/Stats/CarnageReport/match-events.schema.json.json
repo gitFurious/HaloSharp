@@ -1,0 +1,164 @@
+{
+  "definitions": {
+    "GameEvent": {
+      "type": "object",
+      "properties": {
+        "Assistants": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/identity.schema.json"
+          },
+          "additionalItems": false
+        },
+        "DeathDisposition": {
+          "type": "integer"
+        },
+        "IsAssassination": {
+          "type": "boolean"
+        },
+        "IsGroundPound": {
+          "type": "boolean"
+        },
+        "IsHeadshot": {
+          "type": "boolean"
+        },
+        "IsMelee": {
+          "type": "boolean"
+        },
+        "IsShoulderBash": {
+          "type": "boolean"
+        },
+        "IsWeapon": {
+          "type": "boolean"
+        },
+        "Killer": {
+          "$ref": "../common/identity.schema.json"
+        },
+        "KillerAgent": {
+          "type": "integer"
+        },
+        "KillerAttachmentIds": {
+          "type": "array",
+          "additionalItems": false,
+          "items": {
+            "type": "integer"
+          }
+        },
+        "KillerStockId": {
+          "type": "integer"
+        },
+        "KillerWorldLocation": {
+          "$ref": "#/definitions/WorldLocation"
+        },
+        "Victim": {
+          "$ref": "../common/identity.schema.json"
+        },
+        "VictimAgent": {
+          "type": "integer"
+        },
+        "VictimAttachmentIds": {
+          "type": "array",
+          "additionalItems": false,
+          "items": {
+            "type": "integer"
+          }
+        },
+        "VictimStockId": {
+          "type": "integer"
+        },
+        "VictimWorldLocation": {
+          "$ref": "#/definitions/WorldLocation"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStart": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "Assistants",
+        "DeathDisposition",
+        "IsAssassination",
+        "IsGroundPound",
+        "IsHeadshot",
+        "IsMelee",
+        "IsShoulderBash",
+        "IsWeapon",
+        "Killer",
+        "KillerAgent",
+        "KillerAttachmentIds",
+        "KillerStockId",
+        "KillerWorldLocation",
+        "Victim",
+        "VictimAgent",
+        "VictimAttachmentIds",
+        "VictimStockId",
+        "VictimWorldLocation",
+        "EventName",
+        "TimeSinceStart"
+      ]
+    },
+    "WorldLocation": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "id": "x",
+          "type": "number"
+        },
+        "y": {
+          "id": "y",
+          "type": "number"
+        },
+        "z": {
+          "id": "z",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y",
+        "z"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "StatsMatchDetails": {
+          "$ref": "../common/link.schema.json"
+        },
+        "UgcFilmManifest": {
+          "$ref": "../common/link.schema.json"
+        }
+      },
+      "required": [
+        "StatsMatchDetails",
+        "UgcFilmManifest"
+      ]
+    },
+    "GameEvents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/GameEvent"
+      },
+      "additionalItems": false
+    },
+    "IsCompleteSetOfEvents": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "Links",
+    "GameEvents",
+    "IsCompleteSetOfEvents"
+  ]
+}

@@ -87,6 +87,7 @@
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\Stats\CarnageReport\CampaignMatch.cs" />
     <Compile Include="Model\Stats\CarnageReport\Common\MetaCommendationDelta.cs" />
+    <Compile Include="Model\Stats\CarnageReport\MatchEvents.cs" />
     <Compile Include="Model\Stats\Common\FlexibleStats.cs" />
     <Compile Include="Model\Stats\Common\CompetitiveSkillRanking.cs" />
     <Compile Include="Model\Stats\CarnageReport\Common\CreditsEarned.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Query\Metadata\GetSkulls.cs" />
     <Compile Include="Query\Profile\GetSpartanImage.cs" />
     <Compile Include="Query\Profile\GetEmblemImage.cs" />
+    <Compile Include="Query\Stats\CarnageReport\GetMatchEvents.cs" />
     <Compile Include="Query\Stats\CarnageReport\GetCustomMatchDetails.cs" />
     <Compile Include="Query\Stats\CarnageReport\GetWarzoneMatchDetails.cs" />
     <Compile Include="Query\Stats\CarnageReport\GetArenaMatchDetails.cs" />
@@ -155,6 +157,7 @@
     <Compile Include="Validation\Metadata\GetGameVariantValidator.cs" />
     <Compile Include="Validation\Profile\GetSpartanImageValidator.cs" />
     <Compile Include="Validation\Profile\GetEmblemImageValidator.cs" />
+    <Compile Include="Validation\Stats\CarnageReport\GetMatchEventsValidator.cs" />
     <Compile Include="Validation\Stats\CarnageReport\GetArenaMatchDetailsValidator.cs" />
     <Compile Include="Validation\Stats\CarnageReport\GetCampaignMatchDetailsValidator.cs" />
     <Compile Include="Validation\Stats\CarnageReport\GetCustomMatchDetailsValidator.cs" />
