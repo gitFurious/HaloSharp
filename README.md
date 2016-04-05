@@ -56,6 +56,11 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.4.0.0 (2016-04-05)
+
+1. Stats Endpoints.
+  * Events for Match
+
 ###### v.1.3.2.0 (2016-04-04)
 
 1. Updated BaseMatch model.
