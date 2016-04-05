@@ -56,6 +56,10 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.4.1.0 (2016-04-05)
+
+1. Fixed a bug where I was using an int instead of an Enum (DeathDisposition)
+
 ###### v.1.4.0.0 (2016-04-05)
 
 1. Stats Endpoints.
