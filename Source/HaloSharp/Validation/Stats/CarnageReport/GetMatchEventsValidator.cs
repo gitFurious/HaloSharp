@@ -6,11 +6,11 @@ namespace HaloSharp.Validation.Stats.CarnageReport
 {
     public static class GetMatchEventsValidator
     {
-        public static void Validate(this GetMatchEvents getArenaMatchDetails)
+        public static void Validate(this GetMatchEvents getMatchEvents)
         {
             var validationResult = new ValidationResult();
 
-            if (string.IsNullOrWhiteSpace(getArenaMatchDetails.MatchId))
+            if (string.IsNullOrWhiteSpace(getMatchEvents.MatchId))
             {
                 validationResult.Messages.Add("GetMatchEvents query requires a MatchId to be set.");
             }

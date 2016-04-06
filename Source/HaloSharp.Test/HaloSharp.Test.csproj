@@ -231,9 +231,6 @@
     <None Include="JSON\Stats\CarnageReport\match-events.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\match-events.schema.json.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="JSON\Stats\CarnageReport\campaign-match.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -256,6 +253,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="JSON\Stats\CarnageReport\Common\credits-earned.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\Stats\CarnageReport\match-events.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="JSON\Stats\CarnageReport\warzone-match.json">

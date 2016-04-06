@@ -178,14 +178,14 @@ namespace HaloSharp.Model.Stats.CarnageReport
         /// <summary>
         ///     Any attachments the killer's weapon had.
         /// </summary>
-        [JsonProperty(PropertyName = "KillerAttachmentIds")]
-        public List<uint> KillerAttachmentIds { get; set; }
+        [JsonProperty(PropertyName = "KillerWeaponAttachmentIds")]
+        public List<uint> KillerWeaponAttachmentIds { get; set; }
 
         /// <summary>
         ///     The ID of the weapon. Weapons are available via the Metadata API.
         /// </summary>
-        [JsonProperty(PropertyName = "KillerStockId")]
-        public uint KillerStockId { get; set; }
+        [JsonProperty(PropertyName = "KillerWeaponStockId")]
+        public uint KillerWeaponStockId { get; set; }
 
         /// <summary>
         ///     Object describing the position of the killer on the map when they made the kill.
@@ -275,8 +275,8 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 && IsWeapon == other.IsWeapon
                 && Equals(Killer, other.Killer)
                 && KillerAgent == other.KillerAgent
-                && KillerAttachmentIds.OrderBy(ka => ka).SequenceEqual(other.KillerAttachmentIds.OrderBy(ka => ka))
-                && KillerStockId == other.KillerStockId
+                && KillerWeaponAttachmentIds.OrderBy(ka => ka).SequenceEqual(other.KillerWeaponAttachmentIds.OrderBy(ka => ka))
+                && KillerWeaponStockId == other.KillerWeaponStockId
                 && Equals(KillerWorldLocation, other.KillerWorldLocation)
                 && Equals(Victim, other.Victim)
                 && VictimAgent == other.VictimAgent
@@ -321,8 +321,8 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 hashCode = (hashCode*397) ^ IsWeapon.GetHashCode();
                 hashCode = (hashCode*397) ^ (Killer?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ KillerAgent.GetHashCode();
-                hashCode = (hashCode*397) ^ (KillerAttachmentIds?.GetHashCode() ?? 0);
-                hashCode = (hashCode*397) ^ (int) KillerStockId;
+                hashCode = (hashCode*397) ^ (KillerWeaponAttachmentIds?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (int) KillerWeaponStockId;
                 hashCode = (hashCode*397) ^ (KillerWorldLocation?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (Victim?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ VictimAgent.GetHashCode();
