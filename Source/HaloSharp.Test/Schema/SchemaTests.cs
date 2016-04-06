@@ -42,6 +42,7 @@ namespace HaloSharp.Test.Schema
         [TestCase(Config.CampaignMatchJsonPath, Config.CampaignMatchJsonSchemaPath)]
         [TestCase(Config.CustomMatchJsonPath, Config.CustomMatchJsonSchemaPath)]
         [TestCase(Config.WarzoneMatchJsonPath, Config.WarzoneMatchJsonSchemaPath)]
+        [TestCase(Config.MatchEventsJsonPath, Config.MatchEventsJsonSchemaPath)]
 
         [TestCase(Config.ArenaServiceRecordJsonPath, Config.ArenaServiceRecordJsonSchemaPath)]
         [TestCase(Config.CampaignServiceRecordJsonPath, Config.CampaignServiceRecordJsonSchemaPath)]
@@ -88,6 +89,7 @@ namespace HaloSharp.Test.Schema
         [TestCase(Config.CampaignMatchJsonPath, Config.CampaignMatchJsonSchemaPath, typeof(CampaignMatch))]
         [TestCase(Config.CustomMatchJsonPath, Config.CustomMatchJsonSchemaPath, typeof(CustomMatch))]
         [TestCase(Config.WarzoneMatchJsonPath, Config.WarzoneMatchJsonSchemaPath, typeof(WarzoneMatch))]
+        [TestCase(Config.MatchEventsJsonPath, Config.MatchEventsJsonSchemaPath, typeof(MatchEvents))]
 
         [TestCase(Config.ArenaServiceRecordJsonPath, Config.ArenaServiceRecordJsonSchemaPath, typeof(ArenaServiceRecord))]
         [TestCase(Config.CampaignServiceRecordJsonPath, Config.CampaignServiceRecordJsonSchemaPath, typeof(CampaignServiceRecord))]

@@ -36,10 +36,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":-12.8758459,
                 "y":-9.241538,
@@ -53,7 +53,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":8.50948,
                 "y":-0.226920128,
@@ -78,10 +78,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":-0.889988065,
                 "y":-8.797953,
@@ -95,7 +95,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":3.14098549,
                 "y":-10.5898914,
@@ -120,10 +120,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3808094875,
             "KillerWorldLocation":{
                 "x":-5.82813263,
                 "y":-11.3699217,
@@ -137,7 +137,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-3.752722,
                 "y":-10.6701355,
@@ -165,10 +165,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                89283061
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723388907,
             "KillerWorldLocation":{
                 "x":5.4338603,
                 "y":12.752923,
@@ -182,7 +182,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":11.3830166,
                 "y":9.337961,
@@ -207,10 +207,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":-4.911536,
                 "y":-5.98300266,
@@ -224,7 +224,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-2.63880754,
                 "y":0.148622245,
@@ -249,10 +249,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4106030681,
             "KillerWorldLocation":{
                 "x":16.7504787,
                 "y":-1.463038,
@@ -266,7 +266,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":12.2636786,
                 "y":12.5314379,
@@ -294,10 +294,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-9.651499,
                 "y":-2.01491451,
@@ -311,7 +311,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-1.32452261,
                 "y":-9.381367,
@@ -339,10 +339,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                89283061
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723388907,
             "KillerWorldLocation":{
                 "x":9.616594,
                 "y":1.39331949,
@@ -356,7 +356,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":9.205293,
                 "y":3.55671525,
@@ -384,10 +384,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":16.37284,
                 "y":9.346385,
@@ -401,7 +401,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":15.4539547,
                 "y":6.36004353,
@@ -426,10 +426,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":669296699,
             "KillerWorldLocation":{
                 "x":-15.7245626,
                 "y":0.152675286,
@@ -443,7 +443,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":13.3988714,
                 "y":0.510139,
@@ -468,10 +468,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":2.82433343,
                 "y":-11.6938143,
@@ -485,7 +485,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":4.94992256,
                 "y":-10.519659,
@@ -510,10 +510,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":2.82433343,
                 "y":-11.6938143,
@@ -527,7 +527,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":2.82433343,
                 "y":-11.6938143,
@@ -552,10 +552,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":10.0503912,
                 "y":11.4547186,
@@ -569,7 +569,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":9.348526,
                 "y":10.1662092,
@@ -594,10 +594,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":9.131031,
                 "y":11.8570976,
@@ -611,7 +611,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":10.2398825,
                 "y":9.753421,
@@ -639,10 +639,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":-4.40114641,
                 "y":-11.094327,
@@ -656,7 +656,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-4.73570251,
                 "y":-11.1847887,
@@ -681,10 +681,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":15.8970718,
                 "y":-3.23065448,
@@ -698,7 +698,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":14.1005583,
                 "y":-7.46561146,
@@ -726,10 +726,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":12.49492,
                 "y":10.3925629,
@@ -743,7 +743,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":9.819606,
                 "y":0.642352462,
@@ -768,10 +768,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":-1.86170447,
                 "y":10.889843,
@@ -785,7 +785,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":2.00877428,
                 "y":8.397269,
@@ -810,10 +810,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4106030681,
             "KillerWorldLocation":{
                 "x":6.66108,
                 "y":9.093545,
@@ -827,7 +827,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":6.94277239,
                 "y":-0.874281347,
@@ -852,10 +852,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":669296699,
             "KillerWorldLocation":{
                 "x":-14.5565138,
                 "y":-0.5033927,
@@ -869,7 +869,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":10.1788864,
                 "y":0.1956271,
@@ -894,10 +894,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-3.83084273,
                 "y":-1.582413,
@@ -911,7 +911,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-5.073235,
                 "y":-8.41987,
@@ -936,10 +936,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":2460880172,
             "KillerWorldLocation":{
                 "x":-5.177876,
                 "y":-2.85725045,
@@ -953,7 +953,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-5.305561,
                 "y":-9.555822,
@@ -985,10 +985,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-16.1470985,
                 "y":5.60377836,
@@ -1002,7 +1002,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-15.8490467,
                 "y":-4.920375,
@@ -1030,10 +1030,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3808094875,
             "KillerWorldLocation":{
                 "x":0.9889898,
                 "y":-10.4862738,
@@ -1047,7 +1047,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-0.8395315,
                 "y":-11.1052265,
@@ -1072,10 +1072,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-6.215947,
                 "y":0.5513026,
@@ -1089,7 +1089,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":11.0332308,
                 "y":-1.00337589,
@@ -1114,10 +1114,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":-8.016607,
                 "y":-10.24853,
@@ -1131,7 +1131,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-14.5982542,
                 "y":-6.712919,
@@ -1156,10 +1156,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":14.4670382,
                 "y":-3.328187,
@@ -1173,7 +1173,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":14.2573719,
                 "y":-3.49633718,
@@ -1198,10 +1198,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3168248199,
             "KillerWorldLocation":{
                 "x":7.86197329,
                 "y":-0.7162989,
@@ -1215,7 +1215,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":7.515018,
                 "y":-0.748192132,
@@ -1240,10 +1240,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":-13.6955853,
                 "y":-7.756304,
@@ -1257,7 +1257,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-12.323555,
                 "y":-3.68046641,
@@ -1282,10 +1282,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":-13.6955853,
                 "y":-7.756304,
@@ -1299,7 +1299,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-12.3460264,
                 "y":-2.757815,
@@ -1324,10 +1324,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3168248199,
             "KillerWorldLocation":{
                 "x":4.78847361,
                 "y":-0.0878952742,
@@ -1341,7 +1341,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":4.485023,
                 "y":-0.100788087,
@@ -1377,10 +1377,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-2.218353,
                 "y":-10.9486771,
@@ -1394,7 +1394,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-14.1109591,
                 "y":-10.103281,
@@ -1419,10 +1419,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4106030681,
             "KillerWorldLocation":{
                 "x":3.44045234,
                 "y":0.143322915,
@@ -1436,7 +1436,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-15.183485,
                 "y":-11.9138212,
@@ -1464,10 +1464,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":-12.927289,
                 "y":-7.72699451,
@@ -1481,7 +1481,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-16.80758,
                 "y":-2.72953033,
@@ -1506,10 +1506,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4106030681,
             "KillerWorldLocation":{
                 "x":-15.5623922,
                 "y":-3.87699962,
@@ -1523,7 +1523,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-12.488328,
                 "y":-6.247996,
@@ -1551,10 +1551,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-7.265885,
                 "y":11.9744835,
@@ -1568,7 +1568,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-7.591557,
                 "y":12.0928116,
@@ -1600,10 +1600,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":-9.67314148,
                 "y":-6.60563469,
@@ -1617,7 +1617,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-13.0435,
                 "y":-8.253936,
@@ -1642,10 +1642,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-14.303812,
                 "y":-10.2687464,
@@ -1659,7 +1659,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-13.6979609,
                 "y":-6.611296,
@@ -1684,10 +1684,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":2.537772,
                 "y":5.463918,
@@ -1701,7 +1701,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-0.0590005741,
                 "y":13.293767,
@@ -1729,10 +1729,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                89283061
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723388907,
             "KillerWorldLocation":{
                 "x":10.1190052,
                 "y":9.662499,
@@ -1746,7 +1746,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":11.2838135,
                 "y":12.2355137,
@@ -1771,10 +1771,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":2.2742548,
                 "y":12.0965433,
@@ -1788,7 +1788,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":11.3874283,
                 "y":13.9465809,
@@ -1813,10 +1813,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                89283061
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723388907,
             "KillerWorldLocation":{
                 "x":-19.97275,
                 "y":-2.53245139,
@@ -1830,7 +1830,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-8.596071,
                 "y":0.152492136,
@@ -1858,10 +1858,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                89283061
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723388907,
             "KillerWorldLocation":{
                 "x":4.561401,
                 "y":12.7317924,
@@ -1875,7 +1875,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":4.427275,
                 "y":13.0513811,
@@ -1900,10 +1900,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4106030681,
             "KillerWorldLocation":{
                 "x":-7.12341,
                 "y":12.0931463,
@@ -1917,7 +1917,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-15.8157129,
                 "y":8.383231,
@@ -1945,10 +1945,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-10.5571089,
                 "y":12.2296486,
@@ -1962,7 +1962,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-10.97005,
                 "y":6.294941,
@@ -1990,10 +1990,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                89283061
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723388907,
             "KillerWorldLocation":{
                 "x":-4.49111557,
                 "y":12.5255,
@@ -2007,7 +2007,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-10.1881084,
                 "y":12.7593184,
@@ -2032,10 +2032,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-9.82659,
                 "y":11.4039774,
@@ -2049,7 +2049,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-10.1710625,
                 "y":11.4647264,
@@ -2074,10 +2074,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                89283061
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723388907,
             "KillerWorldLocation":{
                 "x":12.3373823,
                 "y":6.44901657,
@@ -2091,7 +2091,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":12.6559792,
                 "y":3.70310831,
@@ -2116,10 +2116,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":0.92755264,
                 "y":-10.4465208,
@@ -2133,7 +2133,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-3.21418834,
                 "y":-10.6880789,
@@ -2161,10 +2161,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":6.903059,
                 "y":0.476169139,
@@ -2178,7 +2178,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":0.318309426,
                 "y":-10.8084574,
@@ -2206,10 +2206,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-15.2928486,
                 "y":4.67612839,
@@ -2223,7 +2223,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-16.907959,
                 "y":-1.23665988,
@@ -2251,10 +2251,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-16.8898582,
                 "y":0.46596247,
@@ -2268,7 +2268,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-16.8620262,
                 "y":0.11020647,
@@ -2293,10 +2293,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-5.351529,
                 "y":-11.2099943,
@@ -2310,7 +2310,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-5.41745949,
                 "y":-11.5505905,
@@ -2335,10 +2335,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":5.178081,
                 "y":-10.7227793,
@@ -2352,7 +2352,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":15.3461761,
                 "y":-5.803083,
@@ -2377,10 +2377,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":-5.76515341,
                 "y":-0.122849189,
@@ -2394,7 +2394,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":6.70758057,
                 "y":0.09129061,
@@ -2419,10 +2419,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4096745987,
             "KillerWorldLocation":{
                 "x":4.804436,
                 "y":4.83901834,
@@ -2436,7 +2436,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":4.52423573,
                 "y":5.07412148,
@@ -2464,10 +2464,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3190813201,
             "KillerWorldLocation":{
                 "x":2.7820375,
                 "y":5.650201,
@@ -2481,7 +2481,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":6.869426,
                 "y":4.94199944,
@@ -2506,10 +2506,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":17.2883072,
                 "y":-1.5098238,
@@ -2523,7 +2523,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":16.8400135,
                 "y":-7.8221,
@@ -2551,10 +2551,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":15.5723248,
                 "y":-4.13881445,
@@ -2568,7 +2568,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":16.1058941,
                 "y":1.18077016,
@@ -2593,10 +2593,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3168248199,
             "KillerWorldLocation":{
                 "x":-6.91221428,
                 "y":5.466024,
@@ -2610,7 +2610,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-7.31902552,
                 "y":5.315937,
@@ -2635,10 +2635,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":10.5824919,
                 "y":9.64874,
@@ -2652,7 +2652,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":15.7955484,
                 "y":7.84365559,
@@ -2680,10 +2680,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":9.29398251,
                 "y":6.36079836,
@@ -2697,7 +2697,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":10.916028,
                 "y":9.163041,
@@ -2725,10 +2725,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":11.50721,
                 "y":11.7905664,
@@ -2742,7 +2742,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":11.5517178,
                 "y":7.254331,
@@ -2767,10 +2767,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1327094800
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":424645655,
             "KillerWorldLocation":{
                 "x":1.28750157,
                 "y":5.439669,
@@ -2784,7 +2784,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":7.142624,
                 "y":6.086713,
@@ -2809,10 +2809,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":723523180,
             "KillerWorldLocation":{
                 "x":13.8528938,
                 "y":11.7898264,
@@ -2826,7 +2826,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":16.7280273,
                 "y":10.805047,
@@ -2854,10 +2854,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1327094800
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":424645655,
             "KillerWorldLocation":{
                 "x":1.75668478,
                 "y":3.16089225,
@@ -2871,7 +2871,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":0.09758655,
                 "y":-6.16542149,
@@ -2896,10 +2896,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":23.95094,
                 "y":2.02765155,
@@ -2913,7 +2913,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-10.8527689,
                 "y":-1.07115686,
@@ -2938,10 +2938,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":2460880172,
             "KillerWorldLocation":{
                 "x":-1.09983754,
                 "y":-7.56946945,
@@ -2955,7 +2955,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-5.11068535,
                 "y":-2.57435942,
@@ -2983,10 +2983,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1327094800
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":424645655,
             "KillerWorldLocation":{
                 "x":-0.335429639,
                 "y":-3.40137839,
@@ -3000,7 +3000,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-0.511277437,
                 "y":-7.13747644,
@@ -3025,10 +3025,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":669296699,
             "KillerWorldLocation":{
                 "x":-0.783061266,
                 "y":-8.33797,
@@ -3042,7 +3042,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-14.0762415,
                 "y":-6.935471,
@@ -3067,10 +3067,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1327094800
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":424645655,
             "KillerWorldLocation":{
                 "x":-13.9213772,
                 "y":-6.44965458,
@@ -3084,7 +3084,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-21.5467262,
                 "y":2.17316437,
@@ -3112,10 +3112,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":-16.04486,
                 "y":-6.51511335,
@@ -3129,7 +3129,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-13.1923695,
                 "y":-6.951354,
@@ -3154,10 +3154,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":-7.790288,
                 "y":5.12057161,
@@ -3171,7 +3171,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-7.46394968,
                 "y":5.43765831,
@@ -3196,10 +3196,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":-14.250761,
                 "y":6.466291,
@@ -3213,7 +3213,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-8.539549,
                 "y":9.347653,
@@ -3238,10 +3238,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":4106030681,
             "KillerWorldLocation":{
                 "x":-6.92621565,
                 "y":4.33128548,
@@ -3255,7 +3255,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-2.07048869,
                 "y":6.97490644,
@@ -3280,10 +3280,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":20.75426,
                 "y":0.4927252,
@@ -3297,7 +3297,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":22.5818367,
                 "y":-3.75327229,
@@ -3322,10 +3322,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3190813201,
             "KillerWorldLocation":{
                 "x":-6.69528055,
                 "y":-10.6569834,
@@ -3339,7 +3339,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":4.93854141,
                 "y":-10.2584324,
@@ -3364,10 +3364,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":-6.387502,
                 "y":-0.9018621,
@@ -3381,7 +3381,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-7.53207827,
                 "y":-3.57400346,
@@ -3406,10 +3406,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1327094800
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":424645655,
             "KillerWorldLocation":{
                 "x":6.52949858,
                 "y":-10.8296642,
@@ -3423,7 +3423,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":13.7721825,
                 "y":-8.216948,
@@ -3448,10 +3448,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3808094875,
             "KillerWorldLocation":{
                 "x":-15.4072733,
                 "y":-7.3592,
@@ -3465,7 +3465,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-15.7732887,
                 "y":-7.343439,
@@ -3490,10 +3490,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2208825748
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":523953283,
             "KillerWorldLocation":{
                 "x":13.4116182,
                 "y":1.26921475,
@@ -3507,7 +3507,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":13.3821115,
                 "y":4.45332861,
@@ -3532,10 +3532,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":2681172411,
             "KillerWorldLocation":{
                 "x":3.24002337,
                 "y":-11.2528143,
@@ -3549,7 +3549,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-0.9538436,
                 "y":-10.6307144,
@@ -3574,10 +3574,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                1095363701
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":313138863,
             "KillerWorldLocation":{
                 "x":-2.66870618,
                 "y":11.679575,
@@ -3591,7 +3591,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-2.82000375,
                 "y":12.2185917,
@@ -3616,10 +3616,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
+            "KillerWeaponAttachmentIds":[
 
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":3168248199,
             "KillerWorldLocation":{
                 "x":-12.7666407,
                 "y":-1.69189417,
@@ -3633,7 +3633,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-12.6221561,
                 "y":-1.34938729,
@@ -3661,10 +3661,10 @@
                 "Xuid":null
             },
             "KillerAgent":1,
-            "KillerAttachmentIds":[
-
+            "KillerWeaponAttachmentIds":[
+                2758383128
             ],
-            "KillerStockId":0,
+            "KillerWeaponStockId":669296699,
             "KillerWorldLocation":{
                 "x":9.663519,
                 "y":-0.387422174,
@@ -3678,7 +3678,7 @@
             "VictimAttachmentIds":[
 
             ],
-            "VictimStockId":3168248199,
+            "VictimStockId":0,
             "VictimWorldLocation":{
                 "x":-8.350101,
                 "y":-0.442004532,

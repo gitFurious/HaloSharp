@@ -37,14 +37,14 @@
         "KillerAgent": {
           "type": "integer"
         },
-        "KillerAttachmentIds": {
+        "KillerWeaponAttachmentIds": {
           "type": "array",
           "additionalItems": false,
           "items": {
             "type": "integer"
           }
         },
-        "KillerStockId": {
+        "KillerWeaponStockId": {
           "type": "integer"
         },
         "KillerWorldLocation": {
@@ -88,8 +88,8 @@
         "IsWeapon",
         "Killer",
         "KillerAgent",
-        "KillerAttachmentIds",
-        "KillerStockId",
+        "KillerWeaponAttachmentIds",
+        "KillerWeaponStockId",
         "KillerWorldLocation",
         "Victim",
         "VictimAgent",
