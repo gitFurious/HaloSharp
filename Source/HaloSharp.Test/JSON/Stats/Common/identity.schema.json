@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "properties": {
     "Gamertag": {
-      "type": "string"
+      "type": [ "string", "null" ]
     },
     "Xuid": {
       "type": "null"

@@ -47,6 +47,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
         {
             var query = new GetWarzoneServiceRecord()
@@ -72,6 +73,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord(string gamertag)
         {
             var query = new GetWarzoneServiceRecord()
@@ -99,6 +101,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord_DoesNotThrow(string gamertag)
         {
             var query = new GetWarzoneServiceRecord()
@@ -113,6 +116,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord_SchemaIsValid(string gamertag)
         {
             var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.WarzoneServiceRecordJsonSchemaPath), new JSchemaReaderSettings
@@ -133,6 +137,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord_ModelMatchesSchema(string gamertag)
         {
             var schema = JSchema.Parse(File.ReadAllText(Config.WarzoneServiceRecordJsonSchemaPath), new JSchemaReaderSettings
@@ -156,6 +161,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord_IsSerializable(string gamertag)
         {
             var query = new GetWarzoneServiceRecord()
