@@ -47,6 +47,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator ")]
         public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
         {
             var query = new GetArenaServiceRecord()
@@ -85,6 +86,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Furiousn00b", "2041d318-dd22-47c2-a487-2818ecf14e41")]
         [TestCase("Greenskull", "2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
+        [TestCase("moussanator", "b46c2095-4ca6-4f4b-a565-4702d7cfe586")]
         public void GetConstructedUri_Complex_MatchesExpected(string gamertag, string guid)
         {
             var query = new GetArenaServiceRecord()
@@ -99,6 +101,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetArenaServiceRecord(string gamertag)
         {
             var query = new GetArenaServiceRecord()
@@ -126,6 +129,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetArenaServiceRecord_DoesNotThrow(string gamertag)
         {
             var query = new GetArenaServiceRecord()
@@ -140,6 +144,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetArenaServiceRecord_SchemaIsValid(string gamertag)
         {
             var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.ArenaServiceRecordJsonSchemaPath), new JSchemaReaderSettings
@@ -160,6 +165,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetArenaServiceRecord_ModelMatchesSchema(string gamertag)
         {
             var schema = JSchema.Parse(File.ReadAllText(Config.ArenaServiceRecordJsonSchemaPath), new JSchemaReaderSettings
@@ -183,6 +189,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetArenaServiceRecord_IsSerializable(string gamertag)
         {
             var query = new GetArenaServiceRecord()

@@ -221,7 +221,7 @@ namespace HaloSharp.Model.Stats.Lifetime
         /// //TODO
         /// </summary>
         [JsonProperty(PropertyName = "ArenaPlaylistStatsSeasonId")]
-        public Guid ArenaPlaylistStatsSeasonId { get; set; }
+        public Guid? ArenaPlaylistStatsSeasonId { get; set; }
 
         /// <summary>
         /// The highest obtained CSR by the player in arena across all seasons. If the player hasn't finished 

@@ -47,6 +47,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
         {
             var query = new GetCampaignServiceRecord()
@@ -72,6 +73,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetCampaignServiceRecord(string gamertag)
         {
             var query = new GetCampaignServiceRecord()
@@ -99,6 +101,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetCampaignServiceRecord_DoesNotThrow(string gamertag)
         {
             var query = new GetCampaignServiceRecord()
@@ -113,6 +116,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetCampaignServiceRecord_SchemaIsValid(string gamertag)
         {
             var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.CampaignServiceRecordJsonSchemaPath), new JSchemaReaderSettings
@@ -133,6 +137,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetCampaignServiceRecord_ModelMatchesSchema(string gamertag)
         {
             var schema = JSchema.Parse(File.ReadAllText(Config.CampaignServiceRecordJsonSchemaPath), new JSchemaReaderSettings
@@ -156,6 +161,7 @@ namespace HaloSharp.Test.Query.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
+        [TestCase("moussanator")]
         public async Task GetCampaignServiceRecord_IsSerializable(string gamertag)
         {
             var query = new GetCampaignServiceRecord()

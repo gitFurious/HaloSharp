@@ -189,7 +189,7 @@
           }
         },
         "HighestCsrPlaylistId": {
-          "type": "string"
+          "type": [ "null", "string" ]
         },
         "HighestCsrSeasonId": {
           "type": ["null", "string"]
