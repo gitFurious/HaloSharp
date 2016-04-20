@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Converter;
 using HaloSharp.Model.Stats.Common;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -251,7 +252,8 @@ namespace HaloSharp.Model.Stats.CarnageReport
         ///     Time passed since the start of the match when the event occurred. This is expressed as an ISO 8601 Duration.
         /// </summary>
         [JsonProperty(PropertyName = "TimeSinceStart")]
-        public string TimeSinceStart { get; set; }
+        [JsonConverter(typeof(TimeSpanConverter))]
+        public TimeSpan TimeSinceStart { get; set; }
 
         public bool Equals(GameEvent other)
         {
@@ -330,7 +332,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 hashCode = (hashCode*397) ^ (int) VictimStockId;
                 hashCode = (hashCode*397) ^ (VictimWorldLocation?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (int) EventName;
-                hashCode = (hashCode*397) ^ (TimeSinceStart?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ TimeSinceStart.GetHashCode();
                 return hashCode;
             }
         }
