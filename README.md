@@ -56,6 +56,10 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.4.4.0 (2016-04-21)
+
+1. Fixed the TimeSinceStart property on GameEvents. Should have been a TimeSpan from the start.
+
 ###### v.1.4.3.0 (2016-04-15)
 
 1. Fixed a bug where getting an Arena Service Record for a defunct Gamertag would throw an exception.
