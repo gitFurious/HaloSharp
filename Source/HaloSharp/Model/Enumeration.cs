@@ -67,7 +67,15 @@ namespace HaloSharp.Model
 
         public enum EventType
         {
-            Death
+            Death,
+            Impulse,
+            Medal,
+            PlayerSpawn,
+            RoundStart,
+            RoundEnd,
+            WeaponDrop,
+            WeaponPickup,
+            WeaponPickupPad
         }
 
         public enum Faction

@@ -115,43 +115,49 @@ namespace HaloSharp.Model.Stats.CarnageReport
         ///     </list>
         /// </summary>
         [JsonProperty(PropertyName = "DeathDisposition")]
-        public Enumeration.Disposition DeathDisposition { get; set; }
+        public Enumeration.Disposition? DeathDisposition { get; set; }
+
+        /// <summary>
+        ///     The ID that uniquely identifies this impulse. Impulses are available via the Metadata API.
+        /// </summary>
+        [JsonProperty(PropertyName = "ImpulseId")]
+        public uint? ImpulseId { get; set; }
 
         /// <summary>
         ///     Describes if the death was committed by the killer from behind (Assassination or melee to back).
         /// </summary>
         [JsonProperty(PropertyName = "IsAssassination")]
-        public bool IsAssassination { get; set; }
+        public bool? IsAssassination { get; set; }
 
         /// <summary>
         ///     Describes if the kill was committed by the killer with a ground pound.
         /// </summary>
         [JsonProperty(PropertyName = "IsGroundPound")]
-        public bool IsGroundPound { get; set; }
+        public bool? IsGroundPound { get; set; }
 
         /// <summary>
         ///     Describes if the kill was committed by the killer with a head shot.
         /// </summary>
         [JsonProperty(PropertyName = "IsHeadshot")]
-        public bool IsHeadshot { get; set; }
+        public bool? IsHeadshot { get; set; }
 
         /// <summary>
         ///     Describes if the kill was committed by the killer using melee.
         /// </summary>
         [JsonProperty(PropertyName = "IsMelee")]
-        public bool IsMelee { get; set; }
+        public bool? IsMelee { get; set; }
 
         /// <summary>
         ///     Describes if the kill was committed by the killer with a shoulder bash.
         /// </summary>
         [JsonProperty(PropertyName = "IsShoulderBash")]
-        public bool IsShoulderBash { get; set; }
+        public bool? IsShoulderBash { get; set; }
 
         /// <summary>
         ///     Describes if the kill was committed by the killer with a weapon.
         /// </summary>
         [JsonProperty(PropertyName = "IsWeapon")]
-        public bool IsWeapon { get; set; }
+        public bool? IsWeapon { get; set; }
 
         /// <summary>
         ///     Describes the killer's information. Can be null if killer is not a player in the game.
@@ -174,7 +180,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
         ///     </list>
         /// </summary>
         [JsonProperty(PropertyName = "KillerAgent")]
-        public Enumeration.Agent KillerAgent { get; set; }
+        public Enumeration.Agent? KillerAgent { get; set; }
 
         /// <summary>
         ///     Any attachments the killer's weapon had.
@@ -186,13 +192,50 @@ namespace HaloSharp.Model.Stats.CarnageReport
         ///     The ID of the weapon. Weapons are available via the Metadata API.
         /// </summary>
         [JsonProperty(PropertyName = "KillerWeaponStockId")]
-        public uint KillerWeaponStockId { get; set; }
+        public uint? KillerWeaponStockId { get; set; }
 
         /// <summary>
         ///     Object describing the position of the killer on the map when they made the kill.
         /// </summary>
         [JsonProperty(PropertyName = "KillerWorldLocation")]
         public WorldLocation KillerWorldLocation { get; set; }
+
+        /// <summary>
+        ///     The ID that uniquely identifies this medal. Medals are available via the Metadata API.
+        /// </summary>
+        [JsonProperty(PropertyName = "MedalId")]
+        public uint? MedalId { get; set; }
+
+        /// <summary>
+        ///     The player.
+        /// </summary>
+        [JsonProperty(PropertyName = "Player")]
+        public Identity Player { get; set; }
+
+        /// <summary>
+        ///     The index of the round that started.
+        /// </summary>
+        [JsonProperty(PropertyName = "RoundIndex")]
+        public int? RoundIndex { get; set; }
+
+        /// <summary>
+        ///     The number of shots fired with the weapon by the player.
+        /// </summary>
+        [JsonProperty(PropertyName = "ShotsFired")]
+        public int? ShotsFired { get; set; }
+
+        /// <summary>
+        ///     The number of shots that hit the target with the weapon by the player.
+        /// </summary>
+        [JsonProperty(PropertyName = "ShotsLanded")]
+        public int? ShotsLanded { get; set; }
+
+        /// <summary>
+        ///     The amount of time the weapon was in the active slot of the player. This is expressed as an ISO 8601 Duration.
+        /// </summary>
+        [JsonProperty(PropertyName = "TimeWeaponActiveAsPrimary")]
+        [JsonConverter(typeof(TimeSpanConverter))]
+        public TimeSpan? TimeWeaponActiveAsPrimary { get; set; }
 
         /// <summary>
         ///     Describes the victim's information. Can be null if victim is not a player in the game.
@@ -215,7 +258,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
         ///     </list>
         /// </summary>
         [JsonProperty(PropertyName = "VictimAgent")]
-        public Enumeration.Agent VictimAgent { get; set; }
+        public Enumeration.Agent? VictimAgent { get; set; }
 
         /// <summary>
         ///     Any attachments the victim's weapon had.
@@ -227,7 +270,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
         ///     The ID of the weapon. Weapons are available via the Metadata API.
         /// </summary>
         [JsonProperty(PropertyName = "VictimStockId")]
-        public uint VictimStockId { get; set; }
+        public uint? VictimStockId { get; set; }
 
         /// <summary>
         ///     Object describing the position of the victim on the map when they were killed.
@@ -236,11 +279,47 @@ namespace HaloSharp.Model.Stats.CarnageReport
         public WorldLocation VictimWorldLocation { get; set; }
 
         /// <summary>
-        ///     Descriptor to determine what fields will be filled in for the event. This list will grow over time as more events
+        ///     The IDs of any attachments that were associated with the weapon that was picked up/dropped.
+        /// </summary>
+        [JsonProperty(PropertyName = "WeaponAttachmentIds")]
+        public List<uint> WeaponAttachmentIds { get; set; }
+
+        /// <summary>
+        ///     The ID of the weapon that was picked up/dropped. Weapons are available via the Metadata API.
+        /// </summary>
+        [JsonProperty(PropertyName = "WeaponStockId")]
+        public uint? WeaponStockId { get; set; }
+
+        /// <summary>
+        ///     Descriptor to determine what fields will be filled in for the event. This list will grow over time as more events 
         ///     are exposed. Can be one of the following:
         ///     <list type="bullet">
         ///         <item>
-        ///             <description>Death: - An event that is created when a death occurs in the match.</description>
+        ///             <description>Death: An event that is created when a death occurs in the match.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>Impulse: An event that is created when an impulse (invisible medal) is triggered in the match.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>Medal: An event that is created when a medal is awarded in the match.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>PlayerSpawn: An event that is created when a player spawns in the match.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>RoundStart: An event that is created when a round starts. In regular matches, there is typically one round. However, some modes have multiple rounds.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>RoundEnd: An event that is created when a round ends. In regular matches, there is typically one round. However, some modes have multiple rounds.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>WeaponDrop: An event that is created when a player drops a weapon for a new weapon. This occurs when a player picks up a new weapon and drops their current one, when a player dies and drops their weapon(s), or at the end of the match for each player.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>WeaponPickup: An event that is created when a player picks up a weapon. This can be when a player spawns, or when a player picks up a new weapon.</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>WeaponPickupPad: An event that is created when a player picks up a weapon off a pad. This will not be triggered if the weapon was picked up off the ground after another player who had picked it off a pad.</description>
         ///         </item>
         ///     </list>
         /// </summary>
@@ -267,8 +346,9 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 return true;
             }
 
-            return Assistants.OrderBy(a => a.Gamertag).SequenceEqual(other.Assistants.OrderBy(a => a.Gamertag))
+            return ((Assistants == null && other.Assistants == null) || (Assistants != null && other.Assistants != null && Assistants.OrderBy(a => a.Gamertag).SequenceEqual(other.Assistants.OrderBy(a => a.Gamertag))))
                 && DeathDisposition == other.DeathDisposition
+                && ImpulseId == other.ImpulseId
                 && IsAssassination == other.IsAssassination
                 && IsGroundPound == other.IsGroundPound
                 && IsHeadshot == other.IsHeadshot
@@ -277,16 +357,24 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 && IsWeapon == other.IsWeapon
                 && Equals(Killer, other.Killer)
                 && KillerAgent == other.KillerAgent
-                && KillerWeaponAttachmentIds.OrderBy(ka => ka).SequenceEqual(other.KillerWeaponAttachmentIds.OrderBy(ka => ka))
+                && ((KillerWeaponAttachmentIds == null && other.KillerWeaponAttachmentIds == null) || (KillerWeaponAttachmentIds != null && other.KillerWeaponAttachmentIds != null && KillerWeaponAttachmentIds.OrderBy(ka => ka).SequenceEqual(other.KillerWeaponAttachmentIds.OrderBy(ka => ka))))
                 && KillerWeaponStockId == other.KillerWeaponStockId
                 && Equals(KillerWorldLocation, other.KillerWorldLocation)
+                && MedalId == other.MedalId
+                && Equals(Player, other.Player)
+                && RoundIndex == other.RoundIndex
+                && ShotsFired == other.ShotsFired
+                && ShotsLanded == other.ShotsLanded
+                && TimeWeaponActiveAsPrimary.Equals(other.TimeWeaponActiveAsPrimary)
                 && Equals(Victim, other.Victim)
                 && VictimAgent == other.VictimAgent
-                && VictimAttachmentIds.OrderBy(ka => ka).SequenceEqual(other.VictimAttachmentIds.OrderBy(ka => ka))
+                && ((VictimAttachmentIds == null && other.VictimAttachmentIds == null) || (VictimAttachmentIds != null && other.VictimAttachmentIds != null && VictimAttachmentIds.OrderBy(ka => ka).SequenceEqual(other.VictimAttachmentIds.OrderBy(ka => ka))))
                 && VictimStockId == other.VictimStockId
                 && Equals(VictimWorldLocation, other.VictimWorldLocation)
-                && Equals(EventName, other.EventName)
-                && string.Equals(TimeSinceStart, other.TimeSinceStart);
+                && ((WeaponAttachmentIds == null && other.WeaponAttachmentIds == null) || (WeaponAttachmentIds != null && other.WeaponAttachmentIds != null && WeaponAttachmentIds.OrderBy(ka => ka).SequenceEqual(other.WeaponAttachmentIds.OrderBy(ka => ka))))
+                && WeaponStockId == other.WeaponStockId
+                && EventName == other.EventName
+                && TimeSinceStart.Equals(other.TimeSinceStart);
         }
 
         public override bool Equals(object obj)
@@ -314,7 +402,8 @@ namespace HaloSharp.Model.Stats.CarnageReport
             unchecked
             {
                 var hashCode = Assistants?.GetHashCode() ?? 0;
-                hashCode = (hashCode*397) ^ (int) DeathDisposition;
+                hashCode = (hashCode*397) ^ DeathDisposition.GetHashCode();
+                hashCode = (hashCode*397) ^ ImpulseId.GetHashCode();
                 hashCode = (hashCode*397) ^ IsAssassination.GetHashCode();
                 hashCode = (hashCode*397) ^ IsGroundPound.GetHashCode();
                 hashCode = (hashCode*397) ^ IsHeadshot.GetHashCode();
@@ -324,13 +413,21 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 hashCode = (hashCode*397) ^ (Killer?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ KillerAgent.GetHashCode();
                 hashCode = (hashCode*397) ^ (KillerWeaponAttachmentIds?.GetHashCode() ?? 0);
-                hashCode = (hashCode*397) ^ (int) KillerWeaponStockId;
+                hashCode = (hashCode*397) ^ KillerWeaponStockId.GetHashCode();
                 hashCode = (hashCode*397) ^ (KillerWorldLocation?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ MedalId.GetHashCode();
+                hashCode = (hashCode*397) ^ (Player?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ RoundIndex.GetHashCode();
+                hashCode = (hashCode*397) ^ ShotsFired.GetHashCode();
+                hashCode = (hashCode*397) ^ ShotsLanded.GetHashCode();
+                hashCode = (hashCode*397) ^ TimeWeaponActiveAsPrimary.GetHashCode();
                 hashCode = (hashCode*397) ^ (Victim?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ VictimAgent.GetHashCode();
                 hashCode = (hashCode*397) ^ (VictimAttachmentIds?.GetHashCode() ?? 0);
-                hashCode = (hashCode*397) ^ (int) VictimStockId;
+                hashCode = (hashCode*397) ^ VictimStockId.GetHashCode();
                 hashCode = (hashCode*397) ^ (VictimWorldLocation?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (WeaponAttachmentIds?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ WeaponStockId.GetHashCode();
                 hashCode = (hashCode*397) ^ (int) EventName;
                 hashCode = (hashCode*397) ^ TimeSinceStart.GetHashCode();
                 return hashCode;

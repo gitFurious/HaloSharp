@@ -53,6 +53,7 @@
         public const string WarzoneMatchJsonSchemaPath = "JSON/Stats/CarnageReport/warzone-match.schema.json";
         public const string MatchEventsJsonPath = "JSON/Stats/CarnageReport/match-events.json";
         public const string MatchEventsJsonSchemaPath = "JSON/Stats/CarnageReport/match-events.schema.json";
+        public const string MatchEventsModelJsonSchemaPath = "JSON/Stats/CarnageReport/match-events-model.schema.json";
 
         public const string ArenaServiceRecordJsonPath = "JSON/Stats/Lifetime/arena-service-record.json";
         public const string ArenaServiceRecordJsonSchemaPath = "JSON/Stats/Lifetime/arena-service-record.schema.json";
