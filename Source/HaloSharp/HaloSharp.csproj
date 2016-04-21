@@ -113,6 +113,7 @@
     <Compile Include="Model\Stats\Lifetime\CustomServiceRecord.cs" />
     <Compile Include="Model\Stats\Lifetime\ArenaServiceRecord.cs" />
     <Compile Include="Model\Stats\Common\Link.cs" />
+    <Compile Include="Model\Stats\Leaderboard.cs" />
     <Compile Include="Model\Stats\MatchSet.cs" />
     <Compile Include="Model\Stats\Common\Variant.cs" />
     <Compile Include="Model\ValidationResult.cs" />
@@ -144,6 +145,7 @@
     <Compile Include="Query\Stats\CarnageReport\GetWarzoneMatchDetails.cs" />
     <Compile Include="Query\Stats\CarnageReport\GetArenaMatchDetails.cs" />
     <Compile Include="Query\Stats\CarnageReport\GetCampaignMatchDetails.cs" />
+    <Compile Include="Query\Stats\GetLeaderboard.cs" />
     <Compile Include="Query\Stats\GetMatches.cs" />
     <Compile Include="Query\Stats\Lifetime\GetCampaignServiceRecord.cs" />
     <Compile Include="Query\Stats\Lifetime\GetCustomServiceRecord.cs" />
@@ -162,6 +164,7 @@
     <Compile Include="Validation\Stats\CarnageReport\GetCampaignMatchDetailsValidator.cs" />
     <Compile Include="Validation\Stats\CarnageReport\GetCustomMatchDetailsValidator.cs" />
     <Compile Include="Validation\Stats\CarnageReport\GetWarzoneMatchDetailsValidator.cs" />
+    <Compile Include="Validation\Stats\GetLeaderboardValidator.cs" />
     <Compile Include="Validation\Stats\GetMatchesValidator.cs" />
     <Compile Include="Validation\Stats\Lifetime\GetArenaServiceRecordValidator.cs" />
     <Compile Include="Validation\Stats\Lifetime\GetWarzoneServiceRecordValidator.cs" />

@@ -323,31 +323,31 @@
         "MedalAwards": {
           "type": "array",
           "items": {
-	        "$ref": "../common/base-stat.schema.json#/definitions/MedalAward"
+            "$ref": "../common/base-stat.schema.json#/definitions/MedalAward"
           }
         },
         "DestroyedEnemyVehicles": {
           "type": "array",
           "items": {
-	        "$ref": "../common/base-stat.schema.json#/definitions/EnemySet"
+            "$ref": "../common/base-stat.schema.json#/definitions/EnemySet"
           }
         },
         "EnemyKills": {
           "type": "array",
           "items": {
-	        "$ref": "../common/base-stat.schema.json#/definitions/EnemySet"
+            "$ref": "../common/base-stat.schema.json#/definitions/EnemySet"
           }
         },
         "WeaponStats": {
           "type": "array",
           "items": {
-	        "$ref": "../common/base-stat.schema.json#/definitions/WeaponStat"
+            "$ref": "../common/base-stat.schema.json#/definitions/WeaponStat"
           }
         },
         "Impulses": {
           "type": "array",
           "items": {
-	        "$ref": "../common/base-stat.schema.json#/definitions/Impulse"
+            "$ref": "../common/base-stat.schema.json#/definitions/Impulse"
           }
         },
         "TotalSpartanKills": {
@@ -365,6 +365,9 @@
         },
         "Csr": {
           "$ref": "../common/competitive-skill-ranking.schema.json"
+        },
+        "CsrPercentile": {
+          "type": ["null", "integer"]
         }
       },
       "required": [
@@ -404,7 +407,8 @@
         "PlaylistId",
         "MeasurementMatchesLeft",
         "HighestCsr",
-        "Csr"
+        "Csr",
+        "CsrPercentile"
       ]
     }
   },

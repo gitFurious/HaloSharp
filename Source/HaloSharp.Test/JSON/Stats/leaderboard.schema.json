@@ -1,0 +1,64 @@
+{
+  "definitions": {
+    "Result": {
+      "type": "object",
+      "properties": {
+        "Player": {
+          "$ref": "common/identity.schema.json"
+        },
+        "Rank": {
+          "type": "integer"
+        },
+        "Score": {
+          "$ref": "common/competitive-skill-ranking.schema.json"
+        }
+      },
+      "required": [
+        "Player",
+        "Rank",
+        "Score"
+      ],
+      "additionalProperties": false
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Start": {
+      "type": "integer"
+    },
+    "Count": {
+      "type": "integer"
+    },
+    "ResultCount": {
+      "type": "integer"
+    },
+    "Results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Result"
+      }
+    },
+    "Links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Self": {
+          "$ref": "common/link.schema.json"
+        }
+      },
+      "required": [
+        "Self"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "Start",
+    "Count",
+    "ResultCount",
+    "Results",
+    "Links"
+  ]
+}

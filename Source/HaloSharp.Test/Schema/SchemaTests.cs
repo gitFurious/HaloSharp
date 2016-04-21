@@ -50,6 +50,7 @@ namespace HaloSharp.Test.Schema
         [TestCase(Config.WarzoneServiceRecordJsonPath, Config.WarzoneServiceRecordJsonSchemaPath)]
 
         [TestCase(Config.MatchesJsonPath, Config.MatchesJsonSchemaPath)]
+        [TestCase(Config.LeaderboardJsonPath, Config.LeaderboardJsonSchemaPath)]
         public void SchemaIsValid(string jsonPath, string schemaPath)
         {
             var schema = JSchema.Parse(File.ReadAllText(schemaPath), new JSchemaReaderSettings
@@ -89,7 +90,7 @@ namespace HaloSharp.Test.Schema
         [TestCase(Config.CampaignMatchJsonPath, Config.CampaignMatchJsonSchemaPath, typeof(CampaignMatch))]
         [TestCase(Config.CustomMatchJsonPath, Config.CustomMatchJsonSchemaPath, typeof(CustomMatch))]
         [TestCase(Config.WarzoneMatchJsonPath, Config.WarzoneMatchJsonSchemaPath, typeof(WarzoneMatch))]
-        [TestCase(Config.MatchEventsJsonPath, Config.MatchEventsJsonSchemaPath, typeof(MatchEvents))]
+        [TestCase(Config.MatchEventsJsonPath, Config.MatchEventsModelJsonSchemaPath, typeof(MatchEvents))]
 
         [TestCase(Config.ArenaServiceRecordJsonPath, Config.ArenaServiceRecordJsonSchemaPath, typeof(ArenaServiceRecord))]
         [TestCase(Config.CampaignServiceRecordJsonPath, Config.CampaignServiceRecordJsonSchemaPath, typeof(CampaignServiceRecord))]
@@ -97,6 +98,7 @@ namespace HaloSharp.Test.Schema
         [TestCase(Config.WarzoneServiceRecordJsonPath, Config.WarzoneServiceRecordJsonSchemaPath, typeof(WarzoneServiceRecord))]
 
         [TestCase(Config.MatchesJsonPath, Config.MatchesJsonSchemaPath, typeof(MatchSet))]
+        [TestCase(Config.LeaderboardJsonPath, Config.LeaderboardJsonSchemaPath, typeof(Leaderboard))]
         public void ModelMatchesSchema(string jsonPath, string schemaPath, Type type)
         {
             var schema = JSchema.Parse(File.ReadAllText(schemaPath), new JSchemaReaderSettings

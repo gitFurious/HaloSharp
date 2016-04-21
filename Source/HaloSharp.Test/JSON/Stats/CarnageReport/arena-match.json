@@ -5,12 +5,14 @@
                 "PrevSpartanRank":52,
                 "SpartanRank":52,
                 "PrevTotalXP":943980,
-                "TotalXP":945489,
+                "TotalXP":945490,
                 "SpartanRankMatchXPScalar":2.045,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":99,
                 "PlayerRankXPAward":100,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -114,7 +116,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":300,
                 "TimePlayedAmount":505.85199153523996,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -458,12 +462,14 @@
                 "PrevSpartanRank":47,
                 "SpartanRank":47,
                 "PrevTotalXP":747024,
-                "TotalXP":748163,
+                "TotalXP":748164,
                 "SpartanRankMatchXPScalar":2.02,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":0,
                 "PlayerRankXPAward":25,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -561,7 +567,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":225,
                 "TimePlayedAmount":505.85024332026973,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -787,12 +795,14 @@
                 "PrevSpartanRank":66,
                 "SpartanRank":67,
                 "PrevTotalXP":1517458,
-                "TotalXP":1520067,
+                "TotalXP":1520068,
                 "SpartanRankMatchXPScalar":2.108,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":99,
                 "PlayerRankXPAward":100,
-                "BoostAmount":500
+                "BoostAmount":500,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -907,7 +917,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":300,
                 "TimePlayedAmount":505.85024332026973,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -1198,12 +1210,14 @@
                 "PrevSpartanRank":70,
                 "SpartanRank":70,
                 "PrevTotalXP":1721458,
-                "TotalXP":1723237,
+                "TotalXP":1723238,
                 "SpartanRankMatchXPScalar":2.124,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":99,
                 "PlayerRankXPAward":200,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -1311,7 +1325,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":375,
                 "TimePlayedAmount":505.84989185027575,
-                "BoostAmount":305
+                "BoostAmount":305,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -1676,12 +1692,14 @@
                 "PrevSpartanRank":66,
                 "SpartanRank":66,
                 "PrevTotalXP":1503503,
-                "TotalXP":1504691,
+                "TotalXP":1504692,
                 "SpartanRankMatchXPScalar":2.108,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":0,
                 "PlayerRankXPAward":25,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -1775,7 +1793,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":225,
                 "TimePlayedAmount":505.84989185027575,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -2018,12 +2038,14 @@
                 "PrevSpartanRank":22,
                 "SpartanRank":22,
                 "PrevTotalXP":185328,
-                "TotalXP":186320,
+                "TotalXP":186321,
                 "SpartanRankMatchXPScalar":1.76,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":0,
                 "PlayerRankXPAward":25,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -2117,7 +2139,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":225,
                 "TimePlayedAmount":505.84989185027575,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -2325,12 +2349,14 @@
                 "PrevSpartanRank":49,
                 "SpartanRank":49,
                 "PrevTotalXP":812913,
-                "TotalXP":815072,
+                "TotalXP":815073,
                 "SpartanRankMatchXPScalar":2.03,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":0,
                 "PlayerRankXPAward":25,
-                "BoostAmount":500
+                "BoostAmount":500,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -2432,7 +2458,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":225,
                 "TimePlayedAmount":505.84989185027575,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -2701,12 +2729,14 @@
                 "PrevSpartanRank":28,
                 "SpartanRank":28,
                 "PrevTotalXP":286468,
-                "TotalXP":287517,
+                "TotalXP":287518,
                 "SpartanRankMatchXPScalar":1.86,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":0,
                 "PlayerRankXPAward":25,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -2808,7 +2838,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":225,
                 "TimePlayedAmount":505.84954220028169,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -3069,12 +3101,14 @@
                 "PrevSpartanRank":24,
                 "SpartanRank":24,
                 "PrevTotalXP":209218,
-                "TotalXP":210556,
+                "TotalXP":210557,
                 "SpartanRankMatchXPScalar":1.8,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":99,
                 "PlayerRankXPAward":50,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -3177,7 +3211,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":250,
                 "TimePlayedAmount":505.84954220028169,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 
@@ -3499,12 +3535,14 @@
                 "PrevSpartanRank":29,
                 "SpartanRank":29,
                 "PrevTotalXP":323500,
-                "TotalXP":324786,
+                "TotalXP":324787,
                 "SpartanRankMatchXPScalar":1.87,
                 "PlayerTimePerformanceXPAward":539,
                 "PerformanceXP":99,
                 "PlayerRankXPAward":50,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "PreviousCsr":null,
             "CurrentCsr":null,
@@ -3602,7 +3640,9 @@
                 "SpartanRankModifier":1.0,
                 "PlayerRankAmount":250,
                 "TimePlayedAmount":505.84919220028763,
-                "BoostAmount":0
+                "BoostAmount":0,
+                "MatchSpeedWinAmount":0,
+                "ObjectivesCompletedAmount":0
             },
             "MetaCommendationDeltas":[
 

@@ -14,6 +14,18 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         public int BoostAmount { get; set; }
 
         /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "MatchSpeedWinAmount")]
+        public int MatchSpeedWinAmount { get; set; }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "ObjectivesCompletedAmount")]
+        public int ObjectivesCompletedAmount { get; set; }
+
+        /// <summary>
         /// The XP awarded to the player based on how their team ranked when the match concluded.
         /// </summary>
         [JsonProperty(PropertyName = "PerformanceXP")]
@@ -74,6 +86,8 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
             }
 
             return BoostAmount == other.BoostAmount
+                && MatchSpeedWinAmount == other.MatchSpeedWinAmount
+                && ObjectivesCompletedAmount == other.ObjectivesCompletedAmount
                 && PerformanceXp == other.PerformanceXp
                 && PlayerRankXpAward == other.PlayerRankXpAward
                 && PlayerTimePerformanceXpAward == other.PlayerTimePerformanceXpAward
@@ -109,6 +123,8 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
             unchecked
             {
                 var hashCode = BoostAmount;
+                hashCode = (hashCode*397) ^ MatchSpeedWinAmount;
+                hashCode = (hashCode*397) ^ ObjectivesCompletedAmount;
                 hashCode = (hashCode*397) ^ PerformanceXp;
                 hashCode = (hashCode*397) ^ PlayerRankXpAward;
                 hashCode = (hashCode*397) ^ PlayerTimePerformanceXpAward;

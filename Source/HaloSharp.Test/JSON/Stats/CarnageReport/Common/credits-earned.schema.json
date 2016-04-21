@@ -19,14 +19,22 @@
     },
     "BoostAmount": {
       "type": "integer"
+    },
+    "MatchSpeedWinAmount": {
+      "type": "integer"
+    },
+    "ObjectivesCompletedAmount": {
+      "type": "integer"
     }
   },
   "required": [
-	  "Result",
-	  "TotalCreditsEarned",
-	  "SpartanRankModifier",
-	  "PlayerRankAmount",
-	  "TimePlayedAmount",
-	  "BoostAmount"
+    "Result",
+    "TotalCreditsEarned",
+    "SpartanRankModifier",
+    "PlayerRankAmount",
+    "TimePlayedAmount",
+    "BoostAmount",
+    "MatchSpeedWinAmount",
+    "ObjectivesCompletedAmount"
   ]
 }

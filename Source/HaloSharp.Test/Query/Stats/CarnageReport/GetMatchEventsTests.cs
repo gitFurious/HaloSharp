@@ -70,6 +70,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
 
         [Test]
         [TestCase("d9323dc5-d1bd-4686-8e39-158cd360eca7")]
+        [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         public async Task GetMatchEvents_DoesNotThrow(string guid)
         {
             var query = new GetMatchEvents()
@@ -82,6 +83,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         }
 
         [Test]
+        [TestCase("d9323dc5-d1bd-4686-8e39-158cd360eca7")]
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         public async Task GetMatchEvents_SchemaIsValid(string guid)
         {
@@ -101,13 +103,14 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         }
 
         [Test]
+        [TestCase("d9323dc5-d1bd-4686-8e39-158cd360eca7")]
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         public async Task GetMatchEvents_ModelMatchesSchema(string guid)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.MatchEventsJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Config.MatchEventsModelJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MatchEventsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Config.MatchEventsModelJsonSchemaPath))
             });
 
             var query = new GetMatchEvents()
@@ -123,6 +126,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         }
 
         [Test]
+        [TestCase("d9323dc5-d1bd-4686-8e39-158cd360eca7")]
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         public async Task GetMatchEvents_IsSerializable(string guid)
         {
