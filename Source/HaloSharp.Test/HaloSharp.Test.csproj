@@ -86,6 +86,7 @@
     <Compile Include="Query\Stats\CarnageReport\GetCampaignMatchDetailsTests.cs" />
     <Compile Include="Query\Stats\CarnageReport\GetCustomMatchDetailsTests.cs" />
     <Compile Include="Query\Stats\CarnageReport\GetWarzoneMatchDetailsTests.cs" />
+    <Compile Include="Query\Stats\GetLeaderboardTests.cs" />
     <Compile Include="Query\Stats\GetMatchesTests.cs" />
     <Compile Include="Query\Stats\Lifetime\GetArenaServiceRecordTests.cs" />
     <Compile Include="Query\Stats\Lifetime\GetCampaignServiceRecordTests.cs" />
@@ -330,7 +331,13 @@
     <None Include="JSON\Stats\Lifetime\arena-service-record.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="JSON\Stats\leaderboard.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="JSON\Stats\matches.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\Stats\leaderboard.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="JSON\Stats\matches.schema.json">

@@ -66,5 +66,8 @@
 
         public const string MatchesJsonPath = "JSON/Stats/matches.json";
         public const string MatchesJsonSchemaPath = "JSON/Stats/matches.schema.json";
+
+        public const string LeaderboardJsonPath = "JSON/Stats/leaderboard.json";
+        public const string LeaderboardJsonSchemaPath = "JSON/Stats/leaderboard.schema.json";
     }
 }
