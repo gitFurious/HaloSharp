@@ -332,6 +332,13 @@ namespace HaloSharp.Model.Stats.Lifetime
         public CompetitiveSkillRanking Csr { get; set; }
 
         /// <summary>
+        /// Number represents within what percent of the top players the user is (top 2 percent for example). Can be null 
+        /// if list is not ranked or if player has not completed their measurement matches. Does not work for pre season.
+        /// </summary>
+        [JsonProperty(PropertyName = "CsrPercentile")]
+        public int? CsrPercentile { get; set; }
+
+        /// <summary>
         /// The highest Competitive Skill Ranking (CSR) achieved by the player. This is included because a player's CSR 
         /// can drop based on performance.
         /// </summary>
@@ -365,6 +372,7 @@ namespace HaloSharp.Model.Stats.Lifetime
 
             return base.Equals(other)
                 && Equals(Csr, other.Csr)
+                && CsrPercentile == other.CsrPercentile
                 && Equals(HighestCsr, other.HighestCsr)
                 && MeasurementMatchesLeft == other.MeasurementMatchesLeft
                 && PlaylistId.Equals(other.PlaylistId);
@@ -396,6 +404,7 @@ namespace HaloSharp.Model.Stats.Lifetime
             {
                 int hashCode = base.GetHashCode();
                 hashCode = (hashCode*397) ^ (Csr?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ CsrPercentile.GetHashCode();
                 hashCode = (hashCode*397) ^ (HighestCsr?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ MeasurementMatchesLeft;
                 hashCode = (hashCode*397) ^ PlaylistId.GetHashCode();
