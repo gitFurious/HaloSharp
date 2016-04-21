@@ -28,6 +28,12 @@
     },
     "BoostAmount": {
       "type": "integer"
+    },
+    "MatchSpeedWinAmount": {
+      "type": "integer"
+    },
+    "ObjectivesCompletedAmount": {
+      "type": "integer"
     }
   },
   "required": [
@@ -39,6 +45,8 @@
     "PlayerTimePerformanceXPAward",
     "PerformanceXP",
     "PlayerRankXPAward",
-    "BoostAmount"
+    "BoostAmount",
+    "MatchSpeedWinAmount",
+    "ObjectivesCompletedAmount"
   ]
 }

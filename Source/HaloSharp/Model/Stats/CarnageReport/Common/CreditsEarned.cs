@@ -13,6 +13,18 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         public int BoostAmount { get; set; }
 
         /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "MatchSpeedWinAmount")]
+        public int MatchSpeedWinAmount { get; set; }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "ObjectivesCompletedAmount")]
+        public int ObjectivesCompletedAmount { get; set; }
+
+        /// <summary>
         /// The portion of credits earned due to the player's team-agnostic rank in the match.
         /// </summary>
         [JsonProperty(PropertyName = "PlayerRankAmount")]
@@ -74,6 +86,8 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
             }
 
             return BoostAmount == other.BoostAmount
+                && MatchSpeedWinAmount == other.MatchSpeedWinAmount
+                && ObjectivesCompletedAmount == other.ObjectivesCompletedAmount
                 && PlayerRankAmount == other.PlayerRankAmount
                 && Result == other.Result
                 && SpartanRankModifier.Equals(other.SpartanRankModifier)
@@ -106,6 +120,8 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
             unchecked
             {
                 var hashCode = BoostAmount;
+                hashCode = (hashCode*397) ^ MatchSpeedWinAmount;
+                hashCode = (hashCode*397) ^ ObjectivesCompletedAmount;
                 hashCode = (hashCode*397) ^ PlayerRankAmount;
                 hashCode = (hashCode*397) ^ (int) Result;
                 hashCode = (hashCode*397) ^ SpartanRankModifier.GetHashCode();
