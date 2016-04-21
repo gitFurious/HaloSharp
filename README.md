@@ -56,6 +56,21 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.5.0.0 (2016-04-21)
+
+1. Stats Endpoints.
+  * Leaderboard for Season Playlists
+
+2. Updated MatchEvents model 
+  * New Event Types (Impulses, Medals, Player Spawns, Round Starts, Round Ends, Weapon Drops, Weapon Pickups, and Weapon Pickup Pads)
+
+3. Updated ArenaPlaylistStat model.
+  * New property: CsrPercentile
+
+4. Updated XpInfo/CreditsEarned models.
+  * New property: MatchSpeedWinAmount
+  * New property: ObjectivesCompletedAmount
+
 ###### v.1.4.4.0 (2016-04-21)
 
 1. Fixed the TimeSinceStart property on GameEvents. Should have been a TimeSpan from the start.
