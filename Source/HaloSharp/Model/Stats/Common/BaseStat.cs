@@ -440,7 +440,7 @@ namespace HaloSharp.Model.Stats.Common
         /// Any attachments the weapon had.
         /// </summary>
         [JsonProperty(PropertyName = "Attachments")]
-        public List<int> Attachments { get; set; }
+        public List<uint> Attachments { get; set; }
 
         /// <summary>
         /// The ID of the weapon. Weapons are available via the Metadata API.

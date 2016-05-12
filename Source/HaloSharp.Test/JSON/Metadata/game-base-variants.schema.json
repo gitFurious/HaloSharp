@@ -14,7 +14,7 @@
           "type": [ "null", "string" ]
         },
         "supportedGameModes": {
-          "type": "array",
+          "type": ["null", "array"],
           "additionalItems": false,
           "items": {
             "type": "string"

@@ -46,7 +46,7 @@
       "type": "integer"
     },
     "flair": {
-      "type": "null"
+      "type": [ "string", "null" ]
     },
     "stackedRequisitionPacks": {
       "type": "array",

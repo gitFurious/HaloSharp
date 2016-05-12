@@ -113,7 +113,8 @@ namespace HaloSharp.Model
             Warzone,
             WeaponProficiency,
             Goal,
-            Ball
+            Ball,
+            Infection
         }
 
         public enum OwnerType
@@ -137,11 +138,11 @@ namespace HaloSharp.Model
             None,
             New,
             Hot,
-            LeavingSoon,
+            [EnumMember(Value = "Leaving Soon")] LeavingSoon,
             [EnumMember(Value = "Maximum Value")] MaximumValue,
             [EnumMember(Value = "Limited Time")] Limitedtime,
             Featured,
-            BestSeller,
+            [EnumMember(Value = "Best Seller")] BestSeller,
             Popular
         }
 

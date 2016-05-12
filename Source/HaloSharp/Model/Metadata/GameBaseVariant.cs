@@ -76,7 +76,7 @@ namespace HaloSharp.Model.Metadata
                 && Id.Equals(other.Id)
                 && string.Equals(InternalName, other.InternalName)
                 && string.Equals(Name, other.Name)
-                && SupportedGameModes.OrderBy(sgm => sgm).SequenceEqual(other.SupportedGameModes.OrderBy(sgm => sgm));
+                && ((SupportedGameModes == null && other.SupportedGameModes == null) || (SupportedGameModes != null && other.SupportedGameModes != null && SupportedGameModes.OrderBy(ka => ka).SequenceEqual(other.SupportedGameModes.OrderBy(ka => ka))));
         }
 
         public override bool Equals(object obj)
