@@ -56,6 +56,10 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.5.1.0 (2016-05-12)
+
+1. Added new Medal Enum (Infection Hype!).
+
 ###### v.1.5.0.0 (2016-04-21)
 
 1. Stats Endpoints.
