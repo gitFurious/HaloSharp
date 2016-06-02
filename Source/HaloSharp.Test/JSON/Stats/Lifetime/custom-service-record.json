@@ -129,7 +129,8 @@
                             "Impulses":[
 
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -692,7 +693,8 @@
                                     "Count":3
                                 }
                             ],
-                            "TotalSpartanKills":47
+                            "TotalSpartanKills":47,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -918,7 +920,8 @@
                                     "Count":1
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         }
                     ],
                     "TopGameBaseVariants":[
@@ -1482,14 +1485,15 @@
                             "Count":1
                         }
                     ],
-                    "TotalSpartanKills":47
+                    "TotalSpartanKills":47,
+                    "FastestMatchWin":null
                 },
                 "PlayerId":{
                     "Gamertag":"Furiousn00b",
                     "Xuid":null
                 },
                 "SpartanRank":57,
-                "Xp":1139096
+                "Xp":1143896
             }
         }
     ],

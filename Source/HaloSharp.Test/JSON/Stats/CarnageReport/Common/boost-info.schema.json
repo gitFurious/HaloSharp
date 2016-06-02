@@ -1,0 +1,16 @@
+{
+  "type": [ "object", "null" ],
+  "additionalProperties": false,
+  "properties": {
+    "CardConsumed": {
+      "type": "boolean"
+    },
+    "DefinitionId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "CardConsumed",
+    "DefinitionId"
+  ]
+}

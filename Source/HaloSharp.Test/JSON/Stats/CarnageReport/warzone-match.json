@@ -247,6 +247,14 @@
                     "Progress":4
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"257e3408-c15b-42a0-948b-bd8027ca6d9d",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"NeonForce17",
                 "Xuid":null
@@ -619,7 +627,8 @@
                     "Count":3
                 }
             ],
-            "TotalSpartanKills":14
+            "TotalSpartanKills":14,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -669,7 +678,7 @@
                     "TotalKills":1
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 },
                 {
@@ -888,6 +897,14 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"91bb4cc3-145d-4dc9-8e2b-a7a2dad70b12",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"west Bogan",
                 "Xuid":null
@@ -1262,7 +1279,8 @@
                     "Count":2
                 }
             ],
-            "TotalSpartanKills":15
+            "TotalSpartanKills":15,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -1461,6 +1479,11 @@
                     "Progress":117
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"CRaZyAmBu5H",
                 "Xuid":null
@@ -1690,7 +1713,8 @@
                     "Count":2
                 }
             ],
-            "TotalSpartanKills":7
+            "TotalSpartanKills":7,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -1996,6 +2020,11 @@
                     "Progress":150
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Arex v10",
                 "Xuid":null
@@ -2487,7 +2516,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":19
+            "TotalSpartanKills":19,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -2746,6 +2776,11 @@
                     "Progress":57
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"EvilJaxar",
                 "Xuid":null
@@ -3098,7 +3133,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":6
+            "TotalSpartanKills":6,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -3235,6 +3271,11 @@
                     "Progress":1530
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"GimpZilla44",
                 "Xuid":null
@@ -3436,7 +3477,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":0
+            "TotalSpartanKills":0,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -3474,7 +3516,7 @@
                     "TotalKills":2
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 },
                 {
@@ -3488,7 +3530,7 @@
             ],
             "KilledByOpponentDetails":[
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":3
                 },
                 {
@@ -3723,6 +3765,11 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"NeXus 343",
                 "Xuid":null
@@ -4194,7 +4241,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":15
+            "TotalSpartanKills":15,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -4248,7 +4296,7 @@
                     "TotalKills":2
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":2
                 },
                 {
@@ -4286,7 +4334,7 @@
                     "TotalKills":1
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 },
                 {
@@ -4505,6 +4553,14 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"315c2d37-5d78-460a-9fa0-91b90bc42cad",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Nyxx Nemesis",
                 "Xuid":null
@@ -4938,7 +4994,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":24
+            "TotalSpartanKills":24,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -5143,6 +5200,14 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"6bff04ed-c831-4ae6-a0be-0c7bfed0fef7",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"musbomb99",
                 "Xuid":null
@@ -5409,7 +5474,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":7
+            "TotalSpartanKills":7,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -5703,6 +5769,11 @@
                     "Progress":13
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"ExistedLight",
                 "Xuid":null
@@ -6074,7 +6145,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":21
+            "TotalSpartanKills":21,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -6140,7 +6212,7 @@
                     "TotalKills":1
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 }
             ],
@@ -6162,7 +6234,7 @@
                     "TotalKills":2
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 },
                 {
@@ -6376,6 +6448,11 @@
                     "Progress":3
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Toeler",
                 "Xuid":null
@@ -6753,7 +6830,8 @@
                     "Count":2
                 }
             ],
-            "TotalSpartanKills":24
+            "TotalSpartanKills":24,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -6795,7 +6873,7 @@
                     "TotalKills":1
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":2
                 },
                 {
@@ -6994,6 +7072,11 @@
                     "Progress":2
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"GeneralMegarath",
                 "Xuid":null
@@ -7328,7 +7411,8 @@
                     "Count":3
                 }
             ],
-            "TotalSpartanKills":20
+            "TotalSpartanKills":20,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -7599,6 +7683,14 @@
                     "Progress":163
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"e05df769-06e8-44cd-9b68-88e8f87bfa70",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Furiousn00b",
                 "Xuid":null
@@ -7896,7 +7988,8 @@
                     "Count":2
                 }
             ],
-            "TotalSpartanKills":18
+            "TotalSpartanKills":18,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -7918,7 +8011,7 @@
                     "TotalKills":3
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":3
                 },
                 {
@@ -8157,6 +8250,14 @@
                     "Progress":3
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"53ab4701-1952-4743-8ff6-116e330dc7ea",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"EpiK TaL3nTz",
                 "Xuid":null
@@ -8502,7 +8603,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":25
+            "TotalSpartanKills":25,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -8532,7 +8634,7 @@
                     "TotalKills":3
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":3
                 },
                 {
@@ -8574,7 +8676,7 @@
                     "TotalKills":3
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":2
                 },
                 {
@@ -8829,6 +8931,14 @@
                     "Progress":3
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"1fcdd0b2-a1a4-40f0-88c5-b5398dd0301c",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Chimera28",
                 "Xuid":null
@@ -9308,7 +9418,8 @@
                     "Count":2
                 }
             ],
-            "TotalSpartanKills":25
+            "TotalSpartanKills":25,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -9607,6 +9718,14 @@
                     "Progress":726
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"ee3beb20-86c2-4edc-861f-7d0af726753f",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Anfony O",
                 "Xuid":null
@@ -10047,7 +10166,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":29
+            "TotalSpartanKills":29,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -10162,6 +10282,11 @@
                     "Progress":296
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Levi War 94",
                 "Xuid":null
@@ -10306,7 +10431,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":0
+            "TotalSpartanKills":0,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -10545,6 +10671,11 @@
                     "Progress":66
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"hakrog",
                 "Xuid":null
@@ -10886,7 +11017,8 @@
                     "Count":3
                 }
             ],
-            "TotalSpartanKills":9
+            "TotalSpartanKills":9,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -10920,7 +11052,7 @@
                     "TotalKills":2
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 },
                 {
@@ -11188,6 +11320,14 @@
                     "Progress":2
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"ba59266e-b6cd-4d1f-bd39-ddcc3c5f1a0f",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"a drunk moose",
                 "Xuid":null
@@ -11651,7 +11791,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":18
+            "TotalSpartanKills":18,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -11917,6 +12058,14 @@
                     "Progress":304
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"1fcdd0b2-a1a4-40f0-88c5-b5398dd0301c",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Bloodlettiing",
                 "Xuid":null
@@ -12253,7 +12402,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":14
+            "TotalSpartanKills":14,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -12291,7 +12441,7 @@
                     "TotalKills":2
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 },
                 {
@@ -12321,7 +12471,7 @@
                     "TotalKills":3
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 },
                 {
@@ -12549,6 +12699,14 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"1fcdd0b2-a1a4-40f0-88c5-b5398dd0301c",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Haydoz",
                 "Xuid":null
@@ -12938,7 +13096,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":15
+            "TotalSpartanKills":15,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -13208,6 +13367,11 @@
                     "Progress":44
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Vash 743",
                 "Xuid":null
@@ -13625,7 +13789,8 @@
                     "Count":3
                 }
             ],
-            "TotalSpartanKills":12
+            "TotalSpartanKills":12,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -13864,8 +14029,16 @@
                     "Progress":504
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"e05df769-06e8-44cd-9b68-88e8f87bfa70",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
-                "Gamertag":"DarkRebel23",
+                "Gamertag":"DireDingo23",
                 "Xuid":null
             },
             "TeamId":0,
@@ -14188,7 +14361,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":10
+            "TotalSpartanKills":10,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -14623,6 +14797,14 @@
                     "Progress":279
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"4de82333-be7e-4739-a4b5-94477340c83c",
+                "CardConsumed":true
+            },
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"DesperateOyster",
                 "Xuid":null
@@ -15091,7 +15273,8 @@
                     "Count":4
                 }
             ],
-            "TotalSpartanKills":43
+            "TotalSpartanKills":43,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -15171,7 +15354,7 @@
                     "TotalKills":2
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 }
             ],
@@ -15321,6 +15504,11 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"ZippierBird2845",
                 "Xuid":null
@@ -15623,7 +15811,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":14
+            "TotalSpartanKills":14,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -15641,7 +15830,7 @@
             },
             "KilledOpponentDetails":[
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 },
                 {
@@ -15695,7 +15884,7 @@
                     "TotalKills":1
                 },
                 {
-                    "GamerTag":"DarkRebel23",
+                    "GamerTag":"DireDingo23",
                     "TotalKills":1
                 }
             ],
@@ -15860,6 +16049,11 @@
                     "Progress":3
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"kwacka17",
                 "Xuid":null
@@ -16211,7 +16405,8 @@
                     "Count":2
                 }
             ],
-            "TotalSpartanKills":9
+            "TotalSpartanKills":9,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -16459,6 +16654,11 @@
                     "Progress":514
                 }
             ],
+            "BoostInfo":null,
+            "PveTotalRoundKillBonuses":null,
+            "PveTotalRoundAssistBonuses":null,
+            "PveTotalRoundSurvivalBonuses":null,
+            "PveTotalRoundSpeedBonuses":null,
             "Player":{
                 "Gamertag":"Mr Sneaky Jesus",
                 "Xuid":null
@@ -16813,7 +17013,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":15
+            "TotalSpartanKills":15,
+            "FastestMatchWin":null
         }
     ],
     "TeamStats":[

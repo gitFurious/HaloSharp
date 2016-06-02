@@ -38,7 +38,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         /// //TODO
         /// </summary>
         [JsonProperty(PropertyName = "PlayerScore")]
-        public object PlayerScore { get; set; }
+        public int? PlayerScore { get; set; }
 
         /// <summary>
         /// Internal use only. This will always be null.
@@ -81,7 +81,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 && DNF == other.DNF
                 && Equals(FlexibleStats, other.FlexibleStats)
                 && Equals(Player, other.Player)
-                && Equals(PlayerScore, other.PlayerScore)
+                && PlayerScore == other.PlayerScore
                 && Equals(PostMatchRatings, other.PostMatchRatings)
                 && Equals(PreMatchRatings, other.PreMatchRatings)
                 && Rank == other.Rank

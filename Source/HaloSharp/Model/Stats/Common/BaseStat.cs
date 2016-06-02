@@ -22,6 +22,13 @@ namespace HaloSharp.Model.Stats.Common
         public List<EnemySet> EnemyKills { get; set; }
 
         /// <summary>
+        /// TODO:
+        /// </summary>
+        [JsonProperty(PropertyName = "FastestMatchWin")]
+        [JsonConverter(typeof(TimeSpanConverter))]
+        public TimeSpan FastestMatchWin { get; set; }
+
+        /// <summary>
         /// The set of Impulses (invisible Medals) earned by the player.
         /// </summary>
         [JsonProperty(PropertyName = "Impulses")]
@@ -217,6 +224,7 @@ namespace HaloSharp.Model.Stats.Common
 
             return DestroyedEnemyVehicles.OrderBy(dev => dev.Enemy.BaseId).SequenceEqual(other.DestroyedEnemyVehicles.OrderBy(dev => dev.Enemy.BaseId))
                 && EnemyKills.OrderBy(dev => dev.Enemy.BaseId).SequenceEqual(other.EnemyKills.OrderBy(dev => dev.Enemy.BaseId))
+                && FastestMatchWin.Equals(other.FastestMatchWin)
                 && Impulses.OrderBy(i => i.Id).SequenceEqual(other.Impulses.OrderBy(i => i.Id))
                 && MedalAwards.OrderBy(ma => ma.MedalId).SequenceEqual(other.MedalAwards.OrderBy(ma => ma.MedalId))
                 && TotalAssassinations == other.TotalAssassinations
@@ -275,6 +283,7 @@ namespace HaloSharp.Model.Stats.Common
             {
                 var hashCode = DestroyedEnemyVehicles?.GetHashCode() ?? 0;
                 hashCode = (hashCode*397) ^ (EnemyKills?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ FastestMatchWin.GetHashCode();
                 hashCode = (hashCode*397) ^ (Impulses?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (MedalAwards?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ TotalAssassinations;

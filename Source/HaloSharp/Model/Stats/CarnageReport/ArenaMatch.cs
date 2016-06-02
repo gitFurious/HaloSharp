@@ -86,6 +86,12 @@ namespace HaloSharp.Model.Stats.CarnageReport
     public class ArenaMatchPlayerStat : BasePlayerStat, IEquatable<ArenaMatchPlayerStat>
     {
         /// <summary>
+        /// TODO: 
+        /// </summary>
+        [JsonProperty(PropertyName = "BoostInfo")]
+        public BoostInfo BoostInfo { get; set; }
+
+        /// <summary>
         /// Details on any credits the player may have earned from playing this match.
         /// </summary>
         [JsonProperty(PropertyName = "CreditsEarned")]
@@ -167,6 +173,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
 
             return base.Equals(other)
                 && Equals(CreditsEarned, other.CreditsEarned)
+                && Equals(BoostInfo, other.BoostInfo)
                 && Equals(CurrentCsr, other.CurrentCsr)
                 && KilledByOpponentDetails.OrderBy(kbod => kbod.GamerTag).SequenceEqual(other.KilledByOpponentDetails.OrderBy(kbod => kbod.GamerTag))
                 && KilledOpponentDetails.OrderBy(kod => kod.GamerTag).SequenceEqual(other.KilledOpponentDetails.OrderBy(kod => kod.GamerTag))
@@ -204,6 +211,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
             {
                 int hashCode = base.GetHashCode();
                 hashCode = (hashCode*397) ^ (CreditsEarned?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (BoostInfo?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (CurrentCsr?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (KilledByOpponentDetails?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (KilledOpponentDetails?.GetHashCode() ?? 0);

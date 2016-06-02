@@ -113,6 +113,9 @@
     "TotalSpartanKills": {
       "type": "integer"
     },
+    "FastestMatchWin": {
+      "type": [ "null", "string" ]
+    },
 
     "FlexibleStats": {
       "$ref": "../../common/flexible-stats.schema.json"
@@ -154,6 +157,7 @@
     "WeaponStats",
     "Impulses",
     "TotalSpartanKills",
+    "FastestMatchWin",
 
     "FlexibleStats",
     "GameBaseVariantId"

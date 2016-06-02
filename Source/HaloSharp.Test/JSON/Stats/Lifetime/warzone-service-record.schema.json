@@ -163,6 +163,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "ScenarioStats": {
           "type": "array",
@@ -207,6 +210,7 @@
         "WeaponStats",
         "Impulses",
         "TotalSpartanKills",
+        "FastestMatchWin",
 
         "ScenarioStats",
         "TotalPiesEarned"
@@ -327,6 +331,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "TotalPiesEarned": {
           "type": "integer"
@@ -374,6 +381,7 @@
         "WeaponStats",
         "Impulses",
         "TotalSpartanKills",
+        "FastestMatchWin",
 
         "TotalPiesEarned",
         "FlexibleStats",

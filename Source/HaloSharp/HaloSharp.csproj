@@ -86,6 +86,7 @@
     <Compile Include="Model\Profile\GetImage.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\Stats\CarnageReport\CampaignMatch.cs" />
+    <Compile Include="Model\Stats\CarnageReport\Common\BoostInfo.cs" />
     <Compile Include="Model\Stats\CarnageReport\Common\MetaCommendationDelta.cs" />
     <Compile Include="Model\Stats\CarnageReport\MatchEvents.cs" />
     <Compile Include="Model\Stats\Common\FlexibleStats.cs" />

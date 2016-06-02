@@ -163,6 +163,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "CustomGameBaseVariantStats": {
           "type": "array",
@@ -210,6 +213,7 @@
         "WeaponStats",
         "Impulses",
         "TotalSpartanKills",
+        "FastestMatchWin",
 
         "CustomGameBaseVariantStats",
         "TopGameBaseVariants"

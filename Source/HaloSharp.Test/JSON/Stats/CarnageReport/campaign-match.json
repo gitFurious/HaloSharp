@@ -503,7 +503,8 @@
                     "Count":8
                 }
             ],
-            "TotalSpartanKills":0
+            "TotalSpartanKills":0,
+            "FastestMatchWin":null
         },
         {
             "BiggestKillScore":0,
@@ -986,7 +987,8 @@
                     "Count":5
                 }
             ],
-            "TotalSpartanKills":0
+            "TotalSpartanKills":0,
+            "FastestMatchWin":null
         }
     ],
     "TotalMissionPlaythroughTime":"PT1H34.2947S",
