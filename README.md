@@ -56,6 +56,21 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.5.2.0 (2016-06-02)
+
+1. Updated Service Record models.
+  * New property: FastestMatchWin
+  
+1. Updated ArenaMatch model.
+  * New property: BoostInfo
+  
+1. Updated WarzoneMatch model.
+  * New property: BoostInfo
+  * New property: PveTotalRoundAssistBonuses
+  * New property: PveTotalRoundKillBonuses
+  * New property: PveTotalRoundSpeedBonuses
+  * New property: PveTotalRoundSurvivalBonuses
+  
 ###### v.1.5.1.0 (2016-05-12)
 
 1. Added new Medal Enum (Infection Hype!).
