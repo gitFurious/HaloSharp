@@ -115,6 +115,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "FlexibleStats": {
           "$ref": "../common/flexible-stats.schema.json"
@@ -141,7 +144,7 @@
           "type": "null"
         },
         "PlayerScore": {
-          "type": "null"
+          "type": [ "integer", "null" ]
         },
 
         "KilledOpponentDetails": {
@@ -190,6 +193,7 @@
         "WeaponStats",
         "Impulses",
         "TotalSpartanKills",
+        "FastestMatchWin",
 
         "FlexibleStats",
         "Player",

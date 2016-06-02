@@ -205,8 +205,9 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":null,
             "Player":{
-                "Gamertag":"Noble Watchman",
+                "Gamertag":"Hoch",
                 "Xuid":null
             },
             "TeamId":1,
@@ -455,7 +456,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":12
+            "TotalSpartanKills":12,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -479,7 +481,7 @@
             ],
             "KilledOpponentDetails":[
                 {
-                    "GamerTag":"Noble Watchman",
+                    "GamerTag":"Hoch",
                     "TotalKills":2
                 },
                 {
@@ -509,7 +511,7 @@
                     "TotalKills":2
                 },
                 {
-                    "GamerTag":"Noble Watchman",
+                    "GamerTag":"Hoch",
                     "TotalKills":1
                 }
             ],
@@ -601,6 +603,7 @@
                     "Progress":232
                 }
             ],
+            "BoostInfo":null,
             "Player":{
                 "Gamertag":"Sir Kitchel",
                 "Xuid":null
@@ -788,7 +791,8 @@
             "Impulses":[
 
             ],
-            "TotalSpartanKills":5
+            "TotalSpartanKills":5,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -986,6 +990,10 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"2ead1dc8-c82a-488b-a0b8-50cee41044be",
+                "CardConsumed":true
+            },
             "Player":{
                 "Gamertag":"HC PillarofFire",
                 "Xuid":null
@@ -1203,7 +1211,8 @@
             "Impulses":[
 
             ],
-            "TotalSpartanKills":11
+            "TotalSpartanKills":11,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -1419,6 +1428,10 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"4a917470-da82-42c1-8d46-d02fe4cdfea7",
+                "CardConsumed":true
+            },
             "Player":{
                 "Gamertag":"Greenskull",
                 "Xuid":null
@@ -1685,7 +1698,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":14
+            "TotalSpartanKills":14,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -1709,7 +1723,7 @@
             ],
             "KilledOpponentDetails":[
                 {
-                    "GamerTag":"Noble Watchman",
+                    "GamerTag":"Hoch",
                     "TotalKills":1
                 },
                 {
@@ -1731,7 +1745,7 @@
                     "TotalKills":2
                 },
                 {
-                    "GamerTag":"Noble Watchman",
+                    "GamerTag":"Hoch",
                     "TotalKills":2
                 },
                 {
@@ -1822,6 +1836,7 @@
                     "Progress":1936
                 }
             ],
+            "BoostInfo":null,
             "Player":{
                 "Gamertag":"iJ3NKiN5",
                 "Xuid":null
@@ -2031,7 +2046,8 @@
             "Impulses":[
 
             ],
-            "TotalSpartanKills":2
+            "TotalSpartanKills":2,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -2069,7 +2085,7 @@
                     "TotalKills":3
                 },
                 {
-                    "GamerTag":"Noble Watchman",
+                    "GamerTag":"Hoch",
                     "TotalKills":4
                 },
                 {
@@ -2163,6 +2179,7 @@
                     "Progress":963
                 }
             ],
+            "BoostInfo":null,
             "Player":{
                 "Gamertag":"Adriano 999xd",
                 "Xuid":null
@@ -2342,7 +2359,8 @@
             "Impulses":[
 
             ],
-            "TotalSpartanKills":2
+            "TotalSpartanKills":2,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -2378,7 +2396,7 @@
                     "TotalKills":3
                 },
                 {
-                    "GamerTag":"Noble Watchman",
+                    "GamerTag":"Hoch",
                     "TotalKills":1
                 },
                 {
@@ -2396,7 +2414,7 @@
                     "TotalKills":1
                 },
                 {
-                    "GamerTag":"Noble Watchman",
+                    "GamerTag":"Hoch",
                     "TotalKills":5
                 },
                 {
@@ -2517,6 +2535,10 @@
                     "Progress":1632
                 }
             ],
+            "BoostInfo":{
+                "DefinitionId":"1f7bd827-6090-4185-a2bf-7d0e1ac77a09",
+                "CardConsumed":true
+            },
             "Player":{
                 "Gamertag":"MasterlessSEAL",
                 "Xuid":null
@@ -2722,7 +2744,8 @@
             "Impulses":[
 
             ],
-            "TotalSpartanKills":11
+            "TotalSpartanKills":11,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -2762,7 +2785,7 @@
                     "TotalKills":1
                 },
                 {
-                    "GamerTag":"Noble Watchman",
+                    "GamerTag":"Hoch",
                     "TotalKills":1
                 }
             ],
@@ -2892,6 +2915,7 @@
                     "Progress":237
                 }
             ],
+            "BoostInfo":null,
             "Player":{
                 "Gamertag":"thanatosrequiem",
                 "Xuid":null
@@ -3094,7 +3118,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":11
+            "TotalSpartanKills":11,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -3290,6 +3315,7 @@
                     "Progress":1
                 }
             ],
+            "BoostInfo":null,
             "Player":{
                 "Gamertag":"Cyclonic Jet",
                 "Xuid":null
@@ -3528,7 +3554,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":7
+            "TotalSpartanKills":7,
+            "FastestMatchWin":null
         },
         {
             "XpInfo":{
@@ -3694,6 +3721,7 @@
                     "Progress":6
                 }
             ],
+            "BoostInfo":null,
             "Player":{
                 "Gamertag":"Headshot Deezy",
                 "Xuid":null
@@ -3930,7 +3958,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":8
+            "TotalSpartanKills":8,
+            "FastestMatchWin":null
         }
     ],
     "TeamStats":[

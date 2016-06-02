@@ -85,6 +85,12 @@ namespace HaloSharp.Model.Stats.CarnageReport
     public class WarzonePlayerStat : BasePlayerStat, IEquatable<WarzonePlayerStat>
     {
         /// <summary>
+        /// TODO: 
+        /// </summary>
+        [JsonProperty(PropertyName = "BoostInfo")]
+        public BoostInfo BoostInfo { get; set; }
+
+        /// <summary>
         /// Details on any credits the player may have earned from playing this match.
         /// </summary>
         [JsonProperty(PropertyName = "CreditsEarned")]
@@ -117,6 +123,30 @@ namespace HaloSharp.Model.Stats.CarnageReport
         /// </summary>
         [JsonProperty(PropertyName = "ProgressiveCommendationDeltas")]
         public List<ProgressiveCommendationDelta> ProgressiveCommendationDeltas { get; set; }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "PveTotalRoundAssistBonuses")]
+        public object PveTotalRoundAssistBonuses { get; set; }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "PveTotalRoundKillBonuses")]
+        public object PveTotalRoundKillBonuses { get; set; }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "PveTotalRoundSpeedBonuses")]
+        public object PveTotalRoundSpeedBonuses { get; set; }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "PveTotalRoundSurvivalBonuses")]
+        public object PveTotalRoundSurvivalBonuses { get; set; }
 
         /// <summary>
         /// The set of rewards that the player got in this match. Rewards are available via the Metadata API.
@@ -156,10 +186,15 @@ namespace HaloSharp.Model.Stats.CarnageReport
 
             return base.Equals(other)
                 && Equals(CreditsEarned, other.CreditsEarned)
+                && Equals(BoostInfo, other.BoostInfo)
                 && KilledByOpponentDetails.OrderBy(od => od.GamerTag).SequenceEqual(other.KilledByOpponentDetails.OrderBy(od => od.GamerTag))
                 && KilledOpponentDetails.OrderBy(od => od.GamerTag).SequenceEqual(other.KilledOpponentDetails.OrderBy(od => od.GamerTag))
                 && MetaCommendationDeltas.OrderBy(mcd => mcd.Id).SequenceEqual(other.MetaCommendationDeltas.OrderBy(mcd => mcd.Id))
                 && ProgressiveCommendationDeltas.OrderBy(pcd => pcd.Id).SequenceEqual(other.ProgressiveCommendationDeltas.OrderBy(pcd => pcd.Id))
+                && Equals(PveTotalRoundAssistBonuses, other.PveTotalRoundAssistBonuses)
+                && Equals(PveTotalRoundKillBonuses, other.PveTotalRoundKillBonuses)
+                && Equals(PveTotalRoundSpeedBonuses, other.PveTotalRoundSpeedBonuses)
+                && Equals(PveTotalRoundSurvivalBonuses, other.PveTotalRoundSurvivalBonuses)
                 && RewardSets.OrderBy(rs => rs.Id).SequenceEqual(other.RewardSets.OrderBy(rs => rs.Id))
                 && TotalPiesEarned == other.TotalPiesEarned
                 && WarzoneLevel == other.WarzoneLevel
@@ -192,10 +227,15 @@ namespace HaloSharp.Model.Stats.CarnageReport
             {
                 int hashCode = base.GetHashCode();
                 hashCode = (hashCode*397) ^ (CreditsEarned?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (BoostInfo?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (KilledByOpponentDetails?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (KilledOpponentDetails?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (MetaCommendationDeltas?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (ProgressiveCommendationDeltas?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (PveTotalRoundAssistBonuses?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (PveTotalRoundKillBonuses?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (PveTotalRoundSpeedBonuses?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (PveTotalRoundSurvivalBonuses?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (RewardSets?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ TotalPiesEarned;
                 hashCode = (hashCode*397) ^ WarzoneLevel;

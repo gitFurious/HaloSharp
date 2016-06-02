@@ -163,6 +163,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "CampaignMissionStats": {
           "type": "array",
@@ -204,6 +207,7 @@
         "WeaponStats",
         "Impulses",
         "TotalSpartanKills",
+        "FastestMatchWin",
 
         "CampaignMissionStats"
       ]
@@ -323,6 +327,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "FlexibleStats": {
           "$ref": "../common/flexible-stats.schema.json"
@@ -370,6 +377,7 @@
         "WeaponStats",
         "Impulses",
         "TotalSpartanKills",
+        "FastestMatchWin",
 
         "FlexibleStats",
         "CoopStats",

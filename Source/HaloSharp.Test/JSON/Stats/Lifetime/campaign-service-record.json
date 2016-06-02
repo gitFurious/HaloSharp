@@ -482,7 +482,8 @@
                                     "Count":15
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -592,7 +593,8 @@
                             "Impulses":[
 
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -1106,7 +1108,8 @@
                                     "Count":22
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -1546,7 +1549,8 @@
                                     "Count":17
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -1936,7 +1940,8 @@
                                     "Count":28
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -2529,7 +2534,8 @@
                                     "Count":22
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -2994,7 +3000,8 @@
                                     "Count":28
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -3399,7 +3406,8 @@
                                     "Count":8
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -3886,7 +3894,8 @@
                                     "Count":27
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -4280,7 +4289,8 @@
                                     "Count":31
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -4401,7 +4411,8 @@
                             "Impulses":[
 
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -4967,7 +4978,8 @@
                                     "Count":19
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -5089,7 +5101,8 @@
                             "Impulses":[
 
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -5612,7 +5625,8 @@
                                     "Count":17
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         },
                         {
                             "FlexibleStats":{
@@ -5951,7 +5965,8 @@
                                     "Count":14
                                 }
                             ],
-                            "TotalSpartanKills":0
+                            "TotalSpartanKills":0,
+                            "FastestMatchWin":null
                         }
                     ],
                     "TotalKills":4516,
@@ -6870,14 +6885,15 @@
                             "Count":248
                         }
                     ],
-                    "TotalSpartanKills":0
+                    "TotalSpartanKills":0,
+                    "FastestMatchWin":null
                 },
                 "PlayerId":{
                     "Gamertag":"Furiousn00b",
                     "Xuid":null
                 },
                 "SpartanRank":57,
-                "Xp":1139096
+                "Xp":1143896
             }
         }
     ],

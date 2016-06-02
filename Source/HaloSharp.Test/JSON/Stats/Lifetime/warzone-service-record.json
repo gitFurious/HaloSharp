@@ -698,7 +698,8 @@
                                     "Count":1
                                 }
                             ],
-                            "TotalSpartanKills":215
+                            "TotalSpartanKills":215,
+                            "FastestMatchWin":null
                         },
                         {
                             "TotalPiesEarned":3001,
@@ -1428,7 +1429,8 @@
                                     "Count":4
                                 }
                             ],
-                            "TotalSpartanKills":298
+                            "TotalSpartanKills":298,
+                            "FastestMatchWin":null
                         },
                         {
                             "TotalPiesEarned":2594,
@@ -2110,7 +2112,8 @@
                                     "Count":3
                                 }
                             ],
-                            "TotalSpartanKills":226
+                            "TotalSpartanKills":226,
+                            "FastestMatchWin":null
                         },
                         {
                             "TotalPiesEarned":1332,
@@ -2585,7 +2588,8 @@
                                     "Count":5
                                 }
                             ],
-                            "TotalSpartanKills":151
+                            "TotalSpartanKills":151,
+                            "FastestMatchWin":null
                         },
                         {
                             "TotalPiesEarned":5620,
@@ -3787,7 +3791,8 @@
                                     "Count":1
                                 }
                             ],
-                            "TotalSpartanKills":461
+                            "TotalSpartanKills":461,
+                            "FastestMatchWin":null
                         },
                         {
                             "TotalPiesEarned":7159,
@@ -4969,7 +4974,8 @@
                                     "Count":3
                                 }
                             ],
-                            "TotalSpartanKills":616
+                            "TotalSpartanKills":616,
+                            "FastestMatchWin":null
                         },
                         {
                             "TotalPiesEarned":2441,
@@ -5842,7 +5848,8 @@
                                     "Count":37
                                 }
                             ],
-                            "TotalSpartanKills":206
+                            "TotalSpartanKills":206,
+                            "FastestMatchWin":null
                         },
                         {
                             "TotalPiesEarned":5926,
@@ -7142,7 +7149,8 @@
                                     "Count":1
                                 }
                             ],
-                            "TotalSpartanKills":464
+                            "TotalSpartanKills":464,
+                            "FastestMatchWin":null
                         }
                     ],
                     "TotalKills":3551,
@@ -8869,14 +8877,15 @@
                             "Count":9
                         }
                     ],
-                    "TotalSpartanKills":2637
+                    "TotalSpartanKills":2637,
+                    "FastestMatchWin":null
                 },
                 "PlayerId":{
                     "Gamertag":"Furiousn00b",
                     "Xuid":null
                 },
                 "SpartanRank":57,
-                "Xp":1139096
+                "Xp":1143896
             }
         }
     ],

@@ -3,7 +3,7 @@
         {
             "KilledOpponentDetails":[
                 {
-                    "GamerTag":"Drax 122",
+                    "GamerTag":"Drax",
                     "TotalKills":5
                 },
                 {
@@ -17,7 +17,7 @@
                     "TotalKills":7
                 },
                 {
-                    "GamerTag":"Drax 122",
+                    "GamerTag":"Drax",
                     "TotalKills":8
                 }
             ],
@@ -78,7 +78,7 @@
                 ]
             },
             "Player":{
-                "Gamertag":"Berserk on XBL",
+                "Gamertag":"Tyrael",
                 "Xuid":null
             },
             "TeamId":1,
@@ -245,7 +245,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":6
+            "TotalSpartanKills":6,
+            "FastestMatchWin":null
         },
         {
             "KilledOpponentDetails":[
@@ -254,7 +255,7 @@
                     "TotalKills":3
                 },
                 {
-                    "GamerTag":"Drax 122",
+                    "GamerTag":"Drax",
                     "TotalKills":1
                 }
             ],
@@ -412,12 +413,13 @@
             "Impulses":[
 
             ],
-            "TotalSpartanKills":4
+            "TotalSpartanKills":4,
+            "FastestMatchWin":null
         },
         {
             "KilledOpponentDetails":[
                 {
-                    "GamerTag":"Berserk on XBL",
+                    "GamerTag":"Tyrael",
                     "TotalKills":7
                 }
             ],
@@ -427,7 +429,7 @@
                     "TotalKills":3
                 },
                 {
-                    "GamerTag":"Berserk on XBL",
+                    "GamerTag":"Tyrael",
                     "TotalKills":1
                 }
             ],
@@ -637,18 +639,19 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":7
+            "TotalSpartanKills":7,
+            "FastestMatchWin":null
         },
         {
             "KilledOpponentDetails":[
                 {
-                    "GamerTag":"Berserk on XBL",
+                    "GamerTag":"Tyrael",
                     "TotalKills":8
                 }
             ],
             "KilledByOpponentDetails":[
                 {
-                    "GamerTag":"Berserk on XBL",
+                    "GamerTag":"Tyrael",
                     "TotalKills":5
                 },
                 {
@@ -713,7 +716,7 @@
                 ]
             },
             "Player":{
-                "Gamertag":"Drax 122",
+                "Gamertag":"Drax",
                 "Xuid":null
             },
             "TeamId":0,
@@ -902,7 +905,8 @@
                     "Count":1
                 }
             ],
-            "TotalSpartanKills":8
+            "TotalSpartanKills":8,
+            "FastestMatchWin":null
         }
     ],
     "TeamStats":[

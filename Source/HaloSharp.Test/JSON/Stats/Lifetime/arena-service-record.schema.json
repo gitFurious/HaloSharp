@@ -163,6 +163,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "ArenaPlaylistStats": {
           "type": "array",
@@ -171,11 +174,11 @@
           }
         },
         "ArenaPlaylistStatsSeasonId": {
-          "type": ["null", "string"]
+          "type": [ "null", "string" ]
         },
         "HighestCsrAttained": {
-            "$ref": "../common/competitive-skill-ranking.schema.json"
-          },
+          "$ref": "../common/competitive-skill-ranking.schema.json"
+        },
         "ArenaGameBaseVariantStats": {
           "type": "array",
           "items": {
@@ -192,7 +195,7 @@
           "type": [ "null", "string" ]
         },
         "HighestCsrSeasonId": {
-          "type": ["null", "string"]
+          "type": [ "null", "string" ]
         }
       },
       "required": [
@@ -228,6 +231,7 @@
           "WeaponStats",
           "Impulses",
           "TotalSpartanKills",
+        "FastestMatchWin",
 
           "ArenaPlaylistStats",
           "ArenaPlaylistStatsSeasonId",
@@ -353,6 +357,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "PlaylistId": {
           "type": "string"
@@ -367,7 +374,7 @@
           "$ref": "../common/competitive-skill-ranking.schema.json"
         },
         "CsrPercentile": {
-          "type": ["null", "integer"]
+          "type": [ "null", "integer" ]
         }
       },
       "required": [
@@ -403,6 +410,7 @@
         "WeaponStats",
         "Impulses",
         "TotalSpartanKills",
+        "FastestMatchWin",
 
         "PlaylistId",
         "MeasurementMatchesLeft",

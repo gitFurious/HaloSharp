@@ -115,6 +115,9 @@
         "TotalSpartanKills": {
           "type": "integer"
         },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
 
         "FlexibleStats": {
           "$ref": "../common/flexible-stats.schema.json"
@@ -141,9 +144,12 @@
           "type": "null"
         },
         "PlayerScore": {
-          "type": "null"
+          "type": [ "integer", "null" ]
         },
 
+        "BoostInfo": {
+          "$ref": "common/boost-info.schema.json"
+        },
         "CreditsEarned": {
           "$ref": "common/credits-earned.schema.json"
         },
@@ -170,6 +176,18 @@
           "items": {
             "$ref": "common/progressive-commendation-delta.schema.json"
           }
+        },
+        "PveTotalRoundAssistBonuses": {
+          "type": "null"
+        },
+        "PveTotalRoundKillBonuses": {
+          "type": "null"
+        },
+        "PveTotalRoundSpeedBonuses": {
+          "type": "null"
+        },
+        "PveTotalRoundSurvivalBonuses": {
+          "type": "null"
         },
         "WarzoneLevel": {
           "type": "integer"
@@ -220,6 +238,7 @@
         "WeaponStats",
         "Impulses",
         "TotalSpartanKills",
+        "FastestMatchWin",
 
         "FlexibleStats",
         "Player",
@@ -231,11 +250,16 @@
         "PostMatchRatings",
         "PlayerScore",
 
+        "BoostInfo",
         "CreditsEarned",
         "KilledOpponentDetails",
         "KilledByOpponentDetails",
         "MetaCommendationDeltas",
         "ProgressiveCommendationDeltas",
+        "PveTotalRoundAssistBonuses",
+        "PveTotalRoundKillBonuses",
+        "PveTotalRoundSpeedBonuses",
+        "PveTotalRoundSurvivalBonuses",
         "TotalPiesEarned",
         "WarzoneLevel",
         "RewardSets",
