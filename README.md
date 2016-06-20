@@ -56,6 +56,11 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.5.3.0 (2016-06-20)
+
+1. Updated Warzone Match model.
+  * New property: ObjectivesCompleted
+
 ###### v.1.5.2.0 (2016-06-02)
 
 1. Updated Service Record models.
