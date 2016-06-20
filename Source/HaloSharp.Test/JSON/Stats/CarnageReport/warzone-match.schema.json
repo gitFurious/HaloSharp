@@ -305,6 +305,9 @@
     "MapVariantResourceId": {
       "$ref": "../common/variant.schema.json"
     },
+    "ObjectivesCompleted": {
+      "type": [ "integer", "null" ]
+    },
 
     "PlayerStats": {
       "type": "array",
