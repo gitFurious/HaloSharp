@@ -10,6 +10,12 @@ namespace HaloSharp.Model.Stats.CarnageReport
     public class WarzoneMatch : BaseMatch, IEquatable<WarzoneMatch>
     {
         /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "ObjectivesCompleted")]
+        public int? ObjectivesCompleted { get; set; }
+
+        /// <summary>
         /// A list of stats for each player who was present in the match.
         /// </summary>
         [JsonProperty(PropertyName = "PlayerStats")]
@@ -35,6 +41,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
             }
 
             return base.Equals(other)
+                && ObjectivesCompleted == other.ObjectivesCompleted
                 && PlayerStats.OrderBy(ps => ps.Player.Gamertag).SequenceEqual(other.PlayerStats.OrderBy(ps => ps.Player.Gamertag))
                 && TeamStats.OrderBy(ts => ts.TeamId).SequenceEqual(other.TeamStats.OrderBy(ts => ts.TeamId));
         }
@@ -64,6 +71,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
             unchecked
             {
                 int hashCode = base.GetHashCode();
+                hashCode = (hashCode*397) ^ ObjectivesCompleted.GetHashCode();
                 hashCode = (hashCode*397) ^ (PlayerStats?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (TeamStats?.GetHashCode() ?? 0);
                 return hashCode;
