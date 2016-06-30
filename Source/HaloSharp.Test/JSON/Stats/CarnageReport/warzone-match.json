@@ -95,6 +95,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -109,12 +113,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":14
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":0
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":14
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -123,6 +127,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":19
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":0
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -266,6 +274,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":20,
             "TotalHeadshots":4,
             "TotalWeaponDamage":4374.52908706665,
@@ -729,6 +738,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":2
                     },
@@ -743,12 +756,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":15
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":15
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -757,6 +770,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":14
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":1
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -916,6 +933,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":22,
             "TotalHeadshots":7,
             "TotalWeaponDamage":3725.7359231114388,
@@ -1357,6 +1375,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -1371,12 +1393,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":7
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":7
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -1385,6 +1407,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":5
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":1
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -1495,6 +1521,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":0,
             "TotalKills":10,
             "TotalHeadshots":5,
             "TotalWeaponDamage":1532.1124267578125,
@@ -1823,6 +1850,10 @@
                         "Count":1
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":3
                     },
@@ -1837,12 +1868,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":19
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":2
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":19
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -1851,6 +1882,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":18
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":2
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -2036,6 +2071,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":26,
             "TotalHeadshots":3,
             "TotalWeaponDamage":6124.1451400816441,
@@ -2614,6 +2650,10 @@
                         "Count":1
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":1
                     },
@@ -2628,12 +2668,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":6
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":3
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":6
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -2642,6 +2682,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":24
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":3
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -2792,6 +2836,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":12,
             "TotalHeadshots":2,
             "TotalWeaponDamage":2928.98623752594,
@@ -3184,6 +3229,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -3198,12 +3247,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
                         "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":0
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -3212,6 +3261,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":4
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":1
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -3287,6 +3340,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":0,
             "TotalKills":4,
             "TotalHeadshots":1,
             "TotalWeaponDamage":691.15042304992676,
@@ -3575,6 +3629,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -3589,12 +3647,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":15
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":15
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -3603,6 +3661,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":16
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":1
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -3781,6 +3843,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":21,
             "TotalHeadshots":5,
             "TotalWeaponDamage":4184.4783186912537,
@@ -4355,6 +4418,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -4369,12 +4436,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":24
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":24
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -4383,6 +4450,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":16
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":1
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -4572,6 +4643,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":41,
             "TotalHeadshots":11,
             "TotalWeaponDamage":7151.5864682197571,
@@ -5088,6 +5160,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":1
                     },
@@ -5102,12 +5178,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":7
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":0
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":7
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -5116,6 +5192,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":27
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":0
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -5219,6 +5299,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":11,
             "TotalHeadshots":2,
             "TotalWeaponDamage":2820.9919843673706,
@@ -5580,6 +5661,10 @@
                         "Count":1
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -5594,12 +5679,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":21
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":3
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":21
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -5608,6 +5693,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":22
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":3
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -5785,6 +5874,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":27,
             "TotalHeadshots":3,
             "TotalWeaponDamage":3757.3464759588242,
@@ -6275,6 +6365,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":4
                     },
@@ -6289,12 +6383,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":24
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":2
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":24
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -6303,6 +6397,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":21
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":2
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -6464,6 +6562,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":29,
             "TotalHeadshots":12,
             "TotalWeaponDamage":4579.1849365234375,
@@ -6920,6 +7019,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":3
                     },
@@ -6934,12 +7037,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":20
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":2
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":20
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -6948,6 +7051,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":8
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":2
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -7088,6 +7195,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":29,
             "TotalHeadshots":8,
             "TotalWeaponDamage":5038.7318962216377,
@@ -7521,6 +7629,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":2
                     },
@@ -7535,12 +7647,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":18
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":18
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -7549,6 +7661,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":19
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":1
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -7702,6 +7818,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":24,
             "TotalHeadshots":9,
             "TotalWeaponDamage":7239.1269655227661,
@@ -8098,6 +8215,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":2
                     },
@@ -8112,12 +8233,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":25
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":2
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":25
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -8126,6 +8247,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":24
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":2
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -8269,6 +8394,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":34,
             "TotalHeadshots":23,
             "TotalWeaponDamage":6188.7553460597992,
@@ -8713,6 +8839,10 @@
                         "Count":1
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":2
                     },
@@ -8727,12 +8857,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":25
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":3
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":25
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -8741,6 +8871,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":21
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":3
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -8950,6 +9084,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":42,
             "TotalHeadshots":16,
             "TotalWeaponDamage":7391.465386390686,
@@ -9540,6 +9675,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":4
                     },
@@ -9554,12 +9693,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":29
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":3
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":29
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -9568,6 +9707,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":21
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":3
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -9737,6 +9880,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":44,
             "TotalHeadshots":17,
             "TotalWeaponDamage":6333.045844078064,
@@ -10205,6 +10349,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -10219,12 +10367,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
                         "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":0
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -10232,6 +10380,10 @@
                     },
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
+                        "Count":1
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
                         "Count":1
                     },
                     {
@@ -10298,6 +10450,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":0,
             "TotalKills":0,
             "TotalHeadshots":0,
             "TotalWeaponDamage":54.599998474121094,
@@ -10529,6 +10682,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":3
                     },
@@ -10543,12 +10700,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":9
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":3
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":9
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -10557,6 +10714,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":18
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":3
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -10687,6 +10848,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":14,
             "TotalHeadshots":5,
             "TotalWeaponDamage":3282.7033681869507,
@@ -11123,6 +11285,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":6
                     },
@@ -11137,12 +11303,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":18
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":18
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -11151,6 +11317,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":17
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":1
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -11339,6 +11509,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":36,
             "TotalHeadshots":10,
             "TotalWeaponDamage":5493.7430473566055,
@@ -11905,6 +12076,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -11919,12 +12094,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":14
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":0
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":14
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -11933,6 +12108,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":18
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":0
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -12077,6 +12256,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":21,
             "TotalHeadshots":11,
             "TotalWeaponDamage":3778.7900428771973,
@@ -12516,6 +12696,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -12530,12 +12714,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":15
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":1
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":15
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -12544,6 +12728,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":23
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":1
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -12718,6 +12906,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":37,
             "TotalHeadshots":11,
             "TotalWeaponDamage":4286.9164094924927,
@@ -13210,6 +13399,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":3
                     },
@@ -13224,12 +13417,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":12
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":4
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":12
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -13238,6 +13431,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":19
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":4
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -13383,6 +13580,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":28,
             "TotalHeadshots":16,
             "TotalWeaponDamage":3588.2222800254822,
@@ -13891,6 +14089,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":1
                     },
@@ -13905,12 +14107,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":10
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":3
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":10
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -13919,6 +14121,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":18
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":3
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -14048,6 +14254,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":16,
             "TotalHeadshots":1,
             "TotalWeaponDamage":3673.7762899398804,
@@ -14483,6 +14690,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":4
                     },
@@ -14497,12 +14708,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":43
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":2
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":43
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -14511,6 +14722,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":23
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":2
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -14816,6 +15031,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":54,
             "TotalHeadshots":17,
             "TotalWeaponDamage":8620.2443623542786,
@@ -15371,6 +15587,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":0
                     },
@@ -15385,12 +15605,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":14
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":0
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":14
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -15399,6 +15619,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":16
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":0
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -15520,6 +15744,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":18,
             "TotalHeadshots":4,
             "TotalWeaponDamage":2519.1559902429581,
@@ -15901,6 +16126,10 @@
                         "Count":1
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":2
                     },
@@ -15915,12 +16144,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":9
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":2
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":9
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -15929,6 +16158,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":12
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":2
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -16065,6 +16298,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":16,
             "TotalHeadshots":6,
             "TotalWeaponDamage":2732.1378154754639,
@@ -16507,6 +16741,10 @@
                         "Count":0
                     },
                     {
+                        "Id":"3cc3c9a3-c9cc-4c42-991a-c7b91085eefb",
+                        "Count":0
+                    },
+                    {
                         "Id":"dfe11eb0-6064-4cbe-98fe-502be1e03a80",
                         "Count":3
                     },
@@ -16521,12 +16759,12 @@
                 ],
                 "ImpulseStatCounts":[
                     {
-                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
-                        "Count":15
+                        "Id":"d0913791-f9bd-4d81-839d-1f3dfe293729",
+                        "Count":0
                     },
                     {
-                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
-                        "Count":4
+                        "Id":"ba327946-418c-495d-90c0-89f084bf7447",
+                        "Count":15
                     },
                     {
                         "Id":"7dcd7306-f905-401a-97f2-345d4b25170a",
@@ -16535,6 +16773,10 @@
                     {
                         "Id":"ea38d25f-d887-4bdf-b17b-8e8e649b9a87",
                         "Count":11
+                    },
+                    {
+                        "Id":"63783dc0-7c2d-436a-bd5b-22da2f4705d4",
+                        "Count":4
                     },
                     {
                         "Id":"6240aca5-0dbb-44d0-9ce2-3a9e9319113e",
@@ -16670,6 +16912,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":20,
             "TotalHeadshots":5,
             "TotalWeaponDamage":4040.1171092987061,
@@ -17043,6 +17286,7 @@
             ]
         }
     ],
+    "ObjectivesCompleted":null,
     "IsMatchOver":true,
     "TotalDuration":"PT22M21.4016482S",
     "MapVariantId":"a6467282-462a-414d-9b08-51a54e723c5d",

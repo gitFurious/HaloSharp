@@ -5,13 +5,13 @@
         "additionalProperties": false,
         "properties": {
           "name": {
-            "type": "string"
+            "type": [ "string", "null" ]
           },
           "description": {
             "type": [ "string", "null" ]
           },
           "supportedGameModes": {
-            "type": "array",
+            "type": [ "array", "null" ],
             "additionalItems": false,
             "items": {
               "type": "string"

@@ -146,6 +146,9 @@
         "PlayerScore": {
           "type": [ "integer", "null" ]
         },
+        "GameEndStatus": {
+          "type": "integer"
+        },
 
         "XpInfo": {
           "$ref": "common/xp-info.schema.json"
@@ -240,6 +243,7 @@
         "PreMatchRatings",
         "PostMatchRatings",
         "PlayerScore",
+        "GameEndStatus",
 
         "XpInfo",
         "PreviousCsr",

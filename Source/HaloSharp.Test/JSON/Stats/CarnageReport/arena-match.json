@@ -98,6 +98,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":1
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -217,6 +221,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":12,
             "TotalHeadshots":6,
             "TotalWeaponDamage":1467.7099599838257,
@@ -551,6 +556,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":0
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -615,6 +624,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":5,
             "TotalHeadshots":2,
             "TotalWeaponDamage":864.14193725585937,
@@ -903,6 +913,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":0
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -1005,6 +1019,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":11,
             "TotalHeadshots":3,
             "TotalWeaponDamage":1815.7189826965332,
@@ -1316,6 +1331,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":1
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -1443,6 +1462,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":14,
             "TotalHeadshots":3,
             "TotalWeaponDamage":1672.7500877380371,
@@ -1789,6 +1809,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":1
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -1848,6 +1872,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":2,
             "TotalHeadshots":0,
             "TotalWeaponDamage":1025.0544619560242,
@@ -2137,6 +2162,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":1
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -2191,6 +2220,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":2,
             "TotalHeadshots":0,
             "TotalWeaponDamage":426.73699474334717,
@@ -2458,6 +2488,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":0
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -2550,6 +2584,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":11,
             "TotalHeadshots":4,
             "TotalWeaponDamage":1462.8488206863403,
@@ -2843,6 +2878,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":0
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -2927,6 +2966,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":1,
             "TotalKills":11,
             "TotalHeadshots":2,
             "TotalWeaponDamage":1402.913147687912,
@@ -3218,6 +3258,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":1
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -3327,6 +3371,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":7,
             "TotalHeadshots":1,
             "TotalWeaponDamage":690.81409740448,
@@ -3649,6 +3694,10 @@
                     {
                         "Id":"71ce2293-23bb-492f-a8c0-46e095b55eb7",
                         "Count":2
+                    },
+                    {
+                        "Id":"ba1b0043-3a1e-4894-a04f-f8d889103ec5",
+                        "Count":0
                     }
                 ],
                 "MedalTimelapses":[
@@ -3733,6 +3782,7 @@
             "PreMatchRatings":null,
             "PostMatchRatings":null,
             "PlayerScore":null,
+            "GameEndStatus":3,
             "TotalKills":8,
             "TotalHeadshots":1,
             "TotalWeaponDamage":816.34618949890137,

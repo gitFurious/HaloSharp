@@ -31,6 +31,12 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         /// <summary>
         /// //TODO
         /// </summary>
+        [JsonProperty(PropertyName = "GameEndStatus")]
+        public int GameEndStatus { get; set; }
+
+        /// <summary>
+        /// //TODO
+        /// </summary>
         [JsonProperty(PropertyName = "Player")]
         public Identity Player { get; set; }
 
@@ -80,6 +86,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 && AvgLifeTimeOfPlayer.Equals(other.AvgLifeTimeOfPlayer)
                 && DNF == other.DNF
                 && Equals(FlexibleStats, other.FlexibleStats)
+                && GameEndStatus == other.GameEndStatus
                 && Equals(Player, other.Player)
                 && PlayerScore == other.PlayerScore
                 && Equals(PostMatchRatings, other.PostMatchRatings)
@@ -116,6 +123,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 hashCode = (hashCode*397) ^ AvgLifeTimeOfPlayer.GetHashCode();
                 hashCode = (hashCode*397) ^ DNF.GetHashCode();
                 hashCode = (hashCode*397) ^ (FlexibleStats?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ GameEndStatus;
                 hashCode = (hashCode*397) ^ (Player?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (PlayerScore?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ (PostMatchRatings?.GetHashCode() ?? 0);
