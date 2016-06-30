@@ -146,6 +146,9 @@
         "PlayerScore": {
           "type": [ "integer", "null" ]
         },
+        "GameEndStatus": {
+          "type": "integer"
+        },
 
         "Score": {
           "type": "integer"
@@ -201,6 +204,7 @@
         "PreMatchRatings",
         "PostMatchRatings",
         "PlayerScore",
+        "GameEndStatus",
 
         "Score",
         "CharacterIndex",

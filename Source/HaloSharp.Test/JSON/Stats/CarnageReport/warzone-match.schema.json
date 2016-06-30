@@ -146,6 +146,9 @@
         "PlayerScore": {
           "type": [ "integer", "null" ]
         },
+        "GameEndStatus": {
+          "type": "integer"
+        },
 
         "BoostInfo": {
           "$ref": "common/boost-info.schema.json"
@@ -249,6 +252,7 @@
         "PreMatchRatings",
         "PostMatchRatings",
         "PlayerScore",
+        "GameEndStatus",
 
         "BoostInfo",
         "CreditsEarned",

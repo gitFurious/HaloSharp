@@ -146,6 +146,9 @@
         "PlayerScore": {
           "type": [ "integer", "null" ]
         },
+        "GameEndStatus": {
+          "type": "integer"
+        },
 
         "KilledOpponentDetails": {
           "type": "array",
@@ -204,6 +207,7 @@
         "PreMatchRatings",
         "PostMatchRatings",
         "PlayerScore",
+        "GameEndStatus",
 
         "KilledOpponentDetails",
         "KilledByOpponentDetails"
