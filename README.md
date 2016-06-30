@@ -56,6 +56,11 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.5.4.0 (2016-06-30)
+
+1. Updated Player Stat model.
+  * New property: GameEndStatus
+
 ###### v.1.5.3.0 (2016-06-20)
 
 1. Updated Warzone Match model.
