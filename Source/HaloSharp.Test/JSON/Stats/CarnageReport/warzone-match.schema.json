@@ -181,16 +181,16 @@
           }
         },
         "PveTotalRoundAssistBonuses": {
-          "type": "null"
+          "type": [ "integer", "null" ]
         },
         "PveTotalRoundKillBonuses": {
-          "type": "null"
+          "type": [ "integer", "null" ]
         },
         "PveTotalRoundSpeedBonuses": {
-          "type": "null"
+          "type": [ "integer", "null" ]
         },
         "PveTotalRoundSurvivalBonuses": {
-          "type": "null"
+          "type": [ "integer", "null" ]
         },
         "WarzoneLevel": {
           "type": "integer"

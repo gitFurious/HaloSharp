@@ -136,25 +136,25 @@ namespace HaloSharp.Model.Stats.CarnageReport
         /// TODO
         /// </summary>
         [JsonProperty(PropertyName = "PveTotalRoundAssistBonuses")]
-        public object PveTotalRoundAssistBonuses { get; set; }
+        public int? PveTotalRoundAssistBonuses { get; set; }
 
         /// <summary>
         /// TODO
         /// </summary>
         [JsonProperty(PropertyName = "PveTotalRoundKillBonuses")]
-        public object PveTotalRoundKillBonuses { get; set; }
+        public int? PveTotalRoundKillBonuses { get; set; }
 
         /// <summary>
         /// TODO
         /// </summary>
         [JsonProperty(PropertyName = "PveTotalRoundSpeedBonuses")]
-        public object PveTotalRoundSpeedBonuses { get; set; }
+        public int? PveTotalRoundSpeedBonuses { get; set; }
 
         /// <summary>
         /// TODO
         /// </summary>
         [JsonProperty(PropertyName = "PveTotalRoundSurvivalBonuses")]
-        public object PveTotalRoundSurvivalBonuses { get; set; }
+        public int? PveTotalRoundSurvivalBonuses { get; set; }
 
         /// <summary>
         /// The set of rewards that the player got in this match. Rewards are available via the Metadata API.
