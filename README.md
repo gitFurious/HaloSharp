@@ -56,6 +56,14 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.5.5.0 (2016-07-16)
+
+1. Updated WarzoneMatch model.
+  * Updated: PveTotalRoundAssistBonuses
+  * Updated: PveTotalRoundKillBonuses
+  * Updated: PveTotalRoundSpeedBonuses
+  * Updated: PveTotalRoundSurvivalBonuses
+
 ###### v.1.5.4.0 (2016-06-30)
 
 1. Updated Player Stat model.
