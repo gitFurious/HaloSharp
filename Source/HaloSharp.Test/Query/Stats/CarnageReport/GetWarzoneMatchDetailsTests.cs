@@ -71,6 +71,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         [TestCase("04725707-da3f-407c-b43c-5f2b8bceb50a")]
+        [TestCase("3bd3945a-3578-4726-aad2-89b2c014a2ad")]
         public async Task GetWarzoneMatchDetails_DoesNotThrow(string guid)
         {
             var query = new GetWarzoneMatchDetails()
@@ -85,6 +86,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         [TestCase("04725707-da3f-407c-b43c-5f2b8bceb50a")]
+        [TestCase("3bd3945a-3578-4726-aad2-89b2c014a2ad")]
         public async Task GetWarzoneMatchDetails_SchemaIsValid(string guid)
         {
             var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.WarzoneMatchJsonSchemaPath), new JSchemaReaderSettings
@@ -105,6 +107,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         [TestCase("04725707-da3f-407c-b43c-5f2b8bceb50a")]
+        [TestCase("3bd3945a-3578-4726-aad2-89b2c014a2ad")]
         public async Task GetWarzoneMatchDetails_ModelMatchesSchema(string guid)
         {
             var schema = JSchema.Parse(File.ReadAllText(Config.WarzoneMatchJsonSchemaPath), new JSchemaReaderSettings
@@ -128,6 +131,7 @@ namespace HaloSharp.Test.Query.Stats.CarnageReport
         [Test]
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         [TestCase("04725707-da3f-407c-b43c-5f2b8bceb50a")]
+        [TestCase("3bd3945a-3578-4726-aad2-89b2c014a2ad")]
         public async Task GetWarzoneMatchDetails_IsSerializable(string guid)
         {
             var query = new GetWarzoneMatchDetails()
