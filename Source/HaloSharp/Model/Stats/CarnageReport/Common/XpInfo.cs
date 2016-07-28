@@ -29,7 +29,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         /// The XP awarded to the player based on how their team ranked when the match concluded.
         /// </summary>
         [JsonProperty(PropertyName = "PerformanceXP")]
-        public int PerformanceXp { get; set; }
+        public int? PerformanceXp { get; set; }
 
         /// <summary>
         /// The XP awarded to the player for their team-agnostic rank.
@@ -125,7 +125,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
                 var hashCode = BoostAmount;
                 hashCode = (hashCode*397) ^ MatchSpeedWinAmount;
                 hashCode = (hashCode*397) ^ ObjectivesCompletedAmount;
-                hashCode = (hashCode*397) ^ PerformanceXp;
+                hashCode = (hashCode*397) ^ PerformanceXp.GetHashCode();
                 hashCode = (hashCode*397) ^ PlayerRankXpAward;
                 hashCode = (hashCode*397) ^ PlayerTimePerformanceXpAward;
                 hashCode = (hashCode*397) ^ PrevSpartanRank;

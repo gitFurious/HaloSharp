@@ -56,6 +56,11 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.5.6.0 (2016-07-28)
+
+1. Updated XpInfo model.
+  * Updated: PerformanceXP
+
 ###### v.1.5.5.0 (2016-07-16)
 
 1. Updated WarzoneMatch model.
