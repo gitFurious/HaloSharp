@@ -1,5 +1,6 @@
 ﻿using System;
 using HaloSharp.Converter;
+using HaloSharp.Model.Common;
 using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Stats.CarnageReport.Common
@@ -23,7 +24,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         /// TODO
         /// </summary>
         [JsonProperty(PropertyName = "GameVariantResourceId")]
-        public Stats.Common.Variant GameVariantResourceId { get; set; }
+        public Variant GameVariantResourceId { get; set; }
 
         /// <summary>
         /// Indicates if the match is completed or not. Some match details are available while the match is 
@@ -54,7 +55,7 @@ namespace HaloSharp.Model.Stats.CarnageReport.Common
         /// TODO
         /// </summary>
         [JsonProperty(PropertyName = "MapVariantResourceId")]
-        public Stats.Common.Variant MapVariantResourceId { get; set; }
+        public Variant MapVariantResourceId { get; set; }
 
         /// <summary>
         /// The playlist ID of the match. Playlists are available via the Metadata API.

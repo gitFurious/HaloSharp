@@ -292,10 +292,10 @@
       "type": [ "string", "null" ]
     },
     "GameVariantResourceId": {
-      "$ref": "../common/variant.schema.json"
+      "$ref": "../../common/variant.schema.json"
     },
     "MapVariantResourceId": {
-      "$ref": "../common/variant.schema.json"
+      "$ref": "../../common/variant.schema.json"
     },
 
     "PlayerStats": {

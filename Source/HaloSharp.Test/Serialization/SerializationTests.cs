@@ -48,6 +48,12 @@ namespace HaloSharp.Test.Serialization
         [TestCase(Config.WarzoneServiceRecordJsonPath, typeof(WarzoneServiceRecord))]
 
         [TestCase(Config.MatchesJsonPath, typeof(MatchSet))]
+        [TestCase(Config.LeaderboardJsonPath, typeof(Leaderboard))]
+
+        [TestCase(Config.UserGeneratedContentGameVariantsJsonPath, typeof(Model.UserGeneratedContent.GameVariantResult))]
+        [TestCase(Config.UserGeneratedContentMapVariantsJsonPath, typeof(Model.UserGeneratedContent.MapVariantResult))]
+        [TestCase(Config.UserGeneratedContentGameVariantJsonPath, typeof(Model.UserGeneratedContent.GameVariant))]
+        [TestCase(Config.UserGeneratedContentMapVariantJsonPath, typeof(Model.UserGeneratedContent.MapVariant))]
         public void IsSerializable(string jsonPath, Type type)
         {
             var o = JsonConvert.DeserializeObject(File.ReadAllText(jsonPath), type);

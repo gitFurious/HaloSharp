@@ -1,0 +1,31 @@
+{
+  "BaseMap": {
+    "ResourceType": 9,
+    "ResourceId": "23466553-2d1c-4a00-9d55-4444ede629bf",
+    "OwnerType": 3,
+    "Owner": null
+  },
+  "Name": "Entombed v2",
+  "Description": "Entombed v2",
+  "AccessControl": 0,
+  "Links": {
+
+  },
+  "CreationTimeUtc": {
+    "ISO8601Date": "2016-08-28T00:00:00Z"
+  },
+  "LastModifiedTimeUtc": {
+    "ISO8601Date": "2016-09-03T00:00:00Z"
+  },
+  "Banned": false,
+  "Identity": {
+    "ResourceType": 3,
+    "ResourceId": "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa",
+    "OwnerType": 1,
+    "Owner": "ducain23"
+  },
+  "Stats": {
+    "BookmarkCount": 18,
+    "HasCallerBookmarked": false
+  }
+}

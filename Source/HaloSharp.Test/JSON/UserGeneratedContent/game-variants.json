@@ -1,0 +1,122 @@
+{
+  "Results": [
+    {
+      "BaseGameEngineType": 1,
+      "GameType": 1,
+      "BaseGame": {
+        "ResourceType": 8,
+        "ResourceId": "67f7671d-7b81-489a-b9d5-3c652695f2ad",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "ScoreToWin": 0,
+      "NumberOfLives": 0,
+      "MatchDurationInSeconds": 0,
+      "NumberOfRounds": 0,
+      "Name": "Ducain23's Race Gametype",
+      "Description": "Scubs",
+      "AccessControl": 0,
+      "Links": {
+
+      },
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-04-06T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-04-06T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 2,
+        "ResourceId": "05c399ca-78cd-4dca-a0bd-c143f5ecb308",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 780,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseGameEngineType": 1,
+      "GameType": 1,
+      "BaseGame": {
+        "ResourceType": 8,
+        "ResourceId": "67f7671d-7b81-489a-b9d5-3c652695f2ad",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "ScoreToWin": 0,
+      "NumberOfLives": 0,
+      "MatchDurationInSeconds": 0,
+      "NumberOfRounds": 0,
+      "Name": "Snipe-A-Mole",
+      "Description": "Control Power Weapons to Eliminate the Enemy.",
+      "AccessControl": 0,
+      "Links": {
+
+      },
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-03-18T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-03-18T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 2,
+        "ResourceId": "ac0f5ade-325e-4e3e-bf1e-5e18a4b0fcca",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 175,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseGameEngineType": 1,
+      "GameType": 1,
+      "BaseGame": {
+        "ResourceType": 8,
+        "ResourceId": "b006a3a8-93a7-4fdf-b78b-f606a4fe9fb1",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "ScoreToWin": 0,
+      "NumberOfLives": 0,
+      "MatchDurationInSeconds": 0,
+      "NumberOfRounds": 0,
+      "Name": "Machinima Settings",
+      "Description": "Control Power Weapons to Eliminate the Enemy.",
+      "AccessControl": 0,
+      "Links": {
+
+      },
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-01-04T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-01-04T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 2,
+        "ResourceId": "e51ae6ac-ca1c-456a-ad94-b0f4a90df1b5",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 457,
+        "HasCallerBookmarked": false
+      }
+    }
+  ],
+  "Start": 0,
+  "Count": 100,
+  "ResultCount": 3,
+  "TotalCount": 3,
+  "Links": {
+
+  }
+}

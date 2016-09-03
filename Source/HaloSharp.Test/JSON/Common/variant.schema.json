@@ -12,7 +12,7 @@
       "type": "integer"
     },
     "Owner": {
-      "type": "string"
+      "type": [ "string", "null" ]
     }
   },
   "required": [

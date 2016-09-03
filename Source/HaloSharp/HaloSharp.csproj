@@ -58,6 +58,7 @@
     <Compile Include="HaloSession.cs" />
     <Compile Include="HaloClient.cs" />
     <Compile Include="IQuery.cs" />
+    <Compile Include="Model\Common\ISO8601.cs" />
     <Compile Include="Model\Enumeration.cs" />
     <Compile Include="Model\Error\ValidationError.cs" />
     <Compile Include="Model\Error\HaloApiError.cs" />
@@ -116,7 +117,12 @@
     <Compile Include="Model\Stats\Common\Link.cs" />
     <Compile Include="Model\Stats\Leaderboard.cs" />
     <Compile Include="Model\Stats\MatchSet.cs" />
-    <Compile Include="Model\Stats\Common\Variant.cs" />
+    <Compile Include="Model\Common\Variant.cs" />
+    <Compile Include="Model\UserGeneratedContent\GameVariantResult.cs" />
+    <Compile Include="Model\UserGeneratedContent\GameVariant.cs" />
+    <Compile Include="Model\UserGeneratedContent\MapVariantResult.cs" />
+    <Compile Include="Model\UserGeneratedContent\MapVariant.cs" />
+    <Compile Include="Model\UserGeneratedContent\Common\Stats.cs" />
     <Compile Include="Model\ValidationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\Metadata\GetSeasons.cs" />
@@ -152,6 +158,10 @@
     <Compile Include="Query\Stats\Lifetime\GetCustomServiceRecord.cs" />
     <Compile Include="Query\Stats\Lifetime\GetWarzoneServiceRecord.cs" />
     <Compile Include="Query\Stats\Lifetime\GetArenaServiceRecord.cs" />
+    <Compile Include="Query\UserGeneratedContent\ListGameVariants.cs" />
+    <Compile Include="Query\UserGeneratedContent\GetGameVariant.cs" />
+    <Compile Include="Query\UserGeneratedContent\GetMapVariant.cs" />
+    <Compile Include="Query\UserGeneratedContent\ListMapVariants.cs" />
     <Compile Include="RateGate.cs" />
     <Compile Include="Validation\Common\GamertagValidator.cs" />
     <Compile Include="Validation\Metadata\GetRequisitionPackValidator.cs" />
@@ -171,6 +181,10 @@
     <Compile Include="Validation\Stats\Lifetime\GetWarzoneServiceRecordValidator.cs" />
     <Compile Include="Validation\Stats\Lifetime\GetCustomServiceRecordValidator.cs" />
     <Compile Include="Validation\Stats\Lifetime\GetCampaignServiceRecordValidator.cs" />
+    <Compile Include="Validation\UserGeneratedContent\ListGameVariantsValidator.cs" />
+    <Compile Include="Validation\UserGeneratedContent\ListMapVariantsValidator.cs" />
+    <Compile Include="Validation\UserGeneratedContent\GetMapVariantValidator.cs" />
+    <Compile Include="Validation\UserGeneratedContent\GetGameVariantValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,0 +1,560 @@
+{
+  "Results": [
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "23466553-2d1c-4a00-9d55-4444ede629bf",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "Entombed v2",
+      "Description": "Entombed v2",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-08-28T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-09-03T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 18,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "fbee1771-1299-47db-8668-5a29aef08c7d",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "Volcanic Panic",
+      "Description": "Volcanic Panic",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-08-28T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-08-28T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "4159990f-b5f4-4b81-9d3a-0d6fdf6ca4b0",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 24,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "fbee1771-1299-47db-8668-5a29aef08c7d",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "JR",
+      "Description": "JR",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-08-17T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-08-28T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "373c6786-8ed4-4396-a8e0-650784345789",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 22,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "23466553-2d1c-4a00-9d55-4444ede629bf",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "E 2",
+      "Description": "E 2",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-08-25T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-08-28T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "8120a440-c101-42b3-a003-e6940a934ee3",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 10,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "fbee1771-1299-47db-8668-5a29aef08c7d",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "FW 2",
+      "Description": "FW 2",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-07-20T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-08-11T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "e9d8532f-d47f-40d1-bede-92000304951a",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 338,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "f8745d7e-8866-4540-b8f0-1a4d57af49cf",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "LR v2",
+      "Description": "LR v2",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-07-21T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-07-21T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "32894ef4-507e-464b-91bf-41b61c234caf",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 60,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "f8745d7e-8866-4540-b8f0-1a4d57af49cf",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "LR v3",
+      "Description": "LR v3",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-07-21T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-07-21T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "4a0b3fb9-102d-4871-929f-1aaeafb1eb26",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 57,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "fbee1771-1299-47db-8668-5a29aef08c7d",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "FW",
+      "Description": "FW",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-07-11T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-07-20T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "d46e72c4-6e26-42e7-ab30-4892621de76e",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 139,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "fbee1771-1299-47db-8668-5a29aef08c7d",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "p test",
+      "Description": "p test",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-07-11T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-07-11T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "77b4be8d-b25e-4c88-9060-61714bf3beeb",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 50,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "4b32811d-d900-4cad-bfd7-2b9d01ccf23a",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "Yoshi's Circuit",
+      "Description": "Yoshi's Circuit",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-03-05T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-07-11T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "e0e11fba-9cde-405b-834e-2eaeb9689bc1",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 1360,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "464d6eac-5be1-40d9-b7ff-c8f77b040d33",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "Cold Blooded",
+      "Description": "Cold Blooded",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-07-05T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-07-07T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "1e92c5a5-3ddf-4ef1-89db-280d2eac546f",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 214,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "464d6eac-5be1-40d9-b7ff-c8f77b040d33",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "SBG R 2",
+      "Description": "SBG R 2",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-04-10T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-07-05T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "3c283761-9b6f-4b1f-918d-e5f23ab6fd83",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 152,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "4f6dc193-9b8b-4a34-8806-5abc9748e936",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "TF",
+      "Description": "TF",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-06-09T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-06-09T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "4a836983-3b64-4c68-8222-5f4bdec10f97",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 55,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "4f6dc193-9b8b-4a34-8806-5abc9748e936",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "cobble 2",
+      "Description": "cobble 2",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-05-16T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-05-23T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "1183b3d2-1e87-453d-9ad6-9b1b93b87732",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 155,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "0e6601b6-3502-4b8f-866f-7e1fd843da06",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "#LAZY343",
+      "Description": "#LAZY343",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-05-12T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-05-13T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "f6e0c054-0616-4f03-ab0d-a85d853ba587",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 99,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "464d6eac-5be1-40d9-b7ff-c8f77b040d33",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "BG",
+      "Description": "BG",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-05-04T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-05-09T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "83ca6984-ae26-4336-b3b1-8e900166b101",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 80,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "8dbf30ff-a505-45ce-98ff-1721c7c67412",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "Someone Forge",
+      "Description": "Someone Forge",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-05-01T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-05-01T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "dfa37cb9-3b08-4d5c-a730-49065cd06b14",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 96,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "5b908ba2-011e-4d2a-9c03-ea70275bdfa0",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "Cliffside Mine",
+      "Description": "Race through a mine and along a cliff! Dont forget to do a trick on the big jump :)",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-01-08T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-03-05T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "d0c30014-ebb2-48fe-8db9-c4f9619c56b5",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 4257,
+        "HasCallerBookmarked": false
+      }
+    },
+    {
+      "BaseMap": {
+        "ResourceType": 9,
+        "ResourceId": "19daeaa3-6dd7-490a-b5c7-2b6e2da7c2e1",
+        "OwnerType": 3,
+        "Owner": null
+      },
+      "Name": "Winter Cabin",
+      "Description": "Winter Cabin",
+      "AccessControl": 0,
+      "Links": {},
+      "CreationTimeUtc": {
+        "ISO8601Date": "2016-02-12T00:00:00Z"
+      },
+      "LastModifiedTimeUtc": {
+        "ISO8601Date": "2016-02-12T00:00:00Z"
+      },
+      "Banned": false,
+      "Identity": {
+        "ResourceType": 3,
+        "ResourceId": "9bde6e71-0fbe-4e0d-a327-51e4ec2bd01d",
+        "OwnerType": 1,
+        "Owner": "ducain23"
+      },
+      "Stats": {
+        "BookmarkCount": 373,
+        "HasCallerBookmarked": false
+      }
+    }
+  ],
+  "Start": 0,
+  "Count": 100,
+  "ResultCount": 19,
+  "TotalCount": 19,
+  "Links": {}
+}

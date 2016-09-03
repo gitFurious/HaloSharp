@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "BookmarkCount": {
+      "type": "integer"
+    },
+    "HasCallerBookmarked": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "BookmarkCount",
+    "HasCallerBookmarked"
+  ]
+}

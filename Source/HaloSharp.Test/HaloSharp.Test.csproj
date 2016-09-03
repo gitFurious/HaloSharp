@@ -92,6 +92,10 @@
     <Compile Include="Query\Stats\Lifetime\GetCampaignServiceRecordTests.cs" />
     <Compile Include="Query\Stats\Lifetime\GetCustomServiceRecordTests.cs" />
     <Compile Include="Query\Stats\Lifetime\GetWarzoneServiceRecordTests.cs" />
+    <Compile Include="Query\UserGeneratedContent\ListMapVariantsTests.cs" />
+    <Compile Include="Query\UserGeneratedContent\ListGameVariantsTests.cs" />
+    <Compile Include="Query\UserGeneratedContent\GetMapVariantTests.cs" />
+    <Compile Include="Query\UserGeneratedContent\GetGameVariantTests.cs" />
     <Compile Include="Schema\SchemaTests.cs" />
     <Compile Include="Serialization\SerializationTests.cs" />
     <Compile Include="Utility\SchemaUtility.cs" />
@@ -103,6 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="JSON\Common\iso-8061.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="JSON\Metadata\seasons.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -286,7 +293,7 @@
     <None Include="JSON\Stats\CarnageReport\arena-match.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Common\variant.schema.json">
+    <None Include="JSON\Common\variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="JSON\Stats\Common\base-stat.schema.json">
@@ -344,6 +351,33 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="JSON\Stats\matches.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\Common\stats.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\game-variants.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\map-variants.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\map-variant.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\game-variant.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\game-variants.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\map-variants.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\map-variant.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\UserGeneratedContent\game-variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />

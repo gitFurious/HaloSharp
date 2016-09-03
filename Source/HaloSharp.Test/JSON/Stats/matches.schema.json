@@ -41,19 +41,7 @@
       ]
     },
     "MapVariant": {
-      "$ref": "./common/variant.schema.json"
-    },
-    "MatchCompletedDate": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "ISO8601Date": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "ISO8601Date"
-      ]
+      "$ref": "../common/variant.schema.json"
     },
     "Player": {
       "type": "object",
@@ -140,7 +128,7 @@
           "type": "string"
         },
         "MatchCompletedDate": {
-          "$ref": "#/definitions/MatchCompletedDate"
+          "$ref": "../common/iso-8061.schema.json"
         },
         "Teams": {
           "type": "array",
