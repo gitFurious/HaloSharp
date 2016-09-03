@@ -56,6 +56,14 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.6.0.0 (2016-09-03)
+
+1. User Generated Content (UGC) Endpoints.
+  * List Game Variants
+  * Get Game Variant
+  * List Map Variants
+  * Get Map Variant
+
 ###### v.1.5.6.0 (2016-07-28)
 
 1. Updated XpInfo model.

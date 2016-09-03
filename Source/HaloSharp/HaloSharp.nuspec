@@ -11,7 +11,7 @@
     <iconUrl>http://i.imgur.com/bNFI8wr.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Model updates for Firefight content release.</releaseNotes>
+    <releaseNotes>Added new User Generated Content (UGC) endpoints.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>HaloSharp, Halo, API, Game Data</tags>
   </metadata>
