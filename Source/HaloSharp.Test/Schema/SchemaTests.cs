@@ -51,6 +51,11 @@ namespace HaloSharp.Test.Schema
 
         [TestCase(Config.MatchesJsonPath, Config.MatchesJsonSchemaPath)]
         [TestCase(Config.LeaderboardJsonPath, Config.LeaderboardJsonSchemaPath)]
+
+        [TestCase(Config.UserGeneratedContentGameVariantsJsonPath, Config.UserGeneratedContentGameVariantsJsonSchemaPath)]
+        [TestCase(Config.UserGeneratedContentMapVariantsJsonPath, Config.UserGeneratedContentMapVariantsJsonSchemaPath)]
+        [TestCase(Config.UserGeneratedContentGameVariantJsonPath, Config.UserGeneratedContentGameVariantJsonSchemaPath)]
+        [TestCase(Config.UserGeneratedContentMapVariantJsonPath, Config.UserGeneratedContentMapVariantJsonSchemaPath)]
         public void SchemaIsValid(string jsonPath, string schemaPath)
         {
             var schema = JSchema.Parse(File.ReadAllText(schemaPath), new JSchemaReaderSettings
@@ -99,6 +104,11 @@ namespace HaloSharp.Test.Schema
 
         [TestCase(Config.MatchesJsonPath, Config.MatchesJsonSchemaPath, typeof(MatchSet))]
         [TestCase(Config.LeaderboardJsonPath, Config.LeaderboardJsonSchemaPath, typeof(Leaderboard))]
+
+        [TestCase(Config.UserGeneratedContentGameVariantsJsonPath, Config.UserGeneratedContentGameVariantsJsonSchemaPath, typeof(Model.UserGeneratedContent.GameVariantResult))]
+        [TestCase(Config.UserGeneratedContentMapVariantsJsonPath, Config.UserGeneratedContentMapVariantsJsonSchemaPath, typeof(Model.UserGeneratedContent.MapVariantResult))]
+        [TestCase(Config.UserGeneratedContentGameVariantJsonPath, Config.UserGeneratedContentGameVariantJsonSchemaPath, typeof(Model.UserGeneratedContent.GameVariant))]
+        [TestCase(Config.UserGeneratedContentMapVariantJsonPath, Config.UserGeneratedContentMapVariantJsonSchemaPath, typeof(Model.UserGeneratedContent.MapVariant))]
         public void ModelMatchesSchema(string jsonPath, string schemaPath, Type type)
         {
             var schema = JSchema.Parse(File.ReadAllText(schemaPath), new JSchemaReaderSettings

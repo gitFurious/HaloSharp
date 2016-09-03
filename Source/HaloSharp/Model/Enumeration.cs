@@ -6,6 +6,13 @@ namespace HaloSharp.Model
     [Serializable]
     public class Enumeration
     {
+        public enum AccessControl
+        {
+            Listed = 0,
+            Unlisted = 1,
+            Unknown = 2
+        }
+
         public enum Agent
         {
             None = 0,
@@ -166,7 +173,9 @@ namespace HaloSharp.Model
         public enum ResourceType
         {
             GameVariant = 2,
-            MapVariant = 3
+            MapVariant = 3,
+            BaseGameVariant = 8,
+            BaseMapVariant = 9
         }
 
         public enum ResultType
@@ -192,6 +201,16 @@ namespace HaloSharp.Model
             InternalServiceError = 500,
             AccessDenied = 401,
             RateLimitExceeded = 429
+        }
+
+        public enum UserGeneratedContentSort
+        {
+            Name,
+            Description,
+            Accesibility,
+            Created,
+            Modified,
+            BookmarkCount
         }
 
         public enum WeaponType

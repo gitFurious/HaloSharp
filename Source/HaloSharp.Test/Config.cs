@@ -69,5 +69,15 @@
 
         public const string LeaderboardJsonPath = "JSON/Stats/leaderboard.json";
         public const string LeaderboardJsonSchemaPath = "JSON/Stats/leaderboard.schema.json";
+
+        public const string UserGeneratedContentGameVariantsJsonPath = "JSON/UserGeneratedContent/game-variants.json";
+        public const string UserGeneratedContentGameVariantsJsonSchemaPath = "JSON/UserGeneratedContent/game-variants.schema.json";
+        public const string UserGeneratedContentMapVariantsJsonPath = "JSON/UserGeneratedContent/map-variants.json";
+        public const string UserGeneratedContentMapVariantsJsonSchemaPath = "JSON/UserGeneratedContent/map-variants.schema.json";
+
+        public const string UserGeneratedContentGameVariantJsonPath = "JSON/UserGeneratedContent/game-variant.json";
+        public const string UserGeneratedContentGameVariantJsonSchemaPath = "JSON/UserGeneratedContent/game-variant.schema.json";
+        public const string UserGeneratedContentMapVariantJsonPath = "JSON/UserGeneratedContent/map-variant.json";
+        public const string UserGeneratedContentMapVariantJsonSchemaPath = "JSON/UserGeneratedContent/map-variant.schema.json";
     }
 }

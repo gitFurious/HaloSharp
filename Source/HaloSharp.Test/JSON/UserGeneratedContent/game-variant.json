@@ -1,0 +1,35 @@
+{
+  "BaseGameEngineType": 1,
+  "GameType": 1,
+  "BaseGame": {
+    "ResourceType": 8,
+    "ResourceId": "67f7671d-7b81-489a-b9d5-3c652695f2ad",
+    "OwnerType": 3,
+    "Owner": null
+  },
+  "ScoreToWin": 0,
+  "NumberOfLives": 0,
+  "MatchDurationInSeconds": 0,
+  "NumberOfRounds": 0,
+  "Name": "Ducain23's Race Gametype",
+  "Description": "Scubs",
+  "AccessControl": 0,
+  "Links": {},
+  "CreationTimeUtc": {
+    "ISO8601Date": "2016-04-06T00:00:00Z"
+  },
+  "LastModifiedTimeUtc": {
+    "ISO8601Date": "2016-04-06T00:00:00Z"
+  },
+  "Banned": false,
+  "Identity": {
+    "ResourceType": 2,
+    "ResourceId": "05c399ca-78cd-4dca-a0bd-c143f5ecb308",
+    "OwnerType": 1,
+    "Owner": "ducain23"
+  },
+  "Stats": {
+    "BookmarkCount": 691,
+    "HasCallerBookmarked": false
+  }
+}

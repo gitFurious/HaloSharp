@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using HaloSharp.Converter;
+using HaloSharp.Model.Common;
 using HaloSharp.Model.Stats.Common;
 using Newtonsoft.Json;
 
@@ -176,7 +177,7 @@ namespace HaloSharp.Model.Stats
         /// API. The time component of this date is always set to "00:00:00".
         /// </summary>
         [JsonProperty(PropertyName = "MatchCompletedDate")]
-        public MatchCompletedDate MatchCompletedDate { get; set; }
+        public ISO8601 MatchCompletedDate { get; set; }
 
         /// <summary>
         /// The length of the match.
@@ -374,66 +375,6 @@ namespace HaloSharp.Model.Stats
         }
 
         public static bool operator !=(Id left, Id right)
-        {
-            return !Equals(left, right);
-        }
-    }
-
-    [Serializable]
-    public class MatchCompletedDate : IEquatable<MatchCompletedDate>
-    {
-        /// <summary>
-        /// //TODO
-        /// </summary>
-        // ReSharper disable once InconsistentNaming
-        public DateTime ISO8601Date { get; set; }
-
-        public bool Equals(MatchCompletedDate other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            return ISO8601Date.Equals(other.ISO8601Date);
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != typeof (MatchCompletedDate))
-            {
-                return false;
-            }
-
-            return Equals((MatchCompletedDate) obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return ISO8601Date.GetHashCode();
-        }
-
-        public static bool operator ==(MatchCompletedDate left, MatchCompletedDate right)
-        {
-            return Equals(left, right);
-        }
-
-        public static bool operator !=(MatchCompletedDate left, MatchCompletedDate right)
         {
             return !Equals(left, right);
         }
