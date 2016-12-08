@@ -108,6 +108,11 @@ namespace HaloSharp.Model
             Warzone = 4
         }
 
+        public enum GiftableAcquisitionMethod
+        {
+            Unknown = 1
+        }
+
         public enum MedalType
         {
             Breakout,
