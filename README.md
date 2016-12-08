@@ -56,6 +56,12 @@ A Nuget package is available at [www.nuget.org/packages/HaloSharp](https://www.n
 
 ### Changelog ###
 
+###### v.1.6.1.0 (2016-12-08)
+
+1. Updated RequisitionPack model.
+  * New property: GiftableAcquisitionMethods
+  * New property: IsGiftOnly
+
 ###### v.1.6.0.0 (2016-09-03)
 
 1. User Generated Content (UGC) Endpoints.

@@ -65,6 +65,12 @@ namespace HaloSharp.Model.Metadata.Common
         public Enumeration.RequisitionPackType? Flair { get; set; }
 
         /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "giftableAcquisitionMethods")]
+        public Enumeration.GiftableAcquisitionMethod GiftableAcquisitionMethod { get; set; }
+
+        /// <summary>
         /// The ID that uniquely identifies this pack.
         /// </summary>
         [JsonProperty(PropertyName = "id")]
@@ -75,6 +81,12 @@ namespace HaloSharp.Model.Metadata.Common
         /// </summary>
         [JsonProperty(PropertyName = "isFeatured")]
         public bool IsFeatured { get; set; }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        [JsonProperty(PropertyName = "isGiftOnly")]
+        public bool IsGiftOnly { get; set; }
 
         /// <summary>
         /// Internal use. Whether the item should be labeled as "new!"
@@ -157,16 +169,20 @@ namespace HaloSharp.Model.Metadata.Common
             {
                 return false;
             }
+
             if (ReferenceEquals(this, other))
             {
                 return true;
             }
+
             return ContentId.Equals(other.ContentId)
                 && CreditPrice == other.CreditPrice
                 && string.Equals(Description, other.Description)
                 && Flair == other.Flair
+                && GiftableAcquisitionMethod == other.GiftableAcquisitionMethod
                 && Id.Equals(other.Id)
                 && IsFeatured == other.IsFeatured
+                && IsGiftOnly == other.IsGiftOnly
                 && IsNew == other.IsNew
                 && IsPurchasableFromMarketplace == other.IsPurchasableFromMarketplace
                 && IsPurchasableWithCredits == other.IsPurchasableWithCredits
@@ -187,14 +203,17 @@ namespace HaloSharp.Model.Metadata.Common
             {
                 return false;
             }
+
             if (ReferenceEquals(this, obj))
             {
                 return true;
             }
+
             if (obj.GetType() != typeof (RequisitionPack))
             {
                 return false;
             }
+
             return Equals((RequisitionPack) obj);
         }
 
@@ -206,8 +225,10 @@ namespace HaloSharp.Model.Metadata.Common
                 hashCode = (hashCode*397) ^ CreditPrice;
                 hashCode = (hashCode*397) ^ (Description?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ Flair.GetHashCode();
+                hashCode = (hashCode*397) ^ (int) GiftableAcquisitionMethod;
                 hashCode = (hashCode*397) ^ Id.GetHashCode();
                 hashCode = (hashCode*397) ^ IsFeatured.GetHashCode();
+                hashCode = (hashCode*397) ^ IsGiftOnly.GetHashCode();
                 hashCode = (hashCode*397) ^ IsNew.GetHashCode();
                 hashCode = (hashCode*397) ^ IsPurchasableFromMarketplace.GetHashCode();
                 hashCode = (hashCode*397) ^ IsPurchasableWithCredits.GetHashCode();

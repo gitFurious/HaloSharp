@@ -24,6 +24,9 @@
     "isFeatured": {
       "type": "boolean"
     },
+    "isGiftOnly": {
+      "type": "boolean"
+    },
     "isNew": {
       "type": "boolean"
     },
@@ -48,6 +51,9 @@
     "flair": {
       "type": [ "string", "null" ]
     },
+    "giftableAcquisitionMethods": {
+      "type": "integer"
+    },
     "stackedRequisitionPacks": {
       "type": "array",
       "items": {
@@ -67,6 +73,7 @@
     "largeImageUrl",
     "isStack",
     "isFeatured",
+    "isGiftOnly",
     "isNew",
     "creditPrice",
     "isPurchasableWithCredits",
@@ -75,6 +82,7 @@
     "xboxMarketplaceProductUrl",
     "merchandisingOrder",
     "flair",
+    "giftableAcquisitionMethods",
     "stackedRequisitionPacks",
     "id",
     "contentId"
