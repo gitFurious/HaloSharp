@@ -106,7 +106,7 @@ namespace HaloSharp.Query.UserGeneratedContent
             {
                 gameVariantResult = await session.Get<GameVariantResult>(uri);
 
-                Cache.AddMetadata(uri, gameVariantResult);
+                Cache.AddUserGeneratedContent(uri, gameVariantResult);
             }
 
             return gameVariantResult;

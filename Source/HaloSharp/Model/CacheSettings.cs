@@ -7,5 +7,6 @@ namespace HaloSharp.Model
         public TimeSpan? MetadataCacheDuration { get; set; }
         public TimeSpan? ProfileCacheDuration { get; set; }
         public TimeSpan? StatsCacheDuration { get; set; }
+        public TimeSpan? UserGeneratedContentCacheDuration { get; set; }
     }
 }

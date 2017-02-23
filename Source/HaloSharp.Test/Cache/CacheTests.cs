@@ -10,6 +10,7 @@ namespace HaloSharp.Test.Cache
         private TimeSpan? PreviousMetadataCacheDuration { get; set; }
         private TimeSpan? PreviousProfileCacheDuration { get; set; }
         private TimeSpan? PreviousStatsCacheDuration { get; set; }
+        private TimeSpan? PreviousUserGeneratedContentCacheDuration { get; set; }
 
         [SetUp]
         public void Setup()
@@ -17,6 +18,7 @@ namespace HaloSharp.Test.Cache
             PreviousMetadataCacheDuration = HaloSharp.Cache.MetadataCacheDuration;
             PreviousProfileCacheDuration = HaloSharp.Cache.ProfileCacheDuration;
             PreviousStatsCacheDuration = HaloSharp.Cache.StatsCacheDuration;
+            PreviousUserGeneratedContentCacheDuration = HaloSharp.Cache.UserGeneratedContentCacheDuration;
         }
 
         [Test]
@@ -78,13 +80,34 @@ namespace HaloSharp.Test.Cache
             output = HaloSharp.Cache.Get<string>(key);
             Assert.IsNull(output);
         }
-        
+
+        [Test]
+        public void UserGeneratedContentExpiresFromCacheAfterDuration()
+        {
+            var cacheDuration = new TimeSpan(0, 0, 0, 3);
+
+            HaloSharp.Cache.UserGeneratedContentCacheDuration = cacheDuration;
+
+            const string key = "stats";
+            const string input = "HaloSharp.UserGeneratedContent";
+
+            HaloSharp.Cache.AddUserGeneratedContent(key, input);
+            var output = HaloSharp.Cache.Get<string>(key);
+            Assert.AreEqual(input, output);
+
+            Thread.Sleep(cacheDuration);
+
+            output = HaloSharp.Cache.Get<string>(key);
+            Assert.IsNull(output);
+        }
+
         [TearDown]
         public void TearDown()
         {
             HaloSharp.Cache.MetadataCacheDuration = PreviousMetadataCacheDuration;
             HaloSharp.Cache.ProfileCacheDuration = PreviousProfileCacheDuration;
             HaloSharp.Cache.StatsCacheDuration = PreviousStatsCacheDuration;
+            HaloSharp.Cache.UserGeneratedContentCacheDuration = PreviousUserGeneratedContentCacheDuration;
         }
     }
 }

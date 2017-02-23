@@ -106,7 +106,7 @@ namespace HaloSharp.Query.UserGeneratedContent
             {
                 mapVariantResult = await session.Get<MapVariantResult>(uri);
 
-                Cache.AddMetadata(uri, mapVariantResult);
+                Cache.AddUserGeneratedContent(uri, mapVariantResult);
             }
 
             return mapVariantResult;

@@ -11,6 +11,7 @@ namespace HaloSharp
         internal static TimeSpan? MetadataCacheDuration { get; set; }
         internal static TimeSpan? ProfileCacheDuration { get; set; }
         internal static TimeSpan? StatsCacheDuration { get; set; }
+        internal static TimeSpan? UserGeneratedContentCacheDuration { get; set; }
 
         public static void AddMetadata<T>(string key, T toAdd) where T : class
         {
@@ -43,6 +44,18 @@ namespace HaloSharp
                 if (toAdd != null && StatsCacheDuration.HasValue)
                 {
                     var absoluteExpiration = DateTime.UtcNow.Add(StatsCacheDuration.Value);
+                    ObjectCache.Add(key, toAdd, absoluteExpiration);
+                }
+            }
+        }
+
+        public static void AddUserGeneratedContent<T>(string key, T toAdd) where T : class
+        {
+            lock (LockObject)
+            {
+                if (toAdd != null && UserGeneratedContentCacheDuration.HasValue)
+                {
+                    var absoluteExpiration = DateTime.UtcNow.Add(UserGeneratedContentCacheDuration.Value);
                     ObjectCache.Add(key, toAdd, absoluteExpiration);
                 }
             }

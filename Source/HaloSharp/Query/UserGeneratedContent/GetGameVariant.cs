@@ -58,7 +58,7 @@ namespace HaloSharp.Query.UserGeneratedContent
             {
                 gameVariant = await session.Get<GameVariant>(uri);
 
-                Cache.AddMetadata(uri, gameVariant);
+                Cache.AddUserGeneratedContent(uri, gameVariant);
             }
 
             return gameVariant;

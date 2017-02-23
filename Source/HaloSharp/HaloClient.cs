@@ -21,6 +21,7 @@ namespace HaloSharp
             Cache.MetadataCacheDuration = _cacheSettings?.MetadataCacheDuration;
             Cache.ProfileCacheDuration = _cacheSettings?.ProfileCacheDuration;
             Cache.StatsCacheDuration = _cacheSettings?.StatsCacheDuration;
+            Cache.UserGeneratedContentCacheDuration = _cacheSettings?.UserGeneratedContentCacheDuration;
 
             return session;
         }

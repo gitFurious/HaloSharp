@@ -58,7 +58,7 @@ namespace HaloSharp.Query.UserGeneratedContent
             {
                 mapVariant = await session.Get<MapVariant>(uri);
 
-                Cache.AddMetadata(uri, mapVariant);
+                Cache.AddUserGeneratedContent(uri, mapVariant);
             }
 
             return mapVariant;
