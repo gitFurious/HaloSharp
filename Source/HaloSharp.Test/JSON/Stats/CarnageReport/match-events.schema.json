@@ -169,22 +169,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "Links": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "StatsMatchDetails": {
-          "$ref": "../common/link.schema.json"
-        },
-        "UgcFilmManifest": {
-          "$ref": "../common/link.schema.json"
-        }
-      },
-      "required": [
-        "StatsMatchDetails",
-        "UgcFilmManifest"
-      ]
-    },
     "GameEvents": {
       "type": "array",
       "items": {
@@ -198,7 +182,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "Links",
     "GameEvents",
     "IsCompleteSetOfEvents"
   ]

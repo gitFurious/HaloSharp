@@ -12,12 +12,6 @@ namespace HaloSharp.Model.Stats.CarnageReport
     public class MatchEvents : IEquatable<MatchEvents>
     {
         /// <summary>
-        ///     Internal use only. A set of related resource links.
-        /// </summary>
-        [JsonProperty(PropertyName = "Links")]
-        public Dictionary<string, Link> Links { get; set; }
-
-        /// <summary>
         ///     An ordered list of events that describe a match from start to completion. Events can be a variety of types which
         ///     will influence what fields are filled in.
         /// </summary>
@@ -44,8 +38,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
                 return true;
             }
 
-            return Links.OrderBy(l => l.Key).SequenceEqual(other.Links.OrderBy(l => l.Key))
-                && GameEvents.OrderBy(ge => ge.TimeSinceStart).SequenceEqual(other.GameEvents.OrderBy(ge => ge.TimeSinceStart))
+            return GameEvents.OrderBy(ge => ge.TimeSinceStart).SequenceEqual(other.GameEvents.OrderBy(ge => ge.TimeSinceStart))
                 && IsCompleteSetOfEvents == other.IsCompleteSetOfEvents;
         }
 
@@ -73,8 +66,7 @@ namespace HaloSharp.Model.Stats.CarnageReport
         {
             unchecked
             {
-                var hashCode = Links?.GetHashCode() ?? 0;
-                hashCode = (hashCode*397) ^ (GameEvents?.GetHashCode() ?? 0);
+                var hashCode = GameEvents?.GetHashCode() ?? 0;
                 hashCode = (hashCode*397) ^ IsCompleteSetOfEvents.GetHashCode();
                 return hashCode;
             }

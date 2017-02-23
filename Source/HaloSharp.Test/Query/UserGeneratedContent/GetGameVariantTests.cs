@@ -56,7 +56,7 @@ namespace HaloSharp.Test.Query.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("05c399ca-78cd-4dca-a0bd-c143f5ecb308")]
+        [TestCase("399c6656-c091-4433-80d1-88224a6786b6")]
         public void GetConstructedUri_InGameMode_MatchesExpected(string guid)
         {
             var query = new GetGameVariant()
@@ -68,7 +68,7 @@ namespace HaloSharp.Test.Query.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("ducain23", "05c399ca-78cd-4dca-a0bd-c143f5ecb308")]
+        [TestCase("ducain23", "399c6656-c091-4433-80d1-88224a6786b6")]
         public void GetConstructedUri_Complex_MatchesExpected(string gamertag, string guid)
         {
             var query = new GetGameVariant()
@@ -81,7 +81,7 @@ namespace HaloSharp.Test.Query.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("ducain23", "05c399ca-78cd-4dca-a0bd-c143f5ecb308")]
+        [TestCase("ducain23", "399c6656-c091-4433-80d1-88224a6786b6")]
         public async Task Query_DoesNotThrow(string gamertag, string guid)
         {
             var query = new GetGameVariant()
@@ -96,7 +96,7 @@ namespace HaloSharp.Test.Query.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("ducain23", "05c399ca-78cd-4dca-a0bd-c143f5ecb308")]
+        [TestCase("ducain23", "399c6656-c091-4433-80d1-88224a6786b6")]
         public async Task GetGameVariant_DoesNotThrow(string gamertag, string guid)
         {
             var query = new GetGameVariant()
@@ -110,7 +110,7 @@ namespace HaloSharp.Test.Query.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("ducain23", "05c399ca-78cd-4dca-a0bd-c143f5ecb308")]
+        [TestCase("ducain23", "399c6656-c091-4433-80d1-88224a6786b6")]
         public async Task GetGameVariant_SchemaIsValid(string gamertag, string guid)
         {
             var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.UserGeneratedContentGameVariantJsonSchemaPath), new JSchemaReaderSettings
@@ -130,7 +130,7 @@ namespace HaloSharp.Test.Query.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("ducain23", "05c399ca-78cd-4dca-a0bd-c143f5ecb308")]
+        [TestCase("ducain23", "399c6656-c091-4433-80d1-88224a6786b6")]
         public async Task GetGameVariant_ModelMatchesSchema(string gamertag, string guid)
         {
             var schema = JSchema.Parse(File.ReadAllText(Config.UserGeneratedContentGameVariantJsonSchemaPath), new JSchemaReaderSettings
@@ -153,7 +153,7 @@ namespace HaloSharp.Test.Query.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("ducain23", "05c399ca-78cd-4dca-a0bd-c143f5ecb308")]
+        [TestCase("ducain23", "399c6656-c091-4433-80d1-88224a6786b6")]
         public async Task GetGameVariant_IsSerializable(string gamertag, string guid)
         {
             var query = new GetGameVariant()
