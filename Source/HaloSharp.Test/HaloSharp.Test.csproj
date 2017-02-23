@@ -61,323 +61,323 @@
     <Compile Include="Config.cs" />
     <Compile Include="Converter\TimeSpanConverterTests.cs" />
     <Compile Include="Converter\GuidConverterTests.cs" />
-    <Compile Include="Query\Metadata\GetSeasonsTests.cs" />
-    <Compile Include="Query\Metadata\GetCampaignMissionsTests.cs" />
-    <Compile Include="Query\Metadata\GetCommendationsTests.cs" />
-    <Compile Include="Query\Metadata\GetCompetitiveSkillRankDesignationsTests.cs" />
-    <Compile Include="Query\Metadata\GetEnemiesTests.cs" />
-    <Compile Include="Query\Metadata\GetFlexibleStatsTests.cs" />
-    <Compile Include="Query\Metadata\GetGameBaseVariantsTests.cs" />
-    <Compile Include="Query\Metadata\GetGameVariantTests.cs" />
-    <Compile Include="Query\Metadata\GetImpulsesTests.cs" />
-    <Compile Include="Query\Metadata\GetMapsTests.cs" />
-    <Compile Include="Query\Metadata\GetMapVariantTests.cs" />
-    <Compile Include="Query\Metadata\GetMedalsTests.cs" />
-    <Compile Include="Query\Metadata\GetPlaylistsTests.cs" />
-    <Compile Include="Query\Metadata\GetRequisitionPackTests.cs" />
-    <Compile Include="Query\Metadata\GetRequisitionTests.cs" />
-    <Compile Include="Query\Metadata\GetSkullsTests.cs" />
-    <Compile Include="Query\Metadata\GetSpartanRanksTests.cs" />
-    <Compile Include="Query\Metadata\GetTeamColorsTests.cs" />
-    <Compile Include="Query\Metadata\GetVehiclesTests.cs" />
-    <Compile Include="Query\Metadata\GetWeaponsTests.cs" />
-    <Compile Include="Query\Stats\CarnageReport\GetMatchEventsTests.cs" />
-    <Compile Include="Query\Stats\CarnageReport\GetArenaMatchDetailsTests.cs" />
-    <Compile Include="Query\Stats\CarnageReport\GetCampaignMatchDetailsTests.cs" />
-    <Compile Include="Query\Stats\CarnageReport\GetCustomMatchDetailsTests.cs" />
-    <Compile Include="Query\Stats\CarnageReport\GetWarzoneMatchDetailsTests.cs" />
-    <Compile Include="Query\Stats\GetLeaderboardTests.cs" />
-    <Compile Include="Query\Stats\GetMatchesTests.cs" />
-    <Compile Include="Query\Stats\Lifetime\GetArenaServiceRecordTests.cs" />
-    <Compile Include="Query\Stats\Lifetime\GetCampaignServiceRecordTests.cs" />
-    <Compile Include="Query\Stats\Lifetime\GetCustomServiceRecordTests.cs" />
-    <Compile Include="Query\Stats\Lifetime\GetWarzoneServiceRecordTests.cs" />
-    <Compile Include="Query\UserGeneratedContent\ListMapVariantsTests.cs" />
-    <Compile Include="Query\UserGeneratedContent\ListGameVariantsTests.cs" />
-    <Compile Include="Query\UserGeneratedContent\GetMapVariantTests.cs" />
-    <Compile Include="Query\UserGeneratedContent\GetGameVariantTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetSeasonsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetCampaignMissionsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetCommendationsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetCompetitiveSkillRankDesignationsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetEnemiesTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetFlexibleStatsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetGameBaseVariantsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetGameVariantTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetImpulsesTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetMapsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetMapVariantTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetMedalsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetPlaylistsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetRequisitionPackTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetRequisitionTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetSkullsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetSpartanRanksTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetTeamColorsTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetVehiclesTests.cs" />
+    <Compile Include="Query\Halo5\Metadata\GetWeaponsTests.cs" />
+    <Compile Include="Query\Halo5\Stats\CarnageReport\GetMatchEventsTests.cs" />
+    <Compile Include="Query\Halo5\Stats\CarnageReport\GetArenaMatchDetailsTests.cs" />
+    <Compile Include="Query\Halo5\Stats\CarnageReport\GetCampaignMatchDetailsTests.cs" />
+    <Compile Include="Query\Halo5\Stats\CarnageReport\GetCustomMatchDetailsTests.cs" />
+    <Compile Include="Query\Halo5\Stats\CarnageReport\GetWarzoneMatchDetailsTests.cs" />
+    <Compile Include="Query\Halo5\Stats\GetLeaderboardTests.cs" />
+    <Compile Include="Query\Halo5\Stats\GetMatchesTests.cs" />
+    <Compile Include="Query\Halo5\Stats\Lifetime\GetArenaServiceRecordTests.cs" />
+    <Compile Include="Query\Halo5\Stats\Lifetime\GetCampaignServiceRecordTests.cs" />
+    <Compile Include="Query\Halo5\Stats\Lifetime\GetCustomServiceRecordTests.cs" />
+    <Compile Include="Query\Halo5\Stats\Lifetime\GetWarzoneServiceRecordTests.cs" />
+    <Compile Include="Query\Halo5\UserGeneratedContent\ListMapVariantsTests.cs" />
+    <Compile Include="Query\Halo5\UserGeneratedContent\ListGameVariantsTests.cs" />
+    <Compile Include="Query\Halo5\UserGeneratedContent\GetMapVariantTests.cs" />
+    <Compile Include="Query\Halo5\UserGeneratedContent\GetGameVariantTests.cs" />
     <Compile Include="Schema\SchemaTests.cs" />
     <Compile Include="Serialization\SerializationTests.cs" />
     <Compile Include="Utility\SchemaUtility.cs" />
     <Compile Include="Utility\SerializationUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Query\Profile\GetSpartanImageTests.cs" />
-    <Compile Include="Query\Profile\GetEmblemImageTests.cs" />
+    <Compile Include="Query\Halo5\Profile\GetSpartanImageTests.cs" />
+    <Compile Include="Query\Halo5\Profile\GetEmblemImageTests.cs" />
     <Compile Include="Setup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="JSON\Common\iso-8061.schema.json">
+    <None Include="JSON\Halo5\Common\iso-8061.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\seasons.json">
+    <None Include="JSON\Halo5\Metadata\seasons.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\seasons.schema.json">
+    <None Include="JSON\Halo5\Metadata\seasons.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\enemies.json">
+    <None Include="JSON\Halo5\Metadata\enemies.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\flexible-stats.json">
+    <None Include="JSON\Halo5\Metadata\flexible-stats.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\game-base-variants.json">
+    <None Include="JSON\Halo5\Metadata\game-base-variants.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\game-variant.json">
+    <None Include="JSON\Halo5\Metadata\game-variant.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\impulses.json">
+    <None Include="JSON\Halo5\Metadata\impulses.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\maps.json">
+    <None Include="JSON\Halo5\Metadata\maps.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\map-variant.json">
+    <None Include="JSON\Halo5\Metadata\map-variant.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\medals.json">
+    <None Include="JSON\Halo5\Metadata\medals.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\playlists.json">
+    <None Include="JSON\Halo5\Metadata\playlists.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\requisition-pack.json">
+    <None Include="JSON\Halo5\Metadata\requisition-pack.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\requisition.json">
+    <None Include="JSON\Halo5\Metadata\requisition.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\skulls.json">
+    <None Include="JSON\Halo5\Metadata\skulls.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\spartan-ranks.json">
+    <None Include="JSON\Halo5\Metadata\spartan-ranks.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\team-colors.json">
+    <None Include="JSON\Halo5\Metadata\team-colors.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\vehicles.json">
+    <None Include="JSON\Halo5\Metadata\vehicles.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\weapons.json">
+    <None Include="JSON\Halo5\Metadata\weapons.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\enemies.schema.json">
+    <None Include="JSON\Halo5\Metadata\enemies.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\flexible-stats.schema.json">
+    <None Include="JSON\Halo5\Metadata\flexible-stats.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\game-base-variants.schema.json">
+    <None Include="JSON\Halo5\Metadata\game-base-variants.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\game-variant.schema.json">
+    <None Include="JSON\Halo5\Metadata\game-variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\impulses.schema.json">
+    <None Include="JSON\Halo5\Metadata\impulses.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\maps.schema.json">
+    <None Include="JSON\Halo5\Metadata\maps.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\map-variant.schema.json">
+    <None Include="JSON\Halo5\Metadata\map-variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\medals.schema.json">
+    <None Include="JSON\Halo5\Metadata\medals.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\playlists.schema.json">
+    <None Include="JSON\Halo5\Metadata\playlists.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\requisition-pack.schema.json">
+    <None Include="JSON\Halo5\Metadata\requisition-pack.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\requisition.schema.json">
+    <None Include="JSON\Halo5\Metadata\requisition.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\skulls.schema.json">
+    <None Include="JSON\Halo5\Metadata\skulls.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\spartan-ranks.schema.json">
+    <None Include="JSON\Halo5\Metadata\spartan-ranks.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\team-colors.schema.json">
+    <None Include="JSON\Halo5\Metadata\team-colors.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\vehicles.schema.json">
+    <None Include="JSON\Halo5\Metadata\vehicles.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\weapons.schema.json">
+    <None Include="JSON\Halo5\Metadata\weapons.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\competitive-skill-rank-designations.json">
+    <None Include="JSON\Halo5\Metadata\competitive-skill-rank-designations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\commendations.json">
+    <None Include="JSON\Halo5\Metadata\commendations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\competitive-skill-rank-designations.schema.json">
+    <None Include="JSON\Halo5\Metadata\competitive-skill-rank-designations.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\commendations.schema.json">
+    <None Include="JSON\Halo5\Metadata\commendations.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\campaign-missions.schema.json">
+    <None Include="JSON\Halo5\Metadata\campaign-missions.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\campaign-missions.json">
+    <None Include="JSON\Halo5\Metadata\campaign-missions.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\Common\requisition-pack.schema.json">
+    <None Include="JSON\Halo5\Metadata\Common\requisition-pack.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Metadata\Common\reward.schema.json">
+    <None Include="JSON\Halo5\Metadata\Common\reward.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\Common\boost-info.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\Common\boost-info.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\match-events.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\match-events.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\campaign-match.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\campaign-match.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\Common\meta-commendation-delta.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\Common\meta-commendation-delta.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\Common\xp-info.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\Common\xp-info.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\Common\team-stat.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\Common\team-stat.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\Common\reward-set.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\Common\reward-set.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\Common\progressive-commendation-delta.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\Common\progressive-commendation-delta.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\Common\oppenent-details.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\Common\oppenent-details.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\Common\credits-earned.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\Common\credits-earned.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\match-events-model.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\match-events-model.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\match-events.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\match-events.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\warzone-match.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\warzone-match.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\warzone-match.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\warzone-match.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\arena-match.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\arena-match.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\campaign-match.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\campaign-match.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\custom-match.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\custom-match.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\custom-match.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\custom-match.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\CarnageReport\arena-match.schema.json">
+    <None Include="JSON\Halo5\Stats\CarnageReport\arena-match.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Common\variant.schema.json">
+    <None Include="JSON\Halo5\Common\variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Common\base-stat.schema.json">
+    <None Include="JSON\Halo5\Stats\Common\base-stat.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Common\link.schema.json">
+    <None Include="JSON\Halo5\Stats\Common\link.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Common\identity.schema.json">
+    <None Include="JSON\Halo5\Stats\Common\identity.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Common\competitive-skill-ranking.schema.json">
+    <None Include="JSON\Halo5\Stats\Common\competitive-skill-ranking.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Common\flexible-stats.schema.json">
+    <None Include="JSON\Halo5\Stats\Common\flexible-stats.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\campaign-service-record.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\campaign-service-record.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\Common\game-base-variant-stat.schema.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\Common\game-base-variant-stat.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\Common\top-game-base-variant.schema.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\Common\top-game-base-variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\custom-service-record.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\custom-service-record.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\warzone-service-record.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\warzone-service-record.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\arena-service-record.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\arena-service-record.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\campaign-service-record.schema.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\campaign-service-record.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\warzone-service-record.schema.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\warzone-service-record.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\custom-service-record.schema.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\custom-service-record.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\Lifetime\arena-service-record.schema.json">
+    <None Include="JSON\Halo5\Stats\Lifetime\arena-service-record.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\leaderboard.json">
+    <None Include="JSON\Halo5\Stats\leaderboard.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\matches.json">
+    <None Include="JSON\Halo5\Stats\matches.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\leaderboard.schema.json">
+    <None Include="JSON\Halo5\Stats\leaderboard.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Stats\matches.schema.json">
+    <None Include="JSON\Halo5\Stats\matches.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\Common\stats.schema.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\Common\stats.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\game-variants.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\game-variants.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\map-variants.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\map-variants.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\map-variant.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\map-variant.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\game-variant.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\game-variant.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\game-variants.schema.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\game-variants.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\map-variants.schema.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\map-variants.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\map-variant.schema.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\map-variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\UserGeneratedContent\game-variant.schema.json">
+    <None Include="JSON\Halo5\UserGeneratedContent\game-variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
@@ -388,7 +388,10 @@
       <Name>HaloSharp</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="JSON\HaloWars2\" />
+    <Folder Include="Query\HaloWars2\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

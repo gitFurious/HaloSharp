@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using HaloSharp.Model.Metadata;
-using HaloSharp.Model.Metadata.Common;
-using HaloSharp.Model.Stats;
-using HaloSharp.Model.Stats.CarnageReport;
-using HaloSharp.Model.Stats.Lifetime;
+using HaloSharp.Model.Halo5.Metadata;
+using HaloSharp.Model.Halo5.Metadata.Common;
+using HaloSharp.Model.Halo5.Stats;
+using HaloSharp.Model.Halo5.Stats.CarnageReport;
+using HaloSharp.Model.Halo5.Stats.Lifetime;
+using HaloSharp.Model.Halo5.UserGeneratedContent;
 using HaloSharp.Test.Utility;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -76,10 +77,10 @@ namespace HaloSharp.Test.Schema
         [TestCase(Config.EnemyJsonPath, Config.EnemyJsonSchemaPath, typeof(List<Enemy>))]
         [TestCase(Config.FlexibleStatJsonPath, Config.FlexibleStatJsonSchemaPath, typeof(List<FlexibleStat>))]
         [TestCase(Config.GameBaseVariantJsonPath, Config.GameBaseVariantJsonSchemaPath, typeof(List<GameBaseVariant>))]
-        [TestCase(Config.GameVariantJsonPath, Config.GameVariantJsonSchemaPath, typeof(GameVariant))]
+        [TestCase(Config.GameVariantJsonPath, Config.GameVariantJsonSchemaPath, typeof(Model.Halo5.Metadata.GameVariant))]
         [TestCase(Config.ImpulseJsonPath, Config.ImpulseJsonSchemaPath, typeof(List<Impulse>))]
         [TestCase(Config.MapJsonPath, Config.MapJsonSchemaPath, typeof(List<Map>))]
-        [TestCase(Config.MapVariantJsonPath, Config.MapVariantJsonSchemaPath, typeof(MapVariant))]
+        [TestCase(Config.MapVariantJsonPath, Config.MapVariantJsonSchemaPath, typeof(Model.Halo5.Metadata.MapVariant))]
         [TestCase(Config.MedalJsonPath, Config.MedalJsonSchemaPath, typeof(List<Medal>))]
         [TestCase(Config.PlaylistJsonPath, Config.PlaylistJsonSchemaPath, typeof(List<Playlist>))]
         [TestCase(Config.RequisitionJsonPath, Config.RequisitionJsonSchemaPath, typeof(Requisition))]
@@ -105,10 +106,10 @@ namespace HaloSharp.Test.Schema
         [TestCase(Config.MatchesJsonPath, Config.MatchesJsonSchemaPath, typeof(MatchSet))]
         [TestCase(Config.LeaderboardJsonPath, Config.LeaderboardJsonSchemaPath, typeof(Leaderboard))]
 
-        [TestCase(Config.UserGeneratedContentGameVariantsJsonPath, Config.UserGeneratedContentGameVariantsJsonSchemaPath, typeof(Model.UserGeneratedContent.GameVariantResult))]
-        [TestCase(Config.UserGeneratedContentMapVariantsJsonPath, Config.UserGeneratedContentMapVariantsJsonSchemaPath, typeof(Model.UserGeneratedContent.MapVariantResult))]
-        [TestCase(Config.UserGeneratedContentGameVariantJsonPath, Config.UserGeneratedContentGameVariantJsonSchemaPath, typeof(Model.UserGeneratedContent.GameVariant))]
-        [TestCase(Config.UserGeneratedContentMapVariantJsonPath, Config.UserGeneratedContentMapVariantJsonSchemaPath, typeof(Model.UserGeneratedContent.MapVariant))]
+        [TestCase(Config.UserGeneratedContentGameVariantsJsonPath, Config.UserGeneratedContentGameVariantsJsonSchemaPath, typeof(GameVariantResult))]
+        [TestCase(Config.UserGeneratedContentMapVariantsJsonPath, Config.UserGeneratedContentMapVariantsJsonSchemaPath, typeof(MapVariantResult))]
+        [TestCase(Config.UserGeneratedContentGameVariantJsonPath, Config.UserGeneratedContentGameVariantJsonSchemaPath, typeof(Model.Halo5.UserGeneratedContent.GameVariant))]
+        [TestCase(Config.UserGeneratedContentMapVariantJsonPath, Config.UserGeneratedContentMapVariantJsonSchemaPath, typeof(Model.Halo5.UserGeneratedContent.MapVariant))]
         public void ModelMatchesSchema(string jsonPath, string schemaPath, Type type)
         {
             var schema = JSchema.Parse(File.ReadAllText(schemaPath), new JSchemaReaderSettings
