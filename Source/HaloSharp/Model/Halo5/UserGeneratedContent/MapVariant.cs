@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using HaloSharp.Model.Common;
+using HaloSharp.Model.Halo5.Common;
 using HaloSharp.Model.Halo5.Stats.Common;
 
 namespace HaloSharp.Model.Halo5.UserGeneratedContent

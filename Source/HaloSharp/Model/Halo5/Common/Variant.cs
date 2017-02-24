@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace HaloSharp.Model.Common
+namespace HaloSharp.Model.Halo5.Common
 {
     [Serializable]
     public class Variant : IEquatable<Variant>

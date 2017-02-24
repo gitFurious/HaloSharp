@@ -58,7 +58,7 @@
     <Compile Include="HaloSession.cs" />
     <Compile Include="HaloClient.cs" />
     <Compile Include="IQuery.cs" />
-    <Compile Include="Model\Common\ISO8601.cs" />
+    <Compile Include="Model\Halo5\Common\ISO8601.cs" />
     <Compile Include="Model\Enumeration.cs" />
     <Compile Include="Model\Error\ValidationError.cs" />
     <Compile Include="Model\Error\HaloApiError.cs" />
@@ -117,7 +117,7 @@
     <Compile Include="Model\Halo5\Stats\Common\Link.cs" />
     <Compile Include="Model\Halo5\Stats\Leaderboard.cs" />
     <Compile Include="Model\Halo5\Stats\MatchSet.cs" />
-    <Compile Include="Model\Common\Variant.cs" />
+    <Compile Include="Model\Halo5\Common\Variant.cs" />
     <Compile Include="Model\Halo5\UserGeneratedContent\GameVariantResult.cs" />
     <Compile Include="Model\Halo5\UserGeneratedContent\GameVariant.cs" />
     <Compile Include="Model\Halo5\UserGeneratedContent\MapVariantResult.cs" />
@@ -190,7 +190,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Model\Halo5Forge\" />
+    <Folder Include="Model\HaloWars2\" />
+    <Folder Include="Query\Halo5Forge\" />
     <Folder Include="Query\HaloWars2\" />
+    <Folder Include="Validation\Halo5Forge\" />
     <Folder Include="Validation\HaloWars2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

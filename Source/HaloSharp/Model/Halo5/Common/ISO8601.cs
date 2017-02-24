@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HaloSharp.Model.Common
+namespace HaloSharp.Model.Halo5.Common
 {
     [Serializable]
     public class ISO8601 : IEquatable<ISO8601>

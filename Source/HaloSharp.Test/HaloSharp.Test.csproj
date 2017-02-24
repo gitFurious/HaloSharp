@@ -389,7 +389,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="JSON\Halo5Forge\" />
     <Folder Include="JSON\HaloWars2\" />
+    <Folder Include="Query\Halo5Forge\" />
     <Folder Include="Query\HaloWars2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
