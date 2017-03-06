@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": [ "object", "null" ],
+  "additionalProperties": false,
+  "properties": {
+    "x": {
+      "type": "number"
+    },
+    "y": {
+      "type": "number"
+    },
+    "z": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "x",
+    "y",
+    "z"
+  ]
+}

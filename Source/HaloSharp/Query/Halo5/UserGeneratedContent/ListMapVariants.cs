@@ -41,7 +41,7 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
         ///     description, accesibility, created, modified, bookmarkCount.
         /// </summary>
         /// <param name="sort">The field that should be used to sort the results as the primary sort order.</param>
-        public ListMapVariants SortBy(Model.Enumeration.UserGeneratedContentSort sort)
+        public ListMapVariants SortBy(Model.Enumeration.Halo5.UserGeneratedContentSort sort)
         {
             Parameters["sort"] = sort.ToString();
 

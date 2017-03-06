@@ -30,7 +30,7 @@ namespace HaloSharp.Model.Halo5.Common
         /// </list>
         /// </summary>
         [JsonProperty(PropertyName = "OwnerType")]
-        public Enumeration.OwnerType OwnerType { get; set; }
+        public Enumeration.Halo5.OwnerType OwnerType { get; set; }
 
         /// <summary>
         /// The ID of the map variant. Map variants are available via the Metadata API.
@@ -50,7 +50,7 @@ namespace HaloSharp.Model.Halo5.Common
         /// </list>
         /// </summary>
         [JsonProperty(PropertyName = "ResourceType")]
-        public Enumeration.ResourceType ResourceType { get; set; }
+        public Enumeration.Halo5.ResourceType ResourceType { get; set; }
 
         public bool Equals(Variant other)
         {

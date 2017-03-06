@@ -57,7 +57,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </list>
         /// </summary>
         [JsonProperty(PropertyName = "supportedGameModes", ItemConverterType = typeof(StringEnumConverter))]
-        public List<Enumeration.GameMode> SupportedGameModes { get; set; }
+        public List<Enumeration.Halo5.GameMode> SupportedGameModes { get; set; }
 
         public bool Equals(Map other)
         {

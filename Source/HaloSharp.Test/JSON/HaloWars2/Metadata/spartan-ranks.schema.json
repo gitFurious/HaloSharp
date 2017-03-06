@@ -1,0 +1,188 @@
+{
+  "definitions": {
+    "HW2SpartanRankContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2SpartanRankView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "common/link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2SpartanRankView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2SpartanRank": {
+          "$ref": "#/definitions/HW2SpartanRank"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "HW2SpartanRank"
+      ]
+    },
+
+    "HW2SpartanRank": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "StartXP": {
+          "type": "integer"
+        },
+        "Packs": {
+          "type": "array",
+          "items": {
+            "$ref": "common/content-item-type-c.schema.json#/definitions/ContentItemTypeC"
+          }
+        },
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2SpartanRankDisplayInfoContentItemTypeB"
+        },
+        "RankNumber": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "StartXP",
+        "Packs",
+        "DisplayInfo",
+        "RankNumber"
+      ]
+    },
+
+    "HW2SpartanRankDisplayInfoContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2SpartanRankDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2SpartanRankDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "BatchLocalization": {
+          "$ref": "common/batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "common/localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2SpartanRankDisplayInfo": {
+          "$ref": "#/definitions/HW2SpartanRankDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2SpartanRankDisplayInfo",
+        "BatchLocalization",
+        "Localization",
+        "Title",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2SpartanRankDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Paging": {
+      "$ref": "common/paging.schema.json"
+    },
+    "ContentItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/HW2SpartanRankContentItemTypeA"
+      }
+    }
+  },
+  "required": [
+    "Paging",
+    "ContentItems"
+  ]
+}

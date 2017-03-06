@@ -1,0 +1,68 @@
+{
+  "definitions": {
+    "Result": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "string"
+        },
+        "ResultCode": {
+          "type": "integer"
+        },
+        "Result": {
+          "$ref": "#/definitions/Ratings"
+        }
+      },
+      "required": [
+        "Id",
+        "ResultCode",
+        "Result"
+      ]
+    },
+
+    "Ratings": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Mmr": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "common/matchmaking-rank.schema.json" }
+          ]
+        },
+        "Csr": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "common/competitive-skill-rank.schema.json" }
+          ]
+        }
+      },
+      "required": [
+        "Mmr",
+        "Csr"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Result"
+      }
+    },
+    "Links": {
+      "$ref": "../../common/link.schema.json"
+    }
+  },
+  "required": [
+    "Results",
+    "Links"
+  ]
+}

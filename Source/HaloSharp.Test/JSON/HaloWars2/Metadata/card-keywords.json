@@ -1,0 +1,669 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 12,
+    "TotalCount": 12
+  },
+  "ContentItems": [
+    {
+      "Id": 337156,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:08Z",
+          "ModifiedUtc": "2017-02-03T19:41:44Z",
+          "PublishedUtc": "2017-02-03T19:41:44Z",
+          "Container": -1
+        },
+        "Identity": "75012dddd39b405d8b1406b321de18e9",
+        "Autoroute": "hw2/CardKeywords/Rally",
+        "Title": "Rally",
+        "HW2CardKeyword": {
+          "Keyword": "Rally",
+          "DisplayInfo": {
+            "Id": 336776,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:08Z",
+                "ModifiedUtc": "2017-02-03T19:40:23Z",
+                "PublishedUtc": "2017-02-03T19:40:23Z",
+                "Container": -1
+              },
+              "Identity": "dcdbd8464e98490a923444414bf5dc5c",
+              "Title": "Rally Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Rally",
+                "Description": "This unit inspires nearby troops to deal increased damage."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337156"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337154,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:04Z",
+          "ModifiedUtc": "2017-02-03T19:41:43Z",
+          "PublishedUtc": "2017-02-03T19:41:43Z",
+          "Container": -1
+        },
+        "Identity": "7ee865779919453c9631bf90c7fd335f",
+        "Autoroute": "hw2/CardKeywords/Siphon",
+        "Title": "Siphon",
+        "HW2CardKeyword": {
+          "Keyword": "Siphon",
+          "DisplayInfo": {
+            "Id": 335787,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:04Z",
+                "ModifiedUtc": "2017-02-03T19:37:07Z",
+                "PublishedUtc": "2017-02-03T19:37:07Z",
+                "Container": -1
+              },
+              "Identity": "50122d49e3b74e55b5f0deab0f6120d9",
+              "Title": "Siphon Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Siphon",
+                "Description": "This unit has special weaponry that steals health from its enemies equal to the damage dealt."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337154"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337123,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:06Z",
+          "ModifiedUtc": "2017-02-03T19:41:34Z",
+          "PublishedUtc": "2017-02-03T19:41:34Z",
+          "Container": -1
+        },
+        "Identity": "ccc82e4d8fb345a89af791ed1ec99987",
+        "Autoroute": "hw2/CardKeywords/Reflect",
+        "Title": "Reflect",
+        "HW2CardKeyword": {
+          "Keyword": "Reflect",
+          "DisplayInfo": {
+            "Id": 335388,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:06Z",
+                "ModifiedUtc": "2017-02-03T19:35:49Z",
+                "PublishedUtc": "2017-02-03T19:35:49Z",
+                "Container": -1
+              },
+              "Identity": "2af196b7dda847c0950f1ecccc9f56b9",
+              "Title": "Reflect Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Reflect",
+                "Description": "Half of the damage this unit takes is automatically dealt back to an enemy attacker."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337123"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337112,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:11Z",
+          "ModifiedUtc": "2017-02-03T19:41:30Z",
+          "PublishedUtc": "2017-02-03T19:41:30Z",
+          "Container": -1
+        },
+        "Identity": "e41c2cc5c2e94c578e0c1ab3ff1687f5",
+        "Autoroute": "hw2/CardKeywords/Shield",
+        "Title": "Shield",
+        "HW2CardKeyword": {
+          "Keyword": "Shield",
+          "DisplayInfo": {
+            "Id": 335369,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:11Z",
+                "ModifiedUtc": "2017-02-03T19:35:45Z",
+                "PublishedUtc": "2017-02-03T19:35:45Z",
+                "Container": -1
+              },
+              "Identity": "d16fc8653d2e472e9b05cd0ec1ed6c05",
+              "Title": "Shield Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Shield",
+                "Description": "This unit has energy shield protection that absorbs damage and regenerates when out of combat."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337112"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337113,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:07Z",
+          "ModifiedUtc": "2017-02-03T19:41:29Z",
+          "PublishedUtc": "2017-02-03T19:41:29Z",
+          "Container": -1
+        },
+        "Identity": "9c49dc33a86d44b3b235faf48e85158e",
+        "Autoroute": "hw2/CardKeywords/Guard",
+        "Title": "Guard",
+        "HW2CardKeyword": {
+          "Keyword": "Guard",
+          "DisplayInfo": {
+            "Id": 335419,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:07Z",
+                "ModifiedUtc": "2017-02-03T19:35:57Z",
+                "PublishedUtc": "2017-02-03T19:35:57Z",
+                "Container": -1
+              },
+              "Identity": "a0b170d58dc0449989f13a751925309d",
+              "Title": "Guard Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Guard",
+                "Description": "This unit covers nearby allies, receiving all damage they would normally take."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337113"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337097,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:05Z",
+          "ModifiedUtc": "2017-02-03T19:41:26Z",
+          "PublishedUtc": "2017-02-03T19:41:27Z",
+          "Container": -1
+        },
+        "Identity": "bc4ef885e034441f94efe6f99d447bf9",
+        "Autoroute": "hw2/CardKeywords/Blast",
+        "Title": "Blast",
+        "HW2CardKeyword": {
+          "Keyword": "Blast",
+          "DisplayInfo": {
+            "Id": 335626,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:05Z",
+                "ModifiedUtc": "2017-02-03T19:36:39Z",
+                "PublishedUtc": "2017-02-03T19:36:39Z",
+                "Container": -1
+              },
+              "Identity": "fdfdfc7d965a473bb832660f6445a293",
+              "Title": "Blast Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Blast",
+                "Description": "This unit explodes violently on death, damaging enemy troops in its radius."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337097"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337076,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:12Z",
+          "ModifiedUtc": "2017-02-03T19:41:22Z",
+          "PublishedUtc": "2017-02-03T19:41:22Z",
+          "Container": -1
+        },
+        "Identity": "bcaa72c0998640e48e663aa57b8e5998",
+        "Autoroute": "hw2/CardKeywords/Detect",
+        "Title": "Detect",
+        "HW2CardKeyword": {
+          "Keyword": "Detect",
+          "DisplayInfo": {
+            "Id": 335677,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:12Z",
+                "ModifiedUtc": "2017-02-03T19:36:48Z",
+                "PublishedUtc": "2017-02-03T19:36:48Z",
+                "Container": -1
+              },
+              "Identity": "8a8777b92acc41f7862846fa37c08af5",
+              "Title": "Detect Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Detect",
+                "Description": "This unit detects and reveals nearby Cloaked enemies."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337076"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337064,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:10Z",
+          "ModifiedUtc": "2017-02-03T19:41:19Z",
+          "PublishedUtc": "2017-02-03T19:41:19Z",
+          "Container": -1
+        },
+        "Identity": "e38d6894da254acd976c04bc915b22e1",
+        "Autoroute": "hw2/CardKeywords/Cloak",
+        "Title": "Cloak",
+        "HW2CardKeyword": {
+          "Keyword": "Cloak",
+          "DisplayInfo": {
+            "Id": 335371,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:10Z",
+                "ModifiedUtc": "2017-02-03T19:35:46Z",
+                "PublishedUtc": "2017-02-03T19:35:46Z",
+                "Container": -1
+              },
+              "Identity": "8b45386d78de4fc194651bd86d0f52f9",
+              "Title": "Cloak Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Cloak",
+                "Description": "This unit deploys invisibly, able to move and attack without revealing itself for the first 90 seconds."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337064"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336047,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:13Z",
+          "ModifiedUtc": "2017-02-03T19:38:04Z",
+          "PublishedUtc": "2017-02-03T19:38:04Z",
+          "Container": -1
+        },
+        "Identity": "7e9470ab60e1497ca70fee56f95a2412",
+        "Autoroute": "hw2/CardKeywords/Support",
+        "Title": "Support",
+        "HW2CardKeyword": {
+          "Keyword": "Support",
+          "DisplayInfo": {
+            "Id": 335813,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:13Z",
+                "ModifiedUtc": "2017-02-03T19:37:11Z",
+                "PublishedUtc": "2017-02-03T19:37:11Z",
+                "Container": -1
+              },
+              "Identity": "401e1d735dde4117a29f29386a2840e3",
+              "Title": "Support Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Support",
+                "Description": "This unit cannot attack and instead focuses on support or healing skills to boost your army."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336047"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335967,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T13:57:08Z",
+          "ModifiedUtc": "2017-02-03T19:37:47Z",
+          "PublishedUtc": "2017-02-03T19:37:47Z",
+          "Container": -1
+        },
+        "Identity": "eaa5c6532f714df985f586406ef3d6cd",
+        "Autoroute": "hw2/CardKeywords/LastStand",
+        "Title": "Last Stand",
+        "HW2CardKeyword": {
+          "Keyword": "LastStand",
+          "DisplayInfo": {
+            "Id": 334848,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T13:57:08Z",
+                "ModifiedUtc": "2017-02-03T19:34:13Z",
+                "PublishedUtc": "2017-02-03T19:34:13Z",
+                "Container": -1
+              },
+              "Identity": "e67f9cf685a741da9cce4ba30eb803ef",
+              "Title": "Last Stand Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Last Stand",
+                "Description": "When this unit falls in battle, a number of infantry troops jump out to continue the fight."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335967"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335749,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T14:00:09Z",
+          "ModifiedUtc": "2017-02-03T19:37:00Z",
+          "PublishedUtc": "2017-02-03T19:37:00Z",
+          "Container": -1
+        },
+        "Identity": "6385c301d8824ad6bfbc4e628e1a0b8f",
+        "Autoroute": "hw2/CardKeywords/Drain",
+        "Title": "Shock",
+        "HW2CardKeyword": {
+          "Keyword": "Drain",
+          "DisplayInfo": {
+            "Id": 335440,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T14:00:09Z",
+                "ModifiedUtc": "2017-02-03T19:36:00Z",
+                "PublishedUtc": "2017-02-03T19:36:00Z",
+                "Container": -1
+              },
+              "Identity": "ddf573d815cc4c138732dd443e60984c",
+              "Title": "Shock Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Shock",
+                "Description": "This unit intimidates nearby enemy troops, significantly reducing their armor."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335749"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335113,
+      "Type": "HW2CardKeyword",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2017-01-23T13:57:09Z",
+          "ModifiedUtc": "2017-02-03T19:35:02Z",
+          "PublishedUtc": "2017-02-03T19:35:02Z",
+          "Container": -1
+        },
+        "Identity": "4a95208f1b9b45be8f814cb80506f37c",
+        "Autoroute": "hw2/CardKeywords/Rush",
+        "Title": "Rush",
+        "HW2CardKeyword": {
+          "Keyword": "Rush",
+          "DisplayInfo": {
+            "Id": 335108,
+            "Type": "HW2CardKeywordDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-23T13:57:09Z",
+                "ModifiedUtc": "2017-02-03T19:35:02Z",
+                "PublishedUtc": "2017-02-03T19:35:02Z",
+                "Container": -1
+              },
+              "Identity": "74b3a4d1f84d49c1af16c0159eeb0a07",
+              "Title": "Rush Display Info",
+              "HW2CardKeywordDisplayInfo": {
+                "Name": "Rush",
+                "Description": "This unit ignores Fatigue when deployed, charging into battle at full strength."
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335113"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Results": [
+    {
+      "Id": "Furiousn00b",
+      "ResultCode": 0,
+      "Result": {
+        "MultiplayerXp": 100,
+        "CampaignXp": 6600,
+        "TotalXp": 6700,
+        "LastUpdatedDateUtc": {
+          "ISO8601Date": "2017-02-23T11:26:16.352Z"
+        },
+        "SpartanRankId": "0a981f10-49f7-4275-bee7-4d8eac882ae4"
+      }
+    }
+  ],
+  "Links": {
+    "Self": {
+      "AuthorityId": "spartanstats",
+      "Path": "/hw2/xp",
+      "QueryString": "?players=Furiousn00b",
+      "RetryPolicyId": "",
+      "TopicName": "",
+      "AcknowledgementTypeId": 0,
+      "AuthenticationLifetimeExtensionSupported": false
+    }
+  }
+}

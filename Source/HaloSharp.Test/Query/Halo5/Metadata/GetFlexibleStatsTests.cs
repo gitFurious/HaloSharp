@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _flexibleStats = JsonConvert.DeserializeObject<List<FlexibleStat>>(File.ReadAllText(Config.FlexibleStatJsonPath));
+            _flexibleStats = JsonConvert.DeserializeObject<List<FlexibleStat>>(File.ReadAllText(Halo5Config.FlexibleStatJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<FlexibleStat>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetFlexibleStats_SchemaIsValid()
         {
-            var flexibleStatsSchema = JSchema.Parse(File.ReadAllText(Config.FlexibleStatJsonSchemaPath), new JSchemaReaderSettings
+            var flexibleStatsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.FlexibleStatJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.FlexibleStatJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.FlexibleStatJsonSchemaPath))
             });
 
             var query = new GetFlexibleStats()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetFlexibleStats_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.FlexibleStatJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.FlexibleStatJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.FlexibleStatJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.FlexibleStatJsonSchemaPath))
             });
 
             var query = new GetFlexibleStats()

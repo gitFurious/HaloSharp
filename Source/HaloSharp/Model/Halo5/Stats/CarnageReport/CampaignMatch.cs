@@ -28,7 +28,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
         /// </list>
         /// </summary>
         [JsonProperty(PropertyName = "Difficulty")]
-        public Enumeration.Difficulty Difficulty { get; set; }
+        public Enumeration.Halo5.Difficulty Difficulty { get; set; }
 
         /// <summary>
         /// Indicates whether the mission was completed when the match ended.

@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model;
+using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Stats;
 using HaloSharp.Query.Halo5.Stats;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -20,15 +22,15 @@ namespace HaloSharp.Test.Query.Halo5.Stats
     public class GetMatchesTests
     {
         private IHaloSession _mockSession;
-        private MatchSet _matchSet;
+        private MatchSet<PlayerMatch> _matchSet;
 
         [SetUp]
         public void Setup()
         {
-            _matchSet = JsonConvert.DeserializeObject<MatchSet>(File.ReadAllText(Config.MatchesJsonPath));
+            _matchSet = JsonConvert.DeserializeObject<MatchSet<PlayerMatch>>(File.ReadAllText(Halo5Config.MatchesJsonPath));
 
             var mock = new Mock<IHaloSession>();
-            mock.Setup(m => m.Get<MatchSet>(It.IsAny<string>()))
+            mock.Setup(m => m.Get<MatchSet<PlayerMatch>>(It.IsAny<string>()))
                 .ReturnsAsync(_matchSet);
 
             _mockSession = mock.Object;
@@ -58,9 +60,9 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         }
 
         [Test]
-        [TestCase(Enumeration.GameMode.Arena)]
-        [TestCase(Enumeration.GameMode.Warzone)]
-        public void GetConstructedUri_InGameMode_MatchesExpected(Enumeration.GameMode gameMode)
+        [TestCase(Enumeration.Halo5.GameMode.Arena)]
+        [TestCase(Enumeration.Halo5.GameMode.Warzone)]
+        public void GetConstructedUri_InGameMode_MatchesExpected(Enumeration.Halo5.GameMode gameMode)
         {
             var query = new GetMatches()
                 .InGameMode(gameMode);
@@ -71,12 +73,12 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         }
 
         [Test]
-        [TestCase(Enumeration.GameMode.Arena, Enumeration.GameMode.Warzone)]
-        [TestCase(Enumeration.GameMode.Campaign, Enumeration.GameMode.Custom)]
-        public void GetConstructedUri_InGameModes_MatchesExpected(Enumeration.GameMode gameMode1, Enumeration.GameMode gameMode2)
+        [TestCase(Enumeration.Halo5.GameMode.Arena, Enumeration.Halo5.GameMode.Warzone)]
+        [TestCase(Enumeration.Halo5.GameMode.Campaign, Enumeration.Halo5.GameMode.Custom)]
+        public void GetConstructedUri_InGameModes_MatchesExpected(Enumeration.Halo5.GameMode gameMode1, Enumeration.Halo5.GameMode gameMode2)
         {
             var query = new GetMatches()
-                .InGameModes(new List<Enumeration.GameMode> {gameMode1, gameMode2});
+                .InGameModes(new List<Enumeration.Halo5.GameMode> {gameMode1, gameMode2});
 
             var uri = query.GetConstructedUri();
 
@@ -110,9 +112,9 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         }
 
         [Test]
-        [TestCase("Greenskull", Enumeration.GameMode.Warzone, 5, 10)]
-        [TestCase("Furiousn00b", Enumeration.GameMode.Arena, 15, 20)]
-        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, Enumeration.GameMode gameMode, int skip, int take)
+        [TestCase("Greenskull", Enumeration.Halo5.GameMode.Warzone, 5, 10)]
+        [TestCase("Furiousn00b", Enumeration.Halo5.GameMode.Arena, 15, 20)]
+        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, Enumeration.Halo5.GameMode gameMode, int skip, int take)
         {
             var query = new GetMatches()
                 .ForPlayer(gamertag)
@@ -135,7 +137,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
 
             var result = await _mockSession.Query(query);
 
-            Assert.IsInstanceOf(typeof(MatchSet), result);
+            Assert.IsInstanceOf(typeof(MatchSet<PlayerMatch>), result);
             Assert.AreEqual(_matchSet, result);
         }
 
@@ -150,7 +152,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
 
             var result = await Global.Session.Query(query);
 
-            Assert.IsInstanceOf(typeof(MatchSet), result);
+            Assert.IsInstanceOf(typeof(MatchSet<PlayerMatch>), result);
         }
 
         [Test]
@@ -158,10 +160,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [TestCase("Furiousn00b")]
         public async Task GetMatches_SchemaIsValid(string gamertag)
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.MatchesJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.MatchesJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MatchesJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MatchesJsonSchemaPath))
             });
 
             var query = new GetMatches()
@@ -178,10 +180,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [TestCase("Furiousn00b")]
         public async Task GetMatches_ModelMatchesSchema(string gamertag)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.MatchesJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.MatchesJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MatchesJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MatchesJsonSchemaPath))
             });
 
             var query = new GetMatches()
@@ -207,7 +209,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
 
             var result = await Global.Session.Query(query);
 
-            SerializationUtility<MatchSet>.AssertRoundTripSerializationIsPossible(result);
+            SerializationUtility<MatchSet<PlayerMatch>>.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]

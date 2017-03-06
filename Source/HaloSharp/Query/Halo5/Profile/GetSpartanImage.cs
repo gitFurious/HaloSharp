@@ -52,7 +52,7 @@ namespace HaloSharp.Query.Halo5.Profile
         ///     An optional crop that will be used to determine what portion of the Spartan is returned in the image.
         /// </summary>
         /// <param name="cropType">Crop that will be used to determine what portion of the Spartan is returned.</param>
-        public GetSpartanImage Crop(Enumeration.CropType cropType)
+        public GetSpartanImage Crop(Enumeration.Halo5.CropType cropType)
         {
             Parameters["crop"] = cropType.ToString();
 

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _vehicles = JsonConvert.DeserializeObject<List<Vehicle>>(File.ReadAllText(Config.VehiclesJsonPath));
+            _vehicles = JsonConvert.DeserializeObject<List<Vehicle>>(File.ReadAllText(Halo5Config.VehiclesJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<Vehicle>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetVehicles_SchemaIsValid()
         {
-            var vehiclesSchema = JSchema.Parse(File.ReadAllText(Config.VehiclesJsonSchemaPath), new JSchemaReaderSettings
+            var vehiclesSchema = JSchema.Parse(File.ReadAllText(Halo5Config.VehiclesJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.VehiclesJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.VehiclesJsonSchemaPath))
             });
 
             var query = new GetVehicles()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetVehicles_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.VehiclesJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.VehiclesJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.VehiclesJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.VehiclesJsonSchemaPath))
             });
 
             var query = new GetVehicles()

@@ -62,13 +62,13 @@ namespace HaloSharp.Model.Halo5.Metadata.Common
         /// </summary>
         [JsonProperty(PropertyName = "flair")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.RequisitionPackType? Flair { get; set; }
+        public Enumeration.Halo5.RequisitionPackType? Flair { get; set; }
 
         /// <summary>
         /// TODO
         /// </summary>
         [JsonProperty(PropertyName = "giftableAcquisitionMethods")]
-        public Enumeration.GiftableAcquisitionMethod GiftableAcquisitionMethod { get; set; }
+        public Enumeration.Halo5.GiftableAcquisitionMethod GiftableAcquisitionMethod { get; set; }
 
         /// <summary>
         /// The ID that uniquely identifies this pack.

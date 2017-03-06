@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _campaignMissions = JsonConvert.DeserializeObject<List<CampaignMission>>(File.ReadAllText(Config.CampaignMissionsJsonPath));
+            _campaignMissions = JsonConvert.DeserializeObject<List<CampaignMission>>(File.ReadAllText(Halo5Config.CampaignMissionsJsonPath));
             
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<CampaignMission>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetCampaignMissions_SchemaIsValid()
         {
-            var campaignMissionsSchema = JSchema.Parse(File.ReadAllText(Config.CampaignMissionsJsonSchemaPath), new JSchemaReaderSettings
+            var campaignMissionsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.CampaignMissionsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.CampaignMissionsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.CampaignMissionsJsonSchemaPath))
             });
 
             var query = new GetCampaignMissions()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetCampaignMissions_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.CampaignMissionsJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.CampaignMissionsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.CampaignMatchJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.CampaignMatchJsonSchemaPath))
             });
 
             var query = new GetCampaignMissions()

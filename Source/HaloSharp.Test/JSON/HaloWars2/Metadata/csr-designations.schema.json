@@ -1,0 +1,264 @@
+{
+  "definitions": {
+    "HW2CsrDesignationContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2CsrDesignationView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "common/link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2CsrDesignationView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2CsrDesignation": {
+          "$ref": "#/definitions/HW2CsrDesignation"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "HW2CsrDesignation"
+      ]
+    },
+
+    "HW2CsrDesignation": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2CsrDesignationDisplayInfoContentItemTypeB"
+        },
+        "ID": {
+          "type": "integer"
+        },
+        "Image": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/image.schema.json#/definitions/null" },
+            { "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB" }
+          ]
+        },
+        "Tiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/HW2CsrDesignationTierContentItemTypeB"
+          }
+        }
+      },
+      "required": [
+        "DisplayInfo",
+        "ID",
+        "Image",
+        "Tiers"
+      ]
+    },
+
+    "HW2CsrDesignationDisplayInfoContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2CsrDesignationDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2CsrDesignationDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "BatchLocalization": {
+          "$ref": "common/batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "common/localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2CsrDesignationDisplayInfo": {
+          "$ref": "#/definitions/HW2CsrDesignationDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2CsrDesignationDisplayInfo",
+        "BatchLocalization",
+        "Localization",
+        "Title",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2CsrDesignationDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name"
+      ]
+    },
+
+
+    "HW2CsrDesignationTierContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2CsrDesignationTierView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2CsrDesignationTierView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2CsrDesignationTier": {
+          "$ref": "#/definitions/HW2CsrDesignationTier"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "HW2CsrDesignationTier"
+      ]
+    },
+
+    "HW2CsrDesignationTier": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ID": {
+          "type": "integer"
+        },
+        "Image": {
+          "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB"
+        }
+      },
+      "required": [
+        "ID",
+        "Image"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Paging": {
+      "$ref": "common/paging.schema.json"
+    },
+    "ContentItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/HW2CsrDesignationContentItemTypeA"
+      }
+    }
+  },
+  "required": [
+    "Paging",
+    "ContentItems"
+  ]
+}

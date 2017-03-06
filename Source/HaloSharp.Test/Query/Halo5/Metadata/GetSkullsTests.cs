@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _skulls = JsonConvert.DeserializeObject<List<Skull>>(File.ReadAllText(Config.SkullsJsonPath));
+            _skulls = JsonConvert.DeserializeObject<List<Skull>>(File.ReadAllText(Halo5Config.SkullsJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<Skull>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetSkulls_SchemaIsValid()
         {
-            var skullsSchema = JSchema.Parse(File.ReadAllText(Config.SkullsJsonSchemaPath), new JSchemaReaderSettings
+            var skullsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.SkullsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.SkullsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.SkullsJsonSchemaPath))
             });
 
             var query = new GetSkulls()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetSkulls_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.SkullsJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.SkullsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.SkullsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.SkullsJsonSchemaPath))
             });
 
             var query = new GetSkulls()

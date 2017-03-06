@@ -45,7 +45,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport.Common
         /// </list>
         /// </summary>
         [JsonProperty(PropertyName = "RewardSourceType")]
-        public Enumeration.RewardSourceType RewardSourceType { get; set; }
+        public Enumeration.Halo5.RewardSourceType RewardSourceType { get; set; }
 
         /// <summary>
         /// If the Reward Source is Spartan Rank, this value is set to the Spartan Rank the player acquired that led to 

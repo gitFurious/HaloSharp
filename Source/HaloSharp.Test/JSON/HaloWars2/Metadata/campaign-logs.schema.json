@@ -1,0 +1,99 @@
+{
+  "definitions": {
+    "HW2LogCompleteContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2LogView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "common/link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2LogView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2Log": {
+          "$ref": "#/definitions/HW2Log"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "HW2Log",
+        "Title"
+      ]
+    },
+
+    "HW2Log": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Paging": {
+      "$ref": "common/paging.schema.json"
+    },
+    "ContentItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/HW2LogCompleteContentItemTypeA"
+      }
+    }
+  },
+  "required": [
+    "Paging",
+    "ContentItems"
+  ]
+}

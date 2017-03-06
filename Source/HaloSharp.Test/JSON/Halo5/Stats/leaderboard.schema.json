@@ -4,7 +4,7 @@
       "type": "object",
       "properties": {
         "Player": {
-          "$ref": "common/identity.schema.json"
+          "$ref": "../../common/identity.schema.json"
         },
         "Rank": {
           "type": "integer"
@@ -41,16 +41,7 @@
       }
     },
     "Links": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "Self": {
-          "$ref": "common/link.schema.json"
-        }
-      },
-      "required": [
-        "Self"
-      ]
+      "$ref": "../../common/link.schema.json"
     }
   },
   "additionalProperties": false,

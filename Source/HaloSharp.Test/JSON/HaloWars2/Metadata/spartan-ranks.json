@@ -1,0 +1,3053 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 50,
+    "TotalCount": 50
+  },
+  "ContentItems": [
+    {
+      "Id": 202827,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:05Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:47Z",
+          "Container": -1
+        },
+        "Identity": "e4d57428dd07411eb90f3569bcb4de34",
+        "Title": "Rank 26",
+        "HW2SpartanRank": {
+          "StartXP": 99500,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202114,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:36Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:36:12Z",
+                "Container": -1
+              },
+              "Identity": "edba8b6d905b4ff3b111bb09a757f0a7",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 25",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Captain"
+              }
+            }
+          },
+          "RankNumber": 26
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202827"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202845,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:09Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:47Z",
+          "Container": -1
+        },
+        "Identity": "435b0072129b4940b79cc9aaa845c203",
+        "Title": "Rank 32",
+        "HW2SpartanRank": {
+          "StartXP": 140200,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201931,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:38Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:09Z",
+                "Container": -1
+              },
+              "Identity": "40d0f9dcb763408d8f69e2945ca5e1c9",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 31",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Lt. Colonel"
+              }
+            }
+          },
+          "RankNumber": 32
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202845"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202867,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:11Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:47Z",
+          "Container": -1
+        },
+        "Identity": "d5728b9ed18b46a98a74079e03c58da4",
+        "Title": "Rank 34",
+        "HW2SpartanRank": {
+          "StartXP": 155200,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202338,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:39Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:38:55Z",
+                "Container": -1
+              },
+              "Identity": "3487d7d37b134c5a9ac98ff5d4c308f1",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 33",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Colonel"
+              }
+            }
+          },
+          "RankNumber": 34
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202867"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202878,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:08Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:47Z",
+          "Container": -1
+        },
+        "Identity": "44e29524d66744bbbe5222ddf0bef87b",
+        "Title": "Rank 30",
+        "HW2SpartanRank": {
+          "StartXP": 126000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202122,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:38Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:37:21Z",
+                "Container": -1
+              },
+              "Identity": "68185ee1642f4f0981c93f7ff62bf035",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 29",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Major"
+              }
+            }
+          },
+          "RankNumber": 30
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202878"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202857,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:12Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:46Z",
+          "Container": -1
+        },
+        "Identity": "085f0cdc202548c7b2ca573a120841d1",
+        "Title": "Rank 35",
+        "HW2SpartanRank": {
+          "StartXP": 163000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201957,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:40Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:39:16Z",
+                "Container": -1
+              },
+              "Identity": "1b7dc34236cb4005af591697ae0866ed",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 35",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Force Colonel"
+              }
+            }
+          },
+          "RankNumber": 35
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202857"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202876,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:18Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:45Z",
+          "Container": -1
+        },
+        "Identity": "587a7ec2f9a84f6984631ce5a9e26fd2",
+        "Title": "Rank 42",
+        "HW2SpartanRank": {
+          "StartXP": 221400,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201935,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:42Z",
+                "ModifiedUtc": "2017-02-03T18:33:09Z",
+                "PublishedUtc": "2017-02-03T19:35:08Z",
+                "Container": -1
+              },
+              "Identity": "3e85acc7151d4af9bacb20c4c2c6f81e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 41",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Lt. General"
+              }
+            }
+          },
+          "RankNumber": 42
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202876"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202877,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:10Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:45Z",
+          "Container": -1
+        },
+        "Identity": "5579351b21b14028b5d405a10e1388e8",
+        "Title": "Rank 33",
+        "HW2SpartanRank": {
+          "StartXP": 147600,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202338,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:39Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:38:55Z",
+                "Container": -1
+              },
+              "Identity": "3487d7d37b134c5a9ac98ff5d4c308f1",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 33",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Colonel"
+              }
+            }
+          },
+          "RankNumber": 33
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202877"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202881,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:50Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:45Z",
+          "Container": -1
+        },
+        "Identity": "26bc326999454299a7220dc94f0b68d7",
+        "Title": "Rank 9",
+        "HW2SpartanRank": {
+          "StartXP": 20300,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202021,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:30Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:37:24Z",
+                "Container": -1
+              },
+              "Identity": "19296ee1f6684d71bb40b0f462f44f1f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 9",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Corporal"
+              }
+            }
+          },
+          "RankNumber": 9
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202881"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202781,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:50Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:44Z",
+          "Container": -1
+        },
+        "Identity": "89b42d3b369145d0bd5280fffcc4256a",
+        "Title": "Rank 10",
+        "HW2SpartanRank": {
+          "StartXP": 24000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202021,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:30Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:37:24Z",
+                "Container": -1
+              },
+              "Identity": "19296ee1f6684d71bb40b0f462f44f1f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 9",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Corporal"
+              }
+            }
+          },
+          "RankNumber": 10
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202781"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202839,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:53Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:44Z",
+          "Container": -1
+        },
+        "Identity": "8a2481e1f023402fa62129dcf0b234d7",
+        "Title": "Rank 13",
+        "HW2SpartanRank": {
+          "StartXP": 35400,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201944,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:31Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:37:30Z",
+                "Container": -1
+              },
+              "Identity": "477c60ebe67a4a13bc25c1c9ea3ade8d",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 13",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Army Sergeant"
+              }
+            }
+          },
+          "RankNumber": 13
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202839"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202840,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:56Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:44Z",
+          "Container": -1
+        },
+        "Identity": "804ae9b724a24554abdd86c25cadf02b",
+        "Title": "Rank 16",
+        "HW2SpartanRank": {
+          "StartXP": 47700,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201894,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:32Z",
+                "ModifiedUtc": "2017-02-03T18:33:09Z",
+                "PublishedUtc": "2017-02-03T19:37:33Z",
+                "Container": -1
+              },
+              "Identity": "75af974a215b44358712e6bf2ba48bc2",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 15",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Master Sergeant"
+              }
+            }
+          },
+          "RankNumber": 16
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202840"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202870,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:54Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:40Z",
+          "Container": -1
+        },
+        "Identity": "01000ec5d90a4246a0be4b97474ec81d",
+        "Title": "Rank 14",
+        "HW2SpartanRank": {
+          "StartXP": 39400,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201944,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:31Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:37:30Z",
+                "Container": -1
+              },
+              "Identity": "477c60ebe67a4a13bc25c1c9ea3ade8d",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 13",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Army Sergeant"
+              }
+            }
+          },
+          "RankNumber": 14
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202870"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202817,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:21Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:39Z",
+          "Container": -1
+        },
+        "Identity": "19d422344c024b82afcdcd8c44ba1a64",
+        "Title": "Rank 45",
+        "HW2SpartanRank": {
+          "StartXP": 249000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202259,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:43Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:35:41Z",
+                "Container": -1
+              },
+              "Identity": "8c29f4bbc71b498a80d1be1e4ee9550f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 44",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "General"
+              }
+            }
+          },
+          "RankNumber": 45
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202817"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202859,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:20Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:39Z",
+          "Container": -1
+        },
+        "Identity": "04949c5dfd264baeab9368fa030b7617",
+        "Title": "Rank 44",
+        "HW2SpartanRank": {
+          "StartXP": 239600,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202259,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:43Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:35:41Z",
+                "Container": -1
+              },
+              "Identity": "8c29f4bbc71b498a80d1be1e4ee9550f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 44",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "General"
+              }
+            }
+          },
+          "RankNumber": 44
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202859"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202869,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:16Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:39Z",
+          "Container": -1
+        },
+        "Identity": "1c19ffede56b49a09747c9b96afca2c1",
+        "Title": "Rank 39",
+        "HW2SpartanRank": {
+          "StartXP": 195600,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202032,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:41Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:36Z",
+                "Container": -1
+              },
+              "Identity": "5d5b4e7434f74dd2873f3a6cb060d6c4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 39",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Major General"
+              }
+            }
+          },
+          "RankNumber": 39
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202869"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202848,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:46Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:38Z",
+          "Container": -1
+        },
+        "Identity": "2bcf5b7bbec4471289995f7aa9fc685b",
+        "Title": "Rank 5",
+        "HW2SpartanRank": {
+          "StartXP": 7500,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202112,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:28Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:35:17Z",
+                "Container": -1
+              },
+              "Identity": "953c357e54494e19a567b01e2b72a42a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 5",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Private"
+              }
+            }
+          },
+          "RankNumber": 5
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202848"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202810,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:19Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:36Z",
+          "Container": -1
+        },
+        "Identity": "5cb49fda239749bd8514cb9f44e1b7c1",
+        "Title": "Rank 43",
+        "HW2SpartanRank": {
+          "StartXP": 230400,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201935,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:42Z",
+                "ModifiedUtc": "2017-02-03T18:33:09Z",
+                "PublishedUtc": "2017-02-03T19:35:08Z",
+                "Container": -1
+              },
+              "Identity": "3e85acc7151d4af9bacb20c4c2c6f81e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 41",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Lt. General"
+              }
+            }
+          },
+          "RankNumber": 43
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202810"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202874,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:15Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:36Z",
+          "Container": -1
+        },
+        "Identity": "61190e3e172549f5a628f1a8ef92c9fc",
+        "Title": "Rank 38",
+        "HW2SpartanRank": {
+          "StartXP": 187300,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202100,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:41Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:11Z",
+                "Container": -1
+              },
+              "Identity": "a7a4df906f904b28bffa8fc7c94ea51b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 37",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Brigadier Gen."
+              }
+            }
+          },
+          "RankNumber": 38
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202874"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202838,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:24Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:35Z",
+          "Container": -1
+        },
+        "Identity": "8e949a7c8b36498a802428befb764223",
+        "Title": "Rank 49",
+        "HW2SpartanRank": {
+          "StartXP": 289200,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201886,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:44Z",
+                "ModifiedUtc": "2017-02-03T18:33:09Z",
+                "PublishedUtc": "2017-02-03T19:36:52Z",
+                "Container": -1
+              },
+              "Identity": "7cb4f487d89e4761a421f931c50eafae",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 47",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Field Marshal"
+              }
+            }
+          },
+          "RankNumber": 49
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202838"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202804,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:18Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:34Z",
+          "Container": -1
+        },
+        "Identity": "b79c848b6ddf452eb70eb0b6bee8d194",
+        "Title": "Rank 41",
+        "HW2SpartanRank": {
+          "StartXP": 212600,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201935,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:42Z",
+                "ModifiedUtc": "2017-02-03T18:33:09Z",
+                "PublishedUtc": "2017-02-03T19:35:08Z",
+                "Container": -1
+              },
+              "Identity": "3e85acc7151d4af9bacb20c4c2c6f81e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 41",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Lt. General"
+              }
+            }
+          },
+          "RankNumber": 41
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202804"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202768,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:45Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:33Z",
+          "Container": -1
+        },
+        "Identity": "befe3c1a30c14088bca4cdeedfe8232a",
+        "Title": "Rank 3",
+        "HW2SpartanRank": {
+          "StartXP": 3000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201978,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:27Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:37Z",
+                "Container": -1
+              },
+              "Identity": "b8c9f2c8f69a4ac0aba4d67dcad6b32e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 3",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Apprentice"
+              }
+            }
+          },
+          "RankNumber": 3
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202768"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202759,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:13Z",
+          "ModifiedUtc": "2017-02-03T18:03:16Z",
+          "PublishedUtc": "2017-02-03T19:42:32Z",
+          "Container": -1
+        },
+        "Identity": "fc2a52cdd3b742aa8274e362355f6b3e",
+        "Title": "Rank 36",
+        "HW2SpartanRank": {
+          "StartXP": 171000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201957,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:40Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:39:16Z",
+                "Container": -1
+              },
+              "Identity": "1b7dc34236cb4005af591697ae0866ed",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 35",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Force Colonel"
+              }
+            }
+          },
+          "RankNumber": 36
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202759"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202801,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:06Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:31Z",
+          "Container": -1
+        },
+        "Identity": "135d50ca311c4705884fdcb26d358d16",
+        "Title": "Rank 28",
+        "HW2SpartanRank": {
+          "StartXP": 112300,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202131,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:37Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:37:53Z",
+                "Container": -1
+              },
+              "Identity": "6bd10ce389fd449a8437739dd8b7f943",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 27",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Strike Captain"
+              }
+            }
+          },
+          "RankNumber": 28
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202801"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202825,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:48Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:30Z",
+          "Container": -1
+        },
+        "Identity": "3350d208c07642f8afd02736e34d1e81",
+        "Title": "Rank 7",
+        "HW2SpartanRank": {
+          "StartXP": 13500,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201958,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:29Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:42Z",
+                "Container": -1
+              },
+              "Identity": "55764e73c7904a59b03cfd9189533d94",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 7",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Army Private"
+              }
+            }
+          },
+          "RankNumber": 7
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202825"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202757,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:52Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:29Z",
+          "Container": -1
+        },
+        "Identity": "3a540a2cc0e64592acfb2ef3f1b0ec48",
+        "Title": "Rank 12",
+        "HW2SpartanRank": {
+          "StartXP": 31500,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201934,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:30Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:36:08Z",
+                "Container": -1
+              },
+              "Identity": "eea4fe519b4349b59684e0bd8acab205",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 11",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Sergeant"
+              }
+            }
+          },
+          "RankNumber": 12
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202757"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202780,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:09Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:27Z",
+          "Container": -1
+        },
+        "Identity": "8dc0402dbe1e45de9f33e59c40c90d3e",
+        "Title": "Rank 31",
+        "HW2SpartanRank": {
+          "StartXP": 133000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201931,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:38Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:09Z",
+                "Container": -1
+              },
+              "Identity": "40d0f9dcb763408d8f69e2945ca5e1c9",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 31",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Lt. Colonel"
+              }
+            }
+          },
+          "RankNumber": 31
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202780"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202835,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:01Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:27Z",
+          "Container": -1
+        },
+        "Identity": "98f89260be354e80a475c6e87002083f",
+        "Title": "Rank 21",
+        "HW2SpartanRank": {
+          "StartXP": 71000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202252,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:34Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:35:14Z",
+                "Container": -1
+              },
+              "Identity": "d42748ea0e6e4f37b3da9771d86e2690",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 21",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Warrant Officer"
+              }
+            }
+          },
+          "RankNumber": 21
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202835"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202776,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:02Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:26Z",
+          "Container": -1
+        },
+        "Identity": "995e049ab9b941fe8a8c25599400af07",
+        "Title": "Rank 23",
+        "HW2SpartanRank": {
+          "StartXP": 81800,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201953,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:35Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:34Z",
+                "Container": -1
+              },
+              "Identity": "d2c97e221a8f44dfa31b23dba6961cbe",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 23",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Lieutenant"
+              }
+            }
+          },
+          "RankNumber": 23
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202776"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202777,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:00Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:26Z",
+          "Container": -1
+        },
+        "Identity": "97f60501da61461a9cd647b77ba8c9a2",
+        "Title": "Rank 20",
+        "HW2SpartanRank": {
+          "StartXP": 66000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202007,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:33Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:30Z",
+                "Container": -1
+              },
+              "Identity": "cd0f424963814152b2be21aa5659e975",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 19",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Sergeant Major"
+              }
+            }
+          },
+          "RankNumber": 20
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202777"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202834,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:05Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:26Z",
+          "Container": -1
+        },
+        "Identity": "9a29248fb4b64e2793d3af359bb5eb85",
+        "Title": "Rank 27",
+        "HW2SpartanRank": {
+          "StartXP": 105800,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202131,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:37Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:37:53Z",
+                "Container": -1
+              },
+              "Identity": "6bd10ce389fd449a8437739dd8b7f943",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 27",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Strike Captain"
+              }
+            }
+          },
+          "RankNumber": 27
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202834"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202830,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:47Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:25Z",
+          "Container": -1
+        },
+        "Identity": "c1c3cb5523974380ac609fae35bde4bd",
+        "Title": "Rank 6",
+        "HW2SpartanRank": {
+          "StartXP": 10400,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202112,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:28Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:35:17Z",
+                "Container": -1
+              },
+              "Identity": "953c357e54494e19a567b01e2b72a42a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 5",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Private"
+              }
+            }
+          },
+          "RankNumber": 6
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202830"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202866,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-10T21:01:42Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:25Z",
+          "Container": -1
+        },
+        "Identity": "e9de70b61ea64f3da8313a364e303dc4",
+        "Title": "Rank 50",
+        "HW2SpartanRank": {
+          "StartXP": 320000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202327,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-10T23:26:45Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:35:06Z",
+                "Container": -1
+              },
+              "Identity": "444609eb7a8643608d6a812ff92eb10b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 50",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "6th Star"
+              }
+            }
+          },
+          "RankNumber": 50
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202866"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202803,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:57Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:24Z",
+          "Container": -1
+        },
+        "Identity": "f31e5e10edc64e69b354158611b971d3",
+        "Title": "Rank 17",
+        "HW2SpartanRank": {
+          "StartXP": 52100,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201940,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:33Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:44Z",
+                "Container": -1
+              },
+              "Identity": "1e42fa533647436fb19a0c46fb426aae",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 17",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "First Sergeant"
+              }
+            }
+          },
+          "RankNumber": 17
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202803"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202826,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:23Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:24Z",
+          "Container": -1
+        },
+        "Identity": "e98d9ba77e3446968b944db60965663e",
+        "Title": "Rank 48",
+        "HW2SpartanRank": {
+          "StartXP": 278600,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201886,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:44Z",
+                "ModifiedUtc": "2017-02-03T18:33:09Z",
+                "PublishedUtc": "2017-02-03T19:36:52Z",
+                "Container": -1
+              },
+              "Identity": "7cb4f487d89e4761a421f931c50eafae",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 47",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Field Marshal"
+              }
+            }
+          },
+          "RankNumber": 48
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202826"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202861,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:23Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:23Z",
+          "Container": -1
+        },
+        "Identity": "fb28551bb7024891afc5ab057c28e2aa",
+        "Title": "Rank 47",
+        "HW2SpartanRank": {
+          "StartXP": 268400,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201886,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:44Z",
+                "ModifiedUtc": "2017-02-03T18:33:09Z",
+                "PublishedUtc": "2017-02-03T19:36:52Z",
+                "Container": -1
+              },
+              "Identity": "7cb4f487d89e4761a421f931c50eafae",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 47",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Field Marshal"
+              }
+            }
+          },
+          "RankNumber": 47
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202861"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202862,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:22Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:23Z",
+          "Container": -1
+        },
+        "Identity": "fa320660225e43699efe95fb1434b22b",
+        "Title": "Rank 46",
+        "HW2SpartanRank": {
+          "StartXP": 258600,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202259,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:43Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:35:41Z",
+                "Container": -1
+              },
+              "Identity": "8c29f4bbc71b498a80d1be1e4ee9550f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 44",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "General"
+              }
+            }
+          },
+          "RankNumber": 46
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202862"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202847,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:07Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:22Z",
+          "Container": -1
+        },
+        "Identity": "21f61950506049059310c50e0f0bcb1a",
+        "Title": "Rank 29",
+        "HW2SpartanRank": {
+          "StartXP": 119000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202122,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:38Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:37:21Z",
+                "Container": -1
+              },
+              "Identity": "68185ee1642f4f0981c93f7ff62bf035",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 29",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Major"
+              }
+            }
+          },
+          "RankNumber": 29
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202847"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202863,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:55Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:22Z",
+          "Container": -1
+        },
+        "Identity": "f9dd35c89c044bda86ea991dd5f212bf",
+        "Title": "Rank 15",
+        "HW2SpartanRank": {
+          "StartXP": 43500,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201894,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:32Z",
+                "ModifiedUtc": "2017-02-03T18:33:09Z",
+                "PublishedUtc": "2017-02-03T19:37:33Z",
+                "Container": -1
+              },
+              "Identity": "75af974a215b44358712e6bf2ba48bc2",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 15",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Master Sergeant"
+              }
+            }
+          },
+          "RankNumber": 15
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202863"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202796,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:04Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:17Z",
+          "Container": -1
+        },
+        "Identity": "2b831b79c9334f6ebce853cd9bd03da3",
+        "Title": "Rank 25",
+        "HW2SpartanRank": {
+          "StartXP": 93400,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202114,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:36Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:36:12Z",
+                "Container": -1
+              },
+              "Identity": "edba8b6d905b4ff3b111bb09a757f0a7",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 25",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Captain"
+              }
+            }
+          },
+          "RankNumber": 25
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202796"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202843,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:51Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:16Z",
+          "Container": -1
+        },
+        "Identity": "4b7d859cc6cd472da0814a90621a2d18",
+        "Title": "Rank 11",
+        "HW2SpartanRank": {
+          "StartXP": 27700,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201934,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:30Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:36:08Z",
+                "Container": -1
+              },
+              "Identity": "eea4fe519b4349b59684e0bd8acab205",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 11",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Sergeant"
+              }
+            }
+          },
+          "RankNumber": 11
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202843"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202812,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:44Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:15Z",
+          "Container": -1
+        },
+        "Identity": "568c5596588649d6b29ad586d4d7eba7",
+        "Title": "Rank 2",
+        "HW2SpartanRank": {
+          "StartXP": 1400,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201943,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:17Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:26Z",
+                "Container": -1
+              },
+              "Identity": "b3f2555521034f34945a86c75f011306",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 1",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Recruit"
+              }
+            }
+          },
+          "RankNumber": 2
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202812"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202761,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:49Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:09Z",
+          "Container": -1
+        },
+        "Identity": "f9f5b0dcd64b4e36bb87b1e70ac9fca4",
+        "Title": "Rank 8",
+        "HW2SpartanRank": {
+          "StartXP": 16800,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201958,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:29Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:42Z",
+                "Container": -1
+              },
+              "Identity": "55764e73c7904a59b03cfd9189533d94",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 7",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Army Private"
+              }
+            }
+          },
+          "RankNumber": 8
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202761"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202855,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:46Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:09Z",
+          "Container": -1
+        },
+        "Identity": "0a981f1049f74275bee74d8eac882ae4",
+        "Title": "Rank 4",
+        "HW2SpartanRank": {
+          "StartXP": 5000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201978,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:27Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:37Z",
+                "Container": -1
+              },
+              "Identity": "b8c9f2c8f69a4ac0aba4d67dcad6b32e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 3",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Apprentice"
+              }
+            }
+          },
+          "RankNumber": 4
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202855"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202864,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:57Z",
+          "ModifiedUtc": "2017-02-03T18:03:12Z",
+          "PublishedUtc": "2017-02-03T19:42:09Z",
+          "Container": -1
+        },
+        "Identity": "ee51d3493963447ebe6c42fae6cd20b1",
+        "Title": "Rank 18",
+        "HW2SpartanRank": {
+          "StartXP": 56600,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201940,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:33Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:44Z",
+                "Container": -1
+              },
+              "Identity": "1e42fa533647436fb19a0c46fb426aae",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 17",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "First Sergeant"
+              }
+            }
+          },
+          "RankNumber": 18
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202864"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202758,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:03Z",
+          "ModifiedUtc": "2017-02-03T18:03:16Z",
+          "PublishedUtc": "2017-02-03T19:42:08Z",
+          "Container": -1
+        },
+        "Identity": "0d1544709a324dd08cdd012179b6c1ad",
+        "Title": "Rank 24",
+        "HW2SpartanRank": {
+          "StartXP": 87500,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 201953,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:35Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:34Z",
+                "Container": -1
+              },
+              "Identity": "d2c97e221a8f44dfa31b23dba6961cbe",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 23",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Lieutenant"
+              }
+            }
+          },
+          "RankNumber": 24
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202758"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202800,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:58Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:08Z",
+          "Container": -1
+        },
+        "Identity": "0f46940b46914927848db47d1215dfa8",
+        "Title": "Rank 19",
+        "HW2SpartanRank": {
+          "StartXP": 61200,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202007,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:33Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:30Z",
+                "Container": -1
+              },
+              "Identity": "cd0f424963814152b2be21aa5659e975",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 19",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Sergeant Major"
+              }
+            }
+          },
+          "RankNumber": 19
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202800"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202860,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:17Z",
+          "ModifiedUtc": "2017-02-03T18:03:13Z",
+          "PublishedUtc": "2017-02-03T19:42:08Z",
+          "Container": -1
+        },
+        "Identity": "0221bf616a77478a94876cbac626b046",
+        "Title": "Rank 40",
+        "HW2SpartanRank": {
+          "StartXP": 204000,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202032,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:41Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:36Z",
+                "Container": -1
+              },
+              "Identity": "5d5b4e7434f74dd2873f3a6cb060d6c4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 39",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Major General"
+              }
+            }
+          },
+          "RankNumber": 40
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202860"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202795,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:14Z",
+          "ModifiedUtc": "2017-02-03T18:03:15Z",
+          "PublishedUtc": "2017-02-03T19:42:07Z",
+          "Container": -1
+        },
+        "Identity": "39e7ee5956684be6bc3e10ab0c8aa8c6",
+        "Title": "Rank 37",
+        "HW2SpartanRank": {
+          "StartXP": 179100,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202100,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:41Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:11Z",
+                "Container": -1
+              },
+              "Identity": "a7a4df906f904b28bffa8fc7c94ea51b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 37",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Brigadier Gen."
+              }
+            }
+          },
+          "RankNumber": 37
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202795"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202824,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:40:01Z",
+          "ModifiedUtc": "2017-02-03T18:03:14Z",
+          "PublishedUtc": "2017-02-03T19:42:07Z",
+          "Container": -1
+        },
+        "Identity": "346728b9902b4a7d90d6f12b905e21cc",
+        "Title": "Rank 22",
+        "HW2SpartanRank": {
+          "StartXP": 76300,
+          "Packs": [
+            {
+              "Id": 202743,
+              "Type": "HW2Pack",
+              "Identity": "599332c9a008458aa604e99c449f45bc"
+            }
+          ],
+          "DisplayInfo": {
+            "Id": 202252,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:34Z",
+                "ModifiedUtc": "2017-02-03T18:33:07Z",
+                "PublishedUtc": "2017-02-03T19:35:14Z",
+                "Container": -1
+              },
+              "Identity": "d42748ea0e6e4f37b3da9771d86e2690",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 21",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Warrant Officer"
+              }
+            }
+          },
+          "RankNumber": 22
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202824"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202626,
+      "Type": "HW2SpartanRank",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-11-15T14:39:36Z",
+          "ModifiedUtc": "2017-02-03T18:03:16Z",
+          "PublishedUtc": "2017-02-03T19:39:36Z",
+          "Container": -1
+        },
+        "Identity": "1ca027e7a18d4112905a414be342f657",
+        "Title": "Rank 1",
+        "HW2SpartanRank": {
+          "StartXP": 0,
+          "Packs": [],
+          "DisplayInfo": {
+            "Id": 201943,
+            "Type": "HW2SpartanRankDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "jeffca",
+                "CreatedUtc": "2016-11-15T14:22:17Z",
+                "ModifiedUtc": "2017-02-03T18:33:08Z",
+                "PublishedUtc": "2017-02-03T19:35:26Z",
+                "Container": -1
+              },
+              "Identity": "b3f2555521034f34945a86c75f011306",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Rank 1",
+              "HW2SpartanRankDisplayInfo": {
+                "Name": "Recruit"
+              }
+            }
+          },
+          "RankNumber": 1
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202626"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

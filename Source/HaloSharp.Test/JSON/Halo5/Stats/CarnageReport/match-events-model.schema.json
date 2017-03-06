@@ -6,7 +6,7 @@
         "Assistants": {
           "type": [ "null", "array" ],
           "items": {
-            "$ref": "../common/identity.schema.json"
+            "$ref": "../../../common/identity.schema.json"
           },
           "additionalItems": false
         },
@@ -35,7 +35,7 @@
           "type": [ "null", "boolean" ]
         },
         "Killer": {
-          "$ref": "../common/identity.schema.json"
+          "$ref": "../../../common/identity.schema.json"
         },
         "KillerAgent": {
           "type": [ "null", "integer" ]
@@ -51,13 +51,13 @@
           "type": [ "null", "integer" ]
         },
         "KillerWorldLocation": {
-          "$ref": "#/definitions/WorldLocation"
+          "$ref": "../../../common/location.schema.json"
         },
         "MedalId": {
           "type": [ "null", "integer" ]
         },
         "Player": {
-          "$ref": "../common/identity.schema.json"
+          "$ref": "../../../common/identity.schema.json"
         },
         "RoundIndex": {
           "type": [ "null", "integer" ]
@@ -72,7 +72,7 @@
           "type": [ "null", "string" ]
         },
         "Victim": {
-          "$ref": "../common/identity.schema.json"
+          "$ref": "../../../common/identity.schema.json"
         },
         "VictimAgent": {
           "type": [ "null", "integer" ]
@@ -88,7 +88,7 @@
           "type": [ "null", "integer" ]
         },
         "VictimWorldLocation": {
-          "$ref": "#/definitions/WorldLocation"
+          "$ref": "../../../common/location.schema.json"
         },
         "WeaponAttachmentIds": {
           "type": [ "null", "array" ],
@@ -141,29 +141,6 @@
         "TimeSinceStart"
       ]
     },
-    "WorldLocation": {
-      "type": [ "null", "object"],
-      "properties": {
-        "x": {
-          "id": "x",
-          "type": "number"
-        },
-        "y": {
-          "id": "y",
-          "type": "number"
-        },
-        "z": {
-          "id": "z",
-          "type": "number"
-        }
-      },
-      "additionalProperties": false,
-      "required": [
-        "x",
-        "y",
-        "z"
-      ]
-    }
   },
 
   "$schema": "http://json-schema.org/draft-04/schema#",

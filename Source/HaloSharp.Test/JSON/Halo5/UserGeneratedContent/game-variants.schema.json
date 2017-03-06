@@ -21,8 +21,7 @@
       "type": "integer"
     },
     "Links": {
-      "type": "object",
-      "properties": {}
+      "$ref": "../../common/link.schema.json"
     }
   },
   "required": [

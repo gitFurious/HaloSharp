@@ -1,0 +1,225 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 4,
+    "TotalCount": 4
+  },
+  "ContentItems": [
+    {
+      "Id": 202570,
+      "Type": "HW2Difficulty",
+      "View": {
+        "Status": "Published",
+        "Title": "Normal",
+        "HW2Difficulty": {
+          "DisplayInfo": {
+            "Id": 201942,
+            "Type": "HW2DifficultyDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-08-12T16:35:20Z",
+                "ModifiedUtc": "2017-02-03T18:27:05Z",
+                "PublishedUtc": "2017-02-03T19:37:27Z",
+                "Container": -1
+              },
+              "Identity": "1bd5792e9ce1451f980c5cbeb203dc1c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Normal Display Info",
+              "HW2DifficultyDisplayInfo": {
+                "Name": "Normal",
+                "Description": "The enemy will not relent until you are destroyed, but a considered strategy and awareness of the environment should help you prevail. Recommended for players with RTS experience."
+              }
+            }
+          },
+          "ID": 2
+        },
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-08-12T16:35:25Z",
+          "ModifiedUtc": "2017-02-03T18:15:40Z",
+          "PublishedUtc": "2017-02-03T19:41:34Z",
+          "Container": -1
+        },
+        "Identity": "6855e062845542e2af6540eeaf78e39e"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202570"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202630,
+      "Type": "HW2Difficulty",
+      "View": {
+        "Status": "Published",
+        "Title": "Easy",
+        "HW2Difficulty": {
+          "DisplayInfo": {
+            "Id": 201969,
+            "Type": "HW2DifficultyDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-08-12T16:33:31Z",
+                "ModifiedUtc": "2017-02-03T18:27:05Z",
+                "PublishedUtc": "2017-02-03T19:35:25Z",
+                "Container": -1
+              },
+              "Identity": "225620c6a1ee4ce4ad4d20c0655b97a3",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Easy Display Info",
+              "HW2DifficultyDisplayInfo": {
+                "Name": "Easy",
+                "Description": "Cut through swathes of foes with ease and revel in your unstoppable onslaught. Recommended for players new to Halo Wars 2."
+              }
+            }
+          },
+          "ID": 1
+        },
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-08-12T16:33:46Z",
+          "ModifiedUtc": "2017-02-03T18:15:40Z",
+          "PublishedUtc": "2017-02-03T19:35:49Z",
+          "Container": -1
+        },
+        "Identity": "f1cfae2e48324207bee16b969838eb2b"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202630"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202014,
+      "Type": "HW2Difficulty",
+      "View": {
+        "Status": "Published",
+        "Title": "Heroic",
+        "HW2Difficulty": {
+          "DisplayInfo": {
+            "Id": 202008,
+            "Type": "HW2DifficultyDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-08-12T16:35:50Z",
+                "ModifiedUtc": "2017-02-03T18:27:05Z",
+                "PublishedUtc": "2017-02-03T19:34:34Z",
+                "Container": -1
+              },
+              "Identity": "9ac6d96f567a4e51a4675c80e43e20ed",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Heroic Display Info",
+              "HW2DifficultyDisplayInfo": {
+                "Name": "Heroic",
+                "Description": "You are outgunned and outnumbered, and will have to utilize every skill and tactic you’ve learnt to survive. Recommended for players who have mastered Halo Wars 2."
+              }
+            }
+          },
+          "ID": 3
+        },
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-08-12T16:35:54Z",
+          "ModifiedUtc": "2017-02-03T18:15:40Z",
+          "PublishedUtc": "2017-02-03T19:35:48Z",
+          "Container": -1
+        },
+        "Identity": "97162272ae694da780b5dd71c1ce80dc"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202014"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202624,
+      "Type": "HW2Difficulty",
+      "View": {
+        "Status": "Published",
+        "Title": "Legendary",
+        "HW2Difficulty": {
+          "DisplayInfo": {
+            "Id": 201900,
+            "Type": "HW2DifficultyDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-08-12T16:36:38Z",
+                "ModifiedUtc": "2017-02-03T18:27:05Z",
+                "PublishedUtc": "2017-02-03T19:34:42Z",
+                "Container": -1
+              },
+              "Identity": "dd7541a9e37948608211b10f9d4f9706",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Legendary Display Info",
+              "HW2DifficultyDisplayInfo": {
+                "Name": "Legendary",
+                "Description": "Face insurmountable odds and an overwhelming enemy force. This is what legends are made of."
+              }
+            }
+          },
+          "ID": 4
+        },
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-08-12T16:36:43Z",
+          "ModifiedUtc": "2017-02-03T18:15:40Z",
+          "PublishedUtc": "2017-02-03T19:35:48Z",
+          "Container": -1
+        },
+        "Identity": "6f4a2339aa75411e9658d5ca288ea13a"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202624"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

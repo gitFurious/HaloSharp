@@ -48,7 +48,7 @@
       "additionalProperties": false,
       "properties": {
         "Player": {
-          "$ref": "common/identity.schema.json"
+          "$ref": "../../common/identity.schema.json"
         },
         "TeamId": {
           "type": "integer"
@@ -92,19 +92,7 @@
       "additionalProperties": false,
       "properties": {
         "Links": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "StatsMatchDetails": {
-              "$ref": "common/link.schema.json"
-            },
-            "UgcFilmManifest": {
-              "$ref": "common/link.schema.json"
-            }
-          },
-          "required": [
-            "StatsMatchDetails"
-          ]
+          "$ref": "../../common/link.schema.json"
         },
         "Id": {
           "$ref": "#/definitions/Id"
@@ -128,7 +116,7 @@
           "type": "string"
         },
         "MatchCompletedDate": {
-          "$ref": "../common/iso-8061.schema.json"
+          "$ref": "../../common/iso-8061.schema.json"
         },
         "Teams": {
           "type": "array",
@@ -211,16 +199,7 @@
       }
     },
     "Links": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "Self": {
-          "$ref": "common/link.schema.json"
-        }
-      },
-      "required": [
-        "Self"
-      ]
+      "$ref": "../../common/link.schema.json"
     }
   },
   "required": [

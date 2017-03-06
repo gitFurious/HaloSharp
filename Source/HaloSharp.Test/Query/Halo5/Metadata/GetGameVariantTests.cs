@@ -6,6 +6,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _gameVariant = JsonConvert.DeserializeObject<GameVariant>(File.ReadAllText(Config.GameVariantJsonPath));
+            _gameVariant = JsonConvert.DeserializeObject<GameVariant>(File.ReadAllText(Halo5Config.GameVariantJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<GameVariant>(It.IsAny<string>()))
@@ -84,10 +85,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("fa7808ca-970e-4912-ba4d-92f7ae4499e8")]
         public async Task GetGameVariant_SchemaIsValid(string guid)
         {
-            var gameVariantSchema = JSchema.Parse(File.ReadAllText(Config.GameVariantJsonSchemaPath), new JSchemaReaderSettings
+            var gameVariantSchema = JSchema.Parse(File.ReadAllText(Halo5Config.GameVariantJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.GameVariantJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.GameVariantJsonSchemaPath))
             });
 
             var query = new GetGameVariant()
@@ -103,10 +104,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("fa7808ca-970e-4912-ba4d-92f7ae4499e8")]
         public async Task GetGameVariant_ModelMatchesSchema(string guid)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.GameVariantJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.GameVariantJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.GameVariantJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.GameVariantJsonSchemaPath))
             });
 
             var query = new GetGameVariant()
@@ -149,7 +150,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             }
             catch (HaloApiException e)
             {
-                Assert.AreEqual((int) Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
+                Assert.AreEqual((int)Enumeration.Halo5.StatusCode.NotFound, e.HaloApiError.StatusCode);
             }
             catch (System.Exception e)
             {

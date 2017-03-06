@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _teamColors = JsonConvert.DeserializeObject<List<TeamColor>>(File.ReadAllText(Config.TeamColorsJsonPath));
+            _teamColors = JsonConvert.DeserializeObject<List<TeamColor>>(File.ReadAllText(Halo5Config.TeamColorsJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<TeamColor>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetTeamColors_SchemaIsValid()
         {
-            var teamColorsSchema = JSchema.Parse(File.ReadAllText(Config.TeamColorsJsonSchemaPath), new JSchemaReaderSettings
+            var teamColorsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.TeamColorsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.TeamColorsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.TeamColorsJsonSchemaPath))
             });
 
             var query = new GetTeamColors()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetTeamColors_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.TeamColorsJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.TeamColorsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.TeamColorsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.TeamColorsJsonSchemaPath))
             });
 
             var query = new GetTeamColors()

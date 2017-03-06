@@ -86,7 +86,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </summary>
         [JsonProperty(PropertyName = "type")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.CommendationType Type { get; set; }
+        public Enumeration.Halo5.CommendationType Type { get; set; }
 
         public bool Equals(Commendation other)
         {

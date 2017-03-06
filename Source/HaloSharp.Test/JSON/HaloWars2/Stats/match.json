@@ -1,0 +1,1474 @@
+{
+  "MatchId": "bf03af8a-763e-44d2-b86b-631da83ab1a3",
+  "MatchType": 2,
+  "GameMode": 7,
+  "SeasonId": null,
+  "PlaylistId": "00000000-0000-0000-0000-000000000000",
+  "MapId": "rostermode\\design\\RM_EvenFlowArt\\RM_EvenFlowArt",
+  "IsMatchComplete": true,
+  "MatchEndReason": 1,
+  "VictoryCondition": 1,
+  "MatchStartDate": {
+    "ISO8601Date": "2017-02-27T06:13:44.02Z"
+  },
+  "MatchDuration": "PT43M19.966S",
+  "Teams": {
+    "1": {
+      "TeamSize": 2,
+      "MatchOutcome": 2,
+      "ObjectiveScore": 200
+    },
+    "2": {
+      "TeamSize": 1,
+      "MatchOutcome": 1,
+      "ObjectiveScore": 0
+    }
+  },
+  "Players": {
+    "1": {
+      "IsHuman": true,
+      "HumanPlayerId": {
+        "Gamertag": "Greenskull",
+        "Xuid": null
+      },
+      "ComputerPlayerId": null,
+      "ComputerDifficulty": null,
+      "TeamId": 1,
+      "TeamPlayerIndex": 0,
+      "LeaderId": 6,
+      "PlayerCompletedMatch": true,
+      "TimeInMatch": "PT43M19.966S",
+      "PlayerMatchOutcome": 2,
+      "PointStats": {
+        "rostermode_hook_capturepointA": {
+          "TimesCaptured": 9
+        }
+      },
+      "UnitStats": {
+        "cov_veh_rm_prowler_03": {
+          "TotalBuilt": 2,
+          "TotalLost": 2,
+          "TotalDestroyed": 16
+        },
+        "cov_air_rm_blisterback_01": {
+          "TotalBuilt": 8,
+          "TotalLost": 3,
+          "TotalDestroyed": 22
+        },
+        "unsc_bldg_rmSupplyDropFirefight": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 68
+        },
+        "unsc_inf_rm_cyclops_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 51
+        },
+        "unsc_inf_rm_flameMarine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 32
+        },
+        "cov_inf_rm_eliteCommando_01": {
+          "TotalBuilt": 8,
+          "TotalLost": 3,
+          "TotalDestroyed": 2
+        },
+        "unsc_inf_rm_marine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 21
+        },
+        "unsc_inf_rm_marinesiphon_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 91
+        },
+        "unsc_veh_rm_mongoose_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 15
+        },
+        "unsc_inf_rm_odst_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 20
+        },
+        "unsc_veh_rm_warthog_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 51
+        },
+        "neutralfor_rm_sentinel_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 64
+        },
+        "cov_veh_rm_gorgon_01": {
+          "TotalBuilt": 10,
+          "TotalLost": 9,
+          "TotalDestroyed": 1
+        },
+        "unsc_air_rm_hornet_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 60
+        },
+        "cov_veh_rm_locust_01": {
+          "TotalBuilt": 10,
+          "TotalLost": 10,
+          "TotalDestroyed": 6
+        },
+        "cov_inf_rm_engineer_01": {
+          "TotalBuilt": 7,
+          "TotalLost": 4,
+          "TotalDestroyed": 17
+        },
+        "unsc_veh_rm_mongoose_03": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 10
+        },
+        "cov_veh_rm_locust_02": {
+          "TotalBuilt": 10,
+          "TotalLost": 9,
+          "TotalDestroyed": 4
+        },
+        "unsc_air_rm_nightingale_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 19
+        },
+        "cov_veh_rm_bruteChopper_01": {
+          "TotalBuilt": 3,
+          "TotalLost": 3,
+          "TotalDestroyed": 2
+        },
+        "cov_inf_rm_hunter_01": {
+          "TotalBuilt": 3,
+          "TotalLost": 2,
+          "TotalDestroyed": 46
+        },
+        "unsc_inf_rm_spartan_chaingun_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 19
+        },
+        "unsc_inf_rm_spartan_rocket_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 13
+        },
+        "unsc_veh_rm_grizzly_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 3
+        },
+        "unsc_veh_rm_warthog_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 7
+        },
+        "unsc_veh_rm_wolverine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 4
+        },
+        "unsc_inf_rm_cyclops_03": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 33
+        },
+        "unsc_veh_rm_scorpion_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 34
+        },
+        "unsc_air_rm_vulture_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 7
+        },
+        "unsc_inf_rm_spartan_laser_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 5
+        },
+        "unsc_veh_rm_scorpion_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 17
+        },
+        "unsc_veh_rm_gausswarthog_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 9
+        },
+        "unsc_inf_rm_marineguard_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 6
+        },
+        "unsc_air_rm_wingmenhornet_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 30
+        },
+        "cov_inf_rm_jackal_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 49
+        },
+        "cov_inf_rm_grunt_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 11
+        },
+        "cov_inf_rm_jackal_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 14
+        },
+        "cov_inf_rm_suicideGrunt_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 23
+        },
+        "cov_inf_rm_grunt_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 10
+        },
+        "cov_inf_rm_bruteJumpPack_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 24
+        },
+        "cov_veh_rm_wraith_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 6
+        },
+        "cov_veh_rm_ghost_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 4
+        },
+        "cov_veh_rm_prowler_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 42
+        },
+        "cov_veh_rm_gorgon_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 12
+        },
+        "cov_veh_rm_bruteChopper_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 3
+        },
+        "cov_inf_rm_hunter_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 32
+        },
+        "cov_veh_rm_wraith_01": {
+          "TotalBuilt": 3,
+          "TotalLost": 3,
+          "TotalDestroyed": 26
+        },
+        "cov_air_rm_banshee_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 64
+        },
+        "cov_air_rm_blisterback_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 7
+        },
+        "cov_inf_rm_atrioxchosen_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 5
+        },
+        "cov_inf_rm_decimus_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 17
+        },
+        "unsc_inf_rm_flameMarine_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 13
+        },
+        "unsc_inf_rm_sniper_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 12
+        },
+        "unsc_veh_rm_mongoose_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 6
+        },
+        "neutralfor_rm_sentineltier2_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 17
+        },
+        "unsc_veh_rm_foxcannon_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 4
+        },
+        "cov_veh_rm_scarab_01": {
+          "TotalBuilt": 2,
+          "TotalLost": 1,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_prowler_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 4
+        },
+        "cov_air_spiritGunship_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 1,
+          "TotalDestroyed": 0
+        },
+        "cov_inf_jackal_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 2,
+          "TotalDestroyed": 0
+        },
+        "cov_inf_hunter_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 2,
+          "TotalDestroyed": 0
+        },
+        "cov_inf_rm_bruteHonour_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 1
+        },
+        "cov_air_rm_banshee_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 1
+        }
+      },
+      "CardStats": {
+        "813bac63-e1f7-46d5-a2c9-b321bb4e8805": {
+          "TotalPlays": 2
+        },
+        "9478123f-ed1e-4696-91f7-b2c92dd40156": {
+          "TotalPlays": 8
+        },
+        "21ceca03-70a7-49e1-8515-5b1dbac7ba2b": {
+          "TotalPlays": 8
+        },
+        "40a4d5d5-c9b7-496a-830c-9b1680fba5a1": {
+          "TotalPlays": 10
+        },
+        "922ad0f1-8351-4ff5-9d83-c12f3f358314": {
+          "TotalPlays": 10
+        },
+        "da7a5476-709f-486c-bae3-480ccce36c16": {
+          "TotalPlays": 7
+        },
+        "f6478fc0-d63c-4e96-9a1d-9053454f2858": {
+          "TotalPlays": 10
+        },
+        "4a42249a-1099-4abb-92f2-490e2817a2dd": {
+          "TotalPlays": 3
+        },
+        "d140f76b-106d-4175-a912-20735e2a6b76": {
+          "TotalPlays": 3
+        },
+        "c85ab1fe-6bea-4cd2-897a-bea50e33b08e": {
+          "TotalPlays": 7
+        },
+        "63f7b0cf-2778-4a03-9d8b-fb8e40bbbe31": {
+          "TotalPlays": 3
+        },
+        "33938f29-7b63-4c5d-b1a7-1963b14b44f5": {
+          "TotalPlays": 2
+        },
+        "ccbd8a3a-9424-479a-9481-7761687bed25": {
+          "TotalPlays": 1
+        }
+      },
+      "WaveStats": {
+        "1": {
+          "WaveDuration": "PT1M0.921S"
+        },
+        "2": {
+          "WaveDuration": "PT1M0.906S"
+        },
+        "3": {
+          "WaveDuration": "PT1M0.902S"
+        },
+        "4": {
+          "WaveDuration": "PT1M0.904S"
+        },
+        "5": {
+          "WaveDuration": "PT59.885S"
+        },
+        "6": {
+          "WaveDuration": "PT1M0.907S"
+        },
+        "7": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "8": {
+          "WaveDuration": "PT1M0.9S"
+        },
+        "9": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "10": {
+          "WaveDuration": "PT1M31.361S"
+        },
+        "11": {
+          "WaveDuration": "PT1M0.925S"
+        },
+        "12": {
+          "WaveDuration": "PT1M0.914S"
+        },
+        "13": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "14": {
+          "WaveDuration": "PT1M0.966S"
+        },
+        "15": {
+          "WaveDuration": "PT1M31.419S"
+        },
+        "16": {
+          "WaveDuration": "PT1M0.984S"
+        },
+        "17": {
+          "WaveDuration": "PT1M0.963S"
+        },
+        "18": {
+          "WaveDuration": "PT1M0.913S"
+        },
+        "19": {
+          "WaveDuration": "PT1M0.997S"
+        },
+        "20": {
+          "WaveDuration": "PT1M31.583S"
+        },
+        "21": {
+          "WaveDuration": "PT1M0.899S"
+        },
+        "22": {
+          "WaveDuration": "PT1M0.981S"
+        },
+        "23": {
+          "WaveDuration": "PT1M0.884S"
+        },
+        "24": {
+          "WaveDuration": "PT1M0.975S"
+        },
+        "25": {
+          "WaveDuration": "PT1M30.367S"
+        },
+        "26": {
+          "WaveDuration": "PT1M0.96S"
+        },
+        "27": {
+          "WaveDuration": "PT1M1.064S"
+        },
+        "28": {
+          "WaveDuration": "PT1M0.977S"
+        },
+        "29": {
+          "WaveDuration": "PT1M1.07S"
+        },
+        "30": {
+          "WaveDuration": "PT1M9.109S"
+        },
+        "31": {
+          "WaveDuration": "PT1M0.94S"
+        },
+        "32": {
+          "WaveDuration": "PT1M0.996S"
+        },
+        "33": {
+          "WaveDuration": "PT1M1.068S"
+        },
+        "34": {
+          "WaveDuration": "PT1M1.075S"
+        },
+        "35": {
+          "WaveDuration": "PT1M31.686S"
+        },
+        "36": {
+          "WaveDuration": "PT1M0.924S"
+        },
+        "37": {
+          "WaveDuration": "PT1M1.011S"
+        }
+      },
+      "LeaderPowerStats": {
+        "RMCleansingBeam": {
+          "TimesCast": 7
+        },
+        "RMSpiritGunship": {
+          "TimesCast": 1
+        }
+      },
+      "XPProgress": {
+        "PreviousTotalXP": 25800,
+        "GameplayXP": 0,
+        "ChallengesXP": 0,
+        "UpdatedTotalXP": 25800,
+        "CompletedSpartanRanks": []
+      },
+      "RatingProgress": null
+    },
+    "2": {
+      "IsHuman": true,
+      "HumanPlayerId": {
+        "Gamertag": "minolta1034",
+        "Xuid": null
+      },
+      "ComputerPlayerId": null,
+      "ComputerDifficulty": null,
+      "TeamId": 1,
+      "TeamPlayerIndex": 1,
+      "LeaderId": 5,
+      "PlayerCompletedMatch": true,
+      "TimeInMatch": "PT43M19.966S",
+      "PlayerMatchOutcome": 2,
+      "PointStats": {
+        "rostermode_hook_capturepointA": {
+          "TimesCaptured": 9
+        }
+      },
+      "UnitStats": {
+        "cov_air_rm_banshee_01": {
+          "TotalBuilt": 13,
+          "TotalLost": 7,
+          "TotalDestroyed": 55
+        },
+        "cov_veh_rm_prowler_01": {
+          "TotalBuilt": 11,
+          "TotalLost": 9,
+          "TotalDestroyed": 36
+        },
+        "cov_veh_rm_gorgon_01": {
+          "TotalBuilt": 13,
+          "TotalLost": 10,
+          "TotalDestroyed": 1
+        },
+        "cov_veh_rm_wraith_01": {
+          "TotalBuilt": 4,
+          "TotalLost": 4,
+          "TotalDestroyed": 25
+        },
+        "unsc_inf_rm_flameMarine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 31
+        },
+        "unsc_inf_rm_marine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 28
+        },
+        "unsc_inf_rm_marinesiphon_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 99
+        },
+        "cov_inf_rm_engineer_01": {
+          "TotalBuilt": 13,
+          "TotalLost": 7,
+          "TotalDestroyed": 16
+        },
+        "unsc_veh_rm_warthog_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 55
+        },
+        "unsc_veh_rm_warthog_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 7
+        },
+        "unsc_inf_rm_odst_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 20
+        },
+        "unsc_veh_rm_mongoose_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 12
+        },
+        "unsc_air_rm_hornet_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 55
+        },
+        "neutralfor_rm_sentinel_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 62
+        },
+        "cov_air_rm_blisterback_01": {
+          "TotalBuilt": 10,
+          "TotalLost": 4,
+          "TotalDestroyed": 19
+        },
+        "cov_veh_rm_locust_01": {
+          "TotalBuilt": 11,
+          "TotalLost": 10,
+          "TotalDestroyed": 5
+        },
+        "unsc_veh_rm_mongoose_03": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 11
+        },
+        "unsc_veh_rm_wolverine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 5
+        },
+        "unsc_bldg_rmSupplyDropFirefight": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 23
+        },
+        "cov_air_rm_blisterback_02": {
+          "TotalBuilt": 11,
+          "TotalLost": 8,
+          "TotalDestroyed": 5
+        },
+        "unsc_air_rm_vulture_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 9
+        },
+        "unsc_air_rm_nightingale_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 17
+        },
+        "unsc_inf_rm_spartan_rocket_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 15
+        },
+        "unsc_inf_rm_spartan_chaingun_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 17
+        },
+        "unsc_inf_rm_cyclops_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 44
+        },
+        "unsc_air_rm_wingmenhornet_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 24
+        },
+        "unsc_inf_rm_cyclops_03": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 34
+        },
+        "unsc_veh_rm_scorpion_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 36
+        },
+        "unsc_inf_rm_spartan_laser_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 5
+        },
+        "unsc_veh_rm_scorpion_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 18
+        },
+        "unsc_veh_rm_gausswarthog_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 9
+        },
+        "unsc_inf_rm_marineguard_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 7
+        },
+        "neutralfor_rm_sentineltier2_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 14
+        },
+        "cov_inf_rm_jackal_01": {
+          "TotalBuilt": 2,
+          "TotalLost": 8,
+          "TotalDestroyed": 48
+        },
+        "cov_inf_rm_suicideGrunt_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 2,
+          "TotalDestroyed": 27
+        },
+        "cov_inf_rm_jackal_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 16
+        },
+        "cov_inf_rm_bruteJumpPack_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 5,
+          "TotalDestroyed": 18
+        },
+        "cov_inf_rm_grunt_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 10
+        },
+        "cov_inf_rm_grunt_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 9,
+          "TotalDestroyed": 10
+        },
+        "cov_inf_rm_hunter_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 42
+        },
+        "cov_veh_rm_wraith_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 6
+        },
+        "cov_veh_rm_ghost_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 2
+        },
+        "cov_veh_rm_locust_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 3
+        },
+        "cov_veh_rm_gorgon_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 11
+        },
+        "cov_veh_rm_prowler_03": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 15
+        },
+        "cov_veh_rm_bruteChopper_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 4
+        },
+        "cov_inf_rm_hunter_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 33
+        },
+        "cov_veh_rm_bruteChopper_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 2
+        },
+        "cov_inf_rm_atrioxchosen_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 4
+        },
+        "cov_inf_rm_decimus_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 16
+        },
+        "unsc_inf_rm_flameMarine_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 17
+        },
+        "unsc_veh_rm_foxcannon_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 2
+        },
+        "unsc_inf_rm_sniper_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 8
+        },
+        "unsc_veh_rm_mongoose_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 7
+        },
+        "unsc_veh_rm_foxcannon_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 2
+        },
+        "unsc_veh_rm_grizzly_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 3
+        },
+        "cov_veh_rm_prowler_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 4
+        },
+        "cov_air_rm_banshee_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 2
+        },
+        "cov_inf_rm_eliteCommando_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 2
+        },
+        "cov_inf_rm_bruteHonour_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 1
+        }
+      },
+      "CardStats": {
+        "eff4623d-74c4-4656-a6a2-fdb0665e9b18": {
+          "TotalPlays": 2
+        },
+        "e471a469-c26d-49c7-beeb-d3784470e4b9": {
+          "TotalPlays": 1
+        },
+        "40a4d5d5-c9b7-496a-830c-9b1680fba5a1": {
+          "TotalPlays": 13
+        },
+        "63f7b0cf-2778-4a03-9d8b-fb8e40bbbe31": {
+          "TotalPlays": 4
+        },
+        "da7a5476-709f-486c-bae3-480ccce36c16": {
+          "TotalPlays": 13
+        },
+        "3c9d0bdd-3fc6-49aa-b348-a25bc7f05ae5": {
+          "TotalPlays": 10
+        },
+        "9478123f-ed1e-4696-91f7-b2c92dd40156": {
+          "TotalPlays": 10
+        },
+        "922ad0f1-8351-4ff5-9d83-c12f3f358314": {
+          "TotalPlays": 11
+        },
+        "a7530a57-b21d-48fc-9ba3-0965bae42e23": {
+          "TotalPlays": 11
+        },
+        "33653771-6bbd-4654-8422-c61dff2060ec": {
+          "TotalPlays": 11
+        },
+        "a03d341c-3a13-4b51-8b7f-00ddc944acd2": {
+          "TotalPlays": 6
+        },
+        "201fd23e-4d39-4a41-8a4b-566cd3ca68a7": {
+          "TotalPlays": 2
+        }
+      },
+      "WaveStats": {
+        "1": {
+          "WaveDuration": "PT1M0.921S"
+        },
+        "2": {
+          "WaveDuration": "PT1M0.906S"
+        },
+        "3": {
+          "WaveDuration": "PT1M0.902S"
+        },
+        "4": {
+          "WaveDuration": "PT1M0.904S"
+        },
+        "5": {
+          "WaveDuration": "PT59.885S"
+        },
+        "6": {
+          "WaveDuration": "PT1M0.907S"
+        },
+        "7": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "8": {
+          "WaveDuration": "PT1M0.9S"
+        },
+        "9": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "10": {
+          "WaveDuration": "PT1M31.361S"
+        },
+        "11": {
+          "WaveDuration": "PT1M0.925S"
+        },
+        "12": {
+          "WaveDuration": "PT1M0.914S"
+        },
+        "13": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "14": {
+          "WaveDuration": "PT1M0.966S"
+        },
+        "15": {
+          "WaveDuration": "PT1M31.419S"
+        },
+        "16": {
+          "WaveDuration": "PT1M0.984S"
+        },
+        "17": {
+          "WaveDuration": "PT1M0.963S"
+        },
+        "18": {
+          "WaveDuration": "PT1M0.913S"
+        },
+        "19": {
+          "WaveDuration": "PT1M0.997S"
+        },
+        "20": {
+          "WaveDuration": "PT1M31.583S"
+        },
+        "21": {
+          "WaveDuration": "PT1M0.899S"
+        },
+        "22": {
+          "WaveDuration": "PT1M0.981S"
+        },
+        "23": {
+          "WaveDuration": "PT1M0.884S"
+        },
+        "24": {
+          "WaveDuration": "PT1M0.975S"
+        },
+        "25": {
+          "WaveDuration": "PT1M30.367S"
+        },
+        "26": {
+          "WaveDuration": "PT1M0.96S"
+        },
+        "27": {
+          "WaveDuration": "PT1M1.064S"
+        },
+        "28": {
+          "WaveDuration": "PT1M0.977S"
+        },
+        "29": {
+          "WaveDuration": "PT1M1.07S"
+        },
+        "30": {
+          "WaveDuration": "PT1M9.109S"
+        },
+        "31": {
+          "WaveDuration": "PT1M0.94S"
+        },
+        "32": {
+          "WaveDuration": "PT1M0.996S"
+        },
+        "33": {
+          "WaveDuration": "PT1M1.068S"
+        },
+        "34": {
+          "WaveDuration": "PT1M1.075S"
+        },
+        "35": {
+          "WaveDuration": "PT1M31.686S"
+        },
+        "36": {
+          "WaveDuration": "PT1M0.924S"
+        },
+        "37": {
+          "WaveDuration": "PT1M1.011S"
+        }
+      },
+      "LeaderPowerStats": {
+        "RMStructuralShielding": {
+          "TimesCast": 6
+        }
+      },
+      "XPProgress": {
+        "PreviousTotalXP": 0,
+        "GameplayXP": 0,
+        "ChallengesXP": 0,
+        "UpdatedTotalXP": 0,
+        "CompletedSpartanRanks": []
+      },
+      "RatingProgress": null
+    },
+    "3": {
+      "IsHuman": false,
+      "HumanPlayerId": null,
+      "ComputerPlayerId": 1,
+      "ComputerDifficulty": 2,
+      "TeamId": 2,
+      "TeamPlayerIndex": 0,
+      "LeaderId": 1,
+      "PlayerCompletedMatch": true,
+      "TimeInMatch": "PT43M19.966S",
+      "PlayerMatchOutcome": 1,
+      "PointStats": {},
+      "UnitStats": {
+        "unsc_inf_rm_flameMarine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 48,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_marine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 32,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_marinesiphon_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 111,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_cyclops_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 57,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_mongoose_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 21,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_warthog_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 64,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_warthog_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 11,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_odst_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 24,
+          "TotalDestroyed": 0
+        },
+        "unsc_air_rm_hornet_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 75,
+          "TotalDestroyed": 0
+        },
+        "neutralfor_rm_sentinel_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 84,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_mongoose_03": {
+          "TotalBuilt": 0,
+          "TotalLost": 14,
+          "TotalDestroyed": 0
+        },
+        "unsc_air_rm_nightingale_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 25,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_wolverine_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 6,
+          "TotalDestroyed": 0
+        },
+        "unsc_air_rm_vulture_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 9,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_spartan_rocket_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 16,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_spartan_chaingun_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 19,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_grizzly_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 4,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_prowler_03": {
+          "TotalBuilt": 0,
+          "TotalLost": 16,
+          "TotalDestroyed": 2
+        },
+        "cov_veh_rm_prowler_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 42,
+          "TotalDestroyed": 9
+        },
+        "unsc_air_rm_wingmenhornet_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 33,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_cyclops_03": {
+          "TotalBuilt": 0,
+          "TotalLost": 37,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_scorpion_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 38,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_locust_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 4,
+          "TotalDestroyed": 9
+        },
+        "unsc_inf_rm_spartan_laser_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 5,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_locust_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 6,
+          "TotalDestroyed": 20
+        },
+        "unsc_veh_rm_scorpion_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 19,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_gausswarthog_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 11,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_bruteChopper_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 2,
+          "TotalDestroyed": 3
+        },
+        "unsc_inf_rm_marineguard_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 9,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_wraith_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 29,
+          "TotalDestroyed": 7
+        },
+        "neutralfor_rm_sentineltier2_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 18,
+          "TotalDestroyed": 0
+        },
+        "cov_inf_rm_jackal_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 58,
+          "TotalDestroyed": 8
+        },
+        "cov_inf_rm_suicideGrunt_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 33,
+          "TotalDestroyed": 2
+        },
+        "cov_inf_rm_jackal_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 16,
+          "TotalDestroyed": 0
+        },
+        "cov_inf_rm_bruteJumpPack_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 27,
+          "TotalDestroyed": 5
+        },
+        "cov_inf_rm_grunt_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 11,
+          "TotalDestroyed": 0
+        },
+        "cov_inf_rm_grunt_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 12,
+          "TotalDestroyed": 9
+        },
+        "cov_inf_rm_hunter_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 46,
+          "TotalDestroyed": 2
+        },
+        "cov_veh_rm_wraith_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 8,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_gorgon_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 1,
+          "TotalDestroyed": 19
+        },
+        "cov_veh_rm_ghost_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 4,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_gorgon_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 12,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_bruteChopper_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 4,
+          "TotalDestroyed": 0
+        },
+        "cov_inf_rm_hunter_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 34,
+          "TotalDestroyed": 0
+        },
+        "cov_air_rm_banshee_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 73,
+          "TotalDestroyed": 7
+        },
+        "cov_air_rm_blisterback_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 22,
+          "TotalDestroyed": 7
+        },
+        "cov_inf_rm_engineer_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 21,
+          "TotalDestroyed": 11
+        },
+        "cov_air_rm_blisterback_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 7,
+          "TotalDestroyed": 8
+        },
+        "cov_inf_rm_eliteCommando_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 2,
+          "TotalDestroyed": 3
+        },
+        "cov_inf_rm_atrioxchosen_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 6,
+          "TotalDestroyed": 0
+        },
+        "cov_inf_rm_decimus_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 17,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_flameMarine_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 20,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_foxcannon_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 2,
+          "TotalDestroyed": 0
+        },
+        "unsc_inf_rm_sniper_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 12,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_mongoose_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 9,
+          "TotalDestroyed": 0
+        },
+        "unsc_veh_rm_foxcannon_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 4,
+          "TotalDestroyed": 0
+        },
+        "unsc_bldg_rmSupplyDropFirefight": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 3
+        },
+        "cov_veh_rm_prowler_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 4,
+          "TotalDestroyed": 0
+        },
+        "cov_air_rm_banshee_02": {
+          "TotalBuilt": 0,
+          "TotalLost": 2,
+          "TotalDestroyed": 0
+        },
+        "cov_air_spiritGunship_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 1
+        },
+        "cov_inf_jackal_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 2
+        },
+        "cov_inf_hunter_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 2
+        },
+        "cov_inf_rm_bruteHonour_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 1,
+          "TotalDestroyed": 0
+        },
+        "cov_veh_rm_scarab_01": {
+          "TotalBuilt": 0,
+          "TotalLost": 0,
+          "TotalDestroyed": 1
+        }
+      },
+      "CardStats": {},
+      "WaveStats": {
+        "1": {
+          "WaveDuration": "PT1M0.921S"
+        },
+        "2": {
+          "WaveDuration": "PT1M0.906S"
+        },
+        "3": {
+          "WaveDuration": "PT1M0.902S"
+        },
+        "4": {
+          "WaveDuration": "PT1M0.904S"
+        },
+        "5": {
+          "WaveDuration": "PT59.885S"
+        },
+        "6": {
+          "WaveDuration": "PT1M0.907S"
+        },
+        "7": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "8": {
+          "WaveDuration": "PT1M0.9S"
+        },
+        "9": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "10": {
+          "WaveDuration": "PT1M31.361S"
+        },
+        "11": {
+          "WaveDuration": "PT1M0.925S"
+        },
+        "12": {
+          "WaveDuration": "PT1M0.914S"
+        },
+        "13": {
+          "WaveDuration": "PT1M0.923S"
+        },
+        "14": {
+          "WaveDuration": "PT1M0.966S"
+        },
+        "15": {
+          "WaveDuration": "PT1M31.419S"
+        },
+        "16": {
+          "WaveDuration": "PT1M0.984S"
+        },
+        "17": {
+          "WaveDuration": "PT1M0.963S"
+        },
+        "18": {
+          "WaveDuration": "PT1M0.913S"
+        },
+        "19": {
+          "WaveDuration": "PT1M0.997S"
+        },
+        "20": {
+          "WaveDuration": "PT1M31.583S"
+        },
+        "21": {
+          "WaveDuration": "PT1M0.899S"
+        },
+        "22": {
+          "WaveDuration": "PT1M0.981S"
+        },
+        "23": {
+          "WaveDuration": "PT1M0.884S"
+        },
+        "24": {
+          "WaveDuration": "PT1M0.975S"
+        },
+        "25": {
+          "WaveDuration": "PT1M30.367S"
+        },
+        "26": {
+          "WaveDuration": "PT1M0.96S"
+        },
+        "27": {
+          "WaveDuration": "PT1M1.064S"
+        },
+        "28": {
+          "WaveDuration": "PT1M0.977S"
+        },
+        "29": {
+          "WaveDuration": "PT1M1.07S"
+        },
+        "30": {
+          "WaveDuration": "PT1M9.109S"
+        },
+        "31": {
+          "WaveDuration": "PT1M0.94S"
+        },
+        "32": {
+          "WaveDuration": "PT1M0.996S"
+        },
+        "33": {
+          "WaveDuration": "PT1M1.068S"
+        },
+        "34": {
+          "WaveDuration": "PT1M1.075S"
+        },
+        "35": {
+          "WaveDuration": "PT1M31.686S"
+        },
+        "36": {
+          "WaveDuration": "PT1M0.924S"
+        },
+        "37": {
+          "WaveDuration": "PT1M1.011S"
+        }
+      },
+      "LeaderPowerStats": {},
+      "XPProgress": null,
+      "RatingProgress": null
+    }
+  }
+}

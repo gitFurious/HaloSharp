@@ -41,7 +41,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </summary>
         [JsonProperty(PropertyName = "classification")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.MedalType Classification { get; set; }
+        public Enumeration.Halo5.MedalType Classification { get; set; }
 
         /// <summary>
         /// Internal use only. Do not use.

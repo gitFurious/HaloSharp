@@ -3,6 +3,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HaloSharp.Model;
+using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Stats;
 using HaloSharp.Validation.Halo5.Stats;
 
@@ -13,7 +14,7 @@ namespace HaloSharp.Query.Halo5.Stats
     ///     processing. If the player is currently in a match, it is not returned in this API. Matches will usually appear
     ///     in this list within a minute of the match ending.
     /// </summary>
-    public class GetMatches : IQuery<MatchSet>
+    public class GetMatches : IQuery<MatchSet<PlayerMatch>>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
         internal string Player;
@@ -43,7 +44,7 @@ namespace HaloSharp.Query.Halo5.Stats
         ///     warzone).
         /// </summary>
         /// <param name="gameMode">The Game Mode the client is interested in.</param>
-        public GetMatches InGameMode(Enumeration.GameMode gameMode)
+        public GetMatches InGameMode(Enumeration.Halo5.GameMode gameMode)
         {
             Parameters["modes"] = gameMode.ToString();
 
@@ -55,7 +56,7 @@ namespace HaloSharp.Query.Halo5.Stats
         ///     warzone).
         /// </summary>
         /// <param name="gameModes">The Game Mode(s) the client is interested in.</param>
-        public GetMatches InGameModes(List<Enumeration.GameMode> gameModes)
+        public GetMatches InGameModes(List<Enumeration.Halo5.GameMode> gameModes)
         {
             Parameters["modes"] = string.Join(",", gameModes.Select(g => g.ToString()));
 
@@ -86,19 +87,19 @@ namespace HaloSharp.Query.Halo5.Stats
             return this;
         }
 
-        public async Task<MatchSet> ApplyTo(IHaloSession session)
+        public async Task<MatchSet<PlayerMatch>> ApplyTo(IHaloSession session)
         {
             this.Validate();
 
             var uri = GetConstructedUri();
 
             var matchSet = _useCache
-                ? Cache.Get<MatchSet>(uri)
+                ? Cache.Get<MatchSet<PlayerMatch>>(uri)
                 : null;
 
             if (matchSet == null)
             {
-                matchSet = await session.Get<MatchSet>(uri);
+                matchSet = await session.Get<MatchSet<PlayerMatch>>(uri);
 
                 Cache.AddStats(uri, matchSet);
             }

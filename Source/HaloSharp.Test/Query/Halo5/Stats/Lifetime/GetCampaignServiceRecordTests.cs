@@ -6,6 +6,7 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Stats.Lifetime;
 using HaloSharp.Query.Halo5.Stats.Lifetime;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [SetUp]
         public void Setup()
         {
-            _campaignServiceRecord = JsonConvert.DeserializeObject<CampaignServiceRecord>(File.ReadAllText(Config.CampaignServiceRecordJsonPath));
+            _campaignServiceRecord = JsonConvert.DeserializeObject<CampaignServiceRecord>(File.ReadAllText(Halo5Config.CampaignServiceRecordJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<CampaignServiceRecord>(It.IsAny<string>()))
@@ -118,10 +119,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetCampaignServiceRecord_SchemaIsValid(string gamertag)
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.CampaignServiceRecordJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.CampaignServiceRecordJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.CampaignServiceRecordJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.CampaignServiceRecordJsonSchemaPath))
             });
 
             var query = new GetCampaignServiceRecord()
@@ -139,10 +140,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetCampaignServiceRecord_ModelMatchesSchema(string gamertag)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.CampaignServiceRecordJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.CampaignServiceRecordJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.CampaignServiceRecordJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.CampaignServiceRecordJsonSchemaPath))
             });
 
             var query = new GetCampaignServiceRecord()

@@ -49,9 +49,9 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         }
 
         [Test]
-        [TestCase(Enumeration.CropType.Full)]
-        [TestCase(Enumeration.CropType.Portrait)]
-        public void GetConstructedUri_Crop_MatchesExpected(Enumeration.CropType cropType)
+        [TestCase(Enumeration.Halo5.CropType.Full)]
+        [TestCase(Enumeration.Halo5.CropType.Portrait)]
+        public void GetConstructedUri_Crop_MatchesExpected(Enumeration.Halo5.CropType cropType)
         {
             var query = new GetSpartanImage()
                 .Crop(cropType);
@@ -62,9 +62,9 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         }
 
         [Test]
-        [TestCase("Greenskull", 5, Enumeration.CropType.Full)]
-        [TestCase("Furiousn00b", 10, Enumeration.CropType.Portrait)]
-        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, int size, Enumeration.CropType cropType)
+        [TestCase("Greenskull", 5, Enumeration.Halo5.CropType.Full)]
+        [TestCase("Furiousn00b", 10, Enumeration.Halo5.CropType.Portrait)]
+        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, int size, Enumeration.Halo5.CropType cropType)
         {
             var query = new GetSpartanImage()
                 .ForPlayer(gamertag)
@@ -113,7 +113,7 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         {
             var query = new GetSpartanImage()
                 .ForPlayer("Furiousn00b")
-                .Crop(Enumeration.CropType.Portrait)
+                .Crop(Enumeration.Halo5.CropType.Portrait)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);

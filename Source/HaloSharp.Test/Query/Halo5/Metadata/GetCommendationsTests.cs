@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _commendations = JsonConvert.DeserializeObject<List<Commendation>>(File.ReadAllText(Config.CommendationJsonPath));
+            _commendations = JsonConvert.DeserializeObject<List<Commendation>>(File.ReadAllText(Halo5Config.CommendationJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<Commendation>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetCommendations_SchemaIsValid()
         {
-            var commendationsSchema = JSchema.Parse(File.ReadAllText(Config.CommendationJsonSchemaPath), new JSchemaReaderSettings
+            var commendationsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.CommendationJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.CommendationJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.CommendationJsonSchemaPath))
             });
 
             var query = new GetCommendations()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetCommendations_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.CommendationJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.CommendationJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.CommendationJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.CommendationJsonSchemaPath))
             });
 
             var query = new GetCommendations()

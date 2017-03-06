@@ -15,14 +15,13 @@
       "type": "integer"
     },
     "Links": {
-      "type": "object",
-      "properties": {}
+      "$ref": "../../common/link.schema.json"
     },
     "CreationTimeUtc": {
-      "$ref": "../common/iso-8061.schema.json"
+      "$ref": "../../common/iso-8061.schema.json"
     },
     "LastModifiedTimeUtc": {
-      "$ref": "../common/iso-8061.schema.json"
+      "$ref": "../../common/iso-8061.schema.json"
     },
     "Banned": {
       "type": "boolean"

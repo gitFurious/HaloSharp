@@ -6,6 +6,7 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Stats.Lifetime;
 using HaloSharp.Query.Halo5.Stats.Lifetime;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [SetUp]
         public void Setup()
         {
-            _customServiceRecord = JsonConvert.DeserializeObject<CustomServiceRecord>(File.ReadAllText(Config.CustomServiceRecordJsonPath));
+            _customServiceRecord = JsonConvert.DeserializeObject<CustomServiceRecord>(File.ReadAllText(Halo5Config.CustomServiceRecordJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<CustomServiceRecord>(It.IsAny<string>()))
@@ -118,10 +119,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetCustomServiceRecord_SchemaIsValid(string gamertag)
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.CustomServiceRecordJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.CustomServiceRecordJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.CustomServiceRecordJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.CustomServiceRecordJsonSchemaPath))
             });
 
             var query = new GetCustomServiceRecord()
@@ -139,10 +140,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetCustomServiceRecord_ModelMatchesSchema(string gamertag)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.CustomServiceRecordJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.CustomServiceRecordJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.CustomServiceRecordJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.CustomServiceRecordJsonSchemaPath))
             });
 
             var query = new GetCustomServiceRecord()

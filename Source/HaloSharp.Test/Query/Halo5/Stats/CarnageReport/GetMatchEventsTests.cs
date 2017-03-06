@@ -6,6 +6,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.CarnageReport;
 using HaloSharp.Query.Halo5.Stats.CarnageReport;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         [SetUp]
         public void Setup()
         {
-            _matchEvents = JsonConvert.DeserializeObject<MatchEvents>(File.ReadAllText(Config.MatchEventsJsonPath));
+            _matchEvents = JsonConvert.DeserializeObject<MatchEvents>(File.ReadAllText(Halo5Config.MatchEventsJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<MatchEvents>(It.IsAny<string>()))
@@ -87,10 +88,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         public async Task GetMatchEvents_SchemaIsValid(string guid)
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.MatchEventsJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.MatchEventsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MatchEventsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MatchEventsJsonSchemaPath))
             });
 
             var query = new GetMatchEvents()
@@ -107,10 +108,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         public async Task GetMatchEvents_ModelMatchesSchema(string guid)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.MatchEventsModelJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.MatchEventsModelJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MatchEventsModelJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MatchEventsModelJsonSchemaPath))
             });
 
             var query = new GetMatchEvents()
@@ -154,7 +155,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
             }
             catch (HaloApiException e)
             {
-                Assert.AreEqual((int)Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
+                Assert.AreEqual((int)Enumeration.Halo5.StatusCode.NotFound, e.HaloApiError.StatusCode);
             }
             catch (System.Exception e)
             {

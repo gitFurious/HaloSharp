@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Stats.Common;
 using Newtonsoft.Json;
 

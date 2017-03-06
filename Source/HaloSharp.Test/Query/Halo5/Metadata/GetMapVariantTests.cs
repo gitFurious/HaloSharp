@@ -6,6 +6,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _mapVariant = JsonConvert.DeserializeObject<MapVariant>(File.ReadAllText(Config.MapVariantJsonPath));
+            _mapVariant = JsonConvert.DeserializeObject<MapVariant>(File.ReadAllText(Halo5Config.MapVariantJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<MapVariant>(It.IsAny<string>()))
@@ -84,10 +85,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("d9f9c30d-b1be-4381-a5a4-fe29026cca12")]
         public async Task GetMapVariant_SchemaIsValid(string guid)
         {
-            var mapVariantSchema = JSchema.Parse(File.ReadAllText(Config.MapVariantJsonSchemaPath), new JSchemaReaderSettings
+            var mapVariantSchema = JSchema.Parse(File.ReadAllText(Halo5Config.MapVariantJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MapVariantJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MapVariantJsonSchemaPath))
             });
 
             var query = new GetMapVariant()
@@ -103,10 +104,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("d9f9c30d-b1be-4381-a5a4-fe29026cca12")]
         public async Task GetMapVariant_ModelMatchesSchema(string guid)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.MapVariantJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.MapVariantJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MapVariantJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MapVariantJsonSchemaPath))
             });
 
             var query = new GetMapVariant()
@@ -149,7 +150,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             }
             catch (HaloApiException e)
             {
-                Assert.AreEqual((int) Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
+                Assert.AreEqual((int)Enumeration.Halo5.StatusCode.NotFound, e.HaloApiError.StatusCode);
             }
             catch (System.Exception e)
             {

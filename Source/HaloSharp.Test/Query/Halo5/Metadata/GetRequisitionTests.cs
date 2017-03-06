@@ -6,6 +6,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _requisition = JsonConvert.DeserializeObject<Requisition>(File.ReadAllText(Config.RequisitionJsonPath));
+            _requisition = JsonConvert.DeserializeObject<Requisition>(File.ReadAllText(Halo5Config.RequisitionJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<Requisition>(It.IsAny<string>()))
@@ -84,10 +85,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("a23a896d-57e6-45c3-970b-27550f0e7184")]
         public async Task GetRequisition_SchemaIsValid(string guid)
         {
-            var requisitionSchema = JSchema.Parse(File.ReadAllText(Config.RequisitionJsonSchemaPath), new JSchemaReaderSettings
+            var requisitionSchema = JSchema.Parse(File.ReadAllText(Halo5Config.RequisitionJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.RequisitionJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.RequisitionJsonSchemaPath))
             });
 
             var query = new GetRequisition()
@@ -103,10 +104,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("a23a896d-57e6-45c3-970b-27550f0e7184")]
         public async Task GetRequisition_ModelMatchesSchema(string guid)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.RequisitionJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.RequisitionJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.RequisitionJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.RequisitionJsonSchemaPath))
             });
 
             var query = new GetRequisition()
@@ -149,7 +150,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             }
             catch (HaloApiException e)
             {
-                Assert.AreEqual((int) Enumeration.StatusCode.NotFound, e.HaloApiError.StatusCode);
+                Assert.AreEqual((int)Enumeration.Halo5.StatusCode.NotFound, e.HaloApiError.StatusCode);
             }
             catch (System.Exception e)
             {

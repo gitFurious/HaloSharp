@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using HaloSharp.Converter;
+using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Stats.Common;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -107,7 +108,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
         ///     </list>
         /// </summary>
         [JsonProperty(PropertyName = "DeathDisposition")]
-        public Enumeration.Disposition? DeathDisposition { get; set; }
+        public Enumeration.Halo5.Disposition? DeathDisposition { get; set; }
 
         /// <summary>
         ///     The ID that uniquely identifies this impulse. Impulses are available via the Metadata API.
@@ -172,7 +173,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
         ///     </list>
         /// </summary>
         [JsonProperty(PropertyName = "KillerAgent")]
-        public Enumeration.Agent? KillerAgent { get; set; }
+        public Enumeration.Halo5.Agent? KillerAgent { get; set; }
 
         /// <summary>
         ///     Any attachments the killer's weapon had.
@@ -190,7 +191,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
         ///     Object describing the position of the killer on the map when they made the kill.
         /// </summary>
         [JsonProperty(PropertyName = "KillerWorldLocation")]
-        public WorldLocation KillerWorldLocation { get; set; }
+        public Location KillerWorldLocation { get; set; }
 
         /// <summary>
         ///     The ID that uniquely identifies this medal. Medals are available via the Metadata API.
@@ -250,7 +251,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
         ///     </list>
         /// </summary>
         [JsonProperty(PropertyName = "VictimAgent")]
-        public Enumeration.Agent? VictimAgent { get; set; }
+        public Enumeration.Halo5.Agent? VictimAgent { get; set; }
 
         /// <summary>
         ///     Any attachments the victim's weapon had.
@@ -268,7 +269,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
         ///     Object describing the position of the victim on the map when they were killed.
         /// </summary>
         [JsonProperty(PropertyName = "VictimWorldLocation")]
-        public WorldLocation VictimWorldLocation { get; set; }
+        public Location VictimWorldLocation { get; set; }
 
         /// <summary>
         ///     The IDs of any attachments that were associated with the weapon that was picked up/dropped.
@@ -317,7 +318,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
         /// </summary>
         [JsonProperty(PropertyName = "EventName")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.EventType EventName { get; set; }
+        public Enumeration.Halo5.EventType EventName { get; set; }
 
         /// <summary>
         ///     Time passed since the start of the match when the event occurred. This is expressed as an ISO 8601 Duration.
@@ -432,86 +433,6 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
         }
 
         public static bool operator !=(GameEvent left, GameEvent right)
-        {
-            return !Equals(left, right);
-        }
-    }
-
-    [Serializable]
-    public class WorldLocation : IEquatable<WorldLocation>
-    {
-        /// <summary>
-        ///     X Coordinate
-        /// </summary>
-        [JsonProperty(PropertyName = "x")]
-        public double X { get; set; }
-
-        /// <summary>
-        ///     Y Coordinate
-        /// </summary>
-        [JsonProperty(PropertyName = "y")]
-        public double Y { get; set; }
-
-        /// <summary>
-        ///     Z Coordinate
-        /// </summary>
-        [JsonProperty(PropertyName = "z")]
-        public double Z { get; set; }
-
-        public bool Equals(WorldLocation other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            return X.Equals(other.X)
-                && Y.Equals(other.Y)
-                && Z.Equals(other.Z);
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != typeof (WorldLocation))
-            {
-                return false;
-            }
-
-            return Equals((WorldLocation) obj);
-        }
-
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                var hashCode = X.GetHashCode();
-                hashCode = (hashCode*397) ^ Y.GetHashCode();
-                hashCode = (hashCode*397) ^ Z.GetHashCode();
-                return hashCode;
-            }
-        }
-
-        public static bool operator ==(WorldLocation left, WorldLocation right)
-        {
-            return Equals(left, right);
-        }
-
-        public static bool operator !=(WorldLocation left, WorldLocation right)
         {
             return !Equals(left, right);
         }

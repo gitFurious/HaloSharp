@@ -53,7 +53,7 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport.Common
         /// below will confirm the actual values used.</para>
         /// </summary>
         [JsonProperty(PropertyName = "Result")]
-        public Enumeration.CreditsEarnedResultType Result { get; set; }
+        public Enumeration.Halo5.CreditsEarnedResultType Result { get; set; }
 
         /// <summary>
         /// The scalar applied to the credits earned based on the player's Spartan Rank.

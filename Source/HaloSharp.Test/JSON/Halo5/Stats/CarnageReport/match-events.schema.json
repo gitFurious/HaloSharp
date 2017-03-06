@@ -6,7 +6,7 @@
         "Assistants": {
           "type": [ "null", "array" ],
           "items": {
-            "$ref": "../common/identity.schema.json"
+            "$ref": "../../../common/identity.schema.json"
           },
           "additionalItems": false
         },
@@ -35,7 +35,7 @@
           "type": [ "null", "boolean" ]
         },
         "Killer": {
-          "$ref": "../common/identity.schema.json"
+          "$ref": "../../../common/identity.schema.json"
         },
         "KillerAgent": {
           "type": [ "null", "integer" ]
@@ -57,7 +57,7 @@
           "type": [ "null", "integer" ]
         },
         "Player": {
-          "$ref": "../common/identity.schema.json"
+          "$ref": "../../../common/identity.schema.json"
         },
         "RoundIndex": {
           "type": [ "null", "integer" ]
@@ -72,7 +72,7 @@
           "type": [ "null", "string" ]
         },
         "Victim": {
-          "$ref": "../common/identity.schema.json"
+          "$ref": "../../../common/identity.schema.json"
         },
         "VictimAgent": {
           "type": [ "null", "integer" ]

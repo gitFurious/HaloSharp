@@ -125,7 +125,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </summary>
         [JsonProperty(PropertyName = "rarityType")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.RequisitionRarityType RarityType { get; set; }
+        public Enumeration.Halo5.RequisitionRarityType RarityType { get; set; }
 
         /// <summary>
         /// This field indicates how many credits the player will receive if they wish to discard this requisition. 
@@ -165,7 +165,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </list>
         /// </summary>
         [JsonProperty(PropertyName = "supportedGameModes", ItemConverterType = typeof(StringEnumConverter))]
-        public List<Enumeration.GameMode> SupportedGameModes { get; set; }
+        public List<Enumeration.Halo5.GameMode> SupportedGameModes { get; set; }
 
         /// <summary>
         /// Indicates how the requisition card may be used. Options are:
@@ -196,7 +196,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </summary>
         [JsonProperty(PropertyName = "useType")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.RequisitionUseType UseType { get; set; }
+        public Enumeration.Halo5.RequisitionUseType UseType { get; set; }
 
         public bool Equals(Requisition other)
         {

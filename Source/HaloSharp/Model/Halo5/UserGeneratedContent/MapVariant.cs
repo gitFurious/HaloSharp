@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Common;
 using HaloSharp.Model.Halo5.Stats.Common;
 
@@ -12,7 +13,7 @@ namespace HaloSharp.Model.Halo5.UserGeneratedContent
         public Variant BaseMap { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public Enumeration.AccessControl AccessControl { get; set; }
+        public Enumeration.Halo5.AccessControl AccessControl { get; set; }
         public Dictionary<string, Link> Links { get; set; }
         public ISO8601 CreationTimeUtc { get; set; }
         public ISO8601 LastModifiedTimeUtc { get; set; }

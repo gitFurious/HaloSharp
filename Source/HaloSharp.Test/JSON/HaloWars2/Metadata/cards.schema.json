@@ -1,0 +1,265 @@
+{
+  "definitions": {
+    "HW2CardCompleteContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2CardView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "common/link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2CardView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Autoroute": {
+          "type": "string"
+        },
+        "HW2Card": {
+          "$ref": "#/definitions/HW2Card"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "HW2Card",
+        "Autoroute"
+      ]
+    },
+
+    "HW2Card": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Rarity": {
+          "type": "integer"
+        },
+        "Entitlement": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/content-item-type-c.schema.json#/definitions/null" },
+            { "$ref": "common/content-item-type-c.schema.json#/definitions/ContentItemTypeC" }
+          ]
+        },
+        "EntitlementRequired": {
+          "type": "boolean"
+        },
+        "ExcludeFromCardGeneration": {
+          "type": "boolean"
+        },
+        "Faction": {
+          "type": "string"
+        },
+        "Leader": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/content-item-type-c.schema.json#/definitions/null" },
+            { "$ref": "common/content-item-type-c.schema.json#/definitions/ContentItemTypeC" }
+          ]
+        },
+        "ForegroundImage": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/image.schema.json#/definitions/null" },
+            { "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB" }
+          ]
+        },
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2CardDisplayInfoContentItemTypeB"
+        },
+        "GameObject": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/content-item-type-d.schema.json#/definitions/null" },
+            { "$ref": "common/content-item-type-d.schema.json#/definitions/ContentItemTypeD" }
+          ]
+        },
+        "LastStandNumber": {
+          "type": [ "integer", "null" ]
+        },
+        "EnergyCost": {
+          "type": "integer"
+        },
+        "PlayType": {
+          "type": "string"
+        },
+        "Keywords": {
+          "type": "array",
+          "items": {
+            "$ref": "common/content-item-type-d.schema.json#/definitions/ContentItemTypeD"
+          }
+        }
+      },
+      "required": [
+        "Rarity",
+        "Entitlement",
+        "EntitlementRequired",
+        "ExcludeFromCardGeneration",
+        "Faction",
+        "Leader",
+        "ForegroundImage",
+        "DisplayInfo",
+        "GameObject",
+        "LastStandNumber",
+        "EnergyCost",
+        "PlayType",
+        "Keywords"
+      ]
+    },
+
+
+    "HW2CardDisplayInfoContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2CardDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2CardDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "BatchLocalization": {
+          "$ref": "common/batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "common/localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2CardDisplayInfo": {
+          "$ref": "#/definitions/HW2CardDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2CardDisplayInfo",
+        "BatchLocalization",
+        "Localization",
+        "Title",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2CardDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "SubtypeDescription": {
+          "type": "string"
+        },
+        "SpecialAbilityName": {
+          "type": "string"
+        },
+        "SpecialAbilityDescription": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Description",
+        "SubtypeDescription",
+        "SpecialAbilityName",
+        "SpecialAbilityDescription"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Paging": {
+      "$ref": "common/paging.schema.json"
+    },
+    "ContentItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/HW2CardCompleteContentItemTypeA"
+      }
+    }
+  },
+  "required": [
+    "Paging",
+    "ContentItems"
+  ]
+}

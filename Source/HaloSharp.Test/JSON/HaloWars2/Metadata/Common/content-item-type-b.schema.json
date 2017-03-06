@@ -1,0 +1,25 @@
+{
+  "definitions": {
+    "null": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "null"
+        },
+        "View": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    }
+  }
+}

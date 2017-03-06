@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _weapons = JsonConvert.DeserializeObject<List<Weapon>>(File.ReadAllText(Config.WeaponsJsonPath));
+            _weapons = JsonConvert.DeserializeObject<List<Weapon>>(File.ReadAllText(Halo5Config.WeaponsJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<Weapon>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetWeapons_SchemaIsValid()
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.WeaponsJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.WeaponsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.WeaponsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.WeaponsJsonSchemaPath))
             });
 
             var query = new GetWeapons()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetVehicles_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.WeaponsJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.WeaponsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.WeaponsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.WeaponsJsonSchemaPath))
             });
 
             var query = new GetWeapons()

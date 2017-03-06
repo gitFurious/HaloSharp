@@ -58,7 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache\CacheTests.cs" />
-    <Compile Include="Config.cs" />
+    <Compile Include="Config\Halo5ForgeConfig.cs" />
+    <Compile Include="Config\HaloWars2Config.cs" />
+    <Compile Include="Config\Halo5Config.cs" />
     <Compile Include="Converter\TimeSpanConverterTests.cs" />
     <Compile Include="Converter\GuidConverterTests.cs" />
     <Compile Include="Query\Halo5\Metadata\GetSeasonsTests.cs" />
@@ -96,8 +98,34 @@
     <Compile Include="Query\Halo5\UserGeneratedContent\ListGameVariantsTests.cs" />
     <Compile Include="Query\Halo5\UserGeneratedContent\GetMapVariantTests.cs" />
     <Compile Include="Query\Halo5\UserGeneratedContent\GetGameVariantTests.cs" />
-    <Compile Include="Schema\SchemaTests.cs" />
-    <Compile Include="Serialization\SerializationTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetLeaderPowersTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetLeadersTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetMapsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetPlaylistsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetSeasonsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetSpartanRanksTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetTechsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetGameObjectsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetGameObjectCategoriesTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetDifficultiesTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetCompetitiveSkillRankDesignationsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetCardsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetPacksTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetCardKeywordsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetCampaignLogsTests.cs" />
+    <Compile Include="Query\HaloWars2\Metadata\GetCampaignLevelsTests.cs" />
+    <Compile Include="Query\HaloWars2\Stats\Player\GetMatchHistoryTests.cs" />
+    <Compile Include="Query\HaloWars2\Stats\Match\GetMatchEventsTests.cs" />
+    <Compile Include="Query\HaloWars2\Stats\Player\GetSeasonSummaryTests.cs" />
+    <Compile Include="Query\HaloWars2\Stats\Player\GetPlaylistRatingsTests.cs" />
+    <Compile Include="Query\HaloWars2\Stats\Player\GetPlayerSummaryTests.cs" />
+    <Compile Include="Query\HaloWars2\Stats\Player\GetCampaignProgressTests.cs" />
+    <Compile Include="Query\HaloWars2\Stats\Player\GetExperienceSummaryTests.cs" />
+    <Compile Include="Query\HaloWars2\Stats\Match\GetMatchTests.cs" />
+    <Compile Include="Schema\HaloWars2SchemaTests.cs" />
+    <Compile Include="Schema\Halo5SchemaTests.cs" />
+    <Compile Include="Serialization\HaloWars2SerializationTests.cs" />
+    <Compile Include="Serialization\Halo5SerializationTests.cs" />
     <Compile Include="Utility\SchemaUtility.cs" />
     <Compile Include="Utility\SerializationUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,7 +135,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="JSON\Halo5\Common\iso-8061.schema.json">
+    <None Include="JSON\Common\iso-8061.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\Common\location.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="JSON\Halo5\Metadata\seasons.json">
@@ -299,10 +330,10 @@
     <None Include="JSON\Halo5\Stats\Common\base-stat.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Halo5\Stats\Common\link.schema.json">
+    <None Include="JSON\Common\link.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Halo5\Stats\Common\identity.schema.json">
+    <None Include="JSON\Common\identity.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="JSON\Halo5\Stats\Common\competitive-skill-ranking.schema.json">
@@ -380,6 +411,210 @@
     <None Include="JSON\Halo5\UserGeneratedContent\game-variant.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="JSON\HaloWars2\Metadata\cards.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\cards.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\content-item-type-b.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\empty.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\playlist.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\map.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\pack.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\image.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\content-item-type-c.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\content-item-type-d.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\link.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\common.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\localization.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\batch-localization.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\difficulty.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\Common\paging.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\packs.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\card-keywords.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\campaign-logs.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\campaign-levels.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\csr-designations.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\difficulties.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\game-object-categories.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\game-objects.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\leader-powers.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\leaders.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\maps.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\playlists.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\seasons.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\spartan-ranks.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\techs.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\csr-designations.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\difficulties.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\game-object-categories.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\game-objects.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\leader-powers.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\leaders.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\maps.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\playlists.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\seasons.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\spartan-ranks.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\techs.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\packs.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\card-keywords.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\campaign-logs.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Metadata\campaign-levels.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\Common\rating-progress.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\Common\leader-stats.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\Common\experience-progress.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\Common\stats.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\Common\matchmaking-rank.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\Common\competitive-skill-rank.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\match-events.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\campaign-progress.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\match-history.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\playlist-ratings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\season-summary.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\player-summary.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\playlist-ratings.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\match.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\match-events.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\campaign-progress.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\match-history.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\season-summary.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\player-summary.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\experience-summary.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\experience-summary.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\HaloWars2\Stats\match.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -390,9 +625,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="JSON\Halo5Forge\" />
-    <Folder Include="JSON\HaloWars2\" />
     <Folder Include="Query\Halo5Forge\" />
-    <Folder Include="Query\HaloWars2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />

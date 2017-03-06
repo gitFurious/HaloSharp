@@ -35,7 +35,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </summary>
         [JsonProperty(PropertyName = "faction")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.Faction Faction { get; set; }
+        public Enumeration.Halo5.Faction Faction { get; set; }
 
         /// <summary>
         /// The ID that uniquely identifies this enemy.

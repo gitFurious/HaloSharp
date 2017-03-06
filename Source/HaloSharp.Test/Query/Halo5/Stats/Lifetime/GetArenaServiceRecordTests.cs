@@ -6,6 +6,7 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Stats.Lifetime;
 using HaloSharp.Query.Halo5.Stats.Lifetime;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [SetUp]
         public void Setup()
         {
-            _arenaServiceRecord = JsonConvert.DeserializeObject<ArenaServiceRecord>(File.ReadAllText(Config.ArenaServiceRecordJsonPath));
+            _arenaServiceRecord = JsonConvert.DeserializeObject<ArenaServiceRecord>(File.ReadAllText(Halo5Config.ArenaServiceRecordJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<ArenaServiceRecord>(It.IsAny<string>()))
@@ -146,10 +147,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetArenaServiceRecord_SchemaIsValid(string gamertag)
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.ArenaServiceRecordJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.ArenaServiceRecordJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.ArenaServiceRecordJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.ArenaServiceRecordJsonSchemaPath))
             });
 
             var query = new GetArenaServiceRecord()
@@ -167,10 +168,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetArenaServiceRecord_ModelMatchesSchema(string gamertag)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.ArenaServiceRecordJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.ArenaServiceRecordJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.ArenaServiceRecordJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.ArenaServiceRecordJsonSchemaPath))
             });
 
             var query = new GetArenaServiceRecord()

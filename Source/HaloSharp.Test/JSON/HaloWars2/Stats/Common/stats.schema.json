@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "PlaylistId": {
+      "type": [ "null", "string" ]
+    },
+    "PlaylistClassification": {
+      "type": [ "null", "integer" ]
+    },
+    "HighestCsr": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "competitive-skill-rank.schema.json" }
+      ]
+    },
+    "TotalTimePlayed": {
+      "type": [ "null", "string" ]
+    },
+    "TotalMatchesStarted": {
+      "type": "integer"
+    },
+    "TotalMatchesCompleted": {
+      "type": "integer"
+    },
+    "TotalMatchesWon": {
+      "type": "integer"
+    },
+    "TotalMatchesLost": {
+      "type": "integer"
+    },
+    "TotalPointCaptures": {
+      "type": "integer"
+    },
+    "TotalUnitsBuilt": {
+      "type": "integer"
+    },
+    "TotalUnitsLost": {
+      "type": "integer"
+    },
+    "TotalUnitsDestroyed": {
+      "type": "integer"
+    },
+    "TotalCardPlays": {
+      "type": "integer"
+    },
+    "HighestWaveCompleted": {
+      "type": "integer"
+    },
+    "LeaderStats": {
+      "$ref": "leader-stats.schema.json"
+    }
+  },
+  "required": [
+    "PlaylistId",
+    "PlaylistClassification",
+    "HighestCsr",
+    "TotalTimePlayed",
+    "TotalMatchesStarted",
+    "TotalMatchesCompleted",
+    "TotalMatchesWon",
+    "TotalMatchesLost",
+    "TotalPointCaptures",
+    "TotalUnitsBuilt",
+    "TotalUnitsLost",
+    "TotalUnitsDestroyed",
+    "TotalCardPlays",
+    "HighestWaveCompleted",
+    "LeaderStats"
+  ]
+}

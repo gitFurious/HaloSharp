@@ -5,6 +5,7 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.UserGeneratedContent;
 using HaloSharp.Query.Halo5.UserGeneratedContent;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [SetUp]
         public void Setup()
         {
-            _gameVariant = JsonConvert.DeserializeObject<GameVariant>(File.ReadAllText(Config.UserGeneratedContentGameVariantJsonPath));
+            _gameVariant = JsonConvert.DeserializeObject<GameVariant>(File.ReadAllText(Halo5Config.UserGeneratedContentGameVariantJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<GameVariant>(It.IsAny<string>()))
@@ -112,10 +113,10 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23", "399c6656-c091-4433-80d1-88224a6786b6")]
         public async Task GetGameVariant_SchemaIsValid(string gamertag, string guid)
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.UserGeneratedContentGameVariantJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.UserGeneratedContentGameVariantJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.UserGeneratedContentGameVariantJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.UserGeneratedContentGameVariantJsonSchemaPath))
             });
 
             var query = new GetGameVariant()
@@ -132,10 +133,10 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23", "399c6656-c091-4433-80d1-88224a6786b6")]
         public async Task GetGameVariant_ModelMatchesSchema(string gamertag, string guid)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.UserGeneratedContentGameVariantJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.UserGeneratedContentGameVariantJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.UserGeneratedContentGameVariantJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.UserGeneratedContentGameVariantJsonSchemaPath))
             });
 
             var query = new GetGameVariant()

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _enemies = JsonConvert.DeserializeObject<List<Enemy>>(File.ReadAllText(Config.EnemyJsonPath));
+            _enemies = JsonConvert.DeserializeObject<List<Enemy>>(File.ReadAllText(Halo5Config.EnemyJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<Enemy>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetEnemies_SchemaIsValid()
         {
-            var enemiesSchema = JSchema.Parse(File.ReadAllText(Config.EnemyJsonSchemaPath), new JSchemaReaderSettings
+            var enemiesSchema = JSchema.Parse(File.ReadAllText(Halo5Config.EnemyJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.EnemyJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.EnemyJsonSchemaPath))
             });
 
             var query = new GetEnemies()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetEnemies_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.EnemyJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.EnemyJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.EnemyJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.EnemyJsonSchemaPath))
             });
 
             var query = new GetEnemies()

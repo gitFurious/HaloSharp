@@ -56,7 +56,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </summary>
         [JsonProperty(PropertyName = "type")]
         [JsonConverter(typeof(StringEnumConverter))]
-        public Enumeration.CampaignMissionType Type { get; set; }
+        public Enumeration.Halo5.CampaignMissionType Type { get; set; }
 
         public bool Equals(CampaignMission other)
         {

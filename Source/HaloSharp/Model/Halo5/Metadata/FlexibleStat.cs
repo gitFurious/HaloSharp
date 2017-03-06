@@ -38,7 +38,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </summary>
         [JsonProperty(PropertyName = "type")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.FlexibleStatType Type { get; set; }
+        public Enumeration.Halo5.FlexibleStatType Type { get; set; }
 
         public bool Equals(FlexibleStat other)
         {

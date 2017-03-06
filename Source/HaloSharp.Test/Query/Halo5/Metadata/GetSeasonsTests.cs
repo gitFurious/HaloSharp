@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _seasons = JsonConvert.DeserializeObject<List<Season>>(File.ReadAllText(Config.SeasonsJsonPath));
+            _seasons = JsonConvert.DeserializeObject<List<Season>>(File.ReadAllText(Halo5Config.SeasonsJsonPath));
             
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<Season>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetSeasons_SchemaIsValid()
         {
-            var seasonsSchema = JSchema.Parse(File.ReadAllText(Config.SeasonsJsonSchemaPath), new JSchemaReaderSettings
+            var seasonsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.SeasonsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.SeasonsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.SeasonsJsonSchemaPath))
             });
 
             var query = new GetSeasons()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetSeasons_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.SeasonsJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.SeasonsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.SeasonsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.SeasonsJsonSchemaPath))
             });
 
             var query = new GetSeasons()

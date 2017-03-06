@@ -1,0 +1,2709 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 100,
+    "TotalCount": 124
+  },
+  "ContentItems": [
+    {
+      "Id": 337005,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:51Z",
+          "ModifiedUtc": "2017-02-03T19:41:10Z",
+          "PublishedUtc": "2017-02-03T19:41:10Z",
+          "Container": -1
+        },
+        "Identity": "d60a94fa1753422e8e40935fc2d736f5",
+        "HW2Log": {
+          "Id": 13
+        },
+        "Title": "The Foundry"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337005"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337007,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:49Z",
+          "ModifiedUtc": "2017-02-03T19:41:10Z",
+          "PublishedUtc": "2017-02-03T19:41:10Z",
+          "Container": -1
+        },
+        "Identity": "837bd1f3532f451abe86c4e68c2d7bb1",
+        "HW2Log": {
+          "Id": 14
+        },
+        "Title": "Halo"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337007"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337000,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:29Z",
+          "ModifiedUtc": "2017-02-03T19:41:09Z",
+          "PublishedUtc": "2017-02-03T19:41:09Z",
+          "Container": -1
+        },
+        "Identity": "da21ccdb0c7c445aa6d7474b186bba22",
+        "HW2Log": {
+          "Id": 60
+        },
+        "Title": "Minibase"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337000"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336996,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:48Z",
+          "ModifiedUtc": "2017-02-03T19:41:08Z",
+          "PublishedUtc": "2017-02-03T19:41:08Z",
+          "Container": -1
+        },
+        "Identity": "dd7aba3570b2402eb4604a1341d1ff81",
+        "HW2Log": {
+          "Id": 83
+        },
+        "Title": "Hornet"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336996"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336987,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-12-07T19:59:27Z",
+          "ModifiedUtc": "2017-02-03T19:41:07Z",
+          "PublishedUtc": "2017-02-03T19:41:07Z",
+          "Container": -1
+        },
+        "Identity": "e6c4602057ca4c6f9489d10ef997af0d",
+        "HW2Log": {
+          "Id": 122
+        },
+        "Title": "Forge's Warthog"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336987"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336980,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T21:02:01Z",
+          "ModifiedUtc": "2017-02-03T19:41:06Z",
+          "PublishedUtc": "2017-02-03T19:41:06Z",
+          "Container": -1
+        },
+        "Identity": "f2c74a9d9b174984af24ca0e47518e20",
+        "HW2Log": {
+          "Id": 6
+        },
+        "Title": "Amber Refugia"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336980"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336979,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:50Z",
+          "ModifiedUtc": "2017-02-03T19:41:05Z",
+          "PublishedUtc": "2017-02-03T19:41:05Z",
+          "Container": -1
+        },
+        "Identity": "f3a61f1521f84684897f6b918bb70abd",
+        "HW2Log": {
+          "Id": 71
+        },
+        "Title": "Jump Pack Brutes"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336979"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336982,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:01Z",
+          "ModifiedUtc": "2017-02-03T19:41:05Z",
+          "PublishedUtc": "2017-02-03T19:41:05Z",
+          "Container": -1
+        },
+        "Identity": "edfe400ccc324c3c82c2629bc293034b",
+        "HW2Log": {
+          "Id": 77
+        },
+        "Title": "Marauder"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336982"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336972,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:30Z",
+          "ModifiedUtc": "2017-02-03T19:41:04Z",
+          "PublishedUtc": "2017-02-03T19:41:04Z",
+          "Container": -1
+        },
+        "Identity": "f89c7b53a1c34db2ae05cb3a5ed41bb6",
+        "HW2Log": {
+          "Id": 59
+        },
+        "Title": "Strongholds"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336972"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336941,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:11Z",
+          "ModifiedUtc": "2017-02-03T19:40:56Z",
+          "PublishedUtc": "2017-02-03T19:40:56Z",
+          "Container": -1
+        },
+        "Identity": "285fc808203b42b5b748cc2f0219ac2b",
+        "HW2Log": {
+          "Id": 32
+        },
+        "Title": "Cutter"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336941"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336935,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-12-07T19:59:15Z",
+          "ModifiedUtc": "2017-02-03T19:40:55Z",
+          "PublishedUtc": "2017-02-03T19:40:55Z",
+          "Container": -1
+        },
+        "Identity": "2f76216993b447f3b9d1e699eefebc1c",
+        "HW2Log": {
+          "Id": 115
+        },
+        "Title": "Beyond the Edge"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336935"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336924,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T21:02:02Z",
+          "ModifiedUtc": "2017-02-03T19:40:53Z",
+          "PublishedUtc": "2017-02-03T19:40:53Z",
+          "Container": -1
+        },
+        "Identity": "423a358a0ce04bf198547eb867d7002c",
+        "HW2Log": {
+          "Id": 7
+        },
+        "Title": "Halo Refugia"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336924"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336925,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:21Z",
+          "ModifiedUtc": "2017-02-03T19:40:53Z",
+          "PublishedUtc": "2017-02-03T19:40:53Z",
+          "Container": -1
+        },
+        "Identity": "42acae057eae47ceb12cfc1b8960e856",
+        "HW2Log": {
+          "Id": 36
+        },
+        "Title": "Anders"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336925"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336926,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:40Z",
+          "ModifiedUtc": "2017-02-03T19:40:53Z",
+          "PublishedUtc": "2017-02-03T19:40:53Z",
+          "Container": -1
+        },
+        "Identity": "4004f0769e4d48a7b3a2889cf9947f14",
+        "HW2Log": {
+          "Id": 89
+        },
+        "Title": "Hellbringers"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336926"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336929,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:07Z",
+          "ModifiedUtc": "2017-02-03T19:40:53Z",
+          "PublishedUtc": "2017-02-03T19:40:53Z",
+          "Container": -1
+        },
+        "Identity": "304dc61f289d43ed9a28120008f4a130",
+        "HW2Log": {
+          "Id": 74
+        },
+        "Title": "Ghost"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336929"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336908,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:06Z",
+          "ModifiedUtc": "2017-02-03T19:40:50Z",
+          "PublishedUtc": "2017-02-03T19:40:50Z",
+          "Container": -1
+        },
+        "Identity": "712ec19c45fe4b478cc958ca1e21142c",
+        "HW2Log": {
+          "Id": 48
+        },
+        "Title": "Cloak Generator"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336908"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336909,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-12-07T19:59:26Z",
+          "ModifiedUtc": "2017-02-03T19:40:50Z",
+          "PublishedUtc": "2017-02-03T19:40:50Z",
+          "Container": -1
+        },
+        "Identity": "6e8b90cd20f6470fb2fb787ca0dcb01d",
+        "HW2Log": {
+          "Id": 120
+        },
+        "Title": "Sergeant Forge"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336909"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336910,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:50:03Z",
+          "ModifiedUtc": "2017-02-03T19:40:50Z",
+          "PublishedUtc": "2017-02-03T19:40:50Z",
+          "Container": -1
+        },
+        "Identity": "70d3d28c1d33464cae9c4018998017ce",
+        "HW2Log": {
+          "Id": 82
+        },
+        "Title": "Condor Gunship"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336910"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336912,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:51:57Z",
+          "ModifiedUtc": "2017-02-03T19:40:50Z",
+          "PublishedUtc": "2017-02-03T19:40:50Z",
+          "Container": -1
+        },
+        "Identity": "701e75d75ce243ab861696d92f523111",
+        "HW2Log": {
+          "Id": 79
+        },
+        "Title": "Wraith"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336912"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336903,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T21:02:09Z",
+          "ModifiedUtc": "2017-02-03T19:40:48Z",
+          "PublishedUtc": "2017-02-03T19:40:48Z",
+          "Container": -1
+        },
+        "Identity": "797d1727858e442282c6b0f76ef32149",
+        "HW2Log": {
+          "Id": 12
+        },
+        "Title": "The Control Room"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336903"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336895,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:10Z",
+          "ModifiedUtc": "2017-02-03T19:40:47Z",
+          "PublishedUtc": "2017-02-03T19:40:47Z",
+          "Container": -1
+        },
+        "Identity": "d26e4855dd3e46f4a24bc699d28cb85a",
+        "HW2Log": {
+          "Id": 45
+        },
+        "Title": "Harvester"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336895"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336896,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:40Z",
+          "ModifiedUtc": "2017-02-03T19:40:47Z",
+          "PublishedUtc": "2017-02-03T19:40:47Z",
+          "Container": -1
+        },
+        "Identity": "b6e2e4225983438599229885f1a480b1",
+        "HW2Log": {
+          "Id": 18
+        },
+        "Title": "Sentry"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336896"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336890,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:42Z",
+          "ModifiedUtc": "2017-02-03T19:40:45Z",
+          "PublishedUtc": "2017-02-03T19:40:45Z",
+          "Container": -1
+        },
+        "Identity": "d3726d8a15fa4ca9a7c006fcca368298",
+        "HW2Log": {
+          "Id": 88
+        },
+        "Title": "Cyclops"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336890"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336886,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:14Z",
+          "ModifiedUtc": "2017-02-03T19:40:44Z",
+          "PublishedUtc": "2017-02-03T19:40:44Z",
+          "Container": -1
+        },
+        "Identity": "06c570aa49674eeca97e148e245ea93d",
+        "HW2Log": {
+          "Id": 42
+        },
+        "Title": "Raid Camp"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336886"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336883,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:44Z",
+          "ModifiedUtc": "2017-02-03T19:40:43Z",
+          "PublishedUtc": "2017-02-03T19:40:43Z",
+          "Container": -1
+        },
+        "Identity": "08694dcd1aac4132abcd3c4c1e2c2e91",
+        "HW2Log": {
+          "Id": 86
+        },
+        "Title": "Pelican"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336883"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336884,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:35Z",
+          "ModifiedUtc": "2017-02-03T19:40:43Z",
+          "PublishedUtc": "2017-02-03T19:40:43Z",
+          "Container": -1
+        },
+        "Identity": "0b27f30188364d849848ad8e67ef2db4",
+        "HW2Log": {
+          "Id": 55
+        },
+        "Title": "Barracks"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336884"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336885,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:23Z",
+          "ModifiedUtc": "2017-02-03T19:40:43Z",
+          "PublishedUtc": "2017-02-03T19:40:43Z",
+          "Container": -1
+        },
+        "Identity": "06893868629a4392aeb27b91674736c5",
+        "HW2Log": {
+          "Id": 93
+        },
+        "Title": "Jerome-092"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336885"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336879,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:15Z",
+          "ModifiedUtc": "2017-02-03T19:40:42Z",
+          "PublishedUtc": "2017-02-03T19:40:42Z",
+          "Container": -1
+        },
+        "Identity": "11994f6b46af4540a3e051c3ae689412",
+        "HW2Log": {
+          "Id": 41
+        },
+        "Title": "Apex"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336879"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336880,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:39Z",
+          "ModifiedUtc": "2017-02-03T19:40:42Z",
+          "PublishedUtc": "2017-02-03T19:40:42Z",
+          "Container": -1
+        },
+        "Identity": "0fde785881e24a8494be80bb6dcb5ad2",
+        "HW2Log": {
+          "Id": 90
+        },
+        "Title": "Marines"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336880"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336874,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:34Z",
+          "ModifiedUtc": "2017-02-03T19:40:41Z",
+          "PublishedUtc": "2017-02-03T19:40:41Z",
+          "Container": -1
+        },
+        "Identity": "1243f8f7c284446ab28847e3bcc7943c",
+        "HW2Log": {
+          "Id": 56
+        },
+        "Title": "Supply Pad"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336874"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336863,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:56Z",
+          "ModifiedUtc": "2017-02-03T19:40:39Z",
+          "PublishedUtc": "2017-02-03T19:40:40Z",
+          "Container": -1
+        },
+        "Identity": "6ab57cc8900c4065bfbbc29cd2c6b819",
+        "HW2Log": {
+          "Id": 66
+        },
+        "Title": "Elite Rangers"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336863"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336867,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:02Z",
+          "ModifiedUtc": "2017-02-03T19:40:40Z",
+          "PublishedUtc": "2017-02-03T19:40:40Z",
+          "Container": -1
+        },
+        "Identity": "258c3fb954b040d0bfe58b00b4c7359d",
+        "HW2Log": {
+          "Id": 22
+        },
+        "Title": "Ashes"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336867"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336870,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:42Z",
+          "ModifiedUtc": "2017-02-03T19:40:40Z",
+          "PublishedUtc": "2017-02-03T19:40:40Z",
+          "Container": -1
+        },
+        "Identity": "234122d87a5b4339b10033d4eb2a4fac",
+        "HW2Log": {
+          "Id": 17
+        },
+        "Title": "The Ark"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336870"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336858,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-12-07T19:59:29Z",
+          "ModifiedUtc": "2017-02-03T19:40:38Z",
+          "PublishedUtc": "2017-02-03T19:40:38Z",
+          "Container": -1
+        },
+        "Identity": "744f2b89de914183ab4f991de6da0d08",
+        "HW2Log": {
+          "Id": 123
+        },
+        "Title": "Grizzly"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336858"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336859,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:17Z",
+          "ModifiedUtc": "2017-02-03T19:40:38Z",
+          "PublishedUtc": "2017-02-03T19:40:38Z",
+          "Container": -1
+        },
+        "Identity": "741c65405695445c898419b5e21ab644",
+        "HW2Log": {
+          "Id": 98
+        },
+        "Title": "Scorpion"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336859"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336853,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:58Z",
+          "ModifiedUtc": "2017-02-03T19:40:37Z",
+          "PublishedUtc": "2017-02-03T19:40:37Z",
+          "Container": -1
+        },
+        "Identity": "799e87737762497ebc416dc6b1bb2ce4",
+        "HW2Log": {
+          "Id": 65
+        },
+        "Title": "Warlord"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336853"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336856,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T21:02:04Z",
+          "ModifiedUtc": "2017-02-03T19:40:37Z",
+          "PublishedUtc": "2017-02-03T19:40:37Z",
+          "Container": -1
+        },
+        "Identity": "79d89696ee294a91be39e10c4e2d4de5",
+        "HW2Log": {
+          "Id": 8
+        },
+        "Title": "Proto-Forerunner Refugia"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336856"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336849,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:22Z",
+          "ModifiedUtc": "2017-02-03T19:40:36Z",
+          "PublishedUtc": "2017-02-03T19:40:36Z",
+          "Container": -1
+        },
+        "Identity": "82d7303a22d44cf7b937a969f8198f19",
+        "HW2Log": {
+          "Id": 35
+        },
+        "Title": "Isabel"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336849"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336850,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:49Z",
+          "ModifiedUtc": "2017-02-03T19:40:36Z",
+          "PublishedUtc": "2017-02-03T19:40:36Z",
+          "Container": -1
+        },
+        "Identity": "820597bf5dc14756aae7bb7cd57d8a1f",
+        "HW2Log": {
+          "Id": 72
+        },
+        "Title": "Suicide Grunts"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336850"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336845,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:45Z",
+          "ModifiedUtc": "2017-02-03T19:40:35Z",
+          "PublishedUtc": "2017-02-03T19:40:35Z",
+          "Container": -1
+        },
+        "Identity": "87d680d60ba44ec3801519c7d08380e8",
+        "HW2Log": {
+          "Id": 85
+        },
+        "Title": "Darter"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336845"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336830,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:36Z",
+          "ModifiedUtc": "2017-02-03T19:40:32Z",
+          "PublishedUtc": "2017-02-03T19:40:32Z",
+          "Container": -1
+        },
+        "Identity": "9885fba7fc6a47328930b46817f08b18",
+        "HW2Log": {
+          "Id": 54
+        },
+        "Title": "Airpad"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336830"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336831,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:19Z",
+          "ModifiedUtc": "2017-02-03T19:40:32Z",
+          "PublishedUtc": "2017-02-03T19:40:32Z",
+          "Container": -1
+        },
+        "Identity": "99927c3ecee041dba384107d553b9819",
+        "HW2Log": {
+          "Id": 96
+        },
+        "Title": "Kodiak"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336831"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336832,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:18Z",
+          "ModifiedUtc": "2017-02-03T19:40:32Z",
+          "PublishedUtc": "2017-02-03T19:40:32Z",
+          "Container": -1
+        },
+        "Identity": "9c249e06f6fd4dd18768b22a9eabb0e3",
+        "HW2Log": {
+          "Id": 30
+        },
+        "Title": "Retriever Sentinel"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336832"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336820,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:25Z",
+          "ModifiedUtc": "2017-02-03T19:40:31Z",
+          "PublishedUtc": "2017-02-03T19:40:31Z",
+          "Container": -1
+        },
+        "Identity": "a616eea84ac64ecbacb173e8399890e1",
+        "HW2Log": {
+          "Id": 111
+        },
+        "Title": "Chrysalis"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336820"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336816,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:26Z",
+          "ModifiedUtc": "2017-02-03T19:40:30Z",
+          "PublishedUtc": "2017-02-03T19:40:30Z",
+          "Container": -1
+        },
+        "Identity": "c496355ce786482ba6402b1e06e1dad2",
+        "HW2Log": {
+          "Id": 26
+        },
+        "Title": "Aggressor Sentinel"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336816"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336818,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:22Z",
+          "ModifiedUtc": "2017-02-03T19:40:30Z",
+          "PublishedUtc": "2017-02-03T19:40:30Z",
+          "Container": -1
+        },
+        "Identity": "bffb3aa140844b539ffea05920a4d331",
+        "HW2Log": {
+          "Id": 94
+        },
+        "Title": "Alice-130"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336818"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336819,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:37Z",
+          "ModifiedUtc": "2017-02-03T19:40:30Z",
+          "PublishedUtc": "2017-02-03T19:40:30Z",
+          "Container": -1
+        },
+        "Identity": "c166893ef8c549438453c996ab29b4cf",
+        "HW2Log": {
+          "Id": 92
+        },
+        "Title": "Snipers"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336819"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336803,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:38Z",
+          "ModifiedUtc": "2017-02-03T19:40:28Z",
+          "PublishedUtc": "2017-02-03T19:40:28Z",
+          "Container": -1
+        },
+        "Identity": "cd10afff373843eda19c1590f84ded74",
+        "HW2Log": {
+          "Id": 91
+        },
+        "Title": "ODSTs"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336803"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336546,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:33Z",
+          "ModifiedUtc": "2017-02-03T19:39:38Z",
+          "PublishedUtc": "2017-02-03T19:39:38Z",
+          "Container": -1
+        },
+        "Identity": "0275146789644a0bbedc99fe875dc912",
+        "HW2Log": {
+          "Id": 57
+        },
+        "Title": "Generator"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336546"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336540,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:18Z",
+          "ModifiedUtc": "2017-02-03T19:39:37Z",
+          "PublishedUtc": "2017-02-03T19:39:37Z",
+          "Container": -1
+        },
+        "Identity": "18e99a3050ae41c7bbe692c6473ff4be",
+        "HW2Log": {
+          "Id": 97
+        },
+        "Title": "Jackrabbit"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336540"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336541,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:27Z",
+          "ModifiedUtc": "2017-02-03T19:39:37Z",
+          "PublishedUtc": "2017-02-03T19:39:37Z",
+          "Container": -1
+        },
+        "Identity": "06bc571fc326457caa40343a3c8873d8",
+        "HW2Log": {
+          "Id": 61
+        },
+        "Title": "Siege Turret"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336541"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336542,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:51Z",
+          "ModifiedUtc": "2017-02-03T19:39:37Z",
+          "PublishedUtc": "2017-02-03T19:39:37Z",
+          "Container": -1
+        },
+        "Identity": "06b703f760924bd68d2883d460f5af58",
+        "HW2Log": {
+          "Id": 70
+        },
+        "Title": "Hunters"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336542"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336534,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:22Z",
+          "ModifiedUtc": "2017-02-03T19:39:36Z",
+          "PublishedUtc": "2017-02-03T19:39:36Z",
+          "Container": -1
+        },
+        "Identity": "215723ef560e411d88c928c499ac872f",
+        "HW2Log": {
+          "Id": 28
+        },
+        "Title": "Forerunner Control Tower"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336534"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336535,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-12-07T19:59:20Z",
+          "ModifiedUtc": "2017-02-03T19:39:36Z",
+          "PublishedUtc": "2017-02-03T19:39:36Z",
+          "Container": -1
+        },
+        "Identity": "1be31cb54acf4b92b18f65ab9c1592d6",
+        "HW2Log": {
+          "Id": 116
+        },
+        "Title": "The Healing of Old Wounds II"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336535"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336529,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:16Z",
+          "ModifiedUtc": "2017-02-03T19:39:34Z",
+          "PublishedUtc": "2017-02-03T19:39:34Z",
+          "Container": -1
+        },
+        "Identity": "41d5d31cdb664a6a89b53f2c903cbe2c",
+        "HW2Log": {
+          "Id": 40
+        },
+        "Title": "War Council"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336529"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336521,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:26Z",
+          "ModifiedUtc": "2017-02-03T19:39:33Z",
+          "PublishedUtc": "2017-02-03T19:39:33Z",
+          "Container": -1
+        },
+        "Identity": "4155430b73174bd29ac416395f946686",
+        "HW2Log": {
+          "Id": 62
+        },
+        "Title": "Banshee"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336521"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336522,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:09Z",
+          "ModifiedUtc": "2017-02-03T19:39:33Z",
+          "PublishedUtc": "2017-02-03T19:39:33Z",
+          "Container": -1
+        },
+        "Identity": "47b6684c992b49a3adbb02af76869a14",
+        "HW2Log": {
+          "Id": 46
+        },
+        "Title": "Turret"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336522"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336523,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:28Z",
+          "ModifiedUtc": "2017-02-03T19:39:33Z",
+          "PublishedUtc": "2017-02-03T19:39:33Z",
+          "Container": -1
+        },
+        "Identity": "456fe67b542c4dd7af1efba736a7b8a3",
+        "HW2Log": {
+          "Id": 109
+        },
+        "Title": "A Split Heart is Easily Conquered"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336523"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336520,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-12-07T19:59:22Z",
+          "ModifiedUtc": "2017-02-03T19:39:32Z",
+          "PublishedUtc": "2017-02-03T19:39:32Z",
+          "Container": -1
+        },
+        "Identity": "49034c24cf26486a9478bccfdccc80ff",
+        "HW2Log": {
+          "Id": 117
+        },
+        "Title": "The Healing of Old Wounds III"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336520"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336513,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:33Z",
+          "ModifiedUtc": "2017-02-03T19:39:30Z",
+          "PublishedUtc": "2017-02-03T19:39:30Z",
+          "Container": -1
+        },
+        "Identity": "524da36614fd4825871bba875f09c098",
+        "HW2Log": {
+          "Id": 105
+        },
+        "Title": "The Turn of the Screw"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336513"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336514,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:59Z",
+          "ModifiedUtc": "2017-02-03T19:39:30Z",
+          "PublishedUtc": "2017-02-03T19:39:30Z",
+          "Container": -1
+        },
+        "Identity": "45858dd8e71744d587b835c8d5c1e7d7",
+        "HW2Log": {
+          "Id": 64
+        },
+        "Title": "Shroud"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336514"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336493,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:55Z",
+          "ModifiedUtc": "2017-02-03T19:39:26Z",
+          "PublishedUtc": "2017-02-03T19:39:26Z",
+          "Container": -1
+        },
+        "Identity": "7eb754bd0d134ed6ace5bc7ae9989bcb",
+        "HW2Log": {
+          "Id": 67
+        },
+        "Title": "Engineers"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336493"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336489,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:21Z",
+          "ModifiedUtc": "2017-02-03T19:39:25Z",
+          "PublishedUtc": "2017-02-03T19:39:25Z",
+          "Container": -1
+        },
+        "Identity": "825e59fe576c4318800098140c81729e",
+        "HW2Log": {
+          "Id": 29
+        },
+        "Title": "Protector Sentinel"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336489"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336479,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:46Z",
+          "ModifiedUtc": "2017-02-03T19:39:24Z",
+          "PublishedUtc": "2017-02-03T19:39:24Z",
+          "Container": -1
+        },
+        "Identity": "8c3e086a1ed04f52b71dfa2dd51a084f",
+        "HW2Log": {
+          "Id": 84
+        },
+        "Title": "Nightingale"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336479"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336481,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:59:55Z",
+          "ModifiedUtc": "2017-02-03T19:39:24Z",
+          "PublishedUtc": "2017-02-03T19:39:24Z",
+          "Container": -1
+        },
+        "Identity": "861ef3104a284a718a2ea8ec9ff3e154",
+        "HW2Log": {
+          "Id": 0
+        },
+        "Title": "Rise of Atriox I"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336481"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336482,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:08Z",
+          "ModifiedUtc": "2017-02-03T19:39:24Z",
+          "PublishedUtc": "2017-02-03T19:39:24Z",
+          "Container": -1
+        },
+        "Identity": "892dd9ef6e144a7fbcca9e19dfb6fc15",
+        "HW2Log": {
+          "Id": 47
+        },
+        "Title": "Sensor Tower"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336482"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336487,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T21:02:05Z",
+          "ModifiedUtc": "2017-02-03T19:39:24Z",
+          "PublishedUtc": "2017-02-03T19:39:24Z",
+          "Container": -1
+        },
+        "Identity": "836e1898fbb2476c95d1c7cd5fbbdbca",
+        "HW2Log": {
+          "Id": 9
+        },
+        "Title": "Henry Lamb Research Post"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336487"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336466,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T21:01:57Z",
+          "ModifiedUtc": "2017-02-03T19:39:21Z",
+          "PublishedUtc": "2017-02-03T19:39:22Z",
+          "Container": -1
+        },
+        "Identity": "b9c34c7b7b434bee8cde999aeb075d30",
+        "HW2Log": {
+          "Id": 3
+        },
+        "Title": "Rise of Atriox IV"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336466"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336455,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:29Z",
+          "ModifiedUtc": "2017-02-03T19:39:19Z",
+          "PublishedUtc": "2017-02-03T19:39:19Z",
+          "Container": -1
+        },
+        "Identity": "c467989d9527407b8d92b95536642483",
+        "HW2Log": {
+          "Id": 21
+        },
+        "Title": "Highway"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336455"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336447,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:06Z",
+          "ModifiedUtc": "2017-02-03T19:39:18Z",
+          "PublishedUtc": "2017-02-03T19:39:18Z",
+          "Container": -1
+        },
+        "Identity": "e4b336e51dde448ea065e679a0c7edfd",
+        "HW2Log": {
+          "Id": 114
+        },
+        "Title": "The Snake that Eats the Tail"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336447"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336437,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:44Z",
+          "ModifiedUtc": "2017-02-03T19:39:17Z",
+          "PublishedUtc": "2017-02-03T19:39:17Z",
+          "Container": -1
+        },
+        "Identity": "fa16ae53b6914ac889f820ab57201664",
+        "HW2Log": {
+          "Id": 16
+        },
+        "Title": "Forerunner Sentinels"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336437"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336440,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:25Z",
+          "ModifiedUtc": "2017-02-03T19:39:17Z",
+          "PublishedUtc": "2017-02-03T19:39:17Z",
+          "Container": -1
+        },
+        "Identity": "f910f644aff547ea8f6522c813bc523b",
+        "HW2Log": {
+          "Id": 33
+        },
+        "Title": "Shipmaster Let' Volir"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336440"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336055,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T21:01:55Z",
+          "ModifiedUtc": "2017-02-03T19:38:05Z",
+          "PublishedUtc": "2017-02-03T19:38:05Z",
+          "Container": -1
+        },
+        "Identity": "0d994ecdc5664caaae588cfe1fc8a9ee",
+        "HW2Log": {
+          "Id": 1
+        },
+        "Title": "Rise of Atriox II"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336055"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336056,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:54:21Z",
+          "ModifiedUtc": "2017-02-03T19:38:05Z",
+          "PublishedUtc": "2017-02-03T19:38:05Z",
+          "Container": -1
+        },
+        "Identity": "0902bb4b0f0643479b6d73976c03ef95",
+        "HW2Log": {
+          "Id": 24
+        },
+        "Title": "Vault"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336056"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336057,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:50:05Z",
+          "ModifiedUtc": "2017-02-03T19:38:05Z",
+          "PublishedUtc": "2017-02-03T19:38:05Z",
+          "Container": -1
+        },
+        "Identity": "005b9de76bda4ee881a41f9daf30f7dc",
+        "HW2Log": {
+          "Id": 81
+        },
+        "Title": "Lich"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336057"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336054,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:30Z",
+          "ModifiedUtc": "2017-02-03T19:38:04Z",
+          "PublishedUtc": "2017-02-03T19:38:04Z",
+          "Container": -1
+        },
+        "Identity": "117a283d5e3043daae40730c4b82cbe7",
+        "HW2Log": {
+          "Id": 107
+        },
+        "Title": "The Blinded"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336054"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336048,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:15Z",
+          "ModifiedUtc": "2017-02-03T19:38:03Z",
+          "PublishedUtc": "2017-02-03T19:38:03Z",
+          "Container": -1
+        },
+        "Identity": "2df1a55b7a28403c87dcf26fbe3f99b8",
+        "HW2Log": {
+          "Id": 99
+        },
+        "Title": "Warthog"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336048"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336030,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:03Z",
+          "ModifiedUtc": "2017-02-03T19:37:59Z",
+          "PublishedUtc": "2017-02-03T19:37:59Z",
+          "Container": -1
+        },
+        "Identity": "62910c66691144d1a70174ebd329ec46",
+        "HW2Log": {
+          "Id": 76
+        },
+        "Title": "Locust"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336030"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336031,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:51:30Z",
+          "ModifiedUtc": "2017-02-03T19:37:59Z",
+          "PublishedUtc": "2017-02-03T19:37:59Z",
+          "Container": -1
+        },
+        "Identity": "6297d477c7aa45d9861ad52bdb735375",
+        "HW2Log": {
+          "Id": 80
+        },
+        "Title": "Spirit"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336031"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336001,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:14Z",
+          "ModifiedUtc": "2017-02-03T19:37:54Z",
+          "PublishedUtc": "2017-02-03T19:37:54Z",
+          "Container": -1
+        },
+        "Identity": "996f626248394b78a581152517b4793a",
+        "HW2Log": {
+          "Id": 100
+        },
+        "Title": "Wolverine"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336001"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335993,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:23Z",
+          "ModifiedUtc": "2017-02-03T19:37:52Z",
+          "PublishedUtc": "2017-02-03T19:37:52Z",
+          "Container": -1
+        },
+        "Identity": "a923007005ba4dc889d3d56fe4ddc981",
+        "HW2Log": {
+          "Id": 34
+        },
+        "Title": "Decimus"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335993"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335995,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:17Z",
+          "ModifiedUtc": "2017-02-03T19:37:52Z",
+          "PublishedUtc": "2017-02-03T19:37:52Z",
+          "Container": -1
+        },
+        "Identity": "ab0c2f1bb33d4c7caf2a4e9411520814",
+        "HW2Log": {
+          "Id": 39
+        },
+        "Title": "Outpost"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335995"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335997,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:47Z",
+          "ModifiedUtc": "2017-02-03T19:37:52Z",
+          "PublishedUtc": "2017-02-03T19:37:52Z",
+          "Container": -1
+        },
+        "Identity": "aac2c99dca514c7eb68586fbda7f2f64",
+        "HW2Log": {
+          "Id": 15
+        },
+        "Title": "Refugia"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335997"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335998,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:35Z",
+          "ModifiedUtc": "2017-02-03T19:37:52Z",
+          "PublishedUtc": "2017-02-03T19:37:52Z",
+          "Container": -1
+        },
+        "Identity": "a97dae61782f4aad9fc1bd6baeca4f17",
+        "HW2Log": {
+          "Id": 103
+        },
+        "Title": "A New Bridge to Cross I"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335998"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335991,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:34Z",
+          "ModifiedUtc": "2017-02-03T19:37:51Z",
+          "PublishedUtc": "2017-02-03T19:37:51Z",
+          "Container": -1
+        },
+        "Identity": "ad8bb9429243420591fed99a67bb5d5e",
+        "HW2Log": {
+          "Id": 104
+        },
+        "Title": "The Graveyard"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335991"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335986,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:00Z",
+          "ModifiedUtc": "2017-02-03T19:37:50Z",
+          "PublishedUtc": "2017-02-03T19:37:50Z",
+          "Container": -1
+        },
+        "Identity": "b05d2f244d754f2a8ed16b44df9a8563",
+        "HW2Log": {
+          "Id": 63
+        },
+        "Title": "Blisterback"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335986"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335974,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:43Z",
+          "ModifiedUtc": "2017-02-03T19:37:48Z",
+          "PublishedUtc": "2017-02-03T19:37:48Z",
+          "Container": -1
+        },
+        "Identity": "cead9440f932488b9077c8f9ce6456d7",
+        "HW2Log": {
+          "Id": 87
+        },
+        "Title": "Vulture"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335974"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335977,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T21:01:59Z",
+          "ModifiedUtc": "2017-02-03T19:37:48Z",
+          "PublishedUtc": "2017-02-03T19:37:48Z",
+          "Container": -1
+        },
+        "Identity": "c0df469f237544a5b0161afeb62235a0",
+        "HW2Log": {
+          "Id": 4
+        },
+        "Title": "Rise of Atriox V"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335977"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335971,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:19Z",
+          "ModifiedUtc": "2017-02-03T19:37:47Z",
+          "PublishedUtc": "2017-02-03T19:37:47Z",
+          "Container": -1
+        },
+        "Identity": "e6f4fc07ea9342ff9967a79f12faa01a",
+        "HW2Log": {
+          "Id": 38
+        },
+        "Title": "Strongholds"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335971"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335958,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:13Z",
+          "ModifiedUtc": "2017-02-03T19:37:46Z",
+          "PublishedUtc": "2017-02-03T19:37:46Z",
+          "Container": -1
+        },
+        "Identity": "ed66ac355c9647d68899a68983fca161",
+        "HW2Log": {
+          "Id": 31
+        },
+        "Title": "Atriox"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335958"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335960,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:05Z",
+          "ModifiedUtc": "2017-02-03T19:37:45Z",
+          "PublishedUtc": "2017-02-03T19:37:45Z",
+          "Container": -1
+        },
+        "Identity": "ec9ad7fa32954a5ebede446cf033b574",
+        "HW2Log": {
+          "Id": 49
+        },
+        "Title": "Shield Generator"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335960"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335949,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:32Z",
+          "ModifiedUtc": "2017-02-03T19:37:44Z",
+          "PublishedUtc": "2017-02-03T19:37:44Z",
+          "Container": -1
+        },
+        "Identity": "f4cb0fe6bbd9483984294ec49eb487f4",
+        "HW2Log": {
+          "Id": 106
+        },
+        "Title": "Alice-130 Report #1"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335949"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335938,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:34Z",
+          "ModifiedUtc": "2017-02-03T19:37:36Z",
+          "PublishedUtc": "2017-02-03T19:37:36Z",
+          "Container": -1
+        },
+        "Identity": "f921ded71bd1448e9368745c6932accc",
+        "HW2Log": {
+          "Id": 20
+        },
+        "Title": "Badlands"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335938"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335936,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:58:37Z",
+          "ModifiedUtc": "2017-02-03T19:37:35Z",
+          "PublishedUtc": "2017-02-03T19:37:35Z",
+          "Container": -1
+        },
+        "Identity": "f735014d0c4e40ada10b429e365cf5ad",
+        "HW2Log": {
+          "Id": 19
+        },
+        "Title": "Bedrock"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335936"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335913,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:49:11Z",
+          "ModifiedUtc": "2017-02-03T19:37:31Z",
+          "PublishedUtc": "2017-02-03T19:37:31Z",
+          "Container": -1
+        },
+        "Identity": "ffc5524a969e4ab3b5be3a47bffce6b5",
+        "HW2Log": {
+          "Id": 44
+        },
+        "Title": "Power Extractor"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335913"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335531,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:12Z",
+          "ModifiedUtc": "2017-02-03T19:36:19Z",
+          "PublishedUtc": "2017-02-03T19:36:19Z",
+          "Container": -1
+        },
+        "Identity": "07425a8155a7491fb289a2d4fc46684e",
+        "HW2Log": {
+          "Id": 102
+        },
+        "Title": "The Healing of Old Wounds I"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335531"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335525,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:45:50Z",
+          "ModifiedUtc": "2017-02-03T19:36:18Z",
+          "PublishedUtc": "2017-02-03T19:36:18Z",
+          "Container": -1
+        },
+        "Identity": "091c5ebb39e047c18e92439029935ae9",
+        "HW2Log": {
+          "Id": 124
+        },
+        "Title": "Atriox's Chosen"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335525"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335518,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:52:05Z",
+          "ModifiedUtc": "2017-02-03T19:36:17Z",
+          "PublishedUtc": "2017-02-03T19:36:17Z",
+          "Container": -1
+        },
+        "Identity": "15b632fdc1a242e38447f810b42db927",
+        "HW2Log": {
+          "Id": 75
+        },
+        "Title": "Reaver"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335518"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335520,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-10-24T20:48:24Z",
+          "ModifiedUtc": "2017-02-03T19:36:17Z",
+          "PublishedUtc": "2017-02-03T19:36:17Z",
+          "Container": -1
+        },
+        "Identity": "124ab8a89e2244c1993debf067d2ecc0",
+        "HW2Log": {
+          "Id": 112
+        },
+        "Title": "A Small Sacrifice"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335520"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335517,
+      "Type": "HW2Log",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "jeffca",
+          "CreatedUtc": "2016-12-07T19:59:23Z",
+          "ModifiedUtc": "2017-02-03T19:36:16Z",
+          "PublishedUtc": "2017-02-03T19:36:16Z",
+          "Container": -1
+        },
+        "Identity": "14def7c98ab64d28a816a9fde103f4da",
+        "HW2Log": {
+          "Id": 118
+        },
+        "Title": "A New Bridge to Cross II"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335517"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

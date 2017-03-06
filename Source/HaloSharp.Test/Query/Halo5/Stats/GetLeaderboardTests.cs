@@ -5,6 +5,7 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Stats;
 using HaloSharp.Query.Halo5.Stats;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [SetUp]
         public void Setup()
         {
-            _leaderboard = JsonConvert.DeserializeObject<Leaderboard>(File.ReadAllText(Config.LeaderboardJsonPath));
+            _leaderboard = JsonConvert.DeserializeObject<Leaderboard>(File.ReadAllText(Halo5Config.LeaderboardJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<Leaderboard>(It.IsAny<string>()))
@@ -130,10 +131,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [TestCase("b46c2095-4ca6-4f4b-a565-4702d7cfe586", "c98949ae-60a8-43dc-85d7-0feb0b92e719")]
         public async Task GetLeaderboard_SchemaIsValid(string seasonId, string playlistId)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.LeaderboardJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.LeaderboardJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.LeaderboardJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.LeaderboardJsonSchemaPath))
             });
 
             var query = new GetLeaderboard()
@@ -151,10 +152,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [TestCase("b46c2095-4ca6-4f4b-a565-4702d7cfe586", "c98949ae-60a8-43dc-85d7-0feb0b92e719")]
         public async Task GetLeaderboard_ModelMatchesSchema(string seasonId, string playlistId)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.LeaderboardJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.LeaderboardJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.LeaderboardJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.LeaderboardJsonSchemaPath))
             });
 
             var query = new GetLeaderboard()

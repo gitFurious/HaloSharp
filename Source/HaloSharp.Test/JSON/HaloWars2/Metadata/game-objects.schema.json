@@ -1,0 +1,224 @@
+{
+  "definitions": {
+    "HW2ObjectContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2ObjectView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "common/link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2ObjectView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Autoroute": {
+          "type": "string"
+        },
+        "HW2Object": {
+          "$ref": "#/definitions/HW2Object"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "Autoroute",
+        "HW2Object"
+      ]
+    },
+
+    "HW2Object": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {
+        "ObjectTypeId": {
+          "type": "string"
+        },
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2ObjectDisplayInfoContentItemTypeB"
+        },
+        "Categories": {
+          "type": "array",
+          "items": {
+            "$ref": "common/content-item-type-d.schema.json#/definitions/ContentItemTypeD"
+          }
+        },
+        "Image": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/image.schema.json#/definitions/null" },
+            { "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB" }
+          ]
+        },
+        "StandardSupplyCost": {
+          "type": "integer"
+        },
+        "StandardPopulationCost": {
+          "type": "integer"
+        },
+        "StandardEnergyCost": {
+          "type": "integer"
+        },
+        "EffectivenessAgainstInfantry": {
+          "type": "string"
+        },
+        "EffectivenessAgainstVehicles": {
+          "type": "string"
+        },
+        "EffectivenessAgainstAir": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ObjectTypeId",
+        "DisplayInfo",
+        "Categories",
+        "Image",
+        "StandardSupplyCost",
+        "StandardPopulationCost",
+        "StandardEnergyCost",
+        "EffectivenessAgainstInfantry",
+        "EffectivenessAgainstVehicles",
+        "EffectivenessAgainstAir"
+      ]
+    },
+
+    "HW2ObjectDisplayInfoContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2ObjectDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2ObjectDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "BatchLocalization": {
+          "$ref": "common/batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "common/localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2ObjectDisplayInfo": {
+          "$ref": "#/definitions/HW2ObjectDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2ObjectDisplayInfo",
+        "BatchLocalization",
+        "Localization",
+        "Title",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2ObjectDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Description"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Paging": {
+      "$ref": "common/paging.schema.json"
+    },
+    "ContentItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/HW2ObjectContentItemTypeA"
+      }
+    }
+  },
+  "required": [
+    "Paging",
+    "ContentItems"
+  ]
+}

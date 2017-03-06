@@ -1,0 +1,1205 @@
+{
+  "definitions": {
+    "BuildingConstructionCompleted": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "InstanceId",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "BuildingConstructionQueued": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "BuildingId": {
+          "type": "string"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "Location": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "SupplyCost": {
+          "type": "integer"
+        },
+        "EnergyCost": {
+          "type": "integer"
+        },
+        "QueueLength": {
+          "type": "integer"
+        },
+        "ProvidedByScenario": {
+          "type": "boolean"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "BuildingId",
+        "InstanceId",
+        "Location",
+        "SupplyCost",
+        "EnergyCost",
+        "QueueLength",
+        "ProvidedByScenario",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "BuildingRecycled": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "SupplyEarned": {
+          "type": "integer"
+        },
+        "EnergyEarned": {
+          "type": "integer"
+        },
+        "ProvidedByScenario": {
+          "type": "boolean"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "InstanceId",
+        "SupplyEarned",
+        "EnergyEarned",
+        "ProvidedByScenario",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "BuildingUpgraded": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "NewBuildingId": {
+          "type": "string"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "SupplyCost": {
+          "type": "integer"
+        },
+        "EnergyCost": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "NewBuildingId",
+        "InstanceId",
+        "SupplyCost",
+        "EnergyCost",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "CardCycled": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "ManaCost": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "ManaCost",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "CardPlayed": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "CardId": {
+          "type": "string"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "ManaCost": {
+          "type": "integer"
+        },
+        "TargetLocation": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "SpawnAtBase": {
+          "type": "boolean"
+        },
+        "ProvidedByScenario": {
+          "type": "boolean"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "CardId",
+        "InstanceId",
+        "ManaCost",
+        "TargetLocation",
+        "SpawnAtBase",
+        "ProvidedByScenario",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "Death": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "VictimPlayerIndex": {
+          "type": "integer"
+        },
+        "VictimObjectTypeId": {
+          "type": "string"
+        },
+        "VictimInstanceId": {
+          "type": "integer"
+        },
+        "VictimLocation": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "IsSuicide": {
+          "type": "boolean"
+        },
+        "Participants": {
+          "$ref": "#/definitions/Participants"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "VictimPlayerIndex",
+        "VictimObjectTypeId",
+        "VictimInstanceId",
+        "VictimLocation",
+        "IsSuicide",
+        "Participants",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "Participants": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ObjectParticipants": {
+            "$ref": "#/definitions/ObjectParticipants"
+          }
+        },
+        "required": [
+          "ObjectParticipants"
+        ]
+      }
+    },
+
+    "ObjectParticipants": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "Count": {
+            "type": "integer"
+          },
+          "CombatStats": {
+            "$ref": "#/definitions/CombatStats"
+          }
+        },
+        "required": [
+          "Count",
+          "CombatStats"
+        ]
+      }
+    },
+
+    "CombatStats": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "AttacksLanded": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "AttacksLanded"
+        ]
+      }
+    },
+
+    "FirefightWaveCompleted": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "WaveNumber": {
+          "type": "integer"
+        },
+        "WaveDurationMilliseconds": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "WaveNumber",
+        "WaveDurationMilliseconds",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "FirefightWaveSpawned": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "WaveNumber": {
+          "type": "integer"
+        },
+        "InstancesSpawned": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "WaveNumber",
+        "InstancesSpawned",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "FirefightWaveStarted": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "WaveNumber": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "WaveNumber",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "LeaderPowerCast": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "PowerId": {
+          "type": "string"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "TargetLocation": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "SupplyCost": {
+          "type": "integer"
+        },
+        "EnergyCost": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "PowerId",
+        "InstanceId",
+        "TargetLocation",
+        "SupplyCost",
+        "EnergyCost",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "LeaderPowerUnlocked": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "PowerId": {
+          "type": "string"
+        },
+        "CommandPointCost": {
+          "type": "integer"
+        },
+        "ProvidedByScenario": {
+          "type": "boolean"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "PowerId",
+        "CommandPointCost",
+        "ProvidedByScenario",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "ManaOrbCollected": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "CollectorInstanceId": {
+          "type": "integer"
+        },
+        "ManaRateIncrease": {
+          "type": "integer"
+        },
+        "Location": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "CollectorInstanceId",
+        "ManaRateIncrease",
+        "Location",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "MatchEnd": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MatchEndReason": {
+          "type": "integer"
+        },
+        "VictoryCondition": {
+          "type": "integer"
+        },
+        "ActivePlaytimeMilliseconds": {
+          "type": "integer"
+        },
+        "TeamState": {
+          "$ref": "#/definitions/TeamState"
+        },
+        "PlayerState": {
+          "$ref": "#/definitions/PlayerState"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "MatchEndReason",
+        "VictoryCondition",
+        "ActivePlaytimeMilliseconds",
+        "TeamState",
+        "PlayerState",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "TeamState": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ObjectiveScore": {
+            "type": "integer"
+          },
+          "MatchOutcome": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "ObjectiveScore",
+          "MatchOutcome"
+        ]
+      }
+    },
+
+    "PlayerState": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "PersonalScore": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "PersonalScore"
+        ]
+      }
+    },
+
+    "MatchStart": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MatchId": {
+          "type": "string"
+        },
+        "GameMode": {
+          "type": "integer"
+        },
+        "MatchType": {
+          "type": "integer"
+        },
+        "MapId": {
+          "type": "string"
+        },
+        "PlaylistId": {
+          "type": "string"
+        },
+        "TeamSize": {
+          "type": "integer"
+        },
+        "IsDefaultRuleSet": {
+          "type": "boolean"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "MatchId",
+        "GameMode",
+        "MatchType",
+        "MapId",
+        "PlaylistId",
+        "TeamSize",
+        "IsDefaultRuleSet",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "PlayerEliminated": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "PlayerJoinedMatch": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "PlayerType": {
+          "type": "integer"
+        },
+        "HumanPlayerId": {
+          "$ref": "../../common/identity.schema.json"
+        },
+        "ComputerPlayerId": {
+          "type": [ "integer", "null" ]
+        },
+        "ComputerDifficulty": {
+          "type": [ "integer", "null" ]
+        },
+        "TeamId": {
+          "type": "integer"
+        },
+        "LeaderId": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "PlayerType",
+        "HumanPlayerId",
+        "ComputerPlayerId",
+        "ComputerDifficulty",
+        "TeamId",
+        "LeaderId",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "PlayerLeftMatch": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "TimeInMatchMilliseconds": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "TimeInMatchMilliseconds",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "PointCaptured": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "CapturerInstanceId": {
+          "type": "integer"
+        },
+        "CapturerLocation": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "NewOwningTeamId": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "InstanceId",
+        "CapturerInstanceId",
+        "CapturerLocation",
+        "NewOwningTeamId",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "PointCreated": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PointId": {
+          "type": "string"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "Location": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PointId",
+        "InstanceId",
+        "Location",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "PointStatusChange": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "InstanceId": {
+          "type": "integer"
+        },
+        "Status": {
+          "type": "integer"
+        },
+        "OwningTeamId": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "InstanceId",
+        "Status",
+        "OwningTeamId",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "ResourceHeartbeat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "TeamResources": {
+          "$ref": "#/definitions/TeamResources"
+        },
+        "PlayerResources": {
+          "$ref": "#/definitions/PlayerResources"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "TeamResources",
+        "PlayerResources",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "TeamResources": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ObjectiveScore": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "ObjectiveScore"
+        ]
+      }
+    },
+
+    "PlayerResources": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "Supply": {
+            "type": "integer"
+          },
+          "TotalSupply": {
+            "type": "number" // Not an integer?
+          },
+          "Energy": {
+            "type": "integer"
+          },
+          "TotalEnergy": {
+            "type": "number" // Not an integer?
+          },
+          "Population": {
+            "type": "integer"
+          },
+          "PopulationCap": {
+            "type": "integer"
+          },
+          "TechLevel": {
+            "type": "integer"
+          },
+          "CommandPoints": {
+            "type": "integer"
+          },
+          "TotalCommandPoints": {
+            "type": "integer"
+          },
+          "Mana": {
+            "type": "integer"
+          },
+          "TotalMana": {
+            "type": "number" // Not an integer?
+          },
+          "ManaRate": {
+            "type": "integer"
+          },
+          "CommandXP": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "Supply",
+          "TotalSupply",
+          "Energy",
+          "TotalEnergy",
+          "Population",
+          "PopulationCap",
+          "TechLevel",
+          "CommandPoints",
+          "TotalCommandPoints",
+          "Mana",
+          "TotalMana",
+          "ManaRate",
+          "CommandXP"
+        ]
+      }
+    },
+
+    "ResourceTransferred": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "SendingPlayerIndex": {
+          "type": "integer"
+        },
+        "ReceivingPlayerIndex": {
+          "type": "integer"
+        },
+        "SupplyCost": {
+          "type": "integer"
+        },
+        "EnergyCost": {
+          "type": "integer"
+        },
+        "SupplyEarned": {
+          "type": "integer"
+        },
+        "EnergyEarned": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "SendingPlayerIndex",
+        "ReceivingPlayerIndex",
+        "SupplyCost",
+        "EnergyCost",
+        "SupplyEarned",
+        "EnergyEarned",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "TechResearched": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "TechId": {
+          "type": "string"
+        },
+        "ResearcherInstanceId": {
+          "type": "integer"
+        },
+        "SupplyCost": {
+          "type": "integer"
+        },
+        "EnergyCost": {
+          "type": "integer"
+        },
+        "ProvidedByScenario": {
+          "type": "boolean"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "TechId",
+        "ResearcherInstanceId",
+        "SupplyCost",
+        "EnergyCost",
+        "ProvidedByScenario",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "UnitControlTransferred": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "OldPlayerIndex": {
+          "type": "integer"
+        },
+        "NewPlayerIndex": {
+          "type": "integer"
+        },
+        "SquadId": {
+          "type": "string"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "CapturerInstanceId": {
+          "type": "integer"
+        },
+        "Location": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "PopulationCost": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "OldPlayerIndex",
+        "NewPlayerIndex",
+        "SquadId",
+        "InstanceId",
+        "CapturerInstanceId",
+        "Location",
+        "PopulationCost",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "UnitPromoted": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "SquadId": {
+          "type": "string"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "SquadId",
+        "InstanceId",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    },
+
+    "UnitTrained": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "SquadId": {
+          "type": "string"
+        },
+        "InstanceId": {
+          "type": "integer"
+        },
+        "CreatorInstanceId": {
+          "type": "integer"
+        },
+        "SpawnLocation": {
+          "$ref": "../../common/location.schema.json"
+        },
+        "SupplyCost": {
+          "type": "integer"
+        },
+        "EnergyCost": {
+          "type": "integer"
+        },
+        "PopulationCost": {
+          "type": "integer"
+        },
+        "IsClone": {
+          "type": "boolean"
+        },
+        "ProvidedByScenario": {
+          "type": "boolean"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStartMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "PlayerIndex",
+        "SquadId",
+        "InstanceId",
+        "CreatorInstanceId",
+        "SpawnLocation",
+        "SupplyCost",
+        "EnergyCost",
+        "PopulationCost",
+        "IsClone",
+        "ProvidedByScenario",
+        "EventName",
+        "TimeSinceStartMilliseconds"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "GameEvents": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "#/definitions/BuildingConstructionCompleted" },
+          { "$ref": "#/definitions/BuildingConstructionQueued" },
+          { "$ref": "#/definitions/BuildingRecycled" },
+          { "$ref": "#/definitions/BuildingUpgraded" },
+          { "$ref": "#/definitions/CardCycled" },
+          { "$ref": "#/definitions/CardPlayed" },
+          { "$ref": "#/definitions/Death" },
+          { "$ref": "#/definitions/FirefightWaveCompleted" },
+          { "$ref": "#/definitions/FirefightWaveSpawned" },
+          { "$ref": "#/definitions/FirefightWaveStarted" },
+          { "$ref": "#/definitions/LeaderPowerCast" },
+          { "$ref": "#/definitions/LeaderPowerUnlocked" },
+          { "$ref": "#/definitions/ManaOrbCollected" },
+          { "$ref": "#/definitions/MatchEnd" },
+          { "$ref": "#/definitions/MatchStart" },
+          { "$ref": "#/definitions/PlayerEliminated" },
+          { "$ref": "#/definitions/PlayerJoinedMatch" },
+          { "$ref": "#/definitions/PlayerLeftMatch" },
+          { "$ref": "#/definitions/PointCaptured" },
+          { "$ref": "#/definitions/PointCreated" },
+          { "$ref": "#/definitions/PointStatusChange" },
+          { "$ref": "#/definitions/ResourceHeartbeat" },
+          { "$ref": "#/definitions/ResourceTransferred" },
+          { "$ref": "#/definitions/TechResearched" },
+          { "$ref": "#/definitions/UnitControlTransferred" },
+          { "$ref": "#/definitions/UnitPromoted" },
+          { "$ref": "#/definitions/UnitTrained" }
+        ]
+      }
+    },
+    "IsCompleteSetOfEvents": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "GameEvents",
+    "IsCompleteSetOfEvents"
+  ]
+}

@@ -123,7 +123,7 @@
           "$ref": "../common/flexible-stats.schema.json"
         },
         "Player": {
-          "$ref": "../common/identity.schema.json"
+          "$ref": "../../../common/identity.schema.json"
         },
         "TeamId": {
           "type": "integer"

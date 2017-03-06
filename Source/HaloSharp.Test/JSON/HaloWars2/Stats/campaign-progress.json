@@ -1,0 +1,190 @@
+{
+  "CampaignXP": 6600,
+  "Levels": {
+    "99": {
+      "SkullsUnlocked": [],
+      "TotalSoloPlayTime": "PT20M3S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT3M17S",
+          "BestScore": 111708,
+          "CriticalObjectivesCompleted": [ 5, 4 ],
+          "BonusObjectivesCompleted": [ 7 ],
+          "OptionalObjectivesCompleted": [ 148 ]
+        },
+        "1": {
+          "BestCompletionTime": "PT3M6S",
+          "BestScore": 88200,
+          "CriticalObjectivesCompleted": [ 5, 4 ],
+          "BonusObjectivesCompleted": [ 7 ],
+          "OptionalObjectivesCompleted": [ 148 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-18T02:51:01.376Z"
+      }
+    },
+    "100": {
+      "SkullsUnlocked": [ 2 ],
+      "TotalSoloPlayTime": "PT1H19M16S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT38M20S",
+          "BestScore": 97438,
+          "CriticalObjectivesCompleted": [ 12, 19, 18, 17, 20, 13, 16, 14, 10, 9 ],
+          "BonusObjectivesCompleted": [ 23, 26 ],
+          "OptionalObjectivesCompleted": [ 11, 21 ]
+        },
+        "1": {
+          "BestCompletionTime": "PT40M56S",
+          "BestScore": 39680,
+          "CriticalObjectivesCompleted": [ 12, 19, 18, 17, 20, 13, 16, 14, 10, 9 ],
+          "BonusObjectivesCompleted": [ 22, 23, 25 ],
+          "OptionalObjectivesCompleted": [ 11, 21 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-18T03:42:35.189Z"
+      }
+    },
+    "200": {
+      "SkullsUnlocked": [],
+      "TotalSoloPlayTime": "PT49M45S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT49M45S",
+          "BestScore": 18456,
+          "CriticalObjectivesCompleted": [ 27, 32, 36, 37, 30, 38, 39, 29, 48 ],
+          "BonusObjectivesCompleted": [ 45 ],
+          "OptionalObjectivesCompleted": [ 31 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-18T23:44:06.153Z"
+      }
+    },
+    "210": {
+      "SkullsUnlocked": [],
+      "TotalSoloPlayTime": "PT23M49S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT23M49S",
+          "BestScore": 61376,
+          "CriticalObjectivesCompleted": [ 143 ],
+          "BonusObjectivesCompleted": [ 145 ],
+          "OptionalObjectivesCompleted": [ 182, 142 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-19T00:10:44.194Z"
+      }
+    },
+    "300": {
+      "SkullsUnlocked": [ 6 ],
+      "TotalSoloPlayTime": "PT48M18S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT48M18S",
+          "BestScore": 54576,
+          "CriticalObjectivesCompleted": [ 52, 49, 50, 56 ],
+          "BonusObjectivesCompleted": [ 54 ],
+          "OptionalObjectivesCompleted": [ 51 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-19T01:03:36.05Z"
+      }
+    },
+    "400": {
+      "SkullsUnlocked": [ 13 ],
+      "TotalSoloPlayTime": "PT1H12M2S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT1H12M2S",
+          "BestScore": 39832,
+          "CriticalObjectivesCompleted": [ 59, 60, 63, 57 ],
+          "BonusObjectivesCompleted": [],
+          "OptionalObjectivesCompleted": [ 58, 61 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-19T02:18:31.124Z"
+      }
+    },
+    "410": {
+      "SkullsUnlocked": [ 11 ],
+      "TotalSoloPlayTime": "PT38M42S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT38M42S",
+          "BestScore": 54240,
+          "CriticalObjectivesCompleted": [ 133, 132, 136 ],
+          "BonusObjectivesCompleted": [ 137, 138 ],
+          "OptionalObjectivesCompleted": [ 134, 135 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-19T03:03:28.626Z"
+      }
+    },
+    "500": {
+      "SkullsUnlocked": [ 10 ],
+      "TotalSoloPlayTime": "PT1H7M21S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT31M34S",
+          "BestScore": 26664,
+          "CriticalObjectivesCompleted": [ 68 ],
+          "BonusObjectivesCompleted": [ 71 ],
+          "OptionalObjectivesCompleted": [ 72 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-19T04:19:15.559Z"
+      }
+    },
+    "600": {
+      "SkullsUnlocked": [ 12 ],
+      "TotalSoloPlayTime": "PT2H59M21S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {
+        "4": {
+          "BestCompletionTime": "PT1H35M34S",
+          "BestScore": 41756,
+          "CriticalObjectivesCompleted": [ 73, 75, 150, 151, 74, 83, 76 ],
+          "BonusObjectivesCompleted": [ 79, 80, 82 ],
+          "OptionalObjectivesCompleted": [ 78 ]
+        }
+      },
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": {
+        "ISO8601Date": "2017-02-19T07:36:45.396Z"
+      }
+    },
+    "700": {
+      "SkullsUnlocked": [],
+      "TotalSoloPlayTime": "PT0S",
+      "TotalCooperativePlayTime": "PT0S",
+      "SoloCompletion": {},
+      "CooperativeCompletion": {},
+      "FirstCompletionDate": null
+    }
+  },
+  "LogsUnlocked": [ 9, 17, 31, 74, 65, 68, 95, 94, 93, 35, 99, 102, 103, 118, 119, 117, 116, 123, 122, 120, 15, 90, 36, 32, 46, 42, 40, 37, 39, 51, 55, 57, 56, 60, 50, 33, 34, 27, 80, 73, 81, 70, 101, 86, 85, 92, 89, 104, 0, 16, 28, 45, 44, 52, 54, 58, 53, 79, 72, 26, 88, 83, 105, 67, 71, 106, 11, 41, 62, 100, 108, 107, 124, 91, 75, 77, 43, 6, 109, 2, 61, 78, 76, 84, 98, 110, 49, 10, 111, 112, 97, 8, 47, 66, 96, 4 ]
+}

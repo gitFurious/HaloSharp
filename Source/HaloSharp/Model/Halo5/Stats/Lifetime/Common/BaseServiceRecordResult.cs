@@ -31,7 +31,7 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime.Common
         /// It is possible for different requests from the batch to succeed and fail independently.
         /// </summary>
         [JsonProperty(PropertyName = "ResultCode")]
-        public Enumeration.QueryResult ResultCode { get; set; }
+        public Enumeration.Common.QueryResult ResultCode { get; set; }
 
         public bool Equals(BaseServiceRecordResult other)
         {

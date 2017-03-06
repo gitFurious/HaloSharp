@@ -1,0 +1,1672 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 7,
+    "TotalCount": 7
+  },
+  "ContentItems": [
+    {
+      "Id": 202762,
+      "Type": "HW2Leader",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-06-10T14:05:12Z",
+          "ModifiedUtc": "2017-02-03T18:08:03Z",
+          "PublishedUtc": "2017-02-09T10:24:11Z",
+          "Container": -1
+        },
+        "Identity": "7ee19946262644ffab92e9c09240df37",
+        "Title": "Atriox",
+        "HW2Leader": {
+          "Faction": "Banished",
+          "StartingArmyOptions": [
+            {
+              "Id": 202242,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:55Z",
+                  "ModifiedUtc": "2017-02-03T18:08:14Z",
+                  "PublishedUtc": "2017-02-09T10:23:12Z",
+                  "Container": -1
+                },
+                "Identity": "27049b2dddeb4a82a8b1c88ca03be08e",
+                "Title": "Warlord",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335853,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:17Z",
+                        "ModifiedUtc": "2017-02-03T19:37:18Z",
+                        "PublishedUtc": "2017-02-03T19:37:18Z",
+                        "Container": -1
+                      },
+                      "Identity": "7707ce03f7e147e3a34dad0ca63fd4a1",
+                      "Autoroute": "warlord-display-info",
+                      "Title": "Warlord Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Warlord"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202190,
+                      "Type": "HW2Card",
+                      "Identity": "eff4623d74c44656a6a2fdb0665e9b18",
+                      "Autoroute": "hw2/cards/eff4623d-74c4-4656-a6a2-fdb0665e9b18"
+                    },
+                    {
+                      "Id": 202190,
+                      "Type": "HW2Card",
+                      "Identity": "eff4623d74c44656a6a2fdb0665e9b18",
+                      "Autoroute": "hw2/cards/eff4623d-74c4-4656-a6a2-fdb0665e9b18"
+                    },
+                    {
+                      "Id": 202194,
+                      "Type": "HW2Card",
+                      "Identity": "e471a469c26d49c7beebd3784470e4b9",
+                      "Autoroute": "hw2/cards/e471a469-c26d-49c7-beeb-d3784470e4b9"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            },
+            {
+              "Id": 202714,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:55Z",
+                  "ModifiedUtc": "2017-02-03T18:08:13Z",
+                  "PublishedUtc": "2017-02-09T10:24:10Z",
+                  "Container": -1
+                },
+                "Identity": "4c421d8f539a46df99a5ace562beb675",
+                "Title": "Bulletproof",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335086,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:18Z",
+                        "ModifiedUtc": "2017-02-03T19:34:58Z",
+                        "PublishedUtc": "2017-02-03T19:34:58Z",
+                        "Container": -1
+                      },
+                      "Identity": "d61346c5077847ab87ef5a7acdb4b70f",
+                      "Autoroute": "bulletproof-display-info",
+                      "Title": "Bulletproof Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Bulletproof"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202421,
+                      "Type": "HW2Card",
+                      "Identity": "341210745a7d43f29a12cdbb6b973037",
+                      "Autoroute": "hw2/cards/34121074-5a7d-43f2-9a12-cdbb6b973037"
+                    },
+                    {
+                      "Id": 202404,
+                      "Type": "HW2Card",
+                      "Identity": "9f93ba1d76624e269942e0bba96872d3",
+                      "Autoroute": "hw2/cards/9f93ba1d-7662-4e26-9942-e0bba96872d3"
+                    },
+                    {
+                      "Id": 201970,
+                      "Type": "HW2Card",
+                      "Identity": "f026c814e2ec46bba4e6c9860466023f",
+                      "Autoroute": "hw2/cards/f026c814-e2ec-46bb-a4e6-c9860466023f"
+                    },
+                    {
+                      "Id": 201970,
+                      "Type": "HW2Card",
+                      "Identity": "f026c814e2ec46bba4e6c9860466023f",
+                      "Autoroute": "hw2/cards/f026c814-e2ec-46bb-a4e6-c9860466023f"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            }
+          ],
+          "Id": 5,
+          "Name": "Atriox",
+          "DisplayInfo": {
+            "Id": 334995,
+            "Type": "HW2LeaderDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-24T10:59:45Z",
+                "ModifiedUtc": "2017-02-03T19:34:40Z",
+                "PublishedUtc": "2017-02-03T19:34:40Z",
+                "Container": -1
+              },
+              "Identity": "beb63328d47d49d19635a944025c42b6",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Atriox Display Info",
+              "HW2LeaderDisplayInfo": {
+                "Name": "Atriox",
+                "Description": "Atriox focuses on a cunning and defensive style supported by an advanced economy and the power to make units temporarily invulnerable."
+              }
+            }
+          },
+          "Image": {
+            "Id": 337715,
+            "Type": "Image",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "kpaul",
+                "CreatedUtc": "2017-01-31T19:10:37Z",
+                "ModifiedUtc": "2017-02-09T10:22:46Z",
+                "PublishedUtc": "2017-02-09T10:22:47Z",
+                "Container": -1
+              },
+              "Media": {
+                "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/leaders/atriox-bf79c35d8b7b41579806c2fa3ea6706e.png",
+                "MimeType": "image/png",
+                "Caption": "",
+                "AlternateText": "",
+                "FolderPath": "games/halo-wars-2/leaders",
+                "FileName": "atriox-bf79c35d8b7b41579806c2fa3ea6706e.png"
+              },
+              "Image": {
+                "Width": 1452,
+                "Height": 1920
+              },
+              "Title": "atriox-bf79c35d8b7b41579806c2fa3ea6706e",
+              "Identity": "ae1e903890d9401e9ed6146c02f6c7bb"
+            }
+          },
+          "HW2PromotionOffer": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202762"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202765,
+      "Type": "HW2Leader",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-06-10T14:04:30Z",
+          "ModifiedUtc": "2017-02-03T18:08:03Z",
+          "PublishedUtc": "2017-02-09T10:23:59Z",
+          "Container": -1
+        },
+        "Identity": "2bbe175c7de444a3a9dc92571626bfa2",
+        "Title": "Professor Anders",
+        "HW2Leader": {
+          "Faction": "UNSC",
+          "StartingArmyOptions": [
+            {
+              "Id": 202685,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:56Z",
+                  "ModifiedUtc": "2017-02-03T18:08:13Z",
+                  "PublishedUtc": "2017-02-09T10:23:11Z",
+                  "Container": -1
+                },
+                "Identity": "a93534879afc40078031ed873329e4c1",
+                "Title": "Tactician",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335485,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:12Z",
+                        "ModifiedUtc": "2017-02-03T19:36:10Z",
+                        "PublishedUtc": "2017-02-03T19:36:10Z",
+                        "Container": -1
+                      },
+                      "Identity": "ab6ada7217a8474aa4187f615c86e493",
+                      "Autoroute": "tactician-display-info",
+                      "Title": "Tactician Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Tactician"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202209,
+                      "Type": "HW2Card",
+                      "Identity": "b8ff73dda5214c3dbe7ad24fbf1376b1",
+                      "Autoroute": "hw2/cards/b8ff73dd-a521-4c3d-be7a-d24fbf1376b1"
+                    },
+                    {
+                      "Id": 202209,
+                      "Type": "HW2Card",
+                      "Identity": "b8ff73dda5214c3dbe7ad24fbf1376b1",
+                      "Autoroute": "hw2/cards/b8ff73dd-a521-4c3d-be7a-d24fbf1376b1"
+                    },
+                    {
+                      "Id": 202253,
+                      "Type": "HW2Card",
+                      "Identity": "8753d24850d448f2ad3aa7aef75c4daa",
+                      "Autoroute": "hw2/cards/8753d248-50d4-48f2-ad3a-a7aef75c4daa"
+                    },
+                    {
+                      "Id": 202253,
+                      "Type": "HW2Card",
+                      "Identity": "8753d24850d448f2ad3aa7aef75c4daa",
+                      "Autoroute": "hw2/cards/8753d248-50d4-48f2-ad3a-a7aef75c4daa"
+                    },
+                    {
+                      "Id": 202254,
+                      "Type": "HW2Card",
+                      "Identity": "80852312cdea411d8dcbfd409f55fb48",
+                      "Autoroute": "hw2/cards/80852312-cdea-411d-8dcb-fd409f55fb48"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            },
+            {
+              "Id": 202720,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:57Z",
+                  "ModifiedUtc": "2017-02-03T18:08:13Z",
+                  "PublishedUtc": "2017-02-09T10:23:58Z",
+                  "Container": -1
+                },
+                "Identity": "edca64de66314d0b89751a8b08c3a0a3",
+                "Title": "Sentinel Swarm",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335202,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:14Z",
+                        "ModifiedUtc": "2017-02-03T19:35:17Z",
+                        "PublishedUtc": "2017-02-03T19:35:17Z",
+                        "Container": -1
+                      },
+                      "Identity": "319c43ab263e4da88b5e3ab0e21b04c2",
+                      "Autoroute": "sentinel-swarm-display-info",
+                      "Title": "Sentinel Swarm Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Sentinel Swarm"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202444,
+                      "Type": "HW2Card",
+                      "Identity": "60b3db95cf5840cfbf099dddc7e6a5c0",
+                      "Autoroute": "hw2/cards/60b3db95-cf58-40cf-bf09-9dddc7e6a5c0"
+                    },
+                    {
+                      "Id": 202444,
+                      "Type": "HW2Card",
+                      "Identity": "60b3db95cf5840cfbf099dddc7e6a5c0",
+                      "Autoroute": "hw2/cards/60b3db95-cf58-40cf-bf09-9dddc7e6a5c0"
+                    },
+                    {
+                      "Id": 202444,
+                      "Type": "HW2Card",
+                      "Identity": "60b3db95cf5840cfbf099dddc7e6a5c0",
+                      "Autoroute": "hw2/cards/60b3db95-cf58-40cf-bf09-9dddc7e6a5c0"
+                    },
+                    {
+                      "Id": 202445,
+                      "Type": "HW2Card",
+                      "Identity": "04b1b4f19dd24b07ad632bb94c8f3ed0",
+                      "Autoroute": "hw2/cards/04b1b4f1-9dd2-4b07-ad63-2bb94c8f3ed0"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            }
+          ],
+          "Id": 3,
+          "Name": "Anders",
+          "DisplayInfo": {
+            "Id": 334846,
+            "Type": "HW2LeaderDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-24T10:59:43Z",
+                "ModifiedUtc": "2017-02-03T19:34:11Z",
+                "PublishedUtc": "2017-02-03T19:34:11Z",
+                "Container": -1
+              },
+              "Identity": "4af9571ab8214fb38c08ab29c3241ca8",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Professor Anders Display Info",
+              "HW2LeaderDisplayInfo": {
+                "Name": "Professor Anders",
+                "Description": "Anders' scientific expertise allows her to field Sentinel units and makes all of her upgrades cheaper and faster."
+              }
+            }
+          },
+          "Image": {
+            "Id": 337714,
+            "Type": "Image",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "kpaul",
+                "CreatedUtc": "2017-01-31T19:10:28Z",
+                "ModifiedUtc": "2017-02-09T10:22:45Z",
+                "PublishedUtc": "2017-02-09T10:22:45Z",
+                "Container": -1
+              },
+              "Media": {
+                "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/leaders/anders-0d9b72aa7a9a4831a06ee2f1f4fa5ece.png",
+                "MimeType": "image/png",
+                "Caption": "",
+                "AlternateText": "",
+                "FolderPath": "games/halo-wars-2/leaders",
+                "FileName": "anders-0d9b72aa7a9a4831a06ee2f1f4fa5ece.png"
+              },
+              "Image": {
+                "Width": 1452,
+                "Height": 1920
+              },
+              "Title": "anders-0d9b72aa7a9a4831a06ee2f1f4fa5ece",
+              "Identity": "c9db32147683460d8b37e7102ee070da"
+            }
+          },
+          "HW2PromotionOffer": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202765"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202627,
+      "Type": "HW2Leader",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-06-10T14:07:22Z",
+          "ModifiedUtc": "2017-02-03T18:08:03Z",
+          "PublishedUtc": "2017-02-09T10:23:53Z",
+          "Container": -1
+        },
+        "Identity": "6e34c31844ae45a3b5ccc178f3a5e63f",
+        "Title": "Shipmaster",
+        "HW2Leader": {
+          "Faction": "Banished",
+          "StartingArmyOptions": [
+            {
+              "Id": 202560,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:21:33Z",
+                  "ModifiedUtc": "2017-02-03T18:08:14Z",
+                  "PublishedUtc": "2017-02-09T10:23:53Z",
+                  "Container": -1
+                },
+                "Identity": "7c2db2bcd6f54f6e94f5bb6276b5fe66",
+                "Title": "Scout",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335016,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:22Z",
+                        "ModifiedUtc": "2017-02-03T19:34:43Z",
+                        "PublishedUtc": "2017-02-03T19:34:43Z",
+                        "Container": -1
+                      },
+                      "Identity": "01cded9f28484a87af2262ca5245c9ca",
+                      "Autoroute": "scout-display-info",
+                      "Title": "Scout Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Scout"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202219,
+                      "Type": "HW2Card",
+                      "Identity": "6179d531936f4385aa45e64c98982815",
+                      "Autoroute": "hw2/cards/6179d531-936f-4385-aa45-e64c98982815"
+                    },
+                    {
+                      "Id": 202219,
+                      "Type": "HW2Card",
+                      "Identity": "6179d531936f4385aa45e64c98982815",
+                      "Autoroute": "hw2/cards/6179d531-936f-4385-aa45-e64c98982815"
+                    },
+                    {
+                      "Id": 202219,
+                      "Type": "HW2Card",
+                      "Identity": "6179d531936f4385aa45e64c98982815",
+                      "Autoroute": "hw2/cards/6179d531-936f-4385-aa45-e64c98982815"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            },
+            {
+              "Id": 202565,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:21:41Z",
+                  "ModifiedUtc": "2017-02-03T18:08:14Z",
+                  "PublishedUtc": "2017-02-09T10:23:48Z",
+                  "Container": -1
+                },
+                "Identity": "7b7eff792c3046fbaef9f371465e2f71",
+                "Title": "Assassin",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335017,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:23Z",
+                        "ModifiedUtc": "2017-02-03T19:34:43Z",
+                        "PublishedUtc": "2017-02-03T19:34:43Z",
+                        "Container": -1
+                      },
+                      "Identity": "4679d713db8f4d8382a81e193ad081d2",
+                      "Autoroute": "assassin-display-info",
+                      "Title": "Assassin Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Assassin"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202555,
+                      "Type": "HW2Card",
+                      "Identity": "813bac63e1f746d5a2c9b321bb4e8805",
+                      "Autoroute": "hw2/cards/813bac63-e1f7-46d5-a2c9-b321bb4e8805"
+                    },
+                    {
+                      "Id": 202555,
+                      "Type": "HW2Card",
+                      "Identity": "813bac63e1f746d5a2c9b321bb4e8805",
+                      "Autoroute": "hw2/cards/813bac63-e1f7-46d5-a2c9-b321bb4e8805"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            }
+          ],
+          "Id": 6,
+          "Name": "Shipmaster",
+          "DisplayInfo": {
+            "Id": 334889,
+            "Type": "HW2LeaderDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-24T10:59:46Z",
+                "ModifiedUtc": "2017-02-03T19:34:20Z",
+                "PublishedUtc": "2017-02-03T19:34:20Z",
+                "Container": -1
+              },
+              "Identity": "d9639414fd64456899d56968883d4f8c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Shipmaster Display Info",
+              "HW2LeaderDisplayInfo": {
+                "Name": "Shipmaster",
+                "Description": "The Shipmaster favors stealth and cloaking powers, teleportation tactics, and rapid assaults against his foes."
+              }
+            }
+          },
+          "Image": {
+            "Id": 337710,
+            "Type": "Image",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "kpaul",
+                "CreatedUtc": "2017-01-31T19:10:29Z",
+                "ModifiedUtc": "2017-02-09T10:22:43Z",
+                "PublishedUtc": "2017-02-09T10:22:44Z",
+                "Container": -1
+              },
+              "Media": {
+                "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/leaders/shipmaster-342c9c4fe0fb439bb6a3dbc89ed8a842.png",
+                "MimeType": "image/png",
+                "Caption": "",
+                "AlternateText": "",
+                "FolderPath": "games/halo-wars-2/leaders",
+                "FileName": "shipmaster-342c9c4fe0fb439bb6a3dbc89ed8a842.png"
+              },
+              "Image": {
+                "Width": 1452,
+                "Height": 1920
+              },
+              "Title": "shipmaster-342c9c4fe0fb439bb6a3dbc89ed8a842",
+              "Identity": "c50824fdc7dc415abf814f344d4202ee"
+            }
+          },
+          "HW2PromotionOffer": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202627"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337241,
+      "Type": "HW2Leader",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-09-09T14:40:15Z",
+          "ModifiedUtc": "2017-02-03T19:42:19Z",
+          "PublishedUtc": "2017-02-09T10:23:42Z",
+          "Container": -1
+        },
+        "Identity": "18615c64b6eb4994b2b03cdf739956bf",
+        "Title": "Sergeant Forge",
+        "HW2Leader": {
+          "Faction": "UNSC",
+          "StartingArmyOptions": [
+            {
+              "Id": 337148,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-09-09T13:19:43Z",
+                  "ModifiedUtc": "2017-02-03T19:41:41Z",
+                  "PublishedUtc": "2017-02-09T10:23:17Z",
+                  "Container": -1
+                },
+                "Identity": "a0bb79e99db14b6f8cafd6af4a22185d",
+                "Title": "DLC0_ARMY_UNSC_FORGE_1",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 337711,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-01-27T09:55:31Z",
+                        "ModifiedUtc": "2017-02-09T10:22:44Z",
+                        "PublishedUtc": "2017-02-09T10:22:44Z",
+                        "Container": -1
+                      },
+                      "Identity": "00b3226156ec42bdab849b9837dd11dc",
+                      "Autoroute": "full-metal-display-info",
+                      "Title": "Full Metal Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Full Metal"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202253,
+                      "Type": "HW2Card",
+                      "Identity": "8753d24850d448f2ad3aa7aef75c4daa",
+                      "Autoroute": "hw2/cards/8753d248-50d4-48f2-ad3a-a7aef75c4daa"
+                    },
+                    {
+                      "Id": 202253,
+                      "Type": "HW2Card",
+                      "Identity": "8753d24850d448f2ad3aa7aef75c4daa",
+                      "Autoroute": "hw2/cards/8753d248-50d4-48f2-ad3a-a7aef75c4daa"
+                    },
+                    {
+                      "Id": 201966,
+                      "Type": "HW2Card",
+                      "Identity": "f2f9fc766e8344b3b0f0e7eb7ef7361b",
+                      "Autoroute": "hw2/cards/f2f9fc76-6e83-44b3-b0f0-e7eb7ef7361b"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            },
+            {
+              "Id": 337108,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-09-09T13:28:29Z",
+                  "ModifiedUtc": "2017-02-03T19:41:29Z",
+                  "PublishedUtc": "2017-02-09T10:23:42Z",
+                  "Container": -1
+                },
+                "Identity": "4061b3d779a54caabe02fe6b74335f01",
+                "Title": "DLC0_ARMY_UNSC_FORGE_2",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 337713,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-01-27T09:55:32Z",
+                        "ModifiedUtc": "2017-02-09T10:22:44Z",
+                        "PublishedUtc": "2017-02-09T10:22:44Z",
+                        "Container": -1
+                      },
+                      "Identity": "5aeecb47f01042e49b0929e4b6491960",
+                      "Autoroute": "mad-dash-display-info",
+                      "Title": "Mad Dash Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Mad Dash"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202401,
+                      "Type": "HW2Card",
+                      "Identity": "a8ddc7090a854d0784137069619eaa41",
+                      "Autoroute": "hw2/card/a8ddc7090a854d0784137069619eaa41"
+                    },
+                    {
+                      "Id": 202401,
+                      "Type": "HW2Card",
+                      "Identity": "a8ddc7090a854d0784137069619eaa41",
+                      "Autoroute": "hw2/card/a8ddc7090a854d0784137069619eaa41"
+                    },
+                    {
+                      "Id": 202430,
+                      "Type": "HW2Card",
+                      "Identity": "4432a4b7d5184d7cbd9f59c921e90fe2",
+                      "Autoroute": "hw2/cards/4432a4b7-d518-4d7c-bd9f-59c921e90fe2"
+                    },
+                    {
+                      "Id": 202430,
+                      "Type": "HW2Card",
+                      "Identity": "4432a4b7d5184d7cbd9f59c921e90fe2",
+                      "Autoroute": "hw2/cards/4432a4b7-d518-4d7c-bd9f-59c921e90fe2"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            }
+          ],
+          "Id": 7,
+          "Name": "Forge",
+          "DisplayInfo": {
+            "Id": 334853,
+            "Type": "HW2LeaderDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-24T10:59:47Z",
+                "ModifiedUtc": "2017-02-03T19:34:13Z",
+                "PublishedUtc": "2017-02-03T19:34:13Z",
+                "Container": -1
+              },
+              "Identity": "1ba9f720968641acbc18f64edcb9e760",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Sergeant Forge Display Info",
+              "HW2LeaderDisplayInfo": {
+                "Name": "Sergeant Forge",
+                "Description": "Forge's strengths lie in armored aggression and slow-building economy, using heavy vehicles to push through enemies. "
+              }
+            }
+          },
+          "Image": {
+            "Id": 337716,
+            "Type": "Image",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "kpaul",
+                "CreatedUtc": "2017-01-31T19:10:36Z",
+                "ModifiedUtc": "2017-02-09T10:22:48Z",
+                "PublishedUtc": "2017-02-09T10:22:48Z",
+                "Container": -1
+              },
+              "Media": {
+                "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/leaders/forge-acba0f49983841789a72dd6d53d5a09c.png",
+                "MimeType": "image/png",
+                "Caption": "",
+                "AlternateText": "",
+                "FolderPath": "games/halo-wars-2/leaders",
+                "FileName": "forge-acba0f49983841789a72dd6d53d5a09c.png"
+              },
+              "Image": {
+                "Width": 1452,
+                "Height": 1920
+              },
+              "Title": "forge-acba0f49983841789a72dd6d53d5a09c",
+              "Identity": "d3a7252204e546839b569b597d0b70e6"
+            }
+          },
+          "HW2PromotionOffer": {
+            "Id": 337151,
+            "Type": "HW2PromotedOffer",
+            "Identity": "d0faa904a3934e68b70556ff7a98a011"
+          }
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337241"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202760,
+      "Type": "HW2Leader",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-06-10T14:06:50Z",
+          "ModifiedUtc": "2017-02-03T18:08:03Z",
+          "PublishedUtc": "2017-02-09T10:23:40Z",
+          "Container": -1
+        },
+        "Identity": "dd3713f5850b45ad8acf2d299a8d32b5",
+        "Title": "Decimus",
+        "HW2Leader": {
+          "Faction": "Banished",
+          "StartingArmyOptions": [
+            {
+              "Id": 202696,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:54Z",
+                  "ModifiedUtc": "2017-02-03T18:08:13Z",
+                  "PublishedUtc": "2017-02-09T10:23:10Z",
+                  "Container": -1
+                },
+                "Identity": "ccd66afa89204c6da0135cef3d57363b",
+                "Title": "Berserker",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 336283,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:19Z",
+                        "ModifiedUtc": "2017-02-03T19:38:48Z",
+                        "PublishedUtc": "2017-02-03T19:38:48Z",
+                        "Container": -1
+                      },
+                      "Identity": "583a203ec7504c2387f2639c7c8f9e44",
+                      "Autoroute": "berserker-display-info",
+                      "Title": "Berserker Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Berserker"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202355,
+                      "Type": "HW2Card",
+                      "Identity": "ee008703c4e3463cb4eafbf9c57494bf",
+                      "Autoroute": "hw2/cards/ee008703-c4e3-463c-b4ea-fbf9c57494bf"
+                    },
+                    {
+                      "Id": 202355,
+                      "Type": "HW2Card",
+                      "Identity": "ee008703c4e3463cb4eafbf9c57494bf",
+                      "Autoroute": "hw2/cards/ee008703-c4e3-463c-b4ea-fbf9c57494bf"
+                    },
+                    {
+                      "Id": 202355,
+                      "Type": "HW2Card",
+                      "Identity": "ee008703c4e3463cb4eafbf9c57494bf",
+                      "Autoroute": "hw2/cards/ee008703-c4e3-463c-b4ea-fbf9c57494bf"
+                    },
+                    {
+                      "Id": 202530,
+                      "Type": "HW2Card",
+                      "Identity": "788fc365b5614847b2eba67c41ba4329",
+                      "Autoroute": "hw2/cards/788fc365-b561-4847-b2eb-a67c41ba4329"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            },
+            {
+              "Id": 202703,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:44Z",
+                  "ModifiedUtc": "2017-02-03T18:08:13Z",
+                  "PublishedUtc": "2017-02-09T10:23:39Z",
+                  "Container": -1
+                },
+                "Identity": "bdc036ddf53c4c55b25c47f8340ddeae",
+                "Title": "Vampire",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335748,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:21Z",
+                        "ModifiedUtc": "2017-02-03T19:37:00Z",
+                        "PublishedUtc": "2017-02-03T19:37:00Z",
+                        "Container": -1
+                      },
+                      "Identity": "64498a656fc94c829d4b4fa688cfc659",
+                      "Autoroute": "vampire-display-info",
+                      "Title": "Vampire Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Vampire"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202381,
+                      "Type": "HW2Card",
+                      "Identity": "8f8bd0c6831e4c9c96797d17da15fbff",
+                      "Autoroute": "hw2/cards/8f8bd0c6-831e-4c9c-9679-7d17da15fbff"
+                    },
+                    {
+                      "Id": 202381,
+                      "Type": "HW2Card",
+                      "Identity": "8f8bd0c6831e4c9c96797d17da15fbff",
+                      "Autoroute": "hw2/cards/8f8bd0c6-831e-4c9c-9679-7d17da15fbff"
+                    },
+                    {
+                      "Id": 202381,
+                      "Type": "HW2Card",
+                      "Identity": "8f8bd0c6831e4c9c96797d17da15fbff",
+                      "Autoroute": "hw2/cards/8f8bd0c6-831e-4c9c-9679-7d17da15fbff"
+                    },
+                    {
+                      "Id": 202381,
+                      "Type": "HW2Card",
+                      "Identity": "8f8bd0c6831e4c9c96797d17da15fbff",
+                      "Autoroute": "hw2/cards/8f8bd0c6-831e-4c9c-9679-7d17da15fbff"
+                    },
+                    {
+                      "Id": 202384,
+                      "Type": "HW2Card",
+                      "Identity": "3675959b343942b39ff7413b24d8a44b",
+                      "Autoroute": "hw2/cards/3675959b-3439-42b3-9ff7-413b24d8a44b"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            }
+          ],
+          "Id": 4,
+          "Name": "Decimus",
+          "DisplayInfo": {
+            "Id": 334847,
+            "Type": "HW2LeaderDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-24T10:59:44Z",
+                "ModifiedUtc": "2017-02-03T19:34:12Z",
+                "PublishedUtc": "2017-02-03T19:34:12Z",
+                "Container": -1
+              },
+              "Identity": "956398f529604c0a80b998da108dedbd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Decimus Display Info",
+              "HW2LeaderDisplayInfo": {
+                "Name": "Decimus",
+                "Description": "Decimus is a berserker who relies on hard-hitting rushes and a unique power to siphon his enemies’ health when attacking."
+              }
+            }
+          },
+          "Image": {
+            "Id": 337709,
+            "Type": "Image",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "kpaul",
+                "CreatedUtc": "2017-01-31T19:10:33Z",
+                "ModifiedUtc": "2017-02-09T10:22:43Z",
+                "PublishedUtc": "2017-02-09T10:22:44Z",
+                "Container": -1
+              },
+              "Media": {
+                "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/leaders/decimus-f0858672e88a4750b817164402a03d0d.png",
+                "MimeType": "image/png",
+                "Caption": "",
+                "AlternateText": "",
+                "FolderPath": "games/halo-wars-2/leaders",
+                "FileName": "decimus-f0858672e88a4750b817164402a03d0d.png"
+              },
+              "Image": {
+                "Width": 1452,
+                "Height": 1920
+              },
+              "Title": "decimus-f0858672e88a4750b817164402a03d0d",
+              "Identity": "3dd2fc7f02d74ecdab13cf1a57ce6b9d"
+            }
+          },
+          "HW2PromotionOffer": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202760"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202764,
+      "Type": "HW2Leader",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-06-10T14:04:44Z",
+          "ModifiedUtc": "2017-02-03T18:08:03Z",
+          "PublishedUtc": "2017-02-09T10:23:28Z",
+          "Container": -1
+        },
+        "Identity": "60fd548732114f2bb1c295993fb3a55a",
+        "Title": "Isabel",
+        "HW2Leader": {
+          "Faction": "UNSC",
+          "StartingArmyOptions": [
+            {
+              "Id": 202676,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:58Z",
+                  "ModifiedUtc": "2017-02-03T18:08:13Z",
+                  "PublishedUtc": "2017-02-09T10:23:28Z",
+                  "Container": -1
+                },
+                "Identity": "d4786f6df7c54bb2ba49deb70d944046",
+                "Title": "Hacker",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335050,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:15Z",
+                        "ModifiedUtc": "2017-02-03T19:34:49Z",
+                        "PublishedUtc": "2017-02-03T19:34:49Z",
+                        "Container": -1
+                      },
+                      "Identity": "f88ed5f02b954b06af5625ec8b75a138",
+                      "Autoroute": "hacker-display-info",
+                      "Title": "Hacker Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Hacker"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202220,
+                      "Type": "HW2Card",
+                      "Identity": "9d0272dc58824fd0a97ad99cc425bc70",
+                      "Autoroute": "hw2/cards/9d0272dc-5882-4fd0-a97a-d99cc425bc70"
+                    },
+                    {
+                      "Id": 202220,
+                      "Type": "HW2Card",
+                      "Identity": "9d0272dc58824fd0a97ad99cc425bc70",
+                      "Autoroute": "hw2/cards/9d0272dc-5882-4fd0-a97a-d99cc425bc70"
+                    },
+                    {
+                      "Id": 201984,
+                      "Type": "HW2Card",
+                      "Identity": "b30066e323a74b75acf4ace59c43e4b1",
+                      "Autoroute": "hw2/cards/b30066e3-23a7-4b75-acf4-ace59c43e4b1"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            },
+            {
+              "Id": 202573,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:57Z",
+                  "ModifiedUtc": "2017-02-03T18:08:14Z",
+                  "PublishedUtc": "2017-02-09T10:23:10Z",
+                  "Container": -1
+                },
+                "Identity": "9ecdc7c85a61473f877bf41d917f0979",
+                "Title": "Heavy Weapons",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335049,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:16Z",
+                        "ModifiedUtc": "2017-02-03T19:34:49Z",
+                        "PublishedUtc": "2017-02-03T19:34:49Z",
+                        "Container": -1
+                      },
+                      "Identity": "3ed515aab87448e5b6c6ab667398d582",
+                      "Autoroute": "heavy-weapons-display-info",
+                      "Title": "Heavy Weapons Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Heavy Weapons"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202253,
+                      "Type": "HW2Card",
+                      "Identity": "8753d24850d448f2ad3aa7aef75c4daa",
+                      "Autoroute": "hw2/cards/8753d248-50d4-48f2-ad3a-a7aef75c4daa"
+                    },
+                    {
+                      "Id": 202253,
+                      "Type": "HW2Card",
+                      "Identity": "8753d24850d448f2ad3aa7aef75c4daa",
+                      "Autoroute": "hw2/cards/8753d248-50d4-48f2-ad3a-a7aef75c4daa"
+                    },
+                    {
+                      "Id": 201977,
+                      "Type": "HW2Card",
+                      "Identity": "bfe5db22e97b446086417cbe25e2caa6",
+                      "Autoroute": "hw2/cards/bfe5db22-e97b-4460-8641-7cbe25e2caa6"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            }
+          ],
+          "Id": 2,
+          "Name": "Isabel",
+          "DisplayInfo": {
+            "Id": 334977,
+            "Type": "HW2LeaderDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-24T10:59:42Z",
+                "ModifiedUtc": "2017-02-03T19:34:36Z",
+                "PublishedUtc": "2017-02-03T19:34:36Z",
+                "Container": -1
+              },
+              "Identity": "f86c4341267e42f3adbcecae563d942a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Isabel Display Info",
+              "HW2LeaderDisplayInfo": {
+                "Name": "Isabel",
+                "Description": "Isabel improves the effectiveness of vehicles using her database of the latest UNSC tech, and employs hacking and distraction powers in battle."
+              }
+            }
+          },
+          "Image": {
+            "Id": 337707,
+            "Type": "Image",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "kpaul",
+                "CreatedUtc": "2017-01-31T19:10:29Z",
+                "ModifiedUtc": "2017-02-09T10:22:41Z",
+                "PublishedUtc": "2017-02-09T10:22:42Z",
+                "Container": -1
+              },
+              "Media": {
+                "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/leaders/isabel-dd34772cbd6d4db6bef49d3e1d5c6d43.png",
+                "MimeType": "image/png",
+                "Caption": "",
+                "AlternateText": "",
+                "FolderPath": "games/halo-wars-2/leaders",
+                "FileName": "isabel-dd34772cbd6d4db6bef49d3e1d5c6d43.png"
+              },
+              "Image": {
+                "Width": 1452,
+                "Height": 1920
+              },
+              "Title": "isabel-dd34772cbd6d4db6bef49d3e1d5c6d43",
+              "Identity": "70accee46f54407c806f9363bae04fcf"
+            }
+          },
+          "HW2PromotionOffer": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202764"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202763,
+      "Type": "HW2Leader",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-06-10T14:04:16Z",
+          "ModifiedUtc": "2017-02-03T18:08:03Z",
+          "PublishedUtc": "2017-02-09T10:23:17Z",
+          "Container": -1
+        },
+        "Identity": "cee2c115eab04183acc4ed8342d9a84f",
+        "Title": "Captain Cutter",
+        "HW2Leader": {
+          "Faction": "UNSC",
+          "StartingArmyOptions": [
+            {
+              "Id": 202678,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:04:11Z",
+                  "ModifiedUtc": "2017-02-03T18:08:13Z",
+                  "PublishedUtc": "2017-02-09T10:23:16Z",
+                  "Container": -1
+                },
+                "Identity": "5833b12f697d4357a789ac1180b0da14",
+                "Title": "Phoenix",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 335055,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:07Z",
+                        "ModifiedUtc": "2017-02-03T19:34:51Z",
+                        "PublishedUtc": "2017-02-03T19:34:51Z",
+                        "Container": -1
+                      },
+                      "Identity": "e5da0ccfecbc4b288b3a676c3746fba7",
+                      "Autoroute": "phoenix-display-info",
+                      "Title": "Phoenix Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Phoenix"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202227,
+                      "Type": "HW2Card",
+                      "Identity": "194b193bd2f243a58c2f18346dde21c1",
+                      "Autoroute": "hw2/cards/194b193b-d2f2-43a5-8c2f-18346dde21c1"
+                    },
+                    {
+                      "Id": 202199,
+                      "Type": "HW2Card",
+                      "Identity": "da48c69058d04447ae93f331fe5cedc9",
+                      "Autoroute": "hw2/cards/da48c690-58d0-4447-ae93-f331fe5cedc9"
+                    },
+                    {
+                      "Id": 202199,
+                      "Type": "HW2Card",
+                      "Identity": "da48c69058d04447ae93f331fe5cedc9",
+                      "Autoroute": "hw2/cards/da48c690-58d0-4447-ae93-f331fe5cedc9"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            },
+            {
+              "Id": 202651,
+              "Type": "HW2StartingArmy",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "v-caarse",
+                  "CreatedUtc": "2016-07-25T09:13:59Z",
+                  "ModifiedUtc": "2017-02-03T18:08:13Z",
+                  "PublishedUtc": "2017-02-09T10:23:11Z",
+                  "Container": -1
+                },
+                "Identity": "70bab4a9f82740138adc6221f205aa9a",
+                "Title": "Raider",
+                "HW2StartingArmy": {
+                  "DisplayInfo": {
+                    "Id": 336254,
+                    "Type": "HW2StartingArmyDisplayInfo",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "v-hugmic",
+                        "CreatedUtc": "2017-01-20T16:50:10Z",
+                        "ModifiedUtc": "2017-02-03T19:38:42Z",
+                        "PublishedUtc": "2017-02-03T19:38:42Z",
+                        "Container": -1
+                      },
+                      "Identity": "ab1d919227ff44b9942b5b8fbd0f432e",
+                      "Autoroute": "raider-display-info",
+                      "Title": "Raider Display Info",
+                      "HW2StartingArmyDisplayInfo": {
+                        "Name": "Raider"
+                      },
+                      "BatchLocalization": {
+                        "IsLocked": false
+                      },
+                      "Localization": {
+                        "Culture": "en",
+                        "MasterContentItemId": ""
+                      }
+                    }
+                  },
+                  "Cards": [
+                    {
+                      "Id": 202029,
+                      "Type": "HW2Card",
+                      "Identity": "2ff48883ee6c413aa39f0d101bb4db53",
+                      "Autoroute": "hw2/cards/2ff48883-ee6c-413a-a39f-0d101bb4db53"
+                    },
+                    {
+                      "Id": 202029,
+                      "Type": "HW2Card",
+                      "Identity": "2ff48883ee6c413aa39f0d101bb4db53",
+                      "Autoroute": "hw2/cards/2ff48883-ee6c-413a-a39f-0d101bb4db53"
+                    },
+                    {
+                      "Id": 202029,
+                      "Type": "HW2Card",
+                      "Identity": "2ff48883ee6c413aa39f0d101bb4db53",
+                      "Autoroute": "hw2/cards/2ff48883-ee6c-413a-a39f-0d101bb4db53"
+                    }
+                  ]
+                },
+                "BatchLocalization": {
+                  "IsLocked": false
+                },
+                "Localization": {
+                  "Culture": "en",
+                  "MasterContentItemId": ""
+                }
+              }
+            }
+          ],
+          "Id": 1,
+          "Name": "Cutter",
+          "DisplayInfo": {
+            "Id": 334870,
+            "Type": "HW2LeaderDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2017-01-24T10:59:41Z",
+                "ModifiedUtc": "2017-02-03T19:34:16Z",
+                "PublishedUtc": "2017-02-03T19:34:16Z",
+                "Container": -1
+              },
+              "Identity": "dcb7f9ee5eb4429a881e6b60c9504013",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Captain Cutter Display Info",
+              "HW2LeaderDisplayInfo": {
+                "Name": "Captain Cutter",
+                "Description": "As Captain of the Spirit of Fire, Cutter can send in powerful orbital support, drop specialized UNSC units, and enhance currently deployed units."
+              }
+            }
+          },
+          "Image": {
+            "Id": 337708,
+            "Type": "Image",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "kpaul",
+                "CreatedUtc": "2017-01-31T19:10:28Z",
+                "ModifiedUtc": "2017-02-09T10:22:42Z",
+                "PublishedUtc": "2017-02-09T10:22:42Z",
+                "Container": -1
+              },
+              "Media": {
+                "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/leaders/cutter-4847987df416401a83970ed9dbd9d036.png",
+                "MimeType": "image/png",
+                "Caption": "",
+                "AlternateText": "",
+                "FolderPath": "games/halo-wars-2/leaders",
+                "FileName": "cutter-4847987df416401a83970ed9dbd9d036.png"
+              },
+              "Image": {
+                "Width": 1452,
+                "Height": 1920
+              },
+              "Title": "cutter-4847987df416401a83970ed9dbd9d036",
+              "Identity": "9944a4bdeda44023bd1d60e5c9569088"
+            }
+          },
+          "HW2PromotionOffer": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202763"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

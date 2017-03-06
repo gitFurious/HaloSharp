@@ -6,6 +6,7 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Stats.Lifetime;
 using HaloSharp.Query.Halo5.Stats.Lifetime;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [SetUp]
         public void Setup()
         {
-            _warzoneServiceRecord = JsonConvert.DeserializeObject<WarzoneServiceRecord>(File.ReadAllText(Config.WarzoneServiceRecordJsonPath));
+            _warzoneServiceRecord = JsonConvert.DeserializeObject<WarzoneServiceRecord>(File.ReadAllText(Halo5Config.WarzoneServiceRecordJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<WarzoneServiceRecord>(It.IsAny<string>()))
@@ -118,10 +119,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord_SchemaIsValid(string gamertag)
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.WarzoneServiceRecordJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.WarzoneServiceRecordJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.WarzoneServiceRecordJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.WarzoneServiceRecordJsonSchemaPath))
             });
 
             var query = new GetWarzoneServiceRecord()
@@ -139,10 +140,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord_ModelMatchesSchema(string gamertag)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.WarzoneServiceRecordJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.WarzoneServiceRecordJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.WarzoneServiceRecordJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.WarzoneServiceRecordJsonSchemaPath))
             });
 
             var query = new GetWarzoneServiceRecord()

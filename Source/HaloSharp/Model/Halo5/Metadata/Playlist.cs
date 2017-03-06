@@ -38,7 +38,7 @@ namespace HaloSharp.Model.Halo5.Metadata
         /// </summary>
         [JsonProperty(PropertyName = "gameMode")]
         [JsonConverter(typeof (StringEnumConverter))]
-        public Enumeration.GameMode GameMode { get; set; }
+        public Enumeration.Halo5.GameMode GameMode { get; set; }
 
         /// <summary>
         /// The ID that uniquely identifies this playlist.

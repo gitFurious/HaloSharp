@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _spartanRanks = JsonConvert.DeserializeObject<List<SpartanRank>>(File.ReadAllText(Config.SpartanRanksJsonPath));
+            _spartanRanks = JsonConvert.DeserializeObject<List<SpartanRank>>(File.ReadAllText(Halo5Config.SpartanRanksJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<SpartanRank>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetSpartanRanks_SchemaIsValid()
         {
-            var spartanRanksSchema = JSchema.Parse(File.ReadAllText(Config.SpartanRanksJsonSchemaPath), new JSchemaReaderSettings
+            var spartanRanksSchema = JSchema.Parse(File.ReadAllText(Halo5Config.SpartanRanksJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.SpartanRanksJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.SpartanRanksJsonSchemaPath))
             });
 
             var query = new GetSpartanRanks()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetSpartanRanks_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.SpartanRanksJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.SpartanRanksJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.SpartanRanksJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.SpartanRanksJsonSchemaPath))
             });
 
             var query = new GetSpartanRanks()

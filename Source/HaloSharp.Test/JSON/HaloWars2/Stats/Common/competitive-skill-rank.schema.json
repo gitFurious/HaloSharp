@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Tier": {
+      "type": [ "null", "integer" ]
+    },
+    "Designation": {
+      "type": [ "null", "integer" ]
+    },
+    "Raw": {
+      "type": [ "null", "integer" ]
+    },
+    "PercentToNextTier": {
+      "type": [ "null", "integer" ]
+    },
+    "MeasurementMatchesRemaining": {
+      "type": "integer"
+    },
+    "Rank": {
+      "type": [ "null", "integer" ]
+    }
+  },
+  "required": [
+    "Tier",
+    "Designation",
+    "Raw",
+    "PercentToNextTier",
+    "MeasurementMatchesRemaining",
+    "Rank"
+  ]
+}

@@ -23,7 +23,7 @@ namespace HaloSharp.Validation.Halo5.Stats
 
                 foreach (var mode in modes)
                 {
-                    var defined = Enum.IsDefined(typeof (Enumeration.GameMode), mode);
+                    var defined = Enum.IsDefined(typeof (Enumeration.Halo5.GameMode), mode);
 
                     if (!defined)
                     {

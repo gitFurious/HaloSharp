@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -23,7 +24,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [SetUp]
         public void Setup()
         {
-            _medals = JsonConvert.DeserializeObject<List<Medal>>(File.ReadAllText(Config.MedalJsonPath));
+            _medals = JsonConvert.DeserializeObject<List<Medal>>(File.ReadAllText(Halo5Config.MedalJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<List<Medal>>(It.IsAny<string>()))
@@ -68,10 +69,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetMedals_SchemaIsValid()
         {
-            var medalsSchema = JSchema.Parse(File.ReadAllText(Config.MedalJsonSchemaPath), new JSchemaReaderSettings
+            var medalsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.MedalJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MedalJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MedalJsonSchemaPath))
             });
 
             var query = new GetMedals()
@@ -85,10 +86,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [Test]
         public async Task GetMedals_ModelMatchesSchema()
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.MedalJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.MedalJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.MedalJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MedalJsonSchemaPath))
             });
 
             var query = new GetMedals()

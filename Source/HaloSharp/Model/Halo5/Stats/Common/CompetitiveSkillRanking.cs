@@ -39,7 +39,7 @@ namespace HaloSharp.Model.Halo5.Stats.Common
         /// </list>
         /// </summary>
         [JsonProperty(PropertyName = "DesignationId")]
-        public Enumeration.CompetitiveSkillRankingDesignation DesignationId { get; set; }
+        public Enumeration.Halo5.CompetitiveSkillRankingDesignation DesignationId { get; set; }
 
         /// <summary>
         /// The percentage of progress towards the next CSR tier.

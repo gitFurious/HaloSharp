@@ -35,7 +35,7 @@ namespace HaloSharp.Validation.Halo5.Profile
             {
                 var crop = getSpartanImage.Parameters["crop"];
 
-                var defined = Enum.IsDefined(typeof(Enumeration.CropType), crop);
+                var defined = Enum.IsDefined(typeof(Enumeration.Halo5.CropType), crop);
 
                 if (!defined)
                 {

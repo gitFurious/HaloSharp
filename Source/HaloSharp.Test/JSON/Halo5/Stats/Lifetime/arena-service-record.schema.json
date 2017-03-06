@@ -27,7 +27,7 @@
       "additionalProperties": false,
       "properties": {
         "PlayerId": {
-          "$ref": "../common/identity.schema.json"
+          "$ref": "../../../common/identity.schema.json"
         },
         "SpartanRank": {
           "type": "integer"
@@ -426,16 +426,7 @@
   "additionalProperties": false,
   "properties": {
     "Links": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "Self": {
-          "$ref": "../common/link.schema.json"
-        }
-      },
-      "required": [
-        "Self"
-      ]
+      "$ref": "../../../common/link.schema.json"
     },
 
     "Results": {

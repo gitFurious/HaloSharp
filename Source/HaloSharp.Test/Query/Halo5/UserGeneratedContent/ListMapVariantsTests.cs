@@ -6,6 +6,7 @@ using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.UserGeneratedContent;
 using HaloSharp.Query.Halo5.UserGeneratedContent;
+using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
 using Moq;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [SetUp]
         public void Setup()
         {
-            _mapVariantResult = JsonConvert.DeserializeObject<MapVariantResult>(File.ReadAllText(Config.UserGeneratedContentMapVariantsJsonPath));
+            _mapVariantResult = JsonConvert.DeserializeObject<MapVariantResult>(File.ReadAllText(Halo5Config.UserGeneratedContentMapVariantsJsonPath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<MapVariantResult>(It.IsAny<string>()))
@@ -56,8 +57,8 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         }
 
         [Test]
-        [TestCase(Enumeration.UserGeneratedContentSort.Name)]
-        public void GetConstructedUri_SortBy_MatchesExpected(Enumeration.UserGeneratedContentSort sort)
+        [TestCase(Enumeration.Halo5.UserGeneratedContentSort.Name)]
+        public void GetConstructedUri_SortBy_MatchesExpected(Enumeration.Halo5.UserGeneratedContentSort sort)
         {
             var query = new ListMapVariants()
                 .SortBy(sort);
@@ -114,8 +115,8 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("ducain23", Enumeration.UserGeneratedContentSort.Name, 10, 5)]
-        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, Enumeration.UserGeneratedContentSort sort, int skip, int take)
+        [TestCase("ducain23", Enumeration.Halo5.UserGeneratedContentSort.Name, 10, 5)]
+        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, Enumeration.Halo5.UserGeneratedContentSort sort, int skip, int take)
         {
             var query = new ListMapVariants()
                 .ForPlayer(gamertag)
@@ -160,10 +161,10 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23")]
         public async Task ListMapVariants_SchemaIsValid(string gamertag)
         {
-            var weaponsSchema = JSchema.Parse(File.ReadAllText(Config.UserGeneratedContentMapVariantsJsonSchemaPath), new JSchemaReaderSettings
+            var weaponsSchema = JSchema.Parse(File.ReadAllText(Halo5Config.UserGeneratedContentMapVariantsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.UserGeneratedContentMapVariantsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.UserGeneratedContentMapVariantsJsonSchemaPath))
             });
 
             var query = new ListMapVariants()
@@ -179,10 +180,10 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23")]
         public async Task ListMapVariants_ModelMatchesSchema(string gamertag)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Config.UserGeneratedContentMapVariantsJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.UserGeneratedContentMapVariantsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Config.UserGeneratedContentMapVariantsJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.UserGeneratedContentMapVariantsJsonSchemaPath))
             });
 
             var query = new ListMapVariants()

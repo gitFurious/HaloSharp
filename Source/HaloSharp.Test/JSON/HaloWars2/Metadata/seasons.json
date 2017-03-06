@@ -1,0 +1,65 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 1,
+    "TotalCount": 1
+  },
+  "ContentItems": [
+    {
+      "Id": 202347,
+      "Type": "HW2Season",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-09-29T08:55:55Z",
+          "ModifiedUtc": "2017-02-03T18:17:42Z",
+          "PublishedUtc": "2017-02-03T19:35:18Z",
+          "Container": -1
+        },
+        "Identity": "2cdf3fae3cf945a581657aff644ccdbc",
+        "Title": "Season - Pre Season - Started - Dev",
+        "HW2Season": {
+          "StartDate": "2016-09-28T16:53:00Z",
+          "DisplayInfo": {
+            "Id": 202342,
+            "Type": "HW2SeasonDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-caarse",
+                "CreatedUtc": "2016-09-29T08:49:46Z",
+                "ModifiedUtc": "2017-02-03T18:33:17Z",
+                "PublishedUtc": "2017-02-03T19:34:17Z",
+                "Container": -1
+              },
+              "Identity": "f2704e55b3b84f88a58a01892fac1f38",
+              "Title": "Season Display Info - Pre Season",
+              "HW2SeasonDisplayInfo": {
+                "Name": "PRE SEASON",
+                "Description": "Not quite ready yet but almost"
+              },
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              }
+            }
+          },
+          "Image": {},
+          "Playlists": []
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202347"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Common;
 using HaloSharp.Model.Halo5.Stats.Common;
 
@@ -9,7 +10,7 @@ namespace HaloSharp.Model.Halo5.UserGeneratedContent
     [Serializable]
     public class GameVariant : IEquatable<GameVariant>
     {
-        public Enumeration.AccessControl AccessControl { get; set; }
+        public Enumeration.Halo5.AccessControl AccessControl { get; set; }
         public bool Banned { get; set; }
         public Variant BaseGame { get; set; }
         public int BaseGameEngineType { get; set; }
