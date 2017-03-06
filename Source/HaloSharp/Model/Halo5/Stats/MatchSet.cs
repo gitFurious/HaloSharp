@@ -4,7 +4,6 @@ using System.Linq;
 using HaloSharp.Converter;
 using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Common;
-using HaloSharp.Model.Halo5.Stats.Common;
 using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Halo5.Stats

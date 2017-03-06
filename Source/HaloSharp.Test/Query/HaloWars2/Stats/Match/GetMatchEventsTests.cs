@@ -1,10 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using HaloSharp.Extension;
-using HaloSharp.Model;
-using HaloSharp.Model.HaloWars2.Stats.Events;
 using HaloSharp.Query.HaloWars2.Stats.Match;
 using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;

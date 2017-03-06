@@ -1,6 +1,5 @@
 ﻿using System;
 using HaloSharp.Model.Common;
-using HaloSharp.Model.Halo5.Stats.Common;
 using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Halo5.Stats.Lifetime.Common

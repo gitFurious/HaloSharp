@@ -1,5 +1,4 @@
-﻿using System;
-using HaloSharp.Model;
+﻿using HaloSharp.Model;
 
 namespace HaloSharp
 {
