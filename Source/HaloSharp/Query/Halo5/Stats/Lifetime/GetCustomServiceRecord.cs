@@ -64,7 +64,7 @@ namespace HaloSharp.Query.Halo5.Stats.Lifetime
             return serviceRecord;
         }
 
-        public string GetConstructedUri()
+        public virtual string GetConstructedUri()
         {
             var builder = new StringBuilder("stats/h5/servicerecords/custom");
 

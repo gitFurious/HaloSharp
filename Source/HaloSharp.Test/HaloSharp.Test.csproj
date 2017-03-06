@@ -63,6 +63,9 @@
     <Compile Include="Config\Halo5Config.cs" />
     <Compile Include="Converter\TimeSpanConverterTests.cs" />
     <Compile Include="Converter\GuidConverterTests.cs" />
+    <Compile Include="Query\Halo5Forge\Stats\CarnageReport\GetCustomMatchDetailsTests.cs" />
+    <Compile Include="Query\Halo5Forge\Stats\GetMatchesTests.cs" />
+    <Compile Include="Query\Halo5Forge\Stats\Lifetime\GetCustomServiceRecordTests.cs" />
     <Compile Include="Query\Halo5\Metadata\GetSeasonsTests.cs" />
     <Compile Include="Query\Halo5\Metadata\GetCampaignMissionsTests.cs" />
     <Compile Include="Query\Halo5\Metadata\GetCommendationsTests.cs" />
@@ -623,10 +626,7 @@
       <Name>HaloSharp</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="JSON\Halo5Forge\" />
-    <Folder Include="Query\Halo5Forge\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

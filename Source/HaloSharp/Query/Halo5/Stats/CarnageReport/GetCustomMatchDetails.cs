@@ -54,7 +54,7 @@ namespace HaloSharp.Query.Halo5.Stats.CarnageReport
             return match;
         }
 
-        public string GetConstructedUri()
+        public virtual string GetConstructedUri()
         {
             var builder = new StringBuilder($"stats/h5/custom/matches/{MatchId}");
 

@@ -107,7 +107,7 @@ namespace HaloSharp.Query.Halo5.Stats
             return matchSet;
         }
 
-        public string GetConstructedUri()
+        public virtual string GetConstructedUri()
         {
             var builder = new StringBuilder($"stats/h5/players/{Player}/matches");
 
