@@ -28,15 +28,15 @@ namespace HaloSharp.Test.Serialization
         [TestCase(HaloWars2Config.SpartanRanksJsonPath, typeof(PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.SpartanRank.View>>))]
         [TestCase(HaloWars2Config.TechsJsonPath, typeof(PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.Tech.View>>))]
 
-        [TestCase(HaloWars2Config.MatchJsonPath, typeof(Model.HaloWars2.Stats.Match))]
-        [TestCase(HaloWars2Config.MatchEventsJsonPath, typeof(Model.HaloWars2.Stats.MatchEventSummary))]
+        [TestCase(HaloWars2Config.MatchJsonPath, typeof(Model.HaloWars2.Stats.CarnageReport.Match))]
+        [TestCase(HaloWars2Config.MatchEventsJsonPath, typeof(Model.HaloWars2.Stats.CarnageReport.MatchEventSummary))]
 
-        [TestCase(HaloWars2Config.CampaignProgressJsonPath, typeof(Model.HaloWars2.Stats.CampaignSummary))]
-        [TestCase(HaloWars2Config.ExperienceSummaryJsonPath, typeof(Model.HaloWars2.Stats.ExperienceSummaryResultSet))]
+        [TestCase(HaloWars2Config.CampaignProgressJsonPath, typeof(Model.HaloWars2.Stats.Lifetime.CampaignSummary))]
+        [TestCase(HaloWars2Config.ExperienceSummaryJsonPath, typeof(Model.HaloWars2.Stats.Lifetime.ExperienceSummaryResultSet))]
         [TestCase(HaloWars2Config.MatchHistoryJsonPath, typeof(Model.Common.MatchSet<Model.HaloWars2.Stats.PlayerMatch>))]
-        [TestCase(HaloWars2Config.PlayerSummaryJsonPath, typeof(Model.HaloWars2.Stats.PlayerSummary))]
-        [TestCase(HaloWars2Config.PlaylistRatingsJsonPath, typeof(Model.HaloWars2.Stats.PlaylistSummaryResultSet))]
-        [TestCase(HaloWars2Config.SeasonSummaryJsonPath, typeof(Model.HaloWars2.Stats.SeasonSummary))]
+        [TestCase(HaloWars2Config.PlayerSummaryJsonPath, typeof(Model.HaloWars2.Stats.Lifetime.PlayerSummary))]
+        [TestCase(HaloWars2Config.PlaylistRatingsJsonPath, typeof(Model.HaloWars2.Stats.Lifetime.PlaylistSummaryResultSet))]
+        [TestCase(HaloWars2Config.SeasonSummaryJsonPath, typeof(Model.HaloWars2.Stats.Lifetime.SeasonSummary))]
         public void IsSerializable(string jsonPath, Type type)
         {
             var o = JsonConvert.DeserializeObject(File.ReadAllText(jsonPath), type);

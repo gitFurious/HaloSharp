@@ -1,9 +1,9 @@
 ﻿using HaloSharp.Model;
-using HaloSharp.Model.HaloWars2.Stats.Events;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using HaloSharp.Model.HaloWars2.Stats.CarnageReport.Events;
 
 namespace HaloSharp.Converter
 {

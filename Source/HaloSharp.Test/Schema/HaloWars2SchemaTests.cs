@@ -70,15 +70,15 @@ namespace HaloSharp.Test.Schema
         [TestCase(HaloWars2Config.SpartanRanksJsonPath, HaloWars2Config.SpartanRanksJsonSchemaPath, typeof(PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.SpartanRank.View>>))]
         [TestCase(HaloWars2Config.TechsJsonPath, HaloWars2Config.TechsJsonSchemaPath, typeof(PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.Tech.View>>))]
 
-        [TestCase(HaloWars2Config.MatchJsonPath, HaloWars2Config.MatchJsonSchemaPath, typeof(Model.HaloWars2.Stats.Match))]
-        [TestCase(HaloWars2Config.MatchEventsJsonPath, HaloWars2Config.MatchEventsJsonSchemaPath, typeof(Model.HaloWars2.Stats.MatchEventSummary))]
+        [TestCase(HaloWars2Config.MatchJsonPath, HaloWars2Config.MatchJsonSchemaPath, typeof(Model.HaloWars2.Stats.CarnageReport.Match))]
+        [TestCase(HaloWars2Config.MatchEventsJsonPath, HaloWars2Config.MatchEventsJsonSchemaPath, typeof(Model.HaloWars2.Stats.CarnageReport.MatchEventSummary))]
 
-        [TestCase(HaloWars2Config.CampaignProgressJsonPath, HaloWars2Config.CampaignProgressJsonSchemaPath, typeof(Model.HaloWars2.Stats.CampaignSummary))]
-        [TestCase(HaloWars2Config.ExperienceSummaryJsonPath, HaloWars2Config.ExperienceSummaryJsonSchemaPath, typeof(Model.HaloWars2.Stats.ExperienceSummaryResultSet))]
+        [TestCase(HaloWars2Config.CampaignProgressJsonPath, HaloWars2Config.CampaignProgressJsonSchemaPath, typeof(Model.HaloWars2.Stats.Lifetime.CampaignSummary))]
+        [TestCase(HaloWars2Config.ExperienceSummaryJsonPath, HaloWars2Config.ExperienceSummaryJsonSchemaPath, typeof(Model.HaloWars2.Stats.Lifetime.ExperienceSummaryResultSet))]
         [TestCase(HaloWars2Config.MatchHistoryJsonPath, HaloWars2Config.MatchHistoryJsonSchemaPath, typeof(Model.Common.MatchSet<Model.HaloWars2.Stats.PlayerMatch>))]
-        [TestCase(HaloWars2Config.PlayerSummaryJsonPath, HaloWars2Config.PlayerSummaryJsonSchemaPath, typeof(Model.HaloWars2.Stats.PlayerSummary))]
-        [TestCase(HaloWars2Config.PlaylistRatingsJsonPath, HaloWars2Config.PlaylistRatingsJsonSchemaPath, typeof(Model.HaloWars2.Stats.PlaylistSummaryResultSet))]
-        [TestCase(HaloWars2Config.SeasonSummaryJsonPath, HaloWars2Config.SeasonSummaryJsonSchemaPath, typeof(Model.HaloWars2.Stats.SeasonSummary))]
+        [TestCase(HaloWars2Config.PlayerSummaryJsonPath, HaloWars2Config.PlayerSummaryJsonSchemaPath, typeof(Model.HaloWars2.Stats.Lifetime.PlayerSummary))]
+        [TestCase(HaloWars2Config.PlaylistRatingsJsonPath, HaloWars2Config.PlaylistRatingsJsonSchemaPath, typeof(Model.HaloWars2.Stats.Lifetime.PlaylistSummaryResultSet))]
+        [TestCase(HaloWars2Config.SeasonSummaryJsonPath, HaloWars2Config.SeasonSummaryJsonSchemaPath, typeof(Model.HaloWars2.Stats.Lifetime.SeasonSummary))]
         public void ModelMatchesSchema(string jsonPath, string schemaPath, Type type)
         {
             var schema = JSchema.Parse(File.ReadAllText(schemaPath), new JSchemaReaderSettings
