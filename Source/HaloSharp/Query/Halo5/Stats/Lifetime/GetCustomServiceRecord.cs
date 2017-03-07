@@ -17,30 +17,20 @@ namespace HaloSharp.Query.Halo5.Stats.Lifetime
 
         private bool _useCache = true;
 
+        public GetCustomServiceRecord(string gamertag)
+        {
+            Parameters["players"] = gamertag;
+        }
+
+        public GetCustomServiceRecord(IEnumerable<string> gamertags)
+        {
+            Parameters["players"] = string.Join(",", gamertags);
+        }
+
         public GetCustomServiceRecord SkipCache()
         {
             _useCache = false;
 
-            return this;
-        }
-
-        /// <summary>
-        ///     A player's gamertag.
-        /// </summary>
-        /// <param name="gamertag">Player's gamertag.</param>
-        public GetCustomServiceRecord ForPlayer(string gamertag)
-        {
-            Parameters["players"] = gamertag;
-            return this;
-        }
-
-        /// <summary>
-        ///     A list of player gamertags. The number of concurrent supported player identifiers for this API is 1-32.
-        /// </summary>
-        /// <param name="gamertags">Player's gamertag(s).</param>
-        public GetCustomServiceRecord ForPlayers(List<string> gamertags)
-        {
-            Parameters["players"] = string.Join(",", gamertags);
             return this;
         }
 

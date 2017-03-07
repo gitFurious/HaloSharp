@@ -34,46 +34,10 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetMapVariant();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{null}/mapvariants/{null}", uri);
-        }
-
-        [Test]
-        [TestCase("ducain23")]
-        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
-        {
-            var query = new GetMapVariant()
-                .ForPlayer(gamertag);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{gamertag}/mapvariants/{null}", uri);
-        }
-
-        [Test]
-        [TestCase("7f1489ad-77bb-42a5-8ffc-5990a0e83dfa")]
-        public void GetConstructedUri_InGameMode_MatchesExpected(string guid)
-        {
-            var query = new GetMapVariant()
-                .ForMapVariantId(new Guid(guid));
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{null}/mapvariants/{guid}", uri);
-        }
-
-        [Test]
         [TestCase("ducain23", "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa")]
         public void GetConstructedUri_Complex_MatchesExpected(string gamertag, string guid)
         {
-            var query = new GetMapVariant()
-                .ForPlayer(gamertag)
-                .ForMapVariantId(new Guid(guid));
+            var query = new GetMapVariant(gamertag, new Guid(guid));
 
             var uri = query.GetConstructedUri();
 
@@ -84,9 +48,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23", "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa")]
         public async Task Query_DoesNotThrow(string gamertag, string guid)
         {
-            var query = new GetMapVariant()
-                .ForPlayer(gamertag)
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(gamertag, new Guid(guid))
                 .SkipCache();
 
             var result = await _mockSession.Query(query);
@@ -99,9 +61,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23", "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa")]
         public async Task GetMapVariant_DoesNotThrow(string gamertag, string guid)
         {
-            var query = new GetMapVariant()
-                .ForPlayer(gamertag)
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(gamertag, new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -119,9 +79,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.UserGeneratedContentMapVariantJsonSchemaPath))
             });
 
-            var query = new GetMapVariant()
-                .ForPlayer(gamertag)
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(gamertag, new Guid(guid))
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -139,9 +97,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.UserGeneratedContentMapVariantJsonSchemaPath))
             });
 
-            var query = new GetMapVariant()
-                .ForPlayer(gamertag)
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(gamertag, new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -156,9 +112,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23", "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa")]
         public async Task GetMapVariant_IsSerializable(string gamertag, string guid)
         {
-            var query = new GetMapVariant()
-                .ForPlayer(gamertag)
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(gamertag, new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -167,35 +121,12 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         }
 
         [Test]
+        [TestCase("00000000000000017", "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa")]
+        [TestCase("!$%", "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa")]
         [ExpectedException(typeof(ValidationException))]
-        public async Task GetMapVariant_MissingPlayer()
+        public async Task GetMapVariant_InvalidGamertag(string gamertag, string guid)
         {
-            var query = new GetMapVariant()
-                .ForMapVariantId(new Guid());
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
-        [TestCase("00000000000000017")]
-        [TestCase("!$%")]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetMapVariant_InvalidGamertag(string gamertag)
-        {
-            var query = new GetMapVariant()
-                .ForPlayer(gamertag);
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetMapVariant_MissingMapVariantId()
-        {
-            var query = new GetMapVariant()
-                .ForPlayer("Player");
+            var query = new GetMapVariant(gamertag, new Guid(guid));
 
             await Global.Session.Query(query);
             Assert.Fail("An exception should have been thrown");

@@ -35,21 +35,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetMapVariant();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("metadata/h5/metadata/map-variants/", uri);
-        }
-
-        [Test]
         [TestCase("cb914b9e-f206-11e4-b447-24be05e24f7e")]
         public void GetConstructedUri_ForMapVariantId_MatchesExpected(string guid)
         {
-            var query = new GetMapVariant()
-                .ForMapVariantId(new Guid(guid));
+            var query = new GetMapVariant(new Guid(guid));
 
             var uri = query.GetConstructedUri();
 
@@ -57,10 +46,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public async Task Query_DoesNotThrow()
+        [TestCase("cb914b9e-f206-11e4-b447-24be05e24f7e")]
+        public async Task Query_DoesNotThrow(string guid)
         {
-            var query = new GetMapVariant()
-                .ForMapVariantId(Guid.Empty);
+            var query = new GetMapVariant(new Guid(guid));
 
             var result = await _mockSession.Query(query);
 
@@ -72,8 +61,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("d9f9c30d-b1be-4381-a5a4-fe29026cca12")]
         public async Task GetMapVariant_DoesNotThrow(string guid)
         {
-            var query = new GetMapVariant()
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -91,8 +79,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.MapVariantJsonSchemaPath))
             });
 
-            var query = new GetMapVariant()
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(new Guid(guid))
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -110,8 +97,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.MapVariantJsonSchemaPath))
             });
 
-            var query = new GetMapVariant()
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -126,8 +112,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("d9f9c30d-b1be-4381-a5a4-fe29026cca12")]
         public async Task GetMapVariant_IsSerializable(string guid)
         {
-            var query = new GetMapVariant()
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -136,11 +121,9 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        [TestCase("00000000-0000-0000-0000-000000000000")]
-        public async Task GetMapVariant_InvalidGuid(string guid)
+        public async Task GetMapVariant_InvalidGuid()
         {
-            var query = new GetMapVariant()
-                .ForMapVariantId(new Guid(guid))
+            var query = new GetMapVariant(Guid.NewGuid())
                 .SkipCache();
 
             try
@@ -156,18 +139,6 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             {
                 Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
             }
-        }
-
-        [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetMapVariant_MissingGuid()
-        {
-            var query = new GetMapVariant()
-                .SkipCache();
-
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
         }
     }
 }

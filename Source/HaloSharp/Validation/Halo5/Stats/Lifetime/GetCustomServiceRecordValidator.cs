@@ -7,13 +7,13 @@ namespace HaloSharp.Validation.Halo5.Stats.Lifetime
 {
     public static class GetCustomServiceRecordValidator
     {
-        public static void Validate(this GetCustomServiceRecord getCustomServiceRecord)
+        public static void Validate(this GetCustomServiceRecord query)
         {
             var validationResult = new ValidationResult();
 
-            if (getCustomServiceRecord.Parameters.ContainsKey("players"))
+            if (query.Parameters.ContainsKey("players"))
             {
-                var players = getCustomServiceRecord.Parameters["players"].Split(',');
+                var players = query.Parameters["players"].Split(',');
 
                 foreach (var player in players)
                 {

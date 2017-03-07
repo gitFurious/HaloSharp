@@ -13,24 +13,18 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
     public class ListGameVariants : IQuery<GameVariantResult>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal string Player;
+        internal readonly string Player;
 
         private bool _useCache = true;
+
+        public ListGameVariants(string gamertag)
+        {
+            Player = gamertag;
+        }
 
         public ListGameVariants SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     The gamertag of the player that owns the listed game variants.
-        /// </summary>
-        /// <param name="gamertag">The gamertag of the player that owns the listed game variants.</param>
-        public ListGameVariants ForPlayer(string gamertag)
-        {
-            Player = gamertag;
 
             return this;
         }

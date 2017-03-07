@@ -34,60 +34,11 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetLeaderboard();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/player-leaderboards/csr/{null}/{null}", uri);
-        }
-
-        [Test]
-        [TestCase("2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
-        public void GetConstructedUri_ForSeasonId_MatchesExpected(string seasonId)
-        {
-            var query = new GetLeaderboard()
-                .ForSeasonId(new Guid(seasonId));
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/player-leaderboards/csr/{seasonId}/{null}", uri);
-        }
-
-        [Test]
-        [TestCase("c98949ae-60a8-43dc-85d7-0feb0b92e719")]
-        public void GetConstructedUri_ForPlaylistId_MatchesExpected(string playlistId)
-        {
-            var query = new GetLeaderboard()
-                .ForPlaylistId(new Guid(playlistId));
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/player-leaderboards/csr/{null}/{playlistId}", uri);
-        }
-
-        [Test]
-        [TestCase(5)]
-        [TestCase(10)]
-        public void GetConstructedUri_Take_MatchesExpected(int take)
-        {
-            var query = new GetLeaderboard()
-                .Take(take);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/player-leaderboards/csr/{null}/{null}?count={take}", uri);
-        }
-
-        [Test]
         [TestCase("2fcc20a0-53ff-4ffb-8f72-eebb2e419273", "2323b76a-db98-4e03-aa37-e171cfbdd1a4", 5)]
         [TestCase("b46c2095-4ca6-4f4b-a565-4702d7cfe586", "c98949ae-60a8-43dc-85d7-0feb0b92e719", 10)]
         public void GetConstructedUri_Complex_MatchesExpected(string seasonId, string playlistId, int take)
         {
-            var query = new GetLeaderboard()
-                .ForSeasonId(new Guid(seasonId))
-                .ForPlaylistId(new Guid(playlistId))
+            var query = new GetLeaderboard(new Guid(seasonId), new Guid(playlistId))
                 .Take(take);
 
             var uri = query.GetConstructedUri();
@@ -100,9 +51,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [TestCase("b46c2095-4ca6-4f4b-a565-4702d7cfe586", "c98949ae-60a8-43dc-85d7-0feb0b92e719")]
         public async Task Query_DoesNotThrow(string seasonId, string playlistId)
         {
-            var query = new GetLeaderboard()
-                .ForSeasonId(new Guid(seasonId))
-                .ForPlaylistId(new Guid(playlistId))
+            var query = new GetLeaderboard(new Guid(seasonId), new Guid(playlistId))
                 .SkipCache();
 
             var result = await _mockSession.Query(query);
@@ -116,9 +65,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [TestCase("b46c2095-4ca6-4f4b-a565-4702d7cfe586", "c98949ae-60a8-43dc-85d7-0feb0b92e719")]
         public async Task GetLeaderboard_DoesNotThrow(string seasonId, string playlistId)
         {
-            var query = new GetLeaderboard()
-                .ForSeasonId(new Guid(seasonId))
-                .ForPlaylistId(new Guid(playlistId))
+            var query = new GetLeaderboard(new Guid(seasonId), new Guid(playlistId))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -137,9 +84,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.LeaderboardJsonSchemaPath))
             });
 
-            var query = new GetLeaderboard()
-                .ForSeasonId(new Guid(seasonId))
-                .ForPlaylistId(new Guid(playlistId))
+            var query = new GetLeaderboard(new Guid(seasonId), new Guid(playlistId))
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -158,9 +103,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.LeaderboardJsonSchemaPath))
             });
 
-            var query = new GetLeaderboard()
-                .ForSeasonId(new Guid(seasonId))
-                .ForPlaylistId(new Guid(playlistId))
+            var query = new GetLeaderboard(new Guid(seasonId), new Guid(playlistId))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -176,9 +119,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [TestCase("b46c2095-4ca6-4f4b-a565-4702d7cfe586", "c98949ae-60a8-43dc-85d7-0feb0b92e719")]
         public async Task GetLeaderboard_IsSerializable(string seasonId, string playlistId)
         {
-            var query = new GetLeaderboard()
-                .ForSeasonId(new Guid(seasonId))
-                .ForPlaylistId(new Guid(playlistId))
+            var query = new GetLeaderboard(new Guid(seasonId), new Guid(playlistId))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -187,23 +128,11 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         }
 
         [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetLeaderboard_MissingParameters()
-        {
-            var query = new GetLeaderboard();
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
         [TestCase(300)]
         [ExpectedException(typeof(ValidationException))]
         public async Task GetLeaderboard_MaximumTake(int take)
         {
-            var query = new GetLeaderboard()
-                .ForSeasonId(Guid.Empty)
-                .ForPlaylistId(Guid.Empty)
+            var query = new GetLeaderboard(Guid.Empty, Guid.Empty)
                 .Take(take)
                 .SkipCache();
 

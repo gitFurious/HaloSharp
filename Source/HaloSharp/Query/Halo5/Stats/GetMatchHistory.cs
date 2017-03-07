@@ -14,27 +14,21 @@ namespace HaloSharp.Query.Halo5.Stats
     ///     processing. If the player is currently in a match, it is not returned in this API. Matches will usually appear
     ///     in this list within a minute of the match ending.
     /// </summary>
-    public class GetMatches : IQuery<MatchSet<PlayerMatch>>
+    public class GetMatchHistory : IQuery<MatchSet<PlayerMatch>>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal string Player;
+        internal readonly string Player;
 
         private bool _useCache = true;
 
-        public GetMatches SkipCache()
-        {
-            _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     The Player's gamertag.
-        /// </summary>
-        /// <param name="gamertag">The Player's gamertag.</param>
-        public GetMatches ForPlayer(string gamertag)
+        public GetMatchHistory(string gamertag)
         {
             Player = gamertag;
+        }
+
+        public GetMatchHistory SkipCache()
+        {
+            _useCache = false;
 
             return this;
         }
@@ -44,7 +38,7 @@ namespace HaloSharp.Query.Halo5.Stats
         ///     warzone).
         /// </summary>
         /// <param name="gameMode">The Game Mode the client is interested in.</param>
-        public GetMatches InGameMode(Enumeration.Halo5.GameMode gameMode)
+        public GetMatchHistory InGameMode(Enumeration.Halo5.GameMode gameMode)
         {
             Parameters["modes"] = gameMode.ToString();
 
@@ -56,7 +50,7 @@ namespace HaloSharp.Query.Halo5.Stats
         ///     warzone).
         /// </summary>
         /// <param name="gameModes">The Game Mode(s) the client is interested in.</param>
-        public GetMatches InGameModes(List<Enumeration.Halo5.GameMode> gameModes)
+        public GetMatchHistory InGameModes(List<Enumeration.Halo5.GameMode> gameModes)
         {
             Parameters["modes"] = string.Join(",", gameModes.Select(g => g.ToString()));
 
@@ -67,7 +61,7 @@ namespace HaloSharp.Query.Halo5.Stats
         ///     When specified, this indicates the starting index (0-based) for which the batch of results will begin at.
         /// </summary>
         /// <param name="count">The starting index (0-based) for which the batch of results will begin at.</param>
-        public GetMatches Skip(int count)
+        public GetMatchHistory Skip(int count)
         {
             Parameters["start"] = count.ToString();
 
@@ -80,7 +74,7 @@ namespace HaloSharp.Query.Halo5.Stats
         ///     instead. The "Count" field in the response will confirm the actual value that was used.
         /// </summary>
         /// <param name="count">The maximum quantity of items the client would like returned.</param>
-        public GetMatches Take(int count)
+        public GetMatchHistory Take(int count)
         {
             Parameters["count"] = count.ToString();
 

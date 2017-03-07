@@ -35,23 +35,12 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetCustomServiceRecord();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("stats/h5/servicerecords/custom", uri);
-        }
-
-        [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
         [TestCase("moussanator")]
         public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
         {
-            var query = new GetCustomServiceRecord()
-                .ForPlayer(gamertag);
+            var query = new GetCustomServiceRecord(gamertag);
 
             var uri = query.GetConstructedUri();
 
@@ -62,8 +51,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("Greenskull", "Furiousn00b")]
         public void GetConstructedUri_ForPlayers_MatchesExpected(string gamertag, string gamertag2)
         {
-            var query = new GetCustomServiceRecord()
-                .ForPlayers(new List<string> { gamertag, gamertag2 });
+            var query = new GetCustomServiceRecord(new List<string> { gamertag, gamertag2 });
 
             var uri = query.GetConstructedUri();
 
@@ -76,8 +64,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetCustomServiceRecord(string gamertag)
         {
-            var query = new GetCustomServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetCustomServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -88,8 +75,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [Test]
         public async Task Query_DoesNotThrow()
         {
-            var query = new GetCustomServiceRecord()
-                .ForPlayer("Player")
+            var query = new GetCustomServiceRecord("Player")
                 .SkipCache();
 
             var result = await _mockSession.Query(query);
@@ -104,8 +90,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetCustomServiceRecord_DoesNotThrow(string gamertag)
         {
-            var query = new GetCustomServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetCustomServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -125,8 +110,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.CustomServiceRecordJsonSchemaPath))
             });
 
-            var query = new GetCustomServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetCustomServiceRecord(gamertag)
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -146,8 +130,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.CustomServiceRecordJsonSchemaPath))
             });
 
-            var query = new GetCustomServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetCustomServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -164,8 +147,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetCustomServiceRecord_IsSerializable(string gamertag)
         {
-            var query = new GetCustomServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetCustomServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -174,23 +156,12 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         }
 
         [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetCustomServiceRecord_MissingPlayer()
-        {
-            var query = new GetCustomServiceRecord();
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
         [TestCase("00000000000000017")]
         [TestCase("!$%")]
         [ExpectedException(typeof(ValidationException))]
         public async Task GetCustomServiceRecord_InvalidGamertag(string gamertag)
         {
-            var query = new GetCustomServiceRecord()
-                .ForPlayer(gamertag);
+            var query = new GetCustomServiceRecord(gamertag);
 
             await Global.Session.Query(query);
             Assert.Fail("An exception should have been thrown");

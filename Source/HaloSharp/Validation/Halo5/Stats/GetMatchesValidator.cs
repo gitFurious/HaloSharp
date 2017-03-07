@@ -8,18 +8,18 @@ namespace HaloSharp.Validation.Halo5.Stats
 {
     public static class GetMatchesValidator
     {
-        public static void Validate(this GetMatches getMatches)
+        public static void Validate(this GetMatchHistory query)
         {
             var validationResult = new ValidationResult();
 
-            if (!getMatches.Player.IsValidGamertag())
+            if (!query.Player.IsValidGamertag())
             {
                 validationResult.Messages.Add("GetMatches query requires a valid Gamertag (Player) to be set.");
             }
 
-            if (getMatches.Parameters.ContainsKey("modes"))
+            if (query.Parameters.ContainsKey("modes"))
             {
-                var modes = getMatches.Parameters["modes"].Split(',');
+                var modes = query.Parameters["modes"].Split(',');
 
                 foreach (var mode in modes)
                 {
@@ -32,10 +32,10 @@ namespace HaloSharp.Validation.Halo5.Stats
                 }
             }
 
-            if (getMatches.Parameters.ContainsKey("start"))
+            if (query.Parameters.ContainsKey("start"))
             {
                 int start;
-                var parsed = int.TryParse(getMatches.Parameters["start"], out start);
+                var parsed = int.TryParse(query.Parameters["start"], out start);
 
                 if (!parsed || start < 0)
                 {
@@ -43,10 +43,10 @@ namespace HaloSharp.Validation.Halo5.Stats
                 }
             }
 
-            if (getMatches.Parameters.ContainsKey("count"))
+            if (query.Parameters.ContainsKey("count"))
             {
                 int count;
-                var parsed = int.TryParse(getMatches.Parameters["count"], out count);
+                var parsed = int.TryParse(query.Parameters["count"], out count);
 
                 if (!parsed || count < 1 || count > 25)
                 {

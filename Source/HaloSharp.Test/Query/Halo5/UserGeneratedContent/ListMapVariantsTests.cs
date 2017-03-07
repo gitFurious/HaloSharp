@@ -35,21 +35,10 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new ListMapVariants();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{null}/mapvariants", uri);
-        }
-
-        [Test]
         [TestCase("ducain23")]
         public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
         {
-            var query = new ListMapVariants()
-                .ForPlayer(gamertag);
+            var query = new ListMapVariants(gamertag);
 
             var uri = query.GetConstructedUri();
 
@@ -57,69 +46,10 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         }
 
         [Test]
-        [TestCase(Enumeration.Halo5.UserGeneratedContentSort.Name)]
-        public void GetConstructedUri_SortBy_MatchesExpected(Enumeration.Halo5.UserGeneratedContentSort sort)
-        {
-            var query = new ListMapVariants()
-                .SortBy(sort);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{null}/mapvariants?sort={sort}", uri);
-        }
-
-        [Test]
-        public void GetConstructedUri_OrderByAscending_MatchesExpected()
-        {
-            var query = new ListMapVariants()
-                .OrderByAscending();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{null}/mapvariants?order=asc", uri);
-        }
-
-        [Test]
-        public void GetConstructedUri_OrderByDescending_MatchesExpected()
-        {
-            var query = new ListMapVariants()
-                .OrderByDescending();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{null}/mapvariants?order=desc", uri);
-        }
-
-        [Test]
-        [TestCase(5)]
-        public void GetConstructedUri_Skip_MatchesExpected(int skip)
-        {
-            var query = new ListMapVariants()
-                .Skip(skip);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{null}/mapvariants?start={skip}", uri);
-        }
-
-        [Test]
-        [TestCase(5)]
-        public void GetConstructedUri_Take_MatchesExpected(int take)
-        {
-            var query = new ListMapVariants()
-                .Take(take);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{null}/mapvariants?count={take}", uri);
-        }
-
-        [Test]
         [TestCase("ducain23", Enumeration.Halo5.UserGeneratedContentSort.Name, 10, 5)]
         public void GetConstructedUri_Complex_MatchesExpected(string gamertag, Enumeration.Halo5.UserGeneratedContentSort sort, int skip, int take)
         {
-            var query = new ListMapVariants()
-                .ForPlayer(gamertag)
+            var query = new ListMapVariants(gamertag)
                 .SortBy(sort)
                 .OrderByAscending()
                 .Skip(skip)
@@ -134,8 +64,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23")]
         public async Task Query_DoesNotThrow(string gamertag)
         {
-            var query = new ListMapVariants()
-                .ForPlayer(gamertag)
+            var query = new ListMapVariants(gamertag)
                 .SkipCache();
 
             var result = await _mockSession.Query(query);
@@ -148,8 +77,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23")]
         public async Task ListMapVariants_DoesNotThrow(string gamertag)
         {
-            var query = new ListMapVariants()
-                .ForPlayer(gamertag)
+            var query = new ListMapVariants(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -167,8 +95,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.UserGeneratedContentMapVariantsJsonSchemaPath))
             });
 
-            var query = new ListMapVariants()
-                .ForPlayer(gamertag)
+            var query = new ListMapVariants(gamertag)
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -186,8 +113,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.UserGeneratedContentMapVariantsJsonSchemaPath))
             });
 
-            var query = new ListMapVariants()
-                .ForPlayer(gamertag)
+            var query = new ListMapVariants(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -202,8 +128,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [TestCase("ducain23")]
         public async Task ListMapVariants_IsSerializable(string gamertag)
         {
-            var query = new ListMapVariants()
-                .ForPlayer(gamertag)
+            var query = new ListMapVariants(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -212,23 +137,12 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         }
 
         [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task ListMapVariants_MissingPlayer()
-        {
-            var query = new ListMapVariants();
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
         [TestCase("00000000000000017")]
         [TestCase("!$%")]
         [ExpectedException(typeof(ValidationException))]
         public async Task ListMapVariants_InvalidGamertag(string gamertag)
         {
-            var query = new ListMapVariants()
-                .ForPlayer(gamertag);
+            var query = new ListMapVariants(gamertag);
 
             await Global.Session.Query(query);
             Assert.Fail("An exception should have been thrown");
@@ -240,8 +154,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         [ExpectedException(typeof(ValidationException))]
         public async Task ListMapVariants_InvalidTake(int take)
         {
-            var query = new ListMapVariants()
-                .ForPlayer("ducain23")
+            var query = new ListMapVariants("ducain23")
                 .Take(take);
 
             await Global.Session.Query(query);

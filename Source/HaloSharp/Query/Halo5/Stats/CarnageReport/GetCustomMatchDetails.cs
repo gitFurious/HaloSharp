@@ -12,9 +12,14 @@ namespace HaloSharp.Query.Halo5.Stats.CarnageReport
     /// </summary>
     public class GetCustomMatchDetails : IQuery<CustomMatch>
     {
-        internal string MatchId;
+        internal readonly Guid MatchId;
 
         private bool _useCache = true;
+
+        public GetCustomMatchDetails(Guid matchId)
+        {
+            MatchId = matchId;
+        }
 
         public GetCustomMatchDetails SkipCache()
         {
@@ -22,18 +27,7 @@ namespace HaloSharp.Query.Halo5.Stats.CarnageReport
 
             return this;
         }
-
-        /// <summary>
-        ///     An ID that uniquely identifies a match. Match IDs can be retrieved from the "GET Matches for Player" API.
-        /// </summary>
-        /// <param name="matchId">The ID that uniquely identifies a match.</param>
-        public GetCustomMatchDetails ForMatchId(Guid matchId)
-        {
-            MatchId = matchId.ToString();
-
-            return this;
-        }
-
+       
         public async Task<CustomMatch> ApplyTo(IHaloSession session)
         {
             this.Validate();

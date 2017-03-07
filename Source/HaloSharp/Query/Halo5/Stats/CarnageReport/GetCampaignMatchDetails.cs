@@ -14,24 +14,18 @@ namespace HaloSharp.Query.Halo5.Stats.CarnageReport
     /// </summary>
     public class GetCampaignMatchDetails : IQuery<CampaignMatch>
     {
-        internal string MatchId;
+        internal readonly Guid MatchId;
 
         private bool _useCache = true;
+
+        public GetCampaignMatchDetails(Guid matchId)
+        {
+            MatchId = matchId;
+        }
 
         public GetCampaignMatchDetails SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     An ID that uniquely identifies a match. Match IDs can be retrieved from the "GET Matches for Player" API.
-        /// </summary>
-        /// <param name="matchId">The ID that uniquely identifies a match.</param>
-        public GetCampaignMatchDetails ForMatchId(Guid matchId)
-        {
-            MatchId = matchId.ToString();
 
             return this;
         }

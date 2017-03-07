@@ -11,23 +11,18 @@ namespace HaloSharp.Query.Halo5.Metadata
     /// </summary>
     public class GetRequisition : IQuery<Requisition>
     {
+        internal readonly Guid RequisitionId;
+
         private bool _useCache = true;
-        internal string Id;
+
+        public GetRequisition(Guid requisitionId)
+        {
+            RequisitionId = requisitionId;
+        }
 
         public GetRequisition SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     An ID that uniquely identifies a Requisition.
-        /// </summary>
-        /// <param name="requisitionId">An ID that uniquely identifies a Requisition.</param>
-        public GetRequisition ForRequisitionId(Guid requisitionId)
-        {
-            Id = requisitionId.ToString();
 
             return this;
         }
@@ -54,7 +49,7 @@ namespace HaloSharp.Query.Halo5.Metadata
 
         public string GetConstructedUri()
         {
-            var builder = new StringBuilder($"metadata/h5/metadata/requisitions/{Id}");
+            var builder = new StringBuilder($"metadata/h5/metadata/requisitions/{RequisitionId}");
 
             return builder.ToString();
         }

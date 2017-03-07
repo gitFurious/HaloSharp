@@ -12,13 +12,6 @@ namespace HaloSharp.Query.Halo5.Metadata
     {
         private bool _useCache = true;
 
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder("metadata/h5/metadata/team-colors");
-
-            return builder.ToString();
-        }
-
         public GetTeamColors SkipCache()
         {
             _useCache = false;
@@ -42,6 +35,13 @@ namespace HaloSharp.Query.Halo5.Metadata
             }
 
             return teamColors;
+        }
+
+        public string GetConstructedUri()
+        {
+            var builder = new StringBuilder("metadata/h5/metadata/team-colors");
+
+            return builder.ToString();
         }
     }
 }

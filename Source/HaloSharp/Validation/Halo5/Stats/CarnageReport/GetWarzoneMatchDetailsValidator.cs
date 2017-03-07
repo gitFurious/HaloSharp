@@ -1,4 +1,5 @@
-﻿using HaloSharp.Exception;
+﻿using System;
+using HaloSharp.Exception;
 using HaloSharp.Model;
 using HaloSharp.Query.Halo5.Stats.CarnageReport;
 
@@ -6,11 +7,11 @@ namespace HaloSharp.Validation.Halo5.Stats.CarnageReport
 {
     public static class GetWarzoneMatchDetailsValidator
     {
-        public static void Validate(this GetWarzoneMatchDetails getWarzoneMatchDetails)
+        public static void Validate(this GetWarzoneMatchDetails query)
         {
             var validationResult = new ValidationResult();
 
-            if (string.IsNullOrWhiteSpace(getWarzoneMatchDetails.MatchId))
+            if (query.MatchId == default(Guid))
             {
                 validationResult.Messages.Add("GetWarzoneMatchDetails query requires a MatchId to be set.");
             }

@@ -1,4 +1,5 @@
-﻿using HaloSharp.Exception;
+﻿using System;
+using HaloSharp.Exception;
 using HaloSharp.Model;
 using HaloSharp.Query.Halo5.Metadata;
 
@@ -6,11 +7,11 @@ namespace HaloSharp.Validation.Halo5.Metadata
 {
     public static class GetMapVariantValidator
     {
-        public static void Validate(this GetMapVariant getMapVariant)
+        public static void Validate(this GetMapVariant query)
         {
             var validationResult = new ValidationResult();
 
-            if (string.IsNullOrWhiteSpace(getMapVariant.Id))
+            if (query.MapVariantId == default(Guid))
             {
                 validationResult.Messages.Add("GetMapVariant query requires a MapVariantId to be set.");
             }

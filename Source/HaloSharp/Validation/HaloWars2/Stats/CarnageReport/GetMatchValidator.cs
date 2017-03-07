@@ -7,7 +7,7 @@ namespace HaloSharp.Validation.HaloWars2.Stats.CarnageReport
 {
     public static class GetMatchValidator
     {
-        public static void Validate(this GetMatch query)
+        public static void Validate(this GetMatchDetails query)
         {
             var validationResult = new ValidationResult();
 

@@ -11,23 +11,18 @@ namespace HaloSharp.Query.Halo5.Metadata
     /// </summary>
     public class GetRequisitionPack : IQuery<RequisitionPack>
     {
+        internal readonly Guid RequisitionPackId;
+
         private bool _useCache = true;
-        internal string Id;
+
+        public GetRequisitionPack(Guid requisitionPackId)
+        {
+            RequisitionPackId = requisitionPackId;
+        }
 
         public GetRequisitionPack SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     An ID that uniquely identifies a requisition pack.
-        /// </summary>
-        /// <param name="requisitionPackId">An ID that uniquely identifies a requisition pack.</param>
-        public GetRequisitionPack ForRequisitionPackId(Guid requisitionPackId)
-        {
-            Id = requisitionPackId.ToString();
 
             return this;
         }
@@ -54,7 +49,7 @@ namespace HaloSharp.Query.Halo5.Metadata
 
         public string GetConstructedUri()
         {
-            var builder = new StringBuilder($"metadata/h5/metadata/requisition-packs/{Id}");
+            var builder = new StringBuilder($"metadata/h5/metadata/requisition-packs/{RequisitionPackId}");
 
             return builder.ToString();
         }

@@ -1,4 +1,5 @@
-﻿using HaloSharp.Exception;
+﻿using System;
+using HaloSharp.Exception;
 using HaloSharp.Model;
 using HaloSharp.Query.Halo5.UserGeneratedContent;
 using HaloSharp.Validation.Common;
@@ -7,16 +8,16 @@ namespace HaloSharp.Validation.Halo5.UserGeneratedContent
 {
     public static class GetMapVariantValidator
     {
-        public static void Validate(this GetMapVariant GetMapVariant)
+        public static void Validate(this GetMapVariant query)
         {
             var validationResult = new ValidationResult();
 
-            if (!GetMapVariant.Player.IsValidGamertag())
+            if (!query.Player.IsValidGamertag())
             {
                 validationResult.Messages.Add("GetMapVariant query requires a valid Gamertag (Player) to be set.");
             }
 
-            if (string.IsNullOrWhiteSpace(GetMapVariant.Id))
+            if (query.MapVariantId == default(Guid))
             {
                 validationResult.Messages.Add("GetMapVariant query requires a Map Variant (Id) to be set.");
             }

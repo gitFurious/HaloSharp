@@ -7,19 +7,19 @@ namespace HaloSharp.Validation.Halo5.UserGeneratedContent
 {
     public static class ListMapVariantsValidator
     {
-        public static void Validate(this ListMapVariants listMapVariants)
+        public static void Validate(this ListMapVariants query)
         {
             var validationResult = new ValidationResult();
 
-            if (!listMapVariants.Player.IsValidGamertag())
+            if (!query.Player.IsValidGamertag())
             {
                 validationResult.Messages.Add("ListMapVariants query requires a valid Gamertag (Player) to be set.");
             }
 
-            if (listMapVariants.Parameters.ContainsKey("count"))
+            if (query.Parameters.ContainsKey("count"))
             {
                 int count;
-                var parsed = int.TryParse(listMapVariants.Parameters["count"], out count);
+                var parsed = int.TryParse(query.Parameters["count"], out count);
 
                 if (!parsed || count < 1 || count > 100)
                 {

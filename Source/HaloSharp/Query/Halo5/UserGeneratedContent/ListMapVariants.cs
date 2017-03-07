@@ -13,24 +13,18 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
     public class ListMapVariants : IQuery<MapVariantResult>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal string Player;
+        internal readonly string Player;
 
         private bool _useCache = true;
+
+        public ListMapVariants(string gamertag)
+        {
+            Player = gamertag;
+        }
 
         public ListMapVariants SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     The gamertag of the player that owns the listed map variants.
-        /// </summary>
-        /// <param name="gamertag">The gamertag of the player that owns the listed map variants.</param>
-        public ListMapVariants ForPlayer(string gamertag)
-        {
-            Player = gamertag;
 
             return this;
         }

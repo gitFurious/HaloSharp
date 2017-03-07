@@ -11,35 +11,20 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
     /// </summary>
     public class GetMapVariant : IQuery<MapVariant>
     {
+        internal readonly string Player;
+        internal readonly Guid MapVariantId;
+
         private bool _useCache = true;
-        internal string Player;
-        internal string Id;
+
+        public GetMapVariant(string gamertag, Guid mapVariantId)
+        {
+            Player = gamertag;
+            MapVariantId = mapVariantId;
+        }
 
         public GetMapVariant SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     The gamertag of the player that owns the map variant.
-        /// </summary>
-        /// <param name="gamertag">The gamertag of the player that owns the map variant.</param>
-        public GetMapVariant ForPlayer(string gamertag)
-        {
-            Player = gamertag;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     The ID for the map variant.
-        /// </summary>
-        /// <param name="mapVariantId">The ID for the map variant.</param>
-        public GetMapVariant ForMapVariantId(Guid mapVariantId)
-        {
-            Id = mapVariantId.ToString();
 
             return this;
         }
@@ -66,7 +51,7 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
 
         public string GetConstructedUri()
         {
-            var builder = new StringBuilder($"ugc/h5/players/{Player}/mapvariants/{Id}");
+            var builder = new StringBuilder($"ugc/h5/players/{Player}/mapvariants/{MapVariantId}");
 
             return builder.ToString();
         }

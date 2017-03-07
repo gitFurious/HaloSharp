@@ -15,36 +15,20 @@ namespace HaloSharp.Query.Halo5.Stats
     public class GetLeaderboard : IQuery<Leaderboard>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
+        internal readonly Guid PlaylistId;
+        internal readonly Guid SeasonId;
 
         private bool _useCache = true;
-        internal string PlaylistId;
-        internal string SeasonId;
+
+        public GetLeaderboard(Guid seasonId, Guid playlistId)
+        {
+            SeasonId = seasonId;
+            PlaylistId = playlistId;
+        }
 
         public GetLeaderboard SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     The ID for the season.
-        /// </summary>
-        /// <param name="seasonId">The ID that uniquely identifies a season.</param>
-        public GetLeaderboard ForSeasonId(Guid seasonId)
-        {
-            SeasonId = seasonId.ToString();
-
-            return this;
-        }
-
-        /// <summary>
-        ///     The ID for the playlist.
-        /// </summary>
-        /// <param name="playlistId">The ID that uniquely identifies a playlist.</param>
-        public GetLeaderboard ForPlaylistId(Guid playlistId)
-        {
-            PlaylistId = playlistId.ToString();
 
             return this;
         }

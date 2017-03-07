@@ -9,21 +9,21 @@ namespace HaloSharp.Validation.Halo5.Profile
 {
     public static class GetSpartanImageValidator
     {
-        public static void Validate(this GetSpartanImage getSpartanImage)
+        public static void Validate(this GetSpartanImage query)
         {
             var validationResult = new ValidationResult();
 
-            if (!getSpartanImage.Player.IsValidGamertag())
+            if (!query.Player.IsValidGamertag())
             {
                 validationResult.Messages.Add("GetSpartanImage query requires a valid Gamertag (Player) to be set.");
             }
 
-            if (getSpartanImage.Parameters.ContainsKey("size"))
+            if (query.Parameters.ContainsKey("size"))
             {
                 var validSizes = new List<int> { 95, 128, 190, 256, 512 };
 
                 int size;
-                var parsed = int.TryParse(getSpartanImage.Parameters["size"], out size);
+                var parsed = int.TryParse(query.Parameters["size"], out size);
 
                 if (!parsed || !validSizes.Contains(size))
                 {
@@ -31,9 +31,9 @@ namespace HaloSharp.Validation.Halo5.Profile
                 }
             }
 
-            if (getSpartanImage.Parameters.ContainsKey("crop"))
+            if (query.Parameters.ContainsKey("crop"))
             {
-                var crop = getSpartanImage.Parameters["crop"];
+                var crop = query.Parameters["crop"];
 
                 var defined = Enum.IsDefined(typeof(Enumeration.Halo5.CropType), crop);
 

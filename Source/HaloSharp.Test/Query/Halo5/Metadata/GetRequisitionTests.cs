@@ -35,21 +35,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetRequisition();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("metadata/h5/metadata/requisitions/", uri);
-        }
-
-        [Test]
         [TestCase("a23a896d-57e6-45c3-970b-27550f0e7184")]
         public void GetConstructedUri_ForRequisitionId_MatchesExpected(string guid)
         {
-            var query = new GetRequisition()
-                .ForRequisitionId(new Guid(guid));
+            var query = new GetRequisition(new Guid(guid));
 
             var uri = query.GetConstructedUri();
 
@@ -57,10 +46,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public async Task Query_DoesNotThrow()
+        [TestCase("a23a896d-57e6-45c3-970b-27550f0e7184")]
+        public async Task Query_DoesNotThrow(string guid)
         {
-            var query = new GetRequisition()
-                .ForRequisitionId(Guid.Empty);
+            var query = new GetRequisition(new Guid(guid));
 
             var result = await _mockSession.Query(query);
 
@@ -72,8 +61,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("a23a896d-57e6-45c3-970b-27550f0e7184")]
         public async Task GetRequisition_DoesNotThrow(string guid)
         {
-            var query = new GetRequisition()
-                .ForRequisitionId(new Guid(guid))
+            var query = new GetRequisition(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -91,8 +79,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.RequisitionJsonSchemaPath))
             });
 
-            var query = new GetRequisition()
-                .ForRequisitionId(new Guid(guid))
+            var query = new GetRequisition(new Guid(guid))
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -110,8 +97,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.RequisitionJsonSchemaPath))
             });
 
-            var query = new GetRequisition()
-                .ForRequisitionId(new Guid(guid))
+            var query = new GetRequisition(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -126,8 +112,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("a23a896d-57e6-45c3-970b-27550f0e7184")]
         public async Task GetRequisition_IsSerializable(string guid)
         {
-            var query = new GetRequisition()
-                .ForRequisitionId(new Guid(guid))
+            var query = new GetRequisition(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -136,11 +121,9 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        [TestCase("00000000-0000-0000-0000-000000000000")]
-        public async Task GetRequisition_InvalidGuid(string guid)
+        public async Task GetRequisition_InvalidGuid()
         {
-            var query = new GetRequisition()
-                .ForRequisitionId(new Guid(guid))
+            var query = new GetRequisition(Guid.NewGuid())
                 .SkipCache();
 
             try
@@ -156,17 +139,6 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             {
                 Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
             }
-        }
-
-        [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetRequisition_MissingGuid()
-        {
-            var query = new GetRequisition()
-                .SkipCache();
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
         }
     }
 }

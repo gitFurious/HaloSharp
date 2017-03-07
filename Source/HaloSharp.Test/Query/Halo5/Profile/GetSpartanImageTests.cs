@@ -13,22 +13,11 @@ namespace HaloSharp.Test.Query.Halo5.Profile
     public class GetSpartanImageTests
     {
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetSpartanImage();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"profile/h5/profiles/{null}/spartan{null}", uri);
-        }
-
-        [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
         public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
         {
-            var query = new GetSpartanImage()
-                .ForPlayer(gamertag);
+            var query = new GetSpartanImage(gamertag);
 
             var uri = query.GetConstructedUri();
 
@@ -36,29 +25,29 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         }
 
         [Test]
-        [TestCase(5)]
-        [TestCase(10)]
-        public void GetConstructedUri_Size_MatchesExpected(int size)
+        [TestCase("Furiousn00b", 5)]
+        [TestCase("Furiousn00b", 10)]
+        public void GetConstructedUri_Size_MatchesExpected(string gamertag, int size)
         {
-            var query = new GetSpartanImage()
+            var query = new GetSpartanImage(gamertag)
                 .Size(size);
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual($"profile/h5/profiles/{null}/spartan?size={size}", uri);
+            Assert.AreEqual($"profile/h5/profiles/{gamertag}/spartan?size={size}", uri);
         }
 
         [Test]
-        [TestCase(Enumeration.Halo5.CropType.Full)]
-        [TestCase(Enumeration.Halo5.CropType.Portrait)]
-        public void GetConstructedUri_Crop_MatchesExpected(Enumeration.Halo5.CropType cropType)
+        [TestCase("Furiousn00b", Enumeration.Halo5.CropType.Full)]
+        [TestCase("Furiousn00b", Enumeration.Halo5.CropType.Portrait)]
+        public void GetConstructedUri_Crop_MatchesExpected(string gamertag, Enumeration.Halo5.CropType cropType)
         {
-            var query = new GetSpartanImage()
+            var query = new GetSpartanImage(gamertag)
                 .Crop(cropType);
 
             var uri = query.GetConstructedUri();
 
-            Assert.AreEqual($"profile/h5/profiles/{null}/spartan?crop={cropType}", uri);
+            Assert.AreEqual($"profile/h5/profiles/{gamertag}/spartan?crop={cropType}", uri);
         }
 
         [Test]
@@ -66,8 +55,7 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         [TestCase("Furiousn00b", 10, Enumeration.Halo5.CropType.Portrait)]
         public void GetConstructedUri_Complex_MatchesExpected(string gamertag, int size, Enumeration.Halo5.CropType cropType)
         {
-            var query = new GetSpartanImage()
-                .ForPlayer(gamertag)
+            var query = new GetSpartanImage(gamertag)
                 .Size(size)
                 .Crop(cropType);
 
@@ -81,8 +69,7 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         [TestCase("Furiousn00b")]
         public async Task GetSpartanImage(string gamertag)
         {
-            var query = new GetSpartanImage()
-                .ForPlayer(gamertag)
+            var query = new GetSpartanImage(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -91,15 +78,14 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         }
 
         [Test]
-        [TestCase(95)]
-        [TestCase(128)]
-        [TestCase(190)]
-        [TestCase(256)]
-        [TestCase(512)]
-        public async Task GetSpartanImage_Size(int size)
+        [TestCase("Furiousn00b", 95)]
+        [TestCase("Furiousn00b", 128)]
+        [TestCase("Furiousn00b", 190)]
+        [TestCase("Furiousn00b", 256)]
+        [TestCase("Furiousn00b", 512)]
+        public async Task GetSpartanImage_Size(string gamertag, int size)
         {
-            var query = new GetSpartanImage()
-                .ForPlayer("Furiousn00b")
+            var query = new GetSpartanImage(gamertag)
                 .Size(size)
                 .SkipCache();
 
@@ -109,11 +95,11 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         }
 
         [Test]
-        public async Task GetSpartanImage_Crop()
+        [TestCase("Furiousn00b", Enumeration.Halo5.CropType.Portrait)]
+        public async Task GetSpartanImage_Crop(string gamertag, Enumeration.Halo5.CropType crop)
         {
-            var query = new GetSpartanImage()
-                .ForPlayer("Furiousn00b")
-                .Crop(Enumeration.Halo5.CropType.Portrait)
+            var query = new GetSpartanImage(gamertag)
+                .Crop(crop)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -126,8 +112,7 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         [TestCase("Furiousn00b")]
         public async Task GetSpartanImage_IsSerializable(string gamertag)
         {
-            var query = new GetSpartanImage()
-                .ForPlayer("Furiousn00b")
+            var query = new GetSpartanImage(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -136,16 +121,15 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         }
 
         [Test]
-        [TestCase(94)]
-        [TestCase(127)]
-        [TestCase(189)]
-        [TestCase(255)]
-        [TestCase(511)]
+        [TestCase("Furiousn00b", 94)]
+        [TestCase("Furiousn00b", 127)]
+        [TestCase("Furiousn00b", 189)]
+        [TestCase("Furiousn00b", 255)]
+        [TestCase("Furiousn00b", 511)]
         [ExpectedException(typeof(ValidationException))]
-        public async Task GetSpartanImage_InvalidSize(int size)
+        public async Task GetSpartanImage_InvalidSize(string gamertag, int size)
         {
-            var query = new GetSpartanImage()
-                .ForPlayer("Furiousn00b")
+            var query = new GetSpartanImage(gamertag)
                 .Size(size);
 
             await Global.Session.Query(query);
@@ -158,18 +142,7 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         [ExpectedException(typeof(ValidationException))]
         public async Task GetSpartanImage_InvalidGamertag(string gamertag)
         {
-            var query = new GetSpartanImage()
-                .ForPlayer(gamertag);
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetSpartanImage_MissingGamertag()
-        {
-            var query = new GetSpartanImage();
+            var query = new GetSpartanImage(gamertag);
 
             await Global.Session.Query(query);
             Assert.Fail("An exception should have been thrown");

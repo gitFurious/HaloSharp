@@ -41,7 +41,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.CarnageReport
         {
             var matchId = new Guid(guid);
 
-            var query = new GetMatch(matchId);
+            var query = new GetMatchDetails(matchId);
 
             var uri = query.GetConstructedUri();
 
@@ -54,7 +54,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.CarnageReport
         {
             var matchId = new Guid(guid);
 
-            var query = new GetMatch(matchId)
+            var query = new GetMatchDetails(matchId)
                 .SkipCache();
 
             var result = await _mockSession.Query(query);
@@ -69,7 +69,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.CarnageReport
         {
             var matchId = new Guid(guid);
             
-            var query = new GetMatch(matchId)
+            var query = new GetMatchDetails(matchId)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -89,7 +89,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.CarnageReport
 
             var matchId = new Guid(guid);
 
-            var query = new GetMatch(matchId)
+            var query = new GetMatchDetails(matchId)
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -109,7 +109,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.CarnageReport
 
             var matchId = new Guid(guid);
 
-            var query = new GetMatch(matchId)
+            var query = new GetMatchDetails(matchId)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -126,7 +126,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.CarnageReport
         {
             var matchId = new Guid(guid);
 
-            var query = new GetMatch(matchId)
+            var query = new GetMatchDetails(matchId)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);

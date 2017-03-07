@@ -35,23 +35,12 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetWarzoneServiceRecord();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("stats/h5/servicerecords/warzone", uri);
-        }
-
-        [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
         [TestCase("moussanator")]
         public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
         {
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayer(gamertag);
+            var query = new GetWarzoneServiceRecord(gamertag);
 
             var uri = query.GetConstructedUri();
 
@@ -62,8 +51,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("Greenskull", "Furiousn00b")]
         public void GetConstructedUri_ForPlayers_MatchesExpected(string gamertag, string gamertag2)
         {
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayers(new List<string> { gamertag, gamertag2 });
+            var query = new GetWarzoneServiceRecord(new List<string> { gamertag, gamertag2 });
 
             var uri = query.GetConstructedUri();
 
@@ -76,8 +64,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord(string gamertag)
         {
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetWarzoneServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -88,8 +75,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [Test]
         public async Task Query_DoesNotThrow()
         {
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayer("Player")
+            var query = new GetWarzoneServiceRecord("Player")
                 .SkipCache();
 
             var result = await _mockSession.Query(query);
@@ -104,8 +90,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord_DoesNotThrow(string gamertag)
         {
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetWarzoneServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -125,8 +110,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.WarzoneServiceRecordJsonSchemaPath))
             });
 
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetWarzoneServiceRecord(gamertag)
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -146,8 +130,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.WarzoneServiceRecordJsonSchemaPath))
             });
 
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetWarzoneServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -164,8 +147,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetWarzoneServiceRecord_IsSerializable(string gamertag)
         {
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetWarzoneServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -174,23 +156,12 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         }
 
         [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetWarzoneServiceRecord_MissingPlayer()
-        {
-            var query = new GetWarzoneServiceRecord();
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
         [TestCase("00000000000000017")]
         [TestCase("!$%")]
         [ExpectedException(typeof(ValidationException))]
         public async Task GetWarzoneServiceRecord_InvalidGamertag(string gamertag)
         {
-            var query = new GetWarzoneServiceRecord()
-                .ForPlayer(gamertag);
+            var query = new GetWarzoneServiceRecord(gamertag);
 
             await Global.Session.Query(query);
             Assert.Fail("An exception should have been thrown");

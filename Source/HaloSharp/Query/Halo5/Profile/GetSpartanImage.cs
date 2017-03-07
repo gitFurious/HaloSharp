@@ -14,24 +14,18 @@ namespace HaloSharp.Query.Halo5.Profile
     public class GetSpartanImage : IQuery<GetImage>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal string Player;
+        internal readonly string Player;
 
         private bool _useCache = true;
+
+        public GetSpartanImage(string gamertag)
+        {
+            Player = gamertag;
+        }
 
         public GetSpartanImage SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     The Player's gamertag.
-        /// </summary>
-        /// <param name="gamertag">The Player's gamertag.</param>
-        public GetSpartanImage ForPlayer(string gamertag)
-        {
-            Player = gamertag;
 
             return this;
         }

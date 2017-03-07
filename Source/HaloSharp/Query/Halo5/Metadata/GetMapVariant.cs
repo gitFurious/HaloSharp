@@ -11,23 +11,18 @@ namespace HaloSharp.Query.Halo5.Metadata
     /// </summary>
     public class GetMapVariant : IQuery<MapVariant>
     {
+        internal readonly Guid MapVariantId;
+
         private bool _useCache = true;
-        internal string Id;
+
+        public GetMapVariant(Guid mapVariantId)
+        {
+            MapVariantId = mapVariantId;
+        }
 
         public GetMapVariant SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     An ID that uniquely identifies a Map Variant..
-        /// </summary>
-        /// <param name="mapVariantId">An ID that uniquely identifies a Map Variant.</param>
-        public GetMapVariant ForMapVariantId(Guid mapVariantId)
-        {
-            Id = mapVariantId.ToString();
 
             return this;
         }
@@ -54,7 +49,7 @@ namespace HaloSharp.Query.Halo5.Metadata
 
         public string GetConstructedUri()
         {
-            var builder = new StringBuilder($"metadata/h5/metadata/map-variants/{Id}");
+            var builder = new StringBuilder($"metadata/h5/metadata/map-variants/{MapVariantId}");
 
             return builder.ToString();
         }

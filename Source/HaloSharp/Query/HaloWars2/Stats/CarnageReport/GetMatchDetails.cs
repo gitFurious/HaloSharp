@@ -5,18 +5,18 @@ using HaloSharp.Validation.HaloWars2.Stats.CarnageReport;
 
 namespace HaloSharp.Query.HaloWars2.Stats.CarnageReport
 {
-    public class GetMatch : IQuery<Match>
+    public class GetMatchDetails : IQuery<Match>
     {
         internal readonly Guid MatchId;
 
         private bool _useCache = true;
 
-        public GetMatch(Guid matchId)
+        public GetMatchDetails(Guid matchId)
         {
             MatchId = matchId;
         }
 
-        public GetMatch SkipCache()
+        public GetMatchDetails SkipCache()
         {
             _useCache = false;
 

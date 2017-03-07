@@ -35,23 +35,12 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetArenaServiceRecord();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("stats/h5/servicerecords/arena", uri);
-        }
-
-        [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
         [TestCase("moussanator ")]
         public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
         {
-            var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag);
+            var query = new GetArenaServiceRecord(gamertag);
 
             var uri = query.GetConstructedUri();
 
@@ -62,25 +51,11 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("Greenskull", "Furiousn00b")]
         public void GetConstructedUri_ForPlayers_MatchesExpected(string gamertag, string gamertag2)
         {
-            var query = new GetArenaServiceRecord()
-                .ForPlayers(new List<string> { gamertag, gamertag2});
+            var query = new GetArenaServiceRecord(new List<string> {gamertag, gamertag2});
 
             var uri = query.GetConstructedUri();
 
             Assert.AreEqual($"stats/h5/servicerecords/arena?players={gamertag},{gamertag2}", uri);
-        }
-
-        [Test]
-        [TestCase("2041d318-dd22-47c2-a487-2818ecf14e41")]
-        [TestCase("2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
-        public void GetConstructedUri_ForSeasonId_MatchesExpected(string guid)
-        {
-            var query = new GetArenaServiceRecord()
-                .ForSeasonId(new Guid(guid));
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/servicerecords/arena?seasonId={guid}", uri);
         }
 
         [Test]
@@ -89,8 +64,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator", "b46c2095-4ca6-4f4b-a565-4702d7cfe586")]
         public void GetConstructedUri_Complex_MatchesExpected(string gamertag, string guid)
         {
-            var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetArenaServiceRecord(gamertag)
                 .ForSeasonId(new Guid(guid));
 
             var uri = query.GetConstructedUri();
@@ -104,8 +78,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetArenaServiceRecord(string gamertag)
         {
-            var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetArenaServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -116,8 +89,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [Test]
         public async Task Query_DoesNotThrow()
         {
-            var query = new GetArenaServiceRecord()
-                .ForPlayer("Player")
+            var query = new GetArenaServiceRecord("Player")
                 .SkipCache();
 
             var result = await _mockSession.Query(query);
@@ -132,8 +104,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetArenaServiceRecord_DoesNotThrow(string gamertag)
         {
-            var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetArenaServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -153,8 +124,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.ArenaServiceRecordJsonSchemaPath))
             });
 
-            var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetArenaServiceRecord(gamertag)
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -174,8 +144,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.ArenaServiceRecordJsonSchemaPath))
             });
 
-            var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetArenaServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -192,8 +161,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [TestCase("moussanator")]
         public async Task GetArenaServiceRecord_IsSerializable(string gamertag)
         {
-            var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag)
+            var query = new GetArenaServiceRecord(gamertag)
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -202,23 +170,12 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         }
 
         [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetArenaServiceRecord_MissingPlayer()
-        {
-            var query = new GetArenaServiceRecord();
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
         [TestCase("00000000000000017")]
         [TestCase("!$%")]
         [ExpectedException(typeof(ValidationException))]
         public async Task GetArenaServiceRecord_InvalidGamertag(string gamertag)
         {
-            var query = new GetArenaServiceRecord()
-                .ForPlayer(gamertag);
+            var query = new GetArenaServiceRecord(gamertag);
 
             await Global.Session.Query(query);
             Assert.Fail("An exception should have been thrown");

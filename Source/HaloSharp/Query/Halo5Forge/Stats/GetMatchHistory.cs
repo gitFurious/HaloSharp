@@ -3,8 +3,10 @@ using System.Text;
 
 namespace HaloSharp.Query.Halo5Forge.Stats
 {
-    public class GetMatches : Halo5.Stats.GetMatches
+    public class GetMatchHistory : Halo5.Stats.GetMatchHistory
     {
+        public GetMatchHistory(string gamertag) : base(gamertag) { }
+
         public override string GetConstructedUri()
         {
             var builder = new StringBuilder($"stats/h5pc/players/{Player}/matches");

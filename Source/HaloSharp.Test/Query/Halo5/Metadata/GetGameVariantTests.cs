@@ -35,21 +35,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetGameVariant();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("metadata/h5/metadata/game-variants/", uri);
-        }
-
-        [Test]
         [TestCase("fa7808ca-970e-4912-ba4d-92f7ae4499e8")]
         public void GetConstructedUri_ForGameVariantId_MatchesExpected(string guid)
         {
-            var query = new GetGameVariant()
-                .ForGameVariantId(new Guid(guid));
+            var query = new GetGameVariant(new Guid(guid));
 
             var uri = query.GetConstructedUri();
 
@@ -57,10 +46,10 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public async Task Query_DoesNotThrow()
+        [TestCase("fa7808ca-970e-4912-ba4d-92f7ae4499e8")]
+        public async Task Query_DoesNotThrow(string guid)
         {
-            var query = new GetGameVariant()
-                .ForGameVariantId(Guid.Empty);
+            var query = new GetGameVariant(new Guid(guid));
 
             var result = await _mockSession.Query(query);
 
@@ -72,8 +61,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("fa7808ca-970e-4912-ba4d-92f7ae4499e8")]
         public async Task GetGameVariant_DoesNotThrow(string guid)
         {
-            var query = new GetGameVariant()
-                .ForGameVariantId(new Guid(guid))
+            var query = new GetGameVariant(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -91,8 +79,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.GameVariantJsonSchemaPath))
             });
 
-            var query = new GetGameVariant()
-                .ForGameVariantId(new Guid(guid))
+            var query = new GetGameVariant(new Guid(guid))
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -110,8 +97,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.GameVariantJsonSchemaPath))
             });
 
-            var query = new GetGameVariant()
-                .ForGameVariantId(new Guid(guid))
+            var query = new GetGameVariant(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -126,8 +112,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         [TestCase("fa7808ca-970e-4912-ba4d-92f7ae4499e8")]
         public async Task GetGameVariant_IsSerializable(string guid)
         {
-            var query = new GetGameVariant()
-                .ForGameVariantId(new Guid(guid))
+            var query = new GetGameVariant(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -136,11 +121,9 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        [TestCase("00000000-0000-0000-0000-000000000000")]
-        public async Task GetGameVariant_InvalidGuid(string guid)
+        public async Task GetGameVariant_InvalidGuid()
         {
-            var query = new GetGameVariant()
-                .ForGameVariantId(new Guid(guid))
+            var query = new GetGameVariant(Guid.NewGuid())
                 .SkipCache();
 
             try
@@ -156,17 +139,6 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             {
                 Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
             }
-        }
-
-        [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetGameVariant_MissingGuid()
-        {
-            var query = new GetGameVariant()
-                .SkipCache();
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
         }
     }
 }

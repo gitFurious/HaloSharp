@@ -11,23 +11,18 @@ namespace HaloSharp.Query.Halo5.Metadata
     /// </summary>
     public class GetGameVariant : IQuery<GameVariant>
     {
+        internal readonly Guid GameVariantId;
+
         private bool _useCache = true;
-        internal string Id;
+
+        public GetGameVariant(Guid gameVariantId)
+        {
+            GameVariantId = gameVariantId;
+        }
 
         public GetGameVariant SkipCache()
         {
             _useCache = false;
-
-            return this;
-        }
-
-        /// <summary>
-        ///     An ID that uniquely identifies a Game Variant.
-        /// </summary>
-        /// <param name="gameVariantId">An ID that uniquely identifies a Game Variant.</param>
-        public GetGameVariant ForGameVariantId(Guid gameVariantId)
-        {
-            Id = gameVariantId.ToString();
 
             return this;
         }
@@ -54,7 +49,7 @@ namespace HaloSharp.Query.Halo5.Metadata
 
         public string GetConstructedUri()
         {
-            var builder = new StringBuilder($"metadata/h5/metadata/game-variants/{Id}");
+            var builder = new StringBuilder($"metadata/h5/metadata/game-variants/{GameVariantId}");
 
             return builder.ToString();
         }

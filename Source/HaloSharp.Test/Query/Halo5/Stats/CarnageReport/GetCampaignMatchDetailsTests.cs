@@ -35,21 +35,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
-        {
-            var query = new GetCampaignMatchDetails();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("stats/h5/campaign/matches/", uri);
-        }
-
-        [Test]
         [TestCase("00000000-0000-0000-0000-000000000000")]
         public void GetConstructedUri_ForMatchId_MatchesExpected(string guid)
         {
-            var query = new GetCampaignMatchDetails()
-                .ForMatchId(new Guid(guid));
+            var query = new GetCampaignMatchDetails(new Guid(guid));
 
             var uri = query.GetConstructedUri();
 
@@ -57,10 +46,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         }
 
         [Test]
-        public async Task Query_DoesNotThrow()
+        [TestCase("71fe5636-9db1-41fe-871d-515cd5e0ed87")]
+        public async Task Query_DoesNotThrow(string guid)
         {
-            var query = new GetCampaignMatchDetails()
-                .ForMatchId(Guid.Empty)
+            var query = new GetCampaignMatchDetails(new Guid(guid))
                 .SkipCache();
 
             var result = await _mockSession.Query(query);
@@ -73,8 +62,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         [TestCase("71fe5636-9db1-41fe-871d-515cd5e0ed87")]
         public async Task GetCampaignMatchDetails_DoesNotThrow(string guid)
         {
-            var query = new GetCampaignMatchDetails()
-                .ForMatchId(new Guid(guid))
+            var query = new GetCampaignMatchDetails(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -92,8 +80,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.CampaignMatchJsonSchemaPath))
             });
 
-            var query = new GetCampaignMatchDetails()
-                .ForMatchId(new Guid(guid))
+            var query = new GetCampaignMatchDetails(new Guid(guid))
                 .SkipCache();
 
             var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
@@ -111,8 +98,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.CampaignMatchJsonSchemaPath))
             });
 
-            var query = new GetCampaignMatchDetails()
-                .ForMatchId(new Guid(guid))
+            var query = new GetCampaignMatchDetails(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -127,8 +113,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         [TestCase("71fe5636-9db1-41fe-871d-515cd5e0ed87")]
         public async Task GetCampaignMatchDetails_IsSerializable(string guid)
         {
-            var query = new GetCampaignMatchDetails()
-                .ForMatchId(new Guid(guid))
+            var query = new GetCampaignMatchDetails(new Guid(guid))
                 .SkipCache();
 
             var result = await Global.Session.Query(query);
@@ -137,11 +122,9 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         }
 
         [Test]
-        [TestCase("00000000-0000-0000-0000-000000000000")]
         public async Task GetCampaignMatchDetails_InvalidGuid(string guid)
         {
-            var query = new GetCampaignMatchDetails()
-                .ForMatchId(new Guid(guid))
+            var query = new GetCampaignMatchDetails(Guid.NewGuid())
                 .SkipCache();
 
             try
@@ -157,16 +140,6 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
             {
                 Assert.Fail("Unexpected exception of type {0} caught: {1}", e.GetType(), e.Message);
             }
-        }
-
-        [Test]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetCampaignMatchDetails_MissingGuid()
-        {
-            var query = new GetCampaignMatchDetails();
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
         }
     }
 }

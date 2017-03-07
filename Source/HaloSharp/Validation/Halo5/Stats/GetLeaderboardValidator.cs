@@ -1,4 +1,5 @@
-﻿using HaloSharp.Exception;
+﻿using System;
+using HaloSharp.Exception;
 using HaloSharp.Model;
 using HaloSharp.Query.Halo5.Stats;
 
@@ -6,24 +7,24 @@ namespace HaloSharp.Validation.Halo5.Stats
 {
     public static class GetLeaderboardValidator
     {
-        public static void Validate(this GetLeaderboard getLeaderboard)
+        public static void Validate(this GetLeaderboard query)
         {
             var validationResult = new ValidationResult();
 
-            if (string.IsNullOrEmpty(getLeaderboard.SeasonId))
+            if (query.SeasonId == default(Guid))
             {
                 validationResult.Messages.Add("GetLeaderboard query requires a SeasonId to be set.");
             }
 
-            if (string.IsNullOrEmpty(getLeaderboard.PlaylistId))
+            if (query.PlaylistId == default(Guid))
             {
                 validationResult.Messages.Add("GetLeaderboard query requires a PlaylistId to be set.");
             }
 
-            if (getLeaderboard.Parameters.ContainsKey("count"))
+            if (query.Parameters.ContainsKey("count"))
             {
                 int count;
-                var parsed = int.TryParse(getLeaderboard.Parameters["count"], out count);
+                var parsed = int.TryParse(query.Parameters["count"], out count);
 
                 if (!parsed || count < 1 || count > 250)
                 {
