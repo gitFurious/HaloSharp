@@ -3,7 +3,6 @@ using System.IO;
 using System.Threading.Tasks;
 using HaloSharp.Exception;
 using HaloSharp.Extension;
-using HaloSharp.Model.HaloWars2.Stats;
 using HaloSharp.Model.HaloWars2.Stats.Lifetime;
 using HaloSharp.Query.HaloWars2.Stats.Lifetime;
 using HaloSharp.Test.Config;

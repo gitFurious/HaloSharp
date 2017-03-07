@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using HaloSharp.Model.HaloWars2.Stats;
 using HaloSharp.Model.HaloWars2.Stats.CarnageReport;
 using HaloSharp.Validation.HaloWars2.Stats.CarnageReport;
 

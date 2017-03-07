@@ -5,7 +5,6 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.CarnageReport;
-using HaloSharp.Model.Halo5.Stats.CarnageReport.Events;
 using HaloSharp.Query.Halo5.Stats.CarnageReport;
 using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
