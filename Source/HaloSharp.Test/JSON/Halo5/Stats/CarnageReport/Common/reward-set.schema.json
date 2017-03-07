@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -9,13 +10,13 @@
       "type": "integer"
     },
     "SpartanRankSource": {
-      "type": ["integer", "null"]
+      "type": [ "integer", "null" ]
     },
     "CommendationLevelId": {
-      "type": ["string", "null"]
+      "type": [ "string", "null" ]
     },
     "CommendationSource": {
-      "type": ["string", "null"]
+      "type": [ "string", "null" ]
     }
   },
   "required": [

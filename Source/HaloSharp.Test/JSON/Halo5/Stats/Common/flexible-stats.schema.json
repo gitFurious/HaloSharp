@@ -1,6 +1,7 @@
 {
   "definitions": {
     "StatCount": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -16,7 +17,9 @@
         "Count"
       ]
     },
+
     "Timelapse": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -34,6 +37,7 @@
     }
   },
 
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,
   "properties": {

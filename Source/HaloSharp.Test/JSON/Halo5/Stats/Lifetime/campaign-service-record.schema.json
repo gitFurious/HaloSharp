@@ -1,6 +1,7 @@
 {
   "definitions": {
     "CampaignServiceRecordResult": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -22,7 +23,9 @@
         "Result"
       ]
     },
+
     "CampaignResult": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -48,7 +51,9 @@
         "CampaignStat"
       ]
     },
+
     "CampaignStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -212,7 +217,9 @@
         "CampaignMissionStats"
       ]
     },
+
     "CampaignMissionStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -385,7 +392,9 @@
         "MissionId"
       ]
     },
+
     "DifficultyStats": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -403,7 +412,9 @@
         }
       }
     },
+
     "DifficultyStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -415,7 +426,6 @@
         },
         "Skulls": {
           "type": "array",
-          "additionalItems": false,
           "items": {
             "type": "integer"
           }

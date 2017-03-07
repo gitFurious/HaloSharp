@@ -1,6 +1,7 @@
 {
   "definitions": {
     "Medal": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -40,7 +41,9 @@
         "contentId"
       ]
     },
+
     "SpriteLocation": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": [ "null", "object" ],
       "additionalProperties": false,
       "properties": {

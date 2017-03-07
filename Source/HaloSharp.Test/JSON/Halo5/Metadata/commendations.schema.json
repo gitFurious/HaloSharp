@@ -1,6 +1,7 @@
 {
   "definitions": {
     "Category": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -28,7 +29,9 @@
         "contentId"
       ]
     },
+
     "Commendation": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -82,7 +85,9 @@
         "contentId"
       ]
     },
+
     "Level": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -106,7 +111,9 @@
         "contentId"
       ]
     },
+
     "RequiredLevel": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {

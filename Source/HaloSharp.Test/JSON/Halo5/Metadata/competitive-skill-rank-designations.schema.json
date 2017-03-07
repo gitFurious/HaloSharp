@@ -1,6 +1,7 @@
 {
   "definitions": {
     "CompetitiveSkillRankDesignation": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -35,7 +36,9 @@
         "contentId"
       ]
     },
+
     "Tier": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {

@@ -1,6 +1,7 @@
 {
   "definitions": {
     "Enemy": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -9,7 +10,6 @@
         },
         "Attachments": {
           "type": "array",
-          "additionalItems": false,
           "items": {
             "type": "integer"
           }
@@ -20,7 +20,9 @@
         "Attachments"
       ]
     },
+
     "EnemySet": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -36,7 +38,9 @@
         "TotalKills"
       ]
     },
+
     "Impulse": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -52,7 +56,9 @@
         "Count"
       ]
     },
+
     "MedalAward": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -68,7 +74,9 @@
         "Count"
       ]
     },
+
     "WeaponId": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -77,7 +85,6 @@
         },
         "Attachments": {
           "type": "array",
-          "additionalItems": false,
           "items": {
             "type": "integer"
           }
@@ -88,7 +95,9 @@
         "Attachments"
       ]
     },
+
     "WeaponStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {

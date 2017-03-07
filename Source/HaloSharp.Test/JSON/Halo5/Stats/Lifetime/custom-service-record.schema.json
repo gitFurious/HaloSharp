@@ -1,6 +1,7 @@
 {
   "definitions": {
     "CustomServiceRecordResult": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -22,7 +23,9 @@
         "Result"
       ]
     },
+
     "CustomResult": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -48,7 +51,9 @@
         "CustomStats"
       ]
     },
+
     "CustomStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {

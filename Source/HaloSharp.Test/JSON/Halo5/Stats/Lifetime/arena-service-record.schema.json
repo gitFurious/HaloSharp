@@ -1,6 +1,7 @@
 {
   "definitions": {
     "ArenaServiceRecordResult": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -22,7 +23,9 @@
         "Result"
       ]
     },
+
     "ArenaResult": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -48,7 +51,9 @@
         "ArenaStats"
       ]
     },
+
     "ArenaStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -199,50 +204,52 @@
         }
       },
       "required": [
-          "TotalKills",
-          "TotalHeadshots",
-          "TotalWeaponDamage",
-          "TotalShotsFired",
-          "TotalShotsLanded",
-          "WeaponWithMostKills",
-          "TotalMeleeKills",
-          "TotalMeleeDamage",
-          "TotalAssassinations",
-          "TotalGroundPoundKills",
-          "TotalGroundPoundDamage",
-          "TotalShoulderBashKills",
-          "TotalShoulderBashDamage",
-          "TotalGrenadeDamage",
-          "TotalPowerWeaponKills",
-          "TotalPowerWeaponDamage",
-          "TotalPowerWeaponGrabs",
-          "TotalPowerWeaponPossessionTime",
-          "TotalDeaths",
-          "TotalAssists",
-          "TotalGamesCompleted",
-          "TotalGamesWon",
-          "TotalGamesLost",
-          "TotalGamesTied",
-          "TotalTimePlayed",
-          "TotalGrenadeKills",
-          "MedalAwards",
-          "DestroyedEnemyVehicles",
-          "EnemyKills",
-          "WeaponStats",
-          "Impulses",
-          "TotalSpartanKills",
+        "TotalKills",
+        "TotalHeadshots",
+        "TotalWeaponDamage",
+        "TotalShotsFired",
+        "TotalShotsLanded",
+        "WeaponWithMostKills",
+        "TotalMeleeKills",
+        "TotalMeleeDamage",
+        "TotalAssassinations",
+        "TotalGroundPoundKills",
+        "TotalGroundPoundDamage",
+        "TotalShoulderBashKills",
+        "TotalShoulderBashDamage",
+        "TotalGrenadeDamage",
+        "TotalPowerWeaponKills",
+        "TotalPowerWeaponDamage",
+        "TotalPowerWeaponGrabs",
+        "TotalPowerWeaponPossessionTime",
+        "TotalDeaths",
+        "TotalAssists",
+        "TotalGamesCompleted",
+        "TotalGamesWon",
+        "TotalGamesLost",
+        "TotalGamesTied",
+        "TotalTimePlayed",
+        "TotalGrenadeKills",
+        "MedalAwards",
+        "DestroyedEnemyVehicles",
+        "EnemyKills",
+        "WeaponStats",
+        "Impulses",
+        "TotalSpartanKills",
         "FastestMatchWin",
 
-          "ArenaPlaylistStats",
-          "ArenaPlaylistStatsSeasonId",
-          "HighestCsrAttained",
-          "ArenaGameBaseVariantStats",
-          "TopGameBaseVariants",
-          "HighestCsrPlaylistId",
-          "HighestCsrSeasonId"
-        ]
+        "ArenaPlaylistStats",
+        "ArenaPlaylistStatsSeasonId",
+        "HighestCsrAttained",
+        "ArenaGameBaseVariantStats",
+        "TopGameBaseVariants",
+        "HighestCsrPlaylistId",
+        "HighestCsrSeasonId"
+      ]
     },
+
     "ArenaPlaylistStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {

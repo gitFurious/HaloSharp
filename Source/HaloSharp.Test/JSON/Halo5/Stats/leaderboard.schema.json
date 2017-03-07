@@ -1,7 +1,9 @@
 {
   "definitions": {
     "Result": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "Player": {
           "$ref": "../../common/identity.schema.json"
@@ -17,13 +19,13 @@
         "Player",
         "Rank",
         "Score"
-      ],
-      "additionalProperties": false
+      ]
     }
   },
 
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "Start": {
       "type": "integer"
@@ -44,7 +46,6 @@
       "$ref": "../../common/link.schema.json"
     }
   },
-  "additionalProperties": false,
   "required": [
     "Start",
     "Count",

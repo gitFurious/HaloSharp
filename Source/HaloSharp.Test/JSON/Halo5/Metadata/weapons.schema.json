@@ -1,6 +1,7 @@
 {
   "definitions": {
     "Weapon": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {

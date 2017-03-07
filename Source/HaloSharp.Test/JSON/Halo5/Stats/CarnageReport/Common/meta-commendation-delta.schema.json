@@ -1,6 +1,7 @@
 {
   "definitions": {
     "Requirement": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -26,6 +27,7 @@
     }
   },
 
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,
   "properties": {

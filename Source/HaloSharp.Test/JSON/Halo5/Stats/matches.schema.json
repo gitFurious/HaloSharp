@@ -1,93 +1,7 @@
 {
   "definitions": {
-    "GameVariant": {
-      "type": [ "object", "null" ],
-      "additionalProperties": false,
-      "properties": {
-        "ResourceType": {
-          "type": "integer"
-        },
-        "ResourceId": {
-          "type": "string"
-        },
-        "OwnerType": {
-          "type": "integer"
-        },
-        "Owner": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "ResourceType",
-        "ResourceId",
-        "OwnerType",
-        "Owner"
-      ]
-    },
-    "Id": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "MatchId": {
-          "type": "string"
-        },
-        "GameMode": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "MatchId",
-        "GameMode"
-      ]
-    },
-    "MapVariant": {
-      "$ref": "../common/variant.schema.json"
-    },
-    "Player": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "Player": {
-          "$ref": "../../common/identity.schema.json"
-        },
-        "TeamId": {
-          "type": "integer"
-        },
-        "Rank": {
-          "type": "integer"
-        },
-        "Result": {
-          "type": "integer"
-        },
-        "TotalKills": {
-          "type": "integer"
-        },
-        "TotalDeaths": {
-          "type": "integer"
-        },
-        "TotalAssists": {
-          "type": "integer"
-        },
-        "PreMatchRatings": {
-          "type": "null"
-        },
-        "PostMatchRatings": {
-          "type": "null"
-        }
-      },
-      "required": [
-        "Player",
-        "TeamId",
-        "Rank",
-        "Result",
-        "TotalKills",
-        "TotalDeaths",
-        "TotalAssists",
-        "PreMatchRatings",
-        "PostMatchRatings"
-      ]
-    },
     "Result": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -104,13 +18,13 @@
           "type": "string"
         },
         "MapVariant": {
-          "$ref": "#/definitions/MapVariant"
+          "$ref": "../common/variant.schema.json"
         },
         "GameBaseVariantId": {
           "type": "string"
         },
         "GameVariant": {
-          "$ref": "#/definitions/GameVariant"
+          "$ref": "../common/variant.schema.json"
         },
         "MatchDuration": {
           "type": "string"
@@ -157,7 +71,27 @@
         "MatchCompletedDateFidelity"
       ]
     },
+
+    "Id": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MatchId": {
+          "type": "string"
+        },
+        "GameMode": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "MatchId",
+        "GameMode"
+      ]
+    },
+
     "Team": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -175,6 +109,52 @@
         "Id",
         "Score",
         "Rank"
+      ]
+    },
+
+    "Player": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Player": {
+          "$ref": "../../common/identity.schema.json"
+        },
+        "TeamId": {
+          "type": "integer"
+        },
+        "Rank": {
+          "type": "integer"
+        },
+        "Result": {
+          "type": "integer"
+        },
+        "TotalKills": {
+          "type": "integer"
+        },
+        "TotalDeaths": {
+          "type": "integer"
+        },
+        "TotalAssists": {
+          "type": "integer"
+        },
+        "PreMatchRatings": {
+          "type": "null"
+        },
+        "PostMatchRatings": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "Player",
+        "TeamId",
+        "Rank",
+        "Result",
+        "TotalKills",
+        "TotalDeaths",
+        "TotalAssists",
+        "PreMatchRatings",
+        "PostMatchRatings"
       ]
     }
   },

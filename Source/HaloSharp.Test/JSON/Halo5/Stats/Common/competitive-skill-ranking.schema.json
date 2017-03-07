@@ -1,5 +1,6 @@
 {
-  "type": [ "object", "null" ],
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": ["object", "null"],
   "additionalProperties": false,
   "properties": {
     "Tier": {
@@ -19,10 +20,10 @@
     }
   },
   "required": [
-	  "Tier",
-	  "DesignationId",
-	  "Csr",
-	  "PercentToNextTier",
-	  "Rank"
+    "Tier",
+    "DesignationId",
+    "Csr",
+    "PercentToNextTier",
+    "Rank"
   ]
 }

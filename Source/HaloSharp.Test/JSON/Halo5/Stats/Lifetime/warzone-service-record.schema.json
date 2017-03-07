@@ -1,6 +1,7 @@
 {
   "definitions": {
     "WarzoneServiceRecordResult": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -22,7 +23,9 @@
         "Result"
       ]
     },
+
     "WarzoneResult": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -48,7 +51,9 @@
         "WarzoneStat"
       ]
     },
+
     "WarzoneStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -216,7 +221,9 @@
         "TotalPiesEarned"
       ]
     },
+
     "ScenarioStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -398,7 +405,6 @@
     "Links": {
       "$ref": "../../../common/link.schema.json"
     },
-
     "Results": {
       "type": "array",
       "items": {
@@ -408,7 +414,6 @@
   },
   "required": [
     "Links",
-
     "Results"
   ]
 }
