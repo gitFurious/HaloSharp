@@ -6,9 +6,6 @@ using HaloSharp.Validation.Halo5.Metadata;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    /// <summary>
-    ///     Construct a query to retrieve detailed Game Variant Metadata. Use them to translate IDs from other APIs.
-    /// </summary>
     public class GetGameVariant : IQuery<GameVariant>
     {
         internal readonly Guid GameVariantId;

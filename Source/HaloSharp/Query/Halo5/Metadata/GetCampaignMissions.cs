@@ -5,9 +5,6 @@ using HaloSharp.Model.Halo5.Metadata;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    /// <summary>
-    ///     Construct a query to retrieve detailed Campaign Mission Metadata. Use them to translate IDs from other APIs.
-    /// </summary>
     public class GetCampaignMissions : IQuery<List<CampaignMission>>
     {
         private bool _useCache = true;

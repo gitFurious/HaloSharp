@@ -7,9 +7,6 @@ using HaloSharp.Validation.Halo5.UserGeneratedContent;
 
 namespace HaloSharp.Query.Halo5.UserGeneratedContent
 {
-    /// <summary>
-    ///     Construct a query to retrieve metadata about player created game variants.
-    /// </summary>
     public class ListGameVariants : IQuery<GameVariantResult>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
@@ -29,12 +26,6 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
             return this;
         }
 
-        /// <summary>
-        ///     When specified, this indicates what field should be used to sort the results as the primary sort order. 
-        ///     When omitted, "modified" (descending) is the assumed primary sort order. Allowed sort fields are: name, 
-        ///     description, accesibility, created, modified, bookmarkCount.
-        /// </summary>
-        /// <param name="sort">The field that should be used to sort the results as the primary sort order.</param>
         public ListGameVariants SortBy(Model.Enumeration.Halo5.UserGeneratedContentSort sort)
         {
             Parameters["sort"] = sort.ToString();
@@ -42,9 +33,6 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
             return this;
         }
 
-        /// <summary>
-        ///     When specified, this indicates the ordering that will be applied. When omitted, "desc" is assumed. 
-        /// </summary>
         public ListGameVariants OrderByDescending()
         {
             Parameters["order"] = "desc";
@@ -52,9 +40,6 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
             return this;
         }
 
-        /// <summary>
-        ///     When specified, this indicates the ordering that will be applied. When omitted, "desc" is assumed. 
-        /// </summary>
         public ListGameVariants OrderByAscending()
         {
             Parameters["order"] = "asc";
@@ -62,10 +47,6 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
             return this;
         }
 
-        /// <summary>
-        ///     When specified, this indicates the starting index (0-based) for which the list of results will begin at.
-        /// </summary>
-        /// <param name="count">The starting index (0-based) for which the list of results will begin at.</param>
         public ListGameVariants Skip(int count)
         {
             Parameters["start"] = count.ToString();
@@ -73,12 +54,6 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
             return this;
         }
 
-        /// <summary>
-        ///     When specified, this indicates the maximum quantity of items the client would like returned in the
-        ///     response. When the value is greater than the allowed range [1,100], the maximum allowed value is used
-        ///     instead. The "Count" field in the response will confirm the actual value that was used.
-        /// </summary>
-        /// <param name="count">The maximum quantity of items the client would like returned.</param>
         public ListGameVariants Take(int count)
         {
             Parameters["count"] = count.ToString();

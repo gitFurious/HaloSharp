@@ -8,10 +8,6 @@ using HaloSharp.Validation.Halo5.Stats;
 
 namespace HaloSharp.Query.Halo5.Stats
 {
-    /// <summary>
-    ///     Construct a query to retrieve the player leaderboard. The leaderboard consists of the top players for a playlist in
-    ///     a season
-    /// </summary>
     public class GetLeaderboard : IQuery<Leaderboard>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
@@ -33,13 +29,6 @@ namespace HaloSharp.Query.Halo5.Stats
             return this;
         }
 
-        /// <summary>
-        ///     When specified, this indicates the maximum quantity of items the client would like returned in the response. When
-        ///     omitted, 200 is assumed. When the value contains a non-digit or is exactly "0", HTTP 400 ("Bad Request") is
-        ///     returned. When the value is greater than the allowed range [1,250], the maximum allowed value is used instead. The
-        ///     "Count" field in the response will confirm the actual value that was used.
-        /// </summary>
-        /// <param name="count">The maximum quantity of items the client would like returned.</param>
         public GetLeaderboard Take(int count)
         {
             Parameters["count"] = count.ToString();

@@ -6,9 +6,6 @@ using HaloSharp.Validation.Halo5.Metadata;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    /// <summary>
-    ///     Construct a query to retrieve detailed Map Variant Metadata. Use them to translate IDs from other APIs.
-    /// </summary>
     public class GetMapVariant : IQuery<MapVariant>
     {
         internal readonly Guid MapVariantId;

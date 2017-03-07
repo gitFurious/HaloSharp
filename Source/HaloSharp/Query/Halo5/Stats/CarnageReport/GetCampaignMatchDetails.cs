@@ -6,12 +6,6 @@ using HaloSharp.Validation.Halo5.Stats.CarnageReport;
 
 namespace HaloSharp.Query.Halo5.Stats.CarnageReport
 {
-    /// <summary>
-    ///     Construct a query to retrieve detailed statistics for a match. Some match details are available while the match
-    ///     is in-progress, but  the behavior for incomplete matches in undefined. Every time a player plays a portion of a
-    ///     Campaign mission, a match will be generated whether the player finishes the mission or not. If the "match" ends
-    ///     because the mission was completed, this will be indicated in the response.
-    /// </summary>
     public class GetCampaignMatchDetails : IQuery<CampaignMatch>
     {
         internal readonly Guid MatchId;

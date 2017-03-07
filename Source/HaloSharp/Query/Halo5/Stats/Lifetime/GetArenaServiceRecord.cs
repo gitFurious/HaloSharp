@@ -8,10 +8,6 @@ using HaloSharp.Validation.Halo5.Stats.Lifetime;
 
 namespace HaloSharp.Query.Halo5.Stats.Lifetime
 {
-    /// <summary>
-    ///     Construct a query to retrieve players' Service Records. A Service Record contains a player's lifetime
-    ///     statistics in the game mode.
-    /// </summary>
     public class GetArenaServiceRecord : IQuery<ArenaServiceRecord>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
@@ -35,10 +31,6 @@ namespace HaloSharp.Query.Halo5.Stats.Lifetime
             return this;
         }
 
-        /// <summary>
-        ///     When specified, this indicates the Guid of the season to request the Arena Playlist Stats for.
-        /// </summary>
-        /// <param name="seasonId">The ID that uniquely identifies a season.</param>
         public GetArenaServiceRecord ForSeasonId(Guid seasonId)
         {
             Parameters["seasonId"] = seasonId.ToString();

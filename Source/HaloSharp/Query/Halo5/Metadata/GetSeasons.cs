@@ -5,9 +5,6 @@ using HaloSharp.Model.Halo5.Metadata;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    /// <summary>
-    ///     Construct a query to retrieve detailed Season Metadata. Use them to translate IDs from other APIs.
-    /// </summary>
     public class GetSeasons : IQuery<List<Season>>
     {
         private bool _useCache = true;

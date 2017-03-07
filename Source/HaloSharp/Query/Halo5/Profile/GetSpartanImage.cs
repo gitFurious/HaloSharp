@@ -8,9 +8,6 @@ using HaloSharp.Validation.Halo5.Profile;
 
 namespace HaloSharp.Query.Halo5.Profile
 {
-    /// <summary>
-    ///     Construct a query to retrieve a player's Spartan Image Metadata. Use them to translate IDs from other APIs.
-    /// </summary>
     public class GetSpartanImage : IQuery<GetImage>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
@@ -30,11 +27,6 @@ namespace HaloSharp.Query.Halo5.Profile
             return this;
         }
 
-        /// <summary>
-        ///     An optional size (specified in pixels) of the image requested. When specified, this value must be one of the
-        ///     following values: 95, 128, 190, 256, 512.
-        /// </summary>
-        /// <param name="size">An optional size (specified in pixels) of the image requested.</param>
         public GetSpartanImage Size(int size)
         {
             Parameters["size"] = size.ToString();
@@ -42,10 +34,6 @@ namespace HaloSharp.Query.Halo5.Profile
             return this;
         }
 
-        /// <summary>
-        ///     An optional crop that will be used to determine what portion of the Spartan is returned in the image.
-        /// </summary>
-        /// <param name="cropType">Crop that will be used to determine what portion of the Spartan is returned.</param>
         public GetSpartanImage Crop(Enumeration.Halo5.CropType cropType)
         {
             Parameters["crop"] = cropType.ToString();

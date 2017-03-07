@@ -5,9 +5,6 @@ using HaloSharp.Model.Halo5.Metadata;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    /// <summary>
-    ///     Construct a query to retrieve detailed Playlist Metadata. Use them to translate IDs from other APIs.
-    /// </summary>
     public class GetPlaylists : IQuery<List<Playlist>>
     {
         private bool _useCache = true;

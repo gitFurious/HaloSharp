@@ -7,10 +7,6 @@ using HaloSharp.Validation.Halo5.Stats.Lifetime;
 
 namespace HaloSharp.Query.Halo5.Stats.Lifetime
 {
-    /// <summary>
-    ///     Construct a query to retrieve players' Service Records. A Service Record contains a player's lifetime
-    ///     statistics in the game mode.
-    /// </summary>
     public class GetWarzoneServiceRecord : IQuery<WarzoneServiceRecord>
     {
         internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();

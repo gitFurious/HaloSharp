@@ -6,9 +6,6 @@ using HaloSharp.Validation.Halo5.Metadata;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    /// <summary>
-    ///     Construct a query to retrieve detailed Requisition Pack Metadata. Use them to translate IDs from other APIs.
-    /// </summary>
     public class GetRequisitionPack : IQuery<RequisitionPack>
     {
         internal readonly Guid RequisitionPackId;

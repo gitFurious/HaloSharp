@@ -6,10 +6,6 @@ using HaloSharp.Validation.Halo5.Stats.CarnageReport;
 
 namespace HaloSharp.Query.Halo5.Stats.CarnageReport
 {
-    /// <summary>
-    ///     Construct a query to retrieve detailed statistics for a match. Some match details are available while the match
-    ///     is in-progress, but the behavior for incomplete matches in undefined.
-    /// </summary>
     public class GetCustomMatchDetails : IQuery<CustomMatch>
     {
         internal readonly Guid MatchId;

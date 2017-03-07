@@ -6,9 +6,6 @@ using HaloSharp.Validation.Halo5.UserGeneratedContent;
 
 namespace HaloSharp.Query.Halo5.UserGeneratedContent
 {
-    /// <summary>
-    ///     Construct a query to retrieve metadata about player created map variants.
-    /// </summary>
     public class GetMapVariant : IQuery<MapVariant>
     {
         internal readonly string Player;
