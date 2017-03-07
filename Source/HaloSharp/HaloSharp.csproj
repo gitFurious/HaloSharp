@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache.cs" />
+    <Compile Include="Converter\Halo5MatchEventConverter.cs" />
     <Compile Include="Converter\HaloWars2MatchEventConverter.cs" />
     <Compile Include="Converter\GuidConverter.cs" />
     <Compile Include="Converter\MillisecondConverter.cs" />
@@ -88,6 +89,16 @@
     <Compile Include="Model\Halo5\Metadata\Skull.cs" />
     <Compile Include="Model\CacheSettings.cs" />
     <Compile Include="Model\Halo5\Profile\GetImage.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\Death.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\Impulse.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\MatchEvent.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\Medal.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\PlayerSpawn.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\RoundEnd.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\RoundStart.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponDrop.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponPickup.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponPickupPad.cs" />
     <Compile Include="Model\HaloWars2\Metadata\CampaignLevel\View.cs" />
     <Compile Include="Model\HaloWars2\Metadata\CampaignLevel\CampaignLevel.cs" />
     <Compile Include="Model\HaloWars2\Metadata\Card\DisplayInfo\DisplayInfo.cs" />
@@ -190,7 +201,7 @@
     <Compile Include="Model\Halo5\Stats\CarnageReport\CampaignMatch.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Common\BoostInfo.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Common\MetaCommendationDelta.cs" />
-    <Compile Include="Model\Halo5\Stats\CarnageReport\MatchEvents.cs" />
+    <Compile Include="Model\Halo5\Stats\CarnageReport\MatchEventSummary.cs" />
     <Compile Include="Model\Halo5\Stats\Common\FlexibleStats.cs" />
     <Compile Include="Model\Halo5\Stats\Common\CompetitiveSkillRanking.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Common\CreditsEarned.cs" />
@@ -364,7 +375,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\Halo5Forge\" />
     <Folder Include="Response\HaloWars2\Stats\" />
     <Folder Include="Validation\Halo5Forge\" />
   </ItemGroup>

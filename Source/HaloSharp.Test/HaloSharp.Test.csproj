@@ -300,9 +300,6 @@
     <None Include="JSON\Halo5\Stats\CarnageReport\Common\credits-earned.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="JSON\Halo5\Stats\CarnageReport\match-events-model.schema.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="JSON\Halo5\Stats\CarnageReport\match-events.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

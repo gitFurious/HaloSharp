@@ -226,7 +226,7 @@ namespace HaloSharp.Model
                 Neutral = 2
             }
 
-            public enum EventType
+            public enum MatchEventType
             {
                 Death,
                 Impulse,

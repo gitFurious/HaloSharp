@@ -1,9 +1,9 @@
 ﻿using HaloSharp.Model;
+using HaloSharp.Model.HaloWars2.Stats.Events;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using HaloSharp.Model.HaloWars2.Stats.Events;
 
 namespace HaloSharp.Converter
 {
@@ -23,177 +23,151 @@ namespace HaloSharp.Converter
             {
                 var matchEventType = (Enumeration.HaloWars2.MatchEventType)Enum.Parse(typeof(Enumeration.HaloWars2.MatchEventType), @event["EventName"].Value<string>());
 
+                MatchEvent matchEvent;
                 switch (matchEventType)
                 {
                     case Enumeration.HaloWars2.MatchEventType.BuildingConstructionQueued:
                         {
-                            var buildingConstructionQueued = @event.ToObject<BuildingConstructionQueued>();
-                            matchEvents.Add(buildingConstructionQueued);
+                            matchEvent = @event.ToObject<BuildingConstructionQueued>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.BuildingConstructionCompleted:
                         {
-                            var buildingConstructionCompleted = @event.ToObject<BuildingConstructionCompleted>();
-                            matchEvents.Add(buildingConstructionCompleted);
+                            matchEvent = @event.ToObject<BuildingConstructionCompleted>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.BuildingRecycled:
                         {
-                            var buildingRecycled = @event.ToObject<BuildingRecycled>();
-                            matchEvents.Add(buildingRecycled);
+                            matchEvent = @event.ToObject<BuildingRecycled>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.BuildingUpgraded:
                         {
-                            var buildingUpgraded = @event.ToObject<BuildingUpgraded>();
-                            matchEvents.Add(buildingUpgraded);
+                            matchEvent = @event.ToObject<BuildingUpgraded>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.CardCycled:
                         {
-                            var cardCycled = @event.ToObject<CardCycled>();
-                            matchEvents.Add(cardCycled);
+                            matchEvent = @event.ToObject<CardCycled>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.CardPlayed:
                         {
-                            var cardPlayed = @event.ToObject<CardPlayed>();
-                            matchEvents.Add(cardPlayed);
+                            matchEvent = @event.ToObject<CardPlayed>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.Death:
                         {
-                            var death = @event.ToObject<Death>();
-                            matchEvents.Add(death);
+                            matchEvent = @event.ToObject<Death>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.FirefightWaveCompleted:
                         {
-                            var firefightWaveCompleted = @event.ToObject<FirefightWaveCompleted>();
-                            matchEvents.Add(firefightWaveCompleted);
+                            matchEvent = @event.ToObject<FirefightWaveCompleted>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.FirefightWaveSpawned:
                         {
-                            var firefightWaveSpawned = @event.ToObject<FirefightWaveSpawned>();
-                            matchEvents.Add(firefightWaveSpawned);
+                            matchEvent = @event.ToObject<FirefightWaveSpawned>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.FirefightWaveStarted:
                         {
-                            var firefightWaveStarted = @event.ToObject<FirefightWaveStarted>();
-                            matchEvents.Add(firefightWaveStarted);
+                            matchEvent = @event.ToObject<FirefightWaveStarted>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.LeaderPowerCast:
                         {
-                            var leaderPowerCast = @event.ToObject<LeaderPowerCast>();
-                            matchEvents.Add(leaderPowerCast);
+                            matchEvent = @event.ToObject<LeaderPowerCast>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.LeaderPowerUnlocked:
                         {
-                            var leaderPowerUnlocked = @event.ToObject<LeaderPowerUnlocked>();
-                            matchEvents.Add(leaderPowerUnlocked);
+                            matchEvent = @event.ToObject<LeaderPowerUnlocked>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.ManaOrbCollected:
                         {
-                            var manaOrbCollected = @event.ToObject<ManaOrbCollected>();
-                            matchEvents.Add(manaOrbCollected);
+                            matchEvent = @event.ToObject<ManaOrbCollected>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.MatchEnd:
                         {
-                            var matchEnd = @event.ToObject<MatchEnd>();
-                            matchEvents.Add(matchEnd);
+                            matchEvent = @event.ToObject<MatchEnd>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.MatchStart:
                         {
-                            var matchStart = @event.ToObject<MatchStart>();
-                            matchEvents.Add(matchStart);
+                            matchEvent = @event.ToObject<MatchStart>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.PlayerEliminated:
                         {
-                            var playerEliminated = @event.ToObject<PlayerEliminated>();
-                            matchEvents.Add(playerEliminated);
+                            matchEvent = @event.ToObject<PlayerEliminated>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.PlayerJoinedMatch:
                         {
-                            var playerJoinedMatch = @event.ToObject<PlayerJoinedMatch>();
-                            matchEvents.Add(playerJoinedMatch);
+                            matchEvent = @event.ToObject<PlayerJoinedMatch>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.PlayerLeftMatch:
                         {
-                            var playerLeftMatch = @event.ToObject<PlayerLeftMatch>();
-                            matchEvents.Add(playerLeftMatch);
+                            matchEvent = @event.ToObject<PlayerLeftMatch>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.PointCaptured:
                         {
-                            var pointCaptured = @event.ToObject<PointCaptured>();
-                            matchEvents.Add(pointCaptured);
+                            matchEvent = @event.ToObject<PointCaptured>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.PointCreated:
                         {
-                            var pointCreated = @event.ToObject<PointCreated>();
-                            matchEvents.Add(pointCreated);
+                            matchEvent = @event.ToObject<PointCreated>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.PointStatusChange:
                         {
-                            var pointStatusChange = @event.ToObject<PointStatusChange>();
-                            matchEvents.Add(pointStatusChange);
+                            matchEvent = @event.ToObject<PointStatusChange>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.ResourceHeartbeat:
                         {
-                            var resourceHeartbeat = @event.ToObject<ResourceHeartbeat>();
-                            matchEvents.Add(resourceHeartbeat);
+                            matchEvent = @event.ToObject<ResourceHeartbeat>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.ResourceTransferred:
                         {
-                            var resourceTransferred = @event.ToObject<ResourceTransferred>();
-                            matchEvents.Add(resourceTransferred);
+                            matchEvent = @event.ToObject<ResourceTransferred>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.TechResearched:
                         {
-                            var techResearched = @event.ToObject<TechResearched>();
-                            matchEvents.Add(techResearched);
+                            matchEvent = @event.ToObject<TechResearched>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.UnitControlTransferred:
                         {
-                            var unitControlTransferred = @event.ToObject<UnitControlTransferred>();
-                            matchEvents.Add(unitControlTransferred);
+                            matchEvent = @event.ToObject<UnitControlTransferred>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.UnitPromoted:
                         {
-                            var unitPromoted = @event.ToObject<UnitPromoted>();
-                            matchEvents.Add(unitPromoted);
+                            matchEvent = @event.ToObject<UnitPromoted>();
                             break;
                         }
                     case Enumeration.HaloWars2.MatchEventType.UnitTrained:
                         {
-                            var unitTrained = @event.ToObject<UnitTrained>();
-                            matchEvents.Add(unitTrained);
+                            matchEvent = @event.ToObject<UnitTrained>();
                             break;
                         }
                     default:
                         {
-                            var matchEvent = @event.ToObject<MatchEvent>();
-                            matchEvents.Add(matchEvent);
+                            matchEvent = @event.ToObject<MatchEvent>();
                             break;
                         }
                 }
+                matchEvents.Add(matchEvent);
             }
 
             return matchEvents;

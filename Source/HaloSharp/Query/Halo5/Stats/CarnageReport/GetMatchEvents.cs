@@ -12,7 +12,7 @@ namespace HaloSharp.Query.Halo5.Stats.CarnageReport
     ///     accuracy guarantees that other APIs have so use with caution. This endpoint may not return matches before December
     ///     1st 2015
     /// </summary>
-    public class GetMatchEvents : IQuery<MatchEvents>
+    public class GetMatchEvents : IQuery<MatchEventSummary>
     {
         private bool _useCache = true;
         internal string MatchId;
@@ -35,19 +35,19 @@ namespace HaloSharp.Query.Halo5.Stats.CarnageReport
             return this;
         }
 
-        public async Task<MatchEvents> ApplyTo(IHaloSession session)
+        public async Task<MatchEventSummary> ApplyTo(IHaloSession session)
         {
             this.Validate();
 
             var uri = GetConstructedUri();
 
             var match = _useCache
-                ? Cache.Get<MatchEvents>(uri)
+                ? Cache.Get<MatchEventSummary>(uri)
                 : null;
 
             if (match == null)
             {
-                match = await session.Get<MatchEvents>(uri);
+                match = await session.Get<MatchEventSummary>(uri);
 
                 Cache.AddStats(uri, match);
             }

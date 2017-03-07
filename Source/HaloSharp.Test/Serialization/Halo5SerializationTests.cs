@@ -43,7 +43,7 @@ namespace HaloSharp.Test.Serialization
         [TestCase(Halo5Config.CampaignMatchJsonPath, typeof(CampaignMatch))]
         [TestCase(Halo5Config.CustomMatchJsonPath, typeof(CustomMatch))]
         [TestCase(Halo5Config.WarzoneMatchJsonPath, typeof(WarzoneMatch))]
-        [TestCase(Halo5Config.MatchEventsJsonPath, typeof(MatchEvents))]
+        [TestCase(Halo5Config.MatchEventsJsonPath, typeof(MatchEventSummary))]
 
         [TestCase(Halo5Config.ArenaServiceRecordJsonPath, typeof(ArenaServiceRecord))]
         [TestCase(Halo5Config.CampaignServiceRecordJsonPath, typeof(CampaignServiceRecord))]

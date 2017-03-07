@@ -54,7 +54,6 @@ namespace HaloSharp.Test.Config
         public const string WarzoneMatchJsonSchemaPath = "JSON/Halo5/Stats/CarnageReport/warzone-match.schema.json";
         public const string MatchEventsJsonPath = "JSON/Halo5/Stats/CarnageReport/match-events.json";
         public const string MatchEventsJsonSchemaPath = "JSON/Halo5/Stats/CarnageReport/match-events.schema.json";
-        public const string MatchEventsModelJsonSchemaPath = "JSON/Halo5/Stats/CarnageReport/match-events-model.schema.json";
 
         public const string ArenaServiceRecordJsonPath = "JSON/Halo5/Stats/Lifetime/arena-service-record.json";
         public const string ArenaServiceRecordJsonSchemaPath = "JSON/Halo5/Stats/Lifetime/arena-service-record.schema.json";

@@ -98,7 +98,7 @@ namespace HaloSharp.Test.Schema
         [TestCase(Halo5Config.CampaignMatchJsonPath, Halo5Config.CampaignMatchJsonSchemaPath, typeof(CampaignMatch))]
         [TestCase(Halo5Config.CustomMatchJsonPath, Halo5Config.CustomMatchJsonSchemaPath, typeof(CustomMatch))]
         [TestCase(Halo5Config.WarzoneMatchJsonPath, Halo5Config.WarzoneMatchJsonSchemaPath, typeof(WarzoneMatch))]
-        [TestCase(Halo5Config.MatchEventsJsonPath, Halo5Config.MatchEventsModelJsonSchemaPath, typeof(MatchEvents))]
+        [TestCase(Halo5Config.MatchEventsJsonPath, Halo5Config.MatchEventsJsonSchemaPath, typeof(MatchEventSummary))]
 
         [TestCase(Halo5Config.ArenaServiceRecordJsonPath, Halo5Config.ArenaServiceRecordJsonSchemaPath, typeof(ArenaServiceRecord))]
         [TestCase(Halo5Config.CampaignServiceRecordJsonPath, Halo5Config.CampaignServiceRecordJsonSchemaPath, typeof(CampaignServiceRecord))]

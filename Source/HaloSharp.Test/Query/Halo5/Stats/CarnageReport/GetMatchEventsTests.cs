@@ -5,6 +5,7 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.CarnageReport;
+using HaloSharp.Model.Halo5.Stats.CarnageReport.Events;
 using HaloSharp.Query.Halo5.Stats.CarnageReport;
 using HaloSharp.Test.Config;
 using HaloSharp.Test.Utility;
@@ -20,16 +21,16 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
     public class GetMatchEventsTests
     {
         private IHaloSession _mockSession;
-        private MatchEvents _matchEvents;
+        private MatchEventSummary _matchEventSummary;
 
         [SetUp]
         public void Setup()
         {
-            _matchEvents = JsonConvert.DeserializeObject<MatchEvents>(File.ReadAllText(Halo5Config.MatchEventsJsonPath));
+            _matchEventSummary = JsonConvert.DeserializeObject<MatchEventSummary>(File.ReadAllText(Halo5Config.MatchEventsJsonPath));
 
             var mock = new Mock<IHaloSession>();
-            mock.Setup(m => m.Get<MatchEvents>(It.IsAny<string>()))
-                .ReturnsAsync(_matchEvents);
+            mock.Setup(m => m.Get<MatchEventSummary>(It.IsAny<string>()))
+                .ReturnsAsync(_matchEventSummary);
 
             _mockSession = mock.Object;
         }
@@ -65,8 +66,8 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
 
             var result = await _mockSession.Query(query);
 
-            Assert.IsInstanceOf(typeof(MatchEvents), result);
-            Assert.AreEqual(_matchEvents, result);
+            Assert.IsInstanceOf(typeof(MatchEventSummary), result);
+            Assert.AreEqual(_matchEventSummary, result);
         }
 
         [Test]
@@ -80,7 +81,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
 
             var result = await Global.Session.Query(query);
 
-            Assert.IsInstanceOf(typeof(MatchEvents), result);
+            Assert.IsInstanceOf(typeof(MatchEventSummary), result);
         }
 
         [Test]
@@ -108,10 +109,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         [TestCase("763208a1-934e-466a-bdbd-318fa4d2e1c6")]
         public async Task GetMatchEvents_ModelMatchesSchema(string guid)
         {
-            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.MatchEventsModelJsonSchemaPath), new JSchemaReaderSettings
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.MatchEventsJsonSchemaPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MatchEventsModelJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MatchEventsJsonSchemaPath))
             });
 
             var query = new GetMatchEvents()
@@ -137,7 +138,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
 
             var result = await Global.Session.Query(query);
 
-            SerializationUtility<MatchEvents>.AssertRoundTripSerializationIsPossible(result);
+            SerializationUtility<MatchEventSummary>.AssertRoundTripSerializationIsPossible(result);
         }
 
         [Test]
