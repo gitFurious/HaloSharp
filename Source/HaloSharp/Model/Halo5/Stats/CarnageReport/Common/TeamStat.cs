@@ -8,45 +8,15 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport.Common
     [Serializable]
     public class TeamStat : IEquatable<TeamStat>
     {
-        /// <summary>
-        /// The team's rank at the end of the match.
-        /// </summary>
         [JsonProperty(PropertyName = "Rank")]
         public int Rank { get; set; }
 
-        /// <summary>
-        /// The set of round stats for the team.
-        /// </summary>
         [JsonProperty(PropertyName = "RoundStats")]
         public List<RoundStat> RoundStats { get; set; }
 
-        /// <summary>
-        /// The team's score at the end of the match. The way the score is determined is based off the game base 
-        /// variant being played: 
-        /// <list type="bullet">
-        /// <item>
-        /// <description>Breakout = number of rounds won</description>
-        /// </item>
-        /// <item>
-        /// <description>CTF = number of flag captures</description>
-        /// </item>
-        /// <item>
-        /// <description>Slayer = number of kills</description>
-        /// </item>
-        /// <item>
-        /// <description>Strongholds = number of points</description>
-        /// </item>
-        /// <item>
-        /// <description>Warzone = number of points</description>
-        /// </item>
-        /// </list>
-        /// </summary>
         [JsonProperty(PropertyName = "Score")]
         public uint Score { get; set; }
 
-        /// <summary>
-        /// The ID for the team.
-        /// </summary>
         [JsonProperty(PropertyName = "TeamId")]
         public int TeamId { get; set; }
 
@@ -114,21 +84,12 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport.Common
     [Serializable]
     public class RoundStat : IEquatable<RoundStat>
     {
-        /// <summary>
-        /// The end rank for the team this round.
-        /// </summary>
         [JsonProperty(PropertyName = "Rank")]
         public int Rank { get; set; }
 
-        /// <summary>
-        /// The round number this entry pertains to.
-        /// </summary>
         [JsonProperty(PropertyName = "RoundNumber")]
         public int RoundNumber { get; set; }
 
-        /// <summary>
-        /// The end score for the team this round.
-        /// </summary>
         [JsonProperty(PropertyName = "Score")]
         public uint Score { get; set; }
 

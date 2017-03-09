@@ -6,30 +6,9 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime.Common
     [Serializable]
     public class BaseServiceRecordResult : IEquatable<BaseServiceRecordResult>
     {
-        /// <summary>
-        /// The player's gamertag.
-        /// </summary>
         [JsonProperty(PropertyName = "Id")]
         public string Id { get; set; }
 
-        /// <summary>
-        /// The result of the query for the player. One of the following:
-        /// <list type="bullet">
-        /// <item>
-        /// <description>Success = 0</description>
-        /// </item>
-        /// <item>
-        /// <description>NotFound = 1</description>
-        /// </item>
-        /// <item>
-        /// <description>ServiceFailure = 2</description>
-        /// </item>
-        /// <item>
-        /// <description>ServiceUnavailable = 3</description>
-        /// </item>
-        /// </list>
-        /// It is possible for different requests from the batch to succeed and fail independently.
-        /// </summary>
         [JsonProperty(PropertyName = "ResultCode")]
         public Enumeration.Common.QueryResult ResultCode { get; set; }
 

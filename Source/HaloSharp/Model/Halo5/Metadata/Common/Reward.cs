@@ -8,27 +8,15 @@ namespace HaloSharp.Model.Halo5.Metadata.Common
     [Serializable]
     public class Reward : IEquatable<Reward>
     {
-        /// <summary>
-        /// Internal use only. Do not use.
-        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
-        /// <summary>
-        /// The ID that uniquely identifies this reward.
-        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
-        /// <summary>
-        /// The set of requisition packs (if any) that will be awarded.
-        /// </summary>
         [JsonProperty(PropertyName = "requisitionPacks")]
         public List<RequisitionPack> RequisitionPacks { get; set; }
 
-        /// <summary>
-        /// The amount of XP that will be awarded.
-        /// </summary>
         [JsonProperty(PropertyName = "xp")]
         public int Xp { get; set; }
 

@@ -30,13 +30,13 @@ namespace HaloSharp.Model.HaloWars2.Stats.CarnageReport
         public string MapId { get; set; } 
 
         [JsonProperty(PropertyName = "IsMatchComplete")]
-        public bool IsMatchComplete { get; set; } // uni
+        public bool IsMatchComplete { get; set; }
 
         [JsonProperty(PropertyName = "MatchEndReason")]
-        public Enumeration.HaloWars2.MatchEndReason? MatchEndReason { get; set; } // uni
+        public Enumeration.HaloWars2.MatchEndReason? MatchEndReason { get; set; }
 
         [JsonProperty(PropertyName = "VictoryCondition")]
-        public Enumeration.HaloWars2.VictoryCondition? VictoryCondition { get; set; } // uni
+        public Enumeration.HaloWars2.VictoryCondition? VictoryCondition { get; set; }
 
         [JsonProperty(PropertyName = "MatchStartDate")]
         public ISO8601 MatchStartDate { get; set; }

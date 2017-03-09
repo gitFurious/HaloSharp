@@ -1,11 +1,15 @@
 using System;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Halo5.UserGeneratedContent.Common
 {
     [Serializable]
     public class Stats : IEquatable<Stats>
     {
+        [JsonProperty(PropertyName = "BookmarkCount")]
         public int BookmarkCount { get; set; }
+
+        [JsonProperty(PropertyName = "HasCallerBookmarked")]
         public bool HasCallerBookmarked { get; set; }
 
         public bool Equals(Stats other)

@@ -6,15 +6,9 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport.Common
     [Serializable]
     public class BoostInfo : IEquatable<BoostInfo>
     {
-        /// <summary>
-        /// TODO:
-        /// </summary>
         [JsonProperty(PropertyName = "CardConsumed")]
         public bool CardConsumed { get; set; }
 
-        /// <summary>
-        /// TODO:
-        /// </summary>
         [JsonProperty(PropertyName = "DefinitionId")]
         public Guid DefinitionId { get; set; }
 

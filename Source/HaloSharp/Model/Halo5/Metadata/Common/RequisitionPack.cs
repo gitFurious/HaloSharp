@@ -9,157 +9,64 @@ namespace HaloSharp.Model.Halo5.Metadata.Common
     [Serializable]
     public class RequisitionPack : IEquatable<RequisitionPack>
     {
-        /// <summary>
-        /// Internal use only. Do not use.
-        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
-        /// <summary>
-        /// If the pack is purchasable via credits, this value contains the number of credits a player must spend to 
-        /// acquire one pack.This value is zero when isPurchasableWithCredits is false.
-        /// </summary>
         [JsonProperty(PropertyName = "creditPrice")]
         public int CreditPrice { get; set; }
 
-        /// <summary>
-        /// A localized description, suitable for display to users.
-        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
-        /// <summary>
-        /// Internal use. Indicates the visual treatment of the pack. This is one of the following options:
-        /// <list type="bullet">
-        /// <item>
-        /// <description>None</description>
-        /// </item>
-        /// <item>
-        /// <description>New</description>
-        /// </item>
-        /// <item>
-        /// <description>Hot</description>
-        /// </item>
-        /// <item>
-        /// <description>LeavingSoon</description>
-        /// </item>
-        /// <item>
-        /// <description>MaximumValue</description>
-        /// </item>
-        /// <item>
-        /// <description>Limitedtime</description>
-        /// </item>
-        /// <item>
-        /// <description>Featured</description>
-        /// </item>
-        /// <item>
-        /// <description>BestSeller</description>
-        /// </item>
-        /// <item>
-        /// <description>Popular</description>
-        /// </item>
-        /// </list>
-        /// </summary>
         [JsonProperty(PropertyName = "flair")]
         [JsonConverter(typeof (StringEnumConverter))]
         public Enumeration.Halo5.RequisitionPackType? Flair { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "giftableAcquisitionMethods")]
         public Enumeration.Halo5.GiftableAcquisitionMethod GiftableAcquisitionMethod { get; set; }
 
-        /// <summary>
-        /// The ID that uniquely identifies this pack.
-        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
-        /// <summary>
-        /// Internal use. Whether the item should be featured ahead of others.
-        /// </summary>
         [JsonProperty(PropertyName = "isFeatured")]
         public bool IsFeatured { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "isGiftOnly")]
         public bool IsGiftOnly { get; set; }
 
-        /// <summary>
-        /// Internal use. Whether the item should be labeled as "new!"
-        /// </summary>
         [JsonProperty(PropertyName = "isNew")]
         public bool IsNew { get; set; }
 
-        /// <summary>
-        /// If the pack might be obtainable through the Xbox Live Marketplace, then this value is true.
-        /// </summary>
         [JsonProperty(PropertyName = "isPurchasableFromMarketplace")]
         public bool IsPurchasableFromMarketplace { get; set; }
 
-        /// <summary>
-        /// If the pack is currently available for purchase by spending credits, then this value is true.
-        /// </summary>
         [JsonProperty(PropertyName = "isPurchasableWithCredits")]
         public bool IsPurchasableWithCredits { get; set; }
 
-        /// <summary>
-        /// //TODO
-        /// </summary>
         [JsonProperty(PropertyName = "isStack")]
         public bool IsStack { get; set; }
 
-        /// <summary>
-        /// //TODO
-        /// </summary>
         [JsonProperty(PropertyName = "stackedRequisitionPacks")]
         public List<RequisitionPack> StackedRequisitionPacks { get; set; }
 
-        /// <summary>
-        /// A large image for the pack.
-        /// </summary>
         [JsonProperty(PropertyName = "largeImageUrl")]
         public string LargeImageUrl { get; set; }
 
-        /// <summary>
-        /// A medium image for the pack.
-        /// </summary>
         [JsonProperty(PropertyName = "mediumImageUrl", NullValueHandling = NullValueHandling.Ignore)]
         public string MediumImageUrl { get; set; }
 
-        /// <summary>
-        /// Internal use. The order in which packs are shown for merchandising purposes.
-        /// </summary>
         [JsonProperty(PropertyName = "merchandisingOrder")]
         public int MerchandisingOrder { get; set; }
 
-        /// <summary>
-        /// A localized name for the pack, suitable for display to users. The text is title cased. 
-        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
-        /// <summary>
-        /// A small image for the pack.
-        /// </summary>
         [JsonProperty(PropertyName = "smallImageUrl", NullValueHandling = NullValueHandling.Ignore)]
         public string SmallImageUrl { get; set; }
 
-        /// <summary>
-        /// If this pack might be obtainable through the Xbox Live Marketplace, this is the product ID. Note: Pricing 
-        /// and availability within the Xbox Live marketplace is controlled independently of this value.The presence of 
-        /// an Id in this field is not a guarantee the product is purchasable. There may be geographic restrictions 
-        /// restricting purchase in certain regions, or the item may not be currently purchasable at all.
-        /// </summary>
         [JsonProperty(PropertyName = "xboxMarketplaceProductId")]
         public Guid? XboxMarketplaceProductId { get; set; }
 
-        /// <summary>
-        /// If this pack might be obtainable through the Xbox Live Marketplace, this is the URL to the product.
-        /// </summary>
         [JsonProperty(PropertyName = "xboxMarketplaceProductUrl")]
         public string XboxMarketplaceProductUrl { get; set; }
 

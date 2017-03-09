@@ -11,9 +11,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class ArenaServiceRecord : BaseServiceRecord, IEquatable<ArenaServiceRecord>
     {
-        /// <summary>
-        /// Set of responses. One per user queried.
-        /// </summary>
         [JsonProperty(PropertyName = "Results")]
         public List<ArenaServiceRecordResult> Results { get; set; }
 
@@ -75,9 +72,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class ArenaServiceRecordResult : BaseServiceRecordResult, IEquatable<ArenaServiceRecordResult>
     {
-        /// <summary>
-        /// The Service Record result for the player. Only set if ResultCode is Success.
-        /// </summary>
         [JsonProperty(PropertyName = "Result")]
         public ArenaResult Result { get; set; }
 
@@ -139,9 +133,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class ArenaResult : BaseResult, IEquatable<ArenaResult>
     {
-        /// <summary>
-        /// Arena stats data.
-        /// </summary>
         [JsonProperty(PropertyName = "ArenaStats")]
         public ArenaStat ArenaStats { get; set; }
 
@@ -203,53 +194,25 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class ArenaStat : BaseStat, IEquatable<ArenaStat>
     {
-        /// <summary>
-        /// List of arena stats by GameBaseVariant across all seasons.
-        /// </summary>
         [JsonProperty(PropertyName = "ArenaGameBaseVariantStats")]
         public List<GameBaseVariantStat> ArenaGameBaseVariantStats { get; set; }
 
-        /// <summary>
-        /// List of arena stats by playlist.  This is the ONLY set of stats in the response that respects the Season ID 
-        /// request parameter. If no Season ID was specified, these will be the stats for the current season. If an 
-        /// invalid Season ID was specified, this will be empty.
-        /// </summary>
         [JsonProperty(PropertyName = "ArenaPlaylistStats")]
         public List<ArenaPlaylistStat> ArenaPlaylistStats { get; set; }
 
-        /// <summary>
-        /// //TODO
-        /// </summary>
         [JsonProperty(PropertyName = "ArenaPlaylistStatsSeasonId")]
         public Guid? ArenaPlaylistStatsSeasonId { get; set; }
 
-        /// <summary>
-        /// The highest obtained CSR by the player in arena across all seasons. If the player hasn't finished 
-        /// measurement matches yet for any playlist, this value is null.
-        /// </summary>
         [JsonProperty(PropertyName = "HighestCsrAttained")]
         public CompetitiveSkillRanking HighestCsrAttained { get; set; }
 
-        /// <summary>
-        /// The ID for the playlist that pertains to the highest obtained CSR field across all seasons. If the CSR is 
-        /// null, so is this field. 
-        /// </summary>
         [JsonProperty(PropertyName = "HighestCsrPlaylistId")]
         public Guid? HighestCsrPlaylistId { get; set; }
 
-        /// <summary>
-        /// The ID for the season that pertains to the highest obtained CSR field across all seasons. If the CSR is 
-        /// null, so is this field.
-        /// </summary>
         [JsonProperty(PropertyName = "HighestCsrSeasonId")]
         [JsonConverter(typeof(GuidConverter))]
         public Guid? HighestCsrSeasonId { get; set; }
 
-        /// <summary>
-        /// A list of up to 3 game base variants with the highest win rate across all seasons by the user. If there is 
-        /// a tie, the game base variant with more completed games is higher. If there's still a tie, game base variant 
-        /// IDs are sorted and selected.
-        /// </summary>
         [JsonProperty(PropertyName = "TopGameBaseVariants")]
         public List<TopGameBaseVariant> TopGameBaseVariants { get; set; }
 
@@ -325,36 +288,18 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class ArenaPlaylistStat : BaseStat, IEquatable<ArenaPlaylistStat>
     {
-        /// <summary>
-        /// The current Competitive Skill Ranking (CSR) of the player.
-        /// </summary>
         [JsonProperty(PropertyName = "Csr")]
         public CompetitiveSkillRanking Csr { get; set; }
 
-        /// <summary>
-        /// Number represents within what percent of the top players the user is (top 2 percent for example). Can be null 
-        /// if list is not ranked or if player has not completed their measurement matches. Does not work for pre season.
-        /// </summary>
         [JsonProperty(PropertyName = "CsrPercentile")]
         public int? CsrPercentile { get; set; }
 
-        /// <summary>
-        /// The highest Competitive Skill Ranking (CSR) achieved by the player. This is included because a player's CSR 
-        /// can drop based on performance.
-        /// </summary>
         [JsonProperty(PropertyName = "HighestCsr")]
         public CompetitiveSkillRanking HighestCsr { get; set; }
 
-        /// <summary>
-        /// The player's measurement matches left. If this field is greater than zero, then the player will not have a 
-        /// CSR yet.
-        /// </summary>
         [JsonProperty(PropertyName = "MeasurementMatchesLeft")]
         public int MeasurementMatchesLeft { get; set; }
 
-        /// <summary>
-        /// The playlist ID. Playlists are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "PlaylistId")]
         public Guid PlaylistId { get; set; }
 

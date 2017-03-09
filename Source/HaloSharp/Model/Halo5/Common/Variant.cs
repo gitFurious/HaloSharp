@@ -6,49 +6,15 @@ namespace HaloSharp.Model.Halo5.Common
     [Serializable]
     public class Variant : IEquatable<Variant>
     {
-        /// <summary>
-        /// The owner. Usually set to null.
-        /// </summary>
         [JsonProperty(PropertyName = "Owner")]
         public string Owner { get; set; }
 
-        /// <summary>
-        /// The source of the map variant. Options are:
-        /// <list type="bullet">
-        /// <item>
-        /// <description>Unknown = 0</description>
-        /// </item>
-        /// <item>
-        /// <description>User Generated = 1</description>
-        /// </item>
-        /// <item>
-        /// <description>User Generated = 2</description>
-        /// </item>
-        /// <item>
-        /// <description>Official = 3</description>
-        /// </item>
-        /// </list>
-        /// </summary>
         [JsonProperty(PropertyName = "OwnerType")]
         public Enumeration.Halo5.OwnerType OwnerType { get; set; }
 
-        /// <summary>
-        /// The ID of the map variant. Map variants are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "ResourceId")]
         public Guid ResourceId { get; set; }
 
-        /// <summary>
-        /// The resource type.
-        /// /// <list type="bullet">
-        /// <item>
-        /// <description>GameVariant = 2</description>
-        /// </item>
-        /// <item>
-        /// <description>MapVariant = 3</description>
-        /// </item>
-        /// </list>
-        /// </summary>
         [JsonProperty(PropertyName = "ResourceType")]
         public Enumeration.Halo5.ResourceType ResourceType { get; set; }
 

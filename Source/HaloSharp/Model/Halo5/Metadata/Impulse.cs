@@ -6,21 +6,12 @@ namespace HaloSharp.Model.Halo5.Metadata
     [Serializable]
     public class Impulse : IEquatable<Impulse>
     {
-        /// <summary>
-        /// Internal use only. Do not use.
-        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
-        /// <summary>
-        /// The ID that uniquely identifies this impulse.
-        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public uint Id { get; set; }
 
-        /// <summary>
-        /// Internal use. The non-localized name of the impulse.
-        /// </summary>
         [JsonProperty(PropertyName = "internalName")]
         public string InternalName { get; set; }
 

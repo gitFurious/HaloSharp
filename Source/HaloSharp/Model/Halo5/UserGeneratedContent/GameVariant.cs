@@ -3,27 +3,59 @@ using System.Collections.Generic;
 using System.Linq;
 using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Halo5.UserGeneratedContent
 {
     [Serializable]
     public class GameVariant : IEquatable<GameVariant>
     {
+        [JsonProperty(PropertyName = "AccessControl")]
         public Enumeration.Halo5.AccessControl AccessControl { get; set; }
+
+        [JsonProperty(PropertyName = "Banned")]
         public bool Banned { get; set; }
+
+        [JsonProperty(PropertyName = "BaseGame")]
         public Variant BaseGame { get; set; }
+
+        [JsonProperty(PropertyName = "BaseGameEngineType")]
         public int BaseGameEngineType { get; set; }
+
+        [JsonProperty(PropertyName = "CreationTimeUtc")]
         public ISO8601 CreationTimeUtc { get; set; }
+
+        [JsonProperty(PropertyName = "Description")]
         public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "GameType")]
         public int GameType { get; set; }
+
+        [JsonProperty(PropertyName = "Identity")]
         public Variant Identity { get; set; }
+
+        [JsonProperty(PropertyName = "LastModifiedTimeUtc")]
         public ISO8601 LastModifiedTimeUtc { get; set; }
+
+        [JsonProperty(PropertyName = "Links")]
         public Dictionary<string, Link> Links { get; set; }
+
+        [JsonProperty(PropertyName = "MatchDurationInSeconds")]
         public int MatchDurationInSeconds { get; set; }
+
+        [JsonProperty(PropertyName = "Name")]
         public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "NumberOfLives")]
         public int NumberOfLives { get; set; }
+
+        [JsonProperty(PropertyName = "NumberOfRounds")]
         public int NumberOfRounds { get; set; }
+
+        [JsonProperty(PropertyName = "ScoreToWin")]
         public int ScoreToWin { get; set; }
+
+        [JsonProperty(PropertyName = "Stats")]
         public Common.Stats Stats { get; set; }
 
         public bool Equals(GameVariant other)

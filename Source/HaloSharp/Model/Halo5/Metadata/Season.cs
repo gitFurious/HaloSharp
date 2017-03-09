@@ -8,51 +8,27 @@ namespace HaloSharp.Model.Halo5.Metadata
     [Serializable]
     public class Season : IEquatable<Season>
     {
-        /// <summary>
-        /// Internal use only. Do not use.
-        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
-        /// <summary>
-        /// The end date and time of this season.
-        /// </summary>
         [JsonProperty(PropertyName = "endDate")]
         public DateTime? EndDate { get; set; }
 
-        /// <summary>
-        /// An icon used to represent this season.
-        /// </summary>
         [JsonProperty(PropertyName = "iconUrl")]
         public string IconUrl { get; set; }
 
-        /// <summary>
-        /// The ID that uniquely identifies this season.
-        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
-        /// <summary>
-        /// Indicates if this season is currently active.
-        /// </summary>
         [JsonProperty(PropertyName = "isActive")]
         public bool IsActive { get; set; }
 
-        /// <summary>
-        /// A localized name for the season, suitable for display to users.
-        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
-        /// <summary>
-        /// One or more playlists that are available in this season.
-        /// </summary>
         [JsonProperty(PropertyName = "playlists")]
         public List<Playlist> Playlists { get; set; }
 
-        /// <summary>
-        /// The start date and time of this season.
-        /// </summary>
         [JsonProperty(PropertyName = "startDate")]
         public DateTime? StartDate { get; set; }
 

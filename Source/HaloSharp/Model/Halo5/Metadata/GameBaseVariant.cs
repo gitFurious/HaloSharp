@@ -9,53 +9,21 @@ namespace HaloSharp.Model.Halo5.Metadata
     [Serializable]
     public class GameBaseVariant : IEquatable<GameBaseVariant>
     {
-        /// <summary>
-        /// Internal use only. Do not use.
-        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
-        /// <summary>
-        /// An image to use as the game base variant for the designation.
-        /// </summary>
         [JsonProperty(PropertyName = "iconUrl")]
         public string IconUrl { get; set; }
 
-        /// <summary>
-        /// The ID that uniquely identifies this game base variant.
-        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
-        /// <summary>
-        /// Internal use. The internal non-localized name for the the game base variant.
-        /// </summary>
         [JsonProperty(PropertyName = "internalName")]
         public string InternalName { get; set; }
 
-        /// <summary>
-        /// A localized name for the game base variant, suitable for display to users. The text is title cased.
-        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
-        /// <summary>
-        /// A list that indicates what game modes this base variant is available within. Options are:
-        /// <list type="bullet">
-        /// <item>
-        /// <description>Arena</description>
-        /// </item>
-        /// <item>
-        /// <description>Campaign</description>
-        /// </item>
-        /// <item>
-        /// <description>Custom</description>
-        /// </item>
-        /// <item>
-        /// <description>Warzone</description>
-        /// </item>
-        /// </list>
-        /// </summary>
         [JsonProperty(PropertyName = "supportedGameModes", ItemConverterType = typeof(StringEnumConverter))]
         public List<Enumeration.Halo5.GameMode> SupportedGameModes { get; set; }
 

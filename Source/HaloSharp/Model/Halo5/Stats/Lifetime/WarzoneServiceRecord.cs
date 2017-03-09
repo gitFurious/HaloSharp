@@ -10,9 +10,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class WarzoneServiceRecord : BaseServiceRecord, IEquatable<WarzoneServiceRecord>
     {
-        /// <summary>
-        /// Set of responses. One per user queried.
-        /// </summary>
         [JsonProperty(PropertyName = "Results")]
         public List<WarzoneServiceRecordResult> Results { get; set; }
 
@@ -74,9 +71,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class WarzoneServiceRecordResult : BaseServiceRecordResult, IEquatable<WarzoneServiceRecordResult>
     {
-        /// <summary>
-        /// The Service Record result for the player. Only set if ResultCode is Success.
-        /// </summary>
         [JsonProperty(PropertyName = "Result")]
         public WarzoneResult Result { get; set; }
 
@@ -138,9 +132,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class WarzoneResult : BaseResult, IEquatable<WarzoneResult>
     {
-        /// <summary>
-        /// Warzone stats data.
-        /// </summary>
         [JsonProperty(PropertyName = "WarzoneStat")]
         public WarzoneStat WarzoneStat { get; set; }
 
@@ -202,15 +193,9 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class WarzoneStat : BaseStat, IEquatable<WarzoneStat>
     {
-        /// <summary>
-        /// List of scenario stats by map and game base variant id.
-        /// </summary>
         [JsonProperty(PropertyName = "ScenarioStats")]
         public List<ScenarioStat> ScenarioStats { get; set; }
 
-        /// <summary>
-        /// The total number of "pies" (in-game currency) the player has earned.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalPiesEarned")]
         public int TotalPiesEarned { get; set; }
 
@@ -276,27 +261,15 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class ScenarioStat : BaseStat, IEquatable<ScenarioStat>
     {
-        /// <summary>
-        /// The game base variant specific stats. Flexible stats are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "FlexibleStats")]
         public FlexibleStats FlexibleStats { get; set; }
 
-        /// <summary>
-        /// The ID of the game base variant. Game base variants are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "GameBaseVariantId")]
         public Guid GameBaseVariantId { get; set; }
 
-        /// <summary>
-        /// The map global ID that this warzone scenario pertains to. Found in metadata.
-        /// </summary>
         [JsonProperty(PropertyName = "MapId")]
         public Guid MapId { get; set; }
 
-        /// <summary>
-        /// The total number of "pies" (in-game currency) the player has earned in the scenario.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalPiesEarned")]
         public int TotalPiesEarned { get; set; }
 

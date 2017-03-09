@@ -6,21 +6,12 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport.Common
     [Serializable]
     public class ProgressiveCommendationDelta : IEquatable<ProgressiveCommendationDelta>
     {
-        /// <summary>
-        /// The commendation ID. Commendations are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "Id")]
         public Guid Id { get; set; }
 
-        /// <summary>
-        /// The progress the player had made towards the commendation level before the match.
-        /// </summary>
         [JsonProperty(PropertyName = "PreviousProgress")]
         public int PreviousProgress { get; set; }
 
-        /// <summary>
-        /// The progress the player had made towards the commendation level after the match.
-        /// </summary>
         [JsonProperty(PropertyName = "Progress")]
         public int Progress { get; set; }
 

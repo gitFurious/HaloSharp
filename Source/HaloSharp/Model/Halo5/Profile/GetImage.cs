@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Halo5.Profile
 {
     [Serializable]
     public class GetImage : IEquatable<GetImage>
     {
-        /// <summary>
-        /// The URI the Image was retrieved from.
-        /// </summary>
+        [JsonProperty(PropertyName = "Uri")]
         public string Uri { get; set; }
 
-        /// <summary>
-        /// The Image.
-        /// </summary>
+        [JsonProperty(PropertyName = "Image")]
         public Image Image { get; set; }
 
         public bool Equals(GetImage other)

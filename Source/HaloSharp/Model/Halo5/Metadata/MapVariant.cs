@@ -6,39 +6,21 @@ namespace HaloSharp.Model.Halo5.Metadata
     [Serializable]
     public class MapVariant : IEquatable<MapVariant>
     {
-        /// <summary>
-        /// Internal use only. Do not use.
-        /// </summary>
         [JsonProperty(PropertyName = "contentId")]
         public Guid ContentId { get; set; }
 
-        /// <summary>
-        /// A localized description, suitable for display to users.
-        /// </summary>
         [JsonProperty(PropertyName = "description")]
         public string Description { get; set; }
 
-        /// <summary>
-        /// The ID that uniquely identifies this map variant.
-        /// </summary>
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
-        /// <summary>
-        /// The ID of the map this is a variant for. Maps are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "mapId")]
         public Guid? MapId { get; set; }
 
-        /// <summary>
-        /// A reference to an image. This may be null if there is no image defined.
-        /// </summary>
         [JsonProperty(PropertyName = "mapImageUrl")]
         public string MapImageUrl { get; set; }
 
-        /// <summary>
-        /// A localized name, suitable for display to users.
-        /// </summary>
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 

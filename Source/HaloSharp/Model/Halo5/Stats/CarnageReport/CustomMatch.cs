@@ -9,16 +9,9 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
     [Serializable]
     public class CustomMatch : BaseMatch, IEquatable<CustomMatch>
     {
-        /// <summary>
-        /// A list of stats for each player who was present in the match.
-        /// </summary>
         [JsonProperty(PropertyName = "PlayerStats")]
         public List<CustomMatchPlayerStat> PlayerStats { get; set; }
 
-        /// <summary>
-        /// A list of stats for each team who in the match. Note that in Free For All modes, there is an entry for 
-        /// every player.
-        /// </summary>
         [JsonProperty(PropertyName = "TeamStats")]
         public List<TeamStat> TeamStats { get; set; }
 
@@ -84,17 +77,9 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
     [Serializable]
     public class CustomMatchPlayerStat : BasePlayerStat, IEquatable<CustomMatchPlayerStat>
     {
-        /// <summary>
-        /// The number of times the player was killed by each opponent. If the player was not killed by an opponent, 
-        /// there will be no entry for that opponent.
-        /// </summary>
         [JsonProperty(PropertyName = "KilledByOpponentDetails")]
         public List<OpponentDetails> KilledByOpponentDetails { get; set; }
 
-        /// <summary>
-        /// The number of times the player killed each opponent. If the player did not kill an opponent, there will be 
-        /// no entry for that opponent.
-        /// </summary>
         [JsonProperty(PropertyName = "KilledOpponentDetails")]
         public List<OpponentDetails> KilledOpponentDetails { get; set; }
 

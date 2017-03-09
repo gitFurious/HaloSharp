@@ -6,15 +6,9 @@ namespace HaloSharp.Model.Common
     [Serializable]
     public class Identity : IEquatable<Identity>
     {
-        /// <summary>
-        /// The player's gamertag.
-        /// </summary>
         [JsonProperty(PropertyName = "Gamertag")]
         public string Gamertag { get; set; }
 
-        /// <summary>
-        /// Internal use only. This will always be null.
-        /// </summary>
         [JsonProperty(PropertyName = "Xuid")]
         public object Xuid { get; set; }
 

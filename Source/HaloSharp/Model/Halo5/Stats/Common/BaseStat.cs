@@ -9,204 +9,105 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class BaseStat : IEquatable<BaseStat>
     {
-        /// <summary>
-        /// List of enemy vehicles destroyed. Vehicles are available via the Metadata API. Note: this stat measures enemy vehicles, not any vehicle destruction.
-        /// </summary>
         [JsonProperty(PropertyName = "DestroyedEnemyVehicles")]
         public List<EnemySet> DestroyedEnemyVehicles { get; set; }
 
-        /// <summary>
-        /// List of enemies killed, per enemy type. Enemies are available via the Metadata API.
-        /// /// </summary>
         [JsonProperty(PropertyName = "EnemyKills")]
         public List<EnemySet> EnemyKills { get; set; }
 
-        /// <summary>
-        /// TODO:
-        /// </summary>
         [JsonProperty(PropertyName = "FastestMatchWin")]
         [JsonConverter(typeof(TimeSpanConverter))]
         public TimeSpan FastestMatchWin { get; set; }
 
-        /// <summary>
-        /// The set of Impulses (invisible Medals) earned by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "Impulses")]
         public List<Impulse> Impulses { get; set; }
 
-        /// <summary>
-        /// The set of Medals earned by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "MedalAwards")]
         public List<MedalAward> MedalAwards { get; set; }
 
-        /// <summary>
-        /// Total number of assassinations by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalAssassinations")]
         public int TotalAssassinations { get; set; }
 
-        /// <summary>
-        /// Total number of assists by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalAssists")]
         public int TotalAssists { get; set; }
 
-        /// <summary>
-        /// Total number of deaths by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalDeaths")]
         public int TotalDeaths { get; set; }
 
-        /// <summary>
-        /// Not used.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalGamesCompleted")]
         public int TotalGamesCompleted { get; set; }
 
-        /// <summary>
-        /// Not used.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalGamesLost")]
         public int TotalGamesLost { get; set; }
 
-        /// <summary>
-        /// Not used.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalGamesTied")]
         public int TotalGamesTied { get; set; }
 
-        /// <summary>
-        /// Not used.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalGamesWon")]
         public int TotalGamesWon { get; set; }
 
-        /// <summary>
-        /// Total grenade damage dealt by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalGrenadeDamage")]
         public double TotalGrenadeDamage { get; set; }
 
-        /// <summary>
-        /// Total number of grenade kills by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalGrenadeKills")]
         public int TotalGrenadeKills { get; set; }
 
-        /// <summary>
-        /// Total ground pound damage dealt by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalGroundPoundDamage")]
         public double TotalGroundPoundDamage { get; set; }
 
-        /// <summary>
-        /// Total number of ground pound kills by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalGroundPoundKills")]
         public int TotalGroundPoundKills { get; set; }
 
-        /// <summary>
-        /// Total number of headshots done by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalHeadshots")]
         public int TotalHeadshots { get; set; }
 
-        /// <summary>
-        /// Total number of kills done by the player. This includes melee kills, shoulder bash kills and Spartan charge kills, all power weapons, AI kills and vehicle destructions. 
-        /// </summary>
         [JsonProperty(PropertyName = "TotalKills")]
         public int TotalKills { get; set; }
 
-        /// <summary>
-        /// Total melee damage dealt by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalMeleeDamage")]
         public double TotalMeleeDamage { get; set; }
 
-        /// <summary>
-        /// Total number of melee kills by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalMeleeKills")]
         public int TotalMeleeKills { get; set; }
 
-        /// <summary>
-        /// Total power weapon damage dealt by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalPowerWeaponDamage")]
         public double TotalPowerWeaponDamage { get; set; }
 
-        /// <summary>
-        /// Total number of power weapon grabs by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalPowerWeaponGrabs")]
         public int TotalPowerWeaponGrabs { get; set; }
 
-        /// <summary>
-        /// Total number of power weapon kills by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalPowerWeaponKills")]
         public int TotalPowerWeaponKills { get; set; }
 
-        /// <summary>
-        /// Total power weapon possession by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalPowerWeaponPossessionTime")]
         [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan TotalPowerWeaponPossessionTime { get; set; }
 
-        /// <summary>
-        /// Total number of shots fired by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalShotsFired")]
         public int TotalShotsFired { get; set; }
 
-        /// <summary>
-        /// Total number of shots landed by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalShotsLanded")]
         public int TotalShotsLanded { get; set; }
 
-        /// <summary>
-        /// Total shoulder bash damage dealt by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalShoulderBashDamage")]
         public double TotalShoulderBashDamage { get; set; }
 
-        /// <summary>
-        /// Total number of shoulder bash kills by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalShoulderBashKills")]
         public int TotalShoulderBashKills { get; set; }
 
-        /// <summary>
-        /// Total number of Spartan kills by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalSpartanKills")]
         public int TotalSpartanKills { get; set; }
 
-        /// <summary>
-        /// Total timed played in this match by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalTimePlayed")]
         [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan TotalTimePlayed { get; set; }
 
-        /// <summary>
-        /// Total weapon damage dealt by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalWeaponDamage")]
         public double TotalWeaponDamage { get; set; }
 
-        /// <summary>
-        /// The set of weapons (weapons and vehicles included) used by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "WeaponStats")]
         public List<WeaponStat> WeaponStats { get; set; }
 
-        /// <summary>
-        /// The weapon the player used to get the most kills this match.
-        /// </summary>
         [JsonProperty(PropertyName = "WeaponWithMostKills")]
         public WeaponStat WeaponWithMostKills { get; set; }
 
@@ -332,46 +233,25 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class WeaponStat : IEquatable<WeaponStat>
     {
-        /// <summary>
-        /// The total damage dealt for this weapon.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalDamageDealt")]
         public double TotalDamageDealt { get; set; }
 
-        /// <summary>
-        /// The number of headshots for this weapon.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalHeadshots")]
         public int TotalHeadshots { get; set; }
 
-        /// <summary>
-        /// The number of kills for this weapon.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalKills")]
         public int TotalKills { get; set; }
 
-        /// <summary>
-        /// The total possession time for this weapon.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalPossessionTime")]
         [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan TotalPossessionTime { get; set; }
 
-        /// <summary>
-        /// The number of shots fired for this weapon.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalShotsFired")]
         public int TotalShotsFired { get; set; }
 
-        /// <summary>
-        /// The number of shots landed for this weapon.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalShotsLanded")]
         public int TotalShotsLanded { get; set; }
 
-        /// <summary>
-        /// //TODO
-        /// </summary>
         [JsonProperty(PropertyName = "WeaponId")]
         public WeaponId WeaponId { get; set; }
 
@@ -445,15 +325,9 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class WeaponId : IEquatable<WeaponId>
     {
-        /// <summary>
-        /// Any attachments the weapon had.
-        /// </summary>
         [JsonProperty(PropertyName = "Attachments")]
         public List<uint> Attachments { get; set; }
 
-        /// <summary>
-        /// The ID of the weapon. Weapons are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "StockId")]
         public uint StockId { get; set; }
 
@@ -515,15 +389,9 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class MedalAward : IEquatable<MedalAward>
     {
-        /// <summary>
-        /// The number of times the Medal was earned.
-        /// </summary>
         [JsonProperty(PropertyName = "Count")]
         public int Count { get; set; }
 
-        /// <summary>
-        /// The ID of the Medal. Medals are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "MedalId")]
         public uint MedalId { get; set; }
 
@@ -585,15 +453,9 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class Impulse : IEquatable<Impulse>
     {
-        /// <summary>
-        /// The number of times the Impuse was earned.
-        /// </summary>
         [JsonProperty(PropertyName = "Count")]
         public int Count { get; set; }
 
-        /// <summary>
-        /// The ID of the Impulse. Impulses are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "Id")]
         public uint Id { get; set; }
 
@@ -655,15 +517,9 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class EnemySet : IEquatable<EnemySet>
     {
-        /// <summary>
-        /// The enemy this entry references.
-        /// </summary>
         [JsonProperty(PropertyName = "Enemy")]
         public Enemy Enemy { get; set; }
 
-        /// <summary>
-        /// Total number of kills on the enemy by the player.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalKills")]
         public int TotalKills { get; set; }
 
@@ -725,15 +581,9 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class Enemy : IEquatable<Enemy>
     {
-        /// <summary>
-        /// The attachments (variants) for the enemy.
-        /// </summary>
         [JsonProperty(PropertyName = "Attachments")]
         public List<uint> Attachments { get; set; }
 
-        /// <summary>
-        /// The Base ID for the enemy.
-        /// </summary>
         [JsonProperty(PropertyName = "BaseId")]
         public uint BaseId { get; set; }
 

@@ -6,70 +6,36 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport.Common
     [Serializable]
     public class XpInfo : IEquatable<XpInfo>
     {
-        /// <summary>
-        /// The amount of XP the player earned if they played a boost card for this match, and the boost card criteria 
-        /// was met. This is a fixed amount of XP, not a multiplier.
-        /// </summary>
         [JsonProperty(PropertyName = "BoostAmount")]
         public int BoostAmount { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "MatchSpeedWinAmount")]
         public int MatchSpeedWinAmount { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "ObjectivesCompletedAmount")]
         public int ObjectivesCompletedAmount { get; set; }
 
-        /// <summary>
-        /// The XP awarded to the player based on how their team ranked when the match concluded.
-        /// </summary>
         [JsonProperty(PropertyName = "PerformanceXP")]
         public int? PerformanceXp { get; set; }
 
-        /// <summary>
-        /// The XP awarded to the player for their team-agnostic rank.
-        /// </summary>
         [JsonProperty(PropertyName = "PlayerRankXPAward")]
         public int PlayerRankXpAward { get; set; }
 
-        /// <summary>
-        /// The portion of the XP the player earned this match that was based on how much time was spent in-match.
-        /// </summary>
         [JsonProperty(PropertyName = "PlayerTimePerformanceXPAward")]
         public int PlayerTimePerformanceXpAward { get; set; }
 
-        /// <summary>
-        /// The player's Spartan Rank before the match started.
-        /// </summary>
         [JsonProperty(PropertyName = "PrevSpartanRank")]
         public int PrevSpartanRank { get; set; }
 
-        /// <summary>
-        /// The player's XP before the match started.
-        /// </summary>
         [JsonProperty(PropertyName = "PrevTotalXP")]
         public int PrevTotalXp { get; set; }
 
-        /// <summary>
-        /// The player's Spartan Rank after the match ended.
-        /// </summary>
         [JsonProperty(PropertyName = "SpartanRank")]
         public int SpartanRank { get; set; }
 
-        /// <summary>
-        /// The multiplier on the XP earned this match based on their Spartan Rank when the match ended.
-        /// </summary>
         [JsonProperty(PropertyName = "SpartanRankMatchXPScalar")]
         public double SpartanRankMatchXpScalar { get; set; }
 
-        /// <summary>
-        /// The player's XP after the match ended.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalXP")]
         public int TotalXp { get; set; }
 

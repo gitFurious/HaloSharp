@@ -9,22 +9,12 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
     [Serializable]
     public class WarzoneMatch : BaseMatch, IEquatable<WarzoneMatch>
     {
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "ObjectivesCompleted")]
         public int? ObjectivesCompleted { get; set; }
 
-        /// <summary>
-        /// A list of stats for each player who was present in the match.
-        /// </summary>
         [JsonProperty(PropertyName = "PlayerStats")]
         public List<WarzonePlayerStat> PlayerStats { get; set; }
 
-        /// <summary>
-        /// A list of stats for each team who in the match. Note that in Free For All modes, there is an entry for 
-        /// every player.
-        /// </summary>
         [JsonProperty(PropertyName = "TeamStats")]
         public List<TeamStat> TeamStats { get; set; }
 
@@ -92,91 +82,45 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
     [Serializable]
     public class WarzonePlayerStat : BasePlayerStat, IEquatable<WarzonePlayerStat>
     {
-        /// <summary>
-        /// TODO: 
-        /// </summary>
         [JsonProperty(PropertyName = "BoostInfo")]
         public BoostInfo BoostInfo { get; set; }
 
-        /// <summary>
-        /// Details on any credits the player may have earned from playing this match.
-        /// </summary>
         [JsonProperty(PropertyName = "CreditsEarned")]
         public CreditsEarned CreditsEarned { get; set; }
 
-        /// <summary>
-        /// The number of times the player was killed by each opponent. If the player was not killed by an opponent, 
-        /// there will be no entry for that opponent.
-        /// </summary>
         [JsonProperty(PropertyName = "KilledByOpponentDetails")]
         public List<OpponentDetails> KilledByOpponentDetails { get; set; }
 
-        /// <summary>
-        /// The number of times the player killed each opponent. If the player did not kill an opponent, there will be 
-        /// no entry for that opponent.
-        /// </summary>
         [JsonProperty(PropertyName = "KilledOpponentDetails")]
         public List<OpponentDetails> KilledOpponentDetails { get; set; }
 
-        /// <summary>
-        /// The player's progress towards meta commendations. Commendations that had no progress earned this match will 
-        /// not be returned. 
-        /// </summary>
         [JsonProperty(PropertyName = "MetaCommendationDeltas")]
         public List<MetaCommendationDelta> MetaCommendationDeltas { get; set; }
 
-        /// <summary>
-        /// The player's progress towards progressive commendations. Commendations that had no progress earned this 
-        /// match will not be returned.
-        /// </summary>
         [JsonProperty(PropertyName = "ProgressiveCommendationDeltas")]
         public List<ProgressiveCommendationDelta> ProgressiveCommendationDeltas { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "PveTotalRoundAssistBonuses")]
         public int? PveTotalRoundAssistBonuses { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "PveTotalRoundKillBonuses")]
         public int? PveTotalRoundKillBonuses { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "PveTotalRoundSpeedBonuses")]
         public int? PveTotalRoundSpeedBonuses { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "PveTotalRoundSurvivalBonuses")]
         public int? PveTotalRoundSurvivalBonuses { get; set; }
 
-        /// <summary>
-        /// The set of rewards that the player got in this match. Rewards are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "RewardSets")]
         public List<RewardSet> RewardSets { get; set; }
 
-        /// <summary>
-        /// The total number of "pies" (in-game currency) the player earned in the match.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalPiesEarned")]
         public int TotalPiesEarned { get; set; }
 
-        /// <summary>
-        /// The maximum level the player achieved in the match.
-        /// </summary>
         [JsonProperty(PropertyName = "WarzoneLevel")]
         public int WarzoneLevel { get; set; }
 
-        /// <summary>
-        /// The experience information for the player in this match.
-        /// </summary>
         [JsonProperty(PropertyName = "XpInfo")]
         public XpInfo XpInfo { get; set; }
 

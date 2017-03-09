@@ -9,27 +9,15 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class FlexibleStats : IEquatable<FlexibleStats>
     {
-        /// <summary>
-        /// The set of flexible stats that are derived from impulse events.
-        /// </summary>
         [JsonProperty(PropertyName = "ImpulseStatCounts")]
         public List<StatCount> ImpulseStatCounts { get; set; }
 
-        /// <summary>
-        /// The set of flexible stats that are derived from impulse time lapses.
-        /// </summary>
         [JsonProperty(PropertyName = "ImpulseTimelapses")]
         public List<StatTimelapse> ImpulseTimelapses { get; set; }
 
-        /// <summary>
-        /// The set of flexible stats that are derived from medal events.
-        /// </summary>
         [JsonProperty(PropertyName = "MedalStatCounts")]
         public List<StatCount> MedalStatCounts { get; set; }
 
-        /// <summary>
-        /// The set of flexible stats that are derived from medal time lapses.
-        /// </summary>
         [JsonProperty(PropertyName = "MedalTimelapses")]
         public List<StatTimelapse> MedalTimelapses { get; set; }
 
@@ -97,15 +85,9 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class StatTimelapse : IEquatable<StatTimelapse>
     {
-        /// <summary>
-        /// The ID of the flexible stat.
-        /// </summary>
         [JsonProperty(PropertyName = "Id")]
         public Guid Id { get; set; }
 
-        /// <summary>
-        /// The amount of time the flexible stat was earned for.
-        /// </summary>
         [JsonProperty(PropertyName = "Timelapse")]
         [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan Timelapse { get; set; }
@@ -168,15 +150,9 @@ namespace HaloSharp.Model.Halo5.Stats.Common
     [Serializable]
     public class StatCount : IEquatable<StatCount>
     {
-        /// <summary>
-        /// The number of times this flexible stat was earned.
-        /// </summary>
         [JsonProperty(PropertyName = "Count")]
         public int Count { get; set; }
 
-        /// <summary>
-        /// The ID of the flexible stat.
-        /// </summary>
         [JsonProperty(PropertyName = "Id")]
         public Guid Id { get; set; }
 

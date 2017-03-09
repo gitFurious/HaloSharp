@@ -11,9 +11,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class CampaignServiceRecord : BaseServiceRecord, IEquatable<CampaignServiceRecord>
     {
-        /// <summary>
-        /// Set of responses. One per user queried.
-        /// </summary>
         [JsonProperty(PropertyName = "Results")]
         public List<CampaignServiceRecordResult> Results { get; set; }
 
@@ -75,9 +72,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class CampaignServiceRecordResult : BaseServiceRecordResult, IEquatable<CampaignServiceRecordResult>
     {
-        /// <summary>
-        /// The Service Record result for the player. Only set if ResultCode is Success.
-        /// </summary>
         [JsonProperty(PropertyName = "Result")]
         public CampaignResult Result { get; set; }
 
@@ -139,9 +133,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class CampaignResult : BaseResult, IEquatable<CampaignResult>
     {
-        /// <summary>
-        /// Campaign stats data.
-        /// </summary>
         [JsonProperty(PropertyName = "CampaignStat")]
         public CampaignStat CampaignStat { get; set; }
 
@@ -203,9 +194,6 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class CampaignStat : BaseStat, IEquatable<CampaignStat>
     {
-        /// <summary>
-        /// List of campaign stats by mission ID.
-        /// </summary>
         [JsonProperty(PropertyName = "CampaignMissionStats")]
         public List<CampaignMissionStat> CampaignMissionStats { get; set; }
 
@@ -267,29 +255,15 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class CampaignMissionStat : BaseStat, IEquatable<CampaignMissionStat>
     {
-        /// <summary>
-        /// The set of stats from missions completed while playing co-op. The key is the difficulty and the value is 
-        /// the playthrough stats for that difficulty. Empty if there are no finished playthroughs. 
-        /// </summary>
         [JsonProperty(PropertyName = "CoopStats")]
         public Dictionary<int, DifficultyStat> CoopStats { get; set; }
 
-        /// <summary>
-        /// Flexible stats are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "FlexibleStats")]
         public FlexibleStats FlexibleStats { get; set; }
 
-        /// <summary>
-        /// The mission ID that pertains to this mission. Can be found in metadata.
-        /// </summary>
         [JsonProperty(PropertyName = "MissionId")]
         public Guid MissionId { get; set; }
 
-        /// <summary>
-        /// The set of stats from missions completed while playing solo. The key is the difficulty and the value is the 
-        /// playthrough stats for that difficulty. Empty if there are no finished playthroughs. 
-        /// </summary>
         [JsonProperty(PropertyName = "SoloStats")]
         public Dictionary<int, DifficultyStat> SoloStats { get; set; }
 
@@ -359,38 +333,19 @@ namespace HaloSharp.Model.Halo5.Stats.Lifetime
     [Serializable]
     public class DifficultyStat : IEquatable<DifficultyStat>
     {
-        /// <summary>
-        /// True if the mission was completed with all of the skulls on in one playthrough for this difficulty. False 
-        /// otherwise. This field is provided to disambiguate the case where the Skulls set contains all the Skulls but 
-        /// the player played through the mission multiple times, each with a different Skull (as opposed to playing 
-        /// through the mission with ALL the skulls enabled).
-        /// </summary>
         [JsonProperty(PropertyName = "AllSkullsOn")]
         public bool AllSkullsOn { get; set; }
 
-        /// <summary>
-        /// The fastest completion time by the player on this difficulty.
-        /// </summary>
         [JsonProperty(PropertyName = "FastestCompletionTime")]
         [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan FastestCompletionTime { get; set; }
 
-        /// <summary>
-        /// The highest score achieved by the player on this difficulty.
-        /// </summary>
         [JsonProperty(PropertyName = "HighestScore")]
         public int HighestScore { get; set; }
 
-        /// <summary>
-        /// The aggregate set of skulls the player managed to finish this mission on this difficulty. Not most in a 
-        /// single run, but which have been completed overall.
-        /// </summary>
         [JsonProperty(PropertyName = "Skulls")]
         public List<int> Skulls { get; set; }
 
-        /// <summary>
-        /// The number of times this mission was completed by the player on this difficulty.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalTimesCompleted")]
         public int TotalTimesCompleted { get; set; }
 

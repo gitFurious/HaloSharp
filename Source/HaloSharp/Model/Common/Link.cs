@@ -6,45 +6,24 @@ namespace HaloSharp.Model.Common
     [Serializable]
     public class Link : IEquatable<Link>
     {
-        /// <summary>
-        /// Unknown.
-        /// </summary>
         [JsonProperty(PropertyName = "AcknowledgementTypeId")]
         public int AcknowledgementTypeId { get; set; }
 
-        /// <summary>
-        /// Unknown.
-        /// </summary>
         [JsonProperty(PropertyName = "AuthenticationLifetimeExtensionSupported")]
         public bool AuthenticationLifetimeExtensionSupported { get; set; }
 
-        /// <summary>
-        /// Unknown.
-        /// </summary>
         [JsonProperty(PropertyName = "AuthorityId")]
         public string AuthorityId { get; set; }
 
-        /// <summary>
-        /// Unknown.
-        /// </summary>
         [JsonProperty(PropertyName = "Path")]
         public string Path { get; set; }
 
-        /// <summary>
-        /// Unknown.
-        /// </summary>
         [JsonProperty(PropertyName = "QueryString")]
         public object QueryString { get; set; }
 
-        /// <summary>
-        /// Unknown.
-        /// </summary>
         [JsonProperty(PropertyName = "RetryPolicyId")]
         public string RetryPolicyId { get; set; }
 
-        /// <summary>
-        /// Unknown.
-        /// </summary>
         [JsonProperty(PropertyName = "TopicName")]
         public string TopicName { get; set; }
 

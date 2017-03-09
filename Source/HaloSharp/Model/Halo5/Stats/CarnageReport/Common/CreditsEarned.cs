@@ -6,70 +6,27 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport.Common
     [Serializable]
     public class CreditsEarned : IEquatable<CreditsEarned>
     {
-        /// <summary>
-        /// The portion of credits earned due to the boost card the user applied.
-        /// </summary>
         [JsonProperty(PropertyName = "BoostAmount")]
         public int BoostAmount { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "MatchSpeedWinAmount")]
         public int MatchSpeedWinAmount { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "ObjectivesCompletedAmount")]
         public int ObjectivesCompletedAmount { get; set; }
 
-        /// <summary>
-        /// The portion of credits earned due to the player's team-agnostic rank in the match.
-        /// </summary>
         [JsonProperty(PropertyName = "PlayerRankAmount")]
         public int PlayerRankAmount { get; set; }
 
-        /// <summary>
-        /// Indicates how the credits result was arrived at. Options are:
-        /// <list type="bullet">
-        /// <item>
-        /// <description>Credits Disabled In Playlist = 0</description>
-        /// </item>
-        /// <item>
-        /// <description>Player Did Not Finish = 1</description>
-        /// </item>
-        /// <item>
-        /// <description>Credits Earned = 2</description>
-        /// </item>
-        /// </list>
-        /// <para>Credits Disabled In Playlist: TotalCreditsEarned is zero because this playlist has credits 
-        /// disabled.</para>
-        /// <para>Player Did Not Finish: Credits are enabled in this playlist, but TotalCreditsEarned is zero because 
-        /// the player did not finish the match.</para>
-        /// <para>Credits Earned: Credits are enabled in this playlist and the player completed the match, so the 
-        /// credits formula was successfully evaluated. The fields below provide the client with the values used in 
-        /// the formula. Note: That if we used one or more default values, we still return "NormalResult". The fields 
-        /// below will confirm the actual values used.</para>
-        /// </summary>
         [JsonProperty(PropertyName = "Result")]
         public Enumeration.Halo5.CreditsEarnedResultType Result { get; set; }
 
-        /// <summary>
-        /// The scalar applied to the credits earned based on the player's Spartan Rank.
-        /// </summary>
         [JsonProperty(PropertyName = "SpartanRankModifier")]
         public double SpartanRankModifier { get; set; }
 
-        /// <summary>
-        /// The portion of credits earned due to the time the player played in the match.
-        /// </summary>
         [JsonProperty(PropertyName = "TimePlayedAmount")]
         public double TimePlayedAmount { get; set; }
 
-        /// <summary>
-        /// The total number of credits the player earned from playing this match.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalCreditsEarned")]
         public int TotalCreditsEarned { get; set; }
 

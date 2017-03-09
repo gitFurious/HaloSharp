@@ -2,17 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using HaloSharp.Model.Common;
+using Newtonsoft.Json;
 
 namespace HaloSharp.Model.Halo5.UserGeneratedContent
 {
     [Serializable]
     public class MapVariantResult : IEquatable<MapVariantResult>
     {
+
+        [JsonProperty(PropertyName = "Results")]
         public List<MapVariant> Results { get; set; }
+
+        [JsonProperty(PropertyName = "Start")]
         public int Start { get; set; }
+
+        [JsonProperty(PropertyName = "Count")]
         public int Count { get; set; }
+
+        [JsonProperty(PropertyName = "ResultCount")]
         public int ResultCount { get; set; }
+
+        [JsonProperty(PropertyName = "TotalCount")]
         public int TotalCount { get; set; }
+
+        [JsonProperty(PropertyName = "Links")]
         public Dictionary<string, Link> Links { get; set; }
 
         public bool Equals(MapVariantResult other)

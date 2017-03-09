@@ -10,47 +10,18 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
     [Serializable]
     public class CampaignMatch : BaseMatch, IEquatable<CampaignMatch>
     {
-        /// <summary>
-        /// The difficulty the mission was played at. Options are:
-        /// <list type="bullet">
-        /// <item>
-        /// <description>Easy = 0</description>
-        /// </item>
-        /// <item>
-        /// <description>Normal = 1</description>
-        /// </item>
-        /// <item>
-        /// <description>Heroic = 2</description>
-        /// </item>
-        /// <item>
-        /// <description>Legendary = 3</description>
-        /// </item>
-        /// </list>
-        /// </summary>
         [JsonProperty(PropertyName = "Difficulty")]
         public Enumeration.Halo5.Difficulty Difficulty { get; set; }
 
-        /// <summary>
-        /// Indicates whether the mission was completed when the match ended.
-        /// </summary>
         [JsonProperty(PropertyName = "MissionCompleted")]
         public bool MissionCompleted { get; set; }
 
-        /// <summary>
-        /// A list of stats for each player who was present in the match.
-        /// </summary>
         [JsonProperty(PropertyName = "PlayerStats")]
         public List<CampaignMatchPlayerStat> PlayerStats { get; set; }
 
-        /// <summary>
-        /// The list of skulls used for the mission. Skulls are available via the Metadata API.
-        /// </summary>
         [JsonProperty(PropertyName = "Skulls")]
         public List<int> Skulls { get; set; }
 
-        /// <summary>
-        /// The total playthrough time of the mission as calculated by the game. This value is persisted in save files.
-        /// </summary>
         [JsonProperty(PropertyName = "TotalMissionPlaythroughTime")]
         [JsonConverter(typeof (TimeSpanConverter))]
         public TimeSpan TotalMissionPlaythroughTime { get; set; }
@@ -123,21 +94,12 @@ namespace HaloSharp.Model.Halo5.Stats.CarnageReport
     [Serializable]
     public class CampaignMatchPlayerStat : BasePlayerStat, IEquatable<CampaignMatchPlayerStat>
     {
-        /// <summary>
-        /// The player's biggest score due to a kill.
-        /// </summary>
         [JsonProperty(PropertyName = "BiggestKillScore")]
         public int BiggestKillScore { get; set; }
 
-        /// <summary>
-        /// TODO
-        /// </summary>
         [JsonProperty(PropertyName = "CharacterIndex")]
         public int? CharacterIndex { get; set; }
 
-        /// <summary>
-        /// The player's score.
-        /// </summary>
         [JsonProperty(PropertyName = "Score")]
         public int Score { get; set; }
 
