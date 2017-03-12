@@ -2,6 +2,7 @@
 using HaloSharp.Model;
 using HaloSharp.Model.HaloWars2.Metadata;
 using System.Collections.Generic;
+using HaloSharp.Validation.Common;
 
 namespace HaloSharp.Query.HaloWars2.Metadata
 {
@@ -28,7 +29,7 @@ namespace HaloSharp.Query.HaloWars2.Metadata
                 int startAt;
                 var parsed = int.TryParse(Parameters[StartAtParameter], out startAt);
 
-                if (!parsed || startAt % 100 != 0)
+                if (!parsed || !startAt.IsValidStartAt())
                 {
                     validationResult.Messages.Add($"GetCompetitiveSkillRankDesignations optional parameter '{StartAtParameter}' is invalid: {startAt}.");
                 }

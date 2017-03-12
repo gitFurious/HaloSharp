@@ -328,6 +328,10 @@
     <Compile Include="Query\ImageQuery.cs" />
     <Compile Include="Query\Query.cs" />
     <Compile Include="RateGate.cs" />
+    <Compile Include="Validation\Common\TakeValidator.cs" />
+    <Compile Include="Validation\Common\StartAtValidator.cs" />
+    <Compile Include="Validation\Common\ImageSizeValidator.cs" />
+    <Compile Include="Validation\Common\GuidValidator.cs" />
     <Compile Include="Validation\Common\GamertagValidator.cs" />
   </ItemGroup>
   <ItemGroup>

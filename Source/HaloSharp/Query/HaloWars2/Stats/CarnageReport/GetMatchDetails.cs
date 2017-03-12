@@ -2,6 +2,7 @@ using HaloSharp.Model.HaloWars2.Stats.CarnageReport;
 using System;
 using HaloSharp.Exception;
 using HaloSharp.Model;
+using HaloSharp.Validation.Common;
 
 namespace HaloSharp.Query.HaloWars2.Stats.CarnageReport
 {
@@ -20,7 +21,7 @@ namespace HaloSharp.Query.HaloWars2.Stats.CarnageReport
         {
             var validationResult = new ValidationResult();
 
-            if (_matchId == default(Guid))
+            if (!_matchId.IsValid())
             {
                 validationResult.Messages.Add("GetMatchDetails query requires a valid Match Id to be set.");
             }

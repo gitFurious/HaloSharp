@@ -2,6 +2,7 @@
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Metadata;
 using System;
+using HaloSharp.Validation.Common;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
@@ -20,7 +21,7 @@ namespace HaloSharp.Query.Halo5.Metadata
         {
             var validationResult = new ValidationResult();
 
-            if (_requisitionId == default(Guid))
+            if (!_requisitionId.IsValid())
             {
                 validationResult.Messages.Add("GetRequisition query requires a Requisition Id to be set.");
             }

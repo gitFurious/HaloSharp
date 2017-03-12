@@ -28,7 +28,7 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
                 validationResult.Messages.Add("GetMapVariant query requires a valid Gamertag to be set.");
             }
 
-            if (_mapVariantId == default(Guid))
+            if (!_mapVariantId.IsValid())
             {
                 validationResult.Messages.Add("GetMapVariant query requires a Map Variant Id to be set.");
             }

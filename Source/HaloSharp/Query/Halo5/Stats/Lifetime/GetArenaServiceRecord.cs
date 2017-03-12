@@ -51,7 +51,7 @@ namespace HaloSharp.Query.Halo5.Stats.Lifetime
                 Guid seasonId;
                 var parsed = Guid.TryParse(_parameters[SeasonIdParameter], out seasonId);
 
-                if (!parsed || seasonId == default(Guid))
+                if (!parsed || !seasonId.IsValid())
                 {
                     validationResult.Messages.Add($"GetArenaServiceRecord optional parameter '{SeasonIdParameter}' is invalid: {seasonId}.");
                 }

@@ -79,23 +79,12 @@ namespace HaloSharp.Query.Halo5.Stats
                 }
             }
 
-            if (_parameters.ContainsKey(StartParameter))
-            {
-                int start;
-                var parsed = int.TryParse(_parameters[StartParameter], out start);
-
-                if (!parsed || start < 0)
-                {
-                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{StartParameter}' is invalid: {start}.");
-                }
-            }
-
             if (_parameters.ContainsKey(CountParameter))
             {
                 int count;
                 var parsed = int.TryParse(_parameters[CountParameter], out count);
 
-                if (!parsed || count < 1 || count > 25)
+                if (!parsed || count.IsValidTake())
                 {
                     validationResult.Messages.Add($"GetMatchHistory optional parameter '{CountParameter}' is invalid: {count}.");
                 }

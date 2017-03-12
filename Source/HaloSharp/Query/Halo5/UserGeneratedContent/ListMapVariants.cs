@@ -1,4 +1,5 @@
-﻿using HaloSharp.Exception;
+﻿using System;
+using HaloSharp.Exception;
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.UserGeneratedContent;
 using HaloSharp.Validation.Common;
@@ -67,14 +68,26 @@ namespace HaloSharp.Query.Halo5.UserGeneratedContent
                 validationResult.Messages.Add("ListMapVariants query requires a valid Gamertag to be set.");
             }
 
+            if (_parameters.ContainsKey(SortParameter))
+            {
+                var sort = _parameters[SortParameter];
+
+                var defined = Enum.IsDefined(typeof(Enumeration.Halo5.UserGeneratedContentSort), sort);
+
+                if (!defined)
+                {
+                    validationResult.Messages.Add($"ListGameVariants optional parameter '{SortParameter}' is invalid: {sort}.");
+                }
+            }
+
             if (_parameters.ContainsKey(CountParameter))
             {
-                int count;
-                var parsed = int.TryParse(_parameters[CountParameter], out count);
+                int take;
+                var parsed = int.TryParse(_parameters[CountParameter], out take);
 
-                if (!parsed || count < 1 || count > 100)
+                if (!parsed || !take.IsValidTake())
                 {
-                    validationResult.Messages.Add($"ListMapVariants optional parameter '{CountParameter}' is invalid: {count}.");
+                    validationResult.Messages.Add($"ListMapVariants optional parameter '{CountParameter}' is invalid: {take}.");
                 }
             }
 

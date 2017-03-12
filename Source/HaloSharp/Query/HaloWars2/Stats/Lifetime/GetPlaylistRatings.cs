@@ -45,7 +45,7 @@ namespace HaloSharp.Query.HaloWars2.Stats.Lifetime
                 }
             }
 
-            if (_playlistId == default(Guid))
+            if (!_playlistId.IsValid())
             {
                 validationResult.Messages.Add("GetPlaylistRatings query requires a valid Playlist Id to be set.");
             }

@@ -28,7 +28,7 @@ namespace HaloSharp.Query.HaloWars2.Stats.Lifetime
                 validationResult.Messages.Add("GetSeasonSummary query requires a valid Gamertag to be set.");
             }
 
-            if (_seasonId == default(Guid))
+            if (!_seasonId.IsValid())
             {
                 validationResult.Messages.Add("GetSeasonSummary query requires a valid Season Id to be set.");
             }

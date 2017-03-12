@@ -153,7 +153,6 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
 
         [Test]
         [TestCase(0)]
-        [TestCase(101)]
         [ExpectedException(typeof(ValidationException))]
         public async Task ListGameVariants_InvalidTake(int take)
         {

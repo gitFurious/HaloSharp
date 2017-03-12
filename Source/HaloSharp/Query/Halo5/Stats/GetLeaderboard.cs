@@ -3,6 +3,7 @@ using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats;
 using System;
 using System.Collections.Generic;
+using HaloSharp.Validation.Common;
 
 namespace HaloSharp.Query.Halo5.Stats
 {
@@ -33,24 +34,24 @@ namespace HaloSharp.Query.Halo5.Stats
         {
             var validationResult = new ValidationResult();
 
-            if (_seasonId == default(Guid))
+            if (!_seasonId.IsValid())
             {
                 validationResult.Messages.Add("GetLeaderboard query requires a Season Id to be set.");
             }
 
-            if (_playlistId == default(Guid))
+            if (!_playlistId.IsValid())
             {
                 validationResult.Messages.Add("GetLeaderboard query requires a Playlist Id to be set.");
             }
 
             if (_parameters.ContainsKey(CountParameter))
             {
-                int count;
-                var parsed = int.TryParse(_parameters[CountParameter], out count);
+                int take;
+                var parsed = int.TryParse(_parameters[CountParameter], out take);
 
-                if (!parsed || count < 1 || count > 250)
+                if (!parsed || !take.IsValidTake())
                 {
-                    validationResult.Messages.Add($"GetLeaderboard optional parameter '{CountParameter}' is invalid: {count}.");
+                    validationResult.Messages.Add($"GetLeaderboard optional parameter '{CountParameter}' is invalid: {take}.");
                 }
             }
 

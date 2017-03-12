@@ -2,6 +2,7 @@
 using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.CarnageReport;
 using System;
+using HaloSharp.Validation.Common;
 
 namespace HaloSharp.Query.Halo5.Stats.CarnageReport
 {
@@ -20,7 +21,7 @@ namespace HaloSharp.Query.Halo5.Stats.CarnageReport
         {
             var validationResult = new ValidationResult();
 
-            if (_matchId == default(Guid))
+            if (!_matchId.IsValid())
             {
                 validationResult.Messages.Add("GetWarzoneMatchDetails query requires a Match Id to be set.");
             }

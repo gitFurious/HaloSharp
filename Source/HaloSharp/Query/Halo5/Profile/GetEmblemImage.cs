@@ -37,12 +37,10 @@ namespace HaloSharp.Query.Halo5.Profile
 
             if (_parameters.ContainsKey(SizeParameter))
             {
-                var validSizes = new List<int> { 95, 128, 190, 256, 512 };
-
                 int size;
                 var parsed = int.TryParse(_parameters[SizeParameter], out size);
 
-                if (!parsed || !validSizes.Contains(size))
+                if (!parsed || !size.IsValidSize())
                 {
                     validationResult.Messages.Add($"GetEmblemImage optional parameter '{SizeParameter}' is invalid: {size}.");
                 }

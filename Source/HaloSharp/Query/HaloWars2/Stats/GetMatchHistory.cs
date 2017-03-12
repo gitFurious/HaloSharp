@@ -54,37 +54,14 @@ namespace HaloSharp.Query.HaloWars2.Stats
                 validationResult.Messages.Add("GetMatchHistory query requires a valid Gamertag (Player) to be set.");
             }
 
-            if (_parameters.ContainsKey(MatchTypeParameter))
-            {
-                var matchType = _parameters[MatchTypeParameter];
-
-                var defined = Enum.IsDefined(typeof(Enumeration.HaloWars2.MatchType), matchType);
-
-                if (!defined)
-                {
-                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{MatchTypeParameter}' is invalid: {matchType}.");
-                }
-            }
-
-            if (_parameters.ContainsKey(StartParameter))
-            {
-                int start;
-                var parsed = int.TryParse(_parameters[StartParameter], out start);
-
-                if (!parsed || start < 0)
-                {
-                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{StartParameter}' is invalid: {start}.");
-                }
-            }
-
             if (_parameters.ContainsKey(CountParameter))
             {
-                int count;
-                var parsed = int.TryParse(_parameters[CountParameter], out count);
+                int take;
+                var parsed = int.TryParse(_parameters[CountParameter], out take);
 
-                if (!parsed || count < 1 || count > 25)
+                if (!parsed || !take.IsValidTake())
                 {
-                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{CountParameter}' is invalid: {count}.");
+                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{CountParameter}' is invalid: {take}.");
                 }
             }
 
