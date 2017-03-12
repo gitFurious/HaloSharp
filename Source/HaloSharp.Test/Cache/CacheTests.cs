@@ -7,91 +7,25 @@ namespace HaloSharp.Test.Cache
     [TestFixture]
     public class CacheTests
     {
-        private TimeSpan? PreviousMetadataCacheDuration { get; set; }
-        private TimeSpan? PreviousProfileCacheDuration { get; set; }
-        private TimeSpan? PreviousStatsCacheDuration { get; set; }
-        private TimeSpan? PreviousUserGeneratedContentCacheDuration { get; set; }
+        private TimeSpan? PreviousCacheDuration { get; set; }
 
         [SetUp]
         public void Setup()
         {
-            PreviousMetadataCacheDuration = HaloSharp.Cache.MetadataCacheDuration;
-            PreviousProfileCacheDuration = HaloSharp.Cache.ProfileCacheDuration;
-            PreviousStatsCacheDuration = HaloSharp.Cache.StatsCacheDuration;
-            PreviousUserGeneratedContentCacheDuration = HaloSharp.Cache.UserGeneratedContentCacheDuration;
+            PreviousCacheDuration = HaloSharp.Cache.CacheDuration;
         }
 
         [Test]
-        public void MetadataExpiresFromCacheAfterDuration()
+        public void ExpiresFromCacheAfterDuration()
         {
             var cacheDuration = new TimeSpan(0, 0, 0, 3);
 
-            HaloSharp.Cache.MetadataCacheDuration = cacheDuration;
+            HaloSharp.Cache.CacheDuration = cacheDuration;
 
-            const string key = "metadata";
-            const string input = "HaloSharp.Metadata";
+            const string key = "ExpiresFromCacheAfterDuration";
+            const string input = "HaloSharp.Cache";
 
-            HaloSharp.Cache.AddMetadata(key, input);
-            var output = HaloSharp.Cache.Get<string>(key);
-            Assert.AreEqual(input, output);
-
-            Thread.Sleep(cacheDuration);
-
-            output = HaloSharp.Cache.Get<string>(key);
-            Assert.IsNull(output);
-        }
-
-        [Test]
-        public void ProfileExpiresFromCacheAfterDuration()
-        {
-            var cacheDuration = new TimeSpan(0, 0, 0, 3);
-
-            HaloSharp.Cache.ProfileCacheDuration = cacheDuration;
-
-            const string key = "profile";
-            const string input = "HaloSharp.Profile";
-
-            HaloSharp.Cache.AddProfile(key, input);
-            var output = HaloSharp.Cache.Get<string>(key);
-            Assert.AreEqual(input, output);
-
-            Thread.Sleep(cacheDuration);
-
-            output = HaloSharp.Cache.Get<string>(key);
-            Assert.IsNull(output);
-        }
-
-        [Test]
-        public void StatsExpiresFromCacheAfterDuration()
-        {
-            var cacheDuration = new TimeSpan(0, 0, 0, 3);
-
-            HaloSharp.Cache.StatsCacheDuration = cacheDuration;
-
-            const string key = "stats";
-            const string input = "HaloSharp.Stats";
-
-            HaloSharp.Cache.AddStats(key, input);
-            var output = HaloSharp.Cache.Get<string>(key);
-            Assert.AreEqual(input, output);
-
-            Thread.Sleep(cacheDuration);
-
-            output = HaloSharp.Cache.Get<string>(key);
-            Assert.IsNull(output);
-        }
-
-        [Test]
-        public void UserGeneratedContentExpiresFromCacheAfterDuration()
-        {
-            var cacheDuration = new TimeSpan(0, 0, 0, 3);
-
-            HaloSharp.Cache.UserGeneratedContentCacheDuration = cacheDuration;
-
-            const string key = "stats";
-            const string input = "HaloSharp.UserGeneratedContent";
-
-            HaloSharp.Cache.AddUserGeneratedContent(key, input);
+            HaloSharp.Cache.Add(key, input);
             var output = HaloSharp.Cache.Get<string>(key);
             Assert.AreEqual(input, output);
 
@@ -104,10 +38,7 @@ namespace HaloSharp.Test.Cache
         [TearDown]
         public void TearDown()
         {
-            HaloSharp.Cache.MetadataCacheDuration = PreviousMetadataCacheDuration;
-            HaloSharp.Cache.ProfileCacheDuration = PreviousProfileCacheDuration;
-            HaloSharp.Cache.StatsCacheDuration = PreviousStatsCacheDuration;
-            HaloSharp.Cache.UserGeneratedContentCacheDuration = PreviousUserGeneratedContentCacheDuration;
+            HaloSharp.Cache.CacheDuration = PreviousCacheDuration;
         }
     }
 }

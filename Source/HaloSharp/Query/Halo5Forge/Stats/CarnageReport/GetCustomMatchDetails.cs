@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Text;
 
 namespace HaloSharp.Query.Halo5Forge.Stats.CarnageReport
 {
     public class GetCustomMatchDetails : Halo5.Stats.CarnageReport.GetCustomMatchDetails
     {
-        public GetCustomMatchDetails(Guid matchId) : base(matchId) { }
+        protected override string Path => $"stats/h5pc/custom/matches/{_matchId}";
 
-        public override string GetConstructedUri()
+        private readonly Guid _matchId;
+
+        public GetCustomMatchDetails(Guid matchId) : base(matchId)
         {
-            var builder = new StringBuilder($"stats/h5pc/custom/matches/{MatchId}");
-
-            return builder.ToString();
+            _matchId = matchId;
         }
     }
 }

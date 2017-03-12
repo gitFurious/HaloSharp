@@ -1,44 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using HaloSharp.Model.Halo5.Metadata;
+﻿using HaloSharp.Model.Halo5.Metadata;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    public class GetMaps : IQuery<List<Map>>
+    public class GetMaps : Query<List<Map>>
     {
-        private bool _useCache = true;
-
-        public GetMaps SkipCache()
-        {
-            _useCache = false;
-
-            return this;
-        }
-
-        public async Task<List<Map>> ApplyTo(IHaloSession session)
-        {
-            var uri = GetConstructedUri();
-
-            var maps = _useCache
-                ? Cache.Get<List<Map>>(uri)
-                : null;
-
-            if (maps == null)
-            {
-                maps = await session.Get<List<Map>>(uri);
-
-                Cache.AddMetadata(uri, maps);
-            }
-
-            return maps;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder("metadata/h5/metadata/maps");
-
-            return builder.ToString();
-        }
+        public override string Uri => HaloUriBuilder.Build("metadata/h5/metadata/maps");
     }
 }

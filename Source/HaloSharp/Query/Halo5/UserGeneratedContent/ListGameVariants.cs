@@ -1,97 +1,87 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.UserGeneratedContent;
-using HaloSharp.Validation.Halo5.UserGeneratedContent;
+using HaloSharp.Validation.Common;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.UserGeneratedContent
 {
-    public class ListGameVariants : IQuery<GameVariantResult>
+    public class ListGameVariants : Query<GameVariantResult>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal readonly string Player;
+        public override string Uri => HaloUriBuilder.Build($"ugc/h5/players/{_player}/gamevariants", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string SortParameter = "sort";
+        private const string OrderParameter = "order";
+        private const string StartParameter = "start";
+        private const string CountParameter = "count";
+
+        private readonly string _player;
 
         public ListGameVariants(string gamertag)
         {
-            Player = gamertag;
+            _player = gamertag;
         }
 
-        public ListGameVariants SkipCache()
+        public ListGameVariants SortBy(Enumeration.Halo5.UserGeneratedContentSort sort)
         {
-            _useCache = false;
-
-            return this;
-        }
-
-        public ListGameVariants SortBy(Model.Enumeration.Halo5.UserGeneratedContentSort sort)
-        {
-            Parameters["sort"] = sort.ToString();
+            _parameters[SortParameter] = sort.ToString();
 
             return this;
         }
 
         public ListGameVariants OrderByDescending()
         {
-            Parameters["order"] = "desc";
+            _parameters[OrderParameter] = "desc";
 
             return this;
         }
 
         public ListGameVariants OrderByAscending()
         {
-            Parameters["order"] = "asc";
+            _parameters[OrderParameter] = "asc";
 
             return this;
         }
 
         public ListGameVariants Skip(int count)
         {
-            Parameters["start"] = count.ToString();
+            _parameters[StartParameter] = count.ToString();
 
             return this;
         }
 
         public ListGameVariants Take(int count)
         {
-            Parameters["count"] = count.ToString();
+            _parameters[CountParameter] = count.ToString();
 
             return this;
         }
 
-        public async Task<GameVariantResult> ApplyTo(IHaloSession session)
+        protected override void Validate()
         {
-            this.Validate();
+            var validationResult = new ValidationResult();
 
-            var uri = GetConstructedUri();
-
-            var gameVariantResult = _useCache
-                ? Cache.Get<GameVariantResult>(uri)
-                : null;
-
-            if (gameVariantResult == null)
+            if (!_player.IsValidGamertag())
             {
-                gameVariantResult = await session.Get<GameVariantResult>(uri);
-
-                Cache.AddUserGeneratedContent(uri, gameVariantResult);
+                validationResult.Messages.Add("ListGameVariants query requires a valid Gamertag to be set.");
             }
 
-            return gameVariantResult;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"ugc/h5/players/{Player}/gamevariants");
-
-            if (Parameters.Any())
+            if (_parameters.ContainsKey(CountParameter))
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                int count;
+                var parsed = int.TryParse(_parameters[CountParameter], out count);
+
+                if (!parsed || count < 1 || count > 100)
+                {
+                    validationResult.Messages.Add($"ListGameVariants optional parameter '{CountParameter}' is invalid: {count}.");
+                }
             }
 
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

@@ -1,54 +1,34 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Metadata;
-using HaloSharp.Validation.Halo5.Metadata;
+using System;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    public class GetMapVariant : IQuery<MapVariant>
+    public class GetMapVariant : Query<MapVariant>
     {
-        internal readonly Guid MapVariantId;
+        public override string Uri => HaloUriBuilder.Build($"metadata/h5/metadata/map-variants/{_mapVariantId}");
 
-        private bool _useCache = true;
+        private readonly Guid _mapVariantId;
 
         public GetMapVariant(Guid mapVariantId)
         {
-            MapVariantId = mapVariantId;
+            _mapVariantId = mapVariantId;
         }
 
-        public GetMapVariant SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<MapVariant> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var mapVariant = _useCache
-                ? Cache.Get<MapVariant>(uri)
-                : null;
-
-            if (mapVariant == null)
+            if (_mapVariantId == default(Guid))
             {
-                mapVariant = await session.Get<MapVariant>(uri);
-
-                Cache.AddMetadata(uri, mapVariant);
+                validationResult.Messages.Add("GetMapVariant query requires a Map Variant Id to be set.");
             }
 
-            return mapVariant;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"metadata/h5/metadata/map-variants/{MapVariantId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

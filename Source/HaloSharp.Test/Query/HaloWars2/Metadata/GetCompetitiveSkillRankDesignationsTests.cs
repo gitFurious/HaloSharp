@@ -36,26 +36,17 @@ namespace HaloSharp.Test.Query.HaloWars2.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
+        [TestCase(100)]
+        [TestCase(200)]
+        public void Uri_MatchesExpected(int skip)
         {
             var query = new HaloSharp.Query.HaloWars2.Metadata.GetCompetitiveSkillRankDesignations();
 
-            var uri = query.GetConstructedUri();
+            Assert.AreEqual("https://www.haloapi.com/metadata/hw2/csr-designations", query.Uri);
 
-            Assert.AreEqual("metadata/hw2/csr-designations", uri);
-        }
+            query.Skip(skip);
 
-        [Test]
-        [TestCase(100)]
-        [TestCase(200)]
-        public void GetConstructedUri_Skip_MatchesExpected(int skip)
-        {
-            var query = new HaloSharp.Query.HaloWars2.Metadata.GetCompetitiveSkillRankDesignations()
-                .Skip(skip);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"metadata/hw2/csr-designations?startAt={skip}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/metadata/hw2/csr-designations?startAt={skip}", query.Uri);
         }
 
         [Test]
@@ -93,7 +84,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Metadata
             var query = new HaloSharp.Query.HaloWars2.Metadata.GetCompetitiveSkillRankDesignations()
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(jSchema, jArray);
         }

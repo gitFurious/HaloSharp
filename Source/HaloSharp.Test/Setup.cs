@@ -25,10 +25,7 @@ namespace HaloSharp.Test
 
             var cacheSettings = new CacheSettings
             {
-                MetadataCacheDuration = null,
-                ProfileCacheDuration = null,
-                StatsCacheDuration = null,
-                UserGeneratedContentCacheDuration = null
+                CacheDuration = null
             };
 
             var client = new HaloClient(developerAccessProduct, cacheSettings);

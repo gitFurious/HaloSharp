@@ -38,67 +38,24 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats
         }
 
         [Test]
-        [TestCase("Furiousn00b")]
-        public void GetConstructedUri_NoParameters_MatchHistoryesExpected(string player)
+        [TestCase("Furiousn00b", Enumeration.HaloWars2.MatchType.Custom, 10, 20)]
+        public void Uri_MatchesExpected(string player, Enumeration.HaloWars2.MatchType matchType, int skip, int take)
         {
             var query = new GetMatchHistory(player);
 
-            var uri = query.GetConstructedUri();
+            Assert.AreEqual($"https://www.haloapi.com/stats/hw2/players/{player}/matches", query.Uri);
 
-            Assert.AreEqual($"stats/hw2/players/{player}/matches", uri);
-        }
+            query.ForMatchType(matchType);
 
-        [Test]
-        [TestCase("Furiousn00b", Enumeration.HaloWars2.MatchType.Custom)]
-        [TestCase("Furiousn00b", Enumeration.HaloWars2.MatchType.Matchmaking)]
-        public void GetConstructedUri_ForMatchType_MatchesExpected(string player, Enumeration.HaloWars2.MatchType matchType)
-        {
-            var query = new GetMatchHistory(player)
-                .ForMatchType(matchType);
+            Assert.AreEqual($"https://www.haloapi.com/stats/hw2/players/{player}/matches?matchType={matchType}", query.Uri);
 
-            var uri = query.GetConstructedUri();
+            query.Skip(skip);
 
-            Assert.AreEqual($"stats/hw2/players/{player}/matches?matchType={matchType}", uri);
-        }
+            Assert.AreEqual($"https://www.haloapi.com/stats/hw2/players/{player}/matches?matchType={matchType}&start={skip}", query.Uri);
 
-        [Test]
-        [TestCase("Furiousn00b", 5)]
-        [TestCase("Furiousn00b", 10)]
-        public void GetConstructedUri_Skip_MatchesExpected(string player, int count)
-        {
-            var query = new GetMatchHistory(player)
-                .Skip(count);
+            query.Take(take);
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/hw2/players/{player}/matches?start={count}", uri);
-        }
-
-        [Test]
-        [TestCase("Furiousn00b", 5)]
-        [TestCase("Furiousn00b", 10)]
-        public void GetConstructedUri_Take_MatchesExpected(string player, int take)
-        {
-            var query = new GetMatchHistory(player)
-                .Take(take);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/hw2/players/{player}/matches?count={take}", uri);
-        }
-
-        [Test]
-        [TestCase("Furiousn00b", Enumeration.HaloWars2.MatchType.Custom, 10, 20)]
-        public void GetConstructedUri_Complex_MatchesExpected(string player, Enumeration.HaloWars2.MatchType matchType, int skip, int take)
-        {
-            var query = new GetMatchHistory(player)
-                .ForMatchType(matchType)
-                .Skip(skip)
-                .Take(take);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/hw2/players/{player}/matches?matchType={matchType}&start={skip}&count={take}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/stats/hw2/players/{player}/matches?matchType={matchType}&start={skip}&count={take}", query.Uri);
         }
 
         [Test]
@@ -139,7 +96,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats
             var query = new GetMatchHistory(player)
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(jSchema, jArray);
         }

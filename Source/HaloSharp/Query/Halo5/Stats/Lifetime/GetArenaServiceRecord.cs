@@ -1,74 +1,66 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.Lifetime;
-using HaloSharp.Validation.Halo5.Stats.Lifetime;
+using HaloSharp.Validation.Common;
+using System;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.Stats.Lifetime
 {
-    public class GetArenaServiceRecord : IQuery<ArenaServiceRecord>
+    public class GetArenaServiceRecord : Query<ArenaServiceRecord>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
+        public override string Uri => HaloUriBuilder.Build($"stats/h5/servicerecords/arena", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string PlayersParameter = "players";
+        private const string SeasonIdParameter = "seasonId";
 
         public GetArenaServiceRecord(string gamertag)
         {
-            Parameters["players"] = gamertag;
+            _parameters[PlayersParameter] = gamertag;
         }
 
         public GetArenaServiceRecord(IEnumerable<string> gamertags)
         {
-            Parameters["players"] = string.Join(",", gamertags);
-        }
-
-        public GetArenaServiceRecord SkipCache()
-        {
-            _useCache = false;
-
-            return this;
+            _parameters[PlayersParameter] = string.Join(",", gamertags);
         }
 
         public GetArenaServiceRecord ForSeasonId(Guid seasonId)
         {
-            Parameters["seasonId"] = seasonId.ToString();
+            _parameters["seasonId"] = seasonId.ToString();
 
             return this;
         }
 
-        public async Task<ArenaServiceRecord> ApplyTo(IHaloSession session)
+        protected override void Validate()
         {
-            this.Validate();
+            var validationResult = new ValidationResult();
 
-            var uri = GetConstructedUri();
+            var players = _parameters[PlayersParameter].Split(',');
 
-            var serviceRecord = _useCache
-                ? Cache.Get<ArenaServiceRecord>(uri)
-                : null;
-
-            if (serviceRecord == null)
+            foreach (var player in players)
             {
-                serviceRecord = await session.Get<ArenaServiceRecord>(uri);
-
-                Cache.AddStats(uri, serviceRecord);
+                if (!player.IsValidGamertag())
+                {
+                    validationResult.Messages.Add("GetArenaServiceRecord query requires valid Gamertags to be set.");
+                }
             }
 
-            return serviceRecord;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder("stats/h5/servicerecords/arena");
-
-            if (Parameters.Any())
+            if (_parameters.ContainsKey(SeasonIdParameter))
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                Guid seasonId;
+                var parsed = Guid.TryParse(_parameters[SeasonIdParameter], out seasonId);
+
+                if (!parsed || seasonId == default(Guid))
+                {
+                    validationResult.Messages.Add($"GetArenaServiceRecord optional parameter '{SeasonIdParameter}' is invalid: {seasonId}.");
+                }
             }
 
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

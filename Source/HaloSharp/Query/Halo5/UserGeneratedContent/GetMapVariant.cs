@@ -1,56 +1,42 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.UserGeneratedContent;
-using HaloSharp.Validation.Halo5.UserGeneratedContent;
+using HaloSharp.Validation.Common;
+using System;
 
 namespace HaloSharp.Query.Halo5.UserGeneratedContent
 {
-    public class GetMapVariant : IQuery<MapVariant>
+    public class GetMapVariant : Query<MapVariant>
     {
-        internal readonly string Player;
-        internal readonly Guid MapVariantId;
+        public override string Uri => HaloUriBuilder.Build($"ugc/h5/players/{_player}/mapvariants/{_mapVariantId}");
 
-        private bool _useCache = true;
+        private readonly string _player;
+        private readonly Guid _mapVariantId;
 
         public GetMapVariant(string gamertag, Guid mapVariantId)
         {
-            Player = gamertag;
-            MapVariantId = mapVariantId;
+            _player = gamertag;
+            _mapVariantId = mapVariantId;
         }
 
-        public GetMapVariant SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<MapVariant> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var mapVariant = _useCache
-                ? Cache.Get<MapVariant>(uri)
-                : null;
-
-            if (mapVariant == null)
+            if (!_player.IsValidGamertag())
             {
-                mapVariant = await session.Get<MapVariant>(uri);
-
-                Cache.AddUserGeneratedContent(uri, mapVariant);
+                validationResult.Messages.Add("GetMapVariant query requires a valid Gamertag to be set.");
             }
 
-            return mapVariant;
-        }
+            if (_mapVariantId == default(Guid))
+            {
+                validationResult.Messages.Add("GetMapVariant query requires a Map Variant Id to be set.");
+            }
 
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"ugc/h5/players/{Player}/mapvariants/{MapVariantId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

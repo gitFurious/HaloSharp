@@ -1,63 +1,43 @@
-﻿using HaloSharp.Model.HaloWars2.Metadata;
-using HaloSharp.Validation.HaloWars2.Metadata;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
+using HaloSharp.Model.HaloWars2.Metadata;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HaloSharp.Query.HaloWars2.Metadata
 {
-    public class GetPlaylists : IQuery<PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.Playlist.View>>>
+    public class GetPlaylists : Query<PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.Playlist.View>>>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
+        public override string Uri => HaloUriBuilder.Build("metadata/hw2/playlists", Parameters);
 
-        private bool _useCache = true;
+        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
+        private const string StartAtParameter = "startAt";
 
         public GetPlaylists Skip(int count)
         {
-            Parameters["startAt"] = count.ToString();
+            Parameters[StartAtParameter] = count.ToString();
 
             return this;
         }
 
-        public GetPlaylists SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.Playlist.View>>> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var response = _useCache
-                ? Cache.Get<PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.Playlist.View>>>(uri)
-                : null;
-
-            if (response == null)
+            if (Parameters.ContainsKey(StartAtParameter))
             {
-                response = await session.Get<PagedResponse<ContentItemTypeA<Model.HaloWars2.Metadata.Playlist.View>>>(uri);
+                int startAt;
+                var parsed = int.TryParse(Parameters[StartAtParameter], out startAt);
 
-                Cache.AddMetadata(uri, response);
+                if (!parsed || startAt % 100 != 0)
+                {
+                    validationResult.Messages.Add($"GetPlaylists optional parameter '{StartAtParameter}' is invalid: {startAt}.");
+                }
             }
 
-            return response;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder("metadata/hw2/playlists");
-
-            if (Parameters.Any())
+            if (!validationResult.Success)
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                throw new ValidationException(validationResult.Messages);
             }
-
-            return builder.ToString();
         }
     }
 }

@@ -1,5 +1,5 @@
-﻿using System;
-using System.Drawing;
+﻿using HaloSharp.Model.Halo5.Profile;
+using System;
 using System.Threading.Tasks;
 
 namespace HaloSharp
@@ -7,6 +7,6 @@ namespace HaloSharp
     public interface IHaloSession : IDisposable
     {
         Task<TResult> Get<TResult>(string path);
-        Task<Tuple<string, Image>> GetImage(string path);
+        Task<HaloImage> GetImage(string path);
     }
 }

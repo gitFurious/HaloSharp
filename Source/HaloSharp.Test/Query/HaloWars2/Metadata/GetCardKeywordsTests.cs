@@ -36,26 +36,17 @@ namespace HaloSharp.Test.Query.HaloWars2.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
+        [TestCase(100)]
+        [TestCase(200)]
+        public void Uri_MatchesExpected(int skip)
         {
             var query = new HaloSharp.Query.HaloWars2.Metadata.GetCardKeywords();
 
-            var uri = query.GetConstructedUri();
+            Assert.AreEqual("https://www.haloapi.com/metadata/hw2/card-keywords", query.Uri);
 
-            Assert.AreEqual("metadata/hw2/card-keywords", uri);
-        }
+            query.Skip(skip);
 
-        [Test]
-        [TestCase(100)]
-        [TestCase(200)]
-        public void GetConstructedUri_Skip_MatchesExpected(int skip)
-        {
-            var query = new HaloSharp.Query.HaloWars2.Metadata.GetCardKeywords()
-                .Skip(skip);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"metadata/hw2/card-keywords?startAt={skip}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/metadata/hw2/card-keywords?startAt={skip}", query.Uri);
         }
 
         [Test]
@@ -93,7 +84,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Metadata
             var query = new HaloSharp.Query.HaloWars2.Metadata.GetCardKeywords()
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(jSchema, jArray);
         }

@@ -1,10 +1,10 @@
-﻿using System.Threading.Tasks;
-using HaloSharp.Exception;
+﻿using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Profile;
 using HaloSharp.Query.Halo5.Profile;
 using HaloSharp.Test.Utility;
 using NUnit.Framework;
+using System.Threading.Tasks;
 
 namespace HaloSharp.Test.Query.Halo5.Profile
 {
@@ -12,71 +12,58 @@ namespace HaloSharp.Test.Query.Halo5.Profile
     public class GetEmblemImageTests
     {
         [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
+        [TestCase("Greenskull", 128)]
+        [TestCase("Furiousn00b", 256)]
+        public void Uri_MatchesExpected(string gamertag, int size)
         {
             var query = new GetEmblemImage(gamertag);
 
-            var uri = query.GetConstructedUri();
+            Assert.AreEqual($"https://www.haloapi.com/profile/h5/profiles/{gamertag}/emblem", query.Uri);
 
-            Assert.AreEqual($"profile/h5/profiles/{gamertag}/emblem{null}", uri);
+            query.Size(size);
+
+            Assert.AreEqual($"https://www.haloapi.com/profile/h5/profiles/{gamertag}/emblem?size={size}", query.Uri);
         }
 
         [Test]
-        [TestCase("Furiousn00b", 5)]
-        [TestCase("Furiousn00b", 10)]
-        public void GetConstructedUri_Size_MatchesExpected(string gamertag, int size)
-        {
-            var query = new GetEmblemImage(gamertag)
-                .Size(size);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"profile/h5/profiles/{gamertag}/emblem?size={size}", uri);
-        }
-
-        [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        public async Task GetEmblemImage(string gamertag)
-        {
-            var query = new GetEmblemImage(gamertag)
-                .SkipCache();
-
-            var result = await Global.Session.Query(query);
-
-            Assert.IsInstanceOf(typeof (GetImage), result);
-        }
-
-        [Test]
-        [TestCase("Furiousn00b", 95)]
-        [TestCase("Furiousn00b", 128)]
-        [TestCase("Furiousn00b", 190)]
+        [TestCase("Greenskull", 128)]
         [TestCase("Furiousn00b", 256)]
-        [TestCase("Furiousn00b", 512)]
-        public async Task GetEmblemImage_Size(string gamertag, int size)
+        public async Task GetEmblemImage(string gamertag, int size)
         {
             var query = new GetEmblemImage(gamertag)
-                .Size(size)
-                .SkipCache();
+               .Size(size)
+               .SkipCache();
 
             var result = await Global.Session.Query(query);
 
-            Assert.IsInstanceOf(typeof(GetImage), result);
+            Assert.IsInstanceOf(typeof (HaloImage), result);
         }
 
         [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        public async Task GetEmblemImage_IsSerializable(string gamertag)
+        [TestCase("Greenskull", 128)]
+        [TestCase("Furiousn00b", 256)]
+        public async Task GetEmblemImage_IsSerializable(string gamertag, int size)
         {
             var query = new GetEmblemImage(gamertag)
-                .SkipCache();
+               .Size(size)
+               .SkipCache();
 
             var result = await Global.Session.Query(query);
 
-            SerializationUtility<GetImage>.AssertRoundTripSerializationIsPossible(result);
+            SerializationUtility<HaloImage>.AssertRoundTripSerializationIsPossible(result);
+        }
+
+        [Test]
+        [TestCase("")]
+        [TestCase("00000000000000017")]
+        [TestCase("!$%")]
+        [ExpectedException(typeof(ValidationException))]
+        public async Task GetEmblemImage_InvalidGamertag(string gamertag)
+        {
+            var query = new GetEmblemImage(gamertag);
+
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
         }
 
         [Test]
@@ -90,18 +77,6 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         {
             var query = new GetEmblemImage(gamertag)
                 .Size(size);
-
-            await Global.Session.Query(query);
-            Assert.Fail("An exception should have been thrown");
-        }
-
-        [Test]
-        [TestCase("00000000000000017")]
-        [TestCase("!$%")]
-        [ExpectedException(typeof(ValidationException))]
-        public async Task GetEmblemImage_InvalidGamertag(string gamertag)
-        {
-            var query = new GetEmblemImage(gamertag);
 
             await Global.Session.Query(query);
             Assert.Fail("An exception should have been thrown");

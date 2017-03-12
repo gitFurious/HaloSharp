@@ -1,50 +1,34 @@
-using System.Threading.Tasks;
+using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.HaloWars2.Stats.Lifetime;
-using HaloSharp.Validation.HaloWars2.Stats.Lifetime;
+using HaloSharp.Validation.Common;
 
 namespace HaloSharp.Query.HaloWars2.Stats.Lifetime
 {
-    public class GetCampaignSummary : IQuery<CampaignSummary>
+    public class GetCampaignSummary : Query<CampaignSummary>
     {
-        internal readonly string Player;
+        public override string Uri => HaloUriBuilder.Build($"stats/hw2/players/{_player}/campaign-progress");
 
-        private bool _useCache = true;
+        private readonly string _player;
 
         public GetCampaignSummary(string player)
         {
-            Player = player;
+            _player = player;
         }
 
-        public GetCampaignSummary SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<CampaignSummary> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var response = _useCache
-                ? Cache.Get<CampaignSummary>(uri)
-                : null;
-
-            if (response == null)
+            if (!_player.IsValidGamertag())
             {
-                response = await session.Get<CampaignSummary>(uri);
-
-                Cache.AddStats(uri, response);
+                validationResult.Messages.Add("GetCampaignSummary query requires a valid Gamertag to be set.");
             }
 
-            return response;
-        }
-
-        public string GetConstructedUri()
-        {
-            return $"stats/hw2/players/{Player}/campaign-progress";
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

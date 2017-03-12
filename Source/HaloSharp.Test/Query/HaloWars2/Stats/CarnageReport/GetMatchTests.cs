@@ -37,15 +37,11 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.CarnageReport
 
         [Test]
         [TestCase("bf03af8a-763e-44d2-b86b-631da83ab1a3")]
-        public void GetConstructedUri_NoParameters_MatchesExpected(string guid)
+        public void Uri_MatchesExpected(string guid)
         {
-            var matchId = new Guid(guid);
+            var query = new GetMatchDetails(new Guid(guid));
 
-            var query = new GetMatchDetails(matchId);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/hw2/matches/{matchId}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/stats/hw2/matches/{guid}", query.Uri);
         }
 
         [Test]
@@ -92,7 +88,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.CarnageReport
             var query = new GetMatchDetails(matchId)
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(jSchema, jArray);
         }

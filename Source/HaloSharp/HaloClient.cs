@@ -17,10 +17,7 @@ namespace HaloSharp
         {
             var session = new HaloSession(_product);
 
-            Cache.MetadataCacheDuration = _cacheSettings?.MetadataCacheDuration;
-            Cache.ProfileCacheDuration = _cacheSettings?.ProfileCacheDuration;
-            Cache.StatsCacheDuration = _cacheSettings?.StatsCacheDuration;
-            Cache.UserGeneratedContentCacheDuration = _cacheSettings?.UserGeneratedContentCacheDuration;
+            Cache.CacheDuration = _cacheSettings?.CacheDuration;
 
             return session;
         }

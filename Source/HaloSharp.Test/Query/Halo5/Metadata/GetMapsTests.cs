@@ -34,13 +34,11 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
+        public void Uri_MatchesExpected()
         {
             var query = new GetMaps();
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("metadata/h5/metadata/maps", uri);
+            Assert.AreEqual("https://www.haloapi.com/metadata/h5/metadata/maps", query.Uri);
         }
 
         [Test]
@@ -78,7 +76,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             var query = new GetMaps()
                .SkipCache();
 
-            var jArray = await Global.Session.Get<JArray>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JArray>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(mapsSchema, jArray);
         }

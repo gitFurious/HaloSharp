@@ -35,14 +35,12 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
         }
 
         [Test]
-        [TestCase("00000000-0000-0000-0000-000000000000")]
-        public void GetConstructedUri_ForMatchId_MatchesExpected(string guid)
+        [TestCase("afa95d12-0e0d-487f-a583-72a24dd68361")]
+        public void Uri_MatchesExpected(string guid)
         {
             var query = new GetCustomMatchDetails(new Guid(guid));
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/custom/matches/{guid}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/custom/matches/{guid}", query.Uri);
         }
 
         [Test]
@@ -83,7 +81,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.CarnageReport
             var query = new GetCustomMatchDetails(new Guid(guid))
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(weaponsSchema, jArray);
         }

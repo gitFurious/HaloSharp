@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
-using HaloSharp.Extension;
+﻿using HaloSharp.Extension;
 using HaloSharp.Model.Halo5.Metadata;
 using HaloSharp.Query.Halo5.Metadata;
 using HaloSharp.Test.Config;
@@ -12,6 +8,10 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace HaloSharp.Test.Query.Halo5.Metadata
 {
@@ -34,13 +34,11 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
+        public void Uri_MatchesExpected()
         {
             var query = new GetCampaignMissions();
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("metadata/h5/metadata/campaign-missions", uri);
+        
+            Assert.AreEqual("https://www.haloapi.com/metadata/h5/metadata/campaign-missions", query.Uri);
         }
 
         [Test]
@@ -74,12 +72,12 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
                 Resolver = new JSchemaUrlResolver(),
                 BaseUri = new Uri(Path.GetFullPath(Halo5Config.CampaignMissionsJsonSchemaPath))
             });
-
+        
             var query = new GetCampaignMissions()
                .SkipCache();
-
-            var jArray = await Global.Session.Get<JArray>(query.GetConstructedUri());
-
+        
+            var jArray = await Global.Session.Get<JArray>(query.Uri);
+        
             SchemaUtility.AssertSchemaIsValid(campaignMissionsSchema, jArray);
         }
 

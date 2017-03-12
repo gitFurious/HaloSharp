@@ -1,66 +1,48 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.Lifetime;
-using HaloSharp.Validation.Halo5.Stats.Lifetime;
+using HaloSharp.Validation.Common;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.Stats.Lifetime
 {
-    public class GetCustomServiceRecord : IQuery<CustomServiceRecord>
+    public class GetCustomServiceRecord : Query<CustomServiceRecord>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
+        protected virtual string Path => "stats/h5/servicerecords/custom";
 
-        private bool _useCache = true;
+        public override string Uri => HaloUriBuilder.Build(Path, _parameters);
+
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string PlayersParameter = "players";
 
         public GetCustomServiceRecord(string gamertag)
         {
-            Parameters["players"] = gamertag;
+            _parameters[PlayersParameter] = gamertag;
         }
 
         public GetCustomServiceRecord(IEnumerable<string> gamertags)
         {
-            Parameters["players"] = string.Join(",", gamertags);
+            _parameters[PlayersParameter] = string.Join(",", gamertags);
         }
 
-        public GetCustomServiceRecord SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
+            var players = _parameters[PlayersParameter].Split(',');
 
-        public async Task<CustomServiceRecord> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var serviceRecord = _useCache
-                ? Cache.Get<CustomServiceRecord>(uri)
-                : null;
-
-            if (serviceRecord == null)
+            foreach (var player in players)
             {
-                serviceRecord = await session.Get<CustomServiceRecord>(uri);
-
-                Cache.AddStats(uri, serviceRecord);
+                if (!player.IsValidGamertag())
+                {
+                    validationResult.Messages.Add("GetCustomServiceRecord query requires valid Gamertags to be set.");
+                }
             }
 
-            return serviceRecord;
-        }
-
-        public virtual string GetConstructedUri()
-        {
-            var builder = new StringBuilder("stats/h5/servicerecords/custom");
-
-            if (Parameters.Any())
+            if (!validationResult.Success)
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                throw new ValidationException(validationResult.Messages);
             }
-
-            return builder.ToString();
         }
     }
 }

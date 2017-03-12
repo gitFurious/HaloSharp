@@ -35,13 +35,11 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
 
         [Test]
         [TestCase("ducain23", "7f1489ad-77bb-42a5-8ffc-5990a0e83dfa")]
-        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, string guid)
+        public void Uri_MatchesExpected(string gamertag, string guid)
         {
             var query = new GetMapVariant(gamertag, new Guid(guid));
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"ugc/h5/players/{gamertag}/mapvariants/{guid}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/ugc/h5/players/{gamertag}/mapvariants/{guid}", query.Uri);
         }
 
         [Test]
@@ -82,7 +80,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
             var query = new GetMapVariant(gamertag, new Guid(guid))
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(weaponsSchema, jArray);
         }

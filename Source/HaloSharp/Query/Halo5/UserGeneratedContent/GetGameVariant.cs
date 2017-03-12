@@ -1,56 +1,42 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.UserGeneratedContent;
-using HaloSharp.Validation.Halo5.UserGeneratedContent;
+using HaloSharp.Validation.Common;
+using System;
 
 namespace HaloSharp.Query.Halo5.UserGeneratedContent
 {
-    public class GetGameVariant : IQuery<GameVariant>
+    public class GetGameVariant : Query<GameVariant>
     {
-        internal readonly string Player;
-        internal readonly Guid GameVariantId;
+        public override string Uri => HaloUriBuilder.Build($"ugc/h5/players/{_player}/gamevariants/{_gameVariantId}");
 
-        private bool _useCache = true;
+        private readonly string _player;
+        private readonly Guid _gameVariantId;
 
         public GetGameVariant(string gamertag, Guid gameVariantId)
         {
-            Player = gamertag;
-            GameVariantId = gameVariantId;
+            _player = gamertag;
+            _gameVariantId = gameVariantId;
         }
 
-        public GetGameVariant SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<GameVariant> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var gameVariant = _useCache
-                ? Cache.Get<GameVariant>(uri)
-                : null;
-
-            if (gameVariant == null)
+            if (!_player.IsValidGamertag())
             {
-                gameVariant = await session.Get<GameVariant>(uri);
-
-                Cache.AddUserGeneratedContent(uri, gameVariant);
+                validationResult.Messages.Add("GetGameVariant query requires a valid Gamertag to be set.");
             }
 
-            return gameVariant;
-        }
+            if (_gameVariantId == default(Guid))
+            {
+                validationResult.Messages.Add("GetGameVariant query requires a Game Variant Id to be set.");
+            }
 
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"ugc/h5/players/{Player}/gamevariants/{GameVariantId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

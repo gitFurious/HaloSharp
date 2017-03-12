@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 namespace HaloSharp.Model.Halo5.Profile
 {
     [Serializable]
-    public class GetImage : IEquatable<GetImage>
+    public class HaloImage : IEquatable<HaloImage>
     {
         [JsonProperty(PropertyName = "Uri")]
         public string Uri { get; set; }
@@ -14,7 +14,7 @@ namespace HaloSharp.Model.Halo5.Profile
         [JsonProperty(PropertyName = "Image")]
         public Image Image { get; set; }
 
-        public bool Equals(GetImage other)
+        public bool Equals(HaloImage other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -55,12 +55,12 @@ namespace HaloSharp.Model.Halo5.Profile
                 return true;
             }
 
-            if (obj.GetType() != typeof (GetImage))
+            if (obj.GetType() != typeof (HaloImage))
             {
                 return false;
             }
 
-            return Equals((GetImage) obj);
+            return Equals((HaloImage) obj);
         }
 
         public override int GetHashCode()
@@ -71,12 +71,12 @@ namespace HaloSharp.Model.Halo5.Profile
             }
         }
 
-        public static bool operator ==(GetImage left, GetImage right)
+        public static bool operator ==(HaloImage left, HaloImage right)
         {
             return Equals(left, right);
         }
 
-        public static bool operator !=(GetImage left, GetImage right)
+        public static bool operator !=(HaloImage left, HaloImage right)
         {
             return !Equals(left, right);
         }

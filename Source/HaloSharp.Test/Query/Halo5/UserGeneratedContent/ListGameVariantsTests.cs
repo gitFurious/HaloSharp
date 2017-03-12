@@ -35,29 +35,32 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
         }
 
         [Test]
-        [TestCase("ducain23")]
-        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
+        [TestCase("ducain23", Enumeration.Halo5.UserGeneratedContentSort.Name, 10, 5)]
+        public void Uri_MatchesExpected(string gamertag, Enumeration.Halo5.UserGeneratedContentSort sort, int skip, int take)
         {
             var query = new ListGameVariants(gamertag);
 
-            var uri = query.GetConstructedUri();
+            Assert.AreEqual($"https://www.haloapi.com/ugc/h5/players/{gamertag}/gamevariants", query.Uri);
 
-            Assert.AreEqual($"ugc/h5/players/{gamertag}/gamevariants", uri);
-        }
+            query.SortBy(sort);
 
-        [Test]
-        [TestCase("ducain23", Enumeration.Halo5.UserGeneratedContentSort.Name, 10, 5)]
-        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, Enumeration.Halo5.UserGeneratedContentSort sort, int skip, int take)
-        {
-            var query = new ListGameVariants(gamertag)
-                .SortBy(sort)
-                .OrderByAscending()
-                .Skip(skip)
-                .Take(take);
+            Assert.AreEqual($"https://www.haloapi.com/ugc/h5/players/{gamertag}/gamevariants?sort={sort}", query.Uri);
 
-            var uri = query.GetConstructedUri();
+            query.OrderByAscending();
 
-            Assert.AreEqual($"ugc/h5/players/{gamertag}/gamevariants?sort={sort}&order=asc&start={skip}&count={take}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/ugc/h5/players/{gamertag}/gamevariants?sort={sort}&order=asc", query.Uri);
+
+            query.OrderByDescending();
+
+            Assert.AreEqual($"https://www.haloapi.com/ugc/h5/players/{gamertag}/gamevariants?sort={sort}&order=desc", query.Uri);
+
+            query.Skip(skip);
+
+            Assert.AreEqual($"https://www.haloapi.com/ugc/h5/players/{gamertag}/gamevariants?sort={sort}&order=desc&start={skip}", query.Uri);
+
+            query.Take(take);
+
+            Assert.AreEqual($"https://www.haloapi.com/ugc/h5/players/{gamertag}/gamevariants?sort={sort}&order=desc&start={skip}&count={take}", query.Uri);
         }
 
         [Test]
@@ -98,7 +101,7 @@ namespace HaloSharp.Test.Query.Halo5.UserGeneratedContent
             var query = new ListGameVariants(gamertag)
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(weaponsSchema, jArray);
         }

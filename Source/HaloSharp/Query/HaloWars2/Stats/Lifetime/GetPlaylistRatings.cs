@@ -1,70 +1,59 @@
+using HaloSharp.Exception;
+using HaloSharp.Model;
+using HaloSharp.Model.HaloWars2.Stats.Lifetime;
+using HaloSharp.Validation.Common;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HaloSharp.Model.HaloWars2.Stats.Lifetime;
-using HaloSharp.Validation.HaloWars2.Stats.Lifetime;
 
 namespace HaloSharp.Query.HaloWars2.Stats.Lifetime
 {
-    public class GetPlaylistRatings : IQuery<PlaylistSummaryResultSet>
+    public class GetPlaylistRatings : Query<PlaylistSummaryResultSet>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal readonly Guid PlaylistId;
+        public override string Uri => HaloUriBuilder.Build($"stats/hw2/playlist/{_playlistId}/rating", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string PlayersParameter = "players";
+
+        private readonly Guid _playlistId;
 
         public GetPlaylistRatings(string player, Guid playlistId)
         {
-            Parameters["players"] = player;
-            PlaylistId = playlistId;
+            _parameters[PlayersParameter] = player;
+            _playlistId = playlistId;
         }
 
         public GetPlaylistRatings(IEnumerable<string> players, Guid playlistId)
         {
-            Parameters["players"] = string.Join(",", players);
-            PlaylistId = playlistId;
+            _parameters[PlayersParameter] = string.Join(",", players);
+            _playlistId = playlistId;
         }
 
-        public GetPlaylistRatings SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<PlaylistSummaryResultSet> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var response = _useCache
-                ? Cache.Get<PlaylistSummaryResultSet>(uri)
-                : null;
-
-            if (response == null)
+            if (_parameters.ContainsKey(PlayersParameter))
             {
-                response = await session.Get<PlaylistSummaryResultSet>(uri);
+                var players = _parameters[PlayersParameter].Split(',');
 
-                Cache.AddStats(uri, response);
+                foreach (var player in players)
+                {
+                    if (!player.IsValidGamertag())
+                    {
+                        validationResult.Messages.Add("GetPlaylistRatings query requires a valid Gamertag to be set.");
+                    }
+                }
             }
 
-            return response;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"stats/hw2/playlist/{PlaylistId}/rating");
-
-            if (Parameters.Any())
+            if (_playlistId == default(Guid))
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                validationResult.Messages.Add("GetPlaylistRatings query requires a valid Playlist Id to be set.");
             }
 
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

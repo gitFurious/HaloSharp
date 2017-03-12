@@ -1,54 +1,34 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Metadata;
-using HaloSharp.Validation.Halo5.Metadata;
+using System;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    public class GetRequisition : IQuery<Requisition>
+    public class GetRequisition : Query<Requisition>
     {
-        internal readonly Guid RequisitionId;
+        public override string Uri => HaloUriBuilder.Build($"metadata/h5/metadata/requisitions/{_requisitionId}");
 
-        private bool _useCache = true;
+        private readonly Guid _requisitionId;
 
         public GetRequisition(Guid requisitionId)
         {
-            RequisitionId = requisitionId;
+            _requisitionId = requisitionId;
         }
 
-        public GetRequisition SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<Requisition> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var requisition = _useCache
-                ? Cache.Get<Requisition>(uri)
-                : null;
-
-            if (requisition == null)
+            if (_requisitionId == default(Guid))
             {
-                requisition = await session.Get<Requisition>(uri);
-
-                Cache.AddMetadata(uri, requisition);
+                validationResult.Messages.Add("GetRequisition query requires a Requisition Id to be set.");
             }
 
-            return requisition;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"metadata/h5/metadata/requisitions/{RequisitionId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

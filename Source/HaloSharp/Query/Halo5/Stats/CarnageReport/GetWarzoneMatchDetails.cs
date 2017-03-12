@@ -1,54 +1,34 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.CarnageReport;
-using HaloSharp.Validation.Halo5.Stats.CarnageReport;
+using System;
 
 namespace HaloSharp.Query.Halo5.Stats.CarnageReport
 {
-    public class GetWarzoneMatchDetails : IQuery<WarzoneMatch>
+    public class GetWarzoneMatchDetails : Query<WarzoneMatch>
     {
-        internal readonly Guid MatchId;
+        public override string Uri => HaloUriBuilder.Build($"stats/h5/warzone/matches/{_matchId}");
 
-        private bool _useCache = true;
+        private readonly Guid _matchId;
 
         public GetWarzoneMatchDetails(Guid matchId)
         {
-            MatchId = matchId;
+            _matchId = matchId;
         }
 
-        public GetWarzoneMatchDetails SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<WarzoneMatch> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var match = _useCache
-                ? Cache.Get<WarzoneMatch>(uri)
-                : null;
-
-            if (match == null)
+            if (_matchId == default(Guid))
             {
-                match = await session.Get<WarzoneMatch>(uri);
-
-                Cache.AddStats(uri, match);
+                validationResult.Messages.Add("GetWarzoneMatchDetails query requires a Match Id to be set.");
             }
 
-            return match;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"stats/h5/warzone/matches/{MatchId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

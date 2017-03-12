@@ -1,72 +1,63 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats;
-using HaloSharp.Validation.Halo5.Stats;
+using System;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.Stats
 {
-    public class GetLeaderboard : IQuery<Leaderboard>
+    public class GetLeaderboard : Query<Leaderboard>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal readonly Guid PlaylistId;
-        internal readonly Guid SeasonId;
+        public override string Uri => HaloUriBuilder.Build($"stats/h5/player-leaderboards/csr/{_seasonId}/{_playlistId}", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string CountParameter = "count";
+
+        private readonly Guid _playlistId;
+        private readonly Guid _seasonId;
 
         public GetLeaderboard(Guid seasonId, Guid playlistId)
         {
-            SeasonId = seasonId;
-            PlaylistId = playlistId;
-        }
-
-        public GetLeaderboard SkipCache()
-        {
-            _useCache = false;
-
-            return this;
+            _seasonId = seasonId;
+            _playlistId = playlistId;
         }
 
         public GetLeaderboard Take(int count)
         {
-            Parameters["count"] = count.ToString();
+            _parameters[CountParameter] = count.ToString();
 
             return this;
         }
 
-        public async Task<Leaderboard> ApplyTo(IHaloSession session)
+        protected override void Validate()
         {
-            this.Validate();
+            var validationResult = new ValidationResult();
 
-            var uri = GetConstructedUri();
-
-            var leaderboard = _useCache
-                ? Cache.Get<Leaderboard>(uri)
-                : null;
-
-            if (leaderboard == null)
+            if (_seasonId == default(Guid))
             {
-                leaderboard = await session.Get<Leaderboard>(uri);
-
-                Cache.AddStats(uri, leaderboard);
+                validationResult.Messages.Add("GetLeaderboard query requires a Season Id to be set.");
             }
 
-            return leaderboard;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"stats/h5/player-leaderboards/csr/{SeasonId}/{PlaylistId}");
-
-            if (Parameters.Any())
+            if (_playlistId == default(Guid))
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                validationResult.Messages.Add("GetLeaderboard query requires a Playlist Id to be set.");
             }
 
-            return builder.ToString();
+            if (_parameters.ContainsKey(CountParameter))
+            {
+                int count;
+                var parsed = int.TryParse(_parameters[CountParameter], out count);
+
+                if (!parsed || count < 1 || count > 250)
+                {
+                    validationResult.Messages.Add($"GetLeaderboard optional parameter '{CountParameter}' is invalid: {count}.");
+                }
+            }
+
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

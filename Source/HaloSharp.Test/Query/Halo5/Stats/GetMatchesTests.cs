@@ -36,31 +36,25 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         }
 
         [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
+        [TestCase("Greenskull", Enumeration.Halo5.GameMode.Warzone, 5, 10)]
+        [TestCase("Furiousn00b", Enumeration.Halo5.GameMode.Arena, 15, 20)]
+        public void Uri_MatchesExpected(string gamertag, Enumeration.Halo5.GameMode gameMode, int skip, int take)
         {
             var query = new GetMatchHistory(gamertag);
 
-            var uri = query.GetConstructedUri();
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/players/{gamertag}/matches", query.Uri);
 
-            Assert.AreEqual($"stats/h5/players/{gamertag}/matches{null}", uri);
-        }
+            query.InGameMode(gameMode);
 
-        [Test]
-        [TestCase("Greenskull", Enumeration.Halo5.GameMode.Warzone, 5, 10)]
-        [TestCase("Furiousn00b", Enumeration.Halo5.GameMode.Arena, 15, 20)]
-        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, Enumeration.Halo5.GameMode gameMode, int skip, int take)
-        {
-            var query = new GetMatchHistory(gamertag)
-                .InGameMode(gameMode)
-                .Skip(skip)
-                .Take(take)
-                .SkipCache();
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/players/{gamertag}/matches?modes={gameMode}", query.Uri);
 
-            var uri = query.GetConstructedUri();
+            query.Skip(skip);
 
-            Assert.AreEqual($"stats/h5/players/{gamertag}/matches?modes={gameMode}&start={skip}&count={take}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/players/{gamertag}/matches?modes={gameMode}&start={skip}", query.Uri);
+
+            query.Take(take);
+
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/players/{gamertag}/matches?modes={gameMode}&start={skip}&count={take}", query.Uri);
         }
 
         [Test]
@@ -103,7 +97,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
             var query = new GetMatchHistory(gamertag)
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(weaponsSchema, jArray);
         }

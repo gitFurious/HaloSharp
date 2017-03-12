@@ -1,54 +1,34 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.CarnageReport;
-using HaloSharp.Validation.Halo5.Stats.CarnageReport;
+using System;
 
 namespace HaloSharp.Query.Halo5.Stats.CarnageReport
 {
-    public class GetCampaignMatchDetails : IQuery<CampaignMatch>
+    public class GetCampaignMatchDetails : Query<CampaignMatch>
     {
-        internal readonly Guid MatchId;
+        public override string Uri => HaloUriBuilder.Build($"stats/h5/campaign/matches/{_matchId}");
 
-        private bool _useCache = true;
+        private readonly Guid _matchId;
 
         public GetCampaignMatchDetails(Guid matchId)
         {
-            MatchId = matchId;
+            _matchId = matchId;
         }
 
-        public GetCampaignMatchDetails SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<CampaignMatch> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var match = _useCache
-                ? Cache.Get<CampaignMatch>(uri)
-                : null;
-
-            if (match == null)
+            if (_matchId == default(Guid))
             {
-                match = await session.Get<CampaignMatch>(uri);
-
-                Cache.AddStats(uri, match);
+                validationResult.Messages.Add("GetCampaignMatchDetails query requires a Match Id to be set.");
             }
 
-            return match;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"stats/h5/campaign/matches/{MatchId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

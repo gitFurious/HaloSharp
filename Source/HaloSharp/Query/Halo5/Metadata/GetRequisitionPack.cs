@@ -1,54 +1,34 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Metadata.Common;
-using HaloSharp.Validation.Halo5.Metadata;
+using System;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    public class GetRequisitionPack : IQuery<RequisitionPack>
+    public class GetRequisitionPack : Query<RequisitionPack>
     {
-        internal readonly Guid RequisitionPackId;
+        public override string Uri => HaloUriBuilder.Build($"metadata/h5/metadata/requisition-packs/{_requisitionPackId}");
 
-        private bool _useCache = true;
+        private readonly Guid _requisitionPackId;
 
         public GetRequisitionPack(Guid requisitionPackId)
         {
-            RequisitionPackId = requisitionPackId;
+            _requisitionPackId = requisitionPackId;
         }
 
-        public GetRequisitionPack SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<RequisitionPack> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var requisitionPack = _useCache
-                ? Cache.Get<RequisitionPack>(uri)
-                : null;
-
-            if (requisitionPack == null)
+            if (_requisitionPackId == default(Guid))
             {
-                requisitionPack = await session.Get<RequisitionPack>(uri);
-
-                Cache.AddMetadata(uri, requisitionPack);
+                validationResult.Messages.Add("GetRequisitionPack query requires a Requisition Pack Id to be set.");
             }
 
-            return requisitionPack;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"metadata/h5/metadata/requisition-packs/{RequisitionPackId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

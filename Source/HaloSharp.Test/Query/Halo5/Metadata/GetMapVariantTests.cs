@@ -36,13 +36,11 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
 
         [Test]
         [TestCase("cb914b9e-f206-11e4-b447-24be05e24f7e")]
-        public void GetConstructedUri_ForMapVariantId_MatchesExpected(string guid)
+        public void Uri_MatchesExpected(string guid)
         {
             var query = new GetMapVariant(new Guid(guid));
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"metadata/h5/metadata/map-variants/{guid}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/metadata/h5/metadata/map-variants/{guid}", query.Uri);
         }
 
         [Test]
@@ -82,7 +80,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             var query = new GetMapVariant(new Guid(guid))
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(mapVariantSchema, jArray);
         }

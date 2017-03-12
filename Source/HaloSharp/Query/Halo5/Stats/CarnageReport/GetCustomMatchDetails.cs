@@ -1,54 +1,36 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.CarnageReport;
-using HaloSharp.Validation.Halo5.Stats.CarnageReport;
+using System;
 
 namespace HaloSharp.Query.Halo5.Stats.CarnageReport
 {
-    public class GetCustomMatchDetails : IQuery<CustomMatch>
+    public class GetCustomMatchDetails : Query<CustomMatch>
     {
-        internal readonly Guid MatchId;
+        protected virtual string Path => $"stats/h5/custom/matches/{_matchId}";
 
-        private bool _useCache = true;
+        public override string Uri => HaloUriBuilder.Build(Path);
+
+        private readonly Guid _matchId;
 
         public GetCustomMatchDetails(Guid matchId)
         {
-            MatchId = matchId;
+            _matchId = matchId;
         }
 
-        public GetCustomMatchDetails SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-       
-        public async Task<CustomMatch> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var match = _useCache
-                ? Cache.Get<CustomMatch>(uri)
-                : null;
-
-            if (match == null)
+            if (_matchId == default(Guid))
             {
-                match = await session.Get<CustomMatch>(uri);
-
-                Cache.AddStats(uri, match);
+                validationResult.Messages.Add("GetCustomMatchDetails query requires a Match Id to be set.");
             }
 
-            return match;
-        }
-
-        public virtual string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"stats/h5/custom/matches/{MatchId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

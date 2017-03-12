@@ -1,83 +1,78 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
 using HaloSharp.Model;
-using HaloSharp.Model.Halo5.Profile;
-using HaloSharp.Validation.Halo5.Profile;
+using HaloSharp.Validation.Common;
+using System;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.Profile
 {
-    public class GetSpartanImage : IQuery<GetImage>
+    public class GetSpartanImage : ImageQuery
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal readonly string Player;
+        public override string Uri => HaloUriBuilder.Build($"profile/h5/profiles/{_player}/spartan", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string SizeParameter = "size";
+        private const string CropParameter = "crop";
+
+        private readonly string _player;
 
         public GetSpartanImage(string gamertag)
         {
-            Player = gamertag;
-        }
-
-        public GetSpartanImage SkipCache()
-        {
-            _useCache = false;
-
-            return this;
+            _player = gamertag;
         }
 
         public GetSpartanImage Size(int size)
         {
-            Parameters["size"] = size.ToString();
+            _parameters[SizeParameter] = size.ToString();
 
             return this;
         }
 
         public GetSpartanImage Crop(Enumeration.Halo5.CropType cropType)
         {
-            Parameters["crop"] = cropType.ToString();
+            _parameters[CropParameter] = cropType.ToString();
 
             return this;
         }
 
-        public async Task<GetImage> ApplyTo(IHaloSession session)
+        protected override void Validate()
         {
-            this.Validate();
+            var validationResult = new ValidationResult();
 
-            var uri = GetConstructedUri();
-
-            var spartanImage = _useCache
-                ? Cache.Get<GetImage>(uri)
-                : null;
-
-            if (spartanImage == null)
+            if (!_player.IsValidGamertag())
             {
-                var tuple = await session.GetImage(uri);
+                validationResult.Messages.Add("GetSpartanImage query requires a valid Gamertag (Player) to be set.");
+            }
 
-                spartanImage = new GetImage
+            if (_parameters.ContainsKey(SizeParameter))
+            {
+                var validSizes = new List<int> { 95, 128, 190, 256, 512 };
+
+                int size;
+                var parsed = int.TryParse(_parameters[SizeParameter], out size);
+
+                if (!parsed || !validSizes.Contains(size))
                 {
-                    Uri = tuple.Item1,
-                    Image = tuple.Item2
-                };
-
-                Cache.AddProfile(uri, spartanImage);
+                    validationResult.Messages.Add($"GetSpartanImage optional parameter '{SizeParameter}' is invalid: {size}.");
+                }
             }
 
-            return spartanImage;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"profile/h5/profiles/{Player}/spartan");
-
-            if (Parameters.Any())
+            if (_parameters.ContainsKey(CropParameter))
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                var crop = _parameters[CropParameter];
+
+                var defined = Enum.IsDefined(typeof(Enumeration.Halo5.CropType), crop);
+
+                if (!defined)
+                {
+                    validationResult.Messages.Add($"GetSpartanImage optional parameter '{CropParameter}' is invalid: {crop}.");
+                }
             }
 
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

@@ -37,25 +37,11 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         [Test]
         [TestCase("Greenskull")]
         [TestCase("Furiousn00b")]
-        [TestCase("moussanator")]
-        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
+        public void Uri_MatchesExpected(string gamertag)
         {
             var query = new GetWarzoneServiceRecord(gamertag);
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/servicerecords/warzone?players={gamertag}", uri);
-        }
-
-        [Test]
-        [TestCase("Greenskull", "Furiousn00b")]
-        public void GetConstructedUri_ForPlayers_MatchesExpected(string gamertag, string gamertag2)
-        {
-            var query = new GetWarzoneServiceRecord(new List<string> { gamertag, gamertag2 });
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/servicerecords/warzone?players={gamertag},{gamertag2}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/servicerecords/warzone?players={gamertag}", query.Uri);
         }
 
         [Test]
@@ -113,7 +99,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
             var query = new GetWarzoneServiceRecord(gamertag)
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(weaponsSchema, jArray);
         }

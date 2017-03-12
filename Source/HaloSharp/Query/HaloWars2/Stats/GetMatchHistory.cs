@@ -1,85 +1,97 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using HaloSharp.Model;
 using HaloSharp.Model.Common;
 using HaloSharp.Model.HaloWars2.Stats;
-using HaloSharp.Validation.HaloWars2.Stats;
+using System.Collections.Generic;
+using HaloSharp.Exception;
+using HaloSharp.Validation.Common;
 
 namespace HaloSharp.Query.HaloWars2.Stats
 {
-    public class GetMatchHistory : IQuery<MatchSet<PlayerMatch>>
+    public class GetMatchHistory : Query<MatchSet<PlayerMatch>>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal readonly string Player;
+        public override string Uri => HaloUriBuilder.Build($"stats/hw2/players/{_player}/matches", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string MatchTypeParameter = "matchType";
+        private const string StartParameter = "start";
+        private const string CountParameter = "count";
+
+        private readonly string _player;
 
         public GetMatchHistory(string player)
         {
-            Player = player;
+            _player = player;
         }
 
         public GetMatchHistory ForMatchType(Enumeration.HaloWars2.MatchType matchType)
         {
-            Parameters["matchType"] = matchType.ToString();
+            _parameters[MatchTypeParameter] = matchType.ToString();
 
             return this;
         }
 
         public GetMatchHistory Skip(int count)
         {
-            Parameters["start"] = count.ToString();
+            _parameters[StartParameter] = count.ToString();
 
             return this;
         }
 
         public GetMatchHistory Take(int count)
         {
-            Parameters["count"] = count.ToString();
+            _parameters[CountParameter] = count.ToString();
 
             return this;
         }
 
-        public GetMatchHistory SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<MatchSet<PlayerMatch>> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var response = _useCache
-                ? Cache.Get<MatchSet<PlayerMatch>>(uri)
-                : null;
-
-            if (response == null)
+            if (!_player.IsValidGamertag())
             {
-                response = await session.Get<MatchSet<PlayerMatch>>(uri);
-
-                Cache.AddStats(uri, response);
+                validationResult.Messages.Add("GetMatchHistory query requires a valid Gamertag (Player) to be set.");
             }
 
-            return response;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"stats/hw2/players/{Player}/matches");
-
-            if (Parameters.Any())
+            if (_parameters.ContainsKey(MatchTypeParameter))
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                var matchType = _parameters[MatchTypeParameter];
+
+                var defined = Enum.IsDefined(typeof(Enumeration.HaloWars2.MatchType), matchType);
+
+                if (!defined)
+                {
+                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{MatchTypeParameter}' is invalid: {matchType}.");
+                }
             }
 
-            return builder.ToString();
+            if (_parameters.ContainsKey(StartParameter))
+            {
+                int start;
+                var parsed = int.TryParse(_parameters[StartParameter], out start);
+
+                if (!parsed || start < 0)
+                {
+                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{StartParameter}' is invalid: {start}.");
+                }
+            }
+
+            if (_parameters.ContainsKey(CountParameter))
+            {
+                int count;
+                var parsed = int.TryParse(_parameters[CountParameter], out count);
+
+                if (!parsed || count < 1 || count > 25)
+                {
+                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{CountParameter}' is invalid: {count}.");
+                }
+            }
+
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

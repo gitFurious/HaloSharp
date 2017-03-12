@@ -36,13 +36,11 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
 
         [Test]
         [TestCase("a23a896d-57e6-45c3-970b-27550f0e7184")]
-        public void GetConstructedUri_ForRequisitionId_MatchesExpected(string guid)
+        public void Uri_MatchesExpected(string guid)
         {
             var query = new GetRequisition(new Guid(guid));
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"metadata/h5/metadata/requisitions/{guid}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/metadata/h5/metadata/requisitions/{guid}", query.Uri);
         }
 
         [Test]
@@ -82,7 +80,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             var query = new GetRequisition(new Guid(guid))
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(requisitionSchema, jArray);
         }

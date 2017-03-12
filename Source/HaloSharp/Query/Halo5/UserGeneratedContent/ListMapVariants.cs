@@ -1,97 +1,87 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.UserGeneratedContent;
-using HaloSharp.Validation.Halo5.UserGeneratedContent;
+using HaloSharp.Validation.Common;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.UserGeneratedContent
 {
-    public class ListMapVariants : IQuery<MapVariantResult>
+    public class ListMapVariants : Query<MapVariantResult>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal readonly string Player;
+        public override string Uri => HaloUriBuilder.Build($"ugc/h5/players/{_player}/mapvariants", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string SortParameter = "sort";
+        private const string OrderParameter = "order";
+        private const string StartParameter = "start";
+        private const string CountParameter = "count";
+
+        private readonly string _player;
 
         public ListMapVariants(string gamertag)
         {
-            Player = gamertag;
+            _player = gamertag;
         }
 
-        public ListMapVariants SkipCache()
+        public ListMapVariants SortBy(Enumeration.Halo5.UserGeneratedContentSort sort)
         {
-            _useCache = false;
-
-            return this;
-        }
-
-        public ListMapVariants SortBy(Model.Enumeration.Halo5.UserGeneratedContentSort sort)
-        {
-            Parameters["sort"] = sort.ToString();
+            _parameters[SortParameter] = sort.ToString();
 
             return this;
         }
 
         public ListMapVariants OrderByDescending()
         {
-            Parameters["order"] = "desc";
+            _parameters[OrderParameter] = "desc";
 
             return this;
         }
 
         public ListMapVariants OrderByAscending()
         {
-            Parameters["order"] = "asc";
+            _parameters[OrderParameter] = "asc";
 
             return this;
         }
 
         public ListMapVariants Skip(int count)
         {
-            Parameters["start"] = count.ToString();
+            _parameters[StartParameter] = count.ToString();
 
             return this;
         }
 
         public ListMapVariants Take(int count)
         {
-            Parameters["count"] = count.ToString();
+            _parameters[CountParameter] = count.ToString();
 
             return this;
         }
 
-        public async Task<MapVariantResult> ApplyTo(IHaloSession session)
+        protected override void Validate()
         {
-            this.Validate();
+            var validationResult = new ValidationResult();
 
-            var uri = GetConstructedUri();
-
-            var mapVariantResult = _useCache
-                ? Cache.Get<MapVariantResult>(uri)
-                : null;
-
-            if (mapVariantResult == null)
+            if (!_player.IsValidGamertag())
             {
-                mapVariantResult = await session.Get<MapVariantResult>(uri);
-
-                Cache.AddUserGeneratedContent(uri, mapVariantResult);
+                validationResult.Messages.Add("ListMapVariants query requires a valid Gamertag to be set.");
             }
 
-            return mapVariantResult;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"ugc/h5/players/{Player}/mapvariants");
-
-            if (Parameters.Any())
+            if (_parameters.ContainsKey(CountParameter))
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                int count;
+                var parsed = int.TryParse(_parameters[CountParameter], out count);
+
+                if (!parsed || count < 1 || count > 100)
+                {
+                    validationResult.Messages.Add($"ListMapVariants optional parameter '{CountParameter}' is invalid: {count}.");
+                }
             }
 
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

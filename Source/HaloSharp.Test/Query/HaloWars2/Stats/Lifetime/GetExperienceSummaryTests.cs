@@ -38,13 +38,11 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.Lifetime
 
         [Test]
         [TestCase("Furiousn00b")]
-        public void GetConstructedUri_MatchesExpected(string gamertag)
+        public void Uri_MatchesExpected(string player)
         {
-            var query = new GetExperienceSummary(gamertag);
+            var query = new GetExperienceSummary(player);
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/hw2/xp?players={gamertag}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/stats/hw2/xp?players={player}", query.Uri);
         }
 
         [Test]
@@ -85,7 +83,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.Lifetime
             var query = new GetExperienceSummary(gamertag)
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(jSchema, jArray);
         }

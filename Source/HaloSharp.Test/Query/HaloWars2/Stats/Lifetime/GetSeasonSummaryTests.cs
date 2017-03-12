@@ -37,16 +37,12 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.Lifetime
         }
 
         [Test]
-        [TestCase("2cdf3fae-3cf9-45a5-8165-7aff644ccdbc", "Furiousn00b")]
-        public void GetConstructedUri_MatchesExpected(string guid, string gamertag)
+        [TestCase("Furiousn00b", "2cdf3fae-3cf9-45a5-8165-7aff644ccdbc")]
+        public void Uri_MatchesExpected(string player, string guid)
         {
-            var seasonId = new Guid(guid);
+            var query = new GetSeasonSummary(player, new Guid(guid));
 
-            var query = new GetSeasonSummary(gamertag, seasonId);
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/hw2/players/{gamertag}/stats/seasons/{seasonId}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/stats/hw2/players/{player}/stats/seasons/{guid}", query.Uri);
         }
 
         [Test]
@@ -93,7 +89,7 @@ namespace HaloSharp.Test.Query.HaloWars2.Stats.Lifetime
             var query = new GetSeasonSummary(gamertag, seasonId)
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(jSchema, jArray);
         }

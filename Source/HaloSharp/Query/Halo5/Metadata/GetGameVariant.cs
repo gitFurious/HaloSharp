@@ -1,54 +1,34 @@
-﻿using System;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Metadata;
-using HaloSharp.Validation.Halo5.Metadata;
+using System;
 
 namespace HaloSharp.Query.Halo5.Metadata
 {
-    public class GetGameVariant : IQuery<GameVariant>
+    public class GetGameVariant : Query<GameVariant>
     {
-        internal readonly Guid GameVariantId;
+        public override string Uri => HaloUriBuilder.Build($"metadata/h5/metadata/game-variants/{_gameVariantId}");
 
-        private bool _useCache = true;
+        private readonly Guid _gameVariantId;
 
         public GetGameVariant(Guid gameVariantId)
         {
-            GameVariantId = gameVariantId;
+            _gameVariantId = gameVariantId;
         }
 
-        public GetGameVariant SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<GameVariant> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var gameVariant = _useCache
-                ? Cache.Get<GameVariant>(uri)
-                : null;
-
-            if (gameVariant == null)
+            if (_gameVariantId == default(Guid))
             {
-                gameVariant = await session.Get<GameVariant>(uri);
-
-                Cache.AddMetadata(uri, gameVariant);
+                validationResult.Messages.Add("GetGameVariant query requires a Game Variant Id to be set.");
             }
 
-            return gameVariant;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"metadata/h5/metadata/game-variants/{GameVariantId}");
-
-            return builder.ToString();
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

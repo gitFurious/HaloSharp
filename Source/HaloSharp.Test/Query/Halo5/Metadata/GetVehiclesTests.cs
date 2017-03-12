@@ -34,13 +34,11 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
         }
 
         [Test]
-        public void GetConstructedUri_NoParameters_MatchesExpected()
+        public void Uri_MatchesExpected()
         {
             var query = new GetVehicles();
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual("metadata/h5/metadata/vehicles", uri);
+            Assert.AreEqual("https://www.haloapi.com/metadata/h5/metadata/vehicles", query.Uri);
         }
 
         [Test]
@@ -78,7 +76,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             var query = new GetVehicles()
                .SkipCache();
 
-            var jArray = await Global.Session.Get<JArray>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JArray>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(vehiclesSchema, jArray);
         }

@@ -1,75 +1,57 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HaloSharp.Model.Halo5.Profile;
-using HaloSharp.Validation.Halo5.Profile;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
+using HaloSharp.Validation.Common;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.Profile
 {
-    public class GetEmblemImage : IQuery<GetImage>
+    public class GetEmblemImage : ImageQuery
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal readonly string Player;
+        public override string Uri => HaloUriBuilder.Build($"profile/h5/profiles/{_player}/emblem", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string SizeParameter = "size";
+
+        private readonly string _player;
 
         public GetEmblemImage(string gamertag)
         {
-            Player = gamertag;
-        }
-
-        public GetEmblemImage SkipCache()
-        {
-            _useCache = false;
-
-            return this;
+            _player = gamertag;
         }
 
         public GetEmblemImage Size(int size)
         {
-            Parameters["size"] = size.ToString();
+            _parameters[SizeParameter] = size.ToString();
 
             return this;
         }
 
-        public async Task<GetImage> ApplyTo(IHaloSession session)
+        protected override void Validate()
         {
-            this.Validate();
+            var validationResult = new ValidationResult();
 
-            var uri = GetConstructedUri();
-
-            var emblemImage = _useCache
-                ? Cache.Get<GetImage>(uri)
-                : null;
-
-            if (emblemImage == null)
+            if (!_player.IsValidGamertag())
             {
-                var tuple = await session.GetImage(uri);
+                validationResult.Messages.Add("GetEmblemImage query requires a valid Gamertag (Player) to be set.");
+            }
 
-                emblemImage = new GetImage
+            if (_parameters.ContainsKey(SizeParameter))
+            {
+                var validSizes = new List<int> { 95, 128, 190, 256, 512 };
+
+                int size;
+                var parsed = int.TryParse(_parameters[SizeParameter], out size);
+
+                if (!parsed || !validSizes.Contains(size))
                 {
-                    Uri = tuple.Item1,
-                    Image = tuple.Item2
-                };
-
-                Cache.AddProfile(uri, emblemImage);
+                    validationResult.Messages.Add($"GetEmblemImage optional parameter '{SizeParameter}' is invalid: {size}.");
+                }
             }
 
-            return emblemImage;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"profile/h5/profiles/{Player}/emblem");
-
-            if (Parameters.Any())
+            if (!validationResult.Success)
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                throw new ValidationException(validationResult.Messages);
             }
-
-            return builder.ToString();
         }
     }
 }

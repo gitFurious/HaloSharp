@@ -1,92 +1,110 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
 using HaloSharp.Model;
 using HaloSharp.Model.Common;
 using HaloSharp.Model.Halo5.Stats;
-using HaloSharp.Validation.Halo5.Stats;
+using HaloSharp.Validation.Common;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace HaloSharp.Query.Halo5.Stats
 {
-    public class GetMatchHistory : IQuery<MatchSet<PlayerMatch>>
+    public class GetMatchHistory : Query<MatchSet<PlayerMatch>>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
-        internal readonly string Player;
+        protected virtual string Path => $"stats/h5/players/{_player}/matches";
 
-        private bool _useCache = true;
+        public override string Uri => HaloUriBuilder.Build(Path, _parameters);
+
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string ModesParameter = "modes";
+        private const string StartParameter = "start";
+        private const string CountParameter = "count";
+
+        private readonly string _player;
 
         public GetMatchHistory(string gamertag)
         {
-            Player = gamertag;
-        }
-
-        public GetMatchHistory SkipCache()
-        {
-            _useCache = false;
-
-            return this;
+            _player = gamertag;
         }
 
         public GetMatchHistory InGameMode(Enumeration.Halo5.GameMode gameMode)
         {
-            Parameters["modes"] = gameMode.ToString();
+            _parameters[ModesParameter] = gameMode.ToString();
 
             return this;
         }
 
-        public GetMatchHistory InGameModes(List<Enumeration.Halo5.GameMode> gameModes)
+        public GetMatchHistory InGameModes(IEnumerable<Enumeration.Halo5.GameMode> gameModes)
         {
-            Parameters["modes"] = string.Join(",", gameModes.Select(g => g.ToString()));
+            _parameters[ModesParameter] = string.Join(",", gameModes.Select(g => g.ToString()));
 
             return this;
         }
 
         public GetMatchHistory Skip(int count)
         {
-            Parameters["start"] = count.ToString();
+            _parameters[StartParameter] = count.ToString();
 
             return this;
         }
 
         public GetMatchHistory Take(int count)
         {
-            Parameters["count"] = count.ToString();
+            _parameters[CountParameter] = count.ToString();
 
             return this;
         }
 
-        public async Task<MatchSet<PlayerMatch>> ApplyTo(IHaloSession session)
+        protected override void Validate()
         {
-            this.Validate();
+            var validationResult = new ValidationResult();
 
-            var uri = GetConstructedUri();
-
-            var matchSet = _useCache
-                ? Cache.Get<MatchSet<PlayerMatch>>(uri)
-                : null;
-
-            if (matchSet == null)
+            if (!_player.IsValidGamertag())
             {
-                matchSet = await session.Get<MatchSet<PlayerMatch>>(uri);
-
-                Cache.AddStats(uri, matchSet);
+                validationResult.Messages.Add("GetMatchHistory query requires a valid Gamertag to be set.");
             }
 
-            return matchSet;
-        }
-
-        public virtual string GetConstructedUri()
-        {
-            var builder = new StringBuilder($"stats/h5/players/{Player}/matches");
-
-            if (Parameters.Any())
+            if (_parameters.ContainsKey(ModesParameter))
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                var modes = _parameters[ModesParameter].Split(',');
+
+                foreach (var mode in modes)
+                {
+                    var defined = Enum.IsDefined(typeof(Enumeration.Halo5.GameMode), mode);
+
+                    if (!defined)
+                    {
+                        validationResult.Messages.Add($"GetMatchHistory optional parameter '{ModesParameter}' is invalid: {mode}.");
+                    }
+                }
             }
 
-            return builder.ToString();
+            if (_parameters.ContainsKey(StartParameter))
+            {
+                int start;
+                var parsed = int.TryParse(_parameters[StartParameter], out start);
+
+                if (!parsed || start < 0)
+                {
+                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{StartParameter}' is invalid: {start}.");
+                }
+            }
+
+            if (_parameters.ContainsKey(CountParameter))
+            {
+                int count;
+                var parsed = int.TryParse(_parameters[CountParameter], out count);
+
+                if (!parsed || count < 1 || count > 25)
+                {
+                    validationResult.Messages.Add($"GetMatchHistory optional parameter '{CountParameter}' is invalid: {count}.");
+                }
+            }
+
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

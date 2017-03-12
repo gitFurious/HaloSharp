@@ -1,53 +1,42 @@
-using System;
-using System.Threading.Tasks;
+using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.HaloWars2.Stats.Lifetime;
-using HaloSharp.Validation.HaloWars2.Stats.Lifetime;
+using HaloSharp.Validation.Common;
+using System;
 
 namespace HaloSharp.Query.HaloWars2.Stats.Lifetime
 {
-    public class GetSeasonSummary : IQuery<SeasonSummary>
+    public class GetSeasonSummary : Query<SeasonSummary>
     {
-        internal readonly string Player;
-        internal readonly Guid SeasonId;
+        public override string Uri => HaloUriBuilder.Build($"stats/hw2/players/{_player}/stats/seasons/{_seasonId}");
 
-        private bool _useCache = true;
+        private readonly string _player;
+        private readonly Guid _seasonId;
 
         public GetSeasonSummary(string player, Guid seasonId)
         {
-            Player = player;
-            SeasonId = seasonId;
+            _player = player;
+            _seasonId = seasonId;
         }
 
-        public GetSeasonSummary SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
-
-        public async Task<SeasonSummary> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var response = _useCache
-                ? Cache.Get<SeasonSummary>(uri)
-                : null;
-
-            if (response == null)
+            if (!_player.IsValidGamertag())
             {
-                response = await session.Get<SeasonSummary>(uri);
-
-                Cache.AddStats(uri, response);
+                validationResult.Messages.Add("GetSeasonSummary query requires a valid Gamertag to be set.");
             }
 
-            return response;
-        }
+            if (_seasonId == default(Guid))
+            {
+                validationResult.Messages.Add("GetSeasonSummary query requires a valid Season Id to be set.");
+            }
 
-        public string GetConstructedUri()
-        {
-            return $"stats/hw2/players/{Player}/stats/seasons/{SeasonId}";
+            if (!validationResult.Success)
+            {
+                throw new ValidationException(validationResult.Messages);
+            }
         }
     }
 }

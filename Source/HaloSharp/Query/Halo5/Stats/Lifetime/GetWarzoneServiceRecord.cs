@@ -1,66 +1,47 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.Halo5.Stats.Lifetime;
-using HaloSharp.Validation.Halo5.Stats.Lifetime;
+using HaloSharp.Validation.Common;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.Halo5.Stats.Lifetime
 {
-    public class GetWarzoneServiceRecord : IQuery<WarzoneServiceRecord>
+    public class GetWarzoneServiceRecord : Query<WarzoneServiceRecord>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
+        public override string Uri => HaloUriBuilder.Build("stats/h5/servicerecords/warzone", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string PlayersParameter = "players";
 
         public GetWarzoneServiceRecord(string gamertag)
         {
-            Parameters["players"] = gamertag;
+            _parameters[PlayersParameter] = gamertag;
         }
 
         public GetWarzoneServiceRecord(IEnumerable<string> gamertags)
         {
-            Parameters["players"] = string.Join(",", gamertags);
+            _parameters[PlayersParameter] = string.Join(",", gamertags);
         }
 
-        public GetWarzoneServiceRecord SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
+            var players = _parameters[PlayersParameter].Split(',');
 
-        public async Task<WarzoneServiceRecord> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var serviceRecord = _useCache
-                ? Cache.Get<WarzoneServiceRecord>(uri)
-                : null;
-
-            if (serviceRecord == null)
+            foreach (var player in players)
             {
-                serviceRecord = await session.Get<WarzoneServiceRecord>(uri);
-
-                Cache.AddStats(uri, serviceRecord);
+                if (!player.IsValidGamertag())
+                {
+                    validationResult.Messages.Add("GetWarzoneServiceRecord query requires valid Gamertags to be set.");
+                }
             }
 
-            return serviceRecord;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder("stats/h5/servicerecords/warzone");
-
-            if (Parameters.Any())
+            if (!validationResult.Success)
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                throw new ValidationException(validationResult.Messages);
             }
-
-            return builder.ToString();
         }
+       
     }
 }

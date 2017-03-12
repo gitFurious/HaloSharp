@@ -1,66 +1,46 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HaloSharp.Exception;
+using HaloSharp.Model;
 using HaloSharp.Model.HaloWars2.Stats.Lifetime;
-using HaloSharp.Validation.HaloWars2.Stats.Lifetime;
+using HaloSharp.Validation.Common;
+using System.Collections.Generic;
 
 namespace HaloSharp.Query.HaloWars2.Stats.Lifetime
 {
-    public class GetExperienceSummary : IQuery<ExperienceSummaryResultSet>
+    public class GetExperienceSummary : Query<ExperienceSummaryResultSet>
     {
-        internal readonly IDictionary<string, string> Parameters = new Dictionary<string, string>();
+        public override string Uri => HaloUriBuilder.Build($"stats/hw2/xp", _parameters);
 
-        private bool _useCache = true;
+        private readonly IDictionary<string, string> _parameters = new Dictionary<string, string>();
+        private const string PlayersParameter = "players";
 
         public GetExperienceSummary(string player)
         {
-            Parameters["players"] = player;
+            _parameters[PlayersParameter] = player;
         }
 
         public GetExperienceSummary(IEnumerable<string> players)
         {
-            Parameters["players"] = string.Join(",", players);
+            _parameters[PlayersParameter] = string.Join(",", players);
         }
 
-        public GetExperienceSummary SkipCache()
+        protected override void Validate()
         {
-            _useCache = false;
+            var validationResult = new ValidationResult();
 
-            return this;
-        }
+            var players = _parameters[PlayersParameter].Split(',');
 
-        public async Task<ExperienceSummaryResultSet> ApplyTo(IHaloSession session)
-        {
-            this.Validate();
-
-            var uri = GetConstructedUri();
-
-            var response = _useCache
-                ? Cache.Get<ExperienceSummaryResultSet>(uri)
-                : null;
-
-            if (response == null)
+            foreach (var player in players)
             {
-                response = await session.Get<ExperienceSummaryResultSet>(uri);
-
-                Cache.AddStats(uri, response);
+                if (!player.IsValidGamertag())
+                {
+                    validationResult.Messages.Add("GetExperienceSummary query requires a valid Gamertag to be set.");
+                }
             }
 
-            return response;
-        }
-
-        public string GetConstructedUri()
-        {
-            var builder = new StringBuilder("stats/hw2/xp");
-
-            if (Parameters.Any())
+            if (!validationResult.Success)
             {
-                builder.Append("?");
-                builder.Append(string.Join("&", Parameters.Select(p => $"{p.Key}={p.Value}")));
+                throw new ValidationException(validationResult.Messages);
             }
-
-            return builder.ToString();
         }
     }
 }

@@ -35,41 +35,17 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
         }
 
         [Test]
-        [TestCase("Greenskull")]
-        [TestCase("Furiousn00b")]
-        [TestCase("moussanator ")]
-        public void GetConstructedUri_ForPlayer_MatchesExpected(string gamertag)
+        [TestCase("Furiousn00b", "2041d318-dd22-47c2-a487-2818ecf14e41")]
+        [TestCase("Greenskull", "2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
+        public void Uri_MatchesExpected(string gamertag, string guid)
         {
             var query = new GetArenaServiceRecord(gamertag);
 
-            var uri = query.GetConstructedUri();
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/servicerecords/arena?players={gamertag}", query.Uri);
 
-            Assert.AreEqual($"stats/h5/servicerecords/arena?players={gamertag}", uri);
-        }
+            query.ForSeasonId(new Guid(guid));
 
-        [Test]
-        [TestCase("Greenskull", "Furiousn00b")]
-        public void GetConstructedUri_ForPlayers_MatchesExpected(string gamertag, string gamertag2)
-        {
-            var query = new GetArenaServiceRecord(new List<string> {gamertag, gamertag2});
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/servicerecords/arena?players={gamertag},{gamertag2}", uri);
-        }
-
-        [Test]
-        [TestCase("Furiousn00b", "2041d318-dd22-47c2-a487-2818ecf14e41")]
-        [TestCase("Greenskull", "2fcc20a0-53ff-4ffb-8f72-eebb2e419273")]
-        [TestCase("moussanator", "b46c2095-4ca6-4f4b-a565-4702d7cfe586")]
-        public void GetConstructedUri_Complex_MatchesExpected(string gamertag, string guid)
-        {
-            var query = new GetArenaServiceRecord(gamertag)
-                .ForSeasonId(new Guid(guid));
-
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"stats/h5/servicerecords/arena?players={gamertag}&seasonId={guid}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/servicerecords/arena?players={gamertag}&seasonId={guid}", query.Uri);
         }
 
         [Test]
@@ -127,7 +103,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats.Lifetime
             var query = new GetArenaServiceRecord(gamertag)
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(weaponsSchema, jArray);
         }

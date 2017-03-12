@@ -36,13 +36,11 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
 
         [Test]
         [TestCase("fa7808ca-970e-4912-ba4d-92f7ae4499e8")]
-        public void GetConstructedUri_ForGameVariantId_MatchesExpected(string guid)
+        public void Uri_MatchesExpected(string guid)
         {
             var query = new GetGameVariant(new Guid(guid));
 
-            var uri = query.GetConstructedUri();
-
-            Assert.AreEqual($"metadata/h5/metadata/game-variants/{guid}", uri);
+            Assert.AreEqual($"https://www.haloapi.com/metadata/h5/metadata/game-variants/{guid}", query.Uri);
         }
 
         [Test]
@@ -82,7 +80,7 @@ namespace HaloSharp.Test.Query.Halo5.Metadata
             var query = new GetGameVariant(new Guid(guid))
                 .SkipCache();
 
-            var jArray = await Global.Session.Get<JObject>(query.GetConstructedUri());
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
 
             SchemaUtility.AssertSchemaIsValid(gameVariantSchema, jArray);
         }
