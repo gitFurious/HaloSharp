@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": [ "object", "null" ],
+  "additionalProperties": false,
+  "properties": {
+    "xp": {
+      "type": "integer"
+    },
+    "requisitionPacks": {
+      "type": [ "array", "null" ],
+      "items": {
+        "$ref": "requisition-pack.schema.json"
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "contentId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "xp",
+    "requisitionPacks",
+    "id",
+    "contentId"
+  ]
+}

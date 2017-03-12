@@ -5,11 +5,8 @@ namespace HaloSharp.Model.Common
     [Serializable]
     public class ISO8601 : IEquatable<ISO8601>
     {
-        /// <summary>
-        /// //TODO
-        /// </summary>
         // ReSharper disable once InconsistentNaming
-        public DateTime ISO8601Date { get; set; }
+        public DateTime? ISO8601Date { get; set; }
 
         public bool Equals(ISO8601 other)
         {

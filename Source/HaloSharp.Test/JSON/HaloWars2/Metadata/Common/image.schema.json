@@ -1,0 +1,133 @@
+{
+  "definitions": {
+    "null": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "null"
+        },
+        "View": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "ImageContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/ImageView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "ImageView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Media": {
+          "$ref": "#/definitions/Media"
+        },
+        "Image": {
+          "$ref": "#/definitions/Image"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Media",
+        "Image",
+        "Title",
+        "Identity"
+      ]
+    },
+
+    "Media": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MediaUrl": {
+          "type": "string"
+        },
+        "MimeType": {
+          "type": "string"
+        },
+        "Caption": {
+          "type": "string"
+        },
+        "AlternateText": {
+          "type": "string"
+        },
+        "FolderPath": {
+          "type": "string"
+        },
+        "FileName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "MediaUrl",
+        "MimeType",
+        "Caption",
+        "AlternateText",
+        "FolderPath",
+        "FileName"
+      ]
+    },
+
+    "Image": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Width": {
+          "type": "integer"
+        },
+        "Height": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Width",
+        "Height"
+      ]
+    }
+  }
+}

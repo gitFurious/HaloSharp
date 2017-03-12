@@ -1,0 +1,192 @@
+{
+  "definitions": {
+    "Result": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Links": {
+          "$ref": "../../common/link.schema.json"
+        },
+        "Id": {
+          "$ref": "#/definitions/Id"
+        },
+        "HopperId": {
+          "type": [ "string", "null" ]
+        },
+        "MapId": {
+          "type": "string"
+        },
+        "MapVariant": {
+          "$ref": "../common/variant.schema.json"
+        },
+        "GameBaseVariantId": {
+          "type": "string"
+        },
+        "GameVariant": {
+          "$ref": "../common/variant.schema.json"
+        },
+        "MatchDuration": {
+          "type": "string"
+        },
+        "MatchCompletedDate": {
+          "$ref": "../../common/iso-8061.schema.json"
+        },
+        "Teams": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Team"
+          }
+        },
+        "Players": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Player"
+          }
+        },
+        "IsTeamGame": {
+          "type": "boolean"
+        },
+        "SeasonId": {
+          "type": [ "string", "null" ]
+        },
+        "MatchCompletedDateFidelity": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Links",
+        "Id",
+        "HopperId",
+        "MapId",
+        "MapVariant",
+        "GameBaseVariantId",
+        "GameVariant",
+        "MatchDuration",
+        "MatchCompletedDate",
+        "Teams",
+        "Players",
+        "IsTeamGame",
+        "SeasonId",
+        "MatchCompletedDateFidelity"
+      ]
+    },
+
+    "Id": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MatchId": {
+          "type": "string"
+        },
+        "GameMode": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "MatchId",
+        "GameMode"
+      ]
+    },
+
+    "Team": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Score": {
+          "type": "integer"
+        },
+        "Rank": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Score",
+        "Rank"
+      ]
+    },
+
+    "Player": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Player": {
+          "$ref": "../../common/identity.schema.json"
+        },
+        "TeamId": {
+          "type": "integer"
+        },
+        "Rank": {
+          "type": "integer"
+        },
+        "Result": {
+          "type": "integer"
+        },
+        "TotalKills": {
+          "type": "integer"
+        },
+        "TotalDeaths": {
+          "type": "integer"
+        },
+        "TotalAssists": {
+          "type": "integer"
+        },
+        "PreMatchRatings": {
+          "type": "null"
+        },
+        "PostMatchRatings": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "Player",
+        "TeamId",
+        "Rank",
+        "Result",
+        "TotalKills",
+        "TotalDeaths",
+        "TotalAssists",
+        "PreMatchRatings",
+        "PostMatchRatings"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Start": {
+      "type": "integer"
+    },
+    "Count": {
+      "type": "integer"
+    },
+    "ResultCount": {
+      "type": "integer"
+    },
+    "Results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Result"
+      }
+    },
+    "Links": {
+      "$ref": "../../common/link.schema.json"
+    }
+  },
+  "required": [
+    "Start",
+    "Count",
+    "ResultCount",
+    "Results",
+    "Links"
+  ]
+}

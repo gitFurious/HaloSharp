@@ -8,6 +8,7 @@ using HaloSharp.Exception;
 using HaloSharp.Extension;
 using HaloSharp.Model;
 using HaloSharp.Model.Error;
+using HaloSharp.Model.Halo5.Profile;
 
 namespace HaloSharp
 {
@@ -67,7 +68,7 @@ namespace HaloSharp
             return await content.ParsedAsJson<TResult>();
         }
 
-        public async Task<Tuple<string, Image>> GetImage(string path)
+        public async Task<HaloImage> GetImage(string path)
         {
             var entered = _rateGate?.WaitToProceed() ?? true;
             if (!entered)
@@ -95,7 +96,11 @@ namespace HaloSharp
                 image = Image.FromStream(stream);
             }
 
-            return new Tuple<string, Image>(uri, image);
+            return new HaloImage
+            {
+                Uri = uri,
+                Image = image
+            };
         }
 
         private static string GetUrl(string path)

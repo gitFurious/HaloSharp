@@ -1,0 +1,29 @@
+{
+  "Results": [
+    {
+      "Id": "Furiousn00b",
+      "ResultCode": 0,
+      "Result": {
+        "Mmr": {
+          "Rating": -0.23655137960964817,
+          "Variance": 0.94140322859668657,
+          "LastModifiedDate": {
+            "ISO8601Date": ""
+          }
+        },
+        "Csr": null
+      }
+    }
+  ],
+  "Links": {
+    "Self": {
+      "AuthorityId": "spartanstats",
+      "Path": "/hw2/playlist/c80ddcda-219b-42e6-82f4-94fae8516d96/rating",
+      "QueryString": "?players=Furiousn00b",
+      "RetryPolicyId": "",
+      "TopicName": "",
+      "AcknowledgementTypeId": 0,
+      "AuthenticationLifetimeExtensionSupported": false
+    }
+  }
+}

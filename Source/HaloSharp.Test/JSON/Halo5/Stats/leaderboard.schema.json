@@ -1,0 +1,56 @@
+{
+  "definitions": {
+    "Result": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Player": {
+          "$ref": "../../common/identity.schema.json"
+        },
+        "Rank": {
+          "type": "integer"
+        },
+        "Score": {
+          "$ref": "common/competitive-skill-ranking.schema.json"
+        }
+      },
+      "required": [
+        "Player",
+        "Rank",
+        "Score"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Start": {
+      "type": "integer"
+    },
+    "Count": {
+      "type": "integer"
+    },
+    "ResultCount": {
+      "type": "integer"
+    },
+    "Results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Result"
+      }
+    },
+    "Links": {
+      "$ref": "../../common/link.schema.json"
+    }
+  },
+  "required": [
+    "Start",
+    "Count",
+    "ResultCount",
+    "Results",
+    "Links"
+  ]
+}

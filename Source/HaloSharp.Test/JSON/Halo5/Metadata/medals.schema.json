@@ -1,0 +1,89 @@
+{
+  "definitions": {
+    "Medal": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "classification": {
+          "type": "string"
+        },
+        "difficulty": {
+          "type": "integer"
+        },
+        "spriteLocation": {
+          "$ref": "#/definitions/SpriteLocation"
+        },
+        "id": {
+          /*
+           * HACK: API returns a string but it's really an int. 
+           * HaloSharp's model uses an int, the JSON reponse uses a string.
+           */
+          "type": [ "string", "integer" ]
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "classification",
+        "difficulty",
+        "spriteLocation",
+        "id",
+        "contentId"
+      ]
+    },
+
+    "SpriteLocation": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": [ "null", "object" ],
+      "additionalProperties": false,
+      "properties": {
+        "spriteSheetUri": {
+          "type": "string"
+        },
+        "left": {
+          "type": "integer"
+        },
+        "top": {
+          "type": "integer"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "spriteWidth": {
+          "type": "integer"
+        },
+        "spriteHeight": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "spriteSheetUri",
+        "left",
+        "top",
+        "width",
+        "height",
+        "spriteWidth",
+        "spriteHeight"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Medal"
+  }
+}

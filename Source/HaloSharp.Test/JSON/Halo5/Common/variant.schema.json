@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": [ "object", "null" ],
+  "additionalProperties": false,
+  "properties": {
+    "ResourceType": {
+      "type": "integer"
+    },
+    "ResourceId": {
+      "type": "string"
+    },
+    "OwnerType": {
+      "type": "integer"
+    },
+    "Owner": {
+      "type": [ "string", "null" ]
+    }
+  },
+  "required": [
+    "ResourceType",
+    "ResourceId",
+    "OwnerType",
+    "Owner"
+  ]
+}

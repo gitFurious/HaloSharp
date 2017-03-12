@@ -1,0 +1,113 @@
+{
+  "definitions": {
+    "Level": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "SkullsUnlocked": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "TotalSoloPlayTime": {
+            "type": "string"
+          },
+          "TotalCooperativePlayTime": {
+            "type": "string"
+          },
+          "SoloCompletion": {
+            "$ref": "#/definitions/Completion"
+          },
+          "CooperativeCompletion": {
+            "$ref": "#/definitions/Completion"
+          },
+          "FirstCompletionDate": {
+            "oneOf": [
+              { "$ref": "../../common/iso-8061.schema.json" },
+              { "type": "null" }
+            ]
+          }
+        },
+        "required": [
+          "SkullsUnlocked",
+          "TotalSoloPlayTime",
+          "TotalCooperativePlayTime",
+          "FirstCompletionDate",
+          "SoloCompletion",
+          "CooperativeCompletion"
+        ]
+      }
+    },
+
+    "Completion": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": [ "object", "null" ],
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "BestCompletionTime": {
+            "type": "string"
+          },
+          "BestScore": {
+            "type": "integer"
+          },
+          "CriticalObjectivesCompleted": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "BonusObjectivesCompleted": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "OptionalObjectivesCompleted": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        },
+        "required": [
+          "BestCompletionTime",
+          "BestScore",
+          "CriticalObjectivesCompleted",
+          "BonusObjectivesCompleted",
+          "OptionalObjectivesCompleted"
+        ]
+      }
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "CampaignXP": {
+      "type": "integer"
+    },
+    "Levels": {
+      "$ref": "#/definitions/Level"
+    },
+    "LogsUnlocked": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    }
+  },
+  "required": [
+    "CampaignXP",
+    "Levels",
+    "LogsUnlocked"
+  ]
+}

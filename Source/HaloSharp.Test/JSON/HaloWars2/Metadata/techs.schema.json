@@ -1,0 +1,194 @@
+{
+  "definitions": {
+    "HW2TechContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2TechView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "common/link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2TechView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Autoroute": {
+          "type": "string"
+        },
+        "HW2Tech": {
+          "$ref": "#/definitions/HW2Tech"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "Autoroute",
+        "HW2Tech"
+      ]
+    },
+
+    "HW2Tech": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ObjectTypeId": {
+          "type": "string"
+        },
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2TechDisplayInfoContentItem"
+        },
+        "Image": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/image.schema.json#/definitions/null" },
+            { "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB" }
+          ]
+        }
+      },
+      "required": [
+        "ObjectTypeId",
+        "DisplayInfo",
+        "Image"
+      ]
+    },
+
+    "HW2TechDisplayInfoContentItem": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2TechDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2TechDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "BatchLocalization": {
+          "$ref": "common/batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "common/localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2TechDisplayInfo": {
+          "$ref": "#/definitions/HW2TechDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2TechDisplayInfo",
+        "BatchLocalization",
+        "Localization",
+        "Title",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2TechDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Description"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Paging": {
+      "$ref": "common/paging.schema.json"
+    },
+    "ContentItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/HW2TechContentItemTypeA"
+      }
+    }
+  },
+  "required": [
+    "Paging",
+    "ContentItems"
+  ]
+}

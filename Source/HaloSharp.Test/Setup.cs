@@ -1,7 +1,6 @@
-﻿using System;
-using System.Threading;
-using HaloSharp.Model;
+﻿using HaloSharp.Model;
 using NUnit.Framework;
+using System;
 
 namespace HaloSharp.Test
 {
@@ -26,9 +25,7 @@ namespace HaloSharp.Test
 
             var cacheSettings = new CacheSettings
             {
-                MetadataCacheDuration = new TimeSpan(0, 0, 10, 0),
-                ProfileCacheDuration = new TimeSpan(0, 0, 10, 0),
-                StatsCacheDuration = null //Don't cache 'Stats' endpoints.
+                CacheDuration = null
             };
 
             var client = new HaloClient(developerAccessProduct, cacheSettings);

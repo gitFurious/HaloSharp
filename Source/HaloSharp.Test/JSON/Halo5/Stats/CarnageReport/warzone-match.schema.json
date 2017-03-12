@@ -1,0 +1,346 @@
+{
+  "definitions": {
+    "PlayerStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "TotalKills": {
+          "type": "integer"
+        },
+        "TotalHeadshots": {
+          "type": "integer"
+        },
+        "TotalWeaponDamage": {
+          "type": "number"
+        },
+        "TotalShotsFired": {
+          "type": "integer"
+        },
+        "TotalShotsLanded": {
+          "type": "integer"
+        },
+        "WeaponWithMostKills": {
+          "$ref": "../common/base-stat.schema.json#/definitions/WeaponStat"
+        },
+        "TotalMeleeKills": {
+          "type": "integer"
+        },
+        "TotalMeleeDamage": {
+          "type": "number"
+        },
+        "TotalAssassinations": {
+          "type": "integer"
+        },
+        "TotalGroundPoundKills": {
+          "type": "integer"
+        },
+        "TotalGroundPoundDamage": {
+          "type": "number"
+        },
+        "TotalShoulderBashKills": {
+          "type": "integer"
+        },
+        "TotalShoulderBashDamage": {
+          "type": "number"
+        },
+        "TotalGrenadeDamage": {
+          "type": "number"
+        },
+        "TotalPowerWeaponKills": {
+          "type": "integer"
+        },
+        "TotalPowerWeaponDamage": {
+          "type": "number"
+        },
+        "TotalPowerWeaponGrabs": {
+          "type": "integer"
+        },
+        "TotalPowerWeaponPossessionTime": {
+          "type": "string"
+        },
+        "TotalDeaths": {
+          "type": "integer"
+        },
+        "TotalAssists": {
+          "type": "integer"
+        },
+        "TotalGamesCompleted": {
+          "type": "integer"
+        },
+        "TotalGamesWon": {
+          "type": "integer"
+        },
+        "TotalGamesLost": {
+          "type": "integer"
+        },
+        "TotalGamesTied": {
+          "type": "integer"
+        },
+        "TotalTimePlayed": {
+          "type": "string"
+        },
+        "TotalGrenadeKills": {
+          "type": "integer"
+        },
+        "MedalAwards": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/base-stat.schema.json#/definitions/MedalAward"
+          }
+        },
+        "DestroyedEnemyVehicles": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/base-stat.schema.json#/definitions/EnemySet"
+          }
+        },
+        "EnemyKills": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/base-stat.schema.json#/definitions/EnemySet"
+          }
+        },
+        "WeaponStats": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/base-stat.schema.json#/definitions/WeaponStat"
+          }
+        },
+        "Impulses": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/base-stat.schema.json#/definitions/Impulse"
+          }
+        },
+        "TotalSpartanKills": {
+          "type": "integer"
+        },
+        "FastestMatchWin": {
+          "type": [ "null", "string" ]
+        },
+
+        "FlexibleStats": {
+          "$ref": "../common/flexible-stats.schema.json"
+        },
+        "Player": {
+          "$ref": "../../../common/identity.schema.json"
+        },
+        "TeamId": {
+          "type": "integer"
+        },
+        "Rank": {
+          "type": "integer"
+        },
+        "DNF": {
+          "type": "boolean"
+        },
+        "AvgLifeTimeOfPlayer": {
+          "type": "string"
+        },
+        "PreMatchRatings": {
+          "type": "null"
+        },
+        "PostMatchRatings": {
+          "type": "null"
+        },
+        "PlayerScore": {
+          "type": [ "integer", "null" ]
+        },
+        "GameEndStatus": {
+          "type": "integer"
+        },
+
+        "BoostInfo": {
+          "$ref": "common/boost-info.schema.json"
+        },
+        "CreditsEarned": {
+          "$ref": "common/credits-earned.schema.json"
+        },
+        "KilledOpponentDetails": {
+          "type": "array",
+          "items": {
+            "$ref": "common/oppenent-details.schema.json"
+          }
+        },
+        "KilledByOpponentDetails": {
+          "type": "array",
+          "items": {
+            "$ref": "common/oppenent-details.schema.json"
+          }
+        },
+        "MetaCommendationDeltas": {
+          "type": "array",
+          "items": {
+            "$ref": "common/meta-commendation-delta.schema.json"
+          }
+        },
+        "ProgressiveCommendationDeltas": {
+          "type": "array",
+          "items": {
+            "$ref": "common/progressive-commendation-delta.schema.json"
+          }
+        },
+        "PveTotalRoundAssistBonuses": {
+          "type": [ "integer", "null" ]
+        },
+        "PveTotalRoundKillBonuses": {
+          "type": [ "integer", "null" ]
+        },
+        "PveTotalRoundSpeedBonuses": {
+          "type": [ "integer", "null" ]
+        },
+        "PveTotalRoundSurvivalBonuses": {
+          "type": [ "integer", "null" ]
+        },
+        "WarzoneLevel": {
+          "type": "integer"
+        },
+        "TotalPiesEarned": {
+          "type": "integer"
+        },
+        "RewardSets": {
+          "type": "array",
+          "items": {
+            "$ref": "common/reward-set.schema.json"
+          }
+        },
+        "XpInfo": {
+          "$ref": "common/xp-info.schema.json"
+        }
+      },
+      "required": [
+        "TotalKills",
+        "TotalHeadshots",
+        "TotalWeaponDamage",
+        "TotalShotsFired",
+        "TotalShotsLanded",
+        "WeaponWithMostKills",
+        "TotalMeleeKills",
+        "TotalMeleeDamage",
+        "TotalAssassinations",
+        "TotalGroundPoundKills",
+        "TotalGroundPoundDamage",
+        "TotalShoulderBashKills",
+        "TotalShoulderBashDamage",
+        "TotalGrenadeDamage",
+        "TotalPowerWeaponKills",
+        "TotalPowerWeaponDamage",
+        "TotalPowerWeaponGrabs",
+        "TotalPowerWeaponPossessionTime",
+        "TotalDeaths",
+        "TotalAssists",
+        "TotalGamesCompleted",
+        "TotalGamesWon",
+        "TotalGamesLost",
+        "TotalGamesTied",
+        "TotalTimePlayed",
+        "TotalGrenadeKills",
+        "MedalAwards",
+        "DestroyedEnemyVehicles",
+        "EnemyKills",
+        "WeaponStats",
+        "Impulses",
+        "TotalSpartanKills",
+        "FastestMatchWin",
+
+        "FlexibleStats",
+        "Player",
+        "TeamId",
+        "Rank",
+        "DNF",
+        "AvgLifeTimeOfPlayer",
+        "PreMatchRatings",
+        "PostMatchRatings",
+        "PlayerScore",
+        "GameEndStatus",
+
+        "BoostInfo",
+        "CreditsEarned",
+        "KilledOpponentDetails",
+        "KilledByOpponentDetails",
+        "MetaCommendationDeltas",
+        "ProgressiveCommendationDeltas",
+        "PveTotalRoundAssistBonuses",
+        "PveTotalRoundKillBonuses",
+        "PveTotalRoundSpeedBonuses",
+        "PveTotalRoundSurvivalBonuses",
+        "TotalPiesEarned",
+        "WarzoneLevel",
+        "RewardSets",
+        "XpInfo"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "IsMatchOver": {
+      "type": "boolean"
+    },
+    "TotalDuration": {
+      "type": "string"
+    },
+    "MapVariantId": {
+      "type": "string"
+    },
+    "GameVariantId": {
+      "type": "string"
+    },
+    "PlaylistId": {
+      "type": "string"
+    },
+    "MapId": {
+      "type": "string"
+    },
+    "GameBaseVariantId": {
+      "type": "string"
+    },
+    "IsTeamGame": {
+      "type": "boolean"
+    },
+    "SeasonId": {
+      "type": [ "string", "null" ]
+    },
+    "GameVariantResourceId": {
+      "$ref": "../../common/variant.schema.json"
+    },
+    "MapVariantResourceId": {
+      "$ref": "../../common/variant.schema.json"
+    },
+    "ObjectivesCompleted": {
+      "type": [ "integer", "null" ]
+    },
+
+    "PlayerStats": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PlayerStat"
+      }
+    },
+    "TeamStats": {
+      "type": "array",
+      "items": {
+        "$ref": "common/team-stat.schema.json"
+      }
+    }
+  },
+  "required": [
+    "IsMatchOver",
+    "TotalDuration",
+    "MapVariantId",
+    "GameVariantId",
+    "PlaylistId",
+    "MapId",
+    "GameBaseVariantId",
+    "IsTeamGame",
+    "SeasonId",
+    "GameVariantResourceId",
+    "MapVariantResourceId",
+
+    "PlayerStats",
+    "TeamStats"
+  ]
+}

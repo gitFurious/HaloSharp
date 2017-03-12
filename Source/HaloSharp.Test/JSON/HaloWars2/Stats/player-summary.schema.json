@@ -1,0 +1,79 @@
+{
+  "definitions": {
+    "CustomSummary": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "SkirmishStats": {
+          "$ref": "#/definitions/SkirmishStats"
+        },
+        "CustomStats": {
+          "$ref": "common/stats.schema.json"
+        }
+      },
+      "required": [
+        "SkirmishStats",
+        "CustomStats"
+      ]
+    },
+
+    "SkirmishStats": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "SinglePlayerStats": {
+          "$ref": "common/stats.schema.json"
+        },
+        "MultiplayerStats": {
+          "$ref": "common/stats.schema.json"
+        }
+      },
+      "required": [
+        "SinglePlayerStats",
+        "MultiplayerStats"
+      ]
+    },
+
+    "MatchmakingSummary": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "SocialPlaylistStats": {
+          "type": "array",
+          "items": {
+            "$ref": "common/stats.schema.json"
+          }
+        },
+        "RankedPlaylistStats": {
+          "type": "array",
+          "items": {
+            "$ref": "common/stats.schema.json"
+          }
+        }
+      },
+      "required": [
+        "SocialPlaylistStats",
+        "RankedPlaylistStats"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "CustomSummary": {
+      "$ref": "#/definitions/CustomSummary"
+    },
+    "MatchmakingSummary": {
+      "$ref": "#/definitions/MatchmakingSummary"
+    }
+  },
+  "required": [
+    "CustomSummary",
+    "MatchmakingSummary"
+  ]
+}

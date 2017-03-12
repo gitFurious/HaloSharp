@@ -1,0 +1,72 @@
+{
+  "definitions": {
+    "CompetitiveSkillRankDesignation": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "bannerImageUrl": {
+          "type": "string"
+        },
+        "tiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Tier"
+          }
+        },
+        "id": {
+          /*
+           * HACK: API returns a string but it's really an int. 
+           * HaloSharp's model uses an int, the JSON reponse uses a string.
+           */
+          "type": [ "string", "integer" ]
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "bannerImageUrl",
+        "tiers",
+        "id",
+        "contentId"
+      ]
+    },
+
+    "Tier": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "iconImageUrl": {
+          "type": "string"
+        },
+        "id": {
+          /*
+            * HACK: API returns a string but it's really an int. 
+            * HaloSharp's model uses an int, the JSON reponse uses a string.
+            */
+          "type": [ "string", "integer" ]
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "iconImageUrl",
+        "id",
+        "contentId"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/CompetitiveSkillRankDesignation"
+  }
+}

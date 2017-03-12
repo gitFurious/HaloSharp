@@ -1,0 +1,52 @@
+{
+  "definitions": {
+    "RoundStat": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "RoundNumber": {
+          "type": "integer"
+        },
+        "Rank": {
+          "type": "integer"
+        },
+        "Score": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "RoundNumber",
+        "Rank",
+        "Score"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "TeamId": {
+      "type": "integer"
+    },
+    "Score": {
+      "type": "integer"
+    },
+    "Rank": {
+      "type": "integer"
+    },
+    "RoundStats": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RoundStat"
+      }
+    }
+  },
+  "required": [
+    "TeamId",
+    "Score",
+    "Rank",
+    "RoundStats"
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "definitions": {
+    "HW2LeaderContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2LeaderView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "common/link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2LeaderView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2Leader": {
+          "$ref": "#/definitions/HW2Leader"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "HW2Leader"
+      ]
+    },
+
+    "HW2Leader": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Faction": {
+          "type": "string"
+        },
+        "StartingArmyOptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/HW2StartingArmyContentItemTypeB"
+          }
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2LeaderDisplayInfoContentItemTypeB"
+        },
+        "Image": {
+          "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "HW2PromotionOffer": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/content-item-type-c.schema.json#/definitions/null" },
+            { "$ref": "common/content-item-type-c.schema.json#/definitions/ContentItemTypeC" }
+          ]
+        }
+      },
+      "required": [
+        "Faction",
+        "StartingArmyOptions",
+        "Id",
+        "Name",
+        "DisplayInfo",
+        "Image",
+        "HW2PromotionOffer"
+      ]
+    },
+
+    "HW2LeaderDisplayInfoContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2LeaderDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2LeaderDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "BatchLocalization": {
+          "$ref": "common/batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "common/localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2LeaderDisplayInfo": {
+          "$ref": "#/definitions/HW2LeaderDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2LeaderDisplayInfo",
+        "BatchLocalization",
+        "Localization",
+        "Title",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2LeaderDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Description"
+      ]
+    },
+
+
+    "HW2StartingArmyContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2StartingArmyView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2StartingArmyView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2StartingArmy": {
+          "$ref": "#/definitions/HW2StartingArmy"
+        },
+        "BatchLocalization": {
+          "$ref": "common/batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "common/localization.schema.json"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "HW2StartingArmy",
+        "BatchLocalization",
+        "Localization"
+      ]
+    },
+
+    "HW2StartingArmy": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2StartingArmyDisplayInfoContentItemTypeB"
+        },
+        "Cards": {
+          "type": "array",
+          "items": {
+            "$ref": "common/content-item-type-d.schema.json#/definitions/ContentItemTypeD"
+          }
+        }
+      },
+      "required": [
+        "DisplayInfo",
+        "Cards"
+      ]
+    },
+
+    "HW2StartingArmyDisplayInfoContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2StartingArmyDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2StartingArmyDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common/common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "BatchLocalization": {
+          "$ref": "common/batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "common/localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Autoroute": {
+          "type": "string"
+        },
+        "HW2StartingArmyDisplayInfo": {
+          "$ref": "#/definitions/HW2StartingArmyDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2StartingArmyDisplayInfo",
+        "BatchLocalization",
+        "Localization",
+        "Title",
+        "Autoroute",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2StartingArmyDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Paging": {
+      "$ref": "common/paging.schema.json"
+    },
+    "ContentItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/HW2LeaderContentItemTypeA"
+      }
+    }
+  },
+  "required": [
+    "Paging",
+    "ContentItems"
+  ]
+}

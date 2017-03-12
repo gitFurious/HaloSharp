@@ -1,0 +1,227 @@
+{
+  "definitions": {
+    "HW2PackContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2PackView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2PackContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2PackView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2PackView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2Pack": {
+          "$ref": "#/definitions/HW2Pack"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "HW2Pack"
+      ]
+    },
+
+    "HW2Pack": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "HW2PackRules": {
+          "type": "array",
+          "items": {
+            "$ref": "content-item-type-c.schema.json#/definitions/ContentItemTypeC"
+          }
+        },
+        "FrontImageHD": {
+          "$ref": "image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "BackImageHD": {
+          "$ref": "image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "BackImage4K": {
+          "$ref": "image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "HighlightImageHD": {
+          "$ref": "image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "HighlightImage4K": {
+          "$ref": "image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "FrontImage4K": {
+          "$ref": "image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "StackGroup": {
+          "type": [ "string", "null" ]
+        },
+        "InventorySortPriority": {
+          "type": "integer"
+        },
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2PackDisplayInfoContentItemTypeB"
+        },
+        "MarketplaceProductId": {
+          "type": "string"
+        },
+        "UWPProductId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "HW2PackRules",
+        "FrontImageHD",
+        "BackImageHD",
+        "BackImage4K",
+        "HighlightImageHD",
+        "HighlightImage4K",
+        "FrontImage4K",
+        "StackGroup",
+        "InventorySortPriority",
+        "DisplayInfo",
+        "MarketplaceProductId",
+        "UWPProductId"
+      ]
+    },
+
+    "HW2PackDisplayInfoContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2PackDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2PackDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "BatchLocalization": {
+          "$ref": "batch-localization.schema.json"
+        },
+        "Localization": {
+          "$ref": "localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2PackDisplayInfo": {
+          "$ref": "#/definitions/HW2PackDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2PackDisplayInfo",
+        "BatchLocalization",
+        "Localization",
+        "Title",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2PackDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Description"
+      ]
+    }
+  }
+}

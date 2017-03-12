@@ -1,5 +1,4 @@
-﻿using System;
-using HaloSharp.Model;
+﻿using HaloSharp.Model;
 
 namespace HaloSharp
 {
@@ -18,9 +17,7 @@ namespace HaloSharp
         {
             var session = new HaloSession(_product);
 
-            Cache.MetadataCacheDuration = _cacheSettings?.MetadataCacheDuration;
-            Cache.ProfileCacheDuration = _cacheSettings?.ProfileCacheDuration;
-            Cache.StatsCacheDuration = _cacheSettings?.StatsCacheDuration;
+            Cache.CacheDuration = _cacheSettings?.CacheDuration;
 
             return session;
         }

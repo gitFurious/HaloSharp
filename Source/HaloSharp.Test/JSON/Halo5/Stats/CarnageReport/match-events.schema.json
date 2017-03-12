@@ -1,0 +1,303 @@
+{
+  "definitions": {
+    "Death": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Assistants": {
+          "type": "array",
+          "items": {
+            "$ref": "../../../common/identity.schema.json"
+          }
+        },
+        "DeathDisposition": {
+          "type": "integer"
+        },
+        "IsAssassination": {
+          "type": "boolean"
+        },
+        "IsGroundPound": {
+          "type": "boolean"
+        },
+        "IsHeadshot": {
+          "type": "boolean"
+        },
+        "IsMelee": {
+          "type": "boolean"
+        },
+        "IsShoulderBash": {
+          "type": "boolean"
+        },
+        "IsWeapon": {
+          "type": "boolean"
+        },
+        "Killer": {
+          "$ref": "../../../common/identity.schema.json"
+        },
+        "KillerAgent": {
+          "type": "integer"
+        },
+        "KillerWeaponAttachmentIds": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "KillerWeaponStockId": {
+          "type": "integer"
+        },
+        "KillerWorldLocation": {
+          "$ref": "../../../common/location.schema.json"
+        },
+        "Victim": {
+          "$ref": "../../../common/identity.schema.json"
+        },
+        "VictimAgent": {
+          "type": "integer"
+        },
+        "VictimAttachmentIds": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "VictimStockId": {
+          "type": "integer"
+        },
+        "VictimWorldLocation": {
+          "$ref": "../../../common/location.schema.json"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStart": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Assistants",
+        "DeathDisposition",
+        "IsAssassination",
+        "IsGroundPound",
+        "IsHeadshot",
+        "IsMelee",
+        "IsShoulderBash",
+        "IsWeapon",
+        "Killer",
+        "KillerAgent",
+        "KillerWeaponAttachmentIds",
+        "KillerWeaponStockId",
+        "KillerWorldLocation",
+        "Victim",
+        "VictimAgent",
+        "VictimAttachmentIds",
+        "VictimStockId",
+        "VictimWorldLocation",
+        "EventName",
+        "TimeSinceStart"
+      ]
+    },
+
+    "Impulse": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ImpulseId": {
+          "type": "integer"
+        },
+        "Player": {
+          "$ref": "../../../common/identity.schema.json"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStart": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ImpulseId",
+        "Player",
+        "EventName",
+        "TimeSinceStart"
+      ]
+    },
+
+    "Medal": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MedalId": {
+          "type": "integer"
+        },
+        "Player": {
+          "$ref": "../../../common/identity.schema.json"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStart": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "MedalId",
+        "Player",
+        "EventName",
+        "TimeSinceStart"
+      ]
+    },
+
+    "PlayerSpawn": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Player": {
+          "$ref": "../../../common/identity.schema.json"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStart": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Player",
+        "EventName",
+        "TimeSinceStart"
+      ]
+    },
+
+    "RoundStart-RoundEnd": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "RoundIndex": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStart": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "RoundIndex",
+        "EventName",
+        "TimeSinceStart"
+      ]
+    },
+
+    "WeaponDrop": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Player": {
+          "$ref": "../../../common/identity.schema.json"
+        },
+        "ShotsFired": {
+          "type": "integer"
+        },
+        "ShotsLanded": {
+          "type": "integer"
+        },
+        "TimeWeaponActiveAsPrimary": {
+          "type": "string"
+        },
+        "WeaponAttachmentIds": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "WeaponStockId": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStart": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Player",
+        "ShotsFired",
+        "ShotsLanded",
+        "TimeWeaponActiveAsPrimary",
+        "WeaponAttachmentIds",
+        "WeaponStockId",
+        "EventName",
+        "TimeSinceStart"
+      ]
+    },
+
+    "WeaponPickup-WeaponPickupPad": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Player": {
+          "$ref": "../../../common/identity.schema.json"
+        },
+        "WeaponAttachmentIds": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "WeaponStockId": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "TimeSinceStart": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Player",
+        "WeaponAttachmentIds",
+        "WeaponStockId",
+        "EventName",
+        "TimeSinceStart"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "GameEvents": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "#/definitions/Death" },
+          { "$ref": "#/definitions/Impulse" },
+          { "$ref": "#/definitions/Medal" },
+          { "$ref": "#/definitions/PlayerSpawn" },
+          { "$ref": "#/definitions/RoundStart-RoundEnd" },
+          { "$ref": "#/definitions/WeaponDrop" },
+          { "$ref": "#/definitions/WeaponPickup-WeaponPickupPad" }
+        ]
+      }
+    },
+    "IsCompleteSetOfEvents": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "GameEvents",
+    "IsCompleteSetOfEvents"
+  ]
+}

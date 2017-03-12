@@ -1,0 +1,5609 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 100,
+    "TotalCount": 103
+  },
+  "ContentItems": [
+    {
+      "Id": 337219,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:01Z",
+          "ModifiedUtc": "2017-02-03T19:42:01Z",
+          "PublishedUtc": "2017-02-03T19:42:01Z",
+          "Container": -1
+        },
+        "Identity": "7b66f80e995c42e7ac6be24062a629e0",
+        "Autoroute": "hw2/techs/unsc_Sniper_upgrade1",
+        "Title": "STANCHION SNIPER SYSTEM",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_Sniper_upgrade1",
+          "DisplayInfo": {
+            "Id": 336780,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:00Z",
+                "ModifiedUtc": "2017-02-03T19:40:24Z",
+                "PublishedUtc": "2017-02-03T19:40:24Z",
+                "Container": -1
+              },
+              "Identity": "bc8aff30b6f74ef5875557c8d767e944",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "STANCHION SNIPER SYSTEM Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "STANCHION SNIPER SYSTEM",
+                "Description": "Increased damage"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337219"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337202,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:29Z",
+          "ModifiedUtc": "2017-02-03T19:41:56Z",
+          "PublishedUtc": "2017-02-03T19:41:57Z",
+          "Container": -1
+        },
+        "Identity": "941c37d3e77d47cc92f7323c2b5dea15",
+        "Autoroute": "hw2/techs/unsc_turret_upgradeAI",
+        "Title": "ANTI-INFANTRY TURRET",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_turret_upgradeAI",
+          "DisplayInfo": {
+            "Id": 336472,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:28Z",
+                "ModifiedUtc": "2017-02-03T19:39:22Z",
+                "PublishedUtc": "2017-02-03T19:39:22Z",
+                "Container": -1
+              },
+              "Identity": "b3fd8b81703f4ea9bf8646d5da1f44e8",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ANTI-INFANTRY TURRET Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ANTI-INFANTRY TURRET",
+                "Description": "Converts to anti-infantry"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337202"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337197,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:38Z",
+          "ModifiedUtc": "2017-02-03T19:41:55Z",
+          "PublishedUtc": "2017-02-03T19:41:56Z",
+          "Container": -1
+        },
+        "Identity": "253b7c36b6c044d48aa8a863a71c3331",
+        "Autoroute": "hw2/techs/unsc_tech_recruitTraining_3",
+        "Title": "ADV. LOGISTICS III",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_recruitTraining_3",
+          "DisplayInfo": {
+            "Id": 336365,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:37Z",
+                "ModifiedUtc": "2017-02-03T19:39:04Z",
+                "PublishedUtc": "2017-02-03T19:39:04Z",
+                "Container": -1
+              },
+              "Identity": "eff66035a10a4b70b8e875da89fbc706",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADV. LOGISTICS III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ADV. LOGISTICS III",
+                "Description": "45% Unit build speed"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337197"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337193,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:33Z",
+          "ModifiedUtc": "2017-02-03T19:41:54Z",
+          "PublishedUtc": "2017-02-03T19:41:55Z",
+          "Container": -1
+        },
+        "Identity": "497c9306289a43238017608a76e7bd68",
+        "Autoroute": "hw2/techs/cov_supplyDepot_upgrade2",
+        "Title": "UPGRADE TO SUPER HARVESTER",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_supplyDepot_upgrade2",
+          "DisplayInfo": {
+            "Id": 336298,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:32Z",
+                "ModifiedUtc": "2017-02-03T19:38:51Z",
+                "PublishedUtc": "2017-02-03T19:38:51Z",
+                "Container": -1
+              },
+              "Identity": "6222134f0f8e476aa6013036cb8b8e78",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO SUPER HARVESTER Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO SUPER HARVESTER",
+                "Description": "Fastest Supply Production"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337193"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337196,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:11Z",
+          "ModifiedUtc": "2017-02-03T19:41:55Z",
+          "PublishedUtc": "2017-02-03T19:41:55Z",
+          "Container": -1
+        },
+        "Identity": "28896de9c55c4fe092183d376e3e7c2d",
+        "Autoroute": "hw2/techs/cov_bruteChopper_upgrade4",
+        "Title": "SHRAPNEL ROUNDS",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_bruteChopper_upgrade4",
+          "DisplayInfo": {
+            "Id": 336351,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:10Z",
+                "ModifiedUtc": "2017-02-03T19:39:01Z",
+                "PublishedUtc": "2017-02-03T19:39:01Z",
+                "Container": -1
+              },
+              "Identity": "fcc2068cff9d451f960c3b3cdb13ecba",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SHRAPNEL ROUNDS Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "SHRAPNEL ROUNDS",
+                "Description": "Adds explosive rounds. Detects cloaked units"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337196"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337191,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:00Z",
+          "ModifiedUtc": "2017-02-03T19:41:54Z",
+          "PublishedUtc": "2017-02-03T19:41:54Z",
+          "Container": -1
+        },
+        "Identity": "5300755a2ded4005b2b2cc84bd74fabc",
+        "Autoroute": "hw2/techs/cov_suicideGrunt_upgrade2",
+        "Title": "NEW \"RECRUITS\"",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_suicideGrunt_upgrade2",
+          "DisplayInfo": {
+            "Id": 336287,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:59Z",
+                "ModifiedUtc": "2017-02-03T19:38:48Z",
+                "PublishedUtc": "2017-02-03T19:38:48Z",
+                "Container": -1
+              },
+              "Identity": "861080182ed34cb89cf481f8b1a6e4e2",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "NEW \"RECRUITS\" Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "NEW \"RECRUITS\"",
+                "Description": "Increases squad size"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337191"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337177,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:44Z",
+          "ModifiedUtc": "2017-02-03T19:41:50Z",
+          "PublishedUtc": "2017-02-03T19:41:50Z",
+          "Container": -1
+        },
+        "Identity": "b00aed9db6ca42de8cb65ffd759004a0",
+        "Autoroute": "hw2/techs/cov_base_upgrade2",
+        "Title": "UPGRADE TO CITADEL",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_base_upgrade2",
+          "DisplayInfo": {
+            "Id": 335988,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:43Z",
+                "ModifiedUtc": "2017-02-03T19:37:50Z",
+                "PublishedUtc": "2017-02-03T19:37:50Z",
+                "Container": -1
+              },
+              "Identity": "09be7ec023e040f4b5c2fcc52eb52e0d",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO CITADEL Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO CITADEL",
+                "Description": "Produces vehicles and infantry. Can be upgraded to Fortress"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337177"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337175,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:07Z",
+          "ModifiedUtc": "2017-02-03T19:41:49Z",
+          "PublishedUtc": "2017-02-03T19:41:49Z",
+          "Container": -1
+        },
+        "Identity": "bb7a9e50a1c2452ea169e9b3b3598693",
+        "Autoroute": "hw2/techs/cov_eliteCommando_upgrade1",
+        "Title": "MERCENARY RAGE",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_eliteCommando_upgrade1",
+          "DisplayInfo": {
+            "Id": 335982,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:06Z",
+                "ModifiedUtc": "2017-02-03T19:37:49Z",
+                "PublishedUtc": "2017-02-03T19:37:49Z",
+                "Container": -1
+              },
+              "Identity": "84430d60354143d99654af7c9a43577d",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MERCENARY RAGE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "MERCENARY RAGE",
+                "Description": "Faster movement. Increased attack. Increased health and shield"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337175"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337159,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:53Z",
+          "ModifiedUtc": "2017-02-03T19:41:44Z",
+          "PublishedUtc": "2017-02-03T19:41:44Z",
+          "Container": -1
+        },
+        "Identity": "50c3a03dc27c4e469071346f1326d67e",
+        "Autoroute": "hw2/techs/unsc_mongoose_upgrade2",
+        "Title": "SUPPORT DRONE",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_mongoose_upgrade2",
+          "DisplayInfo": {
+            "Id": 335773,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:52Z",
+                "ModifiedUtc": "2017-02-03T19:37:04Z",
+                "PublishedUtc": "2017-02-03T19:37:04Z",
+                "Container": -1
+              },
+              "Identity": "ea27a494fce44da099c1f7b637aaa55a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SUPPORT DRONE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "SUPPORT DRONE",
+                "Description": "Equips drone. Increased LOS. Detects cloaked units. Drone heals Jackrabbit"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337159"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337138,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:30Z",
+          "ModifiedUtc": "2017-02-03T19:41:38Z",
+          "PublishedUtc": "2017-02-03T19:41:38Z",
+          "Container": -1
+        },
+        "Identity": "5ca2be603b60480e9fda8183a87b82cb",
+        "Autoroute": "hw2/techs/cov_tech_global_aircraft_03",
+        "Title": "AIR UPGRADE III",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_aircraft_03",
+          "DisplayInfo": {
+            "Id": 335455,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:28Z",
+                "ModifiedUtc": "2017-02-03T19:36:03Z",
+                "PublishedUtc": "2017-02-03T19:36:03Z",
+                "Container": -1
+              },
+              "Identity": "53c2735f0f1d4d7cbe508a47c94f225e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "AIR UPGRADE III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "AIR UPGRADE III",
+                "Description": "30% damage boost. 30% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337138"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337134,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:42Z",
+          "ModifiedUtc": "2017-02-03T19:41:37Z",
+          "PublishedUtc": "2017-02-03T19:41:37Z",
+          "Container": -1
+        },
+        "Identity": "5d8c986d17f8440aa2ce13b4e411dc38",
+        "Autoroute": "hw2/techs/cov_turret_upgradeAA",
+        "Title": "ADD ANTI-AIR UPGRADE",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_turret_upgradeAA",
+          "DisplayInfo": {
+            "Id": 335450,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:41Z",
+                "ModifiedUtc": "2017-02-03T19:36:02Z",
+                "PublishedUtc": "2017-02-03T19:36:02Z",
+                "Container": -1
+              },
+              "Identity": "16f15c36faf84d7d95b176b25f2d2880",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADD ANTI-AIR UPGRADE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ADD ANTI-AIR UPGRADE",
+                "Description": "Adds an anti-air weapon"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337134"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337131,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:30Z",
+          "ModifiedUtc": "2017-02-03T19:41:36Z",
+          "PublishedUtc": "2017-02-03T19:41:36Z",
+          "Container": -1
+        },
+        "Identity": "66c534387a454275959c9ed8885faca8",
+        "Autoroute": "hw2/techs/unsc_turret_upgradeAV",
+        "Title": "ANTI-VEHICLE TURRET",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_turret_upgradeAV",
+          "DisplayInfo": {
+            "Id": 335434,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:29Z",
+                "ModifiedUtc": "2017-02-03T19:35:59Z",
+                "PublishedUtc": "2017-02-03T19:35:59Z",
+                "Container": -1
+              },
+              "Identity": "019b1fbacb914925bd6bfed4ec05248a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ANTI-VEHICLE TURRET Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ANTI-VEHICLE TURRET",
+                "Description": "Converts to anti-vehicle"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337131"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337125,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:37Z",
+          "ModifiedUtc": "2017-02-03T19:41:34Z",
+          "PublishedUtc": "2017-02-03T19:41:34Z",
+          "Container": -1
+        },
+        "Identity": "c571ad9aca004c0f90f7849f3b6c4aae",
+        "Autoroute": "hw2/techs/cov_reactor_upgrade2",
+        "Title": "Upgrade to Super Extractor",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_reactor_upgrade2",
+          "DisplayInfo": {
+            "Id": 335398,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:36Z",
+                "ModifiedUtc": "2017-02-03T19:35:51Z",
+                "PublishedUtc": "2017-02-03T19:35:51Z",
+                "Container": -1
+              },
+              "Identity": "16ca6857efb24feeb22292eaf05202c4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Upgrade to Super Extractor Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "Upgrade to Super Extractor",
+                "Description": "Fastest Power Production"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337125"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337118,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:47Z",
+          "ModifiedUtc": "2017-02-03T19:41:31Z",
+          "PublishedUtc": "2017-02-03T19:41:31Z",
+          "Container": -1
+        },
+        "Identity": "e38491bca4dd4b38980b57ffd51eb15d",
+        "Autoroute": "hw2/techs/unsc_aggressor_upgrade1",
+        "Title": "DRONE ESCORT",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_aggressor_upgrade1",
+          "DisplayInfo": {
+            "Id": 335370,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:46Z",
+                "ModifiedUtc": "2017-02-03T19:35:45Z",
+                "PublishedUtc": "2017-02-03T19:35:45Z",
+                "Container": -1
+              },
+              "Identity": "ad64439ccb0f4d03aef822505ef99b5a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DRONE ESCORT Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "DRONE ESCORT",
+                "Description": "Increased damage. Increased health. Lockdown Bolt unlocked"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337118"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337093,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:08Z",
+          "ModifiedUtc": "2017-02-03T19:41:26Z",
+          "PublishedUtc": "2017-02-03T19:41:26Z",
+          "Container": -1
+        },
+        "Identity": "48f04249c6594f79b893bda768941ec5",
+        "Autoroute": "hw2/techs/unsc_hornet_upgrade1",
+        "Title": "WINGMEN",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_hornet_upgrade1",
+          "DisplayInfo": {
+            "Id": 335115,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:07Z",
+                "ModifiedUtc": "2017-02-03T19:35:02Z",
+                "PublishedUtc": "2017-02-03T19:35:03Z",
+                "Container": -1
+              },
+              "Identity": "ded64bbba0d647c6861cd85397289ccf",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "WINGMEN Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "WINGMEN",
+                "Description": "Adds marines with. rocket launchers. Increased health"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337093"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337095,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:32Z",
+          "ModifiedUtc": "2017-02-03T19:41:26Z",
+          "PublishedUtc": "2017-02-03T19:41:26Z",
+          "Container": -1
+        },
+        "Identity": "43b0d360b6804550bdc298a04334dc72",
+        "Autoroute": "hw2/techs/unsc_turret_upgradeAA",
+        "Title": "ANTI-AIR TURRET",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_turret_upgradeAA",
+          "DisplayInfo": {
+            "Id": 335132,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:31Z",
+                "ModifiedUtc": "2017-02-03T19:35:05Z",
+                "PublishedUtc": "2017-02-03T19:35:05Z",
+                "Container": -1
+              },
+              "Identity": "9fe1f98aeaa14ffe9f8979ab7da3158f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ANTI-AIR TURRET Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ANTI-AIR TURRET",
+                "Description": "Converts to anti-air"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337095"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337088,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:56Z",
+          "ModifiedUtc": "2017-02-03T19:41:25Z",
+          "PublishedUtc": "2017-02-03T19:41:25Z",
+          "Container": -1
+        },
+        "Identity": "573ac5aaa6424c1b81bf7446bd4839fd",
+        "Autoroute": "hw2/techs/unsc_flameMarine_upgrade3",
+        "Title": "DISPERSION NOZZLES",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_flameMarine_upgrade3",
+          "DisplayInfo": {
+            "Id": 335065,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:54Z",
+                "ModifiedUtc": "2017-02-03T19:34:53Z",
+                "PublishedUtc": "2017-02-03T19:34:53Z",
+                "Container": -1
+              },
+              "Identity": "d60d808678944acbae0cf4d236e52f8c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DISPERSION NOZZLES Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "DISPERSION NOZZLES",
+                "Description": "Sets ground on fire"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337088"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337089,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:17Z",
+          "ModifiedUtc": "2017-02-03T19:41:25Z",
+          "PublishedUtc": "2017-02-03T19:41:25Z",
+          "Container": -1
+        },
+        "Identity": "5622ef7928f646399c94450e48b5fe74",
+        "Autoroute": "hw2/techs/cov_bruteHonour_upgrade3",
+        "Title": "SIPHON",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_bruteHonour_upgrade3",
+          "DisplayInfo": {
+            "Id": 335075,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:16Z",
+                "ModifiedUtc": "2017-02-03T19:34:56Z",
+                "PublishedUtc": "2017-02-03T19:34:56Z",
+                "Container": -1
+              },
+              "Identity": "fc5d4e3c36ea4082b49ccb844f4c66c7",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SIPHON Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "SIPHON",
+                "Description": "Warlord gains health. with each attack"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337089"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337091,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:15Z",
+          "ModifiedUtc": "2017-02-03T19:41:25Z",
+          "PublishedUtc": "2017-02-03T19:41:25Z",
+          "Container": -1
+        },
+        "Identity": "4d77a9fe65e942ab9b0d07d1cf18cd12",
+        "Autoroute": "hw2/techs/cov_bruteHonour_upgrade2",
+        "Title": "HAMMER STUN",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_bruteHonour_upgrade2",
+          "DisplayInfo": {
+            "Id": 335096,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:14Z",
+                "ModifiedUtc": "2017-02-03T19:35:00Z",
+                "PublishedUtc": "2017-02-03T19:35:00Z",
+                "Container": -1
+              },
+              "Identity": "6420ca3846964dcbbaa254223080939f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HAMMER STUN Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "HAMMER STUN",
+                "Description": "Warlord's hammer. stuns and deals AoE"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337091"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337083,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:49Z",
+          "ModifiedUtc": "2017-02-03T19:41:23Z",
+          "PublishedUtc": "2017-02-03T19:41:23Z",
+          "Container": -1
+        },
+        "Identity": "6738e671fa6b40958a4d568a9a2cfecf",
+        "Autoroute": "hw2/techs/unsc_aggressor_upgrade2",
+        "Title": "DEFENSE GRID",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_aggressor_upgrade2",
+          "DisplayInfo": {
+            "Id": 335036,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:49Z",
+                "ModifiedUtc": "2017-02-03T19:34:47Z",
+                "PublishedUtc": "2017-02-03T19:34:47Z",
+                "Container": -1
+              },
+              "Identity": "dc762cb757254af1a28a4c47a2085cdd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DEFENSE GRID Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "DEFENSE GRID",
+                "Description": "Increased speed. Detonate on destruction"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337083"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337006,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:02Z",
+          "ModifiedUtc": "2017-02-03T19:41:10Z",
+          "PublishedUtc": "2017-02-03T19:41:10Z",
+          "Container": -1
+        },
+        "Identity": "8508736aa6a5414bb47832b3a26b2f08",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade3_chaingun",
+        "Title": "NEURAL IMPLANT",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade3_chaingun",
+          "DisplayInfo": {
+            "Id": 336410,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:01Z",
+                "ModifiedUtc": "2017-02-03T19:39:12Z",
+                "PublishedUtc": "2017-02-03T19:39:12Z",
+                "Container": -1
+              },
+              "Identity": "1562d328879b4203b80e003f4ddc7b3c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "NEURAL IMPLANT Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "NEURAL IMPLANT",
+                "Description": "Increases hijack speed. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337006"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336999,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:59Z",
+          "ModifiedUtc": "2017-02-03T19:41:09Z",
+          "PublishedUtc": "2017-02-03T19:41:09Z",
+          "Container": -1
+        },
+        "Identity": "dbe90b82510d410ba58b85f5618e6eba",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade2_rocket",
+        "Title": "ROCKET LAUNCHER",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade2_rocket",
+          "DisplayInfo": {
+            "Id": 335703,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:58Z",
+                "ModifiedUtc": "2017-02-03T19:36:52Z",
+                "PublishedUtc": "2017-02-03T19:36:52Z",
+                "Container": -1
+              },
+              "Identity": "7d8714d28ea64ed2919b1eed22de13da",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ROCKET LAUNCHER Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ROCKET LAUNCHER",
+                "Description": "Equips Rocket Launcher. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336999"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337001,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:57Z",
+          "ModifiedUtc": "2017-02-03T19:41:09Z",
+          "PublishedUtc": "2017-02-03T19:41:09Z",
+          "Container": -1
+        },
+        "Identity": "d768196fdd9d458f8ba7397c9fe11d4f",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade2_chaingun",
+        "Title": "HEAVY MACHINE GUN",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade2_chaingun",
+          "DisplayInfo": {
+            "Id": 335873,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:56Z",
+                "ModifiedUtc": "2017-02-03T19:37:23Z",
+                "PublishedUtc": "2017-02-03T19:37:23Z",
+                "Container": -1
+              },
+              "Identity": "2036c3554c2944c786f7664b0e1e9597",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HEAVY MACHINE GUN Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "HEAVY MACHINE GUN",
+                "Description": "Equips Machine Gun. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337001"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337004,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:46Z",
+          "ModifiedUtc": "2017-02-03T19:41:09Z",
+          "PublishedUtc": "2017-02-03T19:41:09Z",
+          "Container": -1
+        },
+        "Identity": "d1744623ec634543841f749dd19bc748",
+        "Autoroute": "hw2/techs/cov_base_upgrade3",
+        "Title": "UPGRADE TO FORTRESS",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_base_upgrade3",
+          "DisplayInfo": {
+            "Id": 335304,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:45Z",
+                "ModifiedUtc": "2017-02-03T19:35:33Z",
+                "PublishedUtc": "2017-02-03T19:35:33Z",
+                "Container": -1
+              },
+              "Identity": "11be85ad8470458383fd650d3a59da68",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO FORTRESS Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO FORTRESS",
+                "Description": "Produces vehicles and infantry. Top base structure"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337004"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336993,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:38Z",
+          "ModifiedUtc": "2017-02-03T19:41:08Z",
+          "PublishedUtc": "2017-02-03T19:41:08Z",
+          "Container": -1
+        },
+        "Identity": "df54507917cc4871b9bbc174d51e16f6",
+        "Autoroute": "hw2/techs/unsc_base_upgrade2",
+        "Title": "UPGRADE TO COMMAND CENTER",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_base_upgrade2",
+          "DisplayInfo": {
+            "Id": 336649,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:38Z",
+                "ModifiedUtc": "2017-02-03T19:40:01Z",
+                "PublishedUtc": "2017-02-03T19:40:01Z",
+                "Container": -1
+              },
+              "Identity": "f861afe9d74941a1be531d15ce6befeb",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO COMMAND CENTER Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO COMMAND CENTER",
+                "Description": "Produces vehicles and infantry. Can be upgraded to Headquarters"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336993"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336994,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:53Z",
+          "ModifiedUtc": "2017-02-03T19:41:08Z",
+          "PublishedUtc": "2017-02-03T19:41:08Z",
+          "Container": -1
+        },
+        "Identity": "df1c5924f6ce44b9b9072fdeae592bfe",
+        "Autoroute": "hw2/tech/cov_tech_followers_3",
+        "Title": "RESERVES III",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_followers_3",
+          "DisplayInfo": {
+            "Id": 334875,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:52Z",
+                "ModifiedUtc": "2017-02-03T19:34:18Z",
+                "PublishedUtc": "2017-02-03T19:34:18Z",
+                "Container": -1
+              },
+              "Identity": "bedaba6c4c5e4b9db9efe7c342837a3f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "RESERVES III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "RESERVES III",
+                "Description": "Population boosted by +20. Maximum number of. possible units increased."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336994"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336998,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:44Z",
+          "ModifiedUtc": "2017-02-03T19:41:08Z",
+          "PublishedUtc": "2017-02-03T19:41:08Z",
+          "Container": -1
+        },
+        "Identity": "dd00d0fff5444133a6304f6324b44032",
+        "Autoroute": "hw2/techs/cov_tech_recruitTraining_1",
+        "Title": "ADV. LOGISTICS I",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_recruitTraining_1",
+          "DisplayInfo": {
+            "Id": 335844,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:43Z",
+                "ModifiedUtc": "2017-02-03T19:37:16Z",
+                "PublishedUtc": "2017-02-03T19:37:16Z",
+                "Container": -1
+              },
+              "Identity": "3235ab23ec704b2aa43f7867eed6c5da",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADV. LOGISTICS I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ADV. LOGISTICS I",
+                "Description": "15% Unit build speed"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336998"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336977,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:25Z",
+          "ModifiedUtc": "2017-02-03T19:41:05Z",
+          "PublishedUtc": "2017-02-03T19:41:05Z",
+          "Container": -1
+        },
+        "Identity": "f64cb6687e824c519d8d0ff1bf3f9040",
+        "Autoroute": "hw2/techs/unsc_reactor_upgrade1",
+        "Title": "UPGRADE TO ADV. GENERATOR",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_reactor_upgrade1",
+          "DisplayInfo": {
+            "Id": 335150,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:24Z",
+                "ModifiedUtc": "2017-02-03T19:35:09Z",
+                "PublishedUtc": "2017-02-03T19:35:09Z",
+                "Container": -1
+              },
+              "Identity": "381f147456bd4a94a7b37daa70563efd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO ADV. GENERATOR Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO ADV. GENERATOR",
+                "Description": "Increases power income"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336977"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336943,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:40Z",
+          "ModifiedUtc": "2017-02-03T19:40:56Z",
+          "PublishedUtc": "2017-02-03T19:40:56Z",
+          "Container": -1
+        },
+        "Identity": "28f150fd08354fe291749d66e8f447f5",
+        "Autoroute": "hw2/techs/unsc_base_upgrade3",
+        "Title": "UPGRADE TO HEADQUARTERS",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_base_upgrade3",
+          "DisplayInfo": {
+            "Id": 335249,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:39Z",
+                "ModifiedUtc": "2017-02-03T19:35:25Z",
+                "PublishedUtc": "2017-02-03T19:35:25Z",
+                "Container": -1
+              },
+              "Identity": "77a4b83a3f2b4159813c9038148e47ba",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO HEADQUARTERS Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO HEADQUARTERS",
+                "Description": "Produces vehicles and infantry. Top base upgrade"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336943"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336944,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:27Z",
+          "ModifiedUtc": "2017-02-03T19:40:55Z",
+          "PublishedUtc": "2017-02-03T19:40:56Z",
+          "Container": -1
+        },
+        "Identity": "27e4bb620ccb4313ac7f312e37499dac",
+        "Autoroute": "hw2/techs/unsc_reactor_upgrade2",
+        "Title": "UPGRADE TO SUPER GENERATOR",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_reactor_upgrade2",
+          "DisplayInfo": {
+            "Id": 336361,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:26Z",
+                "ModifiedUtc": "2017-02-03T19:39:03Z",
+                "PublishedUtc": "2017-02-03T19:39:03Z",
+                "Container": -1
+              },
+              "Identity": "9a486709eedb47eab44d21c55ef84c9c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO SUPER GENERATOR Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO SUPER GENERATOR",
+                "Description": "Fastest Power Production"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336944"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336945,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:34Z",
+          "ModifiedUtc": "2017-02-03T19:40:56Z",
+          "PublishedUtc": "2017-02-03T19:40:56Z",
+          "Container": -1
+        },
+        "Identity": "253ac7d8e8bc4133baddabcc4ad5f5da",
+        "Autoroute": "hw2/techs/unsc_tech_recruitTraining_1",
+        "Title": "ADV. LOGISTICS I",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_recruitTraining_1",
+          "DisplayInfo": {
+            "Id": 336375,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:33Z",
+                "ModifiedUtc": "2017-02-03T19:39:05Z",
+                "PublishedUtc": "2017-02-03T19:39:06Z",
+                "Container": -1
+              },
+              "Identity": "801f875feaaf4783ac8a8a6a8e084171",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADV. LOGISTICS I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ADV. LOGISTICS I",
+                "Description": "15% Unit build speed"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336945"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336940,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:42Z",
+          "ModifiedUtc": "2017-02-03T19:40:55Z",
+          "PublishedUtc": "2017-02-03T19:40:55Z",
+          "Container": -1
+        },
+        "Identity": "29e015611a204a0180e30893cc34dd0f",
+        "Autoroute": "hw2/techs/unsc_tech_reinforcements_2",
+        "Title": "REINFORCEMENTS II",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_reinforcements_2",
+          "DisplayInfo": {
+            "Id": 335909,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:41Z",
+                "ModifiedUtc": "2017-02-03T19:37:30Z",
+                "PublishedUtc": "2017-02-03T19:37:31Z",
+                "Container": -1
+              },
+              "Identity": "07808f9ecc0f463fa1f8d161fdee0735",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "REINFORCEMENTS II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "REINFORCEMENTS II",
+                "Description": "Population boosted by +20. Maximum number of. possible units increased."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336940"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336920,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:33:07Z",
+          "ModifiedUtc": "2017-02-03T19:40:52Z",
+          "PublishedUtc": "2017-02-03T19:40:52Z",
+          "Container": -1
+        },
+        "Identity": "4572ac4e522d40f692830b2903f0d0c9",
+        "Autoroute": "hw2/techs/unsc_forgehog_upgrade1",
+        "Title": "ANVIL ROUND",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_forgehog_upgrade1",
+          "DisplayInfo": {
+            "Id": 335354,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:33:07Z",
+                "ModifiedUtc": "2017-02-03T19:35:42Z",
+                "PublishedUtc": "2017-02-03T19:35:42Z",
+                "Container": -1
+              },
+              "Identity": "00dfa1d8230f413f9849bcf415743279",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ANVIL ROUND Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ANVIL ROUND",
+                "Description": "Fires an EMP round. Slows enemy vehicles"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336920"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336904,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:27Z",
+          "ModifiedUtc": "2017-02-03T19:40:48Z",
+          "PublishedUtc": "2017-02-03T19:40:49Z",
+          "Container": -1
+        },
+        "Identity": "76798d8fa6ed42a6b3009c22f43546c5",
+        "Autoroute": "hw2/techs/cov_tech_global_aircraft_02",
+        "Title": "AIR UPGRADE II",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_aircraft_02",
+          "DisplayInfo": {
+            "Id": 336378,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:26Z",
+                "ModifiedUtc": "2017-02-03T19:39:06Z",
+                "PublishedUtc": "2017-02-03T19:39:06Z",
+                "Container": -1
+              },
+              "Identity": "2416da3bf57a40b1a9f2b9f46520a79e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "AIR UPGRADE II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "AIR UPGRADE II",
+                "Description": "20% damage boost. 20% health boost. "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336904"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336899,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:39Z",
+          "ModifiedUtc": "2017-02-03T19:40:48Z",
+          "PublishedUtc": "2017-02-03T19:40:48Z",
+          "Container": -1
+        },
+        "Identity": "b8250f8e322f40c785ee71d861f01692",
+        "Autoroute": "hw2/techs/cov_turret_upgradeAI",
+        "Title": "ADD ANTI-INFANTRY UPGRADE",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_turret_upgradeAI",
+          "DisplayInfo": {
+            "Id": 336740,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:38Z",
+                "ModifiedUtc": "2017-02-03T19:40:17Z",
+                "PublishedUtc": "2017-02-03T19:40:17Z",
+                "Container": -1
+              },
+              "Identity": "7b52568b49754a4db1c8b9c5f4eeedd0",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADD ANTI-INFANTRY UPGRADE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ADD ANTI-INFANTRY UPGRADE",
+                "Description": "Adds an anti-infantry weapon"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336899"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336900,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:42Z",
+          "ModifiedUtc": "2017-02-03T19:40:48Z",
+          "PublishedUtc": "2017-02-03T19:40:48Z",
+          "Container": -1
+        },
+        "Identity": "b4eb169ee2004d59876e749e5cf4c80b",
+        "Autoroute": "hw2/techs/cov_base_upgrade1",
+        "Title": "UPGRADE TO STRONGHOLD",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_base_upgrade1",
+          "DisplayInfo": {
+            "Id": 335084,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:41Z",
+                "ModifiedUtc": "2017-02-03T19:34:58Z",
+                "PublishedUtc": "2017-02-03T19:34:58Z",
+                "Container": -1
+              },
+              "Identity": "51dce809e25849c4b260f388f2a04811",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO STRONGHOLD Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO STRONGHOLD",
+                "Description": "Produces vehicles and infantry. Can be upgraded to Citadel. Supports four turrets"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336900"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336902,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:25Z",
+          "ModifiedUtc": "2017-02-03T19:40:48Z",
+          "PublishedUtc": "2017-02-03T19:40:48Z",
+          "Container": -1
+        },
+        "Identity": "b2cd5a6da28f4bf19019718d4a74b076",
+        "Autoroute": "hw2/techs/cov_tech_global_aircraft_01",
+        "Title": "AIR UPGRADE I",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_aircraft_01",
+          "DisplayInfo": {
+            "Id": 336165,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:24Z",
+                "ModifiedUtc": "2017-02-03T19:38:27Z",
+                "PublishedUtc": "2017-02-03T19:38:27Z",
+                "Container": -1
+              },
+              "Identity": "af5371088a8042cba42ca5327b7bfcf4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "AIR UPGRADE I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "AIR UPGRADE I",
+                "Description": "10% damage boost. 10% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336902"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336898,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:56Z",
+          "ModifiedUtc": "2017-02-03T19:40:47Z",
+          "PublishedUtc": "2017-02-03T19:40:47Z",
+          "Container": -1
+        },
+        "Identity": "b31eb8f6eb6f44cdb8082776fba0d617",
+        "Autoroute": "hw2/techs/cov_grunt_upgrade2",
+        "Title": "PACK BROTHER",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_grunt_upgrade2",
+          "DisplayInfo": {
+            "Id": 335646,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:55Z",
+                "ModifiedUtc": "2017-02-03T19:36:43Z",
+                "PublishedUtc": "2017-02-03T19:36:43Z",
+                "Container": -1
+              },
+              "Identity": "d8a4cf8eaf244415ae71237b9d9b44a9",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "PACK BROTHER Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "PACK BROTHER",
+                "Description": "Additional Brute. and Grunt join squad"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336898"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336868,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:46Z",
+          "ModifiedUtc": "2017-02-03T19:40:40Z",
+          "PublishedUtc": "2017-02-03T19:40:40Z",
+          "Container": -1
+        },
+        "Identity": "23ab8651fa3146d48cc219efab6bb9c0",
+        "Autoroute": "hw2/techs/unsc_marine_upgrade1",
+        "Title": "GRENADE THROW",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_marine_upgrade1",
+          "DisplayInfo": {
+            "Id": 335867,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:45Z",
+                "ModifiedUtc": "2017-02-03T19:37:22Z",
+                "PublishedUtc": "2017-02-03T19:37:22Z",
+                "Container": -1
+              },
+              "Identity": "342f09cfb3f34fb3b613173b74c6321e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GRENADE THROW Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "GRENADE THROW",
+                "Description": "Can throw grenades. Small Area Attack. Cannot target air"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336868"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336861,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:44Z",
+          "ModifiedUtc": "2017-02-03T19:40:39Z",
+          "PublishedUtc": "2017-02-03T19:40:39Z",
+          "Container": -1
+        },
+        "Identity": "6edc8d6a0c0046458b1f258d55fb09d3",
+        "Autoroute": "hw2/tech/unsc_tech_reinforcements_3",
+        "Title": "RESERVES III",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_reinforcements_3",
+          "DisplayInfo": {
+            "Id": 336270,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:43Z",
+                "ModifiedUtc": "2017-02-03T19:38:44Z",
+                "PublishedUtc": "2017-02-03T19:38:44Z",
+                "Container": -1
+              },
+              "Identity": "5eb2e4547333482fb90b5cc29e58aa82",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "RESERVES III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "RESERVES III",
+                "Description": "Population boosted by +20. Maximum number of. possible units increased."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336861"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336844,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:15Z",
+          "ModifiedUtc": "2017-02-03T19:40:35Z",
+          "PublishedUtc": "2017-02-03T19:40:35Z",
+          "Container": -1
+        },
+        "Identity": "8875b686792341538c083b390e4180a1",
+        "Autoroute": "hw2/techs/cov_tech_global_infantry_01",
+        "Title": "INFANTRY UPGRADE I",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_infantry_01",
+          "DisplayInfo": {
+            "Id": 335686,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:14Z",
+                "ModifiedUtc": "2017-02-03T19:36:49Z",
+                "PublishedUtc": "2017-02-03T19:36:49Z",
+                "Container": -1
+              },
+              "Identity": "da69a1011d3e4a1082b158d4874370b3",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "INFANTRY UPGRADE I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "INFANTRY UPGRADE I",
+                "Description": "10% damage boost. 10% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336844"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336839,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:00Z",
+          "ModifiedUtc": "2017-02-03T19:40:34Z",
+          "PublishedUtc": "2017-02-03T19:40:34Z",
+          "Container": -1
+        },
+        "Identity": "8f9a6545a20941cc8f9c0956d22bf705",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade2_laser",
+        "Title": "SPARTAN LASER",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade2_laser",
+          "DisplayInfo": {
+            "Id": 335696,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:59Z",
+                "ModifiedUtc": "2017-02-03T19:36:51Z",
+                "PublishedUtc": "2017-02-03T19:36:51Z",
+                "Container": -1
+              },
+              "Identity": "75fda639237d463183098342d0a51e29",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SPARTAN LASER Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "SPARTAN LASER",
+                "Description": "Equips a Spartan Laser. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336839"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336837,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:47Z",
+          "ModifiedUtc": "2017-02-03T19:40:33Z",
+          "PublishedUtc": "2017-02-03T19:40:33Z",
+          "Container": -1
+        },
+        "Identity": "98923ba841374dcb86f3a500bc13686d",
+        "Autoroute": "hw2/techs/cov_tech_recruitTraining_3",
+        "Title": "ADV. LOGISTICS III",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_recruitTraining_3",
+          "DisplayInfo": {
+            "Id": 335852,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:47Z",
+                "ModifiedUtc": "2017-02-03T19:37:18Z",
+                "PublishedUtc": "2017-02-03T19:37:18Z",
+                "Container": -1
+              },
+              "Identity": "2fbf4505b8ad4fb68a752813d65a524b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADV. LOGISTICS III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ADV. LOGISTICS III",
+                "Description": "45% Unit build speed"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336837"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336821,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:09Z",
+          "ModifiedUtc": "2017-02-03T19:40:30Z",
+          "PublishedUtc": "2017-02-03T19:40:31Z",
+          "Container": -1
+        },
+        "Identity": "b1c5967d67db4e2ca2258dcac3da710e",
+        "Autoroute": "hw2/techs/unsc_tech_global_infantry_01",
+        "Title": "INFANTRY UPGRADE I",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_infantry_01",
+          "DisplayInfo": {
+            "Id": 336156,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:08Z",
+                "ModifiedUtc": "2017-02-03T19:38:26Z",
+                "PublishedUtc": "2017-02-03T19:38:26Z",
+                "Container": -1
+              },
+              "Identity": "da41c5b35f704471954fa07457ee45dd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "INFANTRY UPGRADE I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "INFANTRY UPGRADE I",
+                "Description": "10% damage boost. 10% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336821"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336825,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:22Z",
+          "ModifiedUtc": "2017-02-03T19:40:31Z",
+          "PublishedUtc": "2017-02-03T19:40:31Z",
+          "Container": -1
+        },
+        "Identity": "a7515cfbb2384ecb9a095846946c1d44",
+        "Autoroute": "hw2/techs/cov_tech_global_vehicle_02",
+        "Title": "VEHICLE UPGRADE II",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_vehicle_02",
+          "DisplayInfo": {
+            "Id": 336739,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:21Z",
+                "ModifiedUtc": "2017-02-03T19:40:17Z",
+                "PublishedUtc": "2017-02-03T19:40:17Z",
+                "Container": -1
+              },
+              "Identity": "8ae0023bdddf4f8ca39a79f9573c413f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE UPGRADE II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "VEHICLE UPGRADE II",
+                "Description": "20% damage boost. 20% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336825"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336828,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:20Z",
+          "ModifiedUtc": "2017-02-03T19:40:31Z",
+          "PublishedUtc": "2017-02-03T19:40:31Z",
+          "Container": -1
+        },
+        "Identity": "9e1d087940f44982955f0a179078af28",
+        "Autoroute": "hw2/techs/cov_tech_global_vehicle_01",
+        "Title": "VEHICLE UPGRADE I",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_vehicle_01",
+          "DisplayInfo": {
+            "Id": 336288,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:19Z",
+                "ModifiedUtc": "2017-02-03T19:38:49Z",
+                "PublishedUtc": "2017-02-03T19:38:49Z",
+                "Container": -1
+              },
+              "Identity": "523dec22c8254cf2a15a85a9db3543da",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE UPGRADE I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "VEHICLE UPGRADE I",
+                "Description": "10% damage boost. 10% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336828"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336822,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:33:08Z",
+          "ModifiedUtc": "2017-02-03T19:40:30Z",
+          "PublishedUtc": "2017-02-03T19:40:30Z",
+          "Container": -1
+        },
+        "Identity": "a39927ede3e842c484872f74c6ed073e",
+        "Autoroute": "hw2/techs/unsc_forgehog_upgrade2",
+        "Title": "DEFENSIVE AURA",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_forgehog_upgrade2",
+          "DisplayInfo": {
+            "Id": 335811,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:33:08Z",
+                "ModifiedUtc": "2017-02-03T19:37:11Z",
+                "PublishedUtc": "2017-02-03T19:37:11Z",
+                "Container": -1
+              },
+              "Identity": "408e0bdaff68455c8095ef2f44f164c7",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DEFENSIVE AURA Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "DEFENSIVE AURA",
+                "Description": "Improved Nanobots. Increase nearby allies speed"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336822"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336814,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:15Z",
+          "ModifiedUtc": "2017-02-03T19:40:29Z",
+          "PublishedUtc": "2017-02-03T19:40:29Z",
+          "Container": -1
+        },
+        "Identity": "c5c3bbbde54f401e99d778e80268ffb8",
+        "Autoroute": "hw2/techs/unsc_tech_global_vehicle_01",
+        "Title": "VEHICLE UPGRADE I",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_vehicle_01",
+          "DisplayInfo": {
+            "Id": 336242,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:14Z",
+                "ModifiedUtc": "2017-02-03T19:38:39Z",
+                "PublishedUtc": "2017-02-03T19:38:39Z",
+                "Container": -1
+              },
+              "Identity": "72cf52b7035547118388074b6950c42a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE UPGRADE I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "VEHICLE UPGRADE I",
+                "Description": "10% damage boost. 10% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336814"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336806,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:33:10Z",
+          "ModifiedUtc": "2017-02-03T19:40:28Z",
+          "PublishedUtc": "2017-02-03T19:40:28Z",
+          "Container": -1
+        },
+        "Identity": "cc956e2e7b0141e983eb44ca0037f756",
+        "Autoroute": "hw2/techs/unsc_forgehog_upgrade3",
+        "Title": "GAUSS OVERCHARGE",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_forgehog_upgrade3",
+          "DisplayInfo": {
+            "Id": 335782,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:33:09Z",
+                "ModifiedUtc": "2017-02-03T19:37:06Z",
+                "PublishedUtc": "2017-02-03T19:37:06Z",
+                "Container": -1
+              },
+              "Identity": "4c5db2c432484df7aa48a351e7cff911",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GAUSS OVERCHARGE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "GAUSS OVERCHARGE",
+                "Description": "Gauss Cannon . Upgraded Anvil Round ability"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336806"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336810,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:49Z",
+          "ModifiedUtc": "2017-02-03T19:40:28Z",
+          "PublishedUtc": "2017-02-03T19:40:28Z",
+          "Container": -1
+        },
+        "Identity": "c7cff4d94400400c82e554e6441e9f24",
+        "Autoroute": "hw2/techs/cov_tech_followers_1",
+        "Title": "REINFORCEMENTS I",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_followers_1",
+          "DisplayInfo": {
+            "Id": 336431,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:48Z",
+                "ModifiedUtc": "2017-02-03T19:39:16Z",
+                "PublishedUtc": "2017-02-03T19:39:16Z",
+                "Container": -1
+              },
+              "Identity": "0b15f1c9c2f0490cab85ca7858a22137",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "REINFORCEMENTS I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "REINFORCEMENTS I",
+                "Description": "Population boosted by +20. Maximum number of. possible units increased."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336810"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336799,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:37Z",
+          "ModifiedUtc": "2017-02-03T19:40:27Z",
+          "PublishedUtc": "2017-02-03T19:40:27Z",
+          "Container": -1
+        },
+        "Identity": "cf661bf95698487e94aecd5e37790df4",
+        "Autoroute": "hw2/techs/unsc_base_upgrade1",
+        "Title": "UPGRADE TO COMBAT STATION",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_base_upgrade1",
+          "DisplayInfo": {
+            "Id": 336258,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:36Z",
+                "ModifiedUtc": "2017-02-03T19:38:42Z",
+                "PublishedUtc": "2017-02-03T19:38:42Z",
+                "Container": -1
+              },
+              "Identity": "6c8d713521c8429587e902560e21c4aa",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO COMBAT STATION Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO COMBAT STATION",
+                "Description": "Produces vehicles and infantry. Can be upgraded to Command Center. Supports four turret emplacements"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336799"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336804,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:28Z",
+          "ModifiedUtc": "2017-02-03T19:40:27Z",
+          "PublishedUtc": "2017-02-03T19:40:27Z",
+          "Container": -1
+        },
+        "Identity": "caa111c9b8d04a3cbaf392ded157e317",
+        "Autoroute": "hw2/techs/unsc_tech_global_structure_02",
+        "Title": "FORTIFY BASE UPGRADE II",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_structure_02",
+          "DisplayInfo": {
+            "Id": 335854,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:27Z",
+                "ModifiedUtc": "2017-02-03T19:37:18Z",
+                "PublishedUtc": "2017-02-03T19:37:18Z",
+                "Container": -1
+              },
+              "Identity": "27d797f70dab48d0816357296598bb0b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FORTIFY BASE UPGRADE II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "FORTIFY BASE UPGRADE II",
+                "Description": "30% Building health boost. 30% Turret health boost. 30% Turret damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336804"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336790,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:55Z",
+          "ModifiedUtc": "2017-02-03T19:40:25Z",
+          "PublishedUtc": "2017-02-03T19:40:26Z",
+          "Container": -1
+        },
+        "Identity": "0d4158700be5480889e8ededa2605bcb",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade1_laser",
+        "Title": "HIJACK",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade1_laser",
+          "DisplayInfo": {
+            "Id": 336786,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:54Z",
+                "ModifiedUtc": "2017-02-03T19:40:25Z",
+                "PublishedUtc": "2017-02-03T19:40:25Z",
+                "Container": -1
+              },
+              "Identity": "a5b88f94562d4e70acfa3d02809855dc",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HIJACK Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "HIJACK",
+                "Description": "Hijack vehicles. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336790"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336754,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:17Z",
+          "ModifiedUtc": "2017-02-03T19:40:19Z",
+          "PublishedUtc": "2017-02-03T19:40:19Z",
+          "Container": -1
+        },
+        "Identity": "84de103aff594d84bec7f77ff6cf21c0",
+        "Autoroute": "hw2/techs/cov_tech_global_infantry_02",
+        "Title": "INFANTRY UPGRADE II",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_infantry_02",
+          "DisplayInfo": {
+            "Id": 336485,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:16Z",
+                "ModifiedUtc": "2017-02-03T19:39:24Z",
+                "PublishedUtc": "2017-02-03T19:39:24Z",
+                "Container": -1
+              },
+              "Identity": "a0d625b3be9046a383347f7c19af9b78",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "INFANTRY UPGRADE II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "INFANTRY UPGRADE II",
+                "Description": "20% damage boost. 20% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336754"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336543,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:13Z",
+          "ModifiedUtc": "2017-02-03T19:39:37Z",
+          "PublishedUtc": "2017-02-03T19:39:37Z",
+          "Container": -1
+        },
+        "Identity": "031c01a41a2f4421b18a53fb5f87398c",
+        "Autoroute": "hw2/techs/unsc_tech_global_infantry_03",
+        "Title": "INFANTRY UPGRADE III",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_infantry_03",
+          "DisplayInfo": {
+            "Id": 335353,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:12Z",
+                "ModifiedUtc": "2017-02-03T19:35:42Z",
+                "PublishedUtc": "2017-02-03T19:35:42Z",
+                "Container": -1
+              },
+              "Identity": "a1968964df534f6389692a73909ee7cc",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "INFANTRY UPGRADE III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "INFANTRY UPGRADE III",
+                "Description": "30% damage boost. 30% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336543"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336531,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:11Z",
+          "ModifiedUtc": "2017-02-03T19:39:35Z",
+          "PublishedUtc": "2017-02-03T19:39:35Z",
+          "Container": -1
+        },
+        "Identity": "24255fa17015453f876772772cbc5f31",
+        "Autoroute": "hw2/techs/cov_eliteCommando_upgrade3",
+        "Title": "UNSEEN BLADE",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_eliteCommando_upgrade3",
+          "DisplayInfo": {
+            "Id": 335259,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:10Z",
+                "ModifiedUtc": "2017-02-03T19:35:27Z",
+                "PublishedUtc": "2017-02-03T19:35:27Z",
+                "Container": -1
+              },
+              "Identity": "19cc7494fabc4284bf38d8e5187eab04",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UNSEEN BLADE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UNSEEN BLADE",
+                "Description": "Permanent cloaking. Increased damage. Increased health and shield"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336531"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336525,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:33:17Z",
+          "ModifiedUtc": "2017-02-03T19:39:33Z",
+          "PublishedUtc": "2017-02-03T19:39:34Z",
+          "Container": -1
+        },
+        "Identity": "3f6d6f7399814445a2b5dbaaadbe1205",
+        "Autoroute": "hw2/techs/cov_atrioxchosen_upgrade1",
+        "Title": "PLASMA ROUNDS",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_atrioxchosen_upgrade1",
+          "DisplayInfo": {
+            "Id": 336383,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:33:17Z",
+                "ModifiedUtc": "2017-02-03T19:39:07Z",
+                "PublishedUtc": "2017-02-03T19:39:07Z",
+                "Container": -1
+              },
+              "Identity": "2020ecf55d39479a8e65551bf7e9d337",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "PLASMA ROUNDS Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "PLASMA ROUNDS",
+                "Description": "Increases damage. Adds area of effect"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336525"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336508,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:33:18Z",
+          "ModifiedUtc": "2017-02-03T19:39:29Z",
+          "PublishedUtc": "2017-02-03T19:39:29Z",
+          "Container": -1
+        },
+        "Identity": "5348ed09b2154825a15690adc2831e24",
+        "Autoroute": "hw2/techs/cov_atrioxchosen_upgrade2",
+        "Title": "SCORCH ROUNDS",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_atrioxchosen_upgrade2",
+          "DisplayInfo": {
+            "Id": 335082,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:33:18Z",
+                "ModifiedUtc": "2017-02-03T19:34:57Z",
+                "PublishedUtc": "2017-02-03T19:34:57Z",
+                "Container": -1
+              },
+              "Identity": "6f058ee2540e4b0d9afd070d1dd964ec",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SCORCH ROUNDS Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "SCORCH ROUNDS",
+                "Description": "Increases damage. Damage over time"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336508"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336503,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:16Z",
+          "ModifiedUtc": "2017-02-03T19:39:28Z",
+          "PublishedUtc": "2017-02-03T19:39:28Z",
+          "Container": -1
+        },
+        "Identity": "6739ce9db9d5467db8c95e17907aec95",
+        "Autoroute": "hw2/techs/unsc_tech_global_vehicle_02",
+        "Title": "VEHICLE UPGRADE II",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_vehicle_02",
+          "DisplayInfo": {
+            "Id": 335738,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:16Z",
+                "ModifiedUtc": "2017-02-03T19:36:58Z",
+                "PublishedUtc": "2017-02-03T19:36:58Z",
+                "Container": -1
+              },
+              "Identity": "be128a0bd4cd4cf4a284bbff8f31c4cd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE UPGRADE II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "VEHICLE UPGRADE II",
+                "Description": "20% damage boost. 20% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336503"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336506,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:40Z",
+          "ModifiedUtc": "2017-02-03T19:39:28Z",
+          "PublishedUtc": "2017-02-03T19:39:28Z",
+          "Container": -1
+        },
+        "Identity": "690cfc47bae346dc95a7e4dba73edc01",
+        "Autoroute": "hw2/techs/cov_turret_upgradeAV",
+        "Title": "ADD ANTI-VEHICLE UPGRADE",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_turret_upgradeAV",
+          "DisplayInfo": {
+            "Id": 335029,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:40Z",
+                "ModifiedUtc": "2017-02-03T19:34:45Z",
+                "PublishedUtc": "2017-02-03T19:34:45Z",
+                "Container": -1
+              },
+              "Identity": "c183063cae5e40909b37d24f7d36ca64",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADD ANTI-VEHICLE UPGRADE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ADD ANTI-VEHICLE UPGRADE",
+                "Description": "Adds an anti-vehicle weapon"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336506"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336480,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:33:12Z",
+          "ModifiedUtc": "2017-02-03T19:39:24Z",
+          "PublishedUtc": "2017-02-03T19:39:24Z",
+          "Container": -1
+        },
+        "Identity": "895aa49d00f949c8ae770d1018f7ff6f",
+        "Autoroute": "hw2/techs/unsc_grizzly_upgrade1",
+        "Title": "MISSILE BARRAGE",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_grizzly_upgrade1",
+          "DisplayInfo": {
+            "Id": 336389,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:33:11Z",
+                "ModifiedUtc": "2017-02-03T19:39:08Z",
+                "PublishedUtc": "2017-02-03T19:39:08Z",
+                "Container": -1
+              },
+              "Identity": "1fea7ab01a4a41539f870c9b2f67a88c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MISSILE BARRAGE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "MISSILE BARRAGE",
+                "Description": "Powerful Area Attack. Ground attack only"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336480"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336474,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:59Z",
+          "ModifiedUtc": "2017-02-03T19:39:23Z",
+          "PublishedUtc": "2017-02-03T19:39:23Z",
+          "Container": -1
+        },
+        "Identity": "91604b7440c74ab0ab740b00c7bf6184",
+        "Autoroute": "hw2/techs/unsc_cyclops_upgrade1",
+        "Title": "SHOCK ROUNDS",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_cyclops_upgrade1",
+          "DisplayInfo": {
+            "Id": 336266,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:58Z",
+                "ModifiedUtc": "2017-02-03T19:38:44Z",
+                "PublishedUtc": "2017-02-03T19:38:44Z",
+                "Container": -1
+              },
+              "Identity": "5d046e2782cd4d1e93d9bf76abf3e919",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SHOCK ROUNDS Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "SHOCK ROUNDS",
+                "Description": "Shots slow vehicles. Increased damage"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336474"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336478,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:20Z",
+          "ModifiedUtc": "2017-02-03T19:39:23Z",
+          "PublishedUtc": "2017-02-03T19:39:23Z",
+          "Container": -1
+        },
+        "Identity": "8ea7f1277289428999f82952263978e0",
+        "Autoroute": "hw2/techs/unsc_tech_global_aircraft_01",
+        "Title": "AIR UPGRADE I",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_aircraft_01",
+          "DisplayInfo": {
+            "Id": 336212,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:19Z",
+                "ModifiedUtc": "2017-02-03T19:38:34Z",
+                "PublishedUtc": "2017-02-03T19:38:34Z",
+                "Container": -1
+              },
+              "Identity": "8f6407dba1db41909c77f463a2b5ba57",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "AIR UPGRADE I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "AIR UPGRADE I",
+                "Description": "10% damage boost. 10% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336478"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336463,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:04Z",
+          "ModifiedUtc": "2017-02-03T19:39:21Z",
+          "PublishedUtc": "2017-02-03T19:39:21Z",
+          "Container": -1
+        },
+        "Identity": "bd6906f64d7542e196f1e6db242f252d",
+        "Autoroute": "hw2/techs/cov_hunter_upgrade1",
+        "Title": "BEAM CANNON",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_hunter_upgrade1",
+          "DisplayInfo": {
+            "Id": 336133,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:03Z",
+                "ModifiedUtc": "2017-02-03T19:38:21Z",
+                "PublishedUtc": "2017-02-03T19:38:21Z",
+                "Container": -1
+              },
+              "Identity": "cb8030f2e080497fbed2aa174354c7fd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "BEAM CANNON Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "BEAM CANNON",
+                "Description": "Increased damage. Beam cannon does damage. along trajectory"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336463"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336460,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:06Z",
+          "ModifiedUtc": "2017-02-03T19:39:20Z",
+          "PublishedUtc": "2017-02-03T19:39:20Z",
+          "Container": -1
+        },
+        "Identity": "bc30a7491ccd44bb84c73d177d8734f0",
+        "Autoroute": "hw2/techs/unsc_scorpion_upgrade2",
+        "Title": "CANISTER SHELL",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_scorpion_upgrade2",
+          "DisplayInfo": {
+            "Id": 336303,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:04Z",
+                "ModifiedUtc": "2017-02-03T19:38:51Z",
+                "PublishedUtc": "2017-02-03T19:38:51Z",
+                "Container": -1
+              },
+              "Identity": "49a97350fa9c43e89418ede13870c75e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "CANISTER SHELL Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "CANISTER SHELL",
+                "Description": "Area attack. Strong against infantry. Ground attack only"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336460"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336446,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:33Z",
+          "ModifiedUtc": "2017-02-03T19:39:18Z",
+          "PublishedUtc": "2017-02-03T19:39:18Z",
+          "Container": -1
+        },
+        "Identity": "f536f2ecca314504952c7f0a2bd34477",
+        "Autoroute": "hw2/techs/cov_tech_global_structure_02",
+        "Title": "FORTIFY BASE UPGRADE II",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_structure_02",
+          "DisplayInfo": {
+            "Id": 335170,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:32Z",
+                "ModifiedUtc": "2017-02-03T19:35:12Z",
+                "PublishedUtc": "2017-02-03T19:35:12Z",
+                "Container": -1
+              },
+              "Identity": "31d7dbf049b546ce917e4dc6f99d6b76",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FORTIFY BASE UPGRADE II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "FORTIFY BASE UPGRADE II",
+                "Description": "30% Building health boost. 30% Turret health boost. 30% Turret damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336446"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336399,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:09Z",
+          "ModifiedUtc": "2017-02-03T19:39:10Z",
+          "PublishedUtc": "2017-02-03T19:39:10Z",
+          "Container": -1
+        },
+        "Identity": "12a3d494bb284a33a8c18f1fbce2b37e",
+        "Autoroute": "hw2/techs/cov_eliteCommando_upgrade2",
+        "Title": "MERCENARY WRATH",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_eliteCommando_upgrade2",
+          "DisplayInfo": {
+            "Id": 335515,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:08Z",
+                "ModifiedUtc": "2017-02-03T19:36:16Z",
+                "PublishedUtc": "2017-02-03T19:36:16Z",
+                "Container": -1
+              },
+              "Identity": "e17142a6c44d4e5fa09f491e27bf8f07",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MERCENARY WRATH Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "MERCENARY WRATH",
+                "Description": "Increased damage. Increased health and shield"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336399"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336390,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:05Z",
+          "ModifiedUtc": "2017-02-03T19:39:08Z",
+          "PublishedUtc": "2017-02-03T19:39:08Z",
+          "Container": -1
+        },
+        "Identity": "205dcde3c20c48c88b195be12b857a53",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade3_laser",
+        "Title": "NEURAL IMPLANT",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade3_laser",
+          "DisplayInfo": {
+            "Id": 336385,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:05Z",
+                "ModifiedUtc": "2017-02-03T19:39:07Z",
+                "PublishedUtc": "2017-02-03T19:39:07Z",
+                "Container": -1
+              },
+              "Identity": "689935640d5c4364bba9d44cbd4625ba",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "NEURAL IMPLANT Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "NEURAL IMPLANT",
+                "Description": "Increases hijack speed. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336390"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336336,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:24Z",
+          "ModifiedUtc": "2017-02-03T19:38:58Z",
+          "PublishedUtc": "2017-02-03T19:38:58Z",
+          "Container": -1
+        },
+        "Identity": "375cfd48284b4823abd76f8b8c956e07",
+        "Autoroute": "hw2/techs/cov_tech_global_vehicle_03",
+        "Title": "VEHICLE UPGRADE III",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_vehicle_03",
+          "DisplayInfo": {
+            "Id": 336333,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:23Z",
+                "ModifiedUtc": "2017-02-03T19:38:57Z",
+                "PublishedUtc": "2017-02-03T19:38:57Z",
+                "Container": -1
+              },
+              "Identity": "40a55111de7c4d2292dcab6d32bbaa12",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE UPGRADE III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "VEHICLE UPGRADE III",
+                "Description": "30% damage boost. 30% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336336"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336334,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:51Z",
+          "ModifiedUtc": "2017-02-03T19:38:57Z",
+          "PublishedUtc": "2017-02-03T19:38:57Z",
+          "Container": -1
+        },
+        "Identity": "3391d01a88bd461ba55ed4a7e6637bc7",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade1_chaingun",
+        "Title": "HIJACK",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade1_chaingun",
+          "DisplayInfo": {
+            "Id": 335482,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:50Z",
+                "ModifiedUtc": "2017-02-03T19:36:10Z",
+                "PublishedUtc": "2017-02-03T19:36:10Z",
+                "Container": -1
+              },
+              "Identity": "7d86753575874d449c7ef8633d1a0cba",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HIJACK Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "HIJACK",
+                "Description": "Hijack vehicles. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336334"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336314,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:51Z",
+          "ModifiedUtc": "2017-02-03T19:38:53Z",
+          "PublishedUtc": "2017-02-03T19:38:53Z",
+          "Container": -1
+        },
+        "Identity": "439671e1803e4f8f96f02247484b3684",
+        "Autoroute": "hw2/techs/cov_tech_followers_2",
+        "Title": "REINFORCEMENTS II",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_followers_2",
+          "DisplayInfo": {
+            "Id": 336310,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:50Z",
+                "ModifiedUtc": "2017-02-03T19:38:52Z",
+                "PublishedUtc": "2017-02-03T19:38:52Z",
+                "Container": -1
+              },
+              "Identity": "f728d996d58c497ab29c50cbab62d477",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "REINFORCEMENTS II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "REINFORCEMENTS II",
+                "Description": "Population boosted by +20. Maximum number of. possible units increased."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336314"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336276,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:31Z",
+          "ModifiedUtc": "2017-02-03T19:38:47Z",
+          "PublishedUtc": "2017-02-03T19:38:47Z",
+          "Container": -1
+        },
+        "Identity": "5bad9715615b45ada4438ed25e3a93f4",
+        "Autoroute": "hw2/techs/cov_supplyDepot_upgrade1",
+        "Title": "UPGRADE TO AUG. HARVESTER",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_supplyDepot_upgrade1",
+          "DisplayInfo": {
+            "Id": 335457,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:31Z",
+                "ModifiedUtc": "2017-02-03T19:36:02Z",
+                "PublishedUtc": "2017-02-03T19:36:02Z",
+                "Container": -1
+              },
+              "Identity": "8bba0b8744e9489abff268688d41875e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO AUG. HARVESTER Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO AUG. HARVESTER",
+                "Description": "Increases supply income"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336276"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336268,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:53Z",
+          "ModifiedUtc": "2017-02-03T19:38:44Z",
+          "PublishedUtc": "2017-02-03T19:38:44Z",
+          "Container": -1
+        },
+        "Identity": "5eb536a0c81743398997703eb75e8295",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade1_rocket",
+        "Title": "HIJACK",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade1_rocket",
+          "DisplayInfo": {
+            "Id": 335448,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:52Z",
+                "ModifiedUtc": "2017-02-03T19:36:01Z",
+                "PublishedUtc": "2017-02-03T19:36:01Z",
+                "Container": -1
+              },
+              "Identity": "ab16e770b8264f7bb2a252d2fd46ee5d",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HIJACK Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "HIJACK",
+                "Description": "Hijack vehicles. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336268"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336172,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-31T11:50:53Z",
+          "ModifiedUtc": "2017-02-03T19:38:28Z",
+          "PublishedUtc": "2017-02-03T19:38:28Z",
+          "Container": -1
+        },
+        "Identity": "a3762d3814e648859e22b8f9ab863d7e",
+        "Autoroute": "hw2/techs/cov_bruteJumpPack_upgrade3",
+        "Title": "DARK SKIES",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_bruteJumpPack_upgrade3",
+          "DisplayInfo": {
+            "Id": 335405,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-31T11:50:52Z",
+                "ModifiedUtc": "2017-02-03T19:35:53Z",
+                "PublishedUtc": "2017-02-03T19:35:53Z",
+                "Container": -1
+              },
+              "Identity": "be9b3c1abd1a48f690924570f594b2fd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DARK SKIES Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "DARK SKIES",
+                "Description": "Adds 1 Brute to pack"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336172"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336022,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:13Z",
+          "ModifiedUtc": "2017-02-03T19:37:57Z",
+          "PublishedUtc": "2017-02-03T19:37:57Z",
+          "Container": -1
+        },
+        "Identity": "9211b09893b548cc8b889bf2dac529d5",
+        "Autoroute": "hw2/techs/cov_prowler_upgrade1",
+        "Title": "THICK HIDE",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_prowler_upgrade1",
+          "DisplayInfo": {
+            "Id": 336017,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:12Z",
+                "ModifiedUtc": "2017-02-03T19:37:56Z",
+                "PublishedUtc": "2017-02-03T19:37:56Z",
+                "Container": -1
+              },
+              "Identity": "89fa40e1c86048eea0684733a4ed75aa",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "THICK HIDE Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "THICK HIDE",
+                "Description": "Greatly increased armor"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336022"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335990,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:35Z",
+          "ModifiedUtc": "2017-02-03T19:37:51Z",
+          "PublishedUtc": "2017-02-03T19:37:51Z",
+          "Container": -1
+        },
+        "Identity": "ae4627de76ce4c62b97015c693755bc8",
+        "Autoroute": "hw2/techs/cov_tech_global_structure_03",
+        "Title": "FORTIFY BASE UPGRADE III",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_structure_03",
+          "DisplayInfo": {
+            "Id": 335987,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:34Z",
+                "ModifiedUtc": "2017-02-03T19:37:50Z",
+                "PublishedUtc": "2017-02-03T19:37:51Z",
+                "Container": -1
+              },
+              "Identity": "861a560f697b4fc0940f81404c9b8500",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FORTIFY BASE UPGRADE III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "FORTIFY BASE UPGRADE III",
+                "Description": "45% Building health boost. 45% Turret health boost. 45% Turret damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335990"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335984,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:21Z",
+          "ModifiedUtc": "2017-02-03T19:37:49Z",
+          "PublishedUtc": "2017-02-03T19:37:50Z",
+          "Container": -1
+        },
+        "Identity": "b130afd34132468bb62d80f572e0341d",
+        "Autoroute": "hw2/techs/unsc_supplypad_upgrade1",
+        "Title": "UPGRADE TO HEAVY SUPPLY PAD",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_supplypad_upgrade1",
+          "DisplayInfo": {
+            "Id": 335226,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:20Z",
+                "ModifiedUtc": "2017-02-03T19:35:21Z",
+                "PublishedUtc": "2017-02-03T19:35:21Z",
+                "Container": -1
+              },
+              "Identity": "2ac15de64b5746fea8bdebdbd4d6931e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO HEAVY SUPPLY PAD Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO HEAVY SUPPLY PAD",
+                "Description": "Increases supply income"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335984"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335979,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:50Z",
+          "ModifiedUtc": "2017-02-03T19:37:48Z",
+          "PublishedUtc": "2017-02-03T19:37:49Z",
+          "Container": -1
+        },
+        "Identity": "bd8f1522ce4842bf9c48d2f08c609c28",
+        "Autoroute": "hw2/techs/unsc_mongoose_upgrade1",
+        "Title": "MINI-FRAG LAUNCHER",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_mongoose_upgrade1",
+          "DisplayInfo": {
+            "Id": 335141,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:49Z",
+                "ModifiedUtc": "2017-02-03T19:35:07Z",
+                "PublishedUtc": "2017-02-03T19:35:07Z",
+                "Container": -1
+              },
+              "Identity": "415e0c85f183444bb089576b83485f61",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MINI-FRAG LAUNCHER Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "MINI-FRAG LAUNCHER",
+                "Description": "Weaponizes Jackrabbit"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335979"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335951,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:07Z",
+          "ModifiedUtc": "2017-02-03T19:37:44Z",
+          "PublishedUtc": "2017-02-03T19:37:44Z",
+          "Container": -1
+        },
+        "Identity": "ee13116dc25f4adabdc34dc4d9813ee9",
+        "Autoroute": "hw2/techs/cov_banshee_upgrade1",
+        "Title": "PLASMA TORPEDO",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_banshee_upgrade1",
+          "DisplayInfo": {
+            "Id": 335185,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:06Z",
+                "ModifiedUtc": "2017-02-03T19:35:14Z",
+                "PublishedUtc": "2017-02-03T19:35:14Z",
+                "Container": -1
+              },
+              "Identity": "3577b12c374a46589c7321f198b69242",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "PLASMA TORPEDO Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "PLASMA TORPEDO",
+                "Description": "Effective against air"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335951"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335943,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:09Z",
+          "ModifiedUtc": "2017-02-03T19:37:37Z",
+          "PublishedUtc": "2017-02-03T19:37:37Z",
+          "Container": -1
+        },
+        "Identity": "f3269c0548ec4809bfcda36adec4ce62",
+        "Autoroute": "hw2/techs/cov_wraith_upgrade1",
+        "Title": "SCORCH MORTAR",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_wraith_upgrade1",
+          "DisplayInfo": {
+            "Id": 335027,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:09Z",
+                "ModifiedUtc": "2017-02-03T19:34:44Z",
+                "PublishedUtc": "2017-02-03T19:34:44Z",
+                "Container": -1
+              },
+              "Identity": "62bd944b6de54ccaa4d46dc1f9020adb",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SCORCH MORTAR Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "SCORCH MORTAR",
+                "Description": "Shots continue to cause. damage after impact"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335943"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335941,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:31Z",
+          "ModifiedUtc": "2017-02-03T19:37:36Z",
+          "PublishedUtc": "2017-02-03T19:37:36Z",
+          "Container": -1
+        },
+        "Identity": "f51f0a221a79442a8bf8a90336f388ea",
+        "Autoroute": "hw2/techs/cov_tech_global_structure_01",
+        "Title": "FORTIFY BASE UPGRADE I",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_structure_01",
+          "DisplayInfo": {
+            "Id": 335627,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:30Z",
+                "ModifiedUtc": "2017-02-03T19:36:40Z",
+                "PublishedUtc": "2017-02-03T19:36:40Z",
+                "Container": -1
+              },
+              "Identity": "bbfb37d10f0149188c8146877001a3af",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FORTIFY BASE UPGRADE I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "FORTIFY BASE UPGRADE I",
+                "Description": "15% Building health boost. 15% Turret health boost. 15% Turret damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335941"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335933,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-24T08:42:04Z",
+          "ModifiedUtc": "2017-02-03T19:37:35Z",
+          "PublishedUtc": "2017-02-03T19:37:35Z",
+          "Container": -1
+        },
+        "Identity": "fb916c668f0240f88be320fdd7a440e2",
+        "Autoroute": "hw2/techs/unsc_Sniper_upgrade0",
+        "Title": "ACTIVE CAMO",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_Sniper_upgrade0",
+          "DisplayInfo": {
+            "Id": 335232,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-24T08:42:03Z",
+                "ModifiedUtc": "2017-02-03T19:35:22Z",
+                "PublishedUtc": "2017-02-03T19:35:22Z",
+                "Container": -1
+              },
+              "Identity": "298235b78fa942ce8442b991d112c5bb",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ACTIVE CAMO Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ACTIVE CAMO",
+                "Description": "Conceals unit from. enemy units without. detection abilities. . "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335933"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335903,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:18Z",
+          "ModifiedUtc": "2017-02-03T19:37:29Z",
+          "PublishedUtc": "2017-02-03T19:37:29Z",
+          "Container": -1
+        },
+        "Identity": "1a7baae900a74f299d51d337a91f278f",
+        "Autoroute": "hw2/techs/unsc_tech_global_vehicle_03",
+        "Title": "VEHICLE UPGRADE III",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_vehicle_03",
+          "DisplayInfo": {
+            "Id": 335506,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:17Z",
+                "ModifiedUtc": "2017-02-03T19:36:14Z",
+                "PublishedUtc": "2017-02-03T19:36:14Z",
+                "Container": -1
+              },
+              "Identity": "65b61489686b4dd082b529fb00276171",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE UPGRADE III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "VEHICLE UPGRADE III",
+                "Description": "30% damage boost. 30% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335903"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335756,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:03Z",
+          "ModifiedUtc": "2017-02-03T19:37:01Z",
+          "PublishedUtc": "2017-02-03T19:37:01Z",
+          "Container": -1
+        },
+        "Identity": "634375a61b6a43a9a2088cef2988e88d",
+        "Autoroute": "hw2/techs/unsc_warthog_upgrade3",
+        "Title": "GAUSS CANNON",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_warthog_upgrade3",
+          "DisplayInfo": {
+            "Id": 335752,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:02Z",
+                "ModifiedUtc": "2017-02-03T19:37:00Z",
+                "PublishedUtc": "2017-02-03T19:37:00Z",
+                "Container": -1
+              },
+              "Identity": "f10b75032dfa46e39e6f3cbf69b5883c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GAUSS CANNON Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "GAUSS CANNON",
+                "Description": "Damage boost. Range boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335756"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335590,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:26Z",
+          "ModifiedUtc": "2017-02-03T19:36:33Z",
+          "PublishedUtc": "2017-02-03T19:36:33Z",
+          "Container": -1
+        },
+        "Identity": "e4cbf5da3a1042ecb203ca852d3bc81a",
+        "Autoroute": "hw2/techs/unsc_tech_global_structure_01",
+        "Title": "FORTIFY BASE UPGRADE I",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_structure_01",
+          "DisplayInfo": {
+            "Id": 335585,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:25Z",
+                "ModifiedUtc": "2017-02-03T19:36:32Z",
+                "PublishedUtc": "2017-02-03T19:36:32Z",
+                "Container": -1
+              },
+              "Identity": "f9ce92127894456fa1468e67c0ffe93e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FORTIFY BASE UPGRADE I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "FORTIFY BASE UPGRADE I",
+                "Description": "15% Building health boost. 15% Turret health boost. 15% Turret damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335590"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335528,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:02Z",
+          "ModifiedUtc": "2017-02-03T19:36:19Z",
+          "PublishedUtc": "2017-02-03T19:36:19Z",
+          "Container": -1
+        },
+        "Identity": "062b4a14f0904d6f8ef3c8fe16d1593d",
+        "Autoroute": "hw2/tech/cov_brute_upgrade4",
+        "Title": "DARK SKIES",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_brute_upgrade4",
+          "DisplayInfo": {
+            "Id": 335344,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:01Z",
+                "ModifiedUtc": "2017-02-03T19:35:40Z",
+                "PublishedUtc": "2017-02-03T19:35:40Z",
+                "Container": -1
+              },
+              "Identity": "1d3c10b0dabd455ca07d3d0c6eecdbd1",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DARK SKIES Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "DARK SKIES",
+                "Description": "Increases squad size"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335528"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335526,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:59Z",
+          "ModifiedUtc": "2017-02-03T19:36:18Z",
+          "PublishedUtc": "2017-02-03T19:36:18Z",
+          "Container": -1
+        },
+        "Identity": "1120cb081543429aa98ee560cbeeeb9e",
+        "Autoroute": "hw2/techs/cov_suicideGrunt_upgrade1",
+        "Title": "KNOCK KNOCK!",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_suicideGrunt_upgrade1",
+          "DisplayInfo": {
+            "Id": 335522,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:57Z",
+                "ModifiedUtc": "2017-02-03T19:36:17Z",
+                "PublishedUtc": "2017-02-03T19:36:17Z",
+                "Container": -1
+              },
+              "Identity": "4a8c39a811d94d158a05c0ec5f9c4bc9",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "KNOCK KNOCK! Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "KNOCK KNOCK!",
+                "Description": "More damage to vehicles"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335526"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335498,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:30Z",
+          "ModifiedUtc": "2017-02-03T19:36:13Z",
+          "PublishedUtc": "2017-02-03T19:36:13Z",
+          "Container": -1
+        },
+        "Identity": "282bfb5e7dcf4dc8995aeebda593936d",
+        "Autoroute": "hw2/techs/unsc_tech_global_structure_03",
+        "Title": "FORTIFY BASE UPGRADE III",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_structure_03",
+          "DisplayInfo": {
+            "Id": 335494,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:29Z",
+                "ModifiedUtc": "2017-02-03T19:36:13Z",
+                "PublishedUtc": "2017-02-03T19:36:13Z",
+                "Container": -1
+              },
+              "Identity": "69cecf0e75764b46b36153f66ccdf4a5",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FORTIFY BASE UPGRADE III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "FORTIFY BASE UPGRADE III",
+                "Description": "45% Building health boost. 45% Turret health boost. 45% Turret damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335498"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335466,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:23Z",
+          "ModifiedUtc": "2017-02-03T19:36:07Z",
+          "PublishedUtc": "2017-02-03T19:36:07Z",
+          "Container": -1
+        },
+        "Identity": "5147ad9a735644498d874938324cae0b",
+        "Autoroute": "hw2/techs/unsc_supplypad_upgrade2",
+        "Title": "UPGRADE TO SUPER SUPPLY PAD",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_supplypad_upgrade2",
+          "DisplayInfo": {
+            "Id": 335318,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:22Z",
+                "ModifiedUtc": "2017-02-03T19:35:36Z",
+                "PublishedUtc": "2017-02-03T19:35:36Z",
+                "Container": -1
+              },
+              "Identity": "0110b111a4664a56b7472be9c4df63ac",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UPGRADE TO SUPER SUPPLY PAD Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "UPGRADE TO SUPER SUPPLY PAD",
+                "Description": "Fastest Supply Production"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335466"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335459,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:55Z",
+          "ModifiedUtc": "2017-02-03T19:36:03Z",
+          "PublishedUtc": "2017-02-03T19:36:03Z",
+          "Container": -1
+        },
+        "Identity": "5aead84d20594d16a75d31c4e35b83f9",
+        "Autoroute": "hw2/techs/cov_grunt_upgrade1",
+        "Title": "SHRAPNEL MINES",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_grunt_upgrade1",
+          "DisplayInfo": {
+            "Id": 335058,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:54Z",
+                "ModifiedUtc": "2017-02-03T19:34:52Z",
+                "PublishedUtc": "2017-02-03T19:34:52Z",
+                "Container": -1
+              },
+              "Identity": "8509a503287241f6a6839a823d6459bd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SHRAPNEL MINES Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "SHRAPNEL MINES",
+                "Description": "Can deploy mines that. damage and slow enemies"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335459"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335460,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:35Z",
+          "ModifiedUtc": "2017-02-03T19:36:03Z",
+          "PublishedUtc": "2017-02-03T19:36:03Z",
+          "Container": -1
+        },
+        "Identity": "545748deb56e41b78b8f78f946faebab",
+        "Autoroute": "hw2/techs/cov_reactor_upgrade1",
+        "Title": "Upgrade to Aug. Extractor",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_reactor_upgrade1",
+          "DisplayInfo": {
+            "Id": 335078,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:34Z",
+                "ModifiedUtc": "2017-02-03T19:34:56Z",
+                "PublishedUtc": "2017-02-03T19:34:56Z",
+                "Container": -1
+              },
+              "Identity": "c1d45ff0913f4e3b8a7579c531c0232f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Upgrade to Aug. Extractor Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "Upgrade to Aug. Extractor",
+                "Description": "Increases power income"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335460"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335452,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:46Z",
+          "ModifiedUtc": "2017-02-03T19:36:02Z",
+          "PublishedUtc": "2017-02-03T19:36:02Z",
+          "Container": -1
+        },
+        "Identity": "5baa2540988d459ea13f1b48f6c8db65",
+        "Autoroute": "hw2/techs/cov_tech_recruitTraining_2",
+        "Title": "ADV. LOGISTICS II",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_recruitTraining_2",
+          "DisplayInfo": {
+            "Id": 335059,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:45Z",
+                "ModifiedUtc": "2017-02-03T19:34:52Z",
+                "PublishedUtc": "2017-02-03T19:34:52Z",
+                "Container": -1
+              },
+              "Identity": "675bb8ec05374377b68640edc32581c5",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADV. LOGISTICS II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "ADV. LOGISTICS II",
+                "Description": "30% Unit build speed"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335452"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335428,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:04Z",
+          "ModifiedUtc": "2017-02-03T19:35:58Z",
+          "PublishedUtc": "2017-02-03T19:35:58Z",
+          "Container": -1
+        },
+        "Identity": "6b9b8cff42fd4560ae51a9d091737ac3",
+        "Autoroute": "hw2/techs/unsc_spartan_upgrade3_rocket",
+        "Title": "NEURAL IMPLANT",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_spartan_upgrade3_rocket",
+          "DisplayInfo": {
+            "Id": 335178,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:03Z",
+                "ModifiedUtc": "2017-02-03T19:35:13Z",
+                "PublishedUtc": "2017-02-03T19:35:13Z",
+                "Container": -1
+              },
+              "Identity": "34bc2e94e0d8469bbd1d2dfa5c082c3c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "NEURAL IMPLANT Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "NEURAL IMPLANT",
+                "Description": "Increases hijack speed. Health boost. Damage boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335428"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335430,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:05Z",
+          "ModifiedUtc": "2017-02-03T19:35:58Z",
+          "PublishedUtc": "2017-02-03T19:35:58Z",
+          "Container": -1
+        },
+        "Identity": "6cc7bc7742344f6e94bb059a490e6865",
+        "Autoroute": "hw2/techs/cov_ghost_upgrade1",
+        "Title": "VEHICLE SHIELDING",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_ghost_upgrade1",
+          "DisplayInfo": {
+            "Id": 335122,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:05Z",
+                "ModifiedUtc": "2017-02-03T19:35:04Z",
+                "PublishedUtc": "2017-02-03T19:35:04Z",
+                "Container": -1
+              },
+              "Identity": "3e1ace3b5560475f9c4e0b12772268c7",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE SHIELDING Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "VEHICLE SHIELDING",
+                "Description": "Gains a shield. Detects cloaked units"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335430"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335418,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:50:22Z",
+          "ModifiedUtc": "2017-02-03T19:35:56Z",
+          "PublishedUtc": "2017-02-03T19:35:57Z",
+          "Container": -1
+        },
+        "Identity": "9e531f1b69664081830716525c96f0f8",
+        "Autoroute": "hw2/techs/unsc_tech_global_aircraft_02",
+        "Title": "AIR UPGRADE II",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_global_aircraft_02",
+          "DisplayInfo": {
+            "Id": 335258,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:50:21Z",
+                "ModifiedUtc": "2017-02-03T19:35:26Z",
+                "PublishedUtc": "2017-02-03T19:35:26Z",
+                "Container": -1
+              },
+              "Identity": "1709ed6c8fd449eeb2c0b8b1df2462c8",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "AIR UPGRADE II Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "AIR UPGRADE II",
+                "Description": "20% damage boost. 20% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335418"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335404,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:51:18Z",
+          "ModifiedUtc": "2017-02-03T19:35:52Z",
+          "PublishedUtc": "2017-02-03T19:35:53Z",
+          "Container": -1
+        },
+        "Identity": "a5d174f96d0c4229beec5b5ab1b674cc",
+        "Autoroute": "hw2/techs/cov_tech_global_infantry_03",
+        "Title": "INFANTRY UPGRADE III",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_tech_global_infantry_03",
+          "DisplayInfo": {
+            "Id": 335165,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:51:17Z",
+                "ModifiedUtc": "2017-02-03T19:35:11Z",
+                "PublishedUtc": "2017-02-03T19:35:11Z",
+                "Container": -1
+              },
+              "Identity": "3890c0790ae94c79bd8d9a4001c8ab71",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "INFANTRY UPGRADE III Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "INFANTRY UPGRADE III",
+                "Description": "30% damage boost. 30% health boost"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335404"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335393,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:52:13Z",
+          "ModifiedUtc": "2017-02-03T19:35:50Z",
+          "PublishedUtc": "2017-02-03T19:35:50Z",
+          "Container": -1
+        },
+        "Identity": "cbffb0c8a9e94266a86d4ba506c4332b",
+        "Autoroute": "hw2/techs/cov_bruteHonour_upgrade1",
+        "Title": "HAMMER PULL",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_bruteHonour_upgrade1",
+          "DisplayInfo": {
+            "Id": 335200,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:52:12Z",
+                "ModifiedUtc": "2017-02-03T19:35:16Z",
+                "PublishedUtc": "2017-02-03T19:35:16Z",
+                "Container": -1
+              },
+              "Identity": "30f255d01dde4f05a38ed25fe1ef2c1f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HAMMER PULL Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "HAMMER PULL",
+                "Description": "Equips Warlord's hammer. with a gravity beam. to drag targets closer. "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335393"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335376,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:40Z",
+          "ModifiedUtc": "2017-02-03T19:35:47Z",
+          "PublishedUtc": "2017-02-03T19:35:47Z",
+          "Container": -1
+        },
+        "Identity": "e04fe5dc039149489a1b810a8e7c500e",
+        "Autoroute": "hw2/techs/unsc_tech_reinforcements_1",
+        "Title": "REINFORCEMENTS I",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_tech_reinforcements_1",
+          "DisplayInfo": {
+            "Id": 334905,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:39Z",
+                "ModifiedUtc": "2017-02-03T19:34:23Z",
+                "PublishedUtc": "2017-02-03T19:34:23Z",
+                "Container": -1
+              },
+              "Identity": "c0badf49581948319bf0c0aa29262a51",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "REINFORCEMENTS I Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "REINFORCEMENTS I",
+                "Description": "Population boosted by +20. Maximum number of. possible units increased."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335376"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335268,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:48Z",
+          "ModifiedUtc": "2017-02-03T19:35:28Z",
+          "PublishedUtc": "2017-02-03T19:35:28Z",
+          "Container": -1
+        },
+        "Identity": "19b837d228374fcaafb2ba31dbfd2f0c",
+        "Autoroute": "hw2/techs/unsc_marine_upgrade2",
+        "Title": "COMBAT TECH",
+        "HW2Tech": {
+          "ObjectTypeId": "unsc_marine_upgrade2",
+          "DisplayInfo": {
+            "Id": 335263,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:47Z",
+                "ModifiedUtc": "2017-02-03T19:35:27Z",
+                "PublishedUtc": "2017-02-03T19:35:27Z",
+                "Container": -1
+              },
+              "Identity": "31fed35679ca468383cd4d7ca57a4c89",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "COMBAT TECH Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "COMBAT TECH",
+                "Description": "Can repair vehicles,. buildings and air units.. Wields rocket launcher"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335268"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335231,
+      "Type": "HW2Tech",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:33:19Z",
+          "ModifiedUtc": "2017-02-03T19:35:22Z",
+          "PublishedUtc": "2017-02-03T19:35:22Z",
+          "Container": -1
+        },
+        "Identity": "2d89d4a4c56148b98636e77e34c23bf5",
+        "Autoroute": "hw2/techs/cov_atrioxchosen_upgrade3",
+        "Title": "RIFLED BARREL",
+        "HW2Tech": {
+          "ObjectTypeId": "cov_atrioxchosen_upgrade3",
+          "DisplayInfo": {
+            "Id": 335225,
+            "Type": "HW2TechDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:33:19Z",
+                "ModifiedUtc": "2017-02-03T19:35:21Z",
+                "PublishedUtc": "2017-02-03T19:35:21Z",
+                "Container": -1
+              },
+              "Identity": "90b69712e6e4469dae6c26a20a76e5bb",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "RIFLED BARREL Display Info",
+              "HW2TechDisplayInfo": {
+                "Name": "RIFLED BARREL",
+                "Description": "Increases damage. Greatly increases range"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335231"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

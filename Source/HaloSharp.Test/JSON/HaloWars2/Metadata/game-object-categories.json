@@ -1,0 +1,209 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 8,
+    "TotalCount": 8
+  },
+  "ContentItems": [
+    {
+      "Id": 337340,
+      "Type": "HW2ObjectCategory",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-09-13T16:45:48Z",
+          "ModifiedUtc": "2017-02-04T01:30:41Z",
+          "PublishedUtc": "2017-02-04T01:30:41Z",
+          "Container": -1
+        },
+        "Identity": "4e4139319fe34339a2e691ae49970771",
+        "Title": "Anti-Infantry [obj category]",
+        "Autoroute": "hw2/object-category/4e4139319fe34339a2e691ae49970771"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337340"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337341,
+      "Type": "HW2ObjectCategory",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-14T09:24:41Z",
+          "ModifiedUtc": "2017-02-04T01:30:41Z",
+          "PublishedUtc": "2017-02-04T01:30:41Z",
+          "Container": -1
+        },
+        "Identity": "77dda04524a34da5b274a153ce4d7ca1",
+        "Title": "Infantry[obj category]",
+        "Autoroute": "hw2/object-category/77dda04524a34da5b274a153ce4d7ca1"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337341"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337342,
+      "Type": "HW2ObjectCategory",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-09-13T16:45:10Z",
+          "ModifiedUtc": "2017-02-04T01:30:41Z",
+          "PublishedUtc": "2017-02-04T01:30:41Z",
+          "Container": -1
+        },
+        "Identity": "32af84ebdc044cea8363273d9224f980",
+        "Title": "Anti-Vehicle [obj category]",
+        "Autoroute": "hw2/object-category/32af84ebdc044cea8363273d9224f980"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337342"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337339,
+      "Type": "HW2ObjectCategory",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-09-13T16:46:04Z",
+          "ModifiedUtc": "2017-02-04T01:30:40Z",
+          "PublishedUtc": "2017-02-04T01:30:40Z",
+          "Container": -1
+        },
+        "Identity": "82f90d46f6a949de956ab467a4c869ad",
+        "Title": "Anti-Air [obj category]",
+        "Autoroute": "hw2/object-category/82f90d46f6a949de956ab467a4c869ad"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337339"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335158,
+      "Type": "HW2ObjectCategory",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-09-13T16:47:37Z",
+          "ModifiedUtc": "2017-02-03T19:35:10Z",
+          "PublishedUtc": "2017-02-03T19:35:10Z",
+          "Container": -1
+        },
+        "Identity": "69c71fde8f2c4f8e8e9fd88a504eca43",
+        "Title": "Air units [obj category]",
+        "Autoroute": "hw2/object-categories/69c71fde-8f2c-4f8e-8e9f-d88a504eca43"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335158"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335037,
+      "Type": "HW2ObjectCategory",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-29T09:52:15Z",
+          "ModifiedUtc": "2017-02-03T19:34:47Z",
+          "PublishedUtc": "2017-02-03T19:34:47Z",
+          "Container": -1
+        },
+        "Identity": "3f7b310a5e974f1292482ca0cbf6894f",
+        "Title": "Building [obj category]",
+        "Autoroute": "hw2/object-categories/3f7b310a-5e97-4f12-9248-2ca0cbf6894f"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335037"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335010,
+      "Type": "HW2ObjectCategory",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-08-25T16:27:05Z",
+          "ModifiedUtc": "2017-02-03T19:34:42Z",
+          "PublishedUtc": "2017-02-03T19:34:42Z",
+          "Container": -1
+        },
+        "Identity": "d427e68dd3f6438fb93f51e146639304",
+        "Title": "Vehicle [obj category]",
+        "Autoroute": "hw2/object-categories/d427e68d-d3f6-438f-b93f-51e146639304"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335010"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 334896,
+      "Type": "HW2ObjectCategory",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-caarse",
+          "CreatedUtc": "2016-09-13T16:47:58Z",
+          "ModifiedUtc": "2017-02-03T19:34:22Z",
+          "PublishedUtc": "2017-02-03T19:34:22Z",
+          "Container": -1
+        },
+        "Identity": "7c33b51f9de049a5bbdd7a7aa4d7ea82",
+        "Title": "Infantry [obj category]",
+        "Autoroute": "hw2/object-categories/7c33b51f-9de0-49a5-bbdd-7a7aa4d7ea82"
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/334896"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

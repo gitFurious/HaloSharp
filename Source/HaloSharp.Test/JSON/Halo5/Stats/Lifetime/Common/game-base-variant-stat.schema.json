@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "TotalKills": {
+      "type": "integer"
+    },
+    "TotalHeadshots": {
+      "type": "integer"
+    },
+    "TotalWeaponDamage": {
+      "type": "number"
+    },
+    "TotalShotsFired": {
+      "type": "integer"
+    },
+    "TotalShotsLanded": {
+      "type": "integer"
+    },
+    "WeaponWithMostKills": {
+      "$ref": "../../common/base-stat.schema.json#/definitions/WeaponStat"
+    },
+    "TotalMeleeKills": {
+      "type": "integer"
+    },
+    "TotalMeleeDamage": {
+      "type": "number"
+    },
+    "TotalAssassinations": {
+      "type": "integer"
+    },
+    "TotalGroundPoundKills": {
+      "type": "integer"
+    },
+    "TotalGroundPoundDamage": {
+      "type": "number"
+    },
+    "TotalShoulderBashKills": {
+      "type": "integer"
+    },
+    "TotalShoulderBashDamage": {
+      "type": "number"
+    },
+    "TotalGrenadeDamage": {
+      "type": "number"
+    },
+    "TotalPowerWeaponKills": {
+      "type": "integer"
+    },
+    "TotalPowerWeaponDamage": {
+      "type": "number"
+    },
+    "TotalPowerWeaponGrabs": {
+      "type": "integer"
+    },
+    "TotalPowerWeaponPossessionTime": {
+      "type": "string"
+    },
+    "TotalDeaths": {
+      "type": "integer"
+    },
+    "TotalAssists": {
+      "type": "integer"
+    },
+    "TotalGamesCompleted": {
+      "type": "integer"
+    },
+    "TotalGamesWon": {
+      "type": "integer"
+    },
+    "TotalGamesLost": {
+      "type": "integer"
+    },
+    "TotalGamesTied": {
+      "type": "integer"
+    },
+    "TotalTimePlayed": {
+      "type": "string"
+    },
+    "TotalGrenadeKills": {
+      "type": "integer"
+    },
+    "MedalAwards": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/base-stat.schema.json#/definitions/MedalAward"
+      }
+    },
+    "DestroyedEnemyVehicles": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/base-stat.schema.json#/definitions/EnemySet"
+      }
+    },
+    "EnemyKills": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/base-stat.schema.json#/definitions/EnemySet"
+      }
+    },
+    "WeaponStats": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/base-stat.schema.json#/definitions/WeaponStat"
+      }
+    },
+    "Impulses": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/base-stat.schema.json#/definitions/Impulse"
+      }
+    },
+    "TotalSpartanKills": {
+      "type": "integer"
+    },
+    "FastestMatchWin": {
+      "type": [ "null", "string" ]
+    },
+
+    "FlexibleStats": {
+      "$ref": "../../common/flexible-stats.schema.json"
+    },
+    "GameBaseVariantId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "TotalKills",
+    "TotalHeadshots",
+    "TotalWeaponDamage",
+    "TotalShotsFired",
+    "TotalShotsLanded",
+    "WeaponWithMostKills",
+    "TotalMeleeKills",
+    "TotalMeleeDamage",
+    "TotalAssassinations",
+    "TotalGroundPoundKills",
+    "TotalGroundPoundDamage",
+    "TotalShoulderBashKills",
+    "TotalShoulderBashDamage",
+    "TotalGrenadeDamage",
+    "TotalPowerWeaponKills",
+    "TotalPowerWeaponDamage",
+    "TotalPowerWeaponGrabs",
+    "TotalPowerWeaponPossessionTime",
+    "TotalDeaths",
+    "TotalAssists",
+    "TotalGamesCompleted",
+    "TotalGamesWon",
+    "TotalGamesLost",
+    "TotalGamesTied",
+    "TotalTimePlayed",
+    "TotalGrenadeKills",
+    "MedalAwards",
+    "DestroyedEnemyVehicles",
+    "EnemyKills",
+    "WeaponStats",
+    "Impulses",
+    "TotalSpartanKills",
+    "FastestMatchWin",
+
+    "FlexibleStats",
+    "GameBaseVariantId"
+  ]
+}

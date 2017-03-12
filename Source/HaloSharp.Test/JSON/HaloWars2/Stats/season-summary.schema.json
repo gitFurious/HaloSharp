@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "SeasonId": {
+      "type": "string"
+    },
+    "RankedPlaylistStats": {
+      "type": "array",
+      "items": {
+        "$ref": "common/stats.schema.json"
+      }
+    }
+  },
+  "required": [
+    "SeasonId",
+    "RankedPlaylistStats"
+  ]
+}

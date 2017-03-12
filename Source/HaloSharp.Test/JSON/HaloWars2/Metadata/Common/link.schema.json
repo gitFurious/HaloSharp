@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Absolute": {
+      "type": "boolean"
+    },
+    "Relation": {
+      "type": "string"
+    },
+    "URI": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Absolute",
+    "Relation",
+    "URI"
+  ]
+}

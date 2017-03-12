@@ -1,0 +1,74 @@
+{
+  "definitions": {
+    "Result": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "string"
+        },
+        "ResultCode": {
+          "type": "integer"
+        },
+        "Result": {
+          "$ref": "#/definitions/Summary"
+        }
+      },
+      "required": [
+        "Id",
+        "ResultCode",
+        "Result"
+      ]
+    },
+
+    "Summary": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MultiplayerXp": {
+          "type": "integer"
+        },
+        "CampaignXp": {
+          "type": "integer"
+        },
+        "TotalXp": {
+          "type": "integer"
+        },
+        "LastUpdatedDateUtc": {
+          "$ref": "../../common/iso-8061.schema.json"
+        },
+        "SpartanRankId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "MultiplayerXp",
+        "CampaignXp",
+        "TotalXp",
+        "LastUpdatedDateUtc",
+        "SpartanRankId"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Result"
+      }
+    },
+    "Links": {
+      "$ref": "../../common/link.schema.json"
+    }
+  },
+  "required": [
+    "Results",
+    "Links"
+  ]
+}

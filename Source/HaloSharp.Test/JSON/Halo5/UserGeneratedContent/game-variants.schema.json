@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Results": {
+      "type": "array",
+      "items": {
+        "$ref": "game-variant.schema.json"
+      }
+    },
+    "Start": {
+      "type": "integer"
+    },
+    "Count": {
+      "type": "integer"
+    },
+    "ResultCount": {
+      "type": "integer"
+    },
+    "TotalCount": {
+      "type": "integer"
+    },
+    "Links": {
+      "$ref": "../../common/link.schema.json"
+    }
+  },
+  "required": [
+    "Results",
+    "Start",
+    "Count",
+    "ResultCount",
+    "TotalCount",
+    "Links"
+  ]
+}

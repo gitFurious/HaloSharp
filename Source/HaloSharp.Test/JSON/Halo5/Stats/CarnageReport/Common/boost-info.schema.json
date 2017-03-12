@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": [ "object", "null" ],
+  "additionalProperties": false,
+  "properties": {
+    "CardConsumed": {
+      "type": "boolean"
+    },
+    "DefinitionId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "CardConsumed",
+    "DefinitionId"
+  ]
+}

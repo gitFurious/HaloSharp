@@ -1,0 +1,131 @@
+{
+  "definitions": {
+
+    "PlayerMatch": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MatchId": {
+          "type": "string"
+        },
+        "MatchType": {
+          "type": "integer"
+        },
+        "GameMode": {
+          "type": "integer"
+        },
+        "SeasonId": {
+          "type": [ "string", "null" ]
+        },
+        "PlaylistId": {
+          "type": "string"
+        },
+        "Teams": {
+          "$ref": "#/definitions/Teams"
+        },
+        "MapId": {
+          "type": "string"
+        },
+        "MatchStartDate": {
+          "$ref": "../../common/iso-8061.schema.json"
+        },
+        "PlayerMatchDuration": {
+          "type": "string"
+        },
+        "PlayerIndex": {
+          "type": "integer"
+        },
+        "TeamId": {
+          "type": "integer"
+        },
+        "TeamPlayerIndex": {
+          "type": "integer"
+        },
+        "LeaderId": {
+          "type": "integer"
+        },
+        "PlayerCompletedMatch": {
+          "type": "boolean"
+        },
+        "PlayerMatchOutcome": {
+          "type": "integer"
+        },
+        "XPProgress": {
+          "$ref": "common/experience-progress.schema.json"
+        },
+        "RatingProgress": {
+          "$ref": "common/rating-progress.schema.json"
+        }
+      },
+      "required": [
+        "MatchId",
+        "MatchType",
+        "GameMode",
+        "SeasonId",
+        "PlaylistId",
+        "Teams",
+        "MapId",
+        "MatchStartDate",
+        "PlayerMatchDuration",
+        "PlayerIndex",
+        "TeamId",
+        "TeamPlayerIndex",
+        "LeaderId",
+        "PlayerCompletedMatch",
+        "PlayerMatchOutcome",
+        "XPProgress",
+        "RatingProgress"
+      ]
+    },
+
+    "Teams": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "TeamSize": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "TeamSize"
+        ]
+      }
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Start": {
+      "type": "integer"
+    },
+    "Count": {
+      "type": "integer"
+    },
+    "ResultCount": {
+      "type": "integer"
+    },
+    "Results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PlayerMatch"
+      }
+    },
+    "Links": {
+      "$ref": "../../common/link.schema.json"
+    }
+  },
+  "required": [
+    "Start",
+    "Count",
+    "ResultCount",
+    "Results",
+    "Links"
+  ]
+}

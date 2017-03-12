@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Id": {
+      "type": "string"
+    },
+    "PreviousProgress": {
+      "type": "integer"
+    },
+    "Progress": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "Id",
+    "PreviousProgress",
+    "Progress"
+  ]
+}

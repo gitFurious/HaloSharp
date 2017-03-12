@@ -1,0 +1,5609 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 100,
+    "TotalCount": 100
+  },
+  "ContentItems": [
+    {
+      "Id": 337216,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:21Z",
+          "ModifiedUtc": "2017-02-03T19:42:00Z",
+          "PublishedUtc": "2017-02-03T19:42:00Z",
+          "Container": -1
+        },
+        "Identity": "973a0a1e012b4ddb84873f07bd23e13d",
+        "Title": "ATRIOX'S BULWARK II",
+        "Autoroute": "hw2/leaderpowers/CovStructuralShielding2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovStructuralShielding2",
+          "DisplayInfo": {
+            "Id": 336708,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:20Z",
+                "ModifiedUtc": "2017-02-03T19:40:11Z",
+                "PublishedUtc": "2017-02-03T19:40:11Z",
+                "Container": -1
+              },
+              "Identity": "b5ee6dc281444d5588e31c934e983d98",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ATRIOX'S BULWARK II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ATRIOX'S BULWARK II",
+                "Description": "Activate to create a healing area. . Gives brief invulnerability.. Heals units and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337216"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337217,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:26Z",
+          "ModifiedUtc": "2017-02-03T19:42:00Z",
+          "PublishedUtc": "2017-02-03T19:42:00Z",
+          "Container": -1
+        },
+        "Identity": "8f10e76f06dd4d6d9ef72bba58f1a251",
+        "Title": "GHOST IN THE MACHINE",
+        "Autoroute": "hw2/leaderpowers/UnscGhostInTheMachine",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscGhostInTheMachine",
+          "DisplayInfo": {
+            "Id": 336718,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:26Z",
+                "ModifiedUtc": "2017-02-03T19:40:12Z",
+                "PublishedUtc": "2017-02-03T19:40:12Z",
+                "Container": -1
+              },
+              "Identity": "d6aba9d50a984e159d11f7a878f505f7",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GHOST IN THE MACHINE Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "GHOST IN THE MACHINE",
+                "Description": "Target enemy vehicles and aircraft to temporarily take control of them."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337217"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337204,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:48Z",
+          "ModifiedUtc": "2017-02-03T19:41:57Z",
+          "PublishedUtc": "2017-02-03T19:41:57Z",
+          "Container": -1
+        },
+        "Identity": "7d8efc8ca66047bea73a32cde9159c76",
+        "Title": "VORTEX LIGHTNING II",
+        "Autoroute": "hw2/leaderpowers/CovGravityVortex2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovGravityVortex2",
+          "DisplayInfo": {
+            "Id": 336495,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:48Z",
+                "ModifiedUtc": "2017-02-03T19:39:26Z",
+                "PublishedUtc": "2017-02-03T19:39:26Z",
+                "Container": -1
+              },
+              "Identity": "f5c93644754f42a89ce0b71f9db62f35",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VORTEX LIGHTNING II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "VORTEX LIGHTNING II",
+                "Description": "Activate to create a defense weakening vortex.. Focusing down targets stuns & damages them."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337204"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337199,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:35Z",
+          "ModifiedUtc": "2017-02-03T19:41:56Z",
+          "PublishedUtc": "2017-02-03T19:41:56Z",
+          "Container": -1
+        },
+        "Identity": "10b14c910cfa46ebb592d10cd6e83c1a",
+        "Title": "SENTINEL NETWORK",
+        "Autoroute": "hw2/leaderpowers/UnscArkCleansing",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscArkCleansing",
+          "DisplayInfo": {
+            "Id": 336404,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:34Z",
+                "ModifiedUtc": "2017-02-03T19:39:11Z",
+                "PublishedUtc": "2017-02-03T19:39:11Z",
+                "Container": -1
+              },
+              "Identity": "2ee840ef30d246399994b16817ab44f0",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SENTINEL NETWORK Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SENTINEL NETWORK",
+                "Description": "Activate to call in 3 waves of Protectors.. The sentinels sweep out across the map wave by wave."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337199"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337194,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:12Z",
+          "ModifiedUtc": "2017-02-03T19:41:55Z",
+          "PublishedUtc": "2017-02-03T19:41:55Z",
+          "Container": -1
+        },
+        "Identity": "486f577d6a984b948ce437534ebb4ba0",
+        "Title": "HEAVY METAL I",
+        "Autoroute": "hw2/leaderpowers/UnscHeavyMetal01",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscHeavyMetal01",
+          "DisplayInfo": {
+            "Id": 336309,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:11Z",
+                "ModifiedUtc": "2017-02-03T19:38:52Z",
+                "PublishedUtc": "2017-02-03T19:38:52Z",
+                "Container": -1
+              },
+              "Identity": "91131ab28c2342a2818f55e811770a4b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HEAVY METAL I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "HEAVY METAL I",
+                "Description": "Target own units to give a defense boost.. Slows targeted units while active."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337194"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337195,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:12Z",
+          "ModifiedUtc": "2017-02-03T19:41:55Z",
+          "PublishedUtc": "2017-02-03T19:41:55Z",
+          "Container": -1
+        },
+        "Identity": "3373936047f7476ca0f0f347d3ab5217",
+        "Title": "SIPHON III",
+        "Autoroute": "hw2/leaderpowers/CovBuffLeech3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBuffLeech3",
+          "DisplayInfo": {
+            "Id": 336342,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:11Z",
+                "ModifiedUtc": "2017-02-03T19:38:58Z",
+                "PublishedUtc": "2017-02-03T19:38:58Z",
+                "Container": -1
+              },
+              "Identity": "929a85166e2544cbbd777f68eaba2b06",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SIPHON III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SIPHON III",
+                "Description": "Target own units to give them Siphon.. Units gain health while in combat."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337195"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337187,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:34Z",
+          "ModifiedUtc": "2017-02-03T19:41:52Z",
+          "PublishedUtc": "2017-02-03T19:41:52Z",
+          "Container": -1
+        },
+        "Identity": "3bcbe646477f45259f1a1e9c4ba18ff4",
+        "Title": "VEHICLE DROP I",
+        "Autoroute": "hw2/leaderpowers/UnscVehicleDrop1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscVehicleDrop1",
+          "DisplayInfo": {
+            "Id": 336042,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:33Z",
+                "ModifiedUtc": "2017-02-03T19:38:02Z",
+                "PublishedUtc": "2017-02-03T19:38:02Z",
+                "Container": -1
+              },
+              "Identity": "25dbc0a6ecdd49b4b68d9dd480c1edcd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE DROP I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "VEHICLE DROP I",
+                "Description": "Activate to get a deployment of 2 veteran Kodiaks."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337187"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337167,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-24T08:41:56Z",
+          "ModifiedUtc": "2017-02-03T19:41:46Z",
+          "PublishedUtc": "2017-02-03T19:41:46Z",
+          "Container": -1
+        },
+        "Identity": "1a922eb5a8cf484384db5bfcac7922c7",
+        "Title": "ROLLING ECONOMY I",
+        "Autoroute": "hw2/leaderpowers/UnscRollingEconomy1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscRollingEconomy1",
+          "DisplayInfo": {
+            "Id": 335890,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-24T08:41:55Z",
+                "ModifiedUtc": "2017-02-03T19:37:26Z",
+                "PublishedUtc": "2017-02-03T19:37:26Z",
+                "Container": -1
+              },
+              "Identity": "77df665d527743e8834400a995670b37",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ROLLING ECONOMY I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ROLLING ECONOMY I",
+                "Description": "Supply Pads, Generators, and their upgrades now have reduced build times and costs."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337167"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337164,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:17Z",
+          "ModifiedUtc": "2017-02-03T19:41:45Z",
+          "PublishedUtc": "2017-02-03T19:41:45Z",
+          "Container": -1
+        },
+        "Identity": "2421bcf2a1e442ed91c3147ba867667a",
+        "Title": "COMBAT SALVAGE",
+        "Autoroute": "hw2/leaderpowers/UnscVehicleRecycle",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscVehicleRecycle",
+          "DisplayInfo": {
+            "Id": 335864,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:16Z",
+                "ModifiedUtc": "2017-02-03T19:37:21Z",
+                "PublishedUtc": "2017-02-03T19:37:21Z",
+                "Container": -1
+              },
+              "Identity": "c6bf1034fdc14286846d4e0890293bc6",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "COMBAT SALVAGE Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "COMBAT SALVAGE",
+                "Description": "Activate to have the next 8 non-infantry units respawn at home base.. Units must die within the power's set time frame."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337164"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337165,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:51Z",
+          "ModifiedUtc": "2017-02-03T19:41:45Z",
+          "PublishedUtc": "2017-02-03T19:41:45Z",
+          "Container": -1
+        },
+        "Identity": "24396a02668e4965850e5c23c7ae0bed",
+        "Title": "FORTIFICATIONS I",
+        "Autoroute": "hw2/leaderpowers/CovLucrativeExpansion1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovLucrativeExpansion1",
+          "DisplayInfo": {
+            "Id": 335865,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:51Z",
+                "ModifiedUtc": "2017-02-03T19:37:21Z",
+                "PublishedUtc": "2017-02-03T19:37:21Z",
+                "Container": -1
+              },
+              "Identity": "b9e849d1a3804ad096ae53bf43f6e5cf",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FORTIFICATIONS I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "FORTIFICATIONS I",
+                "Description": "The Stronghold, Fortify, & turret upgrades now have reduced cost & build time.. Base level turrets, shield towers, & Outposts now cost less."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337165"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337166,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-24T08:41:57Z",
+          "ModifiedUtc": "2017-02-03T19:41:45Z",
+          "PublishedUtc": "2017-02-03T19:41:45Z",
+          "Container": -1
+        },
+        "Identity": "0e935d637bec4c70b16fec00e9d94125",
+        "Title": "ROLLING ECONOMY II",
+        "Autoroute": "hw2/leaderpowers/UnscRollingEconomy2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscRollingEconomy2",
+          "DisplayInfo": {
+            "Id": 335879,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-24T08:41:57Z",
+                "ModifiedUtc": "2017-02-03T19:37:24Z",
+                "PublishedUtc": "2017-02-03T19:37:24Z",
+                "Container": -1
+              },
+              "Identity": "ce7d00cc6ef64ad4931440a04a5a91da",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ROLLING ECONOMY II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ROLLING ECONOMY II",
+                "Description": "Supply Pads, Generators, and their upgrades now have further reduced build times and costs."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337166"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337158,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:51Z",
+          "ModifiedUtc": "2017-02-03T19:41:44Z",
+          "PublishedUtc": "2017-02-03T19:41:44Z",
+          "Container": -1
+        },
+        "Identity": "5ec4b4ac45164c8b90bb18d78772f079",
+        "Title": "MAC BLAST III",
+        "Autoroute": "hw2/leaderpowers/UnscMacBlast3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscMacBlast3",
+          "DisplayInfo": {
+            "Id": 335760,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:50Z",
+                "ModifiedUtc": "2017-02-03T19:37:02Z",
+                "PublishedUtc": "2017-02-03T19:37:02Z",
+                "Container": -1
+              },
+              "Identity": "795694bd33a247aebc891404576b11bc",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MAC BLAST III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "MAC BLAST III",
+                "Description": "Activate to fire a large kinetic slug at the battlefield.. Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337158"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337152,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:07:06Z",
+          "ModifiedUtc": "2017-02-03T19:41:43Z",
+          "PublishedUtc": "2017-02-03T19:41:43Z",
+          "Container": -1
+        },
+        "Identity": "74160ef2a9304cd390e3d9a189c6d191",
+        "Title": "SENTINEL SYNERGY",
+        "Autoroute": "hw2/leaderpowers/UnscSentinelSynergy",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscSentinelSynergy",
+          "DisplayInfo": {
+            "Id": 335716,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:07:05Z",
+                "ModifiedUtc": "2017-02-03T19:36:54Z",
+                "PublishedUtc": "2017-02-03T19:36:54Z",
+                "Container": -1
+              },
+              "Identity": "8472bb05e42045e59d66b6fb99546525",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SENTINEL SYNERGY Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SENTINEL SYNERGY",
+                "Description": "Additional Aggressors have been added to Sentinel Beacon and Ark Defense. . . All Protector Sentinels now have a small shield, increased health and damage."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337152"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337139,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:59Z",
+          "ModifiedUtc": "2017-02-03T19:41:38Z",
+          "PublishedUtc": "2017-02-03T19:41:38Z",
+          "Container": -1
+        },
+        "Identity": "55b983b6067c4688b36ad597cbf34431",
+        "Title": "BANISHED RAID III",
+        "Autoroute": "hw2/leaderpowers/CovRaidTech3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovRaidTech3",
+          "DisplayInfo": {
+            "Id": 335462,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:58Z",
+                "ModifiedUtc": "2017-02-03T19:36:04Z",
+                "PublishedUtc": "2017-02-03T19:36:04Z",
+                "Container": -1
+              },
+              "Identity": "d71043523ab24e82a118a1911aad880c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "BANISHED RAID III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "BANISHED RAID III",
+                "Description": "Capture speed for all units is now faster.. Ghosts can now capture points.. . Infantry & Vehicle sight range is now increased.. Ghosts, Wraiths, Choppers & Marauders are now faster."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337139"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337132,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:20Z",
+          "ModifiedUtc": "2017-02-03T19:41:37Z",
+          "PublishedUtc": "2017-02-03T19:41:37Z",
+          "Container": -1
+        },
+        "Identity": "5339698f055f434c847d38a2104a6762",
+        "Title": "PELICAN TRANSPORT",
+        "Autoroute": "hw2/leaderpowers/UnscForgePelicanTransport",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscForgePelicanTransport",
+          "DisplayInfo": {
+            "Id": 335446,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:20Z",
+                "ModifiedUtc": "2017-02-03T19:36:01Z",
+                "PublishedUtc": "2017-02-03T19:36:01Z",
+                "Container": -1
+              },
+              "Identity": "7c9f8cce36914c31b529733da01ef05a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "PELICAN TRANSPORT Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "PELICAN TRANSPORT",
+                "Description": "Activate to transport own units anywhere within range."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337132"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337129,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:07:08Z",
+          "ModifiedUtc": "2017-02-03T19:41:35Z",
+          "PublishedUtc": "2017-02-03T19:41:35Z",
+          "Container": -1
+        },
+        "Identity": "9d26cd3ea3d246d5a709b35d0dd03660",
+        "Title": "ACC. ASSEMBLY II",
+        "Autoroute": "hw2/leaderpowers/UnscVehicleTech2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscVehicleTech2",
+          "DisplayInfo": {
+            "Id": 335417,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:07:07Z",
+                "ModifiedUtc": "2017-02-03T19:35:56Z",
+                "PublishedUtc": "2017-02-03T19:35:56Z",
+                "Container": -1
+              },
+              "Identity": "278d1d26c45a4f1c90c880fdb41a2b63",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ACC. ASSEMBLY II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ACC. ASSEMBLY II",
+                "Description": "Vehicle production is now even cheaper and faster."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337129"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337101,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:56Z",
+          "ModifiedUtc": "2017-02-03T19:41:27Z",
+          "PublishedUtc": "2017-02-03T19:41:28Z",
+          "Container": -1
+        },
+        "Identity": "30689c2902274a459779e6c93b869f75",
+        "Title": "TURRET DROP I",
+        "Autoroute": "hw2/leaderpowers/UnscTurretDrop1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscTurretDrop1",
+          "DisplayInfo": {
+            "Id": 335211,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:55Z",
+                "ModifiedUtc": "2017-02-03T19:35:18Z",
+                "PublishedUtc": "2017-02-03T19:35:18Z",
+                "Container": -1
+              },
+              "Identity": "97cb13d143584dbda7c3ff35d895d6a8",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "TURRET DROP I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "TURRET DROP I",
+                "Description": "Activate to drop a temporary turret into battle."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337101"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337102,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:01Z",
+          "ModifiedUtc": "2017-02-03T19:41:28Z",
+          "PublishedUtc": "2017-02-03T19:41:28Z",
+          "Container": -1
+        },
+        "Identity": "2f30974d3eb64170a52034ddb37b7989",
+        "Title": "PLASMA MINES II",
+        "Autoroute": "hw2/leaderpowers/CovPlasmaMines2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovPlasmaMines2",
+          "DisplayInfo": {
+            "Id": 335218,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:00Z",
+                "ModifiedUtc": "2017-02-03T19:35:20Z",
+                "PublishedUtc": "2017-02-03T19:35:20Z",
+                "Container": -1
+              },
+              "Identity": "e28bd8ddc55647c3853886862a45edab",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "PLASMA MINES II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "PLASMA MINES II",
+                "Description": "Activate to drop a line of cloaked mines.. Once armed, mines explode on contact.. Does not damage air units. "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337102"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337105,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:47Z",
+          "ModifiedUtc": "2017-02-03T19:41:28Z",
+          "PublishedUtc": "2017-02-03T19:41:28Z",
+          "Container": -1
+        },
+        "Identity": "29a90d37b9b94e1bbd7e78dd8e0ea3aa",
+        "Title": "VORTEX LIGHTNING I",
+        "Autoroute": "hw2/leaderpowers/CovGravityVortex1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovGravityVortex1",
+          "DisplayInfo": {
+            "Id": 335242,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:45Z",
+                "ModifiedUtc": "2017-02-03T19:35:23Z",
+                "PublishedUtc": "2017-02-03T19:35:23Z",
+                "Container": -1
+              },
+              "Identity": "ecefb43e9c594e7ca0ed78f4b9a1a0d0",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VORTEX LIGHTNING I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "VORTEX LIGHTNING I",
+                "Description": "Activate to create a defense weakening vortex.. Focusing down targets stuns & damages them."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337105"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337092,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:44Z",
+          "ModifiedUtc": "2017-02-03T19:41:26Z",
+          "PublishedUtc": "2017-02-03T19:41:26Z",
+          "Container": -1
+        },
+        "Identity": "4b47c69c5f114c90aa5055a51cdbefef",
+        "Title": "PROTECTOR SENTINEL",
+        "Autoroute": "hw2/leaderpowers/UNSCAggressorSentinel",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UNSCAggressorSentinel",
+          "DisplayInfo": {
+            "Id": 335099,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:44Z",
+                "ModifiedUtc": "2017-02-03T19:35:00Z",
+                "PublishedUtc": "2017-02-03T19:35:00Z",
+                "Container": -1
+              },
+              "Identity": "c45de4c92b0549dfb785ad3c3efa1266",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "PROTECTOR SENTINEL Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "PROTECTOR SENTINEL",
+                "Description": "Protector Sentinels have been unlocked for purchase at base."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337092"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337085,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:32Z",
+          "ModifiedUtc": "2017-02-03T19:41:23Z",
+          "PublishedUtc": "2017-02-03T19:41:23Z",
+          "Container": -1
+        },
+        "Identity": "64121f290f794ba69b0b6d876dea39a5",
+        "Title": "ARK DEFENSE II",
+        "Autoroute": "hw2/leaderpowers/UnscArkDefense2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscArkDefense2",
+          "DisplayInfo": {
+            "Id": 335043,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:31Z",
+                "ModifiedUtc": "2017-02-03T19:34:48Z",
+                "PublishedUtc": "2017-02-03T19:34:48Z",
+                "Container": -1
+              },
+              "Identity": "994a3e88bce44553b7137f8282e1e05d",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ARK DEFENSE II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ARK DEFENSE II",
+                "Description": "Activate to call in eight Aggressors.. The Sentinels temporarily guard a set area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337085"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 337061,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:08Z",
+          "ModifiedUtc": "2017-02-03T19:41:19Z",
+          "PublishedUtc": "2017-02-03T19:41:19Z",
+          "Container": -1
+        },
+        "Identity": "bfe955de0a634186bf14bd0bd1bbfda2",
+        "Title": "RESTORATION DRONES II",
+        "Autoroute": "hw2/leaderpowers/UnscMedDrones2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscMedDrones2",
+          "DisplayInfo": {
+            "Id": 334897,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:08Z",
+                "ModifiedUtc": "2017-02-03T19:34:22Z",
+                "PublishedUtc": "2017-02-03T19:34:22Z",
+                "Container": -1
+              },
+              "Identity": "ebb9c60a75bf44d89136ed3d5d6dbe90",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "RESTORATION DRONES II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "RESTORATION DRONES II",
+                "Description": "Activate to heal all buildings and units within a targeted area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/337061"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336988,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:27Z",
+          "ModifiedUtc": "2017-02-03T19:41:07Z",
+          "PublishedUtc": "2017-02-03T19:41:07Z",
+          "Container": -1
+        },
+        "Identity": "e84857cf6ff0456eb39d7b3f692759d8",
+        "Title": "SCATTER BOMB II",
+        "Autoroute": "hw2/leaderpowers/UnscScatterbomb2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscScatterbomb2",
+          "DisplayInfo": {
+            "Id": 335583,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:26Z",
+                "ModifiedUtc": "2017-02-03T19:36:31Z",
+                "PublishedUtc": "2017-02-03T19:36:32Z",
+                "Container": -1
+              },
+              "Identity": "e484dfa1ddfa4171b89808217b2be287",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SCATTER BOMB II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SCATTER BOMB II",
+                "Description": "Activate to drop a scattered salvo of bombs.. Damages all unit types & buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336988"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336992,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:07Z",
+          "ModifiedUtc": "2017-02-03T19:41:07Z",
+          "PublishedUtc": "2017-02-03T19:41:07Z",
+          "Container": -1
+        },
+        "Identity": "e446b468f96b4f8faff5f0f7aedfbe85",
+        "Title": "RESTORATION DRONES I",
+        "Autoroute": "hw2/leaderpowers/UnscMedDrones1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscMedDrones1",
+          "DisplayInfo": {
+            "Id": 336356,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:06Z",
+                "ModifiedUtc": "2017-02-03T19:39:03Z",
+                "PublishedUtc": "2017-02-03T19:39:03Z",
+                "Container": -1
+              },
+              "Identity": "29a4a76b12b5497d8c3981632ccdf1d2",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "RESTORATION DRONES I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "RESTORATION DRONES I",
+                "Description": "Activate to heal all buildings and units within a targeted area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336992"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336985,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:45Z",
+          "ModifiedUtc": "2017-02-03T19:41:06Z",
+          "PublishedUtc": "2017-02-03T19:41:06Z",
+          "Container": -1
+        },
+        "Identity": "eaf170b57e8c43fa837fe8bcfd757ab4",
+        "Title": "ERADICATION",
+        "Autoroute": "hw2/leaderpowers/CovPlanetaryCleansing",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovPlanetaryCleansing",
+          "DisplayInfo": {
+            "Id": 335123,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:44Z",
+                "ModifiedUtc": "2017-02-03T19:35:04Z",
+                "PublishedUtc": "2017-02-03T19:35:04Z",
+                "Container": -1
+              },
+              "Identity": "48ab435a231d48afac376ef00dcfe43c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ERADICATION Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ERADICATION",
+                "Description": "Activate to unleash 8 converging plasma beams.. Once converged a massive blast is triggered.. Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336985"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336973,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:37Z",
+          "ModifiedUtc": "2017-02-03T19:41:04Z",
+          "PublishedUtc": "2017-02-03T19:41:04Z",
+          "Container": -1
+        },
+        "Identity": "f769edd6cf19409c840038bb26469da0",
+        "Title": "DISPLACEMENT",
+        "Autoroute": "hw2/leaderpowers/CovDisplacement",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovDisplacement",
+          "DisplayInfo": {
+            "Id": 334978,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:36Z",
+                "ModifiedUtc": "2017-02-03T19:34:37Z",
+                "PublishedUtc": "2017-02-03T19:34:37Z",
+                "Container": -1
+              },
+              "Identity": "87ad0c6c320f48c296e80c36bc23394f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DISPLACEMENT Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "DISPLACEMENT",
+                "Description": "Target enemy units to teleport them.. Does not require vision."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336973"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336936,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:41Z",
+          "ModifiedUtc": "2017-02-03T19:40:55Z",
+          "PublishedUtc": "2017-02-03T19:40:55Z",
+          "Container": -1
+        },
+        "Identity": "2eef74b9e7e347918455f07aeef9b830",
+        "Title": "GLASSING BEAM II",
+        "Autoroute": "hw2/leaderpowers/CovCleansingBeamPath2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovCleansingBeamPath2",
+          "DisplayInfo": {
+            "Id": 335350,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:40Z",
+                "ModifiedUtc": "2017-02-03T19:35:41Z",
+                "PublishedUtc": "2017-02-03T19:35:41Z",
+                "Container": -1
+              },
+              "Identity": "0595542f7fca483aac5f3f6ae61b9ce8",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GLASSING BEAM II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "GLASSING BEAM II",
+                "Description": "Activate to fire a controllable plasma beam.. Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336936"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336937,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:25Z",
+          "ModifiedUtc": "2017-02-03T19:40:54Z",
+          "PublishedUtc": "2017-02-03T19:40:55Z",
+          "Container": -1
+        },
+        "Identity": "2850e671b9aa45b78ff9c1ffaf96a7ad",
+        "Title": "UNBREAKABLE",
+        "Autoroute": "hw2/leaderpowers/CovInvulnerability",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovInvulnerability",
+          "DisplayInfo": {
+            "Id": 336363,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:24Z",
+                "ModifiedUtc": "2017-02-03T19:39:03Z",
+                "PublishedUtc": "2017-02-03T19:39:03Z",
+                "Container": -1
+              },
+              "Identity": "65930c2cf33a4fdd8551b3cb01210856",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UNBREAKABLE Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "UNBREAKABLE",
+                "Description": "Activate to make all your deployed units temporarily invulnerable."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336937"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336939,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:44Z",
+          "ModifiedUtc": "2017-02-03T19:40:55Z",
+          "PublishedUtc": "2017-02-03T19:40:55Z",
+          "Container": -1
+        },
+        "Identity": "2aee08790e834da08e092217f3c10123",
+        "Title": "HOLOGRAPHIC DECOY II",
+        "Autoroute": "hw2/leaderpowers/UnscHoloDecoy2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscHoloDecoy2",
+          "DisplayInfo": {
+            "Id": 336347,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:44Z",
+                "ModifiedUtc": "2017-02-03T19:39:00Z",
+                "PublishedUtc": "2017-02-03T19:39:00Z",
+                "Container": -1
+              },
+              "Identity": "4be843de96fe482f8dbeb6d9f3fdc407",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HOLOGRAPHIC DECOY II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "HOLOGRAPHIC DECOY II",
+                "Description": "Target own units to create decoys.. Use decoys to scout and trick enemy turrets and units."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336939"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336930,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:19Z",
+          "ModifiedUtc": "2017-02-03T19:40:54Z",
+          "PublishedUtc": "2017-02-03T19:40:54Z",
+          "Container": -1
+        },
+        "Identity": "3250e2ff4a454520afb1ad5fa358acf6",
+        "Title": "HEAVY METAL III",
+        "Autoroute": "hw2/leaderpowers/UnscHeavyMetal03",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscHeavyMetal03",
+          "DisplayInfo": {
+            "Id": 335195,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:18Z",
+                "ModifiedUtc": "2017-02-03T19:35:16Z",
+                "PublishedUtc": "2017-02-03T19:35:16Z",
+                "Container": -1
+              },
+              "Identity": "f6fa5f77861544f7acc04c8e21b05ef4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HEAVY METAL III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "HEAVY METAL III",
+                "Description": "Target own units to give a defense boost.. Slows targeted units while active."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336930"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336918,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:48Z",
+          "ModifiedUtc": "2017-02-03T19:40:52Z",
+          "PublishedUtc": "2017-02-03T19:40:52Z",
+          "Container": -1
+        },
+        "Identity": "42a8970e59d3418fb8a934b218eb9bb8",
+        "Title": "KILLING FRENZY",
+        "Autoroute": "hw2/leaderpowers/CovBloodlust",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBloodlust",
+          "DisplayInfo": {
+            "Id": 335805,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:47Z",
+                "ModifiedUtc": "2017-02-03T19:37:10Z",
+                "PublishedUtc": "2017-02-03T19:37:10Z",
+                "Container": -1
+              },
+              "Identity": "9da38941240f4c67918c8ae10efb548a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "KILLING FRENZY Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "KILLING FRENZY",
+                "Description": "All units now gain damage boosts when they kill enemies."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336918"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336913,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:50Z",
+          "ModifiedUtc": "2017-02-03T19:40:51Z",
+          "PublishedUtc": "2017-02-03T19:40:51Z",
+          "Container": -1
+        },
+        "Identity": "4d52efae9bd840c09d341d47ff550169",
+        "Title": "SPIRIT ASSAULT I",
+        "Autoroute": "hw2/leaderpowers/CovSpiritGunship1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovSpiritGunship1",
+          "DisplayInfo": {
+            "Id": 335227,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:49Z",
+                "ModifiedUtc": "2017-02-03T19:35:21Z",
+                "PublishedUtc": "2017-02-03T19:35:21Z",
+                "Container": -1
+              },
+              "Identity": "279c43e5d98c4b39b81541cf9739e478",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SPIRIT ASSAULT I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SPIRIT ASSAULT I",
+                "Description": "Activate to get a drop-off of: . 2 Suicide Grunts."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336913"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336915,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:59Z",
+          "ModifiedUtc": "2017-02-03T19:40:51Z",
+          "PublishedUtc": "2017-02-03T19:40:51Z",
+          "Container": -1
+        },
+        "Identity": "499f100b700d4baaa4244cf73513c183",
+        "Title": "PLASMA MINES I",
+        "Autoroute": "hw2/leaderpowers/CovPlasmaMines1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovPlasmaMines1",
+          "DisplayInfo": {
+            "Id": 335130,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:59Z",
+                "ModifiedUtc": "2017-02-03T19:35:05Z",
+                "PublishedUtc": "2017-02-03T19:35:05Z",
+                "Container": -1
+              },
+              "Identity": "445eb863ae3a4acca087e63807bc0e64",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "PLASMA MINES I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "PLASMA MINES I",
+                "Description": "Activate to drop a line of cloaked mines.. Once armed, mines explode on contact.. Does not damage air units. "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336915"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336907,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:14Z",
+          "ModifiedUtc": "2017-02-03T19:40:49Z",
+          "PublishedUtc": "2017-02-03T19:40:50Z",
+          "Container": -1
+        },
+        "Identity": "748c2411458942b89b329e7b92451308",
+        "Title": "HEAVY METAL II",
+        "Autoroute": "hw2/leaderpowers/UnscHeavyMetal02",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscHeavyMetal02",
+          "DisplayInfo": {
+            "Id": 335753,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:13Z",
+                "ModifiedUtc": "2017-02-03T19:37:01Z",
+                "PublishedUtc": "2017-02-03T19:37:01Z",
+                "Container": -1
+              },
+              "Identity": "626530331a6144a1b7a69de4d68ed376",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HEAVY METAL II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "HEAVY METAL II",
+                "Description": "Target own units to give a defense boost.. Slows targeted units while active."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336907"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336914,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:54Z",
+          "ModifiedUtc": "2017-02-03T19:40:50Z",
+          "PublishedUtc": "2017-02-03T19:40:50Z",
+          "Container": -1
+        },
+        "Identity": "48ed04aab6fc48cf8556a12c5e742316",
+        "Title": "SPIRIT ASSAULT III",
+        "Autoroute": "hw2/leaderpowers/CovSpiritGunship3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovSpiritGunship3",
+          "DisplayInfo": {
+            "Id": 335788,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:53Z",
+                "ModifiedUtc": "2017-02-03T19:37:06Z",
+                "PublishedUtc": "2017-02-03T19:37:07Z",
+                "Container": -1
+              },
+              "Identity": "8871915466834ac2a87a5768a6daa839",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SPIRIT ASSAULT III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SPIRIT ASSAULT III",
+                "Description": "Activate to get a drop-off of: . 2 upgraded veteran Suicide Grunts.. 2 upgraded veteran Jump Pack Brutes."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336914"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336905,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:07:07Z",
+          "ModifiedUtc": "2017-02-03T19:40:49Z",
+          "PublishedUtc": "2017-02-03T19:40:49Z",
+          "Container": -1
+        },
+        "Identity": "7622304a148d431181f2acffed59f9bc",
+        "Title": "ACC. ASSEMBLY I",
+        "Autoroute": "hw2/leaderpowers/UnscVehicleTech1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscVehicleTech1",
+          "DisplayInfo": {
+            "Id": 336282,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:07:06Z",
+                "ModifiedUtc": "2017-02-03T19:38:47Z",
+                "PublishedUtc": "2017-02-03T19:38:48Z",
+                "Container": -1
+              },
+              "Identity": "5552b1c77dd14054832a22565a66a371",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ACC. ASSEMBLY I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ACC. ASSEMBLY I",
+                "Description": "Vehicle production is now cheaper and faster."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336905"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336892,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:28Z",
+          "ModifiedUtc": "2017-02-03T19:40:45Z",
+          "PublishedUtc": "2017-02-03T19:40:45Z",
+          "Container": -1
+        },
+        "Identity": "d6a3684113cf430cbbe15f1ed94e9b21",
+        "Title": "CLOSE AIR SUPPORT",
+        "Autoroute": "hw2/leaderpowers/UnscPelicanGunship",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscPelicanGunship",
+          "DisplayInfo": {
+            "Id": 335159,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:27Z",
+                "ModifiedUtc": "2017-02-03T19:35:09Z",
+                "PublishedUtc": "2017-02-03T19:35:10Z",
+                "Container": -1
+              },
+              "Identity": "3f42912757ff43f2a0598f2c071e588a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "CLOSE AIR SUPPORT Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "CLOSE AIR SUPPORT",
+                "Description": "Activate to call in 4 Pelican Gunships.. The Pelicans temporarily guard a set area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336892"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336881,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:07:01Z",
+          "ModifiedUtc": "2017-02-03T19:40:42Z",
+          "PublishedUtc": "2017-02-03T19:40:43Z",
+          "Container": -1
+        },
+        "Identity": "0cc93b08d4c44ce9a8d13f5603cb9575",
+        "Title": "R&D II",
+        "Autoroute": "hw2/leaderpowers/UnscResearchAndDevelopment2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscResearchAndDevelopment2",
+          "DisplayInfo": {
+            "Id": 336423,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:07:00Z",
+                "ModifiedUtc": "2017-02-03T19:39:14Z",
+                "PublishedUtc": "2017-02-03T19:39:14Z",
+                "Container": -1
+              },
+              "Identity": "878e68c06b9c478ba8b369ded2ef1294",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "R&D II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "R&D II",
+                "Description": "Global infantry, vehicle, & aircraft upgrades now have further reduced cost & research time.. Turrets now have improved shields."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336881"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336876,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:56Z",
+          "ModifiedUtc": "2017-02-03T19:40:42Z",
+          "PublishedUtc": "2017-02-03T19:40:42Z",
+          "Container": -1
+        },
+        "Identity": "0f1a2f7f744d4275aa7848fbd2843aec",
+        "Title": "UNSC RAID II",
+        "Autoroute": "hw2/leaderpowers/UnscRaidTech2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscRaidTech2",
+          "DisplayInfo": {
+            "Id": 335294,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:55Z",
+                "ModifiedUtc": "2017-02-03T19:35:32Z",
+                "PublishedUtc": "2017-02-03T19:35:32Z",
+                "Container": -1
+              },
+              "Identity": "9fd0c7c033344e0a98e358bc1d43bbb1",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UNSC RAID II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "UNSC RAID II",
+                "Description": "Capture speeds for all units is now faster.. Jackrabbits can now capture points.. . All infantry now move even faster."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336876"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336877,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:49Z",
+          "ModifiedUtc": "2017-02-03T19:40:42Z",
+          "PublishedUtc": "2017-02-03T19:40:42Z",
+          "Container": -1
+        },
+        "Identity": "1170356d4f4142868f0d11692f5d210d",
+        "Title": "MAC BLAST II",
+        "Autoroute": "hw2/leaderpowers/UnscMacBlast2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscMacBlast2",
+          "DisplayInfo": {
+            "Id": 336416,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:48Z",
+                "ModifiedUtc": "2017-02-03T19:39:13Z",
+                "PublishedUtc": "2017-02-03T19:39:13Z",
+                "Container": -1
+              },
+              "Identity": "c90a1749beaf4d0eb1377abb65e91618",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MAC BLAST II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "MAC BLAST II",
+                "Description": "Activate to fire a large kinetic slug at the battlefield.. Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336877"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336872,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:54Z",
+          "ModifiedUtc": "2017-02-03T19:40:41Z",
+          "PublishedUtc": "2017-02-03T19:40:41Z",
+          "Container": -1
+        },
+        "Identity": "14eebee65f1b42dd86301e00e51ed3c7",
+        "Title": "UNSC RAID I",
+        "Autoroute": "hw2/leaderpowers/UnscRaidTech1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscRaidTech1",
+          "DisplayInfo": {
+            "Id": 336398,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:54Z",
+                "ModifiedUtc": "2017-02-03T19:39:10Z",
+                "PublishedUtc": "2017-02-03T19:39:10Z",
+                "Container": -1
+              },
+              "Identity": "67eaa08154aa4a5dbb10e5d2dfe577b0",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "UNSC RAID I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "UNSC RAID I",
+                "Description": "Capture speeds for all units is now faster.. All infantry now move faster."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336872"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336873,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:33Z",
+          "ModifiedUtc": "2017-02-03T19:40:40Z",
+          "PublishedUtc": "2017-02-03T19:40:41Z",
+          "Container": -1
+        },
+        "Identity": "07dcf0f4442044df8a424957d19c7ac5",
+        "Title": "ARK DEFENSE III",
+        "Autoroute": "hw2/leaderpowers/UnscArkDefense3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscArkDefense3",
+          "DisplayInfo": {
+            "Id": 335313,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:33Z",
+                "ModifiedUtc": "2017-02-03T19:35:35Z",
+                "PublishedUtc": "2017-02-03T19:35:35Z",
+                "Container": -1
+              },
+              "Identity": "7d0d7b4e7dcd4798b0f8fa64e39677aa",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ARK DEFENSE III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ARK DEFENSE III",
+                "Description": "Activate to call in ten Aggressors.. The Sentinels temporarily guard a set area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336873"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336875,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:54Z",
+          "ModifiedUtc": "2017-02-03T19:40:41Z",
+          "PublishedUtc": "2017-02-03T19:40:41Z",
+          "Container": -1
+        },
+        "Identity": "1564879dc5ae4b9e9b6b3344156cb17b",
+        "Title": "ODST DROP",
+        "Autoroute": "hw2/leaderpowers/UnscOdstDrop",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscOdstDrop",
+          "DisplayInfo": {
+            "Id": 335281,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:54Z",
+                "ModifiedUtc": "2017-02-03T19:35:30Z",
+                "PublishedUtc": "2017-02-03T19:35:30Z",
+                "Container": -1
+              },
+              "Identity": "52aa1e8d435244c99dc3beb5ee9593d9",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ODST DROP Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ODST DROP",
+                "Description": "Activate to drop an ODST squad into battle."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336875"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336862,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:23Z",
+          "ModifiedUtc": "2017-02-03T19:40:39Z",
+          "PublishedUtc": "2017-02-03T19:40:39Z",
+          "Container": -1
+        },
+        "Identity": "69e113fc8eed4208a8fd3d1f8a9731e6",
+        "Title": "ATRIOX'S BULWARK III",
+        "Autoroute": "hw2/leaderpowers/CovStructuralShielding3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovStructuralShielding3",
+          "DisplayInfo": {
+            "Id": 335320,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:22Z",
+                "ModifiedUtc": "2017-02-03T19:35:37Z",
+                "PublishedUtc": "2017-02-03T19:35:37Z",
+                "Container": -1
+              },
+              "Identity": "0d277d7c528c4d9ab9be2d1e83de6293",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ATRIOX'S BULWARK III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ATRIOX'S BULWARK III",
+                "Description": "Activate to create a healing area. . Gives brief invulnerability.. Heals units and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336862"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336865,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:43Z",
+          "ModifiedUtc": "2017-02-03T19:40:39Z",
+          "PublishedUtc": "2017-02-03T19:40:39Z",
+          "Container": -1
+        },
+        "Identity": "53325aa04ad54385b7d5003aec06425b",
+        "Title": "GLASSING BEAM III",
+        "Autoroute": "hw2/leaderpowers/CovCleansingBeamPath3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovCleansingBeamPath3",
+          "DisplayInfo": {
+            "Id": 335192,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:42Z",
+                "ModifiedUtc": "2017-02-03T19:35:15Z",
+                "PublishedUtc": "2017-02-03T19:35:15Z",
+                "Container": -1
+              },
+              "Identity": "320266bafeec403cb72f6a42100a81df",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GLASSING BEAM III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "GLASSING BEAM III",
+                "Description": "Activate to fire a controllable plasma beam.. Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336865"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336852,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:07:00Z",
+          "ModifiedUtc": "2017-02-03T19:40:37Z",
+          "PublishedUtc": "2017-02-03T19:40:37Z",
+          "Container": -1
+        },
+        "Identity": "818697074aea4a7884890cc447430701",
+        "Title": "R&D I",
+        "Autoroute": "hw2/leaderpowers/UnscResearchAndDevelopment1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscResearchAndDevelopment1",
+          "DisplayInfo": {
+            "Id": 335074,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:59Z",
+                "ModifiedUtc": "2017-02-03T19:34:56Z",
+                "PublishedUtc": "2017-02-03T19:34:56Z",
+                "Container": -1
+              },
+              "Identity": "55b2fb3cd2b642948b7c53ed20e066dd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "R&D I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "R&D I",
+                "Description": "Global infantry, vehicle, & aircraft upgrades now have reduced cost & research time.. Turrets now have shields."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336852"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336854,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:10Z",
+          "ModifiedUtc": "2017-02-03T19:40:37Z",
+          "PublishedUtc": "2017-02-03T19:40:37Z",
+          "Container": -1
+        },
+        "Identity": "7e98e20b54d04d5db469a394530bf369",
+        "Title": "RESTORATION DRONES III",
+        "Autoroute": "hw2/leaderpowers/UnscMedDrones3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscMedDrones3",
+          "DisplayInfo": {
+            "Id": 335053,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:09Z",
+                "ModifiedUtc": "2017-02-03T19:34:51Z",
+                "PublishedUtc": "2017-02-03T19:34:51Z",
+                "Container": -1
+              },
+              "Identity": "5f4049e284104eb6965f8d0c9567c022",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "RESTORATION DRONES III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "RESTORATION DRONES III",
+                "Description": "Activate to heal all buildings and units within a targeted area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336854"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336855,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:28Z",
+          "ModifiedUtc": "2017-02-03T19:40:37Z",
+          "PublishedUtc": "2017-02-03T19:40:37Z",
+          "Container": -1
+        },
+        "Identity": "7a869904c500454baa3d88cf0dc72ad1",
+        "Title": "TACTICAL GATEWAY",
+        "Autoroute": "hw2/leaderpowers/CovSlipstreamRift",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovSlipstreamRift",
+          "DisplayInfo": {
+            "Id": 334993,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:27Z",
+                "ModifiedUtc": "2017-02-03T19:34:39Z",
+                "PublishedUtc": "2017-02-03T19:34:39Z",
+                "Container": -1
+              },
+              "Identity": "9bfbeb6977ab44b4a3553d16c5888a53",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "TACTICAL GATEWAY Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "TACTICAL GATEWAY",
+                "Description": "Activate to place two connected teleporation nodes. . Can be used by all players."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336855"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336848,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:34Z",
+          "ModifiedUtc": "2017-02-03T19:40:36Z",
+          "PublishedUtc": "2017-02-03T19:40:36Z",
+          "Container": -1
+        },
+        "Identity": "83380b6183724220a57a3a0d9cd6bd86",
+        "Title": "TELEPORT I",
+        "Autoroute": "hw2/leaderpowers/CovTeleport1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovTeleport1",
+          "DisplayInfo": {
+            "Id": 335266,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:33Z",
+                "ModifiedUtc": "2017-02-03T19:35:28Z",
+                "PublishedUtc": "2017-02-03T19:35:28Z",
+                "Container": -1
+              },
+              "Identity": "1b53baa9b87d41a5970a60b2ec4d5b3e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "TELEPORT I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "TELEPORT I",
+                "Description": "Target own units to teleport to any location within range.. Does not require vision."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336848"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336851,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:49Z",
+          "ModifiedUtc": "2017-02-03T19:40:36Z",
+          "PublishedUtc": "2017-02-03T19:40:36Z",
+          "Container": -1
+        },
+        "Identity": "814cf2051a734f66bf82677f3d16e882",
+        "Title": "BATTLE HARDENED I",
+        "Autoroute": "hw2/leaderpowers/CutterBattleHardened1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CutterBattleHardened1",
+          "DisplayInfo": {
+            "Id": 335023,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:48Z",
+                "ModifiedUtc": "2017-02-03T19:34:44Z",
+                "PublishedUtc": "2017-02-03T19:34:44Z",
+                "Container": -1
+              },
+              "Identity": "679e12a50ebd4673be3537008b23f477",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "BATTLE HARDENED I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "BATTLE HARDENED I",
+                "Description": "All units now gain veterancy faster."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336851"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336843,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:10Z",
+          "ModifiedUtc": "2017-02-03T19:40:35Z",
+          "PublishedUtc": "2017-02-03T19:40:35Z",
+          "Container": -1
+        },
+        "Identity": "871c3bc759644dd5a01b8ede2dfeab30",
+        "Title": "REPAIR",
+        "Autoroute": "hw2/leaderpowers/_Repair",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "_Repair",
+          "DisplayInfo": {
+            "Id": 336220,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:08Z",
+                "ModifiedUtc": "2017-02-03T19:38:36Z",
+                "PublishedUtc": "2017-02-03T19:38:36Z",
+                "Container": -1
+              },
+              "Identity": "ed044ab43aec4aebbe46c556b3cf82b6",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "REPAIR Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "REPAIR",
+                "Description": "Creates a short-term rapid healing zone."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336843"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336847,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:58Z",
+          "ModifiedUtc": "2017-02-03T19:40:35Z",
+          "PublishedUtc": "2017-02-03T19:40:35Z",
+          "Container": -1
+        },
+        "Identity": "85e6e497aa8e45c5afff30fc45523ba3",
+        "Title": "TURRET DROP II",
+        "Autoroute": "hw2/leaderpowers/UnscTurretDrop2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscTurretDrop2",
+          "DisplayInfo": {
+            "Id": 336400,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:57Z",
+                "ModifiedUtc": "2017-02-03T19:39:10Z",
+                "PublishedUtc": "2017-02-03T19:39:10Z",
+                "Container": -1
+              },
+              "Identity": "19081b95001f4496816c0cd64ef7fa9c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "TURRET DROP II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "TURRET DROP II",
+                "Description": "Activate to drop a temporary turret into battle."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336847"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336838,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:08Z",
+          "ModifiedUtc": "2017-02-03T19:40:34Z",
+          "PublishedUtc": "2017-02-03T19:40:34Z",
+          "Container": -1
+        },
+        "Identity": "98fa73f6f1c540a59f858c21750f90a7",
+        "Title": "SIPHON I",
+        "Autoroute": "hw2/leaderpowers/CovBuffLeech1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBuffLeech1",
+          "DisplayInfo": {
+            "Id": 335349,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:07Z",
+                "ModifiedUtc": "2017-02-03T19:35:41Z",
+                "PublishedUtc": "2017-02-03T19:35:41Z",
+                "Container": -1
+              },
+              "Identity": "05563870e0364273932c6966e4655a46",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SIPHON I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SIPHON I",
+                "Description": "Target own units to give them Siphon.. Units gain health while in combat."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336838"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336840,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:01Z",
+          "ModifiedUtc": "2017-02-03T19:40:34Z",
+          "PublishedUtc": "2017-02-03T19:40:34Z",
+          "Container": -1
+        },
+        "Identity": "8cbed53e5d0946d08390059aa63f659c",
+        "Title": "CYCLOPS DROP",
+        "Autoroute": "hw2/leaderpowers/UnscCyclopsDrop",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscCyclopsDrop",
+          "DisplayInfo": {
+            "Id": 336732,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:00Z",
+                "ModifiedUtc": "2017-02-03T19:40:15Z",
+                "PublishedUtc": "2017-02-03T19:40:15Z",
+                "Container": -1
+              },
+              "Identity": "bbbd94b589c148e2b792c867e85e02f4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "CYCLOPS DROP Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "CYCLOPS DROP",
+                "Description": "Activate to drop a veteran Cyclops into battle."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336840"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336842,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:46Z",
+          "ModifiedUtc": "2017-02-03T19:40:34Z",
+          "PublishedUtc": "2017-02-03T19:40:34Z",
+          "Container": -1
+        },
+        "Identity": "86accb329fd749508631d67acd70535c",
+        "Title": "BOUNDLESS SIPHON",
+        "Autoroute": "hw2/leaderpowers/CovBoundlessLeech",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBoundlessLeech",
+          "DisplayInfo": {
+            "Id": 335692,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:45Z",
+                "ModifiedUtc": "2017-02-03T19:36:50Z",
+                "PublishedUtc": "2017-02-03T19:36:50Z",
+                "Container": -1
+              },
+              "Identity": "814aae4fbbb04a9495bceb6e4d96c853",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "BOUNDLESS SIPHON Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "BOUNDLESS SIPHON",
+                "Description": "All units now have a permanent minor health siphon. . Activates in damaging enemy units."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336842"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336835,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:35Z",
+          "ModifiedUtc": "2017-02-03T19:40:33Z",
+          "PublishedUtc": "2017-02-03T19:40:33Z",
+          "Container": -1
+        },
+        "Identity": "98a52963b12241c3b32733ceeea1c592",
+        "Title": "TELEPORT II",
+        "Autoroute": "hw2/leaderpowers/CovTeleport2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovTeleport2",
+          "DisplayInfo": {
+            "Id": 335742,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:35Z",
+                "ModifiedUtc": "2017-02-03T19:36:59Z",
+                "PublishedUtc": "2017-02-03T19:36:59Z",
+                "Container": -1
+              },
+              "Identity": "65c1ccacd18c4f43807bc3287638fb0e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "TELEPORT II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "TELEPORT II",
+                "Description": "Target own units to teleport to any location within range.. Does not require vision."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336835"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336826,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:24Z",
+          "ModifiedUtc": "2017-02-03T19:40:31Z",
+          "PublishedUtc": "2017-02-03T19:40:32Z",
+          "Container": -1
+        },
+        "Identity": "a4220417e2c647c7a1f060f77e22f7fc",
+        "Title": "RETRIEVER SENTINEL",
+        "Autoroute": "hw2/leaderpowers/UnscRetrieverSentinel",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscRetrieverSentinel",
+          "DisplayInfo": {
+            "Id": 335882,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:24Z",
+                "ModifiedUtc": "2017-02-03T19:37:25Z",
+                "PublishedUtc": "2017-02-03T19:37:25Z",
+                "Container": -1
+              },
+              "Identity": "198c797620f34a80a804239f53b28f2d",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "RETRIEVER SENTINEL Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "RETRIEVER SENTINEL",
+                "Description": "Summons a powerful controllable Retriever sentinel."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336826"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336827,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:53Z",
+          "ModifiedUtc": "2017-02-03T19:40:31Z",
+          "PublishedUtc": "2017-02-03T19:40:32Z",
+          "Container": -1
+        },
+        "Identity": "9e09975af0c24d37ab2b710403d4eb98",
+        "Title": "MAC BLAST EMP",
+        "Autoroute": "hw2/leaderpowers/UnscMacBlastEMP",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscMacBlastEMP",
+          "DisplayInfo": {
+            "Id": 334998,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:52Z",
+                "ModifiedUtc": "2017-02-03T19:34:40Z",
+                "PublishedUtc": "2017-02-03T19:34:40Z",
+                "Container": -1
+              },
+              "Identity": "72e8ca587c37450993f45e96c248f3b9",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MAC BLAST EMP Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "MAC BLAST EMP",
+                "Description": "Activate to fire a modified MAC round which disables mechanical units."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336827"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336829,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:20Z",
+          "ModifiedUtc": "2017-02-03T19:40:32Z",
+          "PublishedUtc": "2017-02-03T19:40:32Z",
+          "Container": -1
+        },
+        "Identity": "9d12761eeb204745abe3358bac00b985",
+        "Title": "PELCIAN TRANSPORT",
+        "Autoroute": "hw2/leaderpowers/UnscCivTransport",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscCivTransport",
+          "DisplayInfo": {
+            "Id": 336380,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:18Z",
+                "ModifiedUtc": "2017-02-03T19:39:06Z",
+                "PublishedUtc": "2017-02-03T19:39:06Z",
+                "Container": -1
+              },
+              "Identity": "22a7478a0a7f4313812027732a410352",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "PELCIAN TRANSPORT Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "PELCIAN TRANSPORT",
+                "Description": "Target own units to transport to any location within range.. Does not require vision."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336829"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336823,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:46Z",
+          "ModifiedUtc": "2017-02-03T19:40:31Z",
+          "PublishedUtc": "2017-02-03T19:40:31Z",
+          "Container": -1
+        },
+        "Identity": "a7484155dbc94e6a93df07762e034e07",
+        "Title": "MAC BLAST I",
+        "Autoroute": "hw2/leaderpowers/UnscMacBlast1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscMacBlast1",
+          "DisplayInfo": {
+            "Id": 336797,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:45Z",
+                "ModifiedUtc": "2017-02-03T19:40:27Z",
+                "PublishedUtc": "2017-02-03T19:40:27Z",
+                "Container": -1
+              },
+              "Identity": "0e92c29a6cfa450fb20999079b3cd6b2",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MAC BLAST I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "MAC BLAST I",
+                "Description": "Activate to fire a large kinetic slug at the battlefield.. Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336823"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336824,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:15Z",
+          "ModifiedUtc": "2017-02-03T19:40:31Z",
+          "PublishedUtc": "2017-02-03T19:40:31Z",
+          "Container": -1
+        },
+        "Identity": "a44b8165b9bb4cbabeb4801501313000",
+        "Title": "GLOBAL RALLY POINT",
+        "Autoroute": "hw2/leaderpowers/_RallyPoint",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "_RallyPoint",
+          "DisplayInfo": {
+            "Id": 335157,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:13Z",
+                "ModifiedUtc": "2017-02-03T19:35:09Z",
+                "PublishedUtc": "2017-02-03T19:35:09Z",
+                "Container": -1
+              },
+              "Identity": "3acddf88b49342dd9796c05ca4fd0b2b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GLOBAL RALLY POINT Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "GLOBAL RALLY POINT",
+                "Description": "Set rally point. for new units"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336824"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336807,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:10Z",
+          "ModifiedUtc": "2017-02-03T19:40:28Z",
+          "PublishedUtc": "2017-02-03T19:40:28Z",
+          "Container": -1
+        },
+        "Identity": "caf3afa43879438fa7f8a671443a04e6",
+        "Title": "GRIZZLY BATTALION",
+        "Autoroute": "hw2/leaderpowers/UnscGrizzlyBattalion",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscGrizzlyBattalion",
+          "DisplayInfo": {
+            "Id": 336234,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:10Z",
+                "ModifiedUtc": "2017-02-03T19:38:38Z",
+                "PublishedUtc": "2017-02-03T19:38:38Z",
+                "Container": -1
+              },
+              "Identity": "741e9f6a521d460b9e53fa3603d35d9e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GRIZZLY BATTALION Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "GRIZZLY BATTALION",
+                "Description": "Activate to get a deployment of 3 veteran Grizzly tanks."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336807"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336800,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:52Z",
+          "ModifiedUtc": "2017-02-03T19:40:27Z",
+          "PublishedUtc": "2017-02-03T19:40:27Z",
+          "Container": -1
+        },
+        "Identity": "d138788bdf77464d8e52a8f5cbefc89f",
+        "Title": "FORTIFICATIONS II",
+        "Autoroute": "hw2/leaderpowers/CovLucrativeExpansion2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovLucrativeExpansion2",
+          "DisplayInfo": {
+            "Id": 335015,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:52Z",
+                "ModifiedUtc": "2017-02-03T19:34:43Z",
+                "PublishedUtc": "2017-02-03T19:34:43Z",
+                "Container": -1
+              },
+              "Identity": "6ea119eb28dd4fdaac9bf80b0ac82b95",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FORTIFICATIONS II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "FORTIFICATIONS II",
+                "Description": "The Stronghold, Fortify, & turret upgrades now have further reduced cost & build time.. Base level turrets, shield towers, & Outposts now cost much less."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336800"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336802,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:57Z",
+          "ModifiedUtc": "2017-02-03T19:40:27Z",
+          "PublishedUtc": "2017-02-03T19:40:27Z",
+          "Container": -1
+        },
+        "Identity": "ce5513179fe74510b04073c6235f1412",
+        "Title": "SCOUT MINE I",
+        "Autoroute": "hw2/leaderpowers/CovScoutMine1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovScoutMine1",
+          "DisplayInfo": {
+            "Id": 336191,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:56Z",
+                "ModifiedUtc": "2017-02-03T19:38:31Z",
+                "PublishedUtc": "2017-02-03T19:38:31Z",
+                "Container": -1
+              },
+              "Identity": "a426575d66664e3b9e50c00f6ace74e3",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SCOUT MINE I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SCOUT MINE I",
+                "Description": "Activate to drop a cloaked Scout Mine.. Explodes on contact, also provides vision within a small area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336802"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336519,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:05Z",
+          "ModifiedUtc": "2017-02-03T19:39:33Z",
+          "PublishedUtc": "2017-02-03T19:39:33Z",
+          "Container": -1
+        },
+        "Identity": "4a04740eba434d25a76df88ef102c077",
+        "Title": "SCOUT MINE II",
+        "Autoroute": "hw2/leaderpowers/CovScoutMine2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovScoutMine2",
+          "DisplayInfo": {
+            "Id": 336307,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:05Z",
+                "ModifiedUtc": "2017-02-03T19:38:52Z",
+                "PublishedUtc": "2017-02-03T19:38:52Z",
+                "Container": -1
+              },
+              "Identity": "ed9d55767c3c41e7bf98b64c4af5a1cd",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SCOUT MINE II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SCOUT MINE II",
+                "Description": "Activate to drop a cloaked Scout Mine.. Explodes on contact, also provides vision within a small area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336519"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336526,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:55Z",
+          "ModifiedUtc": "2017-02-03T19:39:33Z",
+          "PublishedUtc": "2017-02-03T19:39:33Z",
+          "Container": -1
+        },
+        "Identity": "42e49a1efc074f4a9a1b6228b3f5e9e9",
+        "Title": "SPIRIT SUPPORT",
+        "Autoroute": "hw2/leaderpowers/CovSpiritSupport1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovSpiritSupport1",
+          "DisplayInfo": {
+            "Id": 335134,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:55Z",
+                "ModifiedUtc": "2017-02-03T19:35:06Z",
+                "PublishedUtc": "2017-02-03T19:35:06Z",
+                "Container": -1
+              },
+              "Identity": "ad9b253de29d461d88d606c1d9e5a8ad",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SPIRIT SUPPORT Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SPIRIT SUPPORT",
+                "Description": "Activate to get a deployment of: . 1 Elite Ranger, 1 Hunter & 2 Engineers.. . Spirit also provides prolonged cover fire."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336526"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336512,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:57Z",
+          "ModifiedUtc": "2017-02-03T19:39:29Z",
+          "PublishedUtc": "2017-02-03T19:39:29Z",
+          "Container": -1
+        },
+        "Identity": "51ad96b294c248088213b7d6258a6224",
+        "Title": "BANISHED RAID I",
+        "Autoroute": "hw2/leaderpowers/CovRaidTech1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovRaidTech1",
+          "DisplayInfo": {
+            "Id": 335341,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:56Z",
+                "ModifiedUtc": "2017-02-03T19:35:40Z",
+                "PublishedUtc": "2017-02-03T19:35:40Z",
+                "Container": -1
+              },
+              "Identity": "07d51c2194ba4c8593fc54613b53d6a6",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "BANISHED RAID I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "BANISHED RAID I",
+                "Description": "Capture speed for all units able to capture is now faster. . Infantry sight range is now increased."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336512"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336492,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:00Z",
+          "ModifiedUtc": "2017-02-03T19:39:25Z",
+          "PublishedUtc": "2017-02-03T19:39:26Z",
+          "Container": -1
+        },
+        "Identity": "745ad25aaa4c4222a7d71b500dba778b",
+        "Title": "ODST ASSAULT GROUP",
+        "Autoroute": "hw2/leaderpowers/UnscOrbitalBattleGroup",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscOrbitalBattleGroup",
+          "DisplayInfo": {
+            "Id": 335709,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:59Z",
+                "ModifiedUtc": "2017-02-03T19:36:53Z",
+                "PublishedUtc": "2017-02-03T19:36:53Z",
+                "Container": -1
+              },
+              "Identity": "b72441254b1a441b811a2734d6f2932f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ODST ASSAULT GROUP Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ODST ASSAULT GROUP",
+                "Description": "Activate to get an orbital drop of veteran units:. 2 Cyclops. 2 ODST squads. 1 Scorpion. 1 Wolverine"
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336492"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336488,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:39Z",
+          "ModifiedUtc": "2017-02-03T19:39:25Z",
+          "PublishedUtc": "2017-02-03T19:39:25Z",
+          "Container": -1
+        },
+        "Identity": "810e845572fd4a80ac4ba7b3557fc7d3",
+        "Title": "GLASSING BEAM I",
+        "Autoroute": "hw2/leaderpowers/CovCleansingBeamPath1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovCleansingBeamPath1",
+          "DisplayInfo": {
+            "Id": 336253,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:38Z",
+                "ModifiedUtc": "2017-02-03T19:38:42Z",
+                "PublishedUtc": "2017-02-03T19:38:42Z",
+                "Container": -1
+              },
+              "Identity": "661cee36e03e49908145e65609e771b6",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "GLASSING BEAM I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "GLASSING BEAM I",
+                "Description": "Activate to fire a controllable plasma beam.. Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336488"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336491,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:35Z",
+          "ModifiedUtc": "2017-02-03T19:39:25Z",
+          "PublishedUtc": "2017-02-03T19:39:25Z",
+          "Container": -1
+        },
+        "Identity": "79a3242fac954447a53309cc45a9d94c",
+        "Title": "VEHICLE DROP II",
+        "Autoroute": "hw2/leaderpowers/UnscVehicleDrop2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscVehicleDrop2",
+          "DisplayInfo": {
+            "Id": 335704,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:34Z",
+                "ModifiedUtc": "2017-02-03T19:36:52Z",
+                "PublishedUtc": "2017-02-03T19:36:52Z",
+                "Container": -1
+              },
+              "Identity": "bf5cfbc3d59b45c088028edc5868ab0d",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "VEHICLE DROP II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "VEHICLE DROP II",
+                "Description": "Activate to get a deployment of a veteran Warthog and Kodiak."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336491"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336483,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:50Z",
+          "ModifiedUtc": "2017-02-03T19:39:24Z",
+          "PublishedUtc": "2017-02-03T19:39:24Z",
+          "Container": -1
+        },
+        "Identity": "804d387bf04a4c88a979e4a4c23baef9",
+        "Title": "BATTLE HARDENED II",
+        "Autoroute": "hw2/leaderpowers/CutterBattleHardened2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CutterBattleHardened2",
+          "DisplayInfo": {
+            "Id": 334982,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:49Z",
+                "ModifiedUtc": "2017-02-03T19:34:37Z",
+                "PublishedUtc": "2017-02-03T19:34:37Z",
+                "Container": -1
+              },
+              "Identity": "e3214c99a3bb4178990123dc34bdf3c3",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "BATTLE HARDENED II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "BATTLE HARDENED II",
+                "Description": "All units now gain veterancy even faster."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336483"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336471,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:30Z",
+          "ModifiedUtc": "2017-02-03T19:39:22Z",
+          "PublishedUtc": "2017-02-03T19:39:22Z",
+          "Container": -1
+        },
+        "Identity": "9dc404bde39d465ca46c77a1d094a942",
+        "Title": "ARK DEFENSE I",
+        "Autoroute": "hw2/leaderpowers/UnscArkDefense1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscArkDefense1",
+          "DisplayInfo": {
+            "Id": 335906,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:29Z",
+                "ModifiedUtc": "2017-02-03T19:37:29Z",
+                "PublishedUtc": "2017-02-03T19:37:29Z",
+                "Container": -1
+              },
+              "Identity": "1938573fc85341169c45a2b46623cb32",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ARK DEFENSE I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ARK DEFENSE I",
+                "Description": "Activate to call in six Aggressors.. The Sentinels temporarily guard a set area."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336471"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336465,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:53Z",
+          "ModifiedUtc": "2017-02-03T19:39:21Z",
+          "PublishedUtc": "2017-02-03T19:39:21Z",
+          "Container": -1
+        },
+        "Identity": "b9dc9347fa034dfd9dde35a888f6867c",
+        "Title": "SENTINEL BEACON",
+        "Autoroute": "hw2/leaderpowers/UnscLureBeacon",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscLureBeacon",
+          "DisplayInfo": {
+            "Id": 335633,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:53Z",
+                "ModifiedUtc": "2017-02-03T19:36:40Z",
+                "PublishedUtc": "2017-02-03T19:36:40Z",
+                "Container": -1
+              },
+              "Identity": "ece84cc815874386971fa61e9bed694b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SENTINEL BEACON Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SENTINEL BEACON",
+                "Description": "Kodiak and Siege turret attacks now summon friendly Aggressor Sentinels."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336465"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336451,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:42Z",
+          "ModifiedUtc": "2017-02-03T19:39:19Z",
+          "PublishedUtc": "2017-02-03T19:39:19Z",
+          "Container": -1
+        },
+        "Identity": "c6dbf32a00244b9e8fe163c1b98b4fab",
+        "Title": "ADVANCED CLOAKING I",
+        "Autoroute": "hw2/leaderpowers/CovAdvancedCloaking1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovAdvancedCloaking1",
+          "DisplayInfo": {
+            "Id": 335763,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:42Z",
+                "ModifiedUtc": "2017-02-03T19:37:02Z",
+                "PublishedUtc": "2017-02-03T19:37:02Z",
+                "Container": -1
+              },
+              "Identity": "4d162549635848b59d02847199b489b2",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADVANCED CLOAKING I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ADVANCED CLOAKING I",
+                "Description": "Cloaking Generator and Shrouds are now cheaper.  . Marauders now have cloaking."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336451"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336441,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:32Z",
+          "ModifiedUtc": "2017-02-03T19:39:18Z",
+          "PublishedUtc": "2017-02-03T19:39:18Z",
+          "Container": -1
+        },
+        "Identity": "fb9a4c49c385494e8446a390b99a0726",
+        "Title": "EXTRACTION III",
+        "Autoroute": "hw2/leaderpowers/CovExtraction3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovExtraction3",
+          "DisplayInfo": {
+            "Id": 335847,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:31Z",
+                "ModifiedUtc": "2017-02-03T19:37:16Z",
+                "PublishedUtc": "2017-02-03T19:37:16Z",
+                "Container": -1
+              },
+              "Identity": "2f9b39c730ba4342ab334ff9b35ca71c",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "EXTRACTION III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "EXTRACTION III",
+                "Description": "Target own units to teleport them to main base.. Units heal on arrival."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336441"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336444,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:05Z",
+          "ModifiedUtc": "2017-02-03T19:39:18Z",
+          "PublishedUtc": "2017-02-03T19:39:18Z",
+          "Container": -1
+        },
+        "Identity": "f5d3923a5bdd436c8b4a4e79610c781e",
+        "Title": "FURY II",
+        "Autoroute": "hw2/leaderpowers/CovBuffRage2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBuffRage2",
+          "DisplayInfo": {
+            "Id": 334965,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:04Z",
+                "ModifiedUtc": "2017-02-03T19:34:35Z",
+                "PublishedUtc": "2017-02-03T19:34:35Z",
+                "Container": -1
+              },
+              "Identity": "94ef1d7d14e44f0babf5078712e2362e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FURY II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "FURY II",
+                "Description": "Target own units to give damage & speed boosts. . Drains health while active; units cannot die from this."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336444"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336393,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:39Z",
+          "ModifiedUtc": "2017-02-03T19:39:08Z",
+          "PublishedUtc": "2017-02-03T19:39:08Z",
+          "Container": -1
+        },
+        "Identity": "1fd52a97c6764114835a2e17c15f5691",
+        "Title": "ARCHER MISSILES II",
+        "Autoroute": "hw2/leaderpowers/UnscBombingRun2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscBombingRun2",
+          "DisplayInfo": {
+            "Id": 336052,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:38Z",
+                "ModifiedUtc": "2017-02-03T19:38:04Z",
+                "PublishedUtc": "2017-02-03T19:38:04Z",
+                "Container": -1
+              },
+              "Identity": "aec1ccbfcaa34ecd8dac81a862f08740",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ARCHER MISSILES II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ARCHER MISSILES II",
+                "Description": "Activate to fire staggered pairs of missiles in a lane. . Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336393"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336295,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:10Z",
+          "ModifiedUtc": "2017-02-03T19:38:50Z",
+          "PublishedUtc": "2017-02-03T19:38:50Z",
+          "Container": -1
+        },
+        "Identity": "52548384adf84e4f9583a48e64a0f9c7",
+        "Title": "SIPHON II",
+        "Autoroute": "hw2/leaderpowers/CovBuffLeech2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBuffLeech2",
+          "DisplayInfo": {
+            "Id": 336038,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:09Z",
+                "ModifiedUtc": "2017-02-03T19:38:01Z",
+                "PublishedUtc": "2017-02-03T19:38:01Z",
+                "Container": -1
+              },
+              "Identity": "c72c90373c0747748d2b6d8e7b1654a4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SIPHON II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SIPHON II",
+                "Description": "Target own units to give them Siphon.. Units gain health while in combat."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336295"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336243,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:07:03Z",
+          "ModifiedUtc": "2017-02-03T19:38:40Z",
+          "PublishedUtc": "2017-02-03T19:38:40Z",
+          "Container": -1
+        },
+        "Identity": "70f0df7820fd4c7e96121d794880b48e",
+        "Title": "COUNTER MEASURES",
+        "Autoroute": "hw2/leaderpowers/CovResourceControl",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovResourceControl",
+          "DisplayInfo": {
+            "Id": 336239,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:07:03Z",
+                "ModifiedUtc": "2017-02-03T19:38:39Z",
+                "PublishedUtc": "2017-02-03T19:38:39Z",
+                "Container": -1
+              },
+              "Identity": "a917ba5401e24912add71438d33263e0",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "COUNTER MEASURES Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "COUNTER MEASURES",
+                "Description": "Mines will now drop around newly captured resource points. . Enemy decap rate is now slowed on all points you control.. . Jump Pack Brutes will now drop Trip Mines when in flight."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336243"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336214,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:52Z",
+          "ModifiedUtc": "2017-02-03T19:38:34Z",
+          "PublishedUtc": "2017-02-03T19:38:34Z",
+          "Container": -1
+        },
+        "Identity": "8ebba7e37c5a443b8015b5468b99a307",
+        "Title": "SPIRIT ASSAULT II",
+        "Autoroute": "hw2/leaderpowers/CovSpiritGunship2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovSpiritGunship2",
+          "DisplayInfo": {
+            "Id": 336210,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:51Z",
+                "ModifiedUtc": "2017-02-03T19:38:33Z",
+                "PublishedUtc": "2017-02-03T19:38:33Z",
+                "Container": -1
+              },
+              "Identity": "c3ee57ed6abb4a4facf7b7ab74b73ee5",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SPIRIT ASSAULT II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SPIRIT ASSAULT II",
+                "Description": "Activate to get a drop-off of:. 2 upgraded veteran Suicide Grunts.. 1 veteran Jump Pack Brute."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336214"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336014,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:14Z",
+          "ModifiedUtc": "2017-02-03T19:37:55Z",
+          "PublishedUtc": "2017-02-03T19:37:55Z",
+          "Container": -1
+        },
+        "Identity": "8df65e08e2144f1bb2c73549362f7132",
+        "Title": "DECIMUS DROP",
+        "Autoroute": "hw2/leaderpowers/CovDecimusDrop",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovDecimusDrop",
+          "DisplayInfo": {
+            "Id": 335094,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:13Z",
+                "ModifiedUtc": "2017-02-03T19:35:00Z",
+                "PublishedUtc": "2017-02-03T19:35:00Z",
+                "Container": -1
+              },
+              "Identity": "488c88a4a0f34ef59da317871d2d9cc4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DECIMUS DROP Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "DECIMUS DROP",
+                "Description": "Drops Decimus into battle.. Only one Decimus can be in use."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336014"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336004,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:25Z",
+          "ModifiedUtc": "2017-02-03T19:37:54Z",
+          "PublishedUtc": "2017-02-03T19:37:54Z",
+          "Container": -1
+        },
+        "Identity": "988e5fd8665549da8ca9d6728fa28e6c",
+        "Title": "EXTRACTION I",
+        "Autoroute": "hw2/leaderpowers/CovExtraction1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovExtraction1",
+          "DisplayInfo": {
+            "Id": 335290,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:23Z",
+                "ModifiedUtc": "2017-02-03T19:35:31Z",
+                "PublishedUtc": "2017-02-03T19:35:31Z",
+                "Container": -1
+              },
+              "Identity": "13ac9d2573df45308a40a611cd587dec",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "EXTRACTION I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "EXTRACTION I",
+                "Description": "Target own units to teleport them to main base.. Units heal on arrival."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336004"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 336006,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:06Z",
+          "ModifiedUtc": "2017-02-03T19:37:54Z",
+          "PublishedUtc": "2017-02-03T19:37:54Z",
+          "Container": -1
+        },
+        "Identity": "944d955542384ba6a1abfc5f77833b66",
+        "Title": "FURY III",
+        "Autoroute": "hw2/leaderpowers/CovBuffRage3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBuffRage3",
+          "DisplayInfo": {
+            "Id": 335098,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:06Z",
+                "ModifiedUtc": "2017-02-03T19:35:00Z",
+                "PublishedUtc": "2017-02-03T19:35:00Z",
+                "Container": -1
+              },
+              "Identity": "4eed103790b745c4b17d2d23fcee8f87",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FURY III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "FURY III",
+                "Description": "Target own units to give damage & speed boosts. . Drains health while active; units cannot die from this."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/336006"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335978,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:03Z",
+          "ModifiedUtc": "2017-02-03T19:37:48Z",
+          "PublishedUtc": "2017-02-03T19:37:49Z",
+          "Container": -1
+        },
+        "Identity": "bd276fe2cecf4820b7af5eb92dfaeab1",
+        "Title": "FURY I",
+        "Autoroute": "hw2/leaderpowers/CovBuffRage1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBuffRage1",
+          "DisplayInfo": {
+            "Id": 335187,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:02Z",
+                "ModifiedUtc": "2017-02-03T19:35:15Z",
+                "PublishedUtc": "2017-02-03T19:35:15Z",
+                "Container": -1
+              },
+              "Identity": "3286ff2e835a45f284b1e2e5fbdaf400",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "FURY I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "FURY I",
+                "Description": "Target own units to give damage & speed boosts. . Drains health while active; units cannot die from this."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335978"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335983,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-10-27T16:32:25Z",
+          "ModifiedUtc": "2017-02-03T19:37:49Z",
+          "PublishedUtc": "2017-02-03T19:37:49Z",
+          "Container": -1
+        },
+        "Identity": "bb79effed52446c881374a1d0d1a76cb",
+        "Title": "SCATTER BOMB I",
+        "Autoroute": "hw2/leaderpowers/UnscScatterbomb1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscScatterbomb1",
+          "DisplayInfo": {
+            "Id": 335816,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-10-27T16:32:25Z",
+                "ModifiedUtc": "2017-02-03T19:37:11Z",
+                "PublishedUtc": "2017-02-03T19:37:11Z",
+                "Container": -1
+              },
+              "Identity": "3ef65f9fb6084c8baaa577b67da5ae5b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "SCATTER BOMB I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "SCATTER BOMB I",
+                "Description": "Activate to drop a scattered salvo of bombs.. Damages all unit types & buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335983"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335966,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:05Z",
+          "ModifiedUtc": "2017-02-03T19:37:47Z",
+          "PublishedUtc": "2017-02-03T19:37:47Z",
+          "Container": -1
+        },
+        "Identity": "ea8b96a0ef9b4ebe9e46834ee758c67f",
+        "Title": "LOTUS MINE II",
+        "Autoroute": "hw2/leaderpowers/UnscLotusMines2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscLotusMines2",
+          "DisplayInfo": {
+            "Id": 335608,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:04Z",
+                "ModifiedUtc": "2017-02-03T19:36:36Z",
+                "PublishedUtc": "2017-02-03T19:36:36Z",
+                "Container": -1
+              },
+              "Identity": "d4edf0799c5a4a15b2abdd480086ab5e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "LOTUS MINE II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "LOTUS MINE II",
+                "Description": "Activate to drop a line of cloaked mines.. Once armed, mines explode on contact.. Does not damage air units. "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335966"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335901,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:43Z",
+          "ModifiedUtc": "2017-02-03T19:37:28Z",
+          "PublishedUtc": "2017-02-03T19:37:28Z",
+          "Container": -1
+        },
+        "Identity": "1ad300e95d97480fb5c2d3a886fb24d0",
+        "Title": "HOLOGRAPHIC DECOY I",
+        "Autoroute": "hw2/leaderpowers/UnscHoloDecoy1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscHoloDecoy1",
+          "DisplayInfo": {
+            "Id": 335898,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:42Z",
+                "ModifiedUtc": "2017-02-03T19:37:28Z",
+                "PublishedUtc": "2017-02-03T19:37:28Z",
+                "Container": -1
+              },
+              "Identity": "a59b3d605f53420b8a7c9356a164af8a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "HOLOGRAPHIC DECOY I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "HOLOGRAPHIC DECOY I",
+                "Description": "Target own units to create decoys.. Use decoys to scout and trick enemy turrets and units."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335901"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335623,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:43Z",
+          "ModifiedUtc": "2017-02-03T19:36:39Z",
+          "PublishedUtc": "2017-02-03T19:36:39Z",
+          "Container": -1
+        },
+        "Identity": "c353a3aa76cc4221bd2fd5cc195d13eb",
+        "Title": "ADVANCED CLOAKING II",
+        "Autoroute": "hw2/leaderpowers/CovAdvancedCloaking2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovAdvancedCloaking2",
+          "DisplayInfo": {
+            "Id": 335619,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:43Z",
+                "ModifiedUtc": "2017-02-03T19:36:38Z",
+                "PublishedUtc": "2017-02-03T19:36:38Z",
+                "Container": -1
+              },
+              "Identity": "daa5133e27bd4039a108c1430683053f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ADVANCED CLOAKING II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ADVANCED CLOAKING II",
+                "Description": "Cloaking Generator and Shrouds are now cheaper.  . Marauders now have cloaking.. . All cloaking abilities now last longer.  . Shroud cloak fields are now larger."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335623"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335613,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:47Z",
+          "ModifiedUtc": "2017-02-03T19:36:36Z",
+          "PublishedUtc": "2017-02-03T19:36:37Z",
+          "Container": -1
+        },
+        "Identity": "c974222947d84621bcdb8b5507357004",
+        "Title": "BOUNDLESS FURY",
+        "Autoroute": "hw2/leaderpowers/CovBoundlessRage",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovBoundlessRage",
+          "DisplayInfo": {
+            "Id": 335396,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:46Z",
+                "ModifiedUtc": "2017-02-03T19:35:50Z",
+                "PublishedUtc": "2017-02-03T19:35:50Z",
+                "Container": -1
+              },
+              "Identity": "c9fd23cd60574c6198c1ecf916e8bfcf",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "BOUNDLESS FURY Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "BOUNDLESS FURY",
+                "Description": "All units now have a permanent increase to speed and damage. "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335613"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335476,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:07:02Z",
+          "ModifiedUtc": "2017-02-03T19:36:09Z",
+          "PublishedUtc": "2017-02-03T19:36:09Z",
+          "Container": -1
+        },
+        "Identity": "381bfe75cdd142ad89d97d11c1c04134",
+        "Title": "R&D III",
+        "Autoroute": "hw2/leaderpowers/UnscResearchAndDevelopment3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscResearchAndDevelopment3",
+          "DisplayInfo": {
+            "Id": 335250,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:07:02Z",
+                "ModifiedUtc": "2017-02-03T19:35:24Z",
+                "PublishedUtc": "2017-02-03T19:35:24Z",
+                "Container": -1
+              },
+              "Identity": "28471bae9e084effaf404c6fe049d27b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "R&D III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "R&D III",
+                "Description": "Global infantry, vehicle, & aircraft upgrades now have even further reduced cost & research time.. Turrets now have further improved shields."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335476"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335433,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:03Z",
+          "ModifiedUtc": "2017-02-03T19:35:59Z",
+          "PublishedUtc": "2017-02-03T19:35:59Z",
+          "Container": -1
+        },
+        "Identity": "6be298317ab241c58d60745d281fc99f",
+        "Title": "LOTUS MINE I",
+        "Autoroute": "hw2/leaderpowers/UnscLotusMines1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscLotusMines1",
+          "DisplayInfo": {
+            "Id": 335314,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:02Z",
+                "ModifiedUtc": "2017-02-03T19:35:35Z",
+                "PublishedUtc": "2017-02-03T19:35:35Z",
+                "Container": -1
+              },
+              "Identity": "0ed0e726bfdc4d70a6d1be532087e572",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "LOTUS MINE I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "LOTUS MINE I",
+                "Description": "Activate to drop a line of cloaked mines.. Once armed, mines explode on contact.. Does not damage air units. "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335433"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335422,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:37Z",
+          "ModifiedUtc": "2017-02-03T19:35:57Z",
+          "PublishedUtc": "2017-02-03T19:35:57Z",
+          "Container": -1
+        },
+        "Identity": "9ba4b99b25294f8e9f89cabd74734b91",
+        "Title": "ARCHER MISSILES I",
+        "Autoroute": "hw2/leaderpowers/UnscBombingRun1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscBombingRun1",
+          "DisplayInfo": {
+            "Id": 335026,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:36Z",
+                "ModifiedUtc": "2017-02-03T19:34:45Z",
+                "PublishedUtc": "2017-02-03T19:34:45Z",
+                "Container": -1
+              },
+              "Identity": "68551af851b347d1a3485c23566bf160",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ARCHER MISSILES I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ARCHER MISSILES I",
+                "Description": "Activate to fire staggered pairs of missiles in a lane. . Damages all unit types and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335422"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335414,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:47:30Z",
+          "ModifiedUtc": "2017-02-03T19:35:56Z",
+          "PublishedUtc": "2017-02-03T19:35:56Z",
+          "Container": -1
+        },
+        "Identity": "9f84cf42bc5d4e56b9693ffbbd3d2e3d",
+        "Title": "EXTRACTION II",
+        "Autoroute": "hw2/leaderpowers/CovExtraction2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovExtraction2",
+          "DisplayInfo": {
+            "Id": 334976,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:47:27Z",
+                "ModifiedUtc": "2017-02-03T19:34:36Z",
+                "PublishedUtc": "2017-02-03T19:34:36Z",
+                "Container": -1
+              },
+              "Identity": "8873b47f911e4ad2ab034060074ee1c5",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "EXTRACTION II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "EXTRACTION II",
+                "Description": "Target own units to teleport them to main base.. Units heal on arrival."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335414"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335416,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:07:04Z",
+          "ModifiedUtc": "2017-02-03T19:35:56Z",
+          "PublishedUtc": "2017-02-03T19:35:56Z",
+          "Container": -1
+        },
+        "Identity": "a336cc37384e472287bb18b458fa9882",
+        "Title": "THE BEST OFFENSE",
+        "Autoroute": "hw2/leaderpowers/UnscScorpionTech",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscScorpionTech",
+          "DisplayInfo": {
+            "Id": 335411,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:07:04Z",
+                "ModifiedUtc": "2017-02-03T19:35:56Z",
+                "PublishedUtc": "2017-02-03T19:35:56Z",
+                "Container": -1
+              },
+              "Identity": "8b6f5a9daf4e4922b928afcc4dc988cb",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "THE BEST OFFENSE Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "THE BEST OFFENSE",
+                "Description": "Scorpions and Nightingales now have shields and increased health. . . Scorpions now have a larger canister shot."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335416"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335409,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:49:16Z",
+          "ModifiedUtc": "2017-02-03T19:35:55Z",
+          "PublishedUtc": "2017-02-03T19:35:55Z",
+          "Container": -1
+        },
+        "Identity": "a314cf525076488480e5d50f0b54cfbc",
+        "Title": "TURRET SHIELDS",
+        "Autoroute": "hw2/leaderpowers/UnscTurretShields",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscTurretShields",
+          "DisplayInfo": {
+            "Id": 335064,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:49:15Z",
+                "ModifiedUtc": "2017-02-03T19:34:53Z",
+                "PublishedUtc": "2017-02-03T19:34:53Z",
+                "Container": -1
+              },
+              "Identity": "5ac8216d745149cf8f2d1f82322f8c30",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "TURRET SHIELDS Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "TURRET SHIELDS",
+                "Description": "All turrets gain regenerating shields."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335409"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335310,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:41Z",
+          "ModifiedUtc": "2017-02-03T19:35:34Z",
+          "PublishedUtc": "2017-02-03T19:35:34Z",
+          "Container": -1
+        },
+        "Identity": "0cddf7cfa5284307ba4f835b6b688f6c",
+        "Title": "ARCHER MISSILES III",
+        "Autoroute": "hw2/leaderpowers/UnscBombingRun3",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "UnscBombingRun3",
+          "DisplayInfo": {
+            "Id": 335305,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:40Z",
+                "ModifiedUtc": "2017-02-03T19:35:33Z",
+                "PublishedUtc": "2017-02-03T19:35:33Z",
+                "Container": -1
+              },
+              "Identity": "5ff888f915b6420ebb1f9b6788ca6081",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ARCHER MISSILES III Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ARCHER MISSILES III",
+                "Description": "Activate to fire staggered pairs of missiles in a lane. . Damages all unit types and buildings.. Leaves behind burning area, damaging enemy ground targets."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335310"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335247,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:19Z",
+          "ModifiedUtc": "2017-02-03T19:35:24Z",
+          "PublishedUtc": "2017-02-03T19:35:24Z",
+          "Container": -1
+        },
+        "Identity": "290ed82c0d8e489393d9fbd85f5a9740",
+        "Title": "ATRIOX'S BULWARK I",
+        "Autoroute": "hw2/leaderpowers/CovStructuralShielding1",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovStructuralShielding1",
+          "DisplayInfo": {
+            "Id": 335243,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:18Z",
+                "ModifiedUtc": "2017-02-03T19:35:24Z",
+                "PublishedUtc": "2017-02-03T19:35:24Z",
+                "Container": -1
+              },
+              "Identity": "43dae3f869414c1fa9b1c52e7f399e91",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "ATRIOX'S BULWARK I Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "ATRIOX'S BULWARK I",
+                "Description": "Activate to create a healing area. . Gives brief invulnerability.. Heals units and buildings."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335247"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335201,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:16Z",
+          "ModifiedUtc": "2017-02-03T19:35:17Z",
+          "PublishedUtc": "2017-02-03T19:35:17Z",
+          "Container": -1
+        },
+        "Identity": "2c54d1678afa4d5690b8b2c53d7c393a",
+        "Title": "MASS CLOAKING",
+        "Autoroute": "hw2/leaderpowers/CovInvisibleArmy",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovInvisibleArmy",
+          "DisplayInfo": {
+            "Id": 335197,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:15Z",
+                "ModifiedUtc": "2017-02-03T19:35:16Z",
+                "PublishedUtc": "2017-02-03T19:35:16Z",
+                "Container": -1
+              },
+              "Identity": "d11e6d8cb34043dd9dde05d467bedd00",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "MASS CLOAKING Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "MASS CLOAKING",
+                "Description": "Activate to cloak all your deployed units.. While cloaked units gain speed boost and a small siphon."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335201"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 335097,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "v-hugmic",
+          "CreatedUtc": "2016-11-14T09:06:58Z",
+          "ModifiedUtc": "2017-02-03T19:35:00Z",
+          "PublishedUtc": "2017-02-03T19:35:00Z",
+          "Container": -1
+        },
+        "Identity": "4f5c777586d048f3aec6985ce43b4c55",
+        "Title": "BANISHED RAID II",
+        "Autoroute": "hw2/leaderpowers/CovRaidTech2",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovRaidTech2",
+          "DisplayInfo": {
+            "Id": 335092,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "v-hugmic",
+                "CreatedUtc": "2016-11-14T09:06:57Z",
+                "ModifiedUtc": "2017-02-03T19:34:59Z",
+                "PublishedUtc": "2017-02-03T19:34:59Z",
+                "Container": -1
+              },
+              "Identity": "e1be88e711db4baaaa120d3c054440e5",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "BANISHED RAID II Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "BANISHED RAID II",
+                "Description": "Capture speed for all units is now faster.. Ghosts can now capture points.. . Infantry & Vehicle sight range is now increased.. "
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/335097"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 334988,
+      "Type": "HW2LeaderPower",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2016-09-13T10:48:17Z",
+          "ModifiedUtc": "2017-02-03T19:34:38Z",
+          "PublishedUtc": "2017-02-03T19:34:38Z",
+          "Container": -1
+        },
+        "Identity": "81c63d050e514c91978c09437ba31ad2",
+        "Title": "DYING BREATH",
+        "Autoroute": "hw2/leaderpowers/CovDyingBreath",
+        "HW2LeaderPower": {
+          "ObjectTypeId": "CovDyingBreath",
+          "DisplayInfo": {
+            "Id": 334983,
+            "Type": "HW2LeaderPowerDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2016-09-13T10:48:17Z",
+                "ModifiedUtc": "2017-02-03T19:34:38Z",
+                "PublishedUtc": "2017-02-03T19:34:38Z",
+                "Container": -1
+              },
+              "Identity": "ca0a75cc86b14bbca82fc2ccce10925f",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "DYING BREATH Display Info",
+              "HW2LeaderPowerDisplayInfo": {
+                "Name": "DYING BREATH",
+                "Description": "Target own units to give them Dying Breath.. They will shrug off death and continue to fight on for a set duration."
+              }
+            }
+          },
+          "Image": {}
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/334988"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

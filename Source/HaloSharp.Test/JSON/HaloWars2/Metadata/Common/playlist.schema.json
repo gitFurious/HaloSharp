@@ -1,0 +1,365 @@
+{
+  "definitions": {
+    "HW2PlaylistContentItemTypeA": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2PlaylistView"
+        },
+        "Links": {
+          "type": "array",
+          "items": {
+            "$ref": "link.schema.json"
+          }
+        },
+        "ChildrenCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View",
+        "Links",
+        "ChildrenCount"
+      ]
+    },
+
+    "HW2PlaylistContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2PlaylistView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2PlaylistView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Autoroute": {
+          "type": "string"
+        },
+        "HW2Playlist": {
+          "$ref": "#/definitions/HW2Playlist"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "Autoroute",
+        "HW2Playlist"
+      ]
+    },
+
+    "HW2Playlist": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ComputerDifficulty": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "empty.schema.json" },
+            { "$ref": "content-item-type-b.schema.json#/definitions/null" },
+            { "$ref": "difficulty.schema.json#/definitions/HW2DifficultyContentItemTypeB" }
+          ]
+        },
+        "CardsFixedAtLevel": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "Id": {
+          "type": "string"
+        },
+        "Image": {
+          "$ref": "image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "ThumbnailImage": {
+          "$ref": "image.schema.json#/definitions/ImageContentItemTypeB"
+        },
+        "MaxPartySize": {
+          "type": "integer"
+        },
+        "MinPartySize": {
+          "type": "integer"
+        },
+        "UsesBanRules": {
+          "type": "boolean"
+        },
+        "MatchTicketTimeoutDurationSeconds": {
+          "type": "integer"
+        },
+        "MpsdHopperName": {
+          "type": "string"
+        },
+        "MpsdHopperStatName": {
+          "type": "string"
+        },
+        "Voting": {
+          "type": "boolean"
+        },
+        "PlaylistEntries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/HW2PlaylistEntryContentItemTypeB"
+          }
+        },
+        "MaxPlayerCount": {
+          "type": "integer"
+        },
+        "MinPlayerCount": {
+          "type": "integer"
+        },
+        "IsTeamGamePlaylist": {
+          "type": "boolean"
+        },
+        "LonelyPartyUsesWildcard": {
+          "type": "boolean"
+        },
+        "IsNew": {
+          "type": "boolean"
+        },
+        "Hide": {
+          "type": "boolean"
+        },
+        "IsQuickmatchPlaylist": {
+          "type": "boolean"
+        },
+        "StatsClassification": {
+          "type": "string"
+        },
+        "DisplayInfo": {
+          "$ref": "#/definitions/HW2PlaylistDisplayInfoContentItemTypeB"
+        },
+        "TargetPlatform": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ComputerDifficulty",
+        "CardsFixedAtLevel",
+        "Id",
+        "Image",
+        "ThumbnailImage",
+        "MaxPartySize",
+        "MinPartySize",
+        "UsesBanRules",
+        "MatchTicketTimeoutDurationSeconds",
+        "MpsdHopperName",
+        "MpsdHopperStatName",
+        "Voting",
+        "PlaylistEntries",
+        "MaxPlayerCount",
+        "MinPlayerCount",
+        "IsTeamGamePlaylist",
+        "LonelyPartyUsesWildcard",
+        "IsNew",
+        "Hide",
+        "IsQuickmatchPlaylist",
+        "StatsClassification",
+        "DisplayInfo",
+        "TargetPlatform"
+      ]
+
+    },
+
+    "HW2PlaylistDisplayInfoContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2PlaylistDisplayInfoView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2PlaylistDisplayInfoView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Localization": {
+          "$ref": "localization.schema.json"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2PlaylistDisplayInfo": {
+          "$ref": "#/definitions/HW2PlaylistDisplayInfo"
+        }
+      },
+      "required": [
+        "Status",
+        "HW2PlaylistDisplayInfo",
+        "Localization",
+        "Title",
+        "Common",
+        "Identity"
+      ]
+    },
+
+    "HW2PlaylistDisplayInfo": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Description"
+      ]
+    },
+
+    "HW2PlaylistEntryContentItemTypeB": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Type": {
+          "type": "string"
+        },
+        "View": {
+          "$ref": "#/definitions/HW2PlaylistEntryView"
+        }
+      },
+      "required": [
+        "Id",
+        "Type",
+        "View"
+      ]
+    },
+
+    "HW2PlaylistEntryView": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Status": {
+          "type": "string"
+        },
+        "Common": {
+          "$ref": "common.schema.json"
+        },
+        "Identity": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "HW2PlaylistEntry": {
+          "$ref": "#/definitions/HW2PlaylistEntry"
+        }
+      },
+      "required": [
+        "Status",
+        "Common",
+        "Identity",
+        "Title",
+        "HW2PlaylistEntry"
+      ]
+    },
+
+    "HW2PlaylistEntry": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Weight": {
+          "type": "integer"
+        },
+        "VotingSlot": {
+          "type": "integer"
+        },
+        "GameMode": {
+          "type": "string"
+        },
+        "Map": {
+          "type": "array",
+          "items": {
+            "$ref": "map.schema.json#/definitions/HW2MapContentItemTypeB"
+          }
+        },
+        "MaxPlayers": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Weight",
+        "VotingSlot",
+        "GameMode",
+        "Map",
+        "MaxPlayers"
+      ]
+    }
+  }
+}

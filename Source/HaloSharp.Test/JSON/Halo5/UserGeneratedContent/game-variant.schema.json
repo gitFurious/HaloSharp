@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "BaseGameEngineType": {
+      "type": "integer"
+    },
+    "GameType": {
+      "type": "integer"
+    },
+    "BaseGame": {
+      "$ref": "../common/variant.schema.json"
+    },
+    "ScoreToWin": {
+      "type": "integer"
+    },
+    "NumberOfLives": {
+      "type": "integer"
+    },
+    "MatchDurationInSeconds": {
+      "type": "integer"
+    },
+    "NumberOfRounds": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "AccessControl": {
+      "type": "integer"
+    },
+    "Links": {
+      "$ref": "../../common/link.schema.json"
+    },
+    "CreationTimeUtc": {
+      "$ref": "../../common/iso-8061.schema.json"
+    },
+    "LastModifiedTimeUtc": {
+      "$ref": "../../common/iso-8061.schema.json"
+    },
+    "Banned": {
+      "type": "boolean"
+    },
+    "Identity": {
+      "$ref": "../common/variant.schema.json"
+    },
+    "Stats": {
+      "$ref": "./common/stats.schema.json"
+    }
+  },
+  "required": [
+    "BaseGameEngineType",
+    "GameType",
+    "BaseGame",
+    "ScoreToWin",
+    "NumberOfLives",
+    "MatchDurationInSeconds",
+    "NumberOfRounds",
+    "Name",
+    "Description",
+    "AccessControl",
+    "Links",
+    "CreationTimeUtc",
+    "LastModifiedTimeUtc",
+    "Banned",
+    "Identity",
+    "Stats"
+  ]
+}

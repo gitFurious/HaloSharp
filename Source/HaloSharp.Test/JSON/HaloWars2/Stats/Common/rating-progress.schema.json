@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": [ "object", "null" ],
+  "properties": {
+    "PreviousCsr": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "competitive-skill-rank.schema.json" }
+      ]
+    },
+    "UpdatedCsr": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "competitive-skill-rank.schema.json" }
+      ]
+    },
+    "PreviousMmr": {
+      "$ref": "matchmaking-rank.schema.json"
+    },
+    "UpdatedMmr": {
+      "$ref": "matchmaking-rank.schema.json"
+    }
+  },
+  "required": [
+    "PreviousCsr",
+    "UpdatedCsr",
+    "PreviousMmr",
+    "UpdatedMmr"
+  ]
+}

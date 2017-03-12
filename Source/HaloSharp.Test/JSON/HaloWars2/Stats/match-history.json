@@ -1,0 +1,195 @@
+{
+  "Start" : 0,
+  "Count" : 25,
+  "ResultCount" : 4,
+  "Results": [
+    {
+      "MatchId": "aeb880b3-4473-465e-b258-b99cd4b47ebc",
+      "MatchType": 3,
+      "GameMode": 4,
+      "SeasonId": null,
+      "PlaylistId": "1c1ce947-fdae-4e4e-a98d-ff889af1d0cb",
+      "Teams": {
+        "2": {
+          "TeamSize": 2
+        },
+        "1": {
+          "TeamSize": 2
+        }
+      },
+      "MapId": "skirmish\\design\\MP_Boneyard\\MP_Boneyard",
+      "MatchStartDate": {
+        "ISO8601Date": "2017-03-04T01:52:09.109Z"
+      },
+      "PlayerMatchDuration": "PT24M0.9919547S",
+      "PlayerIndex": 3,
+      "TeamId": 1,
+      "TeamPlayerIndex": 0,
+      "LeaderId": 1,
+      "PlayerCompletedMatch": true,
+      "PlayerMatchOutcome": 2,
+      "XPProgress": {
+        "PreviousTotalXP": 11200,
+        "GameplayXP": 600,
+        "ChallengesXP": 0,
+        "UpdatedTotalXP": 11800,
+        "CompletedSpartanRanks": []
+      },
+      "RatingProgress": {
+        "PreviousCsr": null,
+        "UpdatedCsr": null,
+        "PreviousMmr": {
+          "Rating": 0.0,
+          "Variance": 1.0,
+          "LastModifiedDate": {
+            "ISO8601Date": ""
+          }
+        },
+        "UpdatedMmr": {
+          "Rating": -0.17342545309644133,
+          "Variance": 0.95273557493361838,
+          "LastModifiedDate": {
+            "ISO8601Date": ""
+          }
+        }
+      }
+    },
+    {
+      "MatchId": "443f2a77-ab99-4423-9ec4-778a8e587357",
+      "MatchType": 3,
+      "GameMode": 6,
+      "SeasonId": null,
+      "PlaylistId": "66943ced-5fbe-4f08-b4f0-53e5a60badec",
+      "Teams": {
+        "1": {
+          "TeamSize": 3
+        },
+        "2": {
+          "TeamSize": 3
+        }
+      },
+      "MapId": "rostermode\\design\\RM_EvenFlowArt\\RM_EvenFlowArt",
+      "MatchStartDate": {
+        "ISO8601Date": "2017-03-03T12:15:13.797Z"
+      },
+      "PlayerMatchDuration": "PT12M30.3026399S",
+      "PlayerIndex": 2,
+      "TeamId": 1,
+      "TeamPlayerIndex": 1,
+      "LeaderId": 1,
+      "PlayerCompletedMatch": true,
+      "PlayerMatchOutcome": 2,
+      "XPProgress": {
+        "PreviousTotalXP": 10000,
+        "GameplayXP": 100,
+        "ChallengesXP": 0,
+        "UpdatedTotalXP": 10100,
+        "CompletedSpartanRanks": []
+      },
+      "RatingProgress": {
+        "PreviousCsr": null,
+        "UpdatedCsr": null,
+        "PreviousMmr": {
+          "Rating": 0.0,
+          "Variance": 1.0,
+          "LastModifiedDate": {
+            "ISO8601Date": ""
+          }
+        },
+        "UpdatedMmr": {
+          "Rating": -0.188063188874023,
+          "Variance": 0.964725163084254,
+          "LastModifiedDate": {
+            "ISO8601Date": ""
+          }
+        }
+      }
+    },
+    {
+      "MatchId": "2767d98c-929b-4455-8b4f-92d31145fff1",
+      "MatchType": 2,
+      "GameMode": 7,
+      "SeasonId": null,
+      "PlaylistId": "00000000-0000-0000-0000-000000000000",
+      "Teams": {
+        "1": {
+          "TeamSize": 3
+        },
+        "2": {
+          "TeamSize": 1
+        }
+      },
+      "MapId": "rostermode\\design\\RM_EvenFlowArt\\RM_EvenFlowArt",
+      "MatchStartDate": {
+        "ISO8601Date": "2017-03-03T07:14:34.328Z"
+      },
+      "PlayerMatchDuration": "PT51M26.1683237S",
+      "PlayerIndex": 2,
+      "TeamId": 1,
+      "TeamPlayerIndex": 1,
+      "LeaderId": 1,
+      "PlayerCompletedMatch": true,
+      "PlayerMatchOutcome": 2,
+      "XPProgress": {
+        "PreviousTotalXP": 10000,
+        "GameplayXP": 0,
+        "ChallengesXP": 0,
+        "UpdatedTotalXP": 10000,
+        "CompletedSpartanRanks": []
+      },
+      "RatingProgress": null
+    },
+    {
+      "MatchId": "184bc798-5e72-46b3-aa89-d9ccac49450d",
+      "MatchType": 3,
+      "GameMode": 6,
+      "SeasonId": null,
+      "PlaylistId": "c80ddcda-219b-42e6-82f4-94fae8516d96",
+      "Teams": {
+        "1": {
+          "TeamSize": 2
+        },
+        "2": {
+          "TeamSize": 2
+        }
+      },
+      "MapId": "rostermode\\design\\RM_EvenFlowArt\\RM_EvenFlowArt",
+      "MatchStartDate": {
+        "ISO8601Date": "2017-02-23T11:20:02.239Z"
+      },
+      "PlayerMatchDuration": "PT6M13.8741044S",
+      "PlayerIndex": 1,
+      "TeamId": 1,
+      "TeamPlayerIndex": 0,
+      "LeaderId": 1,
+      "PlayerCompletedMatch": true,
+      "PlayerMatchOutcome": 2,
+      "XPProgress": {
+        "PreviousTotalXP": 6600,
+        "GameplayXP": 100,
+        "ChallengesXP": 0,
+        "UpdatedTotalXP": 6700,
+        "CompletedSpartanRanks": []
+      },
+      "RatingProgress": {
+        "PreviousCsr": null,
+        "UpdatedCsr": null,
+        "PreviousMmr": {
+          "Rating": 0.0,
+          "Variance": 1.0,
+          "LastModifiedDate": {
+            "ISO8601Date": ""
+          }
+        },
+        "UpdatedMmr": {
+          "Rating": -0.23655137960964817,
+          "Variance": 0.94140322859668657,
+          "LastModifiedDate": {
+            "ISO8601Date": ""
+          }
+        }
+      }
+    }
+  ],
+  "Links" : {}
+}

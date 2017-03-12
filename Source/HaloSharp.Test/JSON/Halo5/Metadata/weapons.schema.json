@@ -1,0 +1,55 @@
+{
+  "definitions": {
+    "Weapon": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": [ "string", "null" ]
+        },
+        "type": {
+          "type": "string"
+        },
+        "largeIconImageUrl": {
+          "type": "string"
+        },
+        "smallIconImageUrl": {
+          "type": "string"
+        },
+        "isUsableByPlayer": {
+          "type": "boolean"
+        },
+        "id": {
+          /*
+           * HACK: API returns a string but it's really an int. 
+           * HaloSharp's model uses an int, the JSON reponse uses a string.
+           */
+          "type": [ "string", "integer" ]
+        },
+        "contentId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "type",
+        "largeIconImageUrl",
+        "smallIconImageUrl",
+        "isUsableByPlayer",
+        "id",
+        "contentId"
+      ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Weapon"
+  }
+}

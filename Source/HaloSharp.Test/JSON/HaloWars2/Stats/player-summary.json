@@ -1,0 +1,88 @@
+{
+  "CustomSummary": {
+    "SkirmishStats": {
+      "SinglePlayerStats": {
+        "PlaylistId": null,
+        "PlaylistClassification": null,
+        "HighestCsr": null,
+        "TotalTimePlayed": "",
+        "TotalMatchesStarted": 0,
+        "TotalMatchesCompleted": 0,
+        "TotalMatchesWon": 0,
+        "TotalMatchesLost": 0,
+        "TotalPointCaptures": 0,
+        "TotalUnitsBuilt": 0,
+        "TotalUnitsLost": 0,
+        "TotalUnitsDestroyed": 0,
+        "TotalCardPlays": 0,
+        "HighestWaveCompleted": 0,
+        "LeaderStats": {}
+      },
+      "MultiplayerStats": {
+        "PlaylistId": null,
+        "PlaylistClassification": null,
+        "HighestCsr": null,
+        "TotalTimePlayed": "",
+        "TotalMatchesStarted": 0,
+        "TotalMatchesCompleted": 0,
+        "TotalMatchesWon": 0,
+        "TotalMatchesLost": 0,
+        "TotalPointCaptures": 0,
+        "TotalUnitsBuilt": 0,
+        "TotalUnitsLost": 0,
+        "TotalUnitsDestroyed": 0,
+        "TotalCardPlays": 0,
+        "HighestWaveCompleted": 0,
+        "LeaderStats": {}
+      }
+    },
+    "CustomStats": {
+      "PlaylistId": null,
+      "PlaylistClassification": null,
+      "HighestCsr": null,
+      "TotalTimePlayed": "",
+      "TotalMatchesStarted": 0,
+      "TotalMatchesCompleted": 0,
+      "TotalMatchesWon": 0,
+      "TotalMatchesLost": 0,
+      "TotalPointCaptures": 0,
+      "TotalUnitsBuilt": 0,
+      "TotalUnitsLost": 0,
+      "TotalUnitsDestroyed": 0,
+      "TotalCardPlays": 0,
+      "HighestWaveCompleted": 0,
+      "LeaderStats": {}
+    }
+  },
+  "MatchmakingSummary": {
+    "SocialPlaylistStats": [
+      {
+        "PlaylistId": "c80ddcda-219b-42e6-82f4-94fae8516d96",
+        "PlaylistClassification": 1,
+        "HighestCsr": null,
+        "TotalTimePlayed": "PT6M4.164S",
+        "TotalMatchesStarted": 1,
+        "TotalMatchesCompleted": 1,
+        "TotalMatchesWon": 0,
+        "TotalMatchesLost": 1,
+        "TotalPointCaptures": 4,
+        "TotalUnitsBuilt": 22,
+        "TotalUnitsLost": 17,
+        "TotalUnitsDestroyed": 23,
+        "TotalCardPlays": 19,
+        "HighestWaveCompleted": 0,
+        "LeaderStats": {
+          "Cutter": {
+            "TotalTimePlayed": "PT6M4.164S",
+            "TotalMatchesStarted": 1,
+            "TotalMatchesCompleted": 1,
+            "TotalMatchesWon": 0,
+            "TotalMatchesLost": 1,
+            "TotalLeaderPowersCast": 2
+          }
+        }
+      }
+    ],
+    "RankedPlaylistStats": []
+  }
+}

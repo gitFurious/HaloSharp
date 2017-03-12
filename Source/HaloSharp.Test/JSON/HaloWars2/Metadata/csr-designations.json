@@ -1,0 +1,2431 @@
+{
+  "Paging": {
+    "StartAt": 0,
+    "InlineCount": 8,
+    "TotalCount": 8
+  },
+  "ContentItems": [
+    {
+      "Id": 202581,
+      "Type": "HW2CsrDesignation",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2015-07-17T22:38:23Z",
+          "ModifiedUtc": "2017-02-03T18:13:06Z",
+          "PublishedUtc": "2017-02-03T19:41:52Z",
+          "Container": -1
+        },
+        "Identity": "5a76e2614b1f485994ec5d0be0776d2e",
+        "Title": "Gold Designation",
+        "HW2CsrDesignation": {
+          "DisplayInfo": {
+            "Id": 201843,
+            "Type": "HW2CsrDesignationDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "mariusi",
+                "CreatedUtc": "2015-07-17T22:38:16Z",
+                "ModifiedUtc": "2017-02-03T18:26:47Z",
+                "PublishedUtc": "2017-02-03T19:34:20Z",
+                "Container": -1
+              },
+              "Identity": "5f37ee81fb5a4753ac6852162f01752b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Gold Designation Display Properties",
+              "HW2CsrDesignationDisplayInfo": {
+                "Name": "Gold"
+              }
+            }
+          },
+          "ID": 3,
+          "Image": {},
+          "Tiers": [
+            {
+              "Id": 202576,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:35:44Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:22:55Z",
+                  "Container": -1
+                },
+                "Identity": "e2076fa21cd84a9680eff8a507015315",
+                "Title": "Gold Tier - 1",
+                "HW2CsrDesignationTier": {
+                  "ID": 1,
+                  "Image": {
+                    "Id": 337536,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:37Z",
+                        "ModifiedUtc": "2017-02-09T10:21:32Z",
+                        "PublishedUtc": "2017-02-09T10:21:32Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_gold_array01-5053cd291bb74d6a852f0cb90a62195e-2ccf22455ab345f58916eaf026198873.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_gold_array01-5053cd291bb74d6a852f0cb90a62195e-2ccf22455ab345f58916eaf026198873.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_gold_array01-5053cd291bb74d6a852f0cb90a62195e-2ccf22455ab345f58916eaf026198873",
+                      "Identity": "30770fddc1e64c0c88d34f3383cd1e8f"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202226,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:35:54Z",
+                  "ModifiedUtc": "2017-02-03T18:14:01Z",
+                  "PublishedUtc": "2017-02-09T10:23:04Z",
+                  "Container": -1
+                },
+                "Identity": "c32cf058ea7f406aa758a04df6bdec8e",
+                "Title": "Gold Tier - 2",
+                "HW2CsrDesignationTier": {
+                  "ID": 2,
+                  "Image": {
+                    "Id": 337623,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:25Z",
+                        "ModifiedUtc": "2017-02-09T10:22:09Z",
+                        "PublishedUtc": "2017-02-09T10:22:09Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_gold_array02-b68d8b0ec47f4ed689d6149959b74853-ed5c078342a54cfeafc48afb150ff3bf.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_gold_array02-b68d8b0ec47f4ed689d6149959b74853-ed5c078342a54cfeafc48afb150ff3bf.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_gold_array02-b68d8b0ec47f4ed689d6149959b74853-ed5c078342a54cfeafc48afb150ff3bf",
+                      "Identity": "9cc4cea0404b47b098dfa9b4a0e73796"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202446,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:36:04Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:22:51Z",
+                  "Container": -1
+                },
+                "Identity": "2ba0718c5694463b9f11abd52f883c8c",
+                "Title": "Gold Tier - 3",
+                "HW2CsrDesignationTier": {
+                  "ID": 3,
+                  "Image": {
+                    "Id": 337494,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:12:01Z",
+                        "ModifiedUtc": "2017-02-09T10:21:14Z",
+                        "PublishedUtc": "2017-02-09T10:21:14Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_gold_array03-bcbc2b460a934f10b499ee7f9bec6315-b1253df46699479c89b8efce3a748272.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_gold_array03-bcbc2b460a934f10b499ee7f9bec6315-b1253df46699479c89b8efce3a748272.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_gold_array03-bcbc2b460a934f10b499ee7f9bec6315-b1253df46699479c89b8efce3a748272",
+                      "Identity": "ab90450831f14297a4b8dc6e05eb3eb9"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202575,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:36:21Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:22:57Z",
+                  "Container": -1
+                },
+                "Identity": "d12fc176aa064dc79e10eea13a9799e1",
+                "Title": "Gold Tier - 4",
+                "HW2CsrDesignationTier": {
+                  "ID": 4,
+                  "Image": {
+                    "Id": 337564,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:59Z",
+                        "ModifiedUtc": "2017-02-09T10:21:44Z",
+                        "PublishedUtc": "2017-02-09T10:21:44Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_gold_array04-3e368546454941e7be9662bb893d80ed-44f1fb11ea1a4b2ea1a7075e7c4b6a25.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_gold_array04-3e368546454941e7be9662bb893d80ed-44f1fb11ea1a4b2ea1a7075e7c4b6a25.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_gold_array04-3e368546454941e7be9662bb893d80ed-44f1fb11ea1a4b2ea1a7075e7c4b6a25",
+                      "Identity": "be63ab58527c455288757f475813f8c6"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202225,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:36:33Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:23:06Z",
+                  "Container": -1
+                },
+                "Identity": "7dc17e4f28d548dca839bc6249afcd5c",
+                "Title": "Gold Tier - 5",
+                "HW2CsrDesignationTier": {
+                  "ID": 5,
+                  "Image": {
+                    "Id": 337646,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:26Z",
+                        "ModifiedUtc": "2017-02-09T10:22:18Z",
+                        "PublishedUtc": "2017-02-09T10:22:18Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_gold_array05-257a761c7c91418aaa03e2f68e57b117-de0e4827a7254e71a10b456f832f100b.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_gold_array05-257a761c7c91418aaa03e2f68e57b117-de0e4827a7254e71a10b456f832f100b.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_gold_array05-257a761c7c91418aaa03e2f68e57b117-de0e4827a7254e71a10b456f832f100b",
+                      "Identity": "afd9bf27246849a6a070584034efd19f"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202574,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:36:47Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:23:05Z",
+                  "Container": -1
+                },
+                "Identity": "a5585d108d2643e4aadebb87734bb42a",
+                "Title": "Gold Tier - 6",
+                "HW2CsrDesignationTier": {
+                  "ID": 6,
+                  "Image": {
+                    "Id": 337644,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:26Z",
+                        "ModifiedUtc": "2017-02-09T10:22:18Z",
+                        "PublishedUtc": "2017-02-09T10:22:18Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_gold_array06-89344b204245450d815f0e22ec3d4b1e-c4704a7d06a342f9b015e37585af3fc8.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_gold_array06-89344b204245450d815f0e22ec3d4b1e-c4704a7d06a342f9b015e37585af3fc8.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_gold_array06-89344b204245450d815f0e22ec3d4b1e-c4704a7d06a342f9b015e37585af3fc8",
+                      "Identity": "f88781f644d541d4be037d5028fb8509"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202581"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202737,
+      "Type": "HW2CsrDesignation",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2015-07-23T01:56:25Z",
+          "ModifiedUtc": "2017-02-03T18:13:06Z",
+          "PublishedUtc": "2017-02-03T19:41:51Z",
+          "Container": -1
+        },
+        "Identity": "565822bb48c5400181a0f5eb70958c4d",
+        "Title": "Unranked Designation",
+        "HW2CsrDesignation": {
+          "DisplayInfo": {
+            "Id": 201872,
+            "Type": "HW2CsrDesignationDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2015-07-23T01:56:17Z",
+                "ModifiedUtc": "2017-02-03T18:26:47Z",
+                "PublishedUtc": "2017-02-03T19:35:07Z",
+                "Container": -1
+              },
+              "Identity": "133a5cf43b9b43aeb2b184498880c10e",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Unranked Designation Display Properties",
+              "HW2CsrDesignationDisplayInfo": {
+                "Name": "Unranked"
+              }
+            }
+          },
+          "ID": 0,
+          "Image": {},
+          "Tiers": [
+            {
+              "Id": 202268,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T16:14:04Z",
+                  "ModifiedUtc": "2017-02-03T18:14:01Z",
+                  "PublishedUtc": "2017-02-09T10:23:05Z",
+                  "Container": -1
+                },
+                "Identity": "081b3fda6f4c494c9c4dd1383b33c352",
+                "Title": "Unranked Tier - 0",
+                "HW2CsrDesignationTier": {
+                  "ID": 0,
+                  "Image": {
+                    "Id": 337630,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:33Z",
+                        "ModifiedUtc": "2017-02-09T10:22:11Z",
+                        "PublishedUtc": "2017-02-09T10:22:12Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/unranked_00-61fca949c33f433ba7e7507d97ff130f-e7f7e1153fde49b499f2aeae896ffcd8.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "unranked_00-61fca949c33f433ba7e7507d97ff130f-e7f7e1153fde49b499f2aeae896ffcd8.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "unranked_00-61fca949c33f433ba7e7507d97ff130f-e7f7e1153fde49b499f2aeae896ffcd8",
+                      "Identity": "74b2fa3e3cb840728bb368adaa4df43a"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202427,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:28:05Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:22:51Z",
+                  "Container": -1
+                },
+                "Identity": "4fa71c8757254cb0bdcf7bd41d64a85c",
+                "Title": "Unranked Tier - 1",
+                "HW2CsrDesignationTier": {
+                  "ID": 1,
+                  "Image": {
+                    "Id": 337489,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:30Z",
+                        "ModifiedUtc": "2017-02-09T10:21:12Z",
+                        "PublishedUtc": "2017-02-09T10:21:12Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array01-1d782b69500f4faea7bd310407f621f4-c0bf7d3429714d1597d7a01ebfc703ff.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array01-1d782b69500f4faea7bd310407f621f4-c0bf7d3429714d1597d7a01ebfc703ff.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array01-1d782b69500f4faea7bd310407f621f4-c0bf7d3429714d1597d7a01ebfc703ff",
+                      "Identity": "81757c74aa8743d5b89a229576d5e897"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202231,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:28:31Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:22:53Z",
+                  "Container": -1
+                },
+                "Identity": "73b3d16f01334d66ba4cf2399cfda6f1",
+                "Title": "Unranked Tier - 2",
+                "HW2CsrDesignationTier": {
+                  "ID": 2,
+                  "Image": {
+                    "Id": 337513,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:30Z",
+                        "ModifiedUtc": "2017-02-09T10:21:23Z",
+                        "PublishedUtc": "2017-02-09T10:21:23Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array02-f43773d8a68848eba30ef9e0ee1b7fc2-6d8c600a32ec47058b9be1e269d8210b.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array02-f43773d8a68848eba30ef9e0ee1b7fc2-6d8c600a32ec47058b9be1e269d8210b.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array02-f43773d8a68848eba30ef9e0ee1b7fc2-6d8c600a32ec47058b9be1e269d8210b",
+                      "Identity": "76a03b5cc167414bab1472405a2998a1"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202230,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:28:54Z",
+                  "ModifiedUtc": "2017-02-03T18:14:01Z",
+                  "PublishedUtc": "2017-02-09T10:23:04Z",
+                  "Container": -1
+                },
+                "Identity": "715ffea5b0134946b8f834baff40158d",
+                "Title": "Unranked Tier - 3",
+                "HW2CsrDesignationTier": {
+                  "ID": 3,
+                  "Image": {
+                    "Id": 337626,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:30Z",
+                        "ModifiedUtc": "2017-02-09T10:22:10Z",
+                        "PublishedUtc": "2017-02-09T10:22:10Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array03-e39338b8bf8c4b91beccbb43222a0131-08c203b9ee694bba907c4180de566326.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array03-e39338b8bf8c4b91beccbb43222a0131-08c203b9ee694bba907c4180de566326.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array03-e39338b8bf8c4b91beccbb43222a0131-08c203b9ee694bba907c4180de566326",
+                      "Identity": "64c040f80a0145b79e4c543ceb0412b3"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202229,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:29:07Z",
+                  "ModifiedUtc": "2017-02-03T18:14:01Z",
+                  "PublishedUtc": "2017-02-09T10:22:36Z",
+                  "Container": -1
+                },
+                "Identity": "814d3ff4db9f4e5c9891afc061f39759",
+                "Title": "Unranked Tier - 4",
+                "HW2CsrDesignationTier": {
+                  "ID": 4,
+                  "Image": {
+                    "Id": 337694,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:31Z",
+                        "ModifiedUtc": "2017-02-09T10:22:35Z",
+                        "PublishedUtc": "2017-02-09T10:22:35Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array04-43c99e398c564384bd05560d3c574c21-32baa565150342ef8faea7d18b8fa8d9.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array04-43c99e398c564384bd05560d3c574c21-32baa565150342ef8faea7d18b8fa8d9.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array04-43c99e398c564384bd05560d3c574c21-32baa565150342ef8faea7d18b8fa8d9",
+                      "Identity": "fc53376607954ffd8b1f131a04a127ce"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202579,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:29:20Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:23:04Z",
+                  "Container": -1
+                },
+                "Identity": "95f84bf1933f46dca8a3af814bbfb572",
+                "Title": "Unranked Tier - 5",
+                "HW2CsrDesignationTier": {
+                  "ID": 5,
+                  "Image": {
+                    "Id": 337624,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:32Z",
+                        "ModifiedUtc": "2017-02-09T10:22:09Z",
+                        "PublishedUtc": "2017-02-09T10:22:09Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array05-3f8286472cc64976a7a9263c30fdc64e-736569bfcaf6444a90d3c738dee3974c.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array05-3f8286472cc64976a7a9263c30fdc64e-736569bfcaf6444a90d3c738dee3974c.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array05-3f8286472cc64976a7a9263c30fdc64e-736569bfcaf6444a90d3c738dee3974c",
+                      "Identity": "0c029ffefab9497d8b23bc311294ceb3"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202580,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:29:31Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:22:56Z",
+                  "Container": -1
+                },
+                "Identity": "ebe451e09d844b869af1a412c6b8ed88",
+                "Title": "Unranked Tier - 6",
+                "HW2CsrDesignationTier": {
+                  "ID": 6,
+                  "Image": {
+                    "Id": 337543,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:35Z",
+                        "ModifiedUtc": "2017-02-09T10:21:35Z",
+                        "PublishedUtc": "2017-02-09T10:21:35Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array06-6416017745164c6a9d956933023a4440-edc3e5eb53a944ab93f86207b404d5db.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array06-6416017745164c6a9d956933023a4440-edc3e5eb53a944ab93f86207b404d5db.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array06-6416017745164c6a9d956933023a4440-edc3e5eb53a944ab93f86207b404d5db",
+                      "Identity": "7c6f80dc3a474f3686e1e4714a078bc8"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202228,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:29:43Z",
+                  "ModifiedUtc": "2017-02-03T18:14:01Z",
+                  "PublishedUtc": "2017-02-09T10:22:55Z",
+                  "Container": -1
+                },
+                "Identity": "cb21935aac554b27a6f048f745ed78f9",
+                "Title": "Unranked Tier - 7",
+                "HW2CsrDesignationTier": {
+                  "ID": 7,
+                  "Image": {
+                    "Id": 337537,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:32Z",
+                        "ModifiedUtc": "2017-02-09T10:21:32Z",
+                        "PublishedUtc": "2017-02-09T10:21:32Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array07-65f39149116c43079f75b358b482f40b-c40563444a3d4727a03aaaf1ff5f25ea.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array07-65f39149116c43079f75b358b482f40b-c40563444a3d4727a03aaaf1ff5f25ea.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array07-65f39149116c43079f75b358b482f40b-c40563444a3d4727a03aaaf1ff5f25ea",
+                      "Identity": "43707d11a6584a5899fa65fed6ee132d"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202578,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:29:56Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:23:08Z",
+                  "Container": -1
+                },
+                "Identity": "cb9660112dec4ca4ac2dd645cc04646e",
+                "Title": "Unranked Tier - 8",
+                "HW2CsrDesignationTier": {
+                  "ID": 8,
+                  "Image": {
+                    "Id": 337668,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:33Z",
+                        "ModifiedUtc": "2017-02-09T10:22:26Z",
+                        "PublishedUtc": "2017-02-09T10:22:27Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array08-3edd9ef3c4a94ab89961ab5b89dd3283-a239b462e56842d18881cf45c7534b92.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array08-3edd9ef3c4a94ab89961ab5b89dd3283-a239b462e56842d18881cf45c7534b92.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array08-3edd9ef3c4a94ab89961ab5b89dd3283-a239b462e56842d18881cf45c7534b92",
+                      "Identity": "3ecc6b6bacf5489daadb47e09c9b5fc1"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202582,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:30:08Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:22:53Z",
+                  "Container": -1
+                },
+                "Identity": "1f9b146f3bcf4d839a054f645265e612",
+                "Title": "Unranked Tier - 9",
+                "HW2CsrDesignationTier": {
+                  "ID": 9,
+                  "Image": {
+                    "Id": 337517,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:33Z",
+                        "ModifiedUtc": "2017-02-09T10:21:25Z",
+                        "PublishedUtc": "2017-02-09T10:21:25Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_unranked_array09-5336d7a4b9294aa9a14906351b156e3a-30448d445f9a42939dce4cabc986e3d9.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_unranked_array09-5336d7a4b9294aa9a14906351b156e3a-30448d445f9a42939dce4cabc986e3d9.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_unranked_array09-5336d7a4b9294aa9a14906351b156e3a-30448d445f9a42939dce4cabc986e3d9",
+                      "Identity": "80293fb9120b4ba1afcc87b560faa8a5"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202737"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202214,
+      "Type": "HW2CsrDesignation",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2015-07-17T22:41:41Z",
+          "ModifiedUtc": "2017-02-03T18:13:07Z",
+          "PublishedUtc": "2017-02-03T19:41:49Z",
+          "Container": -1
+        },
+        "Identity": "af930c451f8041bc8998e93f0486b151",
+        "Title": "Onyx Designation",
+        "HW2CsrDesignation": {
+          "DisplayInfo": {
+            "Id": 201887,
+            "Type": "HW2CsrDesignationDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2015-07-17T22:41:26Z",
+                "ModifiedUtc": "2017-02-03T18:26:47Z",
+                "PublishedUtc": "2017-02-03T19:34:33Z",
+                "Container": -1
+              },
+              "Identity": "592801f243c64fa0992582fb21363b8a",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Onyx Designation Display Properties",
+              "HW2CsrDesignationDisplayInfo": {
+                "Name": "Onyx"
+              }
+            }
+          },
+          "ID": 6,
+          "Image": {},
+          "Tiers": [
+            {
+              "Id": 201985,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:40:34Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:22:05Z",
+                  "Container": -1
+                },
+                "Identity": "fbd4870ff56142198a334928d7cf9d14",
+                "Title": "Onyx Tier - 1",
+                "HW2CsrDesignationTier": {
+                  "ID": 1,
+                  "Image": {
+                    "Id": 337613,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:29Z",
+                        "ModifiedUtc": "2017-02-09T10:22:05Z",
+                        "PublishedUtc": "2017-02-09T10:22:05Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_top_array00-783f32318c8c49eda0365c5daa50f5b6-a473b61a79ce429d92094f361ec3d357.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_top_array00-783f32318c8c49eda0365c5daa50f5b6-a473b61a79ce429d92094f361ec3d357.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_top_array00-783f32318c8c49eda0365c5daa50f5b6-a473b61a79ce429d92094f361ec3d357",
+                      "Identity": "2f625ebe8d7b4d36ad8938de312aa5e5"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202214"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202396,
+      "Type": "HW2CsrDesignation",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2015-07-17T22:39:47Z",
+          "ModifiedUtc": "2017-02-03T18:13:07Z",
+          "PublishedUtc": "2017-02-03T19:41:35Z",
+          "Container": -1
+        },
+        "Identity": "ab63f578e9ac48449467b5a8fcc55a04",
+        "Title": "Diamond Designation",
+        "HW2CsrDesignation": {
+          "DisplayInfo": {
+            "Id": 201815,
+            "Type": "HW2CsrDesignationDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2015-07-17T22:39:34Z",
+                "ModifiedUtc": "2017-02-03T18:26:47Z",
+                "PublishedUtc": "2017-02-03T19:34:11Z",
+                "Container": -1
+              },
+              "Identity": "5b34e6f7b37145baa9b85838988d8e6b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Diamond Designation Display Properties",
+              "HW2CsrDesignationDisplayInfo": {
+                "Name": "Diamond"
+              }
+            }
+          },
+          "ID": 5,
+          "Image": {},
+          "Tiers": [
+            {
+              "Id": 202026,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:39:03Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:23:08Z",
+                  "Container": -1
+                },
+                "Identity": "7490528bb12c4f2a8010846d8f739ae0",
+                "Title": "Diamond Tier - 1",
+                "HW2CsrDesignationTier": {
+                  "ID": 1,
+                  "Image": {
+                    "Id": 337665,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:47Z",
+                        "ModifiedUtc": "2017-02-09T10:22:25Z",
+                        "PublishedUtc": "2017-02-09T10:22:25Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_diamond_array01-9721d95b267942dcb1edcce6dfc25631-3d99859b4a134caebd92258dfd97c6e7.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_diamond_array01-9721d95b267942dcb1edcce6dfc25631-3d99859b4a134caebd92258dfd97c6e7.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_diamond_array01-9721d95b267942dcb1edcce6dfc25631-3d99859b4a134caebd92258dfd97c6e7",
+                      "Identity": "a8352a091f2d489285c3348b1bbd83e6"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 201990,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:39:16Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:23:08Z",
+                  "Container": -1
+                },
+                "Identity": "f7e13b4e1e0241eead46bbbec93d406c",
+                "Title": "Diamond Tier - 2",
+                "HW2CsrDesignationTier": {
+                  "ID": 2,
+                  "Image": {
+                    "Id": 337686,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:35Z",
+                        "ModifiedUtc": "2017-02-09T10:22:31Z",
+                        "PublishedUtc": "2017-02-09T10:22:32Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_diamond_array02-02e21757b59540f7a9b7d39656ab855d-ae6697ccfc674c6b9d5da3193ce7689f.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_diamond_array02-02e21757b59540f7a9b7d39656ab855d-ae6697ccfc674c6b9d5da3193ce7689f.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_diamond_array02-02e21757b59540f7a9b7d39656ab855d-ae6697ccfc674c6b9d5da3193ce7689f",
+                      "Identity": "10811561bcd84d2e80de60a9677eae1c"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202390,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:39:26Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:22:55Z",
+                  "Container": -1
+                },
+                "Identity": "4ec11d1c17e54e6399bcd344328ddba2",
+                "Title": "Diamond Tier - 3",
+                "HW2CsrDesignationTier": {
+                  "ID": 3,
+                  "Image": {
+                    "Id": 337514,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:36Z",
+                        "ModifiedUtc": "2017-02-09T10:21:24Z",
+                        "PublishedUtc": "2017-02-09T10:21:24Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_diamond_array03-b740122fc19c4e829bb8c8fda023a1f9-638d0f73c50e4c8e8cad9d30fe161041.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_diamond_array03-b740122fc19c4e829bb8c8fda023a1f9-638d0f73c50e4c8e8cad9d30fe161041.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_diamond_array03-b740122fc19c4e829bb8c8fda023a1f9-638d0f73c50e4c8e8cad9d30fe161041",
+                      "Identity": "9de2753fc0c24185b3f5f1c33c9b3621"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202391,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:39:35Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:22:50Z",
+                  "Container": -1
+                },
+                "Identity": "f02841750b1849a4a5ec09bf5cc77993",
+                "Title": "Diamond Tier - 4",
+                "HW2CsrDesignationTier": {
+                  "ID": 4,
+                  "Image": {
+                    "Id": 337483,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:36Z",
+                        "ModifiedUtc": "2017-02-09T10:21:09Z",
+                        "PublishedUtc": "2017-02-09T10:21:10Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_diamond_array04-7848018cc29c43bf932b9c03b19ed766-f26e52e50a5945bc994f8e19f7fedd1a.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_diamond_array04-7848018cc29c43bf932b9c03b19ed766-f26e52e50a5945bc994f8e19f7fedd1a.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_diamond_array04-7848018cc29c43bf932b9c03b19ed766-f26e52e50a5945bc994f8e19f7fedd1a",
+                      "Identity": "3262aad5152845d08bb80f294c0e3b9a"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 201989,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:39:44Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:23:03Z",
+                  "Container": -1
+                },
+                "Identity": "af391a11f14d4f9bbad1d69a98efa04b",
+                "Title": "Diamond Tier - 5",
+                "HW2CsrDesignationTier": {
+                  "ID": 5,
+                  "Image": {
+                    "Id": 337612,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:36Z",
+                        "ModifiedUtc": "2017-02-09T10:22:05Z",
+                        "PublishedUtc": "2017-02-09T10:22:05Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_diamond_array05-539c69e9f27e4e8bbf9a52d9755dce7c-7af0c094ebe741a798030b1243d963f5.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_diamond_array05-539c69e9f27e4e8bbf9a52d9755dce7c-7af0c094ebe741a798030b1243d963f5.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_diamond_array05-539c69e9f27e4e8bbf9a52d9755dce7c-7af0c094ebe741a798030b1243d963f5",
+                      "Identity": "ea46d8323bfa4b99bf63086ca588e8c2"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202389,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:39:52Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:23:08Z",
+                  "Container": -1
+                },
+                "Identity": "c6ed14dd38a04e129d2e283238f9d471",
+                "Title": "Diamond Tier - 6",
+                "HW2CsrDesignationTier": {
+                  "ID": 6,
+                  "Image": {
+                    "Id": 337685,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:37Z",
+                        "ModifiedUtc": "2017-02-09T10:22:32Z",
+                        "PublishedUtc": "2017-02-09T10:22:32Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_diamond_array06-b64e6ab9c4864c0f8848554853892fab-6fd91d76b2ef4e7282a049229ec7afbd.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_diamond_array06-b64e6ab9c4864c0f8848554853892fab-6fd91d76b2ef4e7282a049229ec7afbd.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_diamond_array06-b64e6ab9c4864c0f8848554853892fab-6fd91d76b2ef4e7282a049229ec7afbd",
+                      "Identity": "3934ead573a54ecca630ca87b4d3c052"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202396"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202363,
+      "Type": "HW2CsrDesignation",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2015-07-17T22:31:01Z",
+          "ModifiedUtc": "2017-02-03T18:13:07Z",
+          "PublishedUtc": "2017-02-03T19:41:31Z",
+          "Container": -1
+        },
+        "Identity": "ed1e50f8dc3a4765b90bad2612899c8b",
+        "Title": "Bronze Designation",
+        "HW2CsrDesignation": {
+          "DisplayInfo": {
+            "Id": 201867,
+            "Type": "HW2CsrDesignationDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2015-07-17T22:30:56Z",
+                "ModifiedUtc": "2017-02-03T18:26:47Z",
+                "PublishedUtc": "2017-02-03T19:34:24Z",
+                "Container": -1
+              },
+              "Identity": "bfed89c7959146129550f0b45f0f079b",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Bronze Designation Display Properties",
+              "HW2CsrDesignationDisplayInfo": {
+                "Name": "Bronze"
+              }
+            }
+          },
+          "ID": 1,
+          "Image": {},
+          "Tiers": [
+            {
+              "Id": 202196,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:31:22Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:22:59Z",
+                  "Container": -1
+                },
+                "Identity": "dfa7db9459244770a7d2bb6401bcc646",
+                "Title": "Bronze Tier - 1",
+                "HW2CsrDesignationTier": {
+                  "ID": 1,
+                  "Image": {
+                    "Id": 337582,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:34Z",
+                        "ModifiedUtc": "2017-02-09T10:21:52Z",
+                        "PublishedUtc": "2017-02-09T10:21:52Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_bronze_array01-c68c7e495d124eba8343c0874d74cd36-3632a3adf32e4f4abd9704cc77efd317.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_bronze_array01-c68c7e495d124eba8343c0874d74cd36-3632a3adf32e4f4abd9704cc77efd317.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_bronze_array01-c68c7e495d124eba8343c0874d74cd36-3632a3adf32e4f4abd9704cc77efd317",
+                      "Identity": "567e7584a6544f04a5b5f1921982f296"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202359,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:31:38Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:23:05Z",
+                  "Container": -1
+                },
+                "Identity": "41025fd44e604dff8c9a9295a2425580",
+                "Title": "Bronze Tier - 2",
+                "HW2CsrDesignationTier": {
+                  "ID": 2,
+                  "Image": {
+                    "Id": 337633,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:34Z",
+                        "ModifiedUtc": "2017-02-09T10:22:13Z",
+                        "PublishedUtc": "2017-02-09T10:22:13Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_bronze_array02-431098c768ef4832b5d925ba06efbe70-4d1dd74e0e2a4e1a97b597aa8642fedc.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_bronze_array02-431098c768ef4832b5d925ba06efbe70-4d1dd74e0e2a4e1a97b597aa8642fedc.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_bronze_array02-431098c768ef4832b5d925ba06efbe70-4d1dd74e0e2a4e1a97b597aa8642fedc",
+                      "Identity": "a9900ad9035447d4aee092a1df040286"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202358,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:31:51Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:23:05Z",
+                  "Container": -1
+                },
+                "Identity": "f2f73de4c04a4593981b102b9a7a8bbf",
+                "Title": "Bronze Tier - 3",
+                "HW2CsrDesignationTier": {
+                  "ID": 3,
+                  "Image": {
+                    "Id": 337632,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:34Z",
+                        "ModifiedUtc": "2017-02-09T10:22:12Z",
+                        "PublishedUtc": "2017-02-09T10:22:12Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_bronze_array03-be10288e2f534c4ebd990769ebb98205-9f6a0d6ced70492396dbd11abdb0e6ab.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_bronze_array03-be10288e2f534c4ebd990769ebb98205-9f6a0d6ced70492396dbd11abdb0e6ab.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_bronze_array03-be10288e2f534c4ebd990769ebb98205-9f6a0d6ced70492396dbd11abdb0e6ab",
+                      "Identity": "6ee066e63ba54ad7a71b5fcc31b29670"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202031,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:32:06Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:22:03Z",
+                  "Container": -1
+                },
+                "Identity": "02448f207e5f4ff884a13b8d9a5e7c5f",
+                "Title": "Bronze Tier - 4",
+                "HW2CsrDesignationTier": {
+                  "ID": 4,
+                  "Image": {
+                    "Id": 337609,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:35Z",
+                        "ModifiedUtc": "2017-02-09T10:22:03Z",
+                        "PublishedUtc": "2017-02-09T10:22:03Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_bronze_array04-961414ccdf8a4e5c8a5f9222f3f28ef3-da7c8f39e9424d218955107593d7fd6b.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_bronze_array04-961414ccdf8a4e5c8a5f9222f3f28ef3-da7c8f39e9424d218955107593d7fd6b.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_bronze_array04-961414ccdf8a4e5c8a5f9222f3f28ef3-da7c8f39e9424d218955107593d7fd6b",
+                      "Identity": "6ea59e19313844f8a4d12dafd9df31e7"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202211,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:32:18Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:21:02Z",
+                  "Container": -1
+                },
+                "Identity": "b31465122a9f4e0e9cc474bfb880f2bb",
+                "Title": "Bronze Tier - 5",
+                "HW2CsrDesignationTier": {
+                  "ID": 5,
+                  "Image": {
+                    "Id": 337463,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:34Z",
+                        "ModifiedUtc": "2017-02-09T10:21:01Z",
+                        "PublishedUtc": "2017-02-09T10:21:01Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_bronze_array05-ee28f7cd7ef1456cba392ca10b947961-5e405331321c42b0af65f1608de3657e.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_bronze_array05-ee28f7cd7ef1456cba392ca10b947961-5e405331321c42b0af65f1608de3657e.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_bronze_array05-ee28f7cd7ef1456cba392ca10b947961-5e405331321c42b0af65f1608de3657e",
+                      "Identity": "643c94bfe01f4560bc85201bfd43d2b1"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202034,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:32:32Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:22:56Z",
+                  "Container": -1
+                },
+                "Identity": "01f11844ed394a9b957d3534f81007e1",
+                "Title": "Bronze Tier - 6",
+                "HW2CsrDesignationTier": {
+                  "ID": 6,
+                  "Image": {
+                    "Id": 337558,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:35Z",
+                        "ModifiedUtc": "2017-02-09T10:21:42Z",
+                        "PublishedUtc": "2017-02-09T10:21:43Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_bronze_array06-b9c70a4d151846d590e38b67ae0000e7-124afc55bacd40d8bdfc05ca00caf4fd.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_bronze_array06-b9c70a4d151846d590e38b67ae0000e7-124afc55bacd40d8bdfc05ca00caf4fd.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_bronze_array06-b9c70a4d151846d590e38b67ae0000e7-124afc55bacd40d8bdfc05ca00caf4fd",
+                      "Identity": "663a0075747f42c59541e5d81e22f86c"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202363"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202730,
+      "Type": "HW2CsrDesignation",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2015-07-17T22:37:49Z",
+          "ModifiedUtc": "2017-02-03T18:13:06Z",
+          "PublishedUtc": "2017-02-03T19:40:42Z",
+          "Container": -1
+        },
+        "Identity": "0edd763355634590975f45f84b8b745f",
+        "Title": "Platinum Designation",
+        "HW2CsrDesignation": {
+          "DisplayInfo": {
+            "Id": 201917,
+            "Type": "HW2CsrDesignationDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2015-07-17T22:37:39Z",
+                "ModifiedUtc": "2017-02-03T18:26:47Z",
+                "PublishedUtc": "2017-02-03T19:34:33Z",
+                "Container": -1
+              },
+              "Identity": "182fc9e28709465ba6438b3cda6062b0",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Platinum Designation Display Properties",
+              "HW2CsrDesignationDisplayInfo": {
+                "Name": "Platinum"
+              }
+            }
+          },
+          "ID": 4,
+          "Image": {},
+          "Tiers": [
+            {
+              "Id": 202543,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:37:29Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:21:52Z",
+                  "Container": -1
+                },
+                "Identity": "8e52a4d31de04d248be0532c270b649c",
+                "Title": "Platinum Tier - 1",
+                "HW2CsrDesignationTier": {
+                  "ID": 1,
+                  "Image": {
+                    "Id": 337580,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:32Z",
+                        "ModifiedUtc": "2017-02-09T10:21:52Z",
+                        "PublishedUtc": "2017-02-09T10:21:52Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_platinum_array01-c8df3dc366ea49209762f9b08189ffa6-20c5f05954214b399107f3c521e09f9a.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_platinum_array01-c8df3dc366ea49209762f9b08189ffa6-20c5f05954214b399107f3c521e09f9a.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_platinum_array01-c8df3dc366ea49209762f9b08189ffa6-20c5f05954214b399107f3c521e09f9a",
+                      "Identity": "0ca9ae73f09f487cae95a864913f4779"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202542,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:37:36Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:22:58Z",
+                  "Container": -1
+                },
+                "Identity": "58960761f4d4478093cf2f797637cc03",
+                "Title": "Platinum Tier - 2",
+                "HW2CsrDesignationTier": {
+                  "ID": 2,
+                  "Image": {
+                    "Id": 337571,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:26Z",
+                        "ModifiedUtc": "2017-02-09T10:21:46Z",
+                        "PublishedUtc": "2017-02-09T10:21:47Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_platinum_array02-b405ecb131fd424daf54a9c65637e0ad-ca52cea4e2f340b8a3d08f7919dfc560.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_platinum_array02-b405ecb131fd424daf54a9c65637e0ad-ca52cea4e2f340b8a3d08f7919dfc560.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_platinum_array02-b405ecb131fd424daf54a9c65637e0ad-ca52cea4e2f340b8a3d08f7919dfc560",
+                      "Identity": "64765d999f5e4fe892e82dcd17e6a8bc"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202541,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:37:45Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:21:47Z",
+                  "Container": -1
+                },
+                "Identity": "51ae2f30d1b14579bda07cd046085e3d",
+                "Title": "Platinum Tier - 3",
+                "HW2CsrDesignationTier": {
+                  "ID": 3,
+                  "Image": {
+                    "Id": 337572,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:26Z",
+                        "ModifiedUtc": "2017-02-09T10:21:46Z",
+                        "PublishedUtc": "2017-02-09T10:21:47Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_platinum_array03-6bbe1ab4c33245deb98306c02af52b26-d463da1b4d674cd2a6e2c07a570d451e.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_platinum_array03-6bbe1ab4c33245deb98306c02af52b26-d463da1b4d674cd2a6e2c07a570d451e.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_platinum_array03-6bbe1ab4c33245deb98306c02af52b26-d463da1b4d674cd2a6e2c07a570d451e",
+                      "Identity": "6a38b154afd843d2bc4ee593287c829d"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202544,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:37:55Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:22:55Z",
+                  "Container": -1
+                },
+                "Identity": "a3dc206ef1144c04aa0448ffeb0f0505",
+                "Title": "Platinum Tier - 4",
+                "HW2CsrDesignationTier": {
+                  "ID": 4,
+                  "Image": {
+                    "Id": 337542,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:27Z",
+                        "ModifiedUtc": "2017-02-09T10:21:34Z",
+                        "PublishedUtc": "2017-02-09T10:21:34Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_platinum_array04-a6b2cf1f15164557a35df91f0f5f2e85-9747d80441784fd99365f457f127562f.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_platinum_array04-a6b2cf1f15164557a35df91f0f5f2e85-9747d80441784fd99365f457f127562f.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_platinum_array04-a6b2cf1f15164557a35df91f0f5f2e85-9747d80441784fd99365f457f127562f",
+                      "Identity": "89d042598a8847548f62394e4db27675"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202540,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:38:05Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:22:54Z",
+                  "Container": -1
+                },
+                "Identity": "6d0721e9776747f7a151c444a5da235a",
+                "Title": "Platinum Tier - 5",
+                "HW2CsrDesignationTier": {
+                  "ID": 5,
+                  "Image": {
+                    "Id": 337518,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:27Z",
+                        "ModifiedUtc": "2017-02-09T10:21:25Z",
+                        "PublishedUtc": "2017-02-09T10:21:26Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_platinum_array05-fe21b9454a2944e593f9012da06810f3-ccbcf9ba1bb842e1a4791389cb23d392.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_platinum_array05-fe21b9454a2944e593f9012da06810f3-ccbcf9ba1bb842e1a4791389cb23d392.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_platinum_array05-fe21b9454a2944e593f9012da06810f3-ccbcf9ba1bb842e1a4791389cb23d392",
+                      "Identity": "0676e0a9ef3a45e58e66f5213fcf9aac"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202539,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:38:20Z",
+                  "ModifiedUtc": "2017-02-03T18:13:59Z",
+                  "PublishedUtc": "2017-02-09T10:22:58Z",
+                  "Container": -1
+                },
+                "Identity": "348f03792769495a9e5e08ba522982fd",
+                "Title": "Platinum Tier - 6",
+                "HW2CsrDesignationTier": {
+                  "ID": 6,
+                  "Image": {
+                    "Id": 337569,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:27Z",
+                        "ModifiedUtc": "2017-02-09T10:21:46Z",
+                        "PublishedUtc": "2017-02-09T10:21:46Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_platinum_array06-05c733f15d1b4101ba2b04d1eb56df63-2d65f639983540e99056fa46a04ecada.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_platinum_array06-05c733f15d1b4101ba2b04d1eb56df63-2d65f639983540e99056fa46a04ecada.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_platinum_array06-05c733f15d1b4101ba2b04d1eb56df63-2d65f639983540e99056fa46a04ecada",
+                      "Identity": "9cd2b08487f44f9f9c20b93d8f58d19a"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202730"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202416,
+      "Type": "HW2CsrDesignation",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2015-07-17T22:36:48Z",
+          "ModifiedUtc": "2017-02-03T18:13:07Z",
+          "PublishedUtc": "2017-02-03T19:40:34Z",
+          "Container": -1
+        },
+        "Identity": "99b946eddcb44bc3aefa35b23e7b054c",
+        "Title": "Silver Designation",
+        "HW2CsrDesignation": {
+          "DisplayInfo": {
+            "Id": 201827,
+            "Type": "HW2CsrDesignationDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2015-07-17T22:36:42Z",
+                "ModifiedUtc": "2017-02-03T18:26:47Z",
+                "PublishedUtc": "2017-02-03T19:35:13Z",
+                "Container": -1
+              },
+              "Identity": "9dd1a440c7ff4d5f9f6d192ac081a1d4",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Silver Designation Display Properties",
+              "HW2CsrDesignationDisplayInfo": {
+                "Name": "Silver"
+              }
+            }
+          },
+          "ID": 2,
+          "Image": {},
+          "Tiers": [
+            {
+              "Id": 202410,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:33:13Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:21:10Z",
+                  "Container": -1
+                },
+                "Identity": "7fe4de6d387c480984304a25599b283a",
+                "Title": "Silver Tier - 1",
+                "HW2CsrDesignationTier": {
+                  "ID": 1,
+                  "Image": {
+                    "Id": 337482,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:28Z",
+                        "ModifiedUtc": "2017-02-09T10:21:09Z",
+                        "PublishedUtc": "2017-02-09T10:21:09Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_silver_array01-b4739333586340bda2eed6099e630f92-2a2e4edae3cc4ccca7f58c1665c1fd60.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_silver_array01-b4739333586340bda2eed6099e630f92-2a2e4edae3cc4ccca7f58c1665c1fd60.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_silver_array01-b4739333586340bda2eed6099e630f92-2a2e4edae3cc4ccca7f58c1665c1fd60",
+                      "Identity": "ff8eb137df3543ba90d0f65899d2ac92"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202006,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:33:32Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:22:54Z",
+                  "Container": -1
+                },
+                "Identity": "fc7c5d5ad6334b9690960fea9afb570c",
+                "Title": "Silver Tier - 2",
+                "HW2CsrDesignationTier": {
+                  "ID": 2,
+                  "Image": {
+                    "Id": 337526,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:27Z",
+                        "ModifiedUtc": "2017-02-09T10:21:27Z",
+                        "PublishedUtc": "2017-02-09T10:21:28Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_silver_array02-bbdda8849cd247219a78446423790d4c-07bfc1ef015543c5956fc465832a39cf.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_silver_array02-bbdda8849cd247219a78446423790d4c-07bfc1ef015543c5956fc465832a39cf.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_silver_array02-bbdda8849cd247219a78446423790d4c-07bfc1ef015543c5956fc465832a39cf",
+                      "Identity": "ce7bef5bb7ef4a75b93429d16caa1ea1"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202411,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:33:57Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:22:55Z",
+                  "Container": -1
+                },
+                "Identity": "1e74191532404ddd995f0f458637f1b5",
+                "Title": "Silver Tier - 3",
+                "HW2CsrDesignationTier": {
+                  "ID": 3,
+                  "Image": {
+                    "Id": 337527,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:28Z",
+                        "ModifiedUtc": "2017-02-09T10:21:28Z",
+                        "PublishedUtc": "2017-02-09T10:21:28Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_silver_array03-6849dd95d8f2408188412ce2e33c137b-e2784b6f01dc4ff78d263695f8a437da.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_silver_array03-6849dd95d8f2408188412ce2e33c137b-e2784b6f01dc4ff78d263695f8a437da.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_silver_array03-6849dd95d8f2408188412ce2e33c137b-e2784b6f01dc4ff78d263695f8a437da",
+                      "Identity": "125b83121bf94aaf8afd2966915b55be"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202005,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:34:47Z",
+                  "ModifiedUtc": "2017-02-03T18:14:02Z",
+                  "PublishedUtc": "2017-02-09T10:22:54Z",
+                  "Container": -1
+                },
+                "Identity": "faa930a33de2475fb52596cb8073d64f",
+                "Title": "Silver Tier - 4",
+                "HW2CsrDesignationTier": {
+                  "ID": 4,
+                  "Image": {
+                    "Id": 337529,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:29Z",
+                        "ModifiedUtc": "2017-02-09T10:21:28Z",
+                        "PublishedUtc": "2017-02-09T10:21:29Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_silver_array04-42293fba165048e8ac847898376f5653-a0c1590b5f4b48919b77223cfe3a3db9.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_silver_array04-42293fba165048e8ac847898376f5653-a0c1590b5f4b48919b77223cfe3a3db9.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_silver_array04-42293fba165048e8ac847898376f5653-a0c1590b5f4b48919b77223cfe3a3db9",
+                      "Identity": "13cddbff7db747ca9e17e1293760f7e6"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202271,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:35:03Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:22:54Z",
+                  "Container": -1
+                },
+                "Identity": "02bb2ccf8e6047cb9aa63813676f2971",
+                "Title": "Silver Tier - 5",
+                "HW2CsrDesignationTier": {
+                  "ID": 5,
+                  "Image": {
+                    "Id": 337534,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:28Z",
+                        "ModifiedUtc": "2017-02-09T10:21:31Z",
+                        "PublishedUtc": "2017-02-09T10:21:31Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_silver_array05-03f6dcc3b26542daadba4b0d7c988d53-22b14e61a7ca4129b6811b1a7eca1981.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_silver_array05-03f6dcc3b26542daadba4b0d7c988d53-22b14e61a7ca4129b6811b1a7eca1981.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_silver_array05-03f6dcc3b26542daadba4b0d7c988d53-22b14e61a7ca4129b6811b1a7eca1981",
+                      "Identity": "0eb5c8427bba48d7b10fd832f99dc003"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Id": 202409,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:35:16Z",
+                  "ModifiedUtc": "2017-02-03T18:14:00Z",
+                  "PublishedUtc": "2017-02-09T10:21:29Z",
+                  "Container": -1
+                },
+                "Identity": "b227080853184ab18d168d26570191f7",
+                "Title": "Silver Tier - 6",
+                "HW2CsrDesignationTier": {
+                  "ID": 6,
+                  "Image": {
+                    "Id": 337528,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:29Z",
+                        "ModifiedUtc": "2017-02-09T10:21:28Z",
+                        "PublishedUtc": "2017-02-09T10:21:29Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_silver_array06-8e3ab3d5ce5d4f27af827e52e1837439-35c84c72304241ec959911dbaefb2431.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_silver_array06-8e3ab3d5ce5d4f27af827e52e1837439-35c84c72304241ec959911dbaefb2431.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_silver_array06-8e3ab3d5ce5d4f27af827e52e1837439-35c84c72304241ec959911dbaefb2431",
+                      "Identity": "7cba9359dff640c89a8bbaf15c85151f"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202416"
+        }
+      ],
+      "ChildrenCount": 0
+    },
+    {
+      "Id": 202239,
+      "Type": "HW2CsrDesignation",
+      "View": {
+        "Status": "Published",
+        "Common": {
+          "Owner": "edostrov",
+          "CreatedUtc": "2015-07-17T22:43:54Z",
+          "ModifiedUtc": "2017-02-03T18:13:07Z",
+          "PublishedUtc": "2017-02-03T19:39:30Z",
+          "Container": -1
+        },
+        "Identity": "524f862a21a7466189ccc89836adc180",
+        "Title": "Champion Designation",
+        "HW2CsrDesignation": {
+          "DisplayInfo": {
+            "Id": 201864,
+            "Type": "HW2CsrDesignationDisplayInfo",
+            "View": {
+              "Status": "Published",
+              "Common": {
+                "Owner": "edostrov",
+                "CreatedUtc": "2015-07-17T22:43:48Z",
+                "ModifiedUtc": "2017-02-03T18:26:47Z",
+                "PublishedUtc": "2017-02-03T19:34:15Z",
+                "Container": -1
+              },
+              "Identity": "7ad5cf425317413c81cc246509e90c82",
+              "BatchLocalization": {
+                "IsLocked": false
+              },
+              "Localization": {
+                "Culture": "en",
+                "MasterContentItemId": ""
+              },
+              "Title": "Champion Designation Display Properties",
+              "HW2CsrDesignationDisplayInfo": {
+                "Name": "Champion"
+              }
+            }
+          },
+          "ID": 7,
+          "Image": {},
+          "Tiers": [
+            {
+              "Id": 202235,
+              "Type": "HW2CsrDesignationTier",
+              "View": {
+                "Status": "Published",
+                "Common": {
+                  "Owner": "edostrov",
+                  "CreatedUtc": "2015-08-07T17:40:52Z",
+                  "ModifiedUtc": "2017-02-03T18:14:01Z",
+                  "PublishedUtc": "2017-02-09T10:22:51Z",
+                  "Container": -1
+                },
+                "Identity": "93e92ead6bef43f18639ad30a99e201f",
+                "Title": "Champion Tier - 1",
+                "HW2CsrDesignationTier": {
+                  "ID": 1,
+                  "Image": {
+                    "Id": 337490,
+                    "Type": "Image",
+                    "View": {
+                      "Status": "Published",
+                      "Common": {
+                        "Owner": "scottmcm",
+                        "CreatedUtc": "2017-02-07T21:11:29Z",
+                        "ModifiedUtc": "2017-02-09T10:21:12Z",
+                        "PublishedUtc": "2017-02-09T10:21:12Z",
+                        "Container": -1
+                      },
+                      "Media": {
+                        "MediaUrl": "https://content.halocdn.com/media/Default/games/halo-wars-2/csr/csr_top_array01-3755e5127c9c46368e648d58da44390e-b191ac4cc4ee47a184a3d0177ffae96c.png",
+                        "MimeType": "image/png",
+                        "Caption": "",
+                        "AlternateText": "",
+                        "FolderPath": "games/halo-wars-2/csr",
+                        "FileName": "csr_top_array01-3755e5127c9c46368e648d58da44390e-b191ac4cc4ee47a184a3d0177ffae96c.png"
+                      },
+                      "Image": {
+                        "Width": 256,
+                        "Height": 256
+                      },
+                      "Title": "csr_top_array01-3755e5127c9c46368e648d58da44390e-b191ac4cc4ee47a184a3d0177ffae96c",
+                      "Identity": "630c2831043443d4b21e17f011846f11"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Links": [
+        {
+          "Absolute": false,
+          "Relation": "Self",
+          "URI": "/content/202239"
+        }
+      ],
+      "ChildrenCount": 0
+    }
+  ]
+}

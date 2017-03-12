@@ -1,0 +1,269 @@
+{
+  "definitions": {
+    "Teams": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "TeamSize": {
+            "type": "integer"
+          },
+          "MatchOutcome": {
+            "type": "integer"
+          },
+          "ObjectiveScore": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "TeamSize",
+          "MatchOutcome",
+          "ObjectiveScore"
+        ]
+      }
+    },
+
+    "Players": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "IsHuman": {
+            "type": "boolean"
+          },
+          "HumanPlayerId": {
+            "$ref": "../../common/identity.schema.json"
+          },
+          "ComputerPlayerId": {
+            "type": [ "null", "integer" ]
+          },
+          "ComputerDifficulty": {
+            "type": [ "null", "integer" ]
+          },
+          "TeamId": {
+            "type": "integer"
+          },
+          "TeamPlayerIndex": {
+            "type": "integer"
+          },
+          "LeaderId": {
+            "type": "integer"
+          },
+          "PlayerCompletedMatch": {
+            "type": "boolean"
+          },
+          "TimeInMatch": {
+            "type": "string"
+          },
+          "PlayerMatchOutcome": {
+            "type": "integer"
+          },
+          "PointStats": {
+            "$ref": "#/definitions/PointStats"
+          },
+          "UnitStats": {
+            "$ref": "#/definitions/UnitStats"
+          },
+          "CardStats": {
+            "$ref": "#/definitions/CardStats"
+          },
+          "WaveStats": {
+            "$ref": "#/definitions/WaveStats"
+          },
+          "LeaderPowerStats": {
+            "$ref": "#/definitions/LeaderPowerStats"
+          },
+          "XPProgress": {
+            "$ref": "common/experience-progress.schema.json"
+          },
+          "RatingProgress": {
+            "$ref": "common/rating-progress.schema.json"
+          }
+        },
+        "required": [
+          "IsHuman",
+          "HumanPlayerId",
+          "ComputerPlayerId",
+          "ComputerDifficulty",
+          "TeamId",
+          "TeamPlayerIndex",
+          "LeaderId",
+          "PlayerCompletedMatch",
+          "TimeInMatch",
+          "PlayerMatchOutcome",
+          "PointStats",
+          "UnitStats",
+          "CardStats",
+          "WaveStats",
+          "LeaderPowerStats",
+          "XPProgress",
+          "RatingProgress"
+        ]
+      }
+    },
+
+    "PointStats": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "TimesCaptured": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "TimesCaptured"
+        ]
+      }
+    },
+
+    "UnitStats": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "TotalBuilt": {
+            "type": "integer"
+          },
+          "TotalLost": {
+            "type": "integer"
+          },
+          "TotalDestroyed": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "TotalBuilt",
+          "TotalLost",
+          "TotalDestroyed"
+        ]
+      }
+    },
+
+    "CardStats": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "TotalPlays": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "TotalPlays"
+        ]
+      }
+    },
+
+    "WaveStats": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "WaveDuration": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "WaveDuration"
+        ]
+      }
+    },
+
+    "LeaderPowerStats": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "TimesCast": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "TimesCast"
+        ]
+      }
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "MatchId": {
+      "type": "string"
+    },
+    "MatchType": {
+      "type": "integer"
+    },
+    "GameMode": {
+      "type": "integer"
+    },
+    "SeasonId": {
+      "type": [ "string", "null" ]
+    },
+    "PlaylistId": {
+      "type": [ "string", "null" ]
+    },
+    "MapId": {
+      "type": "string"
+    },
+    "IsMatchComplete": {
+      "type": "boolean"
+    },
+    "MatchEndReason": {
+      "type": "integer"
+    },
+    "VictoryCondition": {
+      "type": "integer"
+    },
+    "MatchStartDate": {
+      "$ref": "../../common/iso-8061.schema.json"
+    },
+    "MatchDuration": {
+      "type": "string"
+    },
+    "Teams": {
+      "$ref": "#/definitions/Teams"
+    },
+    "Players": {
+      "$ref": "#/definitions/Players"
+    }
+  },
+  "required": [
+    "MatchId",
+    "MatchType",
+    "GameMode",
+    "SeasonId",
+    "PlaylistId",
+    "MapId",
+    "IsMatchComplete",
+    "MatchEndReason",
+    "VictoryCondition",
+    "MatchStartDate",
+    "MatchDuration",
+    "Teams",
+    "Players"
+  ]
+}

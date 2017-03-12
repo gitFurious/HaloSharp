@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Rating": {
+      "type": "number"
+    },
+    "Variance": {
+      "type": "number"
+    },
+    "LastModifiedDate": {
+      "$ref": "../../../common/iso-8061.schema.json"
+    }
+  },
+  "required": [
+    "Rating",
+    "Variance",
+    "LastModifiedDate"
+  ]
+}

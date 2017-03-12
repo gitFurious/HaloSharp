@@ -1,9 +1,10 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,
   "properties": {
     "ISO8601Date": {
-      "type": "string"
+      "type": [ "null", "string" ]
     }
   },
   "required": [
