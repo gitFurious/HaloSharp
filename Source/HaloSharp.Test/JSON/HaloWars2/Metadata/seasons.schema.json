@@ -82,6 +82,14 @@
             { "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB" }
           ]
         },
+        "Image4K": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/image.schema.json#/definitions/null" },
+            { "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB" }
+          ]
+        },
         "Playlists": {
           "type": "array",
           "items": {
@@ -97,6 +105,7 @@
         "StartDate",
         "DisplayInfo",
         "Image",
+        "Image4K",
         "Playlists"
       ]
     },
