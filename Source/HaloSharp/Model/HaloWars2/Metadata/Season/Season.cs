@@ -17,8 +17,11 @@ namespace HaloSharp.Model.HaloWars2.Metadata.Season
         [JsonProperty(PropertyName = "Image")]
         public ContentItemTypeB<Image.View> Image { get; set; }
 
+        [JsonProperty(PropertyName = "Image4K")]
+        public ContentItemTypeB<Image.View> Image4K { get; set; }
+
         [JsonProperty(PropertyName = "Playlists")]
-        public List<ContentItemTypeB<Playlist.View>> Playlists { get; set; }
+        public List<ContentItemTypeD> Playlists { get; set; }
 
         public bool Equals(Season other)
         {
@@ -34,6 +37,7 @@ namespace HaloSharp.Model.HaloWars2.Metadata.Season
 
             return Equals(DisplayInfo, other.DisplayInfo)
                 && Equals(Image, other.Image)
+                && Equals(Image4K, other.Image4K)
                 && Playlists.OrderBy(p => p.Id).SequenceEqual(other.Playlists.OrderBy(p => p.Id))
                 && StartDate.Equals(other.StartDate);
         }
@@ -64,6 +68,7 @@ namespace HaloSharp.Model.HaloWars2.Metadata.Season
             {
                 var hashCode = (DisplayInfo != null ? DisplayInfo.GetHashCode() : 0);
                 hashCode = (hashCode*397) ^ (Image != null ? Image.GetHashCode() : 0);
+                hashCode = (hashCode*397) ^ (Image4K != null ? Image4K.GetHashCode() : 0);
                 hashCode = (hashCode*397) ^ (Playlists?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ StartDate.GetHashCode();
                 return hashCode;

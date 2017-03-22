@@ -2,6 +2,12 @@
 
 ### Changelog ###
 
+###### v.2.0.1.0 (2017-03-22)
+
+1. Updated HW2 Season Model.
+  * Added property: Image4K
+  * Fixed property: Playlists
+
 ###### v.2.0.0.0 (2017-03-12)
 
 1. Breaking changes galore!

@@ -82,13 +82,21 @@
             { "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB" }
           ]
         },
+        "Image4K": {
+          "oneOf": [
+            // TODO: This is pretty terrible.
+            { "$ref": "common/empty.schema.json" },
+            { "$ref": "common/image.schema.json#/definitions/null" },
+            { "$ref": "common/image.schema.json#/definitions/ImageContentItemTypeB" }
+          ]
+        },
         "Playlists": {
           "type": "array",
           "items": {
             "oneOf": [
               // TODO: This is pretty terrible.
               { "$ref": "common/empty.schema.json" },
-              { "$ref": "common/playlist.schema.json#/definitions/HW2PlaylistContentItemTypeB" }
+              { "$ref": "common/content-item-type-d.schema.json#/definitions/ContentItemTypeD" }
             ]
           }
         }
@@ -97,6 +105,7 @@
         "StartDate",
         "DisplayInfo",
         "Image",
+        "Image4K",
         "Playlists"
       ]
     },
