@@ -96,7 +96,7 @@
             "oneOf": [
               // TODO: This is pretty terrible.
               { "$ref": "common/empty.schema.json" },
-              { "$ref": "common/playlist.schema.json#/definitions/HW2PlaylistContentItemTypeB" }
+              { "$ref": "common/content-item-type-d.schema.json#/definitions/ContentItemTypeD" }
             ]
           }
         }

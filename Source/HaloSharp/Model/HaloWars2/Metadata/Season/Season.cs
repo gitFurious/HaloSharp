@@ -21,7 +21,7 @@ namespace HaloSharp.Model.HaloWars2.Metadata.Season
         public ContentItemTypeB<Image.View> Image4K { get; set; }
 
         [JsonProperty(PropertyName = "Playlists")]
-        public List<ContentItemTypeB<Playlist.View>> Playlists { get; set; }
+        public List<ContentItemTypeD> Playlists { get; set; }
 
         public bool Equals(Season other)
         {
