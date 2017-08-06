@@ -86,6 +86,7 @@
     <Compile Include="Query\Halo5\Metadata\GetTeamColorsTests.cs" />
     <Compile Include="Query\Halo5\Metadata\GetVehiclesTests.cs" />
     <Compile Include="Query\Halo5\Metadata\GetWeaponsTests.cs" />
+    <Compile Include="Query\Halo5\Profile\GetPlayerAppearanceTests.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetMatchEventsTests.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetArenaMatchDetailsTests.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetCampaignMatchDetailsTests.cs" />
