@@ -27,8 +27,7 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         [SetUp]
         public void Setup()
         {
-            /***Don't know where to find this schema file...***/
-           // _playerAppearance = JsonConvert.DeserializeObject<PlayerAppearance>(File.ReadAllText("TODO"));
+            _playerAppearance = JsonConvert.DeserializeObject<PlayerAppearance>(File.ReadAllText(Halo5Config.PlayerAppearancePath));
 
             var mock = new Mock<IHaloSession>();
             mock.Setup(m => m.Get<PlayerAppearance>(It.IsAny<string>()))
@@ -51,7 +50,6 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         [TestCase("Furiousn00b")]
         public async Task Query_DoesNotThrow(string gamertag)
         {
-            Assert.Fail();  //Fix Setup() before this can run.
             var query = new GetPlayerAppearance(gamertag)
                 .SkipCache();
         
@@ -79,11 +77,10 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         [TestCase("Furiousn00b")]
         public async Task GetPlayerAppearance_SchemaIsValid(string gamertag)
         {
-            Assert.Fail();   /***Don't know where to find this schema file...***/
-            var playerAppearanceSchema = JSchema.Parse(File.ReadAllText("TODO"), new JSchemaReaderSettings
+            var playerAppearanceSchema = JSchema.Parse(File.ReadAllText(Halo5Config.PlayerAppearancePath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MatchesJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.PlayerAppearanceSchemaPath))
             });
 
             var query = new GetPlayerAppearance(gamertag)
@@ -99,11 +96,11 @@ namespace HaloSharp.Test.Query.Halo5.Profile
         [TestCase("Furiousn00b")]
         public async Task GetPlayerAppearance_ModelMatchesSchema(string gamertag)
         {
-            Assert.Fail();   /***Don't know where to find this schema file...***/
-            var schema = JSchema.Parse(File.ReadAllText("TODO"), new JSchemaReaderSettings
+
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.PlayerAppearancePath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
-                BaseUri = new Uri(Path.GetFullPath(Halo5Config.MatchesJsonSchemaPath))
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.PlayerAppearanceSchemaPath))
             });
 
             var query = new GetPlayerAppearance(gamertag)
