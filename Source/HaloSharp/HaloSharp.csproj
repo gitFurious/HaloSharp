@@ -263,6 +263,7 @@
     <Compile Include="Query\Halo5\Metadata\GetVehicles.cs" />
     <Compile Include="Query\Halo5\Metadata\GetWeapons.cs" />
     <Compile Include="Query\Halo5\Metadata\GetSkulls.cs" />
+    <Compile Include="Query\Halo5\Profile\GetPlayerAppearance.cs" />
     <Compile Include="Query\Halo5\Profile\GetSpartanImage.cs" />
     <Compile Include="Query\Halo5\Profile\GetEmblemImage.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetMatchEvents.cs" />
