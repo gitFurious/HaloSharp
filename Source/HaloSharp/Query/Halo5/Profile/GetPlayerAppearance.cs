@@ -5,7 +5,7 @@ using HaloSharp.Validation.Common;
 
 namespace HaloSharp.Query.Halo5.Profile
 {
-    class GetPlayerAppearance : Query<PlayerAppearance>
+    public class GetPlayerAppearance : Query<PlayerAppearance>
     {
         protected virtual string Path => $"profile/h5/profiles/{_player}/appearance";
 
