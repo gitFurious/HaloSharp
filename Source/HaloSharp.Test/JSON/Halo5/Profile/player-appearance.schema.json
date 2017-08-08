@@ -1,0 +1,47 @@
+﻿{
+  "definitions": {
+    "Player-Appearance": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Gamertag": {
+          "type": "string"
+        },
+        "LastModifiedUTC": {
+          "$ref": "../../common/iso-8061.schema.json"
+        },
+        "FirstModifiedUTC": {
+          "$ref": "../../common/iso-8061.schema.json"
+        },
+        "ServiceTag": {
+          "type": "string"
+        },
+        "Company": {
+          "type": [ "array", "null" ],
+          "items": {
+            "Id": {
+              "type": "guid"
+            },
+            "Name": {
+              "type": "string"
+            }
+          }
+        }
+      },
+        "required": [
+          "Gamertag",
+          "LastModifiedUTC",
+          "FirstModifiedUTC",
+          "ServiceTag",
+          "Company"
+        ]
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Player-Appearance"
+  }
+}

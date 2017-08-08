@@ -91,6 +91,7 @@
     <Compile Include="Model\Halo5\Metadata\Skull.cs" />
     <Compile Include="Model\CacheSettings.cs" />
     <Compile Include="Model\Halo5\Profile\HaloImage.cs" />
+    <Compile Include="Model\Halo5\Profile\PlayerAppearance.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\Death.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\Impulse.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\MatchEvent.cs" />
@@ -262,6 +263,7 @@
     <Compile Include="Query\Halo5\Metadata\GetVehicles.cs" />
     <Compile Include="Query\Halo5\Metadata\GetWeapons.cs" />
     <Compile Include="Query\Halo5\Metadata\GetSkulls.cs" />
+    <Compile Include="Query\Halo5\Profile\GetPlayerAppearance.cs" />
     <Compile Include="Query\Halo5\Profile\GetSpartanImage.cs" />
     <Compile Include="Query\Halo5\Profile\GetEmblemImage.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetMatchEvents.cs" />
