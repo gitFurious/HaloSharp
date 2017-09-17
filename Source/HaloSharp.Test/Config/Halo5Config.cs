@@ -44,6 +44,9 @@ namespace HaloSharp.Test.Config
         public const string WeaponsJsonPath = "JSON/Halo5/Metadata/weapons.json";
         public const string WeaponsJsonSchemaPath = "JSON/Halo5/Metadata/weapons.schema.json";
 
+        public const string SpartanCompanyPath = "JSON/Halo5/Stats/spartan-company.json";
+        public const string SpartanCompanySchemaPath = "JSON/Halo5/Stats/spartan-company.schema.json";
+
         public const string PlayerAppearancePath = "JSON/Halo5/Profile/player-appearance.json";
         public const string PlayerAppearanceSchemaPath = "JSON/Halo5/Profile/player-appearance.schema.json";
 

@@ -94,6 +94,7 @@
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetWarzoneMatchDetailsTests.cs" />
     <Compile Include="Query\Halo5\Stats\GetLeaderboardTests.cs" />
     <Compile Include="Query\Halo5\Stats\GetMatchesTests.cs" />
+    <Compile Include="Query\Halo5\Stats\GetSpartanCompanyTests.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetArenaServiceRecordTests.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetCampaignServiceRecordTests.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetCustomServiceRecordTests.cs" />
