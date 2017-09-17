@@ -20,7 +20,7 @@ namespace HaloSharp.Model.Halo5.Profile
         public string ServiceTag { get; set; }
 
         [JsonProperty(PropertyName = "Company")]
-        public Company company { get; set; }
+        public Company Company { get; set; }
 
         public bool Equals(PlayerAppearance other)
         {
@@ -34,7 +34,7 @@ namespace HaloSharp.Model.Halo5.Profile
                 return true;
             }
 
-            return company.Equals(other.company)
+            return Company.Equals(other.Company)
                 && Gamertag == other.Gamertag
                 && LastModifiedUtc == other.LastModifiedUtc
                 && FirstModifiedUtc == other.FirstModifiedUtc
@@ -46,10 +46,10 @@ namespace HaloSharp.Model.Halo5.Profile
     public class Company : IEquatable<Company>
     {
         [JsonProperty(PropertyName = "id")]
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
 
         [JsonProperty(PropertyName = "name")]
-        public string Name { get; set; }
+        public string name { get; set; }
 
 
         public bool Equals(Company other)
@@ -65,8 +65,8 @@ namespace HaloSharp.Model.Halo5.Profile
                 return true;
             }
 
-            return Id == other.Id
-                && Name == other.Name;
+            return id == other.id
+                && name == other.name;
         }
 
     }
