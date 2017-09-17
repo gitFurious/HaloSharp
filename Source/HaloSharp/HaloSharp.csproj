@@ -274,6 +274,7 @@
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetCampaignMatchDetails.cs" />
     <Compile Include="Query\Halo5\Stats\GetLeaderboard.cs" />
     <Compile Include="Query\Halo5\Stats\GetMatchHistory.cs" />
+    <Compile Include="Query\Halo5\Stats\GetSpartanCompany.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetCampaignServiceRecord.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetCustomServiceRecord.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetWarzoneServiceRecord.cs" />
