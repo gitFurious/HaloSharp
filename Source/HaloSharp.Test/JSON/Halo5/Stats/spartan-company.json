@@ -1,0 +1,1230 @@
+﻿{
+    "Id": "a23876ac-321e-497d-933b-65e226d01b2f",
+    "Name": "Adamant",
+    "Creator": {
+        "Gamertag": "XbL Divinity",
+        "Xuid": null
+    },
+    "PeakMembershipCount": 100,
+    "SuspendedUntilDate": {
+        "ISO8601Date": "1601-01-01T00:00:00Z"
+    },
+    "Members": [
+        {
+        "Player": {
+            "Gamertag": "CLD",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-12-23T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Omega S021",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-09-04T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "SL Grimp",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-08T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-08T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Monstrosity HCS",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-10-14T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "rampage217",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-10-19T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "SpartanB302",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-11-08T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Sylxeria",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-11-22T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Murdur",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-01-18T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Adanite",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-12-29T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "ZeroBlvk",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-08T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "ieota",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-09T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Quasar MB",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-01T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "xAssazzinx23x",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-02-09T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "oDelly",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-02-26T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "shadowinthehood",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-12-20T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "LicensedSinger0",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-05T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Guardian2301",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-03T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-03T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Orpins",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-01-27T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "xXSotelogamzXx",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-18T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "BackSideBlowOut",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2016-12-25T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Striker Century",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Skyco23",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-01-01T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "iV HoRiZoN Vi",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-25T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-25T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "SeventhMaestro",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-01-02T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "madmanxPr3stige",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-01-06T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Ex Zen Mute",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-01-06T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "ViIlainous",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-02-19T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Crooked TV",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-01-08T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Renegade JW",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-02-17T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Hyperent",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-01-13T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Chancxllor",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-10T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Esilious",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-16T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Definitive",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-14T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Achilles Qc",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-18T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-18T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Brainstrm",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-02-16T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Certain Finesse",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-19T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Killion",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-30T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "I WakeUp I",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-10T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Immortal Boss",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-06T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Grubkiller955",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-09T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Fox Is My Main",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-06T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Shxpard",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-20T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Middle ninjaz",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-08-18T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-08-18T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "BRxFLUXxBR",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-03-23T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "And Now We Cry",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-17T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "BENGALA89",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-05T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "HaXoR73",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-05T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "XxtAnkExX 9F77",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-22T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-22T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Moshimo97",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-12T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "AlphaMale FLAME",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-08-29T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-08-29T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "GCO Siddhartha",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-17T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Handicap",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-18T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "KHANartists",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-19T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "H6BR",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-04-22T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Isolate AW",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-05-23T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-23T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Leaxze",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-05-25T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-25T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Alpha Recon1911",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-15T00:00:00Z"
+        },
+            "LastModifiedDate": {
+            "ISO8601Date": "2017-06-15T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "ThirstierMax",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-17T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-17T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "SpatialComic11",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-02T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-02T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "XxJack DanielzX",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-21T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-21T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Exenius",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-23T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-23T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "xDeUsx zILuZion",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-24T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-24T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Themistocles l",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-25T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-25T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Fyshy Fishy",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-06-29T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-29T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "SelCrashed",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-08-08T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-08-08T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "KEA",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-07T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-07T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "IxPurexSutonxI",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-08-13T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-08-13T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "HeIpness",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-14T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-14T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "x ViNcE v",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-15T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-15T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Live4K",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-08T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-08T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "VoyoN",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-18T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-18T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Viper Skills",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-22T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-22T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "StiIio",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-23T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-23T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "humoungusdingus",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-24T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-24T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Bexti",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-07-28T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-07-28T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "RahFeaki",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-08-30T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-08-30T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Knipe",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-08-11T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-08-11T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Menxtal",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-08-31T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-08-31T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Sparkz315",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-03T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-03T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Zhxdow",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-04T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-04T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "L3GENDARYvNOBLE",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-04T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-04T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Nerdz XXA",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-04T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-04T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Scorpigeon1",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-04T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-04T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Elevated HCS",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-06T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "DashPrime",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-10T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-10T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Ms Tator Totz",
+            "Xuid": null
+        },
+        "Role": 0,
+        "JoinedDate": {
+            "ISO8601Date": "2017-09-13T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-09-13T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "EagleSierra115",
+            "Xuid": null
+        },
+        "Role": 1,
+        "JoinedDate": {
+            "ISO8601Date": "2016-12-23T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "RaVenClaw1996",
+            "Xuid": null
+        },
+        "Role": 1,
+        "JoinedDate": {
+            "ISO8601Date": "2016-08-25T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Gh0stx0fx0nyx",
+            "Xuid": null
+        },
+        "Role": 1,
+        "JoinedDate": {
+            "ISO8601Date": "2016-08-25T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Botsu",
+            "Xuid": null
+        },
+        "Role": 1,
+        "JoinedDate": {
+            "ISO8601Date": "2016-12-19T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "UNSCDF Guy",
+            "Xuid": null
+        },
+        "Role": 1,
+        "JoinedDate": {
+            "ISO8601Date": "2016-12-29T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "Freeform Virus",
+            "Xuid": null
+        },
+        "Role": 1,
+        "JoinedDate": {
+            "ISO8601Date": "2016-12-08T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-06-30T00:00:00Z"
+        }
+        },
+        {
+        "Player": {
+            "Gamertag": "XbL Divinity",
+            "Xuid": null
+        },
+        "Role": 2,
+        "JoinedDate": {
+            "ISO8601Date": "2016-07-18T00:00:00Z"
+        },
+        "LastModifiedDate": {
+            "ISO8601Date": "2017-05-06T00:00:00Z"
+        }
+        }
+    ],
+    "CreatedDate": {
+        "ISO8601Date": "2016-07-18T00:00:00Z"
+    },
+    "LastModifiedDate": {
+        "ISO8601Date": "2017-09-17T00:00:00Z"
+    }
+}
+
