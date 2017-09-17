@@ -65,8 +65,7 @@ namespace HaloSharp.Model.Halo5.Profile
                 return true;
             }
 
-            return Id == other.Id
-                && Name == other.Name;
+            return Id == other.Id;
         }
 
     }

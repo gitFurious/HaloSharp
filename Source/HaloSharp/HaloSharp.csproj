@@ -102,6 +102,7 @@
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponDrop.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponPickup.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponPickupPad.cs" />
+    <Compile Include="Model\Halo5\Stats\SpartanCompany.cs" />
     <Compile Include="Model\HaloWars2\Metadata\CampaignLevel\View.cs" />
     <Compile Include="Model\HaloWars2\Metadata\CampaignLevel\CampaignLevel.cs" />
     <Compile Include="Model\HaloWars2\Metadata\Card\DisplayInfo\DisplayInfo.cs" />
