@@ -11,7 +11,7 @@ using HaloSharp.Validation.Common;
 namespace HaloSharp.Query.Halo5.Stats
 {
     
-    class GetSpartanCompany : Query<SpartanCompany>
+    public class GetSpartanCompany : Query<SpartanCompany>
     {
         protected virtual string Path => $"stats/h5/companies/{_companyId}";
 
