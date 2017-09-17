@@ -17,6 +17,7 @@ namespace HaloSharp.Model.Halo5.Stats
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
+
         public bool Equals(SpartanCompany other)
         {
             if(ReferenceEquals(null, other))
@@ -29,7 +30,8 @@ namespace HaloSharp.Model.Halo5.Stats
                 return true;
             }
 
-            return Id == other.Id;
+            return Id == other.Id
+                && Name == other.Name;
         }
 
         public bool Equals(Company other)
@@ -45,7 +47,8 @@ namespace HaloSharp.Model.Halo5.Stats
                 return true;
             }
 
-            return Id == other.Id;
+            return Id == other.Id
+                && Name == other.Name;
         }
 
     }
