@@ -42,6 +42,7 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         {
             var query = new GetSpartanCompany(companyId);
             Assert.AreEqual($"https://www.haloapi.com/stats/h5/companies/{companyId}", query.Uri);
+
         }
     }
 }
