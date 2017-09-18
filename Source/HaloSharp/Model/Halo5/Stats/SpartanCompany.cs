@@ -71,8 +71,8 @@ namespace HaloSharp.Model.Halo5.Stats
                 return true;
             }
 
-            return Id == other.id
-                && Name == other.name;
+            return Id == other.Id
+                && Name == other.Name;
         }
 
     }

@@ -46,10 +46,10 @@ namespace HaloSharp.Model.Halo5.Profile
     public class Company : IEquatable<Company>
     {
         [JsonProperty(PropertyName = "id")]
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
 
         [JsonProperty(PropertyName = "name")]
-        public string name { get; set; }
+        public string Name { get; set; }
 
 
         public bool Equals(Company other)
@@ -65,8 +65,8 @@ namespace HaloSharp.Model.Halo5.Profile
                 return true;
             }
 
-            return id == other.id
-                && name == other.name;
+            return Id == other.Id
+                && Name == other.Name;
         }
 
     }
