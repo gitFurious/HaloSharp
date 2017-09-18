@@ -41,8 +41,100 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         public void Uri_MatchesExpected(Guid companyId)
         {
             var query = new GetSpartanCompany(companyId);
-            Assert.AreEqual($"https://www.haloapi.com/stats/h5/companies/{companyId}", query.Uri);
-
+            Assert.AreEqual($"https://www.haloapi.com/stats/h5/companies/{companyId}", query.Uri);    
         }
+
+        [Test]
+        [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
+        public async Task Query_DoesNotThrow(Guid companyId)
+        {
+            var query = new GetSpartanCompany(companyId)
+                .SkipCache();
+
+            var result = await _mockSession.Query(query);
+
+            Assert.IsInstanceOf(typeof(SpartanCompany), result);
+            Assert.AreEqual(_spartanCompany, result);
+        }
+
+        [Test]
+        [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
+        [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
+        public async Task GetSpartanCompany_DoesNotThrow(Guid companyId)
+        {
+            var query = new GetSpartanCompany(companyId)
+                .SkipCache();
+
+            var result = await Global.Session.Query(query);
+
+            Assert.IsInstanceOf(typeof(SpartanCompany), result);
+        }
+
+        [Test]
+        [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
+        [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
+        public async Task GetSpartanCompany_SchemaIsValid(Guid companyId)
+        {
+            var spartanCompanySchema = JSchema.Parse(File.ReadAllText(Halo5Config.SpartanCompanyPath), new JSchemaReaderSettings
+            {
+                Resolver = new JSchemaUrlResolver(),
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.SpartanCompanySchemaPath))
+            });
+
+            var query = new GetSpartanCompany(companyId)
+                .SkipCache();
+
+            var jArray = await Global.Session.Get<JObject>(query.Uri);
+
+            SchemaUtility.AssertSchemaIsValid(spartanCompanySchema, jArray);
+        }
+
+        [Test]
+        [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
+        [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
+        public async Task GetSpartanCompany_ModelMatchesSchema(Guid companyId)
+        {
+
+            var schema = JSchema.Parse(File.ReadAllText(Halo5Config.SpartanCompanyPath), new JSchemaReaderSettings
+            {
+                Resolver = new JSchemaUrlResolver(),
+                BaseUri = new Uri(Path.GetFullPath(Halo5Config.SpartanCompanySchemaPath))
+            });
+
+            var query = new GetSpartanCompany(companyId)
+                .SkipCache();
+
+            var result = await Global.Session.Query(query);
+
+            var json = JsonConvert.SerializeObject(result);
+            var jContainer = JsonConvert.DeserializeObject<JObject>(json);
+
+            SchemaUtility.AssertSchemaIsValid(schema, jContainer);
+        }
+
+        [Test]
+        [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
+        [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
+        public async Task GetSpartanCompany_IsSerializable(Guid companyId)
+        {
+            var query = new GetSpartanCompany(companyId)
+                .SkipCache();
+
+            var result = await Global.Session.Query(query);
+
+            SerializationUtility<SpartanCompany>.AssertRoundTripSerializationIsPossible(result);
+        }
+
+        [Test]
+        [TestCase("0")]
+        [TestCase("!$%@")]
+        public async Task GetSpartanCompany_InvalidGuid(Guid companyId)
+        {
+            var query = new GetSpartanCompany(companyId);
+
+            await Global.Session.Query(query);
+            Assert.Fail("An exception should have been thrown");
+        }
+
     }
 }
