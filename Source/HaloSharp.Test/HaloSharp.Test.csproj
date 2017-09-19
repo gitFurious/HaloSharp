@@ -393,6 +393,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="JSON\Halo5\Stats\spartan-company.json" />
+    <None Include="JSON\Halo5\Stats\spartan-company.schema.json" />
     <None Include="JSON\Halo5\UserGeneratedContent\Common\stats.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

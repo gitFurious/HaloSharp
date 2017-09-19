@@ -38,16 +38,20 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [Test]
         [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
         [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
-        public void Uri_MatchesExpected(Guid companyId)
+        public void Uri_MatchesExpected(string companyID)
         {
+            Guid companyId = new Guid(companyID);
+
             var query = new GetSpartanCompany(companyId);
             Assert.AreEqual($"https://www.haloapi.com/stats/h5/companies/{companyId}", query.Uri);    
         }
 
         [Test]
         [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
-        public async Task Query_DoesNotThrow(Guid companyId)
+        public async Task Query_DoesNotThrow(string companyID)
         {
+            Guid companyId = new Guid(companyID);
+
             var query = new GetSpartanCompany(companyId)
                 .SkipCache();
 
@@ -57,11 +61,14 @@ namespace HaloSharp.Test.Query.Halo5.Stats
             Assert.AreEqual(_spartanCompany, result);
         }
 
+
+        //Need to create GUID objects after function starts.
         [Test]
         [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
         [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
-        public async Task GetSpartanCompany_DoesNotThrow(Guid companyId)
+        public async Task GetSpartanCompany_DoesNotThrow(string companyID)
         {
+            Guid companyId = new Guid(companyID);
             var query = new GetSpartanCompany(companyId)
                 .SkipCache();
 
@@ -73,8 +80,10 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [Test]
         [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
         [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
-        public async Task GetSpartanCompany_SchemaIsValid(Guid companyId)
+        public async Task GetSpartanCompany_SchemaIsValid(string companyID)
         {
+            Guid companyId = new Guid(companyID);
+
             var spartanCompanySchema = JSchema.Parse(File.ReadAllText(Halo5Config.SpartanCompanyPath), new JSchemaReaderSettings
             {
                 Resolver = new JSchemaUrlResolver(),
@@ -92,8 +101,9 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [Test]
         [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
         [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
-        public async Task GetSpartanCompany_ModelMatchesSchema(Guid companyId)
+        public async Task GetSpartanCompany_ModelMatchesSchema(string companyID)
         {
+            Guid companyId = new Guid(companyID);
 
             var schema = JSchema.Parse(File.ReadAllText(Halo5Config.SpartanCompanyPath), new JSchemaReaderSettings
             {
@@ -115,8 +125,11 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [Test]
         [TestCase("a23876ac-321e-497d-933b-65e226d01b2f")]
         [TestCase("c376dcc0-600c-498e-b656-0c18950fa8bb")]
-        public async Task GetSpartanCompany_IsSerializable(Guid companyId)
+        public async Task GetSpartanCompany_IsSerializable(string companyID)
         {
+
+            Guid companyId = new Guid(companyID);
+
             var query = new GetSpartanCompany(companyId)
                 .SkipCache();
 
@@ -128,8 +141,11 @@ namespace HaloSharp.Test.Query.Halo5.Stats
         [Test]
         [TestCase("0")]
         [TestCase("!$%@")]
-        public async Task GetSpartanCompany_InvalidGuid(Guid companyId)
+        [ExpectedException(typeof(FormatException))]
+        public async Task GetSpartanCompany_InvalidGuid(string companyID)
         {
+            Guid companyId = new Guid(companyID);
+
             var query = new GetSpartanCompany(companyId);
 
             await Global.Session.Query(query);
