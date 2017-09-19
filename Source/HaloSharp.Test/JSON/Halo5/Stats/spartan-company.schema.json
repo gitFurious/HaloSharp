@@ -1,0 +1,78 @@
+﻿{
+  "definitions": {
+      "Spartan-Company": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+              "Id": {
+                "type": "string"
+              },
+              "Name": {
+                  "type": "string"
+              },
+              "Creator": {
+                "type" : "object",
+                "properties": {
+                    "gamertag" : {
+                        "type": "string"
+                    }
+                }
+              },
+              "PeakMembershipCount": {
+                  "type": "integer"
+              },
+
+              "SuspendedUntilDate": {
+                "$ref": "../../common/iso-8061.schema.json"
+              },
+
+              "Members": {
+                  "type": [ "array", "null" ],
+                  "items": {
+            
+                    "Identity": {
+                        "$ref": "../../common/identity.schema.json"
+                      },
+
+                    "Role" : {
+                        "type": "integer"
+                    },
+
+                    "JoinedDate": {
+                        "$ref": "../../common/iso-8061.schema.json"
+                      },
+                      
+                    "LastModifiedDate": {
+                        "$ref": "../../common/iso-8061.schema.json"
+                      }            
+                  }
+              },
+      
+              "CreatedDate": {
+                "$ref": "../../common/iso-8061.schema.json"
+              },
+
+              "LastModifiedDate": {
+                "$ref": "../../common/iso-8061.schema.json"
+              }        
+          },
+          "required":[
+              "Id",
+              "Name",
+              "Creator",
+              "PeakMembershipCount",
+              "SuspendedUntilDate",
+              "Members",
+              "CreatedDate",
+              "LastModifiedDate"
+          ]
+        }
+    },
+    
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Player-Appearance"
+    }
+} 

@@ -86,6 +86,7 @@
     <Compile Include="Query\Halo5\Metadata\GetTeamColorsTests.cs" />
     <Compile Include="Query\Halo5\Metadata\GetVehiclesTests.cs" />
     <Compile Include="Query\Halo5\Metadata\GetWeaponsTests.cs" />
+    <Compile Include="Query\Halo5\Profile\GetPlayerAppearanceTests.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetMatchEventsTests.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetArenaMatchDetailsTests.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetCampaignMatchDetailsTests.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetWarzoneMatchDetailsTests.cs" />
     <Compile Include="Query\Halo5\Stats\GetLeaderboardTests.cs" />
     <Compile Include="Query\Halo5\Stats\GetMatchesTests.cs" />
+    <Compile Include="Query\Halo5\Stats\GetSpartanCompanyTests.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetArenaServiceRecordTests.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetCampaignServiceRecordTests.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetCustomServiceRecordTests.cs" />
@@ -270,6 +272,12 @@
     <None Include="JSON\Halo5\Metadata\Common\reward.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="JSON\Halo5\Profile\player-appearance.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="JSON\Halo5\Profile\player-appearance.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="JSON\Halo5\Stats\CarnageReport\Common\boost-info.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -384,6 +392,8 @@
     <None Include="JSON\Halo5\Stats\matches.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="JSON\Halo5\Stats\spartan-company.json" />
+    <None Include="JSON\Halo5\Stats\spartan-company.schema.json" />
     <None Include="JSON\Halo5\UserGeneratedContent\Common\stats.schema.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -622,6 +632,9 @@
       <Project>{5a205d36-6af7-4416-9763-81250ef02924}</Project>
       <Name>HaloSharp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

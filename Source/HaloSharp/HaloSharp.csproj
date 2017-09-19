@@ -91,6 +91,7 @@
     <Compile Include="Model\Halo5\Metadata\Skull.cs" />
     <Compile Include="Model\CacheSettings.cs" />
     <Compile Include="Model\Halo5\Profile\HaloImage.cs" />
+    <Compile Include="Model\Halo5\Profile\PlayerAppearance.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\Death.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\Impulse.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\MatchEvent.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponDrop.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponPickup.cs" />
     <Compile Include="Model\Halo5\Stats\CarnageReport\Events\WeaponPickupPad.cs" />
+    <Compile Include="Model\Halo5\Stats\SpartanCompany.cs" />
     <Compile Include="Model\HaloWars2\Metadata\CampaignLevel\View.cs" />
     <Compile Include="Model\HaloWars2\Metadata\CampaignLevel\CampaignLevel.cs" />
     <Compile Include="Model\HaloWars2\Metadata\Card\DisplayInfo\DisplayInfo.cs" />
@@ -262,6 +264,7 @@
     <Compile Include="Query\Halo5\Metadata\GetVehicles.cs" />
     <Compile Include="Query\Halo5\Metadata\GetWeapons.cs" />
     <Compile Include="Query\Halo5\Metadata\GetSkulls.cs" />
+    <Compile Include="Query\Halo5\Profile\GetPlayerAppearance.cs" />
     <Compile Include="Query\Halo5\Profile\GetSpartanImage.cs" />
     <Compile Include="Query\Halo5\Profile\GetEmblemImage.cs" />
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetMatchEvents.cs" />
@@ -271,6 +274,7 @@
     <Compile Include="Query\Halo5\Stats\CarnageReport\GetCampaignMatchDetails.cs" />
     <Compile Include="Query\Halo5\Stats\GetLeaderboard.cs" />
     <Compile Include="Query\Halo5\Stats\GetMatchHistory.cs" />
+    <Compile Include="Query\Halo5\Stats\GetSpartanCompany.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetCampaignServiceRecord.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetCustomServiceRecord.cs" />
     <Compile Include="Query\Halo5\Stats\Lifetime\GetWarzoneServiceRecord.cs" />
